@@ -1,11 +1,13 @@
 import {createRoot} from 'react-dom/client';
 import {lazy, Suspense} from 'react';
 import {Analytics} from '@vercel/analytics/react';
+import {modelForRoute} from '../app/model-registry';
 import '../app/globals.css';
 
 const AtlasViewer = lazy(() => import('../app/page'));
 const pathname = window.location.pathname.replace(/\/+$/, '') || '/';
-const model = pathname === '/female' ? 'female' : pathname === '/male' ? 'male' : null;
+const routeModel = modelForRoute(pathname);
+const model = routeModel?.id === 'female-study-v3' ? 'female' : routeModel?.id === 'bp3d-male-4' ? 'male' : null;
 
 document.title = model
   ? `${model === 'female' ? 'Female' : 'Male'} anatomy · Human Atlas`

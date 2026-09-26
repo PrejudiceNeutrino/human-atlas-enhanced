@@ -16,7 +16,9 @@
     "test:female-readiness": "node --test scripts/validate-female-readiness.test.mjs",
     "audit:female-enhancements": "python3 scripts/audit-female-enhancements.py",
     "test:female-enhancements": "python3 scripts/female-enhancement-runner.test.py",
-    "test:viewer-enhancements": "node --experimental-strip-types --test scripts/anatomy-search.test.mjs scripts/cursor-zoom.test.mjs"
+    "test:viewer-enhancements": "node --experimental-strip-types --test scripts/anatomy-search.test.mjs scripts/cursor-zoom.test.mjs",
+    "validate:core-contracts": "node --experimental-strip-types scripts/validate-core-contracts.mjs",
+    "test:core-contracts": "node --experimental-strip-types --test scripts/core-contracts.test.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

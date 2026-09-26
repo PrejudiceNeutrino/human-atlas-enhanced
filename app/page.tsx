@@ -11,19 +11,24 @@ import {Sheet,SheetContent,SheetTitle,SheetDescription} from '@/components/ui/sh
 import {Combobox,ComboboxInput,ComboboxContent,ComboboxList,ComboboxItem,ComboboxEmpty} from '@/components/ui/combobox';
 import AnatomyScene from './scene';
 import {buildSearchConcepts,matchesAnatomySearch,type SearchConcept} from './anatomy-search';
+import {createIdentityIndex,type IdentityIndex,type IdentitySidecar} from './identity-index';
+import {modelForViewer,type ViewerModel} from './model-registry';
 import {DEFAULT_VISIBLE,partIsVisible,SYSTEMS,EXPLANATIONS,explanation,type Atlas,type Concept,type SceneState,type SystemId,type View} from './anatomy';
 type AnatomySex='male'|'female';
-type AnatomyModel=AnatomySex|'female-reference';
+type AnatomyModel=ViewerModel;
 const defaultVisible=(model:AnatomyModel):SystemId[]=>model==='female-reference'?[...DEFAULT_VISIBLE,'integumentary']:[...DEFAULT_VISIBLE];
 const initial:SceneState={breastView:'tissue',explode:0,visible:DEFAULT_VISIBLE,selected:[],isolate:false,view:'three-quarter',rotate:false,reset:0};
 export default function AtlasViewer({model,onModelChange}:{model:AnatomyModel;onModelChange:(model:AnatomyModel)=>void}){
- const sex:AnatomySex=model==='male'?'male':'female';
+ const modelRecord=modelForViewer(model);
+ const sex:AnatomySex=modelRecord.sex;
  const reconstructed=model==='female';
  const source=reconstructed?'BodyParts3D + HRA':sex==='female'?'Human Reference Atlas':'BodyParts3D';
  const sourceUrl=sex==='female'?'https://doi.org/10.48539/HBM352.BTSQ.586':'https://lifesciencedb.jp/bp3d/';
  const detailTitle=useRef<HTMLHeadingElement>(null);
- const [atlas,setAtlas]=useState<Atlas|null>(null),[state,setState]=useState<SceneState>(()=>({...initial,visible:defaultVisible(model)})),[progress,setProgress]=useState(0),[error,setError]=useState(''),[panel,setPanel]=useState<'layers'|'search'|null>(null),[details,setDetails]=useState(false),[about,setAbout]=useState(false),[query,setQuery]=useState(''),[chosen,setChosen]=useState<SearchConcept|null>(null);
- useEffect(()=>{const abort=new AbortController();setProgress(0);setError('');setAtlas(null);setChosen(null);setDetails(false);setState({...initial,visible:defaultVisible(model)});fetch(reconstructed?'/models/atlas-female-reconstructed.json':sex==='female'?'/models/atlas-female.json':'/models/atlas.json',{signal:abort.signal}).then(r=>{if(!r.ok)throw new Error('The anatomy catalogue could not be loaded.');return r.json();}).then(data=>{if(!abort.signal.aborted)setAtlas(data as Atlas);}).catch(e=>{if(e.name!=='AbortError')setError(e.message);});return()=>abort.abort();},[model]);
+ const [loaded,setLoaded]=useState<{atlas:Atlas;identity:IdentityIndex}|null>(null),[state,setState]=useState<SceneState>(()=>({...initial,visible:defaultVisible(model)})),[progress,setProgress]=useState(0),[error,setError]=useState(''),[panel,setPanel]=useState<'layers'|'search'|null>(null),[details,setDetails]=useState(false),[about,setAbout]=useState(false),[query,setQuery]=useState(''),[chosen,setChosen]=useState<SearchConcept|null>(null);
+ const active=loaded?.identity.modelId===modelRecord.id?loaded:null,atlas=active?.atlas??null,identity=active?.identity??null;
+ useEffect(()=>{const abort=new AbortController();setProgress(0);setError('');setLoaded(null);setChosen(null);setDetails(false);setState({...initial,visible:defaultVisible(model)});
+  Promise.all([fetch(modelRecord.manifestUrl,{signal:abort.signal}),fetch('/identity/core-crosswalk-v1.json',{signal:abort.signal})]).then(async responses=>{if(responses.some(r=>!r.ok))throw new Error('The anatomy catalogue could not be loaded.');const [manifest,crosswalk]=await Promise.all(responses.map(r=>r.json()));const next=manifest as Atlas;return {atlas:next,identity:createIdentityIndex(modelRecord,next,crosswalk as IdentitySidecar)};}).then(result=>{if(!abort.signal.aborted)setLoaded(result);}).catch(e=>{if(e.name!=='AbortError')setError(e.message);});return()=>abort.abort();},[model]);
  useEffect(()=>{const key=(e:KeyboardEvent)=>{if(e.key==='/'&&!(e.target instanceof HTMLInputElement)&&!(e.target instanceof HTMLTextAreaElement)){e.preventDefault();setPanel('search');setDetails(false);}};window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key);},[]);
  const parts=useMemo(()=>new Map(atlas?.parts.map(p=>[p.id,p])),[atlas]);
  const counts=useMemo(()=>Object.fromEntries(SYSTEMS.map(s=>[s.id,atlas?.parts.filter(p=>p.system===s.id).length??0])),[atlas]);
@@ -35,14 +40,14 @@ export default function AtlasViewer({model,onModelChange}:{model:AnatomyModel;on
  const visibleCount=atlas?.parts.filter(p=>partIsVisible(p,state)).length??0;
  const searchConcepts=useMemo(()=>atlas?buildSearchConcepts(atlas):[],[atlas]);
  const results=useMemo(()=>{if(!atlas)return[];const term=query.toLowerCase().trim();if(!term)return ['heart','brain','liver','stomach','spleen','pancreas','urinary bladder','trachea'].map(name=>atlas.concepts.find(c=>c.name.toLowerCase()===name)).filter((x):x is Concept=>!!x);return searchConcepts.filter(c=>matchesAnatomySearch(c,term)).sort((a,b)=>a.name.length-b.name.length).slice(0,80);},[atlas,query,searchConcepts]);
- const choose=(c:SearchConcept)=>{setChosen(c);setState(s=>({...s,selected:c.elements,isolate:false,rotate:false}));setDetails(true);setPanel(null);};
- useEffect(()=>{if(!atlas)return;return registerAtlasTools(atlas,c=>flushSync(()=>choose(c)));},[atlas]);
- const choosePart=(id:string)=>{const p=parts.get(id);if(!p)return;setChosen({id:p.conceptId,name:p.name,elements:[id]});setState(s=>({...s,selected:[id],isolate:false,rotate:false}));setDetails(true);setPanel(null);};
+ const choose=(c:SearchConcept)=>{const canonicalId=identity?.sourceConceptCanonicalId(c.id);const resolved=canonicalId?identity?.resolve(canonicalId,modelRecord.id):null;const selectedIds=resolved?resolved.map(item=>item.sourcePart.id):c.elements;setChosen(c);setState(s=>({...s,selected:selectedIds,isolate:false,rotate:false}));setDetails(true);setPanel(null);};
+ useEffect(()=>{if(!atlas||!identity)return;return registerAtlasTools(atlas,c=>flushSync(()=>choose(c)));},[atlas,identity]);
+ const choosePart=(id:string)=>{const p=parts.get(id),representation=identity?.representationForPart(id);if(!p||!representation||representation.modelId!==modelRecord.id)return;setChosen({id:p.conceptId,name:p.name,elements:[id]});setState(s=>({...s,selected:[id],isolate:false,rotate:false}));setDetails(true);setPanel(null);};
  const toggle=(id:SystemId)=>{setDetails(false);setState(s=>({...s,selected:[],isolate:false,breastView:(id==='mammary'||id==='integumentary')&&!s.visible.includes(id)?'tissue':s.breastView,visible:s.visible.includes(id)?s.visible.filter(x=>x!==id):[...s.visible,id]}));};
  const reset=()=>{setState(s=>({...initial,visible:defaultVisible(model),reset:s.reset+1}));setChosen(null);setDetails(false);setPanel(null);};
  const openPanel=(next:'layers'|'search')=>{setDetails(false);setPanel(p=>p===next?null:next);};
  return <main className="studio">
-  {atlas&&<AnatomyScene atlas={atlas} state={{...state,inspectorOpen:details&&selectedParts.length>0}} onSelect={choosePart} onProgress={n=>{setProgress(n);if(n===100)setError('');}} onError={setError}/>}
+  {atlas&&identity&&<AnatomyScene key={modelRecord.id} atlas={atlas} state={{...state,inspectorOpen:details&&selectedParts.length>0}} onSelect={choosePart} onProgress={n=>{setProgress(n);if(n===100)setError('');}} onError={setError}/>}
   <div className="vignette"/>
   <header className="identity"><div className="eyebrow"><span className="status-dot"/> INTERACTIVE ANATOMY</div><h1><a className="atlas-home-link" href="/" aria-label="Human Atlas home">Human Atlas</a><Badge variant="outline" className="edition">3D</Badge></h1><div className="identity-meta">{atlas?atlas.parts.length.toLocaleString():reconstructed?'2,245':sex==='female'?'888':'2,234'} modeled pieces <span>·</span> {source}</div><div className="anatomy-choice"><Select value={model} onValueChange={value=>{if(value==='male'||value==='female')onModelChange(value);}} items={[{value:'male',label:'Male anatomy'},{value:'female',label:'Female anatomy'}]}><SelectTrigger aria-label="Choose male or female anatomy"><SelectValue/></SelectTrigger><SelectContent className="anatomy-choice-menu"><SelectItem value="male">Male anatomy</SelectItem><SelectItem value="female">Female anatomy</SelectItem></SelectContent></Select></div>{sex==='female'&&<p className="coverage-note">{reconstructed?'Female study model · estimated proportions':'Partial skeleton & muscle coverage'}</p>}</header>
   <nav className="top-actions" aria-label="Explorer panels"><Button variant="ghost" className={panel==='search'?'active':''} onClick={()=>openPanel('search')} aria-label="Search anatomy"><Search size={18}/><span>Find a structure</span><kbd>/</kbd></Button><Button variant="ghost" className="icon-button" aria-label="About this atlas" onClick={()=>{setDetails(false);setPanel(null);setAbout(true);}}><Info size={18}/></Button></nav>

@@ -1,0 +1,100 @@
+{
+ "schemaVersion": 1,
+ "mappingRevision": "core-crosswalk-v1",
+ "canonicalConceptCount": 5386,
+ "sourceConceptMappingCount": 8753,
+ "candidateCount": 15,
+ "unresolvedCount": 15,
+ "candidates": [
+  {
+   "left": "atlas:concept:000366",
+   "right": "atlas:concept:004506",
+   "sourceConceptId": "FMA16202",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:000369",
+   "right": "atlas:concept:004507",
+   "sourceConceptId": "FMA16580",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:000370",
+   "right": "atlas:concept:004508",
+   "sourceConceptId": "FMA16581",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:000371",
+   "right": "atlas:concept:004509",
+   "sourceConceptId": "FMA16582",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:000372",
+   "right": "atlas:concept:004510",
+   "sourceConceptId": "FMA16583",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:000373",
+   "right": "atlas:concept:004511",
+   "sourceConceptId": "FMA16585",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:000374",
+   "right": "atlas:concept:004512",
+   "sourceConceptId": "FMA16586",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:000375",
+   "right": "atlas:concept:004513",
+   "sourceConceptId": "FMA16587",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:000446",
+   "right": "atlas:concept:004514",
+   "sourceConceptId": "FMA20226",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:000447",
+   "right": "atlas:concept:004515",
+   "sourceConceptId": "FMA20227",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:000888",
+   "right": "atlas:concept:004516",
+   "sourceConceptId": "FMA24228",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:000998",
+   "right": "atlas:concept:004517",
+   "sourceConceptId": "FMA24965",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:000999",
+   "right": "atlas:concept:004518",
+   "sourceConceptId": "FMA24966",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:002794",
+   "right": "atlas:concept:004519",
+   "sourceConceptId": "FMA7184",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  },
+  {
+   "left": "atlas:concept:002839",
+   "right": "atlas:concept:004520",
+   "sourceConceptId": "FMA72062",
+   "reason": "Same source concept ID, but no retained source part is shared between these model manifests."
+  }
+ ]
+}

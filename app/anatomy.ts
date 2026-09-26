@@ -23,7 +23,7 @@ export interface Concept {id:string;name:string;elements:string[]}
 export interface Atlas {version:string;sex?:'male'|'female';source?:string;scope?:string;reconstruction?:boolean;parts:Part[];concepts:Concept[];chunks:{url:string;bytes:number;gzip?:string;gzipBytes?:number}[];triangles:number}
 export type View = 'three-quarter'|'front'|'back'|'side';
 export type BreastView = 'tissue'|'cutaway'|'muscle';
-export interface SceneState {breastView:BreastView;inspectorOpen?:boolean;explode:number;visible:SystemId[];selected:string[];isolate:boolean;view:View;rotate:boolean;reset:number}
+export interface SceneState {breastView:BreastView;inspectorOpen?:boolean;explode:number;visible:SystemId[];selected:string[];isolate:boolean;view:View;rotate:boolean;reset:number;regionId?:string|null;areaId?:string|null;depth?:number;hiddenRepresentationIds?:readonly string[]}
 export const DEFAULT_VISIBLE:SystemId[] = ['cardiac','sensory','skeletal','muscular','arterial','venous','nervous','respiratory','digestive','urinary','lymphatic','endocrine','reproductive','connective','mammary'];
 export const EXPLANATIONS:Record<string,string> = {
  'adipose tissue of left breast':'Fat contributes to breast volume and contour, surrounding the mammary glands and ducts. It lies superficial to the pectoral muscles and does not contract to move the shoulder.',
@@ -40,13 +40,4 @@ export const EXPLANATIONS:Record<string,string> = {
 };
 export function explanation(name:string,system:SystemId,sex:'male'|'female'='male'){return EXPLANATIONS[name.toLowerCase()] ?? (sex==='female'&&system==='reproductive'?'Female reproductive structures represented in this reference include the ovaries, uterine tubes, uterus, cervix, vagina, and supporting tissues.':SYSTEMS.find(s=>s.id===system)?.description) ?? '';}
 
-/** Selection/isolation can reveal a hidden tissue without changing the chest preset. */
-export function partIsVisible(part:Part,state:SceneState,lookups?:{selected:Set<string>;visible:Set<SystemId>}){
- const selected=lookups?lookups.selected.has(part.id):state.selected.includes(part.id);
- if(state.isolate)return selected;
- if(selected)return true;
- if(!(lookups?lookups.visible.has(part.system):state.visible.includes(part.system)))return false;
- const breast=part.system==='mammary'||(part.system==='integumentary'&&part.id.startsWith('VH_F_')&&part.id!=='VH_F_skin');
- if(breast&&state.breastView==='muscle')return false;
- return !(state.breastView==='cutaway'&&/^VH_F_fat_[LR]$/.test(part.id));
-}
+export {partIsVisible} from './visibility.ts';

@@ -1,0 +1,49 @@
+{
+ "schemaVersion": 1,
+ "sourceCommit": "3ae9e8f60679f827a74b7e1150beac799033577f",
+ "mappingRevision": "core-crosswalk-v1",
+ "models": [
+  {
+   "modelId": "bp3d-male-4",
+   "manifest": "/models/atlas.json",
+   "sha256": "c359f4bcd2cba90b7411d66d5e9fc04dc81294d46cd5c1e8b212c824f2e5bbee",
+   "partCount": 2234,
+   "conceptCount": 3432,
+   "chunkCount": 15,
+   "source": "BodyParts3D",
+   "manifestVersion": "BodyParts3D 4.0",
+   "modelKind": "reference",
+   "route": "/male",
+   "experimental": false,
+   "frameId": "bp3d-male-4-stage"
+  },
+  {
+   "modelId": "hra-female-v1.5",
+   "manifest": "/models/atlas-female.json",
+   "sha256": "1525c07d2ed46263c086d1c6b2e52eb9b8f8985746e9a8259036bd6e1d9a1ced",
+   "partCount": 888,
+   "conceptCount": 1073,
+   "chunkCount": 10,
+   "source": "Human Reference Atlas",
+   "manifestVersion": "HRA united-female v1.5",
+   "modelKind": "reference",
+   "route": null,
+   "experimental": false,
+   "frameId": "hra-female-v1.5-stage"
+  },
+  {
+   "modelId": "female-study-v3",
+   "manifest": "/models/atlas-female-reconstructed.json",
+   "sha256": "8dbb477d6865f2e7cba968b76cf8ae86b1eac905105ae1195c1e78b2e2e65c09",
+   "partCount": 2245,
+   "conceptCount": 4248,
+   "chunkCount": 17,
+   "source": "BodyParts3D framework + HRA female anatomy",
+   "manifestVersion": "Female study prototype v3",
+   "modelKind": "study",
+   "route": "/female",
+   "experimental": true,
+   "frameId": "female-study-v3-stage"
+  }
+ ]
+}
