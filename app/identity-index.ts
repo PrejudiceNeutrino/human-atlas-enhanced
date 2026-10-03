@@ -42,6 +42,7 @@ export interface IdentityIndex {
  modelId: ModelId;
  sourceConceptCanonicalId(sourceConceptId:string):CanonicalConceptId|undefined;
  representationForPart(sourcePartId:string):MeshRepresentation|undefined;
+ representation(id:RepresentationId):MeshRepresentation|undefined;
  resolve(conceptId:CanonicalConceptId,modelId:ModelId):ResolvedRepresentation[];
  concept(id:CanonicalConceptId):AnatomicalConcept|undefined;
  representationCount:number;
@@ -73,6 +74,7 @@ export function createIdentityIndex(model:Model,atlas:Atlas,sidecar:IdentitySide
   const side=partLaterality(part);
   representations.set(part.id,{id:representationId(model.id,part.id),modelId:model.id,geometrySetId:setId,frameId:model.frameId,sourcePartId:{namespace:namespaceForPartId(part.id),value:part.id,relation:'exact',evidence:{sourceId:model.id,sourcePath:model.manifestUrl},review:{status:'source-derived'}},chunkIndex:part.chunk,offsets:{positions:part.positions,normals:part.normals,indices:part.indices},vertexCount:part.vertexCount,indexCount:part.indexCount,bounds:part.bounds,laterality:side.side,lateralityBasis:side.basis,available:true});
  }
+ const byRepresentationId=new Map([...representations.values()].map(r=>[r.id,r]));
  const byCanonical=new Map<CanonicalConceptId,ResolvedRepresentation[]>();
  let linkCount=0;
  for(const mapping of mappings){
@@ -93,6 +95,7 @@ export function createIdentityIndex(model:Model,atlas:Atlas,sidecar:IdentitySide
   modelId:model.id,
   sourceConceptCanonicalId:id=>sourceToCanonical.get(id),
   representationForPart:id=>representations.get(id),
+  representation:id=>byRepresentationId.get(id),
   resolve:(id,requestedModel)=>requestedModel===model.id?[...(byCanonical.get(id)??[])]:[],
   concept:id=>concepts.get(id),
   representationCount:representations.size,

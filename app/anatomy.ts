@@ -1,3 +1,5 @@
+import type {RepresentationId} from './identity-contracts';
+
 export type SystemId = 'skeletal'|'muscular'|'arterial'|'venous'|'nervous'|'digestive'|'respiratory'|'urinary'|'reproductive'|'lymphatic'|'endocrine'|'integumentary'|'connective'|'sensory'|'cardiac'|'pregnancy'|'mammary';
 export const SYSTEMS: {id:SystemId;name:string;color:string;description:string}[] = [
  {id:'skeletal',name:'Skeleton',color:'#e2d9ba',description:'Bones form the supporting framework of the body, protect organs, and provide attachment points for muscles. Their internal tissue also stores minerals and produces blood cells.'},
@@ -23,7 +25,7 @@ export interface Concept {id:string;name:string;elements:string[]}
 export interface Atlas {version:string;sex?:'male'|'female';source?:string;scope?:string;reconstruction?:boolean;parts:Part[];concepts:Concept[];chunks:{url:string;bytes:number;gzip?:string;gzipBytes?:number}[];triangles:number}
 export type View = 'three-quarter'|'front'|'back'|'side';
 export type BreastView = 'tissue'|'cutaway'|'muscle';
-export interface SceneState {breastView:BreastView;inspectorOpen?:boolean;explode:number;visible:SystemId[];selected:string[];isolate:boolean;view:View;rotate:boolean;reset:number;regionId?:import('./region-contracts').RegionId;regionPartIds?:ReadonlySet<string>;regionFocus?:[number[],number[]]|null;areaId?:import('./area-contracts').AreaId|null;areaPartIds?:ReadonlySet<string>;areaFocus?:[number[],number[]]|null;depth?:number;hiddenRepresentationIds?:readonly string[]}
+export interface SceneState {breastView:BreastView;inspectorOpen?:boolean;explode:number;visible:SystemId[];selected:string[];isolate:boolean;view:View;rotate:boolean;reset:number;regionId?:import('./region-contracts').RegionId;regionPartIds?:ReadonlySet<string>;regionFocus?:[number[],number[]]|null;areaId?:import('./area-contracts').AreaId|null;areaPartIds?:ReadonlySet<string>;areaFocus?:[number[],number[]]|null;depth?:number;hiddenRepresentationIds?:readonly RepresentationId[];hiddenPartIds?:ReadonlySet<string>}
 export const DEFAULT_VISIBLE:SystemId[] = ['cardiac','sensory','skeletal','muscular','arterial','venous','nervous','respiratory','digestive','urinary','lymphatic','endocrine','reproductive','connective','mammary'];
 export const EXPLANATIONS:Record<string,string> = {
  'adipose tissue of left breast':'Fat contributes to breast volume and contour, surrounding the mammary glands and ducts. It lies superficial to the pectoral muscles and does not contract to move the shoulder.',

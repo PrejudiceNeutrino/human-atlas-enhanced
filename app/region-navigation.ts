@@ -6,7 +6,7 @@ export function selectRegion(state:SceneState,regionId:RegionId):SceneState {
  return {...state,regionId,regionPartIds:undefined,regionFocus:undefined,areaId:null,areaPartIds:undefined,areaFocus:undefined,selected:[],isolate:false,explode:0,rotate:false,reset:state.reset+1};
 }
 export function resetViewer(state:SceneState,visible:SystemId[]):SceneState {
- return {breastView:'tissue',visible,regionId:BODY_REGION,selected:[],isolate:false,explode:0,rotate:false,view:'three-quarter',reset:state.reset+1};
+ return {breastView:'tissue',visible,regionId:BODY_REGION,hiddenRepresentationIds:[],selected:[],isolate:false,explode:0,rotate:false,view:'three-quarter',reset:state.reset+1};
 }
 export function switchRegionModel(state:SceneState,visible:SystemId[]):SceneState {
  return {...resetViewer(state,visible),regionId:state.regionId??BODY_REGION,areaId:state.areaId??null};

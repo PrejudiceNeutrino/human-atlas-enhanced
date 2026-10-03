@@ -28,7 +28,9 @@
     "check:areas": "node --experimental-strip-types scripts/generate-areas.mjs --check",
     "validate:areas": "node --experimental-strip-types scripts/validate-areas.mjs",
     "test:areas": "node --experimental-strip-types --test scripts/areas.test.mjs",
-    "test:areas:browser": "node --experimental-strip-types scripts/areas-browser-smoke.mjs"
+    "test:areas:browser": "node --experimental-strip-types scripts/areas-browser-smoke.mjs",
+    "test:hide-restore": "node --experimental-strip-types --test scripts/hide-restore.test.mjs",
+    "test:hide-restore:browser": "node --experimental-strip-types scripts/hide-restore-browser-smoke.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

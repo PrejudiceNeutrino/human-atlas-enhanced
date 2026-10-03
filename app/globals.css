@@ -131,3 +131,7 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
  .view-controls{top:max(244px,calc(env(safe-area-inset-top) + 226px))}
  .search-panel{top:max(238px,calc(env(safe-area-inset-top) + 220px))}
 }
+
+/* Per-structure actions retain the inspector and Systems control hierarchy. */
+.detail-actions .hide-structure{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px}
+.restore-hidden{min-height:44px;flex-shrink:0}
