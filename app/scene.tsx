@@ -8,6 +8,7 @@ import {decodeModelResponse} from './model-download';
 import {PointerTap} from './pointer-tap';
 import {SYSTEMS,partIsVisible,type Atlas,type Part,type SceneState} from './anatomy';
 import {isBodySurface,resolveVisibility} from './visibility';
+import {fitRegionCamera} from './region-camera';
 interface Props {atlas:Atlas;state:SceneState;onSelect:(id:string)=>void;onProgress:(n:number)=>void;onError:(s:string)=>void}
 export default function AnatomyScene({atlas,state,onSelect,onProgress,onError}:Props){
  const host=useRef<HTMLDivElement>(null),latest=useRef(state),select=useRef(onSelect);
@@ -83,7 +84,13 @@ export default function AnatomyScene({atlas,state,onSelect,onProgress,onError}:P
    lastState=null;loaded++;onProgress(Math.round(loaded/atlas.chunks.length*100));dirty=true;
   };
   (async()=>{try{let cursor=0;await Promise.all(Array.from({length:3},async()=>{while(cursor<atlas.chunks.length){const i=cursor++;await loadChunk(i);}}));if(!disposed){ready=true;dirty=true;}}catch(e){if(!disposed)onError(e instanceof Error?e.message:'Could not load the anatomy.');}})();
-  const fit=(view:string,extent=0)=>{
+  const fit=(view:SceneState['view'],extent=0)=>{
+   const focus=latest.current.regionFocus;
+   if(focus&&extent<.1&&!latest.current.isolate){
+    const w=el.clientWidth,h=el.clientHeight,mobile=w<768,landscape=h<600&&w>h;
+    const framing=fitRegionCamera(focus,view,camera.fov,w,h,{left:mobile?20:w>1100?285:245,right:w-(mobile?62:90),top:landscape?130:mobile?260:130,bottom:h-(mobile?175:200)});
+    camera.setViewOffset(w,h,framing.offsetX,framing.offsetY,w,h);controls.target.copy(framing.center);camera.position.copy(framing.center).addScaledVector(framing.direction,framing.distance);controls.update();dirty=true;return;
+   }
    const aspect=camera.aspect,mobile=el.clientWidth<768,portrait=mobile&&el.clientHeight>=el.clientWidth,normalDistance=mobile?Math.max(4.5,1.8*el.clientHeight/Math.max(160,el.clientHeight-(portrait?440:350))/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))):4;
    const reservedHeight=portrait?440:mobile?350:270;const availableAspect=Math.max(.35,(el.clientWidth-(mobile?40:340))/Math.max(160,el.clientHeight-reservedHeight));const atlasDistance=Math.max(packingHeight,packingWidth/availableAspect)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))*(el.clientHeight/Math.max(160,el.clientHeight-reservedHeight))*1.08;
    if(portrait&&!latest.current.isolate)camera.setViewOffset(el.clientWidth,el.clientHeight,0,-40,el.clientWidth,el.clientHeight);else if(!latest.current.isolate)camera.clearViewOffset();
@@ -146,7 +153,7 @@ export default function AnatomyScene({atlas,state,onSelect,onProgress,onError}:P
   const timer=new T.Timer();let lastExtent=-1;
   const animate=()=>{
    if(disposed)return;frame=requestAnimationFrame(animate);timer.update();const dt=Math.min(timer.getDelta(),.05),s=latest.current;
-   const changed=lastState?.visible!==s.visible||lastState?.selected!==s.selected||lastState?.isolate!==s.isolate||lastState?.breastView!==s.breastView;
+   const changed=lastState?.visible!==s.visible||lastState?.selected!==s.selected||lastState?.isolate!==s.isolate||lastState?.breastView!==s.breastView||lastState?.regionPartIds!==s.regionPartIds;
    const moving=Math.abs(amount-s.explode)>.0001;
    if(moving){amount=T.MathUtils.damp(amount,s.explode,8,dt);dirty=true;}
    if(changed||moving||lastExtent<0){

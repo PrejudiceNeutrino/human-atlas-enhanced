@@ -13,7 +13,7 @@ export interface VisibilityContext {
  hasSolid?: boolean;
 }
 export interface VisibilityResult {displayed:boolean; pickable:boolean; packingEligible:boolean}
-export type VisibilityState = Pick<SceneState,'isolate'|'breastView'>;
+export type VisibilityState = Pick<SceneState,'isolate'|'breastView'|'regionPartIds'>;
 
 export function isBodySurface(part:Pick<Part,'system'|'id'>):boolean {
  return part.system==='integumentary'&&!(part.id.startsWith('VH_F_')&&part.id!=='VH_F_skin');
@@ -24,7 +24,8 @@ export function resolveVisibility(part:Part,state:VisibilityState,context:Visibi
  if(context.loaded===false||context.hidden)return {displayed:false,pickable:false,packingEligible:false};
  if(state.isolate&&!selected)return {displayed:false,pickable:false,packingEligible:false};
  if(!state.isolate&&!selected){
-  if(!context.systems.has(part.system)||context.regionMember===false||context.areaMember===false||context.depthMember===false)return {displayed:false,pickable:false,packingEligible:false};
+  const regionMember=context.regionMember??state.regionPartIds?.has(part.id);
+  if(!context.systems.has(part.system)||regionMember===false||context.areaMember===false||context.depthMember===false)return {displayed:false,pickable:false,packingEligible:false};
   const breast=part.system==='mammary'||(part.system==='integumentary'&&part.id.startsWith('VH_F_')&&part.id!=='VH_F_skin');
   if(breast&&state.breastView==='muscle')return {displayed:false,pickable:false,packingEligible:false};
   if(state.breastView==='cutaway'&&/^VH_F_fat_[LR]$/.test(part.id))return {displayed:false,pickable:false,packingEligible:false};

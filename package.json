@@ -18,7 +18,12 @@
     "test:female-enhancements": "python3 scripts/female-enhancement-runner.test.py",
     "test:viewer-enhancements": "node --experimental-strip-types --test scripts/anatomy-search.test.mjs scripts/cursor-zoom.test.mjs",
     "validate:core-contracts": "node --experimental-strip-types scripts/validate-core-contracts.mjs",
-    "test:core-contracts": "node --experimental-strip-types --test scripts/core-contracts.test.mjs"
+    "test:core-contracts": "node --experimental-strip-types --test scripts/core-contracts.test.mjs",
+    "generate:regions": "node --experimental-strip-types scripts/generate-regions.mjs --write",
+    "check:regions": "node --experimental-strip-types scripts/generate-regions.mjs --check",
+    "validate:regions": "node --experimental-strip-types scripts/validate-regions.mjs",
+    "test:regions": "node --experimental-strip-types --test scripts/regions.test.mjs",
+    "test:regions:browser": "node --experimental-strip-types scripts/regions-browser-smoke.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

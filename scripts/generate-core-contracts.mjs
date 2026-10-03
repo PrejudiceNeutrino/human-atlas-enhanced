@@ -59,7 +59,7 @@ const audit={schemaVersion:1,mappingRevision:crosswalk.mappingRevision,canonical
 function output(filename,value){
  const content=JSON.stringify(value,null,1)+'\n';
  if(write){fs.mkdirSync(path.dirname(filename),{recursive:true});fs.writeFileSync(filename,content);}
- else if(!fs.existsSync(filename)||fs.readFileSync(filename,'utf8')!==content)throw new Error(`Pinned contract drift: ${path.relative(root,filename)}. Review source changes before regenerating.`);
+ else if(!fs.existsSync(filename)||fs.readFileSync(filename,'utf8').replace(/\r\n/g,'\n')!==content)throw new Error(`Pinned contract drift: ${path.relative(root,filename)}. Review source changes before regenerating.`);
 }
 output(crosswalkPath,crosswalk);output(snapshotPath,snapshot);output(auditPath,audit);
 console.log(JSON.stringify({models:snapshots.map(({modelId,partCount,conceptCount,chunkCount})=>({modelId,partCount,conceptCount,chunkCount})),canonicalConceptCount:audit.canonicalConceptCount,sourceConceptMappingCount:audit.sourceConceptMappingCount,candidateCount:audit.candidateCount,mode:write?'write':'check'},null,2));
