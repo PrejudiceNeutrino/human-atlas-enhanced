@@ -118,3 +118,16 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
  .region-status{bottom:174px;max-width:calc(100vw - 32px);width:max-content;font-size:10px}
 }
 @media(max-height:600px) and (orientation:landscape){.region-status{bottom:145px}}
+
+/* Teaching stations extend the compact navigation without changing the Systems panel. */
+.anatomy-choice{flex-wrap:wrap}
+.area-choice{flex-basis:100%}
+.area-choice>label{width:85px;flex-shrink:0}
+.area-scope{font-size:10px;line-height:1.4;color:#65717e;max-width:365px;margin:6px 0 0}
+@media(min-width:768px) and (min-height:601px){.layers-panel{top:270px}}
+@media(max-width:767px) and (orientation:portrait){
+ .area-choice>label{position:static;width:85px;height:auto;clip-path:none;overflow:visible}
+ .area-scope{max-width:298px;font-size:9px}
+ .view-controls{top:max(244px,calc(env(safe-area-inset-top) + 226px))}
+ .search-panel{top:max(238px,calc(env(safe-area-inset-top) + 220px))}
+}

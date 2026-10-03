@@ -1,7 +1,7 @@
 import {createRoot} from 'react-dom/client';
 import {lazy, Suspense} from 'react';
 import {Analytics} from '@vercel/analytics/react';
-import {BODY_REGION,type RegionId} from '../app/region-contracts';
+import {parseNavigation,navigationSearch} from '../app/area-navigation';
 import {modelForRoute} from '../app/model-registry';
 import '../app/globals.css';
 
@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')!).render(
   <>
     {model ? (
       <Suspense fallback={<main className="route-loading" role="status">Opening {model} anatomy…</main>}>
-        <AtlasViewer model={model} initialRegion={(new URLSearchParams(window.location.search).get('region')??BODY_REGION) as RegionId} onModelChange={(next,regionId) => window.location.assign(`/${next}${regionId===BODY_REGION?'':`?region=${encodeURIComponent(regionId)}`}`)}/>
+        <AtlasViewer model={model} initialRegion={parseNavigation(window.location.search).regionId} initialArea={parseNavigation(window.location.search).areaId} onModelChange={(next,regionId,areaId) => window.location.assign(`/${next}${navigationSearch(window.location.search,regionId,areaId)}`)}/>
       </Suspense>
     ) : (
       <main className="route-loading">

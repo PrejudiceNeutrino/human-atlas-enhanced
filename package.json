@@ -23,7 +23,12 @@
     "check:regions": "node --experimental-strip-types scripts/generate-regions.mjs --check",
     "validate:regions": "node --experimental-strip-types scripts/validate-regions.mjs",
     "test:regions": "node --experimental-strip-types --test scripts/regions.test.mjs",
-    "test:regions:browser": "node --experimental-strip-types scripts/regions-browser-smoke.mjs"
+    "test:regions:browser": "node --experimental-strip-types scripts/regions-browser-smoke.mjs",
+    "generate:areas": "node --experimental-strip-types scripts/generate-areas.mjs --write",
+    "check:areas": "node --experimental-strip-types scripts/generate-areas.mjs --check",
+    "validate:areas": "node --experimental-strip-types scripts/validate-areas.mjs",
+    "test:areas": "node --experimental-strip-types --test scripts/areas.test.mjs",
+    "test:areas:browser": "node --experimental-strip-types scripts/areas-browser-smoke.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

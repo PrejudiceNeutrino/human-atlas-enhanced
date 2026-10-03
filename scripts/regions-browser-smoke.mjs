@@ -82,7 +82,7 @@ try{
    await layers(mobile);await buttonText('Skeleton');await closeLayers(mobile);
    const expected=atlas.parts.filter(p=>regionalIds.has(p.id)&&p.system==='skeletal').length;assert.equal(await count(),expected);
    // Project source triangle centers in this model's regional camera, then pick with real input.
-   let picked=false;const area={left:mobile?20:285,right:width-(mobile?62:90),top:mobile?260:130,bottom:height-(mobile?175:200)};
+   let picked=false;const area={left:mobile?20:285,right:width-(mobile?62:90),top:mobile?320:130,bottom:height-(mobile?175:200)};
    const framing=fitRegionCamera(regionBounds(rs),'three-quarter',34,width,height,area),camera=new T.PerspectiveCamera(34,width/height,.005,100);
    camera.setViewOffset(width,height,framing.offsetX,framing.offsetY,width,height);camera.position.copy(framing.center).addScaledVector(framing.direction,framing.distance);camera.lookAt(framing.center);camera.updateMatrixWorld();
    const buffers=new Map();
