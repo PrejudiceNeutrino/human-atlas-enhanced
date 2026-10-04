@@ -1,3 +1,4 @@
+import '../app/theme-store';
 import {createRoot} from 'react-dom/client';
 import {lazy, Suspense} from 'react';
 import {Analytics} from '@vercel/analytics/react';

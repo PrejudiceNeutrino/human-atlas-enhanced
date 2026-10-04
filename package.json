@@ -32,7 +32,9 @@
     "test:hide-restore": "node --experimental-strip-types --test scripts/hide-restore.test.mjs",
     "test:hide-restore:browser": "node --experimental-strip-types scripts/hide-restore-browser-smoke.mjs",
     "test:viewer-polish": "node --experimental-strip-types --test scripts/viewer-polish.test.mjs",
-    "test:viewer-polish:browser": "node --experimental-strip-types scripts/viewer-polish-browser-smoke.mjs"
+    "test:viewer-polish:browser": "node --experimental-strip-types scripts/viewer-polish-browser-smoke.mjs",
+    "test:viewer-interaction": "node --experimental-strip-types --test scripts/viewer-interaction.test.mjs",
+    "test:viewer-interaction:browser": "node --experimental-strip-types scripts/viewer-interaction-browser-smoke.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

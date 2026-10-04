@@ -9,9 +9,11 @@ import {PointerTap} from './pointer-tap';
 import {SYSTEMS,partIsVisible,type Atlas,type Part,type SceneState} from './anatomy';
 import {isBodySurface,resolveVisibility} from './visibility';
 import {fitRegionCamera} from './region-camera';
-interface Props {atlas:Atlas;state:SceneState;onSelect:(id:string)=>void;onProgress:(n:number)=>void;onError:(s:string)=>void}
-export default function AnatomyScene({atlas,state,onSelect,onProgress,onError}:Props){
+import {SCENE_THEMES,type ResolvedTheme} from './theme';
+interface Props {theme:ResolvedTheme;atlas:Atlas;state:SceneState;onSelect:(id:string)=>void;onProgress:(n:number)=>void;onError:(s:string)=>void}
+export default function AnatomyScene({atlas,state,theme,onSelect,onProgress,onError}:Props){
  const host=useRef<HTMLDivElement>(null),latest=useRef(state),select=useRef(onSelect);
+ const latestTheme=useRef(theme);latestTheme.current=theme;
  latest.current=state;select.current=onSelect;
  useEffect(()=>{
   const el=host.current!;let disposed=false,frame=0,dirty=true,ready=false,lastView='',lastReset=-1,lastIsolate='',layoutKey='',amount=0;
@@ -32,6 +34,8 @@ export default function AnatomyScene({atlas,state,onSelect,onProgress,onError}:P
   const platform=new T.Mesh(new T.CylinderGeometry(.68,.7,.028,100),new T.MeshStandardMaterial({color:0xeeeeec,metalness:.12,roughness:.67}));platform.position.y=-.016;scene.add(platform);
   const ring=new T.Mesh(new T.RingGeometry(.63,.632,128),new T.MeshBasicMaterial({color:0x8c969f,transparent:true,opacity:.4,side:T.DoubleSide}));ring.rotation.x=-Math.PI/2;ring.position.y=.001;scene.add(ring);
   const innerRing=new T.Mesh(new T.RingGeometry(.55,.551,128),new T.MeshBasicMaterial({color:0xa4aeb8,transparent:true,opacity:.16,side:T.DoubleSide}));innerRing.rotation.x=-Math.PI/2;innerRing.position.y=.001;scene.add(innerRing);
+  let appliedTheme:ResolvedTheme|null=null;
+  const applyTheme=()=>{const mode=latestTheme.current;if(mode===appliedTheme)return;const colors=SCENE_THEMES[mode];renderer.setClearColor(colors.background);ground.material.color.set(colors.ground);platform.material.color.set(colors.platform);ring.material.color.set(colors.ring);innerRing.material.color.set(colors.innerRing);markerMaterial.color.set(colors.marker);appliedTheme=mode;dirty=true;};
   const configureDataTexture=(texture:T.DataTexture)=>{texture.magFilter=T.NearestFilter;texture.minFilter=T.NearestFilter;texture.generateMipmaps=false;texture.colorSpace=T.NoColorSpace;texture.needsUpdate=true;return texture;};
   const width=T.MathUtils.ceilPowerOfTwo(atlas.parts.length),data=new Float32Array(width*4),partTexture=configureDataTexture(new T.DataTexture(data,width,1,T.RGBAFormat,T.FloatType));
   const selectedData=new Uint8Array(width*4),selectionTexture=configureDataTexture(new T.DataTexture(selectedData,width,1));
@@ -153,6 +157,7 @@ export default function AnatomyScene({atlas,state,onSelect,onProgress,onError}:P
   const timer=new T.Timer();let lastExtent=-1;
   const animate=()=>{
    if(disposed)return;frame=requestAnimationFrame(animate);timer.update();const dt=Math.min(timer.getDelta(),.05),s=latest.current;
+   applyTheme();
    const hiddenChanged=lastState?.hiddenPartIds!==s.hiddenPartIds;
    const changed=hiddenChanged||lastState?.visible!==s.visible||lastState?.selected!==s.selected||lastState?.isolate!==s.isolate||lastState?.breastView!==s.breastView||lastState?.regionPartIds!==s.regionPartIds||lastState?.areaPartIds!==s.areaPartIds||lastState?.areaId!==s.areaId;
    const moving=Math.abs(amount-s.explode)>.0001;
