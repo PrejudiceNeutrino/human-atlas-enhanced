@@ -41,7 +41,9 @@
     "test:area-scopes": "node --experimental-strip-types --test scripts/area-scopes.test.mjs",
     "test:area-scopes:browser": "node --experimental-strip-types scripts/area-scopes-browser-smoke.mjs",
     "test:anatomy-discovery": "node --experimental-strip-types --test scripts/anatomy-discovery.test.mjs",
-    "test:anatomy-discovery:browser": "node --experimental-strip-types scripts/anatomy-discovery-browser-smoke.mjs"
+    "test:anatomy-discovery:browser": "node --experimental-strip-types scripts/anatomy-discovery-browser-smoke.mjs",
+    "test:presentation": "node --experimental-strip-types --test scripts/presentation.test.mjs",
+    "test:presentation:browser": "node --experimental-strip-types scripts/presentation-browser-smoke.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

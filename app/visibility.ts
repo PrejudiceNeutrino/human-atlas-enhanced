@@ -13,7 +13,7 @@ export interface VisibilityContext {
  hasSolid?: boolean;
 }
 export interface VisibilityResult {displayed:boolean; pickable:boolean; packingEligible:boolean}
-export type VisibilityState = Pick<SceneState,'isolate'|'breastView'|'regionPartIds'|'areaId'|'areaPartIds'|'hiddenPartIds'>;
+export type VisibilityState = Pick<SceneState,'isolate'|'isolatedPartIds'|'breastView'|'regionPartIds'|'areaId'|'areaPartIds'|'hiddenPartIds'>;
 
 export function isBodySurface(part:Pick<Part,'system'|'id'>):boolean {
  return part.system==='integumentary'&&!(part.id.startsWith('VH_F_')&&part.id!=='VH_F_skin');
@@ -22,7 +22,7 @@ export function isBodySurface(part:Pick<Part,'system'|'id'>):boolean {
 export function resolveVisibility(part:Part,state:VisibilityState,context:VisibilityContext):VisibilityResult {
  const selected=context.selected.has(part.id);
  if(context.loaded===false||context.hidden||state.hiddenPartIds?.has(part.id))return {displayed:false,pickable:false,packingEligible:false};
- if(state.isolate&&!selected)return {displayed:false,pickable:false,packingEligible:false};
+ if(state.isolate&&!(state.isolatedPartIds?.has(part.id)??selected))return {displayed:false,pickable:false,packingEligible:false};
  if(!state.isolate&&!selected){
   // Active teaching stations supersede incomplete broad-region evidence.
   const navigationMember=state.areaId?(context.areaMember??state.areaPartIds?.has(part.id)??false):(context.regionMember??state.regionPartIds?.has(part.id));

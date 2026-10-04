@@ -175,9 +175,7 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 .layer-presets{margin-top:6px}.hidden-empty{font-size:12px;color:var(--ui-muted);padding:0 4px}
 .restore-hidden{width:100%;margin-top:10px}
 .top-actions .theme-trigger{width:44px;min-width:44px;justify-content:center;gap:0;padding:0;background:var(--control);border:1px solid var(--border);border-radius:10px}
-.theme-trigger>svg{display:none}.theme-trigger>span:not(.sr-only){display:flex!important}
-.theme-menu{min-width:140px;padding:4px;background:var(--popover);color:var(--popover-foreground);border:1px solid var(--border);border-radius:10px}
-.theme-menu [role=option]{min-height:44px;font-size:13px}
+.theme-trigger>svg{display:block}
 :root[data-theme=dark] .glass{border-color:var(--border);box-shadow:0 2px 5px #00000012,0 16px 48px #00000020}
 :root[data-theme=dark] .vignette{background:radial-gradient(ellipse at 51% 43%,transparent 35%,#10182024 100%)}
 :root[data-theme=dark] .system-row [data-slot=switch-thumb]{background:#e8edf1}
@@ -239,3 +237,47 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
  .discovery-panel{height:min(580px,calc(100dvh - 82px),var(--available-height));padding:8px 12px;gap:4px}
  .discovery-tabs,.discovery-content{gap:6px}
 }
+
+/* Phase 4.9: one startup sequence, short scene fades, shared surface motion. */
+:root{--motion-duration:180ms;--motion-curve:cubic-bezier(.2,.7,.2,1)}
+.studio{background:var(--background);transition:background-color var(--motion-duration) var(--motion-curve)}
+.scene canvas{opacity:0;transition:opacity 280ms var(--motion-curve)}
+.scene[data-revealed=true] canvas{opacity:1}
+.studio[data-scene-leaving=true] .scene canvas{transition-duration:120ms}
+@keyframes atlas-enter-up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes atlas-enter-left{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:translateX(0)}}
+@keyframes atlas-enter-right{from{opacity:0;transform:translateX(8px)}to{opacity:1;transform:translateX(0)}}
+@keyframes atlas-enter-dock{from{opacity:0;transform:translate(-50%,8px)}to{opacity:1;transform:translate(-50%,0)}}
+@keyframes atlas-enter-fade{from{opacity:0}to{opacity:1}}
+.identity>.eyebrow{animation:atlas-enter-up 280ms var(--motion-curve) backwards}
+.identity>h1{animation:atlas-enter-up 280ms var(--motion-curve) 35ms backwards}
+.identity>.identity-meta{animation:atlas-enter-up 280ms var(--motion-curve) 60ms backwards}
+.anatomy-choice{animation:atlas-enter-up 280ms var(--motion-curve) 90ms backwards}
+.layers-panel{animation:atlas-enter-left 280ms var(--motion-curve) 130ms backwards}
+.top-actions{animation:atlas-enter-right 280ms var(--motion-curve) 170ms backwards}
+.view-controls,.studio-footer{animation:atlas-enter-fade 280ms var(--motion-curve) 210ms backwards}
+.bottom-dock{animation:atlas-enter-dock 280ms var(--motion-curve) 240ms backwards}
+.scene-caption{animation:atlas-enter-fade 280ms var(--motion-curve) 240ms backwards}
+.glass,.top-actions button,.anatomy-choice [data-slot=select-trigger],.visibility-tab-list,.visibility-tab-list [role=tab],.hidden-count,.display-popover{transition:background-color var(--motion-duration) var(--motion-curve),border-color var(--motion-duration) var(--motion-curve),color var(--motion-duration) var(--motion-curve)}
+.system-row{transition:opacity var(--motion-duration) var(--motion-curve)}
+.detail-sheet,.discovery-panel,.display-popover,.anatomy-choice-menu{animation-duration:var(--motion-duration)!important;animation-timing-function:var(--motion-curve)!important}
+.loading{pointer-events:none;animation:atlas-loading-fade 180ms var(--motion-curve)}
+.loading.error{pointer-events:auto;z-index:45;animation:none}
+.display-popover{width:272px;max-width:calc(100vw - 24px);padding:18px;gap:18px;border:1px solid var(--border);border-radius:12px;box-shadow:0 8px 28px #00000018}
+.display-popover [data-slot=popover-title]{font-size:13px;font-weight:600}
+.display-setting>div{display:flex;justify-content:space-between;align-items:center;color:var(--ui-secondary);font-size:12px;margin-bottom:9px}
+.display-setting output{font-variant-numeric:tabular-nums;color:var(--ui-muted)}
+.display-setting [data-slot=slider]{padding:10px 0}
+.display-popover .reset-display{min-height:40px;font-size:12px;color:var(--ui-link)}
+@media(prefers-reduced-motion:reduce){
+ .scene canvas{transition:none}
+ .identity>.eyebrow,.identity>h1,.identity>.identity-meta,.anatomy-choice,.layers-panel,.top-actions,.bottom-dock,.view-controls,.studio-footer,.scene-caption{animation:none!important}
+}
+
+@keyframes atlas-loading-fade{from{opacity:0}to{opacity:1}}
+
+/* Give Display sliders explicit dimensions for the existing Base UI orientation contract. */
+.display-setting [data-slot=slider]{width:100%}
+.display-setting [data-slot=slider-track]{height:4px;background:var(--muted)}
+.display-setting [data-slot=slider-range]{height:100%;background:var(--primary)}
+.display-setting [data-slot=slider-thumb]{width:14px;height:14px;border:2px solid var(--card);background:var(--primary);box-shadow:0 0 0 1px var(--border)}

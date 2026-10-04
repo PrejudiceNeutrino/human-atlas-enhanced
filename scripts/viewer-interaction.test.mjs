@@ -23,7 +23,7 @@ for(const model of Object.values(MODEL_REGISTRY)){
   const hidden=identity.representationForPart(other.id).id;
   const state={...base,selected:group.elements,isolate:true,explode,regionPartIds:new Set(),areaPartIds:new Set(),hiddenRepresentationIds:[hidden]};
   assert.deepEqual(display(state),group.elements);
-  const next=selectIncludedMember(state,identity,member);assert.equal(next.isolate,true);assert.deepEqual(next.selected,[member]);assert.deepEqual(display(next),[member]);
+  const next=selectIncludedMember(state,identity,member);assert.equal(next.isolate,true);assert.deepEqual(next.selected,[member]);assert.deepEqual(display(next),group.elements);
   for(const key of ['regionId','areaId','visible','hiddenRepresentationIds','explode','view','reset','regionPartIds','areaPartIds'])assert.strictEqual(next[key],state[key]);
   const surrounding={...next,isolate:false,selected:[]};assert.equal(display(surrounding).length,0,'Disabled systems/empty station remain excluded after isolate exit');
   assert.deepEqual(selectIncludedMember(state,identity,other.id),state,'Non-member cannot drill into group');
@@ -35,7 +35,7 @@ for(const model of Object.values(MODEL_REGISTRY)){
   assert.equal(selectRepresentations({...state,isolate:true},identity,[other.id]).isolate,false);
   const hidden=hideSelectedRepresentations({...state,selected:[member,other.id]},identity);
   const restored=selectIncludedMember({...hidden,selected:group.elements,isolate:true},identity,member);
-  assert.deepEqual(restored.hiddenRepresentationIds,[identity.representationForPart(other.id).id]);assert.deepEqual(display(restored),[member]);
+  assert.deepEqual(restored.hiddenRepresentationIds,[identity.representationForPart(other.id).id]);assert.deepEqual(display(restored),group.elements);
  });
  test(`${model.id}: reversible systems uses All inventory and preserves independent dissection/navigation/counts`,()=>{
   const all=allSystemsForAtlas(atlas);assert.ok(all.includes('reproductive'));assert.ok(!all.includes('pregnancy'));
@@ -55,19 +55,19 @@ function host(saved=null,dark=false){
  return {controller,values,applied,listeners,os:dark=>{media.matches=dark;listeners.forEach(fn=>fn());}};
 }
 test('Theme modes, explicit Light default and invalid preferences',()=>{
- assert.deepEqual(THEME_MODES,['light','dark','system']);
+ assert.deepEqual(THEME_MODES,['light','dark']);
  for(const value of [null,undefined,'',{},'auto','DARK'])assert.equal(normalizeTheme(value),'light');
  for(const saved of [null,'invalid'])assert.deepEqual(host(saved,true).controller.getSnapshot(),{mode:'light',resolved:'light'});
- assert.equal(resolveTheme('system',true),'dark');assert.equal(resolveTheme('system',false),'light');
+ assert.equal(normalizeTheme('system'),'light');assert.equal(resolveTheme('light',true),'light');
 });
 test('Every explicit mode persists and survives initialization',()=>{
  const h=host();for(const mode of THEME_MODES){h.controller.setMode(mode);assert.equal(h.values.get(THEME_KEY),mode);assert.equal(host(h.values.get(THEME_KEY)).controller.getSnapshot().mode,mode);}
 });
-test('System follows OS changes, explicit modes ignore OS, snapshots notify only presentation changes',()=>{
- const h=host('system');let notified=0;const unsubscribe=h.controller.subscribe(()=>notified++);
- h.os(true);assert.equal(h.controller.getSnapshot().resolved,'dark');assert.equal(notified,1);
- h.controller.setMode('light');const snapshot=h.controller.getSnapshot();h.os(false);h.os(true);assert.strictEqual(h.controller.getSnapshot(),snapshot);
- h.controller.setMode('dark');h.os(false);assert.equal(h.controller.getSnapshot().resolved,'dark');
+test('Retired System migrates to Light once; explicit modes ignore OS and notify only changes',()=>{
+ const h=host('system',true);assert.equal(h.values.get(THEME_KEY),'light');assert.deepEqual(h.controller.getSnapshot(),{mode:'light',resolved:'light'});
+ let notified=0;const unsubscribe=h.controller.subscribe(()=>notified++);
+ h.os(true);assert.equal(notified,0);h.controller.setMode('dark');assert.equal(notified,1);
+ const snapshot=h.controller.getSnapshot();h.os(false);assert.strictEqual(h.controller.getSnapshot(),snapshot);h.controller.setMode('dark');assert.equal(notified,1);
  unsubscribe();h.controller.dispose();assert.equal(h.listeners.size,0);
 });
 test('Unavailable storage is safe; theme controller never changes anatomy or URL',()=>{

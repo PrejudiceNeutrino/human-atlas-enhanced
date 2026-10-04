@@ -77,7 +77,7 @@ try{
  })()`});
  const report=[];
  const representative=['orbit','circle-of-willis','heart','lung-roots','porta-hepatis','celiac-trunk','kidneys','brachial-plexus','cubital-fossa','popliteal-fossa','foot'];
- for(const [width,height] of (process.env.SMOKE_QUICK?[[1440,900]]:[[1440,900],[390,844]]))for(const route of (process.env.SMOKE_QUICK?['male']:['male','female'])){
+ for(const [width,height] of (process.env.SMOKE_DESKTOP?[[1440,900]]:process.env.SMOKE_QUICK?[[1440,900]]:[[1440,900],[390,844]]))for(const route of (process.env.SMOKE_QUICK?['male']:['male','female'])){
   const mobile=width<768;
   await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
   await send('Page.navigate',{url:`${baseUrl}/${route}`});await ready();

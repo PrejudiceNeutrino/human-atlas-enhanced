@@ -106,7 +106,7 @@ try{
   const left=width<768?0:285,top=width<768?320:130,right=width-(width<768?62:90),bottom=height-(width<768?175:200);
   return evaluate(`new Promise((resolve,reject)=>{const img=new Image();img.onerror=reject;img.onload=()=>{const canvas=document.createElement('canvas');canvas.width=img.width;canvas.height=img.height;const ctx=canvas.getContext('2d');ctx.drawImage(img,0,0);const pixels=ctx.getImageData(${left},${top},${right-left},${bottom-top}).data,colors=new Set();let teal=0;for(let i=0;i<pixels.length;i+=4){const r=pixels[i],g=pixels[i+1],b=pixels[i+2];if(g>100&&b>60&&r<g*.78&&b>r*1.15&&g>b*1.04){teal++;colors.add(r+','+g+','+b);}}resolve({tealPixels:teal,shadedColors:colors.size});};img.src=${JSON.stringify('data:image/png;base64,'+shot.data)};})`);
  };
- for(const [width,height] of (process.env.SMOKE_QUICK?(process.env.SMOKE_QUICK==='mobile'?[[390,844]]:[[1440,900]]):[[1440,900],[390,844]]))for(const route of (process.env.SMOKE_QUICK?['male']:['male','female'])){
+ for(const [width,height] of (process.env.SMOKE_DESKTOP?[[1440,900]]:process.env.SMOKE_QUICK?(process.env.SMOKE_QUICK==='mobile'?[[390,844]]:[[1440,900]]):[[1440,900],[390,844]]))for(const route of (process.env.SMOKE_QUICK?['male']:['male','female'])){
   const mobile=width<768;
   await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
   await send('Page.navigate',{url:`${baseUrl}/${route}`});await ready();

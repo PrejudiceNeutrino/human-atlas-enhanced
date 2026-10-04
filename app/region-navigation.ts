@@ -3,7 +3,7 @@ import {BODY_REGION,type RegionId} from './region-contracts.ts';
 
 /** Region navigation preserves layers; a model switch preserves only canonical navigation. */
 export function selectRegion(state:SceneState,regionId:RegionId):SceneState {
- return {...state,regionId,regionPartIds:undefined,regionFocus:undefined,areaId:null,areaPartIds:undefined,areaFocus:undefined,selected:[],isolate:false,explode:0,rotate:false,reset:state.reset+1};
+ return {...state,regionId,regionPartIds:undefined,regionFocus:undefined,areaId:null,areaPartIds:undefined,areaFocus:undefined,selected:[],isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,explode:0,rotate:false,reset:state.reset+1};
 }
 export function resetViewer(state:SceneState,visible:SystemId[]):SceneState {
  return {breastView:'tissue',visible,regionId:BODY_REGION,hiddenRepresentationIds:[],selected:[],isolate:false,explode:0,rotate:false,view:'three-quarter',reset:state.reset+1};

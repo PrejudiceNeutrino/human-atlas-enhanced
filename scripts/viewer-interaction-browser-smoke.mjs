@@ -108,11 +108,11 @@ try{
   return evaluate(`new Promise((resolve,reject)=>{const img=new Image();img.onerror=reject;img.onload=()=>{const canvas=document.createElement('canvas');canvas.width=img.width;canvas.height=img.height;const ctx=canvas.getContext('2d');ctx.drawImage(img,0,0);const pixels=ctx.getImageData(${left},${top},${right-left},${bottom-top}).data,colors=new Set();let teal=0;for(let i=0;i<pixels.length;i+=4){const r=pixels[i],g=pixels[i+1],b=pixels[i+2];if(g>100&&b>60&&r<g*.78&&b>r*1.15&&g>b*1.04){teal++;colors.add(r+','+g+','+b);}}resolve({tealPixels:teal,shadedColors:colors.size});};img.src=${JSON.stringify('data:image/png;base64,'+shot.data)};})`);
  };
 
- const chooseTheme=async mode=>{await selectMenu('[aria-label="Choose theme"]',mode);await waitFor(`document.documentElement.dataset.theme===${JSON.stringify(mode==='system'?'dark':mode)}`,'theme applied');};
+ const chooseTheme=async mode=>{if(await evaluate('document.documentElement.dataset.theme')!==mode)await click('.theme-trigger');await waitFor(`document.documentElement.dataset.theme===${JSON.stringify(mode)}`,'theme applied');};
  const snapshot=()=>evaluate("({gpu:window.__atlasTestRender.pixels,selection:window.__atlasTestSelection,camera:window.__atlasTestCamera,url:location.href,explode:document.querySelector('.explode-control output').textContent,hidden:document.querySelector('.hidden-count').textContent,isolate:!!document.querySelector('.detail-sheet.is-isolated'),reference:document.querySelector('.structure-meta strong')?.textContent})");
  const assertSnapshot=async before=>{const after=await snapshot();const {camera:ignoredBefore,...previous}=before,{camera:ignoredAfter,...current}=after;assert.deepEqual(current,previous);await assertCamera(before.camera);};
  const isolated=()=>evaluate("!!document.querySelector('.detail-sheet.is-isolated')");
- for(const [width,height] of (process.env.SMOKE_QUICK==='landscape'?[[740,420]]:process.env.SMOKE_QUICK?[[1440,900]]:[[1440,900],[390,844],[740,420]]))for(const route of ['male','female']){
+ for(const [width,height] of (process.env.SMOKE_DESKTOP?[[1440,900]]:process.env.SMOKE_QUICK==='landscape'?[[740,420]]:process.env.SMOKE_QUICK?[[1440,900]]:[[1440,900],[390,844],[740,420]]))for(const route of ['male','female']){
   const mobile=width<768||height<600;
   await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
   await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:'dark'}]});
@@ -134,7 +134,7 @@ try{
    await search(group.name);await buttonText('Isolate structure');await checkCount(22);
    if(exploded)await explode();await delay(700);
    await screenshot(`${route}-${width}-${exploded?'exploded':'assembled'}-isolated-group`);
-   await click('.member-list button');await waitFor("document.querySelector('.structure-meta span:last-child strong').textContent==='1'",'member selected');await checkCount(1);assert.equal(await isolated(),true);
+   await click('.member-list button');await waitFor("document.querySelector('.structure-meta span:last-child strong').textContent==='1'",'member selected');await checkCount(22);assert.equal(await isolated(),true);
    assert.equal(await evaluate("document.querySelector('.detail-actions .primary-action').textContent.includes('Show surrounding anatomy')"),true);
    const selectedPixels=await evaluate('window.__atlasTestSelection'),member=atlas.parts.find((p,i)=>selectedPixels[i*4]>0);assert.equal(member.id,groupIds[0]);
    assert.equal(await hiddenCount(),1);assert.equal(await evaluate("document.querySelector('#region-choice').value"),'atlas:region:shoulder');assert.equal(await evaluate("document.querySelector('#area-choice').value"),'atlas:area:axilla');
@@ -181,9 +181,9 @@ try{
   await reset();await search('left clavicle');await hide();await region('shoulder');await search(single.name);await buttonText('Isolate structure');await explode();await delay(800);
   // Utility controls are intentionally hidden beside the landscape inspector; close inspector without clearing isolate.
   await closeInspector();await delay(700);const beforeTheme=await snapshot(),canvasIdentity=await evaluate("(()=>{window.__savedCanvas=document.querySelector('.scene canvas');return true})()"),networkBefore=network.filter(u=>/\/(models|identity|regions|areas)\//.test(u)).length;
-  for(const mode of ['dark','light','system']){await chooseTheme(mode);await delay(400);await assertSnapshot(beforeTheme);assert.equal(await evaluate("window.__savedCanvas===document.querySelector('.scene canvas')"),true);}
+  for(const mode of ['dark','light']){await chooseTheme(mode);await delay(400);await assertSnapshot(beforeTheme);assert.equal(await evaluate("window.__savedCanvas===document.querySelector('.scene canvas')"),true);}
   assert.equal(network.filter(u=>/\/(models|identity|regions|areas)\//.test(u)).length,networkBefore,'Theme does not refetch any anatomy/data');
-  await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:'light'}]});await waitFor("document.documentElement.dataset.theme==='light'",'System follows OS change');
+  await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:'light'}]});assert.equal(await evaluate('document.documentElement.dataset.theme'),'light','Binary choice ignores OS');
   await chooseTheme('dark');await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:'light'}]});assert.equal(await evaluate("document.documentElement.dataset.theme"),'dark');
   await send('Page.reload');await ready();assert.equal(await evaluate("document.documentElement.dataset.theme"),'dark');assert.equal(await hiddenCount(),0);assert.equal(await evaluate("document.querySelector('.explode-control output').textContent"),'0%');
   const colors=[];
@@ -202,7 +202,7 @@ try{
   }
   await chooseTheme('dark');await reset();
   const menus=[];
-  for(const selector of ['[aria-label="Choose male or female anatomy"]','#region-choice','#area-choice','[aria-label="Choose theme"]']){
+  for(const selector of ['[aria-label="Choose male or female anatomy"]','#region-choice','#area-choice']){
    await click(selector);await waitFor("!!document.querySelector('[data-slot=select-content][data-open]')",'dark menu');
    const color=await evaluate("getComputedStyle(document.querySelector('[data-slot=select-content][data-open]')).backgroundColor");assert.notEqual(color,'rgb(255, 255, 255)');menus.push({selector,color});await screenshot(`${route}-${width}-dark-menu-${menus.length}`);
    await send('Input.dispatchKeyEvent',{type:'keyDown',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});await send('Input.dispatchKeyEvent',{type:'keyUp',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});await delay(200);

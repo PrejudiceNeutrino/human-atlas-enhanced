@@ -17,7 +17,7 @@ import {defaultVisibleForModel} from '../app/viewer-polish.ts';
 const baseUrl=process.env.ATLAS_URL??'http://127.0.0.1:3017';
 const chrome=process.env.CHROME_PATH??['C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','/usr/bin/google-chrome','/usr/bin/chromium'].find(p=>fs.existsSync(p));
 if(!chrome)throw new Error('Set CHROME_PATH to an installed Chromium executable.');
-const output=path.resolve('work/phase-2-browser');fs.mkdirSync(output,{recursive:true});
+const output=path.resolve(process.env.SMOKE_OUTPUT??'work/phase-2-browser');fs.mkdirSync(output,{recursive:true});
 const profile=fs.mkdtempSync(path.join(output,'chrome-'));
 const processHandle=spawn(chrome,['--headless=new','--remote-debugging-port=0',`--user-data-dir=${profile}`,'--no-first-run','--no-default-browser-check','--disable-extensions',...(process.env.CHROME_ANGLE?[`--use-angle=${process.env.CHROME_ANGLE}`,'--enable-unsafe-swiftshader']:[]),'about:blank'],{stdio:['ignore','ignore','pipe'],windowsHide:true});
 processHandle.stderr.on('data',d=>fs.appendFileSync(path.join(output,'chrome.log'),d));
@@ -70,7 +70,7 @@ try{
   }
  })()`});
  const report=[];
- for(const [width,height] of (process.env.SMOKE_QUICK?[[1440,900]]:[[1440,900],[390,844]]))for(const route of (process.env.SMOKE_QUICK?['male']:['male','female'])){
+ for(const [width,height] of (process.env.SMOKE_DESKTOP?[[1440,900]]:process.env.SMOKE_QUICK?[[1440,900]]:[[1440,900],[390,844]]))for(const route of (process.env.SMOKE_QUICK?['male']:['male','female'])){
   const mobile=width<768;
   await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
   await send('Page.navigate',{url:`${baseUrl}/${route}`});await ready();
