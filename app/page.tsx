@@ -2,7 +2,7 @@ import {flushSync} from 'react-dom';
 import {registerAtlasTools} from './agent-tools';
 import {useCallback,useEffect,useMemo,useRef,useState} from 'react';
 import {Activity,ArrowUpRight,ChevronRight,EyeOff,Focus,Info,Layers3,Pause,RotateCcw,RotateCw,Search,X} from 'lucide-react';
-import {Select,SelectTrigger,SelectValue,SelectContent,SelectItem} from '@/components/ui/select';
+import {Select,SelectTrigger,SelectValue,SelectContent,SelectItem,SelectGroup,SelectLabel} from '@/components/ui/select';
 import {Button} from '@/components/ui/button';
 import {Badge} from '@/components/ui/badge';
 import {Slider} from '@/components/ui/slider';
@@ -20,10 +20,11 @@ import {selectRegion,resetViewer,switchRegionModel} from './region-navigation';
 import {createAreaIndex,type AreaIndex} from './areas';
 import type {AreaDataset,AreaId} from './area-contracts';
 import {selectArea,normalizeNavigation,navigationSearch} from './area-navigation';
+import {defaultVisibleForModel,teachingAreaMenuGroups,isAreaRelevantToRegion,scopeRepresentations,systemCountsForScope} from './viewer-polish';
 import {DEFAULT_VISIBLE,partIsVisible,SYSTEMS,EXPLANATIONS,explanation,type Atlas,type Concept,type SceneState,type SystemId,type View} from './anatomy';
 type AnatomySex='male'|'female';
 type AnatomyModel=ViewerModel;
-const defaultVisible=(model:AnatomyModel):SystemId[]=>model==='female-reference'?[...DEFAULT_VISIBLE,'integumentary']:[...DEFAULT_VISIBLE];
+const defaultVisible=defaultVisibleForModel;
 const initial:SceneState={breastView:'tissue',explode:0,visible:DEFAULT_VISIBLE,selected:[],isolate:false,view:'three-quarter',rotate:false,reset:0,regionId:BODY_REGION,hiddenRepresentationIds:[]};
 export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGION,initialArea=null}:{model:AnatomyModel;onModelChange:(model:AnatomyModel,regionId:RegionId,areaId:AreaId|null)=>void;initialRegion?:RegionId;initialArea?:AreaId|null}){
  const modelRecord=modelForViewer(model);
@@ -54,8 +55,11 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
   const names=new Map<string,number>();for(const {part} of items)names.set(part.name,(names.get(part.name)??0)+1);
   return items.map(item=>({...item,reference:names.get(item.part.name)!>1?(item.part.provenance?.sourceId??item.part.id):null}));
  },[identity,state.hiddenRepresentationIds,parts]);
- const counts=useMemo(()=>Object.fromEntries(SYSTEMS.map(s=>[s.id,atlas?.parts.filter(p=>p.system===s.id).length??0])),[atlas]);
- const activeSystems=SYSTEMS.filter(s=>counts[s.id]>0);
+ const inventoryCounts=useMemo(()=>Object.fromEntries(SYSTEMS.map(s=>[s.id,atlas?.parts.filter(p=>p.system===s.id).length??0])),[atlas]);
+ const scope=useMemo(()=>atlas&&identity&&regionIndex&&areaIndex?scopeRepresentations(atlas,identity,regionIndex,areaIndex,regionId,areaId):[],[atlas,identity,regionIndex,areaIndex,regionId,areaId]);
+ const counts=useMemo(()=>atlas?systemCountsForScope(scope,atlas,modelRecord.id):{} as Record<SystemId,number>,[scope,atlas,modelRecord.id]);
+ const areaGroups=useMemo(()=>regionIndex&&areaIndex?teachingAreaMenuGroups(regionIndex,areaIndex):[],[regionIndex,areaIndex]);
+ const activeSystems=SYSTEMS.filter(s=>inventoryCounts[s.id]>0);
  const adultSystems=activeSystems.filter(s=>s.id!=='pregnancy');
  const organSystems=activeSystems.filter(s=>['cardiac','respiratory','digestive','urinary','endocrine','reproductive'].includes(s.id)).map(s=>s.id);
  const matchesVisible=(ids:SystemId[])=>state.visible.length===ids.length&&ids.every(id=>state.visible.includes(id));
@@ -77,13 +81,41 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
   {atlas&&identity&&<AnatomyScene key={modelRecord.id} atlas={atlas} state={{...displayState,inspectorOpen:details&&selectedParts.length>0}} onSelect={choosePart} onProgress={n=>{setProgress(n);if(n===100)setError('');}} onError={setError}/>}
   <div className="vignette"/>
   {atlas&&(areaId||regionId!==BODY_REGION)&&<div className="region-status glass" role="status">{areaId?(areaRepresentations.length===0?'Teaching area unavailable on this model. Choose None or another area.':visibleCount===0?'No area pieces match the current systems. Enable a system.':`${teachingArea?.name} · ${areaRepresentations.length} area pieces · ${visibleCount} visible`):regionalRepresentations.length===0?'Region unavailable on this model. Choose another region or Whole body.':visibleCount===0?'No pieces match the current systems. Enable a system or choose Whole body.':`${regionalRepresentations.length} regional pieces · ${visibleCount} visible`}</div>}
-  <header className="identity"><div className="eyebrow"><span className="status-dot"/> INTERACTIVE ANATOMY</div><h1><a className="atlas-home-link" href="/" aria-label="Human Atlas home">Human Atlas</a><Badge variant="outline" className="edition">3D</Badge></h1><div className="identity-meta">{atlas?atlas.parts.length.toLocaleString():reconstructed?'2,245':sex==='female'?'888':'2,234'} modeled pieces <span>·</span> {source}</div><div className="anatomy-choice"><Select value={model} onValueChange={value=>{if(value==='male'||value==='female')onModelChange(value,regionId,areaId);}} items={[{value:'male',label:'Male anatomy'},{value:'female',label:'Female anatomy'}]}><SelectTrigger aria-label="Choose male or female anatomy"><SelectValue/></SelectTrigger><SelectContent className="anatomy-choice-menu"><SelectItem value="male">Male anatomy</SelectItem><SelectItem value="female">Female anatomy</SelectItem></SelectContent></Select><div className="region-choice"><label htmlFor="region-choice">Region</label><select id="region-choice" aria-label="Choose anatomical region" value={regionId} disabled={!regionIndex} onChange={e=>pickRegion(e.target.value as RegionId)}>{(regionIndex?.regions()??[{id:BODY_REGION,name:'Whole body'}]).map(r=><option key={r.id} value={r.id}>{r.name}</option>)}</select></div><div className="region-choice area-choice"><label htmlFor="area-choice">Teaching area</label><select id="area-choice" aria-label="Choose teaching area" title={teachingArea?.scopeNote} aria-describedby={teachingArea?.scopeNote?"area-scope":undefined} value={areaId??""} disabled={!areaIndex} onChange={e=>pickArea((e.target.value||null) as AreaId|null)}><option value="">None</option>{(areaIndex?.areasForRegion(regionId)??[]).map(a=><option key={a.id} value={a.id}>{a.name}</option>)}</select></div></div>{teachingArea?.scopeNote&&<p id="area-scope" className="area-scope">{areaId==="atlas:area:brachial-plexus"?"Corridor station · named plexus trunks incomplete.":"Frozen male-source station · female-specific membership pending."}</p>}{sex==='female'&&<p className="coverage-note">{reconstructed?'Female study model · estimated proportions':'Partial skeleton & muscle coverage'}</p>}</header>
+  <header className="identity"><div className="eyebrow"><span className="status-dot"/> INTERACTIVE ANATOMY</div><h1><a className="atlas-home-link" href="/" aria-label="Human Atlas home">Human Atlas</a><Badge variant="outline" className="edition">3D</Badge></h1><div className="identity-meta">{atlas?atlas.parts.length.toLocaleString():reconstructed?'2,245':sex==='female'?'888':'2,234'} modeled pieces <span>·</span> {source}</div><div className="anatomy-choice">
+   <Select value={model} onValueChange={value=>{if(value==='male'||value==='female')onModelChange(value,regionId,areaId);}} items={[{value:'male',label:'Male anatomy'},{value:'female',label:'Female anatomy'}]}>
+    <SelectTrigger aria-label="Choose male or female anatomy"><SelectValue/></SelectTrigger>
+    <SelectContent className="anatomy-choice-menu"><SelectItem value="male" data-value="male">Male anatomy</SelectItem><SelectItem value="female" data-value="female">Female anatomy</SelectItem></SelectContent>
+   </Select>
+   <div className="region-choice"><label htmlFor="region-choice">Region</label>
+    <Select value={regionId} disabled={!regionIndex} onValueChange={value=>{if(value)pickRegion(value as RegionId);}} items={(regionIndex?.regions()??[{id:BODY_REGION,name:'Whole body'}]).map(r=>({value:r.id,label:r.name}))}>
+     <SelectTrigger id="region-choice" value={regionId} aria-label="Choose anatomical region"><SelectValue/></SelectTrigger>
+     <SelectContent className="anatomy-choice-menu">{(regionIndex?.regions()??[{id:BODY_REGION,name:'Whole body'}]).map(r=><SelectItem key={r.id} value={r.id} data-value={r.id}>{r.name}</SelectItem>)}</SelectContent>
+    </Select>
+   </div>
+   <div className="region-choice area-choice"><label htmlFor="area-choice">Teaching area</label>
+    <Select value={areaId??''} disabled={!areaIndex} onValueChange={value=>pickArea((value||null) as AreaId|null)} items={[{value:'',label:'None'},...(areaIndex?.areas()??[]).map(a=>({value:a.id,label:a.name}))]}>
+     <SelectTrigger id="area-choice" value={areaId??''} aria-label="Choose teaching area" title={teachingArea?.scopeNote} aria-describedby={teachingArea?.scopeNote?'area-scope':undefined}><SelectValue/></SelectTrigger>
+     <SelectContent className="anatomy-choice-menu teaching-area-menu">
+      <SelectItem value="" data-value="">None</SelectItem>
+      {areaGroups.map(({region,areas})=><SelectGroup key={region.id}>
+       <SelectLabel data-current-region={region.id===regionId}>{region.name}</SelectLabel>
+       {areas.map(a=><SelectItem key={a.id} value={a.id} data-value={a.id} data-region-relevant={isAreaRelevantToRegion(a,regionId)}>
+        {a.name}{isAreaRelevantToRegion(a,regionId)&&<><span className="area-relevance-dot" aria-hidden="true"/><span className="sr-only">Affiliated with {regionIndex?.region(regionId)?.name}</span></>}
+       </SelectItem>)}
+      </SelectGroup>)}
+     </SelectContent>
+    </Select>
+   </div>
+  </div>{teachingArea?.scopeNote&&<p id="area-scope" className="area-scope">{areaId==="atlas:area:brachial-plexus"?"Corridor station · named plexus trunks incomplete.":"Frozen male-source station · female-specific membership pending."}</p>}{sex==='female'&&<p className="coverage-note">{reconstructed?'Female study model · estimated proportions':'Partial skeleton & muscle coverage'}</p>}</header>
   <nav className="top-actions" aria-label="Explorer panels"><Button variant="ghost" className={panel==='search'?'active':''} onClick={()=>openPanel('search')} aria-label="Search anatomy"><Search size={18}/><span>Find a structure</span><kbd>/</kbd></Button><Button variant="ghost" className="icon-button" aria-label="About this atlas" onClick={()=>{setDetails(false);setPanel(null);setAbout(true);}}><Info size={18}/></Button></nav>
   <section className={`layers-panel glass ${panel==='layers'?'mobile-open':''}`} aria-label="Anatomical layers">
    <div className="panel-heading"><span>Systems</span><Button variant="ghost" className="mobile-only icon-button" onClick={()=>setPanel(null)} aria-label="Close systems"><X size={18}/></Button><Badge variant="secondary" className="desktop-only small-number">{activeSystems.length}</Badge></div>
    <div className="layer-presets"><Button variant="ghost" aria-pressed={matchesVisible(adultSystems.map(x=>x.id))} onClick={()=>setState(s=>({...s,selected:[],isolate:false,visible:adultSystems.map(x=>x.id),breastView:'tissue'}))}>All</Button><Button variant="ghost" aria-pressed={state.visible.length===1&&state.visible[0]==='skeletal'} onClick={()=>setState(s=>({...s,selected:[],isolate:false,visible:['skeletal']}))}>Skeleton</Button><Button variant="ghost" aria-pressed={matchesVisible(organSystems)} onClick={()=>setState(s=>({...s,selected:[],isolate:false,visible:organSystems}))}>Organs</Button></div>
    {reconstructed&&<div className="breast-views" role="group" aria-label="Chest tissue view"><span>Chest detail</span><div>{([{id:'tissue',label:'Tissue'},{id:'cutaway',label:'Glands'},{id:'muscle',label:'Pectorals'}] as const).map(view=><Button key={view.id} variant="ghost" aria-pressed={state.breastView===view.id} onClick={()=>{setDetails(false);setState(s=>({...s,breastView:view.id,selected:[],isolate:false,visible:[...new Set([...s.visible.filter(id=>id!=='integumentary'&&(view.id!=='muscle'||id!=='mammary')),...(view.id==='muscle'?[]:['mammary' as const]),'muscular' as const])]}));}}>{view.label}</Button>)}</div><p>{state.breastView==='tissue'?'Adapted HRA fat and connective tissue.':state.breastView==='cutaway'?'Outer fat envelope removed to reveal glands and ducts.':'Breast tissues hidden to reveal the chest muscles.'}</p></div>}
-   <div className="system-list">{activeSystems.map(s=><div className={`system-row ${state.visible.includes(s.id)?'enabled':''}`} key={s.id}><Button variant="ghost" className="system-name" title={`Show only ${s.name.toLowerCase()}`} onClick={()=>setState(v=>({...v,visible:[s.id],isolate:false,selected:[],breastView:s.id==='mammary'||s.id==='integumentary'?'tissue':v.breastView}))}><span className="system-dot" style={{background:s.color}}/>{s.name}<span className="system-count">{counts[s.id]}</span></Button><Switch checked={state.visible.includes(s.id)} onCheckedChange={()=>toggle(s.id)} aria-label={`Show ${s.name.toLowerCase()}`} /></div>)}</div>
+   <div className="system-list">{activeSystems.map(s=><div className={`system-row ${state.visible.includes(s.id)?'enabled':''} ${counts[s.id]===0?'empty-scope':''}`} key={s.id}>
+    <Button variant="ghost" className="system-name" disabled={counts[s.id]===0} title={counts[s.id]===0?`No ${s.name.toLowerCase()} pieces in this scope`:`Show only ${s.name.toLowerCase()}`} onClick={()=>setState(v=>({...v,visible:[s.id],isolate:false,selected:[],breastView:s.id==='mammary'||s.id==='integumentary'?'tissue':v.breastView}))}><span className="system-dot" style={{background:s.color}}/>{s.name}<span className="system-count">{counts[s.id]}</span></Button>
+    <Switch disabled={counts[s.id]===0} checked={state.visible.includes(s.id)} onCheckedChange={()=>toggle(s.id)} aria-label={`Show ${s.name.toLowerCase()}`} />
+   </div>)}</div>
    {hiddenItems.length>0&&<section className="hidden-structures" aria-label="Hidden structures"><h3>Hidden structures <span className="hidden-count">{hiddenItems.length}</span></h3><ul className="hidden-list" tabIndex={0} aria-label="Hidden structures, newest first">{hiddenItems.map(({representation,part,reference})=><li key={representation.id} data-representation-id={representation.id}><span className="hidden-name" title={part.name}>{part.name}{reference&&<small>{reference}</small>}</span><Button variant="ghost" aria-label={`Restore ${part.name}${reference?` (${reference})`:''}`} onClick={()=>setState(s=>restoreHiddenRepresentation(s,representation.id))}>Restore</Button></li>)}</ul><Button variant="ghost" className="secondary-action restore-hidden" onClick={()=>setState(restoreHiddenRepresentations)}>Restore all</Button></section>}
    <div className="panel-foot"><span>{visibleCount.toLocaleString()} pieces visible</span><Button variant="ghost" onClick={()=>setState(s=>({...s,visible:[],selected:[],isolate:false}))}>Hide all</Button></div>
   </section>

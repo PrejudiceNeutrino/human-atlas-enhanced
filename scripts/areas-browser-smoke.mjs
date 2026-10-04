@@ -12,6 +12,8 @@ import {regionBounds} from '../app/regions.ts';
 import {fitRegionCamera} from '../app/region-camera.ts';
 import * as T from 'three';
 import {gunzipSync} from 'node:zlib';
+import {selectBrowserHelpers} from './select-browser-helpers.mjs';
+import {defaultVisibleForModel} from '../app/viewer-polish.ts';
 
 const baseUrl=process.env.ATLAS_URL??'http://127.0.0.1:3017';
 const chrome=process.env.CHROME_PATH??['C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','/usr/bin/google-chrome','/usr/bin/chromium'].find(p=>fs.existsSync(p));
@@ -37,13 +39,14 @@ try{
  const mouse=async(x,y)=>{await send('Input.dispatchMouseEvent',{type:'mousePressed',x,y,button:'left',clickCount:1});await send('Input.dispatchMouseEvent',{type:'mouseReleased',x,y,button:'left',clickCount:1});};
  const click=async selector=>{const p=await evaluate(`(()=>{const e=document.querySelector(${JSON.stringify(selector)});if(!e)throw new Error('Missing '+${JSON.stringify(selector)});e.scrollIntoView({block:'nearest'});const r=e.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2};})()`);await mouse(p.x,p.y);await delay(150);};
  const buttonText=async(text,scope='document')=>{await evaluate(`(()=>{const e=[...${scope}.querySelectorAll('button')].find(e=>e.textContent.trim()===${JSON.stringify(text)}||(${JSON.stringify(scope)}.includes('system-list')&&e.textContent.trim().startsWith(${JSON.stringify(text)})));if(!e)throw new Error('Missing button '+${JSON.stringify(text)});e.click();})()`);await delay(150);};
- const region=async slug=>{await evaluate(`(()=>{const e=document.querySelector('#region-choice');e.value=${JSON.stringify(`atlas:region:${slug}`)};e.dispatchEvent(new Event('change',{bubbles:true}));})()`);await delay(300);assert.equal(await evaluate("document.querySelector('#region-choice').value"),`atlas:region:${slug}`);};
+ const {select:selectMenu,options:menuOptions}=selectBrowserHelpers({evaluate,click,waitFor,delay});
+ const region=slug=>selectMenu('#region-choice',`atlas:region:${slug}`);
  const count=async()=>Number((await evaluate("document.querySelector('.panel-foot span').textContent")).replace(/[^0-9]/g,''));
  const settled=()=>waitFor("window.__atlasTestRender?.maxChange<0.0001",'rendered explosion offsets settled');
  const assembled=async()=>{const expected=await count();await waitFor(`window.__atlasTestRender?.maxOffset<0.0005&&window.__atlasTestRender.displayed===${expected}`,'rendered anatomy assembled');};
  const screenshot=async name=>{const r=await send('Page.captureScreenshot',{format:'png'});fs.writeFileSync(path.join(output,name+'.png'),Buffer.from(r.data,'base64'));};
  failureCapture=async()=>{await screenshot('failure');fs.writeFileSync(path.join(output,'failure.json'),JSON.stringify(await evaluate("({url:location.href,text:document.body.innerText,options:[...document.querySelectorAll('[role=option]')].map(e=>({text:e.textContent,rect:e.getBoundingClientRect().toJSON()}))})"),null,2));};
- const ready=()=>waitFor("!!document.querySelector('.scene canvas')&&!document.querySelector('.loading')&&document.querySelector('#region-choice')?.options.length===10",'all model geometry loaded');
+ const ready=async()=>{await delay(400);await waitFor("!!document.querySelector('.scene canvas')&&!document.querySelector('.loading')&&!!document.querySelector('#region-choice')",'all model geometry loaded');};
  const layers=async mobile=>{if(mobile)await click('[aria-label="Open system layers"]');};
  const closeLayers=async mobile=>{if(mobile)await click('[aria-label="Close systems"]');};
  const search=async(name='heart')=>{
@@ -53,10 +56,7 @@ try{
   const pos=await evaluate(`(()=>{const e=[...document.querySelectorAll('[role=option]')].find(e=>e.querySelector('.search-result-name')?.textContent===${JSON.stringify(name)});const r=e.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`);await mouse(pos.x,pos.y);
   await waitFor(`document.querySelector('.detail-sheet .structure-title')?.textContent===${JSON.stringify(name)}`,'search selected');
  };
- const area=async slug=>{
-  await evaluate(`(()=>{const e=document.querySelector('#area-choice');e.value=${JSON.stringify(slug?`atlas:area:${slug}`:'')};e.dispatchEvent(new Event('change',{bubbles:true}));})()`);
-  await waitFor(`document.querySelector('#area-choice').value===${JSON.stringify(slug?`atlas:area:${slug}`:'')}`,'area selected');await delay(300);
- };
+ const area=slug=>selectMenu('#area-choice',slug?`atlas:area:${slug}`:'');
  const noOverlap=async()=>{
   assert.equal(await evaluate('document.documentElement.scrollWidth<=innerWidth'),true,'No horizontal overflow');
   assert.equal(await evaluate("(()=>{const a=document.querySelector('.anatomy-choice').getBoundingClientRect(),b=document.querySelector('.view-controls').getBoundingClientRect();return a.right<=b.left||b.right<=a.left||a.bottom<=b.top||b.bottom<=a.top})()"),true,'Navigation and camera controls do not overlap');
@@ -82,14 +82,16 @@ try{
   await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
   await send('Page.navigate',{url:`${baseUrl}/${route}`});await ready();
   const model=MODEL_REGISTRY[route==='male'?'bp3d-male-4':'female-study-v3'],atlas=read(`public${model.manifestUrl}`),identity=createIdentityIndex(model,atlas,sidecar),index=createAreaIndex(dataset,sidecar,regions,identity);
-  const whole=route==='male'?2229:2239;assert.equal(await count(),whole);await assembled();await noOverlap();await screenshot(`${route}-${width}-whole`);
+  const whole=route==='male'?(process.env.POLISH_BASELINE==='1'?2229:2217):2239;assert.equal(await count(),whole);await assembled();await noOverlap();await screenshot(`${route}-${width}-whole`);
   // Verify ordinary region navigation before and after station mode.
   await region('shoulder');assert.equal(await count(),122);assert.equal(await evaluate("document.querySelector('#area-choice').value"),'');await region('body');
-  assert.equal(await evaluate("document.querySelector('#area-choice').options.length"),18);
+  assert.equal(await menuOptions('#area-choice'),18);
   assert.equal(await evaluate("document.querySelector('#area-choice').getBoundingClientRect().height>=44"),true,'Area control has a touch-sized target');
   await evaluate("document.querySelector('#area-choice').focus()");
   await send('Input.dispatchKeyEvent',{type:'keyDown',key:'ArrowDown',code:'ArrowDown',windowsVirtualKeyCode:40});
   await send('Input.dispatchKeyEvent',{type:'keyUp',key:'ArrowDown',code:'ArrowDown',windowsVirtualKeyCode:40});
+  await delay(200);
+  if(await evaluate("document.querySelector('#area-choice').tagName!=='SELECT'")){await send('Input.dispatchKeyEvent',{type:'keyDown',key:'ArrowDown',code:'ArrowDown',windowsVirtualKeyCode:40});await send('Input.dispatchKeyEvent',{type:'keyUp',key:'ArrowDown',code:'ArrowDown',windowsVirtualKeyCode:40});}
   await send('Input.dispatchKeyEvent',{type:'keyDown',key:'Enter',code:'Enter',windowsVirtualKeyCode:13});
   await send('Input.dispatchKeyEvent',{type:'keyUp',key:'Enter',code:'Enter',windowsVirtualKeyCode:13});
   await waitFor("document.querySelector('#area-choice').value==='atlas:area:orbit'",'Keyboard area selection');
@@ -98,7 +100,7 @@ try{
   for(const slug of (process.env.SMOKE_QUICK?['heart','brachial-plexus']:representative)){
    await region('body');await area(slug);
    const definition=index.area(`atlas:area:${slug}`),rs=index.representationsForArea(definition.id,model.id),ids=new Set(rs.map(r=>r.sourcePart.id));
-   const expected=atlas.parts.filter(p=>ids.has(p.id)&&DEFAULT_VISIBLE.includes(p.system)).length;
+   const expected=atlas.parts.filter(p=>ids.has(p.id)&&defaultVisibleForModel(route).includes(p.system)).length;
    assert.equal(await evaluate("document.querySelector('#region-choice').value"),definition.regionIds[0]);
    assert.equal(await count(),expected);await assembled();await noOverlap();await screenshot(`${route}-${width}-${slug}`);
    const system=slug==='heart'?'arterial':rs[0].sourcePart.system,systemName=SYSTEMS.find(s=>s.id===system).name;
@@ -143,7 +145,7 @@ try{
   await waitFor(`location.pathname===${JSON.stringify(route==='male'?'/female':'/male')}`,'model route changed');await ready();
   const destination=MODEL_REGISTRY[route==='male'?'female-study-v3':'bp3d-male-4'],destinationAtlas=read(`public${destination.manifestUrl}`),destinationIdentity=createIdentityIndex(destination,destinationAtlas,sidecar),destinationIndex=createAreaIndex(dataset,sidecar,regions,destinationIdentity);
   assert.equal(await evaluate("document.querySelector('#region-choice').value"),'atlas:region:cervical');assert.equal(await evaluate("document.querySelector('#area-choice').value"),'atlas:area:brachial-plexus');assert.equal(await count(),destinationIndex.representationsForArea('atlas:area:brachial-plexus',destination.id).length);assert.equal(await evaluate("!!document.querySelector('.detail-sheet')"),false);await assembled();await screenshot(`${route}-${width}-switched`);
-  await area(null);assert.equal(await count(),153);await region('body');assert.equal(await count(),route==='male'?2239:2229);
+  await area(null);assert.equal(await count(),153);await region('body');assert.equal(await count(),route==='male'?2239:(process.env.POLISH_BASELINE==='1'?2229:2217));
   await send('Page.navigate',{url:`${baseUrl}/${route}?region=unknown&area=unknown`});await ready();assert.equal(await evaluate('location.search'),'');assert.equal(await count(),whole);
   report.push({route,width,height,wholeVisible:whole,areas:results,keyboardSelection:true,touchSizedControl:true,directSameRegionAreaSwitch:true,multiRegionContext:true,areaUrlReload:true,modelSwitchRetainedCanonicalNavigation:true,unknownIdsNormalized:true,noOverflow:true});
  }

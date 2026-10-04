@@ -11,6 +11,8 @@ import {DEFAULT_VISIBLE} from '../app/anatomy.ts';
 import * as T from 'three';
 import {createExplosionLayout} from '../app/explosion-layout.ts';
 import {gunzipSync} from 'node:zlib';
+import {selectBrowserHelpers} from './select-browser-helpers.mjs';
+import {defaultVisibleForModel} from '../app/viewer-polish.ts';
 
 const baseUrl=process.env.ATLAS_URL??'http://127.0.0.1:3021';
 const chrome=process.env.CHROME_PATH??['C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','/usr/bin/google-chrome','/usr/bin/chromium'].find(p=>fs.existsSync(p));
@@ -36,13 +38,14 @@ try{
  const mouse=async(x,y)=>{await send('Input.dispatchMouseEvent',{type:'mousePressed',x,y,button:'left',clickCount:1});await send('Input.dispatchMouseEvent',{type:'mouseReleased',x,y,button:'left',clickCount:1});};
  const click=async selector=>{const p=await evaluate(`(()=>{const e=document.querySelector(${JSON.stringify(selector)});if(!e)throw new Error('Missing '+${JSON.stringify(selector)});e.scrollIntoView({block:'nearest'});const r=e.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2};})()`);await mouse(p.x,p.y);await delay(150);};
  const buttonText=async(text,scope='document')=>{await evaluate(`(()=>{const e=[...${scope}.querySelectorAll('button')].find(e=>e.textContent.trim()===${JSON.stringify(text)}||(${JSON.stringify(scope)}.includes('system-list')&&e.textContent.trim().startsWith(${JSON.stringify(text)})));if(!e)throw new Error('Missing button '+${JSON.stringify(text)});e.click();})()`);await delay(150);};
- const region=async slug=>{await evaluate(`(()=>{const e=document.querySelector('#region-choice');e.value=${JSON.stringify(`atlas:region:${slug}`)};e.dispatchEvent(new Event('change',{bubbles:true}));})()`);await delay(300);assert.equal(await evaluate("document.querySelector('#region-choice').value"),`atlas:region:${slug}`);};
+ const {select:selectMenu,options:menuOptions}=selectBrowserHelpers({evaluate,click,waitFor,delay});
+ const region=slug=>selectMenu('#region-choice',`atlas:region:${slug}`);
  const count=async()=>Number((await evaluate("document.querySelector('.panel-foot span').textContent")).replace(/[^0-9]/g,''));
  const settled=()=>waitFor("window.__atlasTestRender?.maxChange<0.0001",'rendered explosion offsets settled');
  const assembled=async()=>{const expected=await count();await waitFor(`window.__atlasTestRender?.maxOffset<0.0005&&window.__atlasTestRender.displayed===${expected}`,'rendered anatomy assembled');};
  const screenshot=async name=>{const r=await send('Page.captureScreenshot',{format:'png'});fs.writeFileSync(path.join(output,name+'.png'),Buffer.from(r.data,'base64'));};
  failureCapture=async()=>{await screenshot('failure');fs.writeFileSync(path.join(output,'failure.json'),JSON.stringify(await evaluate("({url:location.href,text:document.body.innerText,options:[...document.querySelectorAll('[role=option]')].map(e=>({text:e.textContent,rect:e.getBoundingClientRect().toJSON()}))})"),null,2));};
- const ready=()=>waitFor("!!document.querySelector('.scene canvas')&&!document.querySelector('.loading')&&document.querySelector('#region-choice')?.options.length===10",'all model geometry loaded');
+ const ready=async()=>{await delay(400);await waitFor("!!document.querySelector('.scene canvas')&&!document.querySelector('.loading')&&!!document.querySelector('#region-choice')",'all model geometry loaded');};
  const layers=async mobile=>{if(mobile)await click('[aria-label="Open system layers"]');};
  const closeLayers=async mobile=>{if(mobile)await click('[aria-label="Close systems"]');};
  const search=async(name='heart')=>{
@@ -52,10 +55,7 @@ try{
   const pos=await evaluate(`(()=>{const e=[...document.querySelectorAll('[role=option]')].find(e=>e.querySelector('.search-result-name')?.textContent?.toLowerCase()===${JSON.stringify(name.toLowerCase())});const r=e.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`);await mouse(pos.x,pos.y);
   await waitFor(`document.querySelector('.detail-sheet .structure-title')?.textContent?.toLowerCase()===${JSON.stringify(name.toLowerCase())}`,'search selected');
  };
- const area=async slug=>{
-  await evaluate(`(()=>{const e=document.querySelector('#area-choice');e.value=${JSON.stringify(slug?`atlas:area:${slug}`:'')};e.dispatchEvent(new Event('change',{bubbles:true}));})()`);
-  await waitFor(`document.querySelector('#area-choice').value===${JSON.stringify(slug?`atlas:area:${slug}`:'')}`,'area selected');await delay(300);
- };
+ const area=slug=>selectMenu('#area-choice',slug?`atlas:area:${slug}`:'');
  const noOverlap=async()=>{
   assert.equal(await evaluate('document.documentElement.scrollWidth<=innerWidth'),true,'No horizontal overflow');
   assert.equal(await evaluate("(()=>{const a=document.querySelector('.anatomy-choice').getBoundingClientRect(),b=document.querySelector('.view-controls').getBoundingClientRect();return a.right<=b.left||b.right<=a.left||a.bottom<=b.top||b.bottom<=a.top})()"),true,'Navigation and camera controls do not overlap');
@@ -109,7 +109,7 @@ try{
   const mobile=width<768;
   await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
   await send('Page.navigate',{url:`${baseUrl}/${route}`});await ready();
-  const model=MODEL_REGISTRY[route==='male'?'bp3d-male-4':'female-study-v3'],atlas=read(`public${model.manifestUrl}`),identity=createIdentityIndex(model,atlas,sidecar),index=createAreaIndex(dataset,sidecar,regions,identity),whole=route==='male'?2229:2239;
+  const model=MODEL_REGISTRY[route==='male'?'bp3d-male-4':'female-study-v3'],atlas=read(`public${model.manifestUrl}`),identity=createIdentityIndex(model,atlas,sidecar),index=createAreaIndex(dataset,sidecar,regions,identity),whole=route==='male'?(process.env.POLISH_BASELINE==='1'?2229:2217):2239;
   const partIndex=new Map(atlas.parts.map((p,i)=>[p.id,i])),buffers=new Map();
   const idsFor=name=>{const c=atlas.concepts.find(c=>c.name===name);assert.ok(c,`Concept ${name}`);return identity.resolve(identity.sourceConceptCanonicalId(c.id),model.id).map(r=>r.sourcePart.id);};
   const piecesHidden=async ids=>{const data=await gpu();for(const id of ids){const offset=partIndex.get(id)*4;assert.deepEqual(data.slice(offset,offset+4),[0,0,0,0],`${id} has no GPU visibility or exploded offset`);}};
@@ -141,7 +141,7 @@ try{
   await reset();await search(direct.part.name);await hide();const unrelated=[direct.part.id];await search('heart');const heartIds=idsFor('heart');assert.ok(heartIds.length>1);await hide();assert.equal(await hiddenCount(),heartIds.length+1);await checkCount(whole-heartIds.length-1);await piecesHidden([...heartIds,...unrelated]);await search('heart');assert.equal(await hiddenCount(),1);await checkCount(whole-1);await click('.member-list button');await hide();assert.equal(await hiddenCount(),2);await search('heart');assert.equal(await hiddenCount(),1,'Partly hidden multi-piece selection restores only its matching representation');await buttonText('Clear selection');
   await layers(mobile);await screenshot(`${route}-${width}-restore`);await restore();await closeLayers(mobile);await checkCount(whole);
   // D/E: area persistence and hidden outside-area selected exception.
-  await area('heart');const heartVisible=await count(),heartIntersection=index.representationsForArea('atlas:area:heart',model.id).filter(r=>heartIds.includes(r.sourcePart.id)&&DEFAULT_VISIBLE.includes(r.sourcePart.system)).length;await search('heart');await hide();assert.equal(await hiddenCount(),heartIds.length);await area('lung-roots');assert.equal(await hiddenCount(),heartIds.length);await area('heart');await checkCount(heartVisible-heartIntersection);await layers(mobile);await restore();await closeLayers(mobile);await checkCount(heartVisible);
+  await area('heart');const heartVisible=await count(),heartIntersection=index.representationsForArea('atlas:area:heart',model.id).filter(r=>heartIds.includes(r.sourcePart.id)&&defaultVisibleForModel(route).includes(r.sourcePart.system)).length;await search('heart');await hide();assert.equal(await hiddenCount(),heartIds.length);await area('lung-roots');assert.equal(await hiddenCount(),heartIds.length);await area('heart');await checkCount(heartVisible-heartIntersection);await layers(mobile);await restore();await closeLayers(mobile);await checkCount(heartVisible);
   await search('brain');const brainIds=idsFor('brain');await hide();await checkCount(heartVisible);await piecesHidden(brainIds);assert.equal(await evaluate("document.querySelector('#area-choice').value"),'atlas:area:heart');
   // G: isolate then hide exits isolation and returns ordinary area view.
   await search('heart');await buttonText('Isolate structure');await checkCount(heartIds.length);await hide();await checkCount(heartVisible-heartIntersection);await layers(mobile);await restore();await closeLayers(mobile);await checkCount(heartVisible);
