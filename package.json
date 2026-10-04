@@ -45,7 +45,9 @@
     "test:presentation": "node --experimental-strip-types --test scripts/presentation.test.mjs",
     "test:presentation:browser": "node --experimental-strip-types scripts/presentation-browser-smoke.mjs",
     "test:explosion": "node --experimental-strip-types --test scripts/explosion-layout.test.mjs",
-    "test:explosion:browser": "node --experimental-strip-types scripts/explosion-browser-smoke.mjs"
+    "test:explosion:browser": "node --experimental-strip-types scripts/explosion-browser-smoke.mjs",
+    "test:isolation-workspace": "node --experimental-strip-types --test scripts/isolation-workspace.test.mjs",
+    "test:isolation-workspace:browser": "node --experimental-strip-types scripts/isolation-workspace-browser-smoke.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

@@ -3,11 +3,25 @@ import {SYSTEMS} from './anatomy.ts';
 import type {IdentityIndex} from './identity-index';
 import {selectRepresentations,representationIdsForPartIds,hiddenPartIdsForModel} from './hide-restore.ts';
 
-/** Freeze current-model representations separately from the active inspected member. */
-export function toggleIsolation(state:SceneState,identity:IdentityIndex):SceneState {
- if(state.isolate)return {...state,isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,explode:0};
+/** Explicit entry or narrowing: freeze the current-model selection as a new workspace. */
+export function isolateSelection(state:SceneState,identity:IdentityIndex):SceneState {
  const ids=representationIdsForPartIds(identity,state.selected);
  return ids.length?{...state,isolate:true,isolatedRepresentationIds:ids,isolatedPartIds:hiddenPartIdsForModel(identity,ids),explode:0}:state;
+}
+/** Explicit exit retains selection and independent dissection/navigation state. */
+export function exitIsolation(state:SceneState):SceneState {
+ return {...state,isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,explode:0};
+}
+/** Compatibility for existing callers; UI entry/narrowing and exit use separate actions. */
+export function toggleIsolation(state:SceneState,identity:IdentityIndex):SceneState {
+ return state.isolate?exitIsolation(state):isolateSelection(state,identity);
+}
+export function clearActiveSelection(state:SceneState):SceneState {
+ return {...state,selected:[],inspectorOpen:false};
+}
+/** Only workspace/view transitions may refit; inspection, panel closure and dissection do not. */
+export function isolationCameraKey(state:SceneState,aspect:number):string {
+ return state.isolate?JSON.stringify([[...(state.isolatedPartIds??state.selected)],state.reset,aspect]):'';
 }
 /** Direct visible-member picks and Included entries share persistent assembly semantics. */
 export function selectAssemblyMember(state:SceneState,identity:IdentityIndex,partId:string):SceneState {

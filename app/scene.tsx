@@ -1,4 +1,5 @@
 import {useEffect,useRef} from 'react';
+import {isolationCameraKey} from './viewer-interaction';
 import * as T from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
@@ -207,7 +208,7 @@ export default function AnatomyScene({atlas,modelId,state,theme,display,revealed
    }
    if(s.view!==lastView||s.reset!==lastReset){sliderFrame=null;fit(s.view);if(amount>0)fitExplosion(0);lastView=s.view;lastReset=s.reset;}
    else if(moving)fitExplosion(previousAmount);
-   const isolateKey=s.isolate?[...(s.isolatedPartIds??s.selected)].join(',')+':'+s.reset+':'+s.inspectorOpen+':'+camera.aspect:'';
+   const isolateKey=isolationCameraKey(s,camera.aspect);
    if(isolateKey!==lastIsolate){
     if(s.isolate){const box=new T.Box3();atlas.parts.forEach((p,i)=>{if(s.isolatedPartIds?.has(p.id)??s.selected.includes(p.id))box.union(bounds[i].clone().translate(new T.Vector3(data[i*4],data[i*4+1],data[i*4+2])));});
      if(!box.isEmpty()){const center=box.getCenter(new T.Vector3()),size=box.getSize(new T.Vector3());const w=el.clientWidth,h=el.clientHeight,mobile=w<768,landscape=w>h&&h<=600;let left=20,right=w-20,top=mobile?250:110,bottom=h-170;if(s.inspectorOpen){if(landscape){right=w-335;top=100;bottom=h-125;}else if(mobile){const sheet=document.querySelector('.detail-sheet')?.getBoundingClientRect(),header=document.querySelector('.identity')?.getBoundingClientRect();top=(header?.bottom??94)+16;bottom=(sheet?.top??h*.58-139)-16;}else{right=w-370;left=w>1100?285:25;}}const availableWidth=Math.max(150,right-left),availableHeight=Math.max(40,bottom-top);camera.setViewOffset(w,h,w/2-(left+right)/2,h/2-(top+bottom)/2,w,h);const distance=Math.max(.07,Math.max(size.y*h/availableHeight,size.x*w/availableWidth/camera.aspect,size.z)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))*1.35);controls.maxDistance=Math.max(40,distance*2);sliderFrame=null;controls.target.copy(center);camera.position.copy(center).add(new T.Vector3(.2,.1,1).normalize().multiplyScalar(distance));controls.update();dirty=true;}

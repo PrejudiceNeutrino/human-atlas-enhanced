@@ -285,3 +285,6 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 /* Continuous staged explosion: the marker never intercepts the slider. */
 .explode-slider{position:relative}.explode-control [data-slot=slider-track]{height:4px;background:var(--muted)}.explode-control [data-slot=slider-range]{height:100%;background:var(--primary)}
 .slider-stage-marker{position:absolute;top:50%;height:8px;width:1px;background:var(--ui-faint);transform:translate(-50%,-50%);pointer-events:none}.slider-endpoints{position:relative}.slider-stage-label{position:absolute;transform:translateX(-50%);white-space:nowrap;pointer-events:none}
+
+/* Workspace exit remains reachable after hiding or clearing the active member. */
+.scene-caption .workspace-exit{pointer-events:auto;min-height:44px;letter-spacing:normal;font-size:12px;border-radius:8px}

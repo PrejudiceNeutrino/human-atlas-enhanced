@@ -157,10 +157,10 @@ try{
   assert.equal(await evaluate("document.querySelector('#region-choice').value"),'atlas:region:thoracic');assert.equal(await evaluate("document.querySelector('#area-choice').value"),'');
   await buttonText('Isolate structure');assert.equal(await count(),compound.modeledPieceCount);await assembled();
   const gpu=await evaluate('window.__atlasTestRender.pixels');for(const [i,p] of atlas.parts.entries())assert.equal(gpu[i*4+3]>.5,compound.partIds.includes(p.id),'exact compound isolate GPU mask');
-  await screenshot(`${route}-${width}-right-foot-isolated`);await clear();
+  await screenshot(`${route}-${width}-right-foot-isolated`);await clear();assert.equal(await count(),compound.modeledPieceCount);await buttonText('Show surrounding anatomy');
   await area('heart');await assembled();const context=await evaluate('location.search');
   await openBrowse();await chooseEntry(compound,alphabetical);assert.equal(await evaluate('location.search'),context,'Browse preserves Region and Teaching Area');
-  await buttonText('Isolate structure');assert.equal(await count(),26);await clear();assert.equal(await count(),77);
+  await buttonText('Isolate structure');assert.equal(await count(),26);await clear();assert.equal(await count(),26);await buttonText('Show surrounding anatomy');assert.equal(await count(),77);
   await click('[aria-label="Assemble and reset"]');await assembled();
   await noOverlap();await screenshot(`${route}-${width}-navigation`);
   if(width===1440){

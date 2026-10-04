@@ -97,7 +97,7 @@ try{
    }
    assert.ok(picked,`${route} ${width} ${slug} regional mesh picked`);
    const selectedName=await evaluate("document.querySelector('.structure-title').textContent");
-   await buttonText('Isolate structure');assert.equal(await count(),1);await buttonText('Clear selection');assert.equal(await count(),expected);
+   await buttonText('Isolate structure');assert.equal(await count(),1);await buttonText('Clear selection');assert.equal(await count(),1);await buttonText('Show surrounding anatomy');assert.equal(await count(),expected);
    await explode();assert.equal(await count(),expected);if(slug==='shoulder')await screenshot(`${route}-${width}-${slug}-exploded`);
    await click('[aria-label="Assemble and reset"]');await waitFor("document.querySelector('#region-choice').value==='atlas:region:body'",'reset Whole body');assert.equal(await count(),whole);
    regionResults.push({slug,representations:rs.length,skeletalVisible:expected,picked:selectedName,explode:true,reset:true});
@@ -105,7 +105,7 @@ try{
   }
   await region('shoulder');await layers(mobile);await buttonText('Skeleton');await closeLayers(mobile);const shoulderSkeleton=await count();
   await search();const selected=Number((await evaluate("document.querySelector('.structure-meta span:last-child strong').textContent")).replace(/,/g,''));assert.ok(selected>0);assert.equal(await count(),shoulderSkeleton+selected);
-  await buttonText('Isolate structure');assert.equal(await count(),selected);await buttonText('Clear selection');assert.equal(await count(),shoulderSkeleton);assert.equal(await evaluate("document.querySelector('#region-choice').value"),'atlas:region:shoulder');
+  await buttonText('Isolate structure');assert.equal(await count(),selected);await buttonText('Clear selection');assert.equal(await count(),selected);await buttonText('Show surrounding anatomy');assert.equal(await count(),shoulderSkeleton);assert.equal(await evaluate("document.querySelector('#region-choice').value"),'atlas:region:shoulder');
   // Route navigation keeps a canonical region, but resets every model-specific selection/layer.
   await click('[aria-label="Choose male or female anatomy"]');const next=route==='male'?'Female anatomy':'Male anatomy';
   await evaluate(`(()=>{const e=[...document.querySelectorAll('[role=option]')].find(e=>e.textContent.trim()===${JSON.stringify(next)});if(!e)throw new Error('Missing model option');e.click();})()`);await delay(200);await waitFor(`location.pathname===${JSON.stringify(route==='male'?'/female':'/male')}`,'model route changed');await ready();

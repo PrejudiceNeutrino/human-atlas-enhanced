@@ -33,8 +33,8 @@ test('raw source IDs, concept IDs and display names cannot hide geometry',()=>{
  assert.equal(hiddenPartIdsForModel(male.identity,[part.id,part.conceptId,part.name,male.identity.sourceConceptCanonicalId(part.conceptId)]).size,0);
  const s=hidden(male,[part]);assert.deepEqual(s.hiddenRepresentationIds,[rid(male,part)]);assert.ok(!s.hiddenRepresentationIds.includes(part.id));
 });
-test('single mesh hides exactly one representation and closes selection/isolate/rotation',()=>{
- const s=hidden(male,[part],{...base,isolate:true,rotate:true,inspectorOpen:true});assert.deepEqual(s.hiddenRepresentationIds,[rid(male,part)]);assert.deepEqual(s.selected,[]);assert.equal(s.isolate,false);assert.equal(s.rotate,false);assert.equal(s.inspectorOpen,false);
+test('single mesh hides exactly one representation, preserves workspace and closes selection/rotation',()=>{
+ const s=hidden(male,[part],{...base,isolate:true,rotate:true,inspectorOpen:true});assert.deepEqual(s.hiddenRepresentationIds,[rid(male,part)]);assert.deepEqual(s.selected,[]);assert.equal(s.isolate,true);assert.equal(s.rotate,false);assert.equal(s.inspectorOpen,false);
 });
 test('multi-piece canonical selection hides every resolved current-model representation',()=>{
  for(const m of models){const c=m.atlas.concepts.find(c=>c.elements.length>3&&c.elements.length<20),rs=m.identity.resolve(m.identity.sourceConceptCanonicalId(c.id),m.model.id);const s=hideSelectedRepresentations({...base,selected:rs.map(r=>r.sourcePart.id)},m.identity);assert.deepEqual(s.hiddenRepresentationIds,rs.map(r=>r.representation.id));assert.equal(hiddenPartIdsForModel(m.identity,s.hiddenRepresentationIds).size,rs.length);}

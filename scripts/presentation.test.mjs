@@ -41,7 +41,7 @@ for(const model of Object.values(MODEL_REGISTRY))test(`${model.id}: persistent s
  const hidden=identity.representationForPart(group.elements[1]).id;
  const masked={...state,hiddenPartIds:hiddenPartIdsForModel(identity,[hidden])};assert.equal(atlas.parts.filter(p=>partIsVisible(p,masked)).length,group.elements.length-1);
  const surrounding=toggleIsolation(state,identity);assert.equal(surrounding.isolate,false);assert.equal(surrounding.isolatedRepresentationIds,undefined);assert.deepEqual(surrounding.selected,state.selected);
- assert.equal(hideSelectedRepresentations(state,identity).isolatedRepresentationIds,undefined);
+ assert.strictEqual(hideSelectedRepresentations(state,identity).isolatedRepresentationIds,scopeIds);
  assert.equal(selectRepresentations(state,identity,group.elements).isolatedRepresentationIds,undefined);
  assert.equal(selectRegion(state,'atlas:region:body').isolatedRepresentationIds,undefined);
  assert.equal(switchRegionModel(state,[]).isolatedRepresentationIds,undefined);

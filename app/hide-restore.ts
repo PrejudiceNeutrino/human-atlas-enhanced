@@ -17,7 +17,7 @@ export function hiddenPartIdsForModel(identity:IdentityIndex,ids:readonly Repres
 }
 
 export function hideSelectedRepresentations(state:SceneState,identity:IdentityIndex):SceneState {
- return {...state,hiddenRepresentationIds:[...new Set([...(state.hiddenRepresentationIds??[]),...representationIdsForPartIds(identity,state.selected)])],selected:[],isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,rotate:false,inspectorOpen:false};
+ return {...state,hiddenRepresentationIds:[...new Set([...(state.hiddenRepresentationIds??[]),...representationIdsForPartIds(identity,state.selected)])],selected:[],rotate:false,inspectorOpen:false};
 }
 
 /** Search and direct selection restore only their own current-model representations, atomically. */

@@ -118,14 +118,14 @@ try{
    }
    assert.ok(picked,`${route} ${width} ${slug} visible area geometry pickable`);
    const pickedName=await evaluate("document.querySelector('.structure-title').textContent");
-   await buttonText('Isolate structure');assert.equal(await count(),1);await buttonText('Clear selection');assert.equal(await count(),filtered.length);
+   await buttonText('Isolate structure');assert.equal(await count(),1);await buttonText('Clear selection');await buttonText('Show surrounding anatomy');assert.equal(await count(),filtered.length);
    await explode();assert.equal(await count(),filtered.length);assert.equal(await evaluate('window.__atlasTestRender.displayed'),filtered.length);if(slug==='heart')await screenshot(`${route}-${width}-heart-exploded`);
    // Choosing the same area assembles, clears selection/isolate and preserves systems.
    await area(null);assert.equal(await evaluate("document.querySelector('#area-choice').value"),'');await area(slug);assert.equal(await count(),filtered.length);await assembled();
    const name=slug==='heart'?'brain':'heart',concept=atlas.concepts.find(c=>c.name===name),selected=concept.elements;
    await search(name);
    const union=new Set([...filtered.map(r=>r.sourcePart.id),...selected]);assert.equal(await count(),union.size);
-   await buttonText('Isolate structure');assert.equal(await count(),selected.length);await buttonText('Clear selection');assert.equal(await count(),filtered.length);
+   await buttonText('Isolate structure');assert.equal(await count(),selected.length);await buttonText('Clear selection');await buttonText('Show surrounding anatomy');assert.equal(await count(),filtered.length);
    // Broad region change removes active station/masks, then reset removes URL state.
    await region('shoulder');assert.equal(await evaluate("document.querySelector('#area-choice').value"),'');assert.equal(await evaluate("new URL(location.href).searchParams.has('area')"),false);
    await click('[aria-label="Assemble and reset"]');assert.equal(await count(),whole);assert.equal(await evaluate('location.search'),'');

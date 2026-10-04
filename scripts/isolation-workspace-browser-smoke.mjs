@@ -14,10 +14,10 @@ import {gunzipSync} from 'node:zlib';
 import {selectBrowserHelpers} from './select-browser-helpers.mjs';
 import {defaultVisibleForModel} from '../app/viewer-polish.ts';
 
-const baseUrl=process.env.ATLAS_URL??'http://127.0.0.1:3021';
+const baseUrl=process.env.ATLAS_URL??'http://127.0.0.1:3039';
 const chrome=process.env.CHROME_PATH??['C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','/usr/bin/google-chrome','/usr/bin/chromium'].find(p=>fs.existsSync(p));
 if(!chrome)throw new Error('Set CHROME_PATH to an installed Chromium executable.');
-const output=path.resolve(process.env.SMOKE_OUTPUT??'work/phase-4.6-browser');fs.mkdirSync(output,{recursive:true});
+const output=path.resolve(process.env.SMOKE_OUTPUT??'work/phase-5.1/browser');fs.mkdirSync(output,{recursive:true});
 const profile=fs.mkdtempSync(path.join(output,'chrome-'));
 const processHandle=spawn(chrome,['--headless=new','--remote-debugging-port=0',`--user-data-dir=${profile}`,'--no-first-run','--no-default-browser-check','--disable-extensions',...(process.env.CHROME_ANGLE?[`--use-angle=${process.env.CHROME_ANGLE}`,'--enable-unsafe-swiftshader']:[]),'about:blank'],{stdio:['ignore','ignore','pipe'],windowsHide:true});
 processHandle.stderr.on('data',d=>fs.appendFileSync(path.join(output,'chrome.log'),d));
@@ -29,8 +29,9 @@ try{
  let port;for(let i=0;i<200;i++){const p=path.join(profile,'DevToolsActivePort');if(fs.existsSync(p)){port=Number(fs.readFileSync(p,'utf8').split('\n')[0]);break;}await delay(100);}assert.ok(port,'Chrome debugging endpoint started');
  const targets=await(await fetch(`http://127.0.0.1:${port}/json/list`)).json();
  ws=new WebSocket(targets.find(t=>t.type==='page').webSocketDebuggerUrl);await new Promise((resolve,reject)=>{ws.onopen=resolve;ws.onerror=reject;});
+ let held=[];let holdGeometry=false,failManifest=false;
  let serial=0;const pending=new Map(),errors=[],network=[];
- ws.onmessage=event=>{const m=JSON.parse(event.data);if(m.id){const p=pending.get(m.id);if(!p)return;pending.delete(m.id);clearTimeout(p.timer);if(m.error)p.reject(new Error(JSON.stringify(m.error)));else p.resolve(m.result);}else if(m.method==='Runtime.exceptionThrown')errors.push(m.params.exceptionDetails);else if(m.method==='Network.responseReceived')network.push(m.params.response.url);};
+ ws.onmessage=event=>{const m=JSON.parse(event.data);if(m.id){const p=pending.get(m.id);if(!p)return;pending.delete(m.id);clearTimeout(p.timer);if(m.error)p.reject(new Error(JSON.stringify(m.error)));else p.resolve(m.result);}else if(m.method==='Runtime.exceptionThrown')errors.push(m.params.exceptionDetails);else if(m.method==='Network.responseReceived')network.push(m.params.response.url);else if(m.method==='Fetch.requestPaused'){if(failManifest)send('Fetch.failRequest',{requestId:m.params.requestId,errorReason:'Failed'});else if(holdGeometry)held.push(m.params.requestId);else send('Fetch.continueRequest',{requestId:m.params.requestId});}};
  ws.onclose=()=>{for(const p of pending.values()){clearTimeout(p.timer);p.reject(new Error('Chrome target disconnected'));}pending.clear();};
  const send=(method,params={})=>new Promise((resolve,reject)=>{const id=++serial,timer=setTimeout(()=>{pending.delete(id);reject(new Error(`CDP timeout ${method}`));},30000);pending.set(id,{resolve,reject,timer});ws.send(JSON.stringify({id,method,params}));});
  const evaluate=async expression=>{const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw new Error(JSON.stringify(r.exceptionDetails));return r.result.value;};
@@ -85,11 +86,11 @@ try{
    const matrix=type.prototype.uniformMatrix4fv;type.prototype.uniformMatrix4fv=function(location,transpose,value,...rest){const name=names.get(location);if(name==='viewMatrix'||name==='projectionMatrix')window.__atlasTestCamera[name]=Array.from(value);return matrix.call(this,location,transpose,value,...rest);};
   }
  })()`});
- const report=[];
+ const report=[],cameraDeltas=[];
  const hiddenCount=async()=>Number(await evaluate("document.querySelector('.hidden-count')?.textContent??'0'"));
  const gpu=()=>evaluate('window.__atlasTestRender.pixels');
  const camera=()=>evaluate('window.__atlasTestCamera');
- const assertCamera=async before=>{const after=await camera();for(const key of ['viewMatrix','projectionMatrix'])for(let i=0;i<16;i++)assert.ok(Math.abs(before[key][i]-after[key][i])<0.00001,`Hide/restore preserves ${key}[${i}]`);};
+ const assertCamera=async(before,tolerance=.00001)=>{const after=await camera();cameraDeltas.push({tolerance,max:Math.max(...Object.keys(before).flatMap(k=>before[k].map((v,j)=>Math.abs(v-after[k][j]))))});for(const key of ['viewMatrix','projectionMatrix'])for(let i=0;i<16;i++)assert.ok(Math.abs(before[key][i]-after[key][i])<tolerance,`Inspection/dissection preserves ${key}[${i}]: ${before[key][i]} -> ${after[key][i]}`);};
  const checkCount=async expected=>{assert.equal(await count(),expected,'UI visible count');await waitFor(`window.__atlasTestRender?.displayed===${expected}`,'GPU matches visible count');};
  const hide=async()=>{assert.ok(await evaluate("document.querySelector('.hide-structure').getBoundingClientRect().height>=44"),'Hide touch target');await click('.hide-structure');await waitFor("!document.querySelector('.detail-sheet')",'hide closes inspector');assert.equal(await evaluate('window.__atlasTestSelection?.some(x=>x!==0)'),false,'No stale GPU highlight');assert.equal(await evaluate("document.querySelector('.part-hover').hidden"),true,'No stale hover');};
  const restore=async()=>{await tab('Hidden');await click('.restore-hidden');await waitFor("!document.querySelector('.restore-hidden')",'hidden state cleared');await tab('Systems');};
@@ -108,115 +109,110 @@ try{
   return evaluate(`new Promise((resolve,reject)=>{const img=new Image();img.onerror=reject;img.onload=()=>{const canvas=document.createElement('canvas');canvas.width=img.width;canvas.height=img.height;const ctx=canvas.getContext('2d');ctx.drawImage(img,0,0);const pixels=ctx.getImageData(${left},${top},${right-left},${bottom-top}).data,colors=new Set();let teal=0;for(let i=0;i<pixels.length;i+=4){const r=pixels[i],g=pixels[i+1],b=pixels[i+2];if(g>100&&b>60&&r<g*.78&&b>r*1.15&&g>b*1.04){teal++;colors.add(r+','+g+','+b);}}resolve({tealPixels:teal,shadedColors:colors.size});};img.src=${JSON.stringify('data:image/png;base64,'+shot.data)};})`);
  };
 
- const chooseTheme=async mode=>{if(await evaluate('document.documentElement.dataset.theme')!==mode)await click('.theme-trigger');await waitFor(`document.documentElement.dataset.theme===${JSON.stringify(mode)}`,'theme applied');};
+
+
+ await send('Page.addScriptToEvaluateOnNewDocument',{source:`(()=>{
+  window.__presentation={uniforms:{},shaderCompiles:0,framebuffers:0,entrances:[],canvasStates:[]};
+  document.addEventListener('animationstart',e=>{if(e.animationName.startsWith('atlas-enter'))window.__presentation.entrances.push({name:e.animationName,time:performance.now()});});
+  const names=new WeakMap();
+  for(const type of [window.WebGLRenderingContext,window.WebGL2RenderingContext])if(type){
+   const locate=type.prototype.getUniformLocation;type.prototype.getUniformLocation=function(program,name){const loc=locate.call(this,program,name);if(loc)names.set(loc,name);return loc;};
+   const uniform=type.prototype.uniform1f;type.prototype.uniform1f=function(loc,value){const name=names.get(loc);if(name==='displayContrast'||name==='toneMappingExposure')window.__presentation.uniforms[name]=value;return uniform.call(this,loc,value);};
+   const compile=type.prototype.compileShader;type.prototype.compileShader=function(...args){window.__presentation.shaderCompiles++;return compile.apply(this,args);};
+   const framebuffer=type.prototype.createFramebuffer;type.prototype.createFramebuffer=function(...args){window.__presentation.framebuffers++;return framebuffer.apply(this,args);};
+  }
+ })()`});
  const snapshot=()=>evaluate("({gpu:window.__atlasTestRender.pixels,selection:window.__atlasTestSelection,camera:window.__atlasTestCamera,url:location.href,explode:document.querySelector('.explode-control output').textContent,hidden:document.querySelector('.hidden-count').textContent,isolate:!!document.querySelector('.detail-sheet.is-isolated'),reference:document.querySelector('.structure-meta strong')?.textContent})");
  const assertSnapshot=async before=>{const after=await snapshot();const {camera:ignoredBefore,...previous}=before,{camera:ignoredAfter,...current}=after;assert.deepEqual(current,previous);await assertCamera(before.camera);};
- const isolated=()=>evaluate("!!document.querySelector('.detail-sheet.is-isolated')");
- for(const [width,height] of (process.env.SMOKE_DESKTOP?[[1440,900]]:process.env.SMOKE_QUICK==='landscape'?[[740,420]]:process.env.SMOKE_QUICK?[[1440,900]]:[[1440,900],[390,844],[740,420]]))for(const route of ['male','female']){
-  const mobile=width<768||height<600;
-  await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
-  await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:'dark'}]});
-  await send('Page.navigate',{url:`${baseUrl}/${route}`});await ready();
-  await evaluate("localStorage.removeItem('human-atlas-theme')");await send('Page.reload');await ready();
-  assert.equal(await evaluate("document.documentElement.dataset.theme"),'light','No saved choice stays Light even on dark OS');
-  const model=MODEL_REGISTRY[route==='male'?'bp3d-male-4':'female-study-v3'],atlas=read(`public${model.manifestUrl}`),identity=createIdentityIndex(model,atlas,sidecar);
-  const piecesHidden=async ids=>{const pixels=await gpu();for(const id of ids){const i=atlas.parts.findIndex(p=>p.id===id)*4;assert.deepEqual(pixels.slice(i,i+4),[0,0,0,0]);}};
-  const group=atlas.concepts.find(c=>c.name.toLowerCase()==='muscle of pectoral girdle');assert.ok(group);
-  const groupIds=identity.resolve(identity.sourceConceptCanonicalId(group.id),model.id).map(r=>r.sourcePart.id);assert.equal(groupIds.length,22);
-  const single=atlas.concepts.find(c=>c.name.toLowerCase()==='right clavicle'&&c.elements.length===1);assert.ok(single);
-  const whole=route==='male'?2217:2239;
-  await checkCount(whole);await noOverlap();
-  // Same reviewed isolate state for assembled and exploded Included structures drill-down.
-  const drill=[];
-  for(const exploded of [false,true]){
-   await reset();await search(single.name);await hide();await region('shoulder');await area('axilla');
-   await delay(700);const ordinary=await gpu(),ordinaryCamera=await camera();
-   await search(group.name);await buttonText('Isolate structure');await checkCount(22);
-   if(exploded)await explode();await delay(700);
-   await screenshot(`${route}-${width}-${exploded?'exploded':'assembled'}-isolated-group`);
-   await click('.member-list button');await waitFor("document.querySelector('.structure-meta span:last-child strong').textContent==='1'",'member selected');await checkCount(22);assert.equal(await isolated(),true);
-   assert.equal(await evaluate("document.querySelector('.detail-actions .primary-action').textContent.includes('Isolate structure')&&[...document.querySelectorAll('.detail-actions button')].some(e=>e.textContent.includes('Show surrounding anatomy'))"),true);
-   const selectedPixels=await evaluate('window.__atlasTestSelection'),member=atlas.parts.find((p,i)=>selectedPixels[i*4]>0);assert.equal(member.id,groupIds[0]);
-   assert.equal(await hiddenCount(),1);assert.equal(await evaluate("document.querySelector('#region-choice').value"),'atlas:region:shoulder');assert.equal(await evaluate("document.querySelector('#area-choice').value"),'atlas:area:axilla');
-   assert.notDeepEqual(await camera(),ordinaryCamera,'Isolated member does not invoke ordinary context frame');
-   if(exploded)assert.equal(await evaluate("document.querySelector('.explode-control output').textContent"),'100%');
-   await screenshot(`${route}-${width}-${exploded?'exploded':'assembled'}-isolated-member`);
-   await buttonText('Show surrounding anatomy');assert.equal(await isolated(),false);await assembled();
-   const after=await gpu();for(let i=0;i<atlas.parts.length;i++)assert.equal(after[i*4+3],ordinary[i*4+3]||Number(atlas.parts[i].id===member.id),'Exit restores ordinary active station/systems plus selected exception');
-   drill.push({exploded,member:member.id,surrounding:await count()});
-   await search(group.name);await click('.member-list button');assert.equal(await isolated(),false);assert.ok(await count()>1,'Non-isolated member retains surroundings');
-  }
-  // UI-only tabs, counts at zero, native keyboard and one scroll surface.
-  await reset();await layers(mobile);await tab('Hidden');assert.equal(await hiddenCount(),0);assert.equal(await evaluate("document.querySelector('.hidden-empty').textContent"),'No structures hidden.');
-  const beforeTabs=await snapshot();await tab('Systems');await tab('Hidden');await assertSnapshot(beforeTabs);
-  await evaluate("[...document.querySelectorAll('[role=tab]')].find(e=>e.textContent.startsWith('Hidden')).focus()");
-  await send('Input.dispatchKeyEvent',{type:'keyDown',key:'ArrowLeft',code:'ArrowLeft',windowsVirtualKeyCode:37});await send('Input.dispatchKeyEvent',{type:'keyUp',key:'ArrowLeft',code:'ArrowLeft',windowsVirtualKeyCode:37});await delay(250);
-  assert.equal(await evaluate("document.activeElement.getAttribute('role')"),'tab');assert.equal(await evaluate("document.activeElement.textContent.trim()"),'Systems');
-  await tab('Systems');await closeLayers(mobile);
-  const pieces=['right clavicle','left clavicle','right scapula'].map(name=>atlas.concepts.find(c=>c.name.toLowerCase()===name&&c.elements.length===1));
-  for(const c of pieces){await search(c.name);await hide();}
-  assert.equal(await hiddenCount(),3);assert.equal(await evaluate("document.querySelector('[role=tab][aria-selected=true]').textContent.trim()"),'Systems','Hide does not switch tabs');
-  await layers(mobile);const beforeHidden=await snapshot();await tab('Hidden');await assertSnapshot(beforeHidden);
-  const ids=pieces.map(c=>identity.representationForPart(c.elements[0]).id);assert.deepEqual(await hiddenOrder(),[...ids].reverse());
-  assert.equal(await evaluate("document.querySelectorAll('.hidden-list').length"),1);assert.equal(await evaluate("!!document.querySelector('.system-list')"),false);
-  const beforeRestore=await camera();await restoreOne(ids[1]);await assertCamera(beforeRestore);assert.deepEqual(await hiddenOrder(),[ids[2],ids[0]]);await piecesHidden([pieces[0].elements[0],pieces[2].elements[0]]);
-  await screenshot(`${route}-${width}-light-hidden`);await restore();await closeLayers(mobile);await checkCount(whole);
-  await search('heart');await hide();await layers(mobile);await tab('Hidden');
-  assert.equal(await evaluate("(()=>{const p=document.querySelector('.layers-panel'),c=document.querySelector('.visibility-content'),l=document.querySelector('.hidden-list');return getComputedStyle(p).overflowY==='hidden'&&getComputedStyle(l).overflowY==='visible'&&c.scrollHeight>c.clientHeight&&[...l.querySelectorAll('button')].every(e=>e.getBoundingClientRect().height>=44)})()"),true,'Only tab content scrolls, with full touch targets');
-  await screenshot(`${route}-${width}-light-hidden-long`);await restore();await closeLayers(mobile);
-  // Hide/Show systems independently of model-specific dissection in all navigation scopes.
-  await search(single.name);await hide();const inventory=[];
-  for(const scope of ['body','shoulder','heart']){
-   if(scope==='heart')await area('heart');else await region(scope);
-   await layers(mobile);const counts=await evaluate("document.querySelector('.system-list').textContent"),url=await evaluate('location.search');
-   await buttonText('Hide all systems');await checkCount(0);assert.equal(await hiddenCount(),1);
-   assert.equal(await evaluate("document.querySelector('.panel-foot button').textContent"),'Show all systems');
-   await buttonText('Show all systems');assert.equal(await hiddenCount(),1);await piecesHidden(single.elements);
-   assert.equal(await evaluate('location.search'),url);assert.equal(await evaluate("document.querySelector('.system-list').textContent"),counts);
-   assert.equal(await evaluate("document.querySelector('[aria-label=\"Show reproductive\"]').getAttribute('aria-checked')"),'true','Explicit All enables reproductive on both models');
-   inventory.push({scope,visible:await count()});await closeLayers(mobile);
-  }
-  await layers(mobile);await buttonText('Hide all systems');await tab('Hidden');await restore();await checkCount(0);await buttonText('Show all systems');await closeLayers(mobile);
-  // Theme is independent: actual uniforms, GPU state, URLs and model/network stay unchanged.
-  await reset();await search('left clavicle');await hide();await region('shoulder');await search(single.name);await buttonText('Isolate structure');await explode();await delay(800);
-  // Utility controls are intentionally hidden beside the landscape inspector; close inspector without clearing isolate.
-  await closeInspector();await delay(700);const beforeTheme=await snapshot(),canvasIdentity=await evaluate("(()=>{window.__savedCanvas=document.querySelector('.scene canvas');return true})()"),networkBefore=network.filter(u=>/\/(models|identity|regions|areas)\//.test(u)).length;
-  for(const mode of ['dark','light']){await chooseTheme(mode);await delay(400);await assertSnapshot(beforeTheme);assert.equal(await evaluate("window.__savedCanvas===document.querySelector('.scene canvas')"),true);}
-  assert.equal(network.filter(u=>/\/(models|identity|regions|areas)\//.test(u)).length,networkBefore,'Theme does not refetch any anatomy/data');
-  await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:'light'}]});assert.equal(await evaluate('document.documentElement.dataset.theme'),'light','Binary choice ignores OS');
-  await chooseTheme('dark');await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:'light'}]});assert.equal(await evaluate("document.documentElement.dataset.theme"),'dark');
-  await send('Page.reload');await ready();assert.equal(await evaluate("document.documentElement.dataset.theme"),'dark');assert.equal(await hiddenCount(),0);assert.equal(await evaluate("document.querySelector('.explode-control output').textContent"),'0%');
-  const colors=[];
-  for(const theme of ['light','dark']){
-   await chooseTheme(theme);await reset();await screenshot(`${route}-${width}-${theme}-whole`);
-   await layers(mobile);await screenshot(`${route}-${width}-${theme}-systems`);await buttonText('Skeleton');await closeLayers(mobile);await screenshot(`${route}-${width}-${theme}-skeleton`);
-   await layers(mobile);await buttonText('Muscles',"document.querySelector('.system-list')");await closeLayers(mobile);await screenshot(`${route}-${width}-${theme}-muscles`);
-   for(const system of ['skeletal','muscular','arterial','venous']){
-    await reset();const candidates=atlas.concepts.filter(c=>c.elements.length===1&&atlas.parts.some(p=>p.id===c.elements[0]&&p.system===system&&(system!=='skeletal'||p.id===single.elements[0])));const score=c=>{const p=atlas.parts.find(p=>p.id===c.elements[0]);return p.bounds[0].reduce((v,n,i)=>v*(p.bounds[1][i]-n),1);};const concept=candidates.sort((a,b)=>score(b)-score(a))[0],part=atlas.parts.find(p=>p.id===concept?.elements[0]);assert.ok(concept);
-    await search(concept.name);await buttonText('Isolate structure');await closeInspector();await delay(600);
-    if(height<600){for(let i=0;i<3;i++)await send('Input.dispatchMouseEvent',{type:'mouseWheel',x:width/2,y:250,deltaX:0,deltaY:-300});await delay(400);}
-    const pixels=await selectionPixels(`${route}-${width}-${theme}-${system}-selected`,width,height);assert.ok(pixels.tealPixels>20,'Strong selected accent in both themes');assert.ok(pixels.shadedColors>16);colors.push({theme,system,part:part.id,...pixels});
+ const key=async name=>{const codes={Home:36,End:35,Escape:27,Enter:13};await send('Input.dispatchKeyEvent',{type:'keyDown',key:name,code:name,windowsVirtualKeyCode:codes[name],...(name==='Enter'?{text:'\r'}:{})});await send('Input.dispatchKeyEvent',{type:'keyUp',key:name,code:name,windowsVirtualKeyCode:codes[name]});};
+ const chooseTheme=async mode=>{if(await evaluate('document.documentElement.dataset.theme')!==mode)await click('.theme-trigger');await delay(220);};
+ const displaySlider=async(index,end)=>{await evaluate(`document.querySelectorAll('.display-setting input[type=range]')[${index}].focus()`);await key(end?'End':'Home');await delay(200);};
+
+
+ const included=async part=>{
+  const pos=await evaluate(`(()=>{const e=[...document.querySelectorAll('.member-list button')].find(e=>e.textContent.trim()===${JSON.stringify(part.name)});if(!e)throw Error('Missing included member');e.scrollIntoView({block:'nearest'});const r=e.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`);
+  await mouse(pos.x,pos.y);await delay(200);
+  await waitFor(`document.querySelector('.structure-title')?.textContent===${JSON.stringify(part.name)}`,'Included inspector updates');
+  assert.equal(await evaluate(`document.querySelector('.member-list button[aria-pressed="true"]')?.textContent.trim()===${JSON.stringify(part.name)}`),true);
+ };
+ const amount=async value=>{
+  await evaluate("document.querySelector('.explode-control input[type=range]').focus()");
+  await key('Home');for(let i=0;i<value;i++){await send('Input.dispatchKeyEvent',{type:'keyDown',key:'ArrowRight',code:'ArrowRight',windowsVirtualKeyCode:39});await send('Input.dispatchKeyEvent',{type:'keyUp',key:'ArrowRight',code:'ArrowRight',windowsVirtualKeyCode:39});}
+  await waitFor(`document.querySelector('.explode-control output').textContent==='${value}%'`,'explode value');await delay(250);await settled();
+ };
+ const orbit=async()=>{
+  await send('Input.dispatchMouseEvent',{type:'mousePressed',x:650,y:440,button:'left',buttons:1,clickCount:1});
+  for(let i=1;i<=6;i++)await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:650+i*4,y:440+i*2,button:'left',buttons:1});
+  await send('Input.dispatchMouseEvent',{type:'mouseReleased',x:674,y:452,button:'left',clickCount:1});
+  await send('Input.dispatchMouseEvent',{type:'mouseWheel',x:650,y:440,deltaY:-90,deltaX:0});await delay(350);
+ };
+ for(const route of ['male','female']){
+ const width=1440,height=900,mobile=false;
+ await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
+ await send('Page.navigate',{url:baseUrl+'/'+route});await ready();await assembled();
+ const whole=await count(),model=MODEL_REGISTRY[route==='male'?'bp3d-male-4':'female-study-v3'],atlas=read('public'+model.manifestUrl),identity=createIdentityIndex(model,atlas,sidecar),buffers=new Map(),partIndex=new Map(atlas.parts.map((p,i)=>[p.id,i]));
+ for(const name of [route==='male'?'Abdomen':'Abdomen Proper','Muscle Of Pectoral Girdle']){
+ console.log('Workspace',route,name);await reset();await search(name);assert.ok(await count()>=whole,'Ordinary search preserves surrounding anatomy');await assembled();
+ const group=atlas.concepts.find(c=>c.name.toLowerCase()===name.toLowerCase()),candidates=atlas.parts.filter(p=>group.elements.includes(p.id)),n=group.elements.length;
+ await buttonText('Isolate structure');await checkCount(n);await delay(400);
+ const workspace=await gpu(),scopeMask=workspace.filter((_,i)=>i%4===3),entryCamera=await camera();
+ for(const [i,p] of atlas.parts.entries())assert.equal(scopeMask[i]>.5,group.elements.includes(p.id),'Exact current-model workspace GPU membership');
+  const pick=async eligible=>{
+   const matrices=await camera(),view=new T.Matrix4().fromArray(matrices.viewMatrix),projection=new T.Matrix4().fromArray(matrices.projectionMatrix),pixels=await gpu();
+   const safe={left:mobile?20:285,right:width-(mobile?62:370),top:mobile?320:130,bottom:height-(mobile?175:200)};
+   for(const p of eligible){
+    if(!buffers.has(p.chunk)){const c=atlas.chunks[p.chunk],raw=`public${c.url}`;buffers.set(p.chunk,fs.existsSync(raw)?fs.readFileSync(raw):gunzipSync(fs.readFileSync(`public${c.gzip}`)));}
+    const buffer=buffers.get(p.chunk),positions=new Float32Array(buffer.buffer,buffer.byteOffset+p.positions,p.vertexCount*3),indices=new Uint32Array(buffer.buffer,buffer.byteOffset+p.indices,p.indexCount),offset=partIndex.get(p.id)*4;if(pixels[offset+3]<.5)continue;
+    for(const fraction of Array.from({length:40},(_,i)=>(i+.5)/40)){const triangle=Math.floor((indices.length/3-1)*fraction)*3,point=new T.Vector3();for(let k=0;k<3;k++)point.add(new T.Vector3().fromArray(positions,indices[triangle+k]*3));point.multiplyScalar(1/3).add(new T.Vector3(...pixels.slice(offset,offset+3))).applyMatrix4(view).applyMatrix4(projection);const x=(point.x+1)*width/2,y=(1-point.y)*height/2;if(point.z< -1||point.z>1||x<safe.left||x>safe.right||y<safe.top||y>safe.bottom)continue;await mouse(x,y);await delay(150);if(await evaluate("document.querySelector('.structure-meta span:last-child strong')?.textContent==='1'")){const reference=await evaluate("document.querySelector('.structure-meta span:first-child strong').textContent");const highlighted=await evaluate('window.__atlasTestSelection'),selected=atlas.parts.filter((p,i)=>highlighted[i*4]>0);assert.equal(selected.length,1,'Direct pick highlights exactly one GPU representation');const picked=selected[0];if(picked.id!==p.id)continue;assert.equal(picked.provenance?.sourceId??picked.conceptId,reference,'Direct pick has a valid active-model source reference');assert.equal(await evaluate("document.querySelector('.structure-meta span:last-child strong').textContent"),'1');return {part:picked,x,y};}}
    }
-   await reset();await area('heart');await screenshot(`${route}-${width}-${theme}-heart-area`);await reset();
-   await search('heart');await hide();await layers(mobile);await tab('Hidden');await screenshot(`${route}-${width}-${theme}-hidden`);await restore();await closeLayers(mobile);
-  }
-  await chooseTheme('dark');await reset();
-  const menus=[];
-  for(const selector of ['[aria-label="Choose male or female anatomy"]','#region-choice','#area-choice']){
-   await click(selector);await waitFor("!!document.querySelector('[data-slot=select-content][data-open]')",'dark menu');
-   const color=await evaluate("getComputedStyle(document.querySelector('[data-slot=select-content][data-open]')).backgroundColor");assert.notEqual(color,'rgb(255, 255, 255)');menus.push({selector,color});await screenshot(`${route}-${width}-dark-menu-${menus.length}`);
-   await send('Input.dispatchKeyEvent',{type:'keyDown',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});await send('Input.dispatchKeyEvent',{type:'keyUp',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});await delay(200);
-  }
-  await click('[aria-label="Search anatomy"]');await screenshot(`${route}-${width}-dark-search`);assert.notEqual(await evaluate("getComputedStyle(document.querySelector('.discovery-panel')).backgroundColor"),'rgb(255, 255, 255)');await click('[aria-label="Close search"]');
-  const chest=[];
-  if(route==='female'){
-   await layers(mobile);for(const name of ['Tissue','Glands','Pectorals']){await buttonText(name);await screenshot(`${route}-${width}-dark-${name.toLowerCase()}`);chest.push({mode:name,visible:await count()});}await closeLayers(mobile);
-   assert.deepEqual(chest.map(c=>c.visible),[2239,2237,2229]);
-  }
-  await reset();await layers(mobile);await buttonText('Body surface',"document.querySelector('.system-list')");await closeLayers(mobile);await screenshot(`${route}-${width}-dark-body-surface`);
-  await reset();await layers(mobile);await noOverlap();assert.equal(await evaluate('document.documentElement.scrollWidth<=innerWidth'),true);await closeLayers(mobile);
-  const suite={route,width,height,passed:true,drill,inventory,colors,menus,chest,errors:errors.length};report.push(suite);console.log(JSON.stringify(suite));
+   throw new Error(`No visible mesh picked: ${route} ${width}`);
+  };
+
+
+
+ const chooseIncluded=async p=>{if(!await evaluate("!!document.querySelector('.member-list')"))await pick(candidates);await included(p);};
+ const first=await pick(candidates);await checkCount(n);await assertCamera(entryCamera);
+ const second=await pick(candidates.filter(p=>p.id!==first.part.id));await checkCount(n);await assertCamera(entryCamera);
+ const third=await pick(candidates.filter(p=>p.id!==first.part.id&&p.id!==second.part.id));await checkCount(n);await assertCamera(entryCamera);
+ await pick([first.part]);await assertCamera(entryCamera);assert.deepEqual((await gpu()).filter((_,i)=>i%4===3),scopeMask);
+ await orbit();let previousCamera=await camera();for(let i=0;i<100;i++){await delay(200);const current=await camera();const d=Math.max(...Object.keys(current).flatMap(k=>current[k].map((v,j)=>Math.abs(v-previousCamera[k][j]))));previousCamera=current;if(i>12&&d<1e-8)break;}const manual=await camera();assert.notDeepEqual(manual,entryCamera,'Native orbit/zoom changes camera');
+ for(const p of [first.part,second.part,third.part,first.part]){await chooseIncluded(p);await checkCount(n);await assertCamera(manual,.002);assert.deepEqual((await gpu()).filter((_,i)=>i%4===3),scopeMask);}
+ const hidePart=name.includes('Pectoral')?candidates.find(p=>p.name.toLowerCase()==='left serratus anterior'):second.part;assert.ok(hidePart);await chooseIncluded(hidePart);await assertCamera(manual,.002);
+ assert.equal(await evaluate('window.__atlasTestSelection.filter((x,i)=>i%4===0&&x>0).length'),1,'Only active child highlighted');
+ await screenshot(route+'-'+name.replaceAll(' ','-')+'-active-child');
+ await evaluate('document.activeElement?.blur()');await hideByKey('H');await checkCount(n-1);await assertCamera(manual,.002);
+ const rid=identity.representationForPart(hidePart.id).id,offset=partIndex.get(hidePart.id)*4;
+ assert.equal((await gpu())[offset+3],0);assert.equal(await hiddenCount(),1);
+ await restoreOne(rid);await checkCount(n);await assertCamera(manual,.002);await tab('Systems');
+ await chooseIncluded(first.part);await buttonText('Clear selection');await waitFor("!document.querySelector('.detail-sheet')",'selection clears');await checkCount(n);await assertCamera(manual,.002);
+ assert.equal(await evaluate('window.__atlasTestSelection.some(x=>x!==0)'),false);
+ assert.equal(await evaluate("!!document.querySelector('.workspace-exit')"),true,'Exit reachable without active selection');
+ await mouse(700,140);await checkCount(n);await assertCamera(manual,.002); // Background is an established no-op.
+ const afterClear=await pick(candidates);await assertCamera(manual,.002);
+ // Hide multiple members individually and restore without changing scope or camera.
+ for(const p of [first.part,second.part]){await chooseIncluded(p);await hideByKey('h');}
+ await checkCount(n-2);await assertCamera(manual,.002);
+ for(const p of [first.part,second.part])await restoreOne(identity.representationForPart(p.id).id);
+ await checkCount(n);await assertCamera(manual,.002);await tab('Systems');
+ // Restore all composes even when the entire workspace is temporarily empty.
+ await buttonText('Show surrounding anatomy');await search(name);await buttonText('Isolate structure');await delay(350);const allHiddenCamera=await camera();
+ await hideByKey('H');await checkCount(0);await assertCamera(allHiddenCamera);assert.equal(await hiddenCount(),n);
+ await tab('Hidden');await click('.restore-hidden');await checkCount(n);await assertCamera(allHiddenCamera);await tab('Systems');
+ await pick(candidates);await amount(60);const exploded=await gpu(),explodedCamera=await camera();
+ for(const p of [first.part,second.part,third.part,first.part]){await chooseIncluded(p);assert.deepEqual(await gpu(),exploded,'Selection-only updates leave GPU explode offsets/membership identical');await assertCamera(explodedCamera);}
+ const explodedPick=await pick([first.part]);assert.deepEqual(await gpu(),exploded);await assertCamera(explodedCamera);
+ await hideByKey('H');await checkCount(n-1);await assertCamera(explodedCamera);assert.equal((await gpu())[partIndex.get(first.part.id)*4+3],0);await mouse(explodedPick.x,explodedPick.y);await delay(200);assert.equal(await evaluate('window.__atlasTestSelection['+partIndex.get(first.part.id)*4+']'),0,'Native pick cannot select hidden member');await assertCamera(explodedCamera);
+ await restoreOne(identity.representationForPart(first.part.id).id);await checkCount(n);await assertCamera(explodedCamera);await tab('Systems');assert.deepEqual(await gpu(),exploded,'Restore reconstructs identical stable target layout');
+ await screenshot(route+'-'+name.replaceAll(' ','-')+'-exploded-workspace');
+ await chooseIncluded(first.part);await buttonText('Isolate structure');await checkCount(1);await delay(250);
+ assert.equal(await evaluate("[...document.querySelectorAll('.detail-actions button')].some(e=>e.textContent.includes('Show surrounding anatomy'))"),true);
+ await buttonText('Show surrounding anatomy');assert.ok(await count()>=whole);await assembled();
+ // Discovery is the reviewed explicit navigation action: no silent scope corruption.
+ await search(name);await buttonText('Isolate structure');await search('right clavicle');assert.ok(await count()>=whole);assert.equal(await evaluate("!!document.querySelector('.detail-sheet.is-isolated')"),false);
+ await search(name);await buttonText('Isolate structure');await hideByKey('h');await switchModel(route==='male'?'female':'male');assert.equal(await hiddenCount(),0);assert.equal(await evaluate("!!document.querySelector('.workspace-exit')||!!document.querySelector('.detail-sheet.is-isolated')"),false);await switchModel(route);await reset();
+ report.push({route,name,scope:n,directMembers:[first.part.name,second.part.name,third.part.name,first.part.name],exactSerratus:name.includes('Pectoral')?hidePart.name:null,directAndIncluded:true,hideRestore:true,restoreAllFromEmpty:true,clearSelection:true,backgroundNoOp:true,explicitNarrowing:true,explicitExit:true,manualOrbitPreserved:true,explodeContinuity:true,hideExplodeComposition:true,discoveryNavigation:true,modelSwitchClearsScope:true,afterClearMember:afterClear.part.name});
+ fs.writeFileSync(path.join(output,'progress.json'),JSON.stringify(report,null,2));console.log('PASS',route,name);
  }
- assert.equal(errors.length,0,JSON.stringify(errors));
- fs.writeFileSync(path.join(output,'report.json'),JSON.stringify({passed:true,quick:!!process.env.SMOKE_QUICK,suites:report,errors},null,2));
-}catch(error){if(failureCapture)try{await failureCapture();}catch{}throw error;}finally{ws?.close();processHandle.kill();}
+ }
+ assert.equal(errors.length,0);fs.writeFileSync(path.join(output,'report.json'),JSON.stringify({passed:true,desktopOnly:true,report,cameraDeltas,errors},null,2));
+}catch(error){if(failureCapture)try{await failureCapture();}catch{}console.error(error);process.exitCode=1;}finally{ws?.close();processHandle.kill();}

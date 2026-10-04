@@ -25,6 +25,7 @@ export interface Concept {id:string;name:string;elements:string[]}
 export interface Atlas {version:string;sex?:'male'|'female';source?:string;scope?:string;reconstruction?:boolean;parts:Part[];concepts:Concept[];chunks:{url:string;bytes:number;gzip?:string;gzipBytes?:number}[];triangles:number}
 export type View = 'three-quarter'|'front'|'back'|'side';
 export type BreastView = 'tissue'|'cutaway'|'muscle';
+/** selected is active inspection in current-model source parts; isolatedRepresentationIds is the frozen workspace authority. Hidden IDs suppress visibility without changing either workspace membership or canonical data. */
 export interface SceneState {breastView:BreastView;inspectorOpen?:boolean;explode:number;visible:SystemId[];selected:string[];isolate:boolean;isolatedRepresentationIds?:readonly RepresentationId[];isolatedPartIds?:ReadonlySet<string>;view:View;rotate:boolean;reset:number;regionId?:import('./region-contracts').RegionId;regionPartIds?:ReadonlySet<string>;regionFocus?:[number[],number[]]|null;areaId?:import('./area-contracts').AreaId|null;areaPartIds?:ReadonlySet<string>;areaFocus?:[number[],number[]]|null;depth?:number;hiddenRepresentationIds?:readonly RepresentationId[];hiddenPartIds?:ReadonlySet<string>}
 export const DEFAULT_VISIBLE:SystemId[] = ['cardiac','sensory','skeletal','muscular','arterial','venous','nervous','respiratory','digestive','urinary','lymphatic','endocrine','reproductive','connective','mammary'];
 export const EXPLANATIONS:Record<string,string> = {
