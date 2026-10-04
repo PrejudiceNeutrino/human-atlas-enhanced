@@ -12,10 +12,13 @@ import {SYSTEMS,partIsVisible,type Atlas,type Part,type SceneState} from './anat
 import {isBodySurface,resolveVisibility} from './visibility';
 import {fitRegionCamera} from './region-camera';
 import {DISPLAY_CONTRAST_SHADER,type DisplaySettings} from './display';
+import {createClassicFloor} from './classic-floor';
+import {orbitRotationSpeed} from './rotation';
 import {SCENE_THEMES,type ResolvedTheme} from './theme';
-interface Props {modelId:ModelId;display:DisplaySettings;revealed:boolean;onReady:()=>void;theme:ResolvedTheme;atlas:Atlas;state:SceneState;onSelect:(id:string)=>void;onProgress:(n:number)=>void;onError:(s:string)=>void}
-export default function AnatomyScene({atlas,modelId,state,theme,display,revealed,onReady,onSelect,onProgress,onError}:Props){
+interface Props {rotationSpeed:number;modelId:ModelId;display:DisplaySettings;revealed:boolean;onReady:()=>void;theme:ResolvedTheme;atlas:Atlas;state:SceneState;onSelect:(id:string)=>void;onProgress:(n:number)=>void;onError:(s:string)=>void}
+export default function AnatomyScene({atlas,modelId,state,theme,rotationSpeed,display,revealed,onReady,onSelect,onProgress,onError}:Props){
  const host=useRef<HTMLDivElement>(null),latest=useRef(state),select=useRef(onSelect);
+ const latestRotation=useRef(rotationSpeed);latestRotation.current=rotationSpeed;
  const latestDisplay=useRef(display);latestDisplay.current=display;
  const latestReady=useRef(onReady);latestReady.current=onReady;
  const latestTheme=useRef(theme);latestTheme.current=theme;
@@ -35,10 +38,10 @@ export default function AnatomyScene({atlas,modelId,state,theme,display,revealed
   scene.add(new T.HemisphereLight(0xffffff,0xa7acb2,.45));
   const key=new T.DirectionalLight(0xfffaf4,2.65);key.position.set(-3,4,4);scene.add(key);
   const rim=new T.DirectionalLight(0xe9f0ff,.85);rim.position.set(2,2,-3);scene.add(rim);
-  const ring=new T.Mesh(new T.RingGeometry(.63,.632,128),new T.MeshBasicMaterial({color:0x8c969f,transparent:true,opacity:.24,side:T.DoubleSide}));ring.rotation.x=-Math.PI/2;ring.position.y=.001;scene.add(ring);
-  const innerRing=new T.Mesh(new T.RingGeometry(.55,.551,128),new T.MeshBasicMaterial({color:0xa4aeb8,transparent:true,opacity:.12,side:T.DoubleSide}));innerRing.rotation.x=-Math.PI/2;innerRing.position.y=.001;scene.add(innerRing);
+  const floor=createClassicFloor(latestTheme.current);scene.add(floor.group);
+  let rotationTime=performance.now();
   let appliedTheme:ResolvedTheme|null=null;
-  const applyTheme=()=>{const mode=latestTheme.current;if(mode===appliedTheme)return;const colors=SCENE_THEMES[mode];renderer.setClearColor(colors.background);ring.material.color.set(colors.ring);innerRing.material.color.set(colors.innerRing);markerMaterial.color.set(colors.marker);appliedTheme=mode;dirty=true;};
+  const applyTheme=()=>{const mode=latestTheme.current;if(mode===appliedTheme)return;const colors=SCENE_THEMES[mode];renderer.setClearColor(colors.background);floor.setTheme(mode);markerMaterial.color.set(colors.marker);appliedTheme=mode;dirty=true;};
   const configureDataTexture=(texture:T.DataTexture)=>{texture.magFilter=T.NearestFilter;texture.minFilter=T.NearestFilter;texture.generateMipmaps=false;texture.colorSpace=T.NoColorSpace;texture.needsUpdate=true;return texture;};
   const width=T.MathUtils.ceilPowerOfTwo(atlas.parts.length),data=new Float32Array(width*4),partTexture=configureDataTexture(new T.DataTexture(data,width,1,T.RGBAFormat,T.FloatType));
   const selectedData=new Uint8Array(width*4),selectionTexture=configureDataTexture(new T.DataTexture(selectedData,width,1));
@@ -215,7 +218,7 @@ export default function AnatomyScene({atlas,modelId,state,theme,display,revealed
     }else if(lastIsolate){sliderFrame=null;camera.clearViewOffset();fit(s.view);}
     lastIsolate=isolateKey;
    }
-   controls.enableRotate=true;controls.mouseButtons.LEFT=T.MOUSE.ROTATE;controls.touches.ONE=T.TOUCH.ROTATE;ring.visible=innerRing.visible=amount<.5&&!s.isolate;markers.visible=amount>.75;controls.autoRotate=s.rotate&&!s.isolate&&amount<.4;controls.autoRotateSpeed=.65;controls.update();if(controls.autoRotate)dirty=true;
+   controls.enableRotate=true;controls.mouseButtons.LEFT=T.MOUSE.ROTATE;controls.touches.ONE=T.TOUCH.ROTATE;markers.visible=amount>.75;controls.autoRotate=s.rotate&&!s.isolate&&amount<.4;controls.autoRotateSpeed=orbitRotationSpeed(latestRotation.current);const now=performance.now(),delta=Math.min(.1,(now-rotationTime)/1000);rotationTime=now;controls.update(controls.autoRotate?delta:undefined);if(controls.autoRotate)dirty=true;
    if(dirty){renderer.render(scene,camera);targets=[];if(amount>.45){const hasSolid=atlas.parts.some((p,i)=>!isBodySurface(p)&&data[i*4+3]>.5),targetContext={systems:new Set(s.visible),selected:new Set(s.selected),hasSolid};atlas.parts.forEach((p,i)=>{if(data[i*4+3]<.5||!resolveVisibility(p,s,targetContext).pickable)return;let left=Infinity,right=-Infinity,top=Infinity,bottom=-Infinity;for(let corner=0;corner<8;corner++){projected.set(p.bounds[(corner&1)?1:0][0]+data[i*4],p.bounds[(corner&2)?1:0][1]+data[i*4+1],p.bounds[(corner&4)?1:0][2]+data[i*4+2]).project(camera);const x=(projected.x+1)*el.clientWidth/2,y=(1-projected.y)*el.clientHeight/2;left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y);}projected.copy(centers[i]).add(new T.Vector3(data[i*4],data[i*4+1],data[i*4+2])).project(camera);if(projected.z< -1||projected.z>1)return;targets.push({index:i,x:(projected.x+1)*el.clientWidth/2,y:(1-projected.y)*el.clientHeight/2,left,right,top,bottom});});}dirty=false;if(ready&&!readyReported){readyReported=true;latestReady.current();}}
 
   };animate();

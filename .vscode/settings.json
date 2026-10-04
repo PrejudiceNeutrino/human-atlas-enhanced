@@ -1,0 +1,12 @@
+{
+  "python.analysis.exclude": [
+    "**/work/**",
+    "**/node_modules/**",
+    "**/.next/**",
+    "**/dist/**",
+    "**/out/**",
+    "**/coverage/**",
+    "**/outputs/**",
+    "**/.git/**"
+  ]
+}

@@ -41,6 +41,17 @@ export function restoreHiddenRepresentation(state:SceneState,id:RepresentationId
  return {...state,hiddenRepresentationIds:(state.hiddenRepresentationIds??[]).filter(hidden=>hidden!==id)};
 }
 
+/** Use the Hidden tab's authoritative newest-first current-model order. */
+export function restoreNewestHidden(state:SceneState,identity:IdentityIndex):SceneState {
+ const newest=hiddenRepresentationsForModel(identity,state.hiddenRepresentationIds)[0];
+ return newest?restoreHiddenRepresentation(state,newest.id):state;
+}
+export function shouldRestoreNewest(event:HideKeyEvent):boolean {
+ if(event.key.toLowerCase()!=='j'||event.ctrlKey||event.metaKey||event.altKey||event.defaultPrevented||event.isComposing||event.repeat)return false;
+ const target=event.target as Element|null;
+ return !target?.closest?.('input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="combobox"],[role="textbox"],[role="searchbox"],[role="slider"],[role="spinbutton"]');
+}
+
 type HideKeyEvent=Pick<KeyboardEvent,'key'|'target'|'ctrlKey'|'metaKey'|'altKey'|'defaultPrevented'|'isComposing'|'repeat'>;
 /** Guard the shared hide action; names and canonical concepts never establish selection validity. */
 export function shouldHideSelection(event:HideKeyEvent,identity:IdentityIndex|null,selected:readonly string[]):boolean {
