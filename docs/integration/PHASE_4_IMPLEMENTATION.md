@@ -8,7 +8,7 @@ Donor: PR #421, tag `donor/pr-421`, exact SHA `3a5be52518c51eb7acaff892c42ce9eae
 
 Adopted behavior: **Hide structure** in the detail inspector, selection clearing after hide, **Restore hidden (N)** in Systems, reset restoring hidden structures, search/direct selection restoring its selected pieces, and hidden geometry excluded from display/picking/explosion packing. The existing inspector and Systems hierarchy/styles remain; EyeOff marks the hide action and both new controls have 44-pixel minimum touch targets.
 
-Deliberately not copied: donor `hidden: string[]` source-part storage, approximate visible-count formula, renderer-local hide condition, or its upstream-only model assumptions. There is no second hidden-state authority, visibility dialog, hidden-item list or undo history.
+Deliberately not copied: donor `hidden: string[]` source-part storage, approximate visible-count formula, renderer-local hide condition, or its upstream-only model assumptions. There is no second hidden-state authority, visibility dialog or undo history. The refinement below adds an individual hidden-item list derived from the same RepresentationId state.
 
 ## Identity and temporary state
 
@@ -49,6 +49,22 @@ Restoring/hiding while fully exploded recomputes the inventory from eligible pie
 
 HRA remains internally registered and unrouted, with model-bound hide behavior tested at unit level. Source concept granularity can select many pieces; hiding follows that existing selection exactly. Existing regional/area coverage and scientific limitations carry forward. Female study readiness is not promoted. Real touch-device and anatomical review remain separate from browser smoke.
 
-No geometry, model manifest, identity dataset, region/area dataset, dependency or lockfile is changed. No rendering polish, new taxonomy/membership, supplemental anatomy, lazy/context loading, knowledge or later-phase work is included.
+No geometry, model manifest, identity dataset, region/area dataset, dependency or lockfile is changed. Apart from the focused selection tint refinement below, no rendering polish, new taxonomy/membership, supplemental anatomy, lazy/context loading, knowledge or later-phase work is included.
 
 Created: `app/hide-restore.ts`, `scripts/hide-restore.test.mjs`, `scripts/hide-restore-browser-smoke.mjs`, and the two Phase 4 integration records. Modified: `app/anatomy.ts`, `app/identity-index.ts`, `app/visibility.ts`, `app/region-navigation.ts`, `app/page.tsx`, `app/scene.tsx`, `app/globals.css` and `package.json` (test scripts only).
+
+## Phase 4 refinement: reversible dissection, H and selection clarity
+
+Refines committed Phase 4 base `890ebf3ab6cf0488b71714302a5f1c942a4438d9` on `phase-4/hide-restore`. The branch and clean starting tree were verified; main remains at the Phase 3 endpoint. This is a focused Phase 4 update, with no Phase 4.5 work.
+
+Systems now shows **Hidden structures**, its active-model count, a bounded scrollable list of physical pieces, individual **Restore** buttons and **Restore all**. It appears only when at least one valid current-model representation is hidden. Each row uses the existing part name; identical names gain the existing source reference, rather than displaying internal RepresentationIds. Long names wrap, each Restore has at least a 44-pixel target, and Systems keeps its own scroll region. The hidden viewport reserves at least one complete 44-pixel row and caps at 18 viewport-height units / 156 pixels. When hidden rows exist, the desktop panel uses 40 additional pixels of existing lower space to accommodate female chest controls; outer-panel scrolling handles shorter viewports instead of clipping actions.
+
+`hiddenRepresentationsForModel()` resolves exact current-model IDs and reverses their deduplicated insertion order for newest-first presentation. The authoritative `hiddenRepresentationIds` array is unchanged; there is no separate list state, timestamp history or canonical-concept hiding. A repeated hide neither duplicates nor moves an existing row. A multi-piece concept produces one independently restorable row per hidden representation.
+
+`restoreHiddenRepresentation()` removes exactly the requested RepresentationId. It changes only the hidden override, preserving other hidden pieces, unrelated selection, isolation, rotation, region, area, systems, chest mode, explode amount and camera state. It does not select restored anatomy. **Restore all** uses the existing override-only helper. Both restore operations re-enter the shared ordinary visibility/picking/packing resolver; disabled systems or active filters can keep restored geometry invisible. Search still atomically restores and selects only its matching current-model representations.
+
+The inspector shows a subtle **H** hint and `aria-keyshortcuts="H"`. Plain H/h invokes the exact same `hideSelected` callback as its button, including inspector closure, selection/hover/highlight cleanup and isolate exit. The guard rejects absent, unresolved or foreign-model selection; Ctrl/Meta/Alt combinations; repeats; composition; already-handled events; and input, textarea, select, contenteditable or combobox/textbox/searchbox targets and ancestors. Shift allows uppercase H. The existing `/` search handler is unchanged.
+
+The existing GPU selection texture now replaces the selected fragment's diffuse color with saturated linear RGB **(0.008, 0.42, 0.32)**, independent of system color, and uses opaque selected surfaces. The existing standard-material lighting, normals and surface shading still run afterward. Nonselected material colors/opacity are untouched. The shader program cache key changes with this shader version; no extra textures, render passes, outlines, postprocessing, lighting, background, tone mapping, shadow pipeline or dependencies are introduced. Hidden geometry continues to receive no selection texture value, and individual restore does not auto-select it.
+
+The existing suite now contains 35 focused tests and expanded male/female desktop/mobile smoke, including actual screenshot pixel inspection of pale bone, muscle, artery and vein selection in assembled views, and selected bone while exploded. See the labeled refinement validation below in `PHASE_4_VALIDATION.md` for final evidence and acceptance. Refinement modifies only this document, its validation record, the hide helpers, viewer controls, scoped CSS, selection shader and existing two Phase 4 test files.

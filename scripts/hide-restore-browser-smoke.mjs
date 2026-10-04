@@ -15,7 +15,7 @@ import {gunzipSync} from 'node:zlib';
 const baseUrl=process.env.ATLAS_URL??'http://127.0.0.1:3021';
 const chrome=process.env.CHROME_PATH??['C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','/usr/bin/google-chrome','/usr/bin/chromium'].find(p=>fs.existsSync(p));
 if(!chrome)throw new Error('Set CHROME_PATH to an installed Chromium executable.');
-const output=path.resolve('work/phase-4-browser');fs.mkdirSync(output,{recursive:true});
+const output=path.resolve(process.env.SMOKE_OUTPUT??'work/phase-4-browser');fs.mkdirSync(output,{recursive:true});
 const profile=fs.mkdtempSync(path.join(output,'chrome-'));
 const processHandle=spawn(chrome,['--headless=new','--remote-debugging-port=0',`--user-data-dir=${profile}`,'--no-first-run','--no-default-browser-check','--disable-extensions',...(process.env.CHROME_ANGLE?[`--use-angle=${process.env.CHROME_ANGLE}`,'--enable-unsafe-swiftshader']:[]),'about:blank'],{stdio:['ignore','ignore','pipe'],windowsHide:true});
 processHandle.stderr.on('data',d=>fs.appendFileSync(path.join(output,'chrome.log'),d));
@@ -84,7 +84,7 @@ try{
   }
  })()`});
  const report=[];
- const hiddenCount=async()=>Number((await evaluate("document.querySelector('.restore-hidden')?.textContent??''")).match(/\((\d+)\)/)?.[1]??0);
+ const hiddenCount=async()=>Number(await evaluate("document.querySelector('.hidden-count')?.textContent??'0'"));
  const gpu=()=>evaluate('window.__atlasTestRender.pixels');
  const camera=()=>evaluate('window.__atlasTestCamera');
  const assertCamera=async before=>{const after=await camera();for(const key of ['viewMatrix','projectionMatrix'])for(let i=0;i<16;i++)assert.ok(Math.abs(before[key][i]-after[key][i])<0.00001,`Hide/restore preserves ${key}[${i}]`);};
@@ -93,7 +93,19 @@ try{
  const restore=async()=>{await click('.restore-hidden');await waitFor("!document.querySelector('.restore-hidden')",'hidden state cleared');};
  const reset=async()=>{await click('[aria-label="Assemble and reset"]');await waitFor("!document.querySelector('.restore-hidden')&&!document.querySelector('.detail-sheet')&&document.querySelector('#region-choice').value==='atlas:region:body'&&document.querySelector('#area-choice').value===''",'full reset');await assembled();};
  const switchModel=async target=>{await click('[aria-label="Choose male or female anatomy"]');await evaluate(`(()=>{const e=[...document.querySelectorAll('[role=option]')].find(e=>e.textContent.trim()===${JSON.stringify(target==='male'?'Male anatomy':'Female anatomy')});if(!e)throw new Error('Missing model');e.click()})()`);await waitFor(`location.pathname===${JSON.stringify('/'+target)}`,'model switch');await ready();};
- for(const [width,height] of (process.env.SMOKE_QUICK?[[1440,900]]:[[1440,900],[390,844]]))for(const route of (process.env.SMOKE_QUICK?['male']:['male','female'])){
+ const pressKey=async(key,text)=>{const code=key==='/'?'Slash':'KeyH',windowsVirtualKeyCode=key==='/'?191:72,modifiers=key==='H'?8:0;await send('Input.dispatchKeyEvent',{type:'keyDown',key,code,windowsVirtualKeyCode,modifiers,...(text?{text}:{} )});await send('Input.dispatchKeyEvent',{type:'keyUp',key,code,windowsVirtualKeyCode,modifiers});await delay(150);};
+ // Setup only: use the existing Close button action without racing its moving pointer target.
+ const closeInspector=async()=>{await evaluate("document.querySelector('.detail-sheet [data-slot=\"sheet-close\"]').click()");await waitFor("!document.querySelector('.detail-sheet')",'inspector close transition completed');};
+ const hideByKey=async letter=>{await pressKey(letter);await waitFor("!document.querySelector('.detail-sheet')&&!window.__atlasTestSelection.some(x=>x!==0)",'shortcut hides and clears GPU selection');};
+ const hiddenOrder=()=>evaluate("[...document.querySelectorAll('.hidden-list li')].map(e=>e.dataset.representationId)");
+ const restoreOne=async id=>{await click(`.hidden-list li[data-representation-id="${id}"] button`);await delay(150);};
+ // Inspect actual screenshot pixels in a temporary 2D canvas; no production rendering changes.
+ const selectionPixels=async(name,width,height)=>{
+  const shot=await send('Page.captureScreenshot',{format:'png'});fs.writeFileSync(path.join(output,name+'.png'),Buffer.from(shot.data,'base64'));
+  const left=width<768?0:285,top=width<768?320:130,right=width-(width<768?62:90),bottom=height-(width<768?175:200);
+  return evaluate(`new Promise((resolve,reject)=>{const img=new Image();img.onerror=reject;img.onload=()=>{const canvas=document.createElement('canvas');canvas.width=img.width;canvas.height=img.height;const ctx=canvas.getContext('2d');ctx.drawImage(img,0,0);const pixels=ctx.getImageData(${left},${top},${right-left},${bottom-top}).data,colors=new Set();let teal=0;for(let i=0;i<pixels.length;i+=4){const r=pixels[i],g=pixels[i+1],b=pixels[i+2];if(g>100&&b>60&&r<g*.78&&b>r*1.15&&g>b*1.04){teal++;colors.add(r+','+g+','+b);}}resolve({tealPixels:teal,shadedColors:colors.size});};img.src=${JSON.stringify('data:image/png;base64,'+shot.data)};})`);
+ };
+ for(const [width,height] of (process.env.SMOKE_QUICK?(process.env.SMOKE_QUICK==='mobile'?[[390,844]]:[[1440,900]]):[[1440,900],[390,844]]))for(const route of (process.env.SMOKE_QUICK?['male']:['male','female'])){
   const mobile=width<768;
   await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
   await send('Page.navigate',{url:`${baseUrl}/${route}`});await ready();
@@ -151,7 +163,37 @@ try{
   // Hidden interaction state never enters URLs/storage and reload starts clean.
   await reset();await search('heart');await hide();assert.equal(await evaluate('location.search'),'');await send('Page.reload');await ready();await checkCount(whole);assert.equal(await hiddenCount(),0);await noOverlap();
   assert.equal(await evaluate("(()=>{const selectors=['.hide-structure','.restore-hidden'];return selectors.every(s=>!document.querySelector(s)||document.querySelector(s).getBoundingClientRect().height>=44)})()"),true);
-  report.push({route,width,height,wholeVisible:whole,directPick:direct.part.id,multiPieceHeart:heartIds.length,brainException:brainIds.length,singleMesh:true,notPickable:true,gpuHighlightCleared:true,noStaleHover:true,partialMultiPieceRestore:true,regionPersistence:true,areaPersistence:true,systemIndependence:true,isolateExit:true,eligibleOnlyGpuPacking:true,restoreWhileExploded:true,hideRestoreCameraUnchanged:true,reset:true,modelSwitchClearsHidden:true,canonicalNavigationRetained:true,chest,hideAllIndependent:true,reloadClearsHidden:true,noOverflow:true});
+  // Refinement: real bone shading, H/h safety and piece-by-piece dissection.
+  const colorResults=[];
+  for(const [system,label] of [['skeletal','Skeleton'],['muscular','Muscles'],['arterial','Arteries'],['venous','Veins']]){
+   await reset();if(system==='skeletal')await region('shoulder');await layers(mobile);await buttonText(label,"document.querySelector('.system-list')");await closeLayers(mobile);await assembled();
+   const normal=await selectionPixels(`${route}-${width}-${system}-normal`,width,height),picked=await pick(system==='skeletal'?shoulder:atlas.parts.filter(p=>p.system===system));if(system==='skeletal')assert.match(picked.part.name.toLowerCase(),/rib|clavicle|scapula|humerus|sternum|vertebra/,'Pale physical bone, rather than another skeletal-system tissue');await buttonText('Isolate structure');await closeInspector();await delay(300);
+   const selected=await selectionPixels(`${route}-${width}-${system}-selected`,width,height);assert.ok(selected.tealPixels>normal.tealPixels+20,`${system} selection is visibly teal in actual rendered pixels`);assert.ok(selected.shadedColors>16,'Selected surface preserves varied shading');colorResults.push({system,part:picked.part.id,normal,selected});
+  }
+  await reset();await region('shoulder');await layers(mobile);await buttonText('Skeleton');await closeLayers(mobile);await assembled();
+  const concepts=['right clavicle','left clavicle','right scapula'].map(name=>atlas.concepts.find(c=>c.name.toLowerCase()===name&&c.elements.length===1));assert.ok(concepts.every(Boolean),'Three current-model physical pieces');
+  await search(concepts[0].name);assert.equal(await evaluate("document.querySelector('.hide-structure kbd').textContent"),'H');assert.equal(await evaluate("document.querySelector('.hide-structure').getAttribute('aria-keyshortcuts')"),'H');await closeInspector();const assembledBone=await selectionPixels(`${route}-${width}-bone-assembled-selected`,width,height);assert.ok(assembledBone.tealPixels>0,'Selected pale bone is clear among ordinary ivory bones');
+  // Native search typing must never invoke H, even while a valid mesh remains selected.
+  await click('[aria-label="Search anatomy"]');await pressKey('h','h');assert.equal(await hiddenCount(),0);assert.equal(await evaluate("document.querySelector('[aria-label=\"Search named anatomical structures\"]').value.endsWith('h')"),true);await click('[aria-label="Close search"]');
+  for(const field of ['ctrlKey','metaKey','altKey']){await evaluate(`window.dispatchEvent(new KeyboardEvent('keydown',{key:'h',${field}:true,bubbles:true}))`);assert.equal(await hiddenCount(),0);}
+  // Test real editable targets and inherited contenteditable, preserving the selection throughout.
+  for(const kind of ['input','textarea','select','editable','combobox','textbox','searchbox']){
+   await evaluate(`(()=>{const e=document.createElement(${JSON.stringify(['input','textarea','select'].includes(kind)?kind:'div')});e.id='shortcut-editor';e.tabIndex=0;if(${JSON.stringify(kind)}==='editable'){e.contentEditable='true';e.innerHTML='<span tabindex="0">Text</span>';}else if(!['input','textarea','select'].includes(${JSON.stringify(kind)}))e.setAttribute('role',${JSON.stringify(kind)});document.body.appendChild(e);(e.firstElementChild??e).focus();})()`);await pressKey('h','h');assert.equal(await hiddenCount(),0,kind+' blocks H');await evaluate("document.querySelector('#shortcut-editor').remove()");
+  }
+  await evaluate('document.activeElement?.blur()');await hideByKey('H');assert.equal(await hiddenCount(),1);await piecesHidden(concepts[0].elements);
+  await search(concepts[1].name);await hideByKey('h');await search(concepts[2].name);await hide();assert.equal(await hiddenCount(),3);
+  const ids=concepts.map(c=>identity.representationForPart(c.elements[0]).id);assert.deepEqual(await hiddenOrder(),[...ids].reverse());await piecesHidden(concepts.flatMap(c=>c.elements));await checkCount(31);
+  await layers(mobile);await screenshot(`${route}-${width}-dissection-stack`);assert.equal(await evaluate("[...document.querySelectorAll('.hidden-list button')].every(e=>e.getBoundingClientRect().height>=44&&e.getBoundingClientRect().width>=44)"),true);assert.ok(await evaluate("document.querySelector('.hidden-list').clientHeight>=44"),'At least one complete hidden row remains visible');assert.ok(await evaluate("document.querySelector('.system-list').clientHeight>=80"),'Systems remains navigable');assert.equal(await evaluate("document.querySelector('.hidden-structures').textContent.includes('atlas:representation:')"),false,'Names instead of internal IDs');
+  const beforeSingle=await camera();await restoreOne(ids[1]);await checkCount(32);await assertCamera(beforeSingle);assert.deepEqual(await hiddenOrder(),[ids[2],ids[0]]);await piecesHidden([...concepts[0].elements,...concepts[2].elements]);assert.equal(await evaluate('window.__atlasTestSelection.some(x=>x!==0)'),false,'Individual restore does not select');
+  await restoreOne(ids[2]);await restoreOne(ids[0]);await checkCount(34);assert.equal(await hiddenCount(),0);await closeLayers(mobile);
+  await pressKey('h');assert.equal(await hiddenCount(),0,'No selection means no shortcut');await pressKey('/','/');await waitFor("!!document.querySelector('[aria-label=\"Search named anatomical structures\"]')",'existing slash opens search');await click('[aria-label="Close search"]');
+  for(const c of concepts){await search(c.name);await hideByKey('h');}await explode();await checkCount(31);await packing(shoulder.filter(p=>!concepts.some(c=>c.elements.includes(p.id))));
+  await layers(mobile);const beforeExplodedSingle=await camera();await restoreOne(ids[1]);await closeLayers(mobile);await checkCount(32);await packing(shoulder.filter(p=>!concepts[0].elements.includes(p.id)&&!concepts[2].elements.includes(p.id)));await assertCamera(beforeExplodedSingle);
+  await search(concepts[1].name);await closeInspector();const explodedColor=await selectionPixels(`${route}-${width}-bone-exploded-selected`,width,height);assert.ok(explodedColor.tealPixels>0,'Selection accent remains visible exploded');
+  const selectedBeforeRestore=await evaluate('window.__atlasTestSelection');await layers(mobile);await restore();await closeLayers(mobile);await checkCount(34);await packing(shoulder);assert.deepEqual(await evaluate('window.__atlasTestSelection'),selectedBeforeRestore,'Restore all preserves unrelated current selection');await reset();
+  // Many physical pieces use bounded scrolling, without consuming the whole Systems panel.
+  await search('heart');await hideByKey('H');await layers(mobile);assert.equal(await evaluate("document.querySelectorAll('.hidden-list li').length"),heartIds.length);assert.equal(await evaluate("(()=>{const e=document.querySelector('.hidden-list');return e.scrollHeight>e.clientHeight&&e.clientHeight<=156})()"),true);assert.ok(await evaluate("document.querySelector('.system-list').clientHeight>=80"));await noOverlap();await screenshot(`${route}-${width}-many-hidden`);await restore();await closeLayers(mobile);await reset();
+  report.push({route,width,height,wholeVisible:whole,directPick:direct.part.id,multiPieceHeart:heartIds.length,brainException:brainIds.length,singleMesh:true,notPickable:true,gpuHighlightCleared:true,noStaleHover:true,partialMultiPieceRestore:true,regionPersistence:true,areaPersistence:true,systemIndependence:true,isolateExit:true,eligibleOnlyGpuPacking:true,restoreWhileExploded:true,hideRestoreCameraUnchanged:true,reset:true,modelSwitchClearsHidden:true,canonicalNavigationRetained:true,chest,hideAllIndependent:true,reloadClearsHidden:true,noOverflow:true,refinement:{colorResults,assembledBone,explodedColor,uppercaseAndLowercaseH:true,searchTypingSafe:true,editableTargetsSafe:true,modifiersSafe:true,slashSearchPreserved:true,newestFirstDissection:true,individualMiddleRestore:true,restorePreservesCameraAndSelection:true,individualExplodedPacking:true,boundedLongList:true,touchSizedRestore:true}});
   console.log(`PASS ${route} ${width}x${height}: hide/restore, search, regions, areas, systems, isolate, GPU packing/count/highlight, camera, reset, model switch${route==='female'?', chest modes':''}`);
  }
  assert.deepEqual(errors,[],'No browser JavaScript exceptions');

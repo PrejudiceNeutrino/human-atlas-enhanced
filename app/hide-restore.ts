@@ -1,5 +1,5 @@
 import type {SceneState} from './anatomy';
-import type {RepresentationId} from './identity-contracts';
+import type {MeshRepresentation,RepresentationId} from './identity-contracts';
 import type {IdentityIndex} from './identity-index';
 
 /** Only known representations from this model's identity index may enter hidden state. */
@@ -30,4 +30,22 @@ export function selectRepresentations(state:SceneState,identity:IdentityIndex,pa
 
 export function restoreHiddenRepresentations(state:SceneState):SceneState {
  return {...state,hiddenRepresentationIds:[]};
+}
+
+/** Presentation order only: persistent IDs retain insertion order and duplicate hides never move a row. */
+export function hiddenRepresentationsForModel(identity:IdentityIndex,ids:readonly RepresentationId[]=[]):MeshRepresentation[] {
+ return [...new Set(ids)].reverse().map(id=>identity.representation(id)).filter((r):r is MeshRepresentation=>!!r&&r.modelId===identity.modelId);
+}
+
+export function restoreHiddenRepresentation(state:SceneState,id:RepresentationId):SceneState {
+ return {...state,hiddenRepresentationIds:(state.hiddenRepresentationIds??[]).filter(hidden=>hidden!==id)};
+}
+
+type HideKeyEvent=Pick<KeyboardEvent,'key'|'target'|'ctrlKey'|'metaKey'|'altKey'|'defaultPrevented'|'isComposing'|'repeat'>;
+/** Guard the shared hide action; names and canonical concepts never establish selection validity. */
+export function shouldHideSelection(event:HideKeyEvent,identity:IdentityIndex|null,selected:readonly string[]):boolean {
+ if(event.key.toLowerCase()!=='h'||event.ctrlKey||event.metaKey||event.altKey||event.defaultPrevented||event.isComposing||event.repeat||!identity)return false;
+ const target=event.target as Element|null;
+ if(target?.closest?.('input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="combobox"],[role="textbox"],[role="searchbox"]'))return false;
+ return representationIdsForPartIds(identity,selected).length>0;
 }

@@ -3,9 +3,11 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import ts from 'typescript';
+import {Color} from 'three';
+import {SYSTEMS} from '../app/anatomy.ts';
 import {MODEL_REGISTRY} from '../app/model-registry.ts';
 import {createIdentityIndex} from '../app/identity-index.ts';
-import {representationIdsForPartIds,hiddenPartIdsForModel,hideSelectedRepresentations,selectRepresentations,restoreHiddenRepresentations} from '../app/hide-restore.ts';
+import {representationIdsForPartIds,hiddenPartIdsForModel,hideSelectedRepresentations,selectRepresentations,restoreHiddenRepresentations,hiddenRepresentationsForModel,restoreHiddenRepresentation,shouldHideSelection} from '../app/hide-restore.ts';
 import {resolveVisibility,partIsVisible,currentVisibilityContext} from '../app/visibility.ts';
 import {selectRegion,resetViewer,switchRegionModel} from '../app/region-navigation.ts';
 import {selectArea,navigationSearch} from '../app/area-navigation.ts';
@@ -99,4 +101,47 @@ test('hide/restore preserves camera, explode, filters and excludes hidden IDs fr
 });
 test('direct selection rejects unknown/foreign inputs and restores exactly a valid part',()=>{
  const s=hidden(male,[part,other]);assert.deepEqual(selectRepresentations(s,male.identity,[rid(female,female.atlas.parts[0]),'unknown']).hiddenRepresentationIds,s.hiddenRepresentationIds);const next=selectRepresentations(s,male.identity,[part.id,part.id]);assert.deepEqual(next.selected,[part.id]);assert.deepEqual(next.hiddenRepresentationIds,[rid(male,other)]);
+});
+
+test('realistic dissection restores the middle piece, then reverses the remaining stack',()=>{
+ const pieces=male.atlas.parts.filter(p=>p.system==='skeletal').slice(0,3),[a,b,c]=pieces;
+ let s={...base};for(const p of pieces)s=hideSelectedRepresentations(selectRepresentations(s,male.identity,[p.id]),male.identity);
+ assert.equal(s.hiddenRepresentationIds.length,3);assert.deepEqual(hiddenRepresentationsForModel(male.identity,s.hiddenRepresentationIds).map(r=>r.id),[c,b,a].map(p=>rid(male,p)));
+ for(const p of pieces)assert.deepEqual(result(p,derived(male,s)),off);
+ s=restoreHiddenRepresentation(s,rid(male,b));assert.deepEqual(hiddenRepresentationsForModel(male.identity,s.hiddenRepresentationIds).map(r=>r.id),[c,a].map(p=>rid(male,p)));assert.equal(result(b,derived(male,s)).packingEligible,true);for(const p of [a,c])assert.deepEqual(result(p,derived(male,s)),off);
+ s=restoreHiddenRepresentation(s,rid(male,c));s=restoreHiddenRepresentation(s,rid(male,a));assert.deepEqual(s.hiddenRepresentationIds,[]);assert.deepEqual(s.selected,[]);
+ const again=hidden(male,pieces);assert.equal(restoreHiddenRepresentations(again).hiddenRepresentationIds.length,0);
+});
+test('individual restore preserves unrelated selection, camera, explode and every ordinary filter',()=>{
+ const s={...hidden(male,[part,other]),selected:['unrelated'],visible:[],isolate:true,regionId:'atlas:region:shoulder',areaId:'atlas:area:axilla',explode:1,breastView:'cutaway',rotate:true,inspectorOpen:true},next=restoreHiddenRepresentation(s,rid(male,other));
+ assert.deepEqual(next,{...s,hiddenRepresentationIds:[rid(male,part)]});assert.strictEqual(next.selected,s.selected);assert.equal(partIsVisible(other,derived(male,next)),false);assert.deepEqual(result(part,derived(male,next)),off);
+ assert.deepEqual(restoreHiddenRepresentation(s,rid(female,female.atlas.parts[0])),s);
+});
+test('duplicate hides do not duplicate or reorder the newest-first presentation',()=>{
+ const s=hidden(male,[part,other]),again=hideSelectedRepresentations({...s,selected:[part.id,part.id]},male.identity);assert.deepEqual(again.hiddenRepresentationIds,s.hiddenRepresentationIds);assert.deepEqual(hiddenRepresentationsForModel(male.identity,[...again.hiddenRepresentationIds,rid(male,part)]).map(r=>r.id),[rid(male,other),rid(male,part)]);
+});
+test('multi-piece hides remain individually restorable and foreign/unknown list records are ignored',()=>{
+ const c=male.atlas.concepts.find(c=>c.elements.length===8),s=hideSelectedRepresentations({...base,selected:c.elements},male.identity);assert.equal(hiddenRepresentationsForModel(male.identity,s.hiddenRepresentationIds).length,8);const id=s.hiddenRepresentationIds[3],next=restoreHiddenRepresentation(s,id);assert.equal(next.hiddenRepresentationIds.length,7);assert.equal(next.hiddenRepresentationIds.includes(id),false);assert.deepEqual(next.selected,[]);
+ assert.deepEqual(hiddenRepresentationsForModel(male.identity,['unknown',part.id,rid(female,female.atlas.parts[0]),...next.hiddenRepresentationIds]).map(r=>r.id),[...next.hiddenRepresentationIds].reverse());
+});
+const key=(overrides={})=>({key:'H',target:null,ctrlKey:false,metaKey:false,altKey:false,defaultPrevented:false,isComposing:false,repeat:false,...overrides});
+test('H and h guard the same hide action, while slash remains a separate search action',()=>{
+ for(const letter of ['H','h']){const s={...base,selected:[part.id]};assert.equal(shouldHideSelection(key({key:letter}),male.identity,s.selected),true);assert.deepEqual(hideSelectedRepresentations(s,male.identity).hiddenRepresentationIds,[rid(male,part)]);}
+ assert.equal(shouldHideSelection(key({key:'/'}),male.identity,[part.id]),false);
+ const page=fs.readFileSync('app/page.tsx','utf8');assert.match(page,/shouldHideSelection\(event,identity,state\.selected\).*?hideSelected\(\)/);assert.match(page,/onClick=\{hideSelected\}/);assert.match(page,/e\.key==='\/'/);
+});
+test('H rejects absent or unresolvable selection, foreign IDs and inappropriate key combinations',()=>{
+ assert.equal(shouldHideSelection(key(),male.identity,[]),false);assert.equal(shouldHideSelection(key(),null,[part.id]),false);assert.equal(shouldHideSelection(key(),male.identity,['unknown',rid(female,female.atlas.parts[0])]),false);
+ for(const field of ['ctrlKey','metaKey','altKey','defaultPrevented','isComposing','repeat'])assert.equal(shouldHideSelection(key({[field]:true}),male.identity,[part.id]),false,field);
+});
+test('H defers to editable ancestors including search, selects and contenteditable',()=>{
+ let selector;assert.equal(shouldHideSelection(key({target:{closest:s=>{selector=s;return {};}}}),male.identity,[part.id]),false);
+ for(const part of ['input','textarea','select','[contenteditable]','[role="combobox"]','[role="textbox"]','[role="searchbox"]'])assert.ok(selector.includes(part));
+ assert.equal(shouldHideSelection(key({target:{closest:()=>null}}),male.identity,[part.id]),true);
+});
+test('selection shader replaces every system base with a saturated teal while retaining normal shading',()=>{
+ const scene=fs.readFileSync('app/scene.tsx','utf8'),match=scene.match(/diffuseColor\.rgb = mix\(diffuseColor\.rgb, vec3\(([^)]+)\), partSelected\)/);assert.ok(match,'Full-strength, system-independent selection tint');const accent=match[1].split(',').map(Number);assert.ok(accent[1]>accent[0]*10&&accent[2]>accent[0]*10,'Saturated teal rather than white');assert.ok(accent[1]>.2&&accent[2]>.2,'Tint retains lit surface legibility');
+ for(const system of SYSTEMS){const normal=new Color(system.color).toArray();assert.ok(Math.hypot(...normal.map((v,i)=>v-accent[i]))>.2,`${system.id} selection differs from its material`);}
+ assert.match(scene,/diffuseColor\.a = mix\(diffuseColor\.a, 1\.0, partSelected\)/);assert.match(scene,/selectedData\[i\*4\]=selected\?255:0/);assert.match(scene,/selection\.has\(p\.id\)&&visibility\.displayed/);assert.doesNotMatch(scene,/OutlinePass|EffectComposer|BloomPass|SSAOPass/);
+ const next=restoreHiddenRepresentation(hidden(male,[part]),rid(male,part));assert.deepEqual(next.selected,[],'Restore never auto-selects');
 });
