@@ -110,7 +110,7 @@ try{
   const mobile=width<768;
   await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
   await send('Page.navigate',{url:`${baseUrl}/${route}`});await ready();
-  const model=MODEL_REGISTRY[route==='male'?'bp3d-male-4':'female-study-v3'],atlas=read(`public${model.manifestUrl}`),identity=createIdentityIndex(model,atlas,sidecar),index=createAreaIndex(dataset,sidecar,regions,identity),whole=route==='male'?(process.env.POLISH_BASELINE==='1'?2229:2217):2239;
+  const model=MODEL_REGISTRY[route==='male'?'bp3d-male-4':'female-study-v3'],atlas=read(`public${model.manifestUrl}`),identity=createIdentityIndex(model,atlas,sidecar),index=createAreaIndex(dataset,sidecar,regions,identity,JSON.parse(fs.readFileSync(new URL('../public/areas/area-representation-scopes-v1.json',import.meta.url),'utf8'))),whole=route==='male'?(process.env.POLISH_BASELINE==='1'?2229:2217):2239;
   const partIndex=new Map(atlas.parts.map((p,i)=>[p.id,i])),buffers=new Map();
   const idsFor=name=>{const c=atlas.concepts.find(c=>c.name===name);assert.ok(c,`Concept ${name}`);return identity.resolve(identity.sourceConceptCanonicalId(c.id),model.id).map(r=>r.sourcePart.id);};
   const piecesHidden=async ids=>{const data=await gpu();for(const id of ids){const offset=partIndex.get(id)*4;assert.deepEqual(data.slice(offset,offset+4),[0,0,0,0],`${id} has no GPU visibility or exploded offset`);}};

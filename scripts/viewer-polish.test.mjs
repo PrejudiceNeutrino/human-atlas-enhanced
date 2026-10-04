@@ -16,7 +16,7 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const sidecar=read('public/identity/core-crosswalk-v1.json'),regions=read('public/regions/canonical-regions-v1.json'),areas=read('public/areas/canonical-areas-v1.json');
 const fixtures=Object.values(MODEL_REGISTRY).map(model=>{
  const atlas=read(`public${model.manifestUrl}`),identity=createIdentityIndex(model,atlas,sidecar);
- return {model,atlas,identity,regions:createRegionIndex(regions,sidecar,identity),areas:createAreaIndex(areas,sidecar,regions,identity)};
+ return {model,atlas,identity,regions:createRegionIndex(regions,sidecar,identity),areas:createAreaIndex(areas,sidecar,regions,identity,JSON.parse(fs.readFileSync(new URL('../public/areas/area-representation-scopes-v1.json',import.meta.url),'utf8')))};
 });
 const base={breastView:'tissue',explode:0,visible:DEFAULT_VISIBLE,selected:[],isolate:false,view:'three-quarter',rotate:false,reset:0,regionId:BODY_REGION};
 const reg=s=>`atlas:region:${s}`,area=s=>`atlas:area:${s}`;

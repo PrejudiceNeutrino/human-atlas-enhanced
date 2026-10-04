@@ -14,7 +14,8 @@ import {areaValidationInput,validateAreas} from './validate-areas.mjs';
 import {generateAreas,donorRules,hash} from './area-generation.mjs';
 
 const input=areaValidationInput(),{dataset,sidecar,regions,indexes,seed,audit}=input;
-const areaIndexes=Object.fromEntries(Object.entries(indexes).map(([model,id])=>[model,createAreaIndex(dataset,sidecar,regions,id)]));
+const scopes=JSON.parse(fs.readFileSync(new URL('../public/areas/area-representation-scopes-v1.json',import.meta.url),'utf8'));
+const areaIndexes=Object.fromEntries(Object.entries(indexes).map(([model,id])=>[model,createAreaIndex(dataset,sidecar,regions,id,scopes)]));
 const base={breastView:'tissue',explode:0,visible:['skeletal','muscular'],selected:[],isolate:false,view:'three-quarter',rotate:false,reset:0,regionId:BODY_REGION};
 const read=p=>JSON.parse(fs.readFileSync(new URL(`../${p}`,import.meta.url),'utf8'));
 const manifests=Object.fromEntries(Object.entries(indexes).map(([id])=>[id,read(`public${id==='bp3d-male-4'?'/models/atlas.json':id==='hra-female-v1.5'?'/models/atlas-female.json':'/models/atlas-female-reconstructed.json'}`)]));
@@ -58,7 +59,7 @@ test('model-neutral API and independent coverage never leak model IDs or bounds'
  for(const [model,index] of Object.entries(areaIndexes)){
   assert.equal(index.areas().length,17);assert.equal(index.areasForRegion(BODY_REGION).length,17);
   for(const a of index.areas()){
-   const rs=index.representationsForArea(a.id,model);assert.equal(rs.length,audit.areas.find(row=>row.areaId===a.id).models[model].representations);
+   const rs=index.representationsForArea(a.id,model);assert.equal(index.conceptRepresentationsForArea(a.id,model).length,audit.areas.find(row=>row.areaId===a.id).models[model].representations);assert.equal(rs.length,scopes.scopes.find(s=>s.areaId===a.id&&s.modelId===model)?.representationIds.length??0);
    for(const r of a.regionIds)assert.ok(index.areasForRegion(r).some(x=>x.id===a.id));
    for(const c of index.conceptsForArea(a.id))assert.ok(index.areasForConcept(c).some(x=>x.id===a.id));
    for(const r of rs){assert.equal(r.representation.modelId,model);assert.strictEqual(r.representation.bounds,r.sourcePart.bounds);}

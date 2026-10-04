@@ -72,7 +72,7 @@ try{
  for(const [width,height] of (before?[[1440,900]]:process.env.SMOKE_QUICK?[[1440,900]]:[[1440,900],[390,844],[740,420]]))for(const route of ['male','female']){
   const mobile=width<768||height<600;
   await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});await send('Page.navigate',{url:`${baseUrl}/${route}`});await ready();
-  const model=MODEL_REGISTRY[route==='male'?'bp3d-male-4':'female-study-v3'],atlas=read(`public${model.manifestUrl}`),identity=createIdentityIndex(model,atlas,sidecar),ri=createRegionIndex(regions,sidecar,identity),ai=createAreaIndex(dataset,sidecar,regions,identity);
+  const model=MODEL_REGISTRY[route==='male'?'bp3d-male-4':'female-study-v3'],atlas=read(`public${model.manifestUrl}`),identity=createIdentityIndex(model,atlas,sidecar),ri=createRegionIndex(regions,sidecar,identity),ai=createAreaIndex(dataset,sidecar,regions,identity,JSON.parse(fs.readFileSync(new URL('../public/areas/area-representation-scopes-v1.json',import.meta.url),'utf8')));
   await screenshot(`${route}-${width}-whole`);
   if(before||width===1440){
    await layers(mobile);await buttonText('Skeleton');await closeLayers(mobile);await screenshot(`${route}-${width}-skeleton`);

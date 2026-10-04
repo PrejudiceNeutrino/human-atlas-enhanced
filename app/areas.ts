@@ -3,6 +3,8 @@ import type {IdentityIndex,IdentitySidecar} from './identity-index';
 import type {AreaDataset,AreaId} from './area-contracts';
 import type {RegionDataset,RegionId} from './region-contracts';
 import {BODY_REGION} from './region-contracts.ts';
+import type {AreaRepresentationScopeDataset} from './area-scope-contracts';
+import {assertAreaRepresentationScopes} from './area-scopes.ts';
 
 export const AREA_DONOR_SHA='c9dfdcfe0ecd4aac5b71f8ab82ccd37301c775e0';
 export const AREA_SLUGS=['orbit','circle-of-willis','brainstem','larynx','heart','lung-roots','porta-hepatis','celiac-trunk','kidneys','brachial-plexus','axilla','cubital-fossa','wrist','hand','pelvic-viscera','popliteal-fossa','foot'] as const;
@@ -34,8 +36,9 @@ export function assertAreaDataset(data:AreaDataset,identity:IdentitySidecar,regi
 }
 
 /** Model-bound Phase 1 resolver; a foreign-model request deliberately resolves nothing. */
-export function createAreaIndex(dataset:AreaDataset,sidecar:IdentitySidecar,regions:RegionDataset,identity:IdentityIndex){
+export function createAreaIndex(dataset:AreaDataset,sidecar:IdentitySidecar,regions:RegionDataset,identity:IdentityIndex,scopes?:AreaRepresentationScopeDataset){
  assertAreaDataset(dataset,sidecar,regions);
+ if(scopes)assertAreaRepresentationScopes(scopes,dataset,sidecar,{[identity.modelId]:identity});
  const definitions=new Map(dataset.areas.map(a=>[a.id,a]));
  const members=new Map<AreaId,Set<CanonicalConceptId>>(),byConcept=new Map<CanonicalConceptId,Set<AreaId>>();
  for(const m of dataset.memberships){
@@ -46,15 +49,31 @@ export function createAreaIndex(dataset:AreaDataset,sidecar:IdentitySidecar,regi
  }
  const areas=()=>[...dataset.areas].sort((a,b)=>a.order-b.order);
  const conceptsForArea=(id:AreaId)=>[...(members.get(id)??[])];
+ /** Knowledge/audit resolution only. Never used as a missing-scope display fallback. */
+ const conceptRepresentationsForArea=(id:AreaId,modelId:ModelId):ResolvedRepresentation[]=>{
+  const unique=new Map<string,ResolvedRepresentation>();
+  for(const c of conceptsForArea(id))for(const r of identity.resolve(c,modelId))unique.set(r.representation.id,r);
+  return [...unique.values()];
+ };
+ const scoped=new Map<AreaId,ResolvedRepresentation[]>();
+ for(const scope of scopes?.scopes??[]){
+  if(scope.modelId!==identity.modelId)continue;
+  // Resolve metadata for the explicit IDs only; concept closure never determines inclusion.
+  const metadata=new Map(conceptRepresentationsForArea(scope.areaId,identity.modelId).map(r=>[r.representation.id,r]));
+  scoped.set(scope.areaId,scope.representationIds.map(id=>{
+   const resolved=metadata.get(id);
+   if(!resolved)throw new Error(`Scope representation lacks canonical area relationship ${id}`);
+   return resolved;
+  }));
+ }
  return {
   modelId:identity.modelId,areas,area:(id:AreaId)=>definitions.get(id),
   areasForRegion:(id:RegionId)=>areas().filter(a=>id===BODY_REGION||a.regionIds.includes(id)),
   conceptsForArea,
+  conceptRepresentationsForArea,
   areasForConcept:(id:CanonicalConceptId)=>[...(byConcept.get(id)??[])].map(a=>definitions.get(a)!),
   representationsForArea:(id:AreaId,modelId:ModelId):ResolvedRepresentation[]=>{
-   const unique=new Map<string,ResolvedRepresentation>();
-   for(const c of conceptsForArea(id))for(const r of identity.resolve(c,modelId))unique.set(r.representation.id,r);
-   return [...unique.values()];
+   return modelId===identity.modelId?[...(scoped.get(id)??[])]:[];
   },
  };
 }

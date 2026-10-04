@@ -18,7 +18,7 @@ import {defaultVisibleForModel} from '../app/viewer-polish.ts';
 const baseUrl=process.env.ATLAS_URL??'http://127.0.0.1:3017';
 const chrome=process.env.CHROME_PATH??['C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','/usr/bin/google-chrome','/usr/bin/chromium'].find(p=>fs.existsSync(p));
 if(!chrome)throw new Error('Set CHROME_PATH to an installed Chromium executable.');
-const output=path.resolve('work/phase-3-browser');fs.mkdirSync(output,{recursive:true});
+const output=path.resolve(process.env.SCOPE_OUTPUT??'work/phase-4.7/browser');fs.mkdirSync(output,{recursive:true});
 const profile=fs.mkdtempSync(path.join(output,'chrome-'));
 const processHandle=spawn(chrome,['--headless=new','--remote-debugging-port=0',`--user-data-dir=${profile}`,'--no-first-run','--no-default-browser-check','--disable-extensions',...(process.env.CHROME_ANGLE?[`--use-angle=${process.env.CHROME_ANGLE}`,'--enable-unsafe-swiftshader']:[]),'about:blank'],{stdio:['ignore','ignore','pipe'],windowsHide:true});
 processHandle.stderr.on('data',d=>fs.appendFileSync(path.join(output,'chrome.log'),d));
@@ -70,13 +70,13 @@ try{
    const original=type.prototype[method];type.prototype[method]=function(...args){
     const pixels=args.at(-1);if(pixels instanceof Float32Array&&pixels.length===16384&&(method==='texImage2D'?args[4]:args[5])===1){
      let maxOffset=0,maxChange=0,displayed=0;for(let i=0;i<pixels.length;i+=4){for(let a=0;a<3;a++){maxOffset=Math.max(maxOffset,Math.abs(pixels[i+a]));if(previous)maxChange=Math.max(maxChange,Math.abs(pixels[i+a]-previous[i+a]));}if(pixels[i+3]>.5)displayed++;}
-     window.__atlasTestRender={maxOffset,maxChange,displayed};previous=pixels.slice();
+     window.__atlasTestRender={maxOffset,maxChange,displayed,pixels:Array.from(pixels)};previous=pixels.slice();
     }return original.apply(this,args);
    };
   }
  })()`});
  const report=[];
- const representative=['orbit','heart','porta-hepatis','kidneys','brachial-plexus','cubital-fossa','popliteal-fossa','foot'];
+ const representative=['orbit','circle-of-willis','heart','lung-roots','porta-hepatis','celiac-trunk','kidneys','brachial-plexus','cubital-fossa','popliteal-fossa','foot'];
  for(const [width,height] of (process.env.SMOKE_QUICK?[[1440,900]]:[[1440,900],[390,844]]))for(const route of (process.env.SMOKE_QUICK?['male']:['male','female'])){
   const mobile=width<768;
   await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
@@ -99,25 +99,37 @@ try{
   const results=[];
   for(const slug of (process.env.SMOKE_QUICK?['heart','brachial-plexus']:representative)){
    await region('body');await area(slug);
-   const definition=index.area(`atlas:area:${slug}`),rs=index.representationsForArea(definition.id,model.id),ids=new Set(rs.map(r=>r.sourcePart.id));
+   const definition=index.area(`atlas:area:${slug}`),rs=(process.env.SCOPE_BASELINE?index.conceptRepresentationsForArea:index.representationsForArea)(definition.id,model.id),ids=new Set(rs.map(r=>r.sourcePart.id));
    const expected=atlas.parts.filter(p=>ids.has(p.id)&&defaultVisibleForModel(route).includes(p.system)).length;
    assert.equal(await evaluate("document.querySelector('#region-choice').value"),definition.regionIds[0]);
    assert.equal(await count(),expected);await assembled();await noOverlap();await screenshot(`${route}-${width}-${slug}`);
+   const ordinaryGpu=await evaluate('window.__atlasTestRender.pixels');
+   for(const [i,p] of atlas.parts.entries())assert.equal(ordinaryGpu[i*4+3]>0,ids.has(p.id)&&defaultVisibleForModel(route).includes(p.system),`Exact ordinary scope GPU mask ${slug} ${p.id}`);
+   if(process.env.SCOPE_BASELINE){results.push({slug,representations:rs.length,visible:expected});continue;}
+   assert.match(await evaluate("document.querySelector('.region-status').textContent"),new RegExp(rs.length+' area pieces'));
+   await layers(mobile);
+   const rows=await evaluate("[...document.querySelectorAll('.system-row')].map(e=>({id:e.querySelector('[role=switch]')?.getAttribute('aria-label'),count:Number(e.querySelector('.system-count')?.textContent)}))");
+   for(const system of SYSTEMS){const row=rows.find(r=>r.id==='Show '+system.id);if(row)assert.equal(row.count,rs.filter(r=>r.sourcePart.system===system.id).length);}
+   await closeLayers(mobile);
    const system=slug==='heart'?'arterial':rs[0].sourcePart.system,systemName=SYSTEMS.find(s=>s.id===system).name;
    await layers(mobile);await buttonText(systemName,"document.querySelector('.system-list')");await closeLayers(mobile);
    const filtered=rs.filter(r=>r.sourcePart.system===system);assert.equal(await count(),filtered.length);assert.ok(filtered.length>0);
    // Pick actual current-model triangles under the active station and system filter.
    const safe={left:mobile?20:285,right:width-(mobile?62:90),top:mobile?320:130,bottom:height-(mobile?175:200)},f=fitRegionCamera(regionBounds(rs),'three-quarter',34,width,height,safe),camera=new T.PerspectiveCamera(34,width/height,.005,100);
    camera.setViewOffset(width,height,f.offsetX,f.offsetY,width,height);camera.position.copy(f.center).addScaledVector(f.direction,f.distance);camera.lookAt(f.center);camera.updateMatrixWorld();
-   const buffers=new Map();let picked=false;
+   const buffers=new Map();let picked=false,xPick;
    for(const {sourcePart:p} of filtered){
     if(!buffers.has(p.chunk)){const c=atlas.chunks[p.chunk],raw=`public${c.url}`;buffers.set(p.chunk,fs.existsSync(raw)?fs.readFileSync(raw):gunzipSync(fs.readFileSync(`public${c.gzip}`)));}
     const buffer=buffers.get(p.chunk),positions=new Float32Array(buffer.buffer,buffer.byteOffset+p.positions,p.vertexCount*3),indices=new Uint32Array(buffer.buffer,buffer.byteOffset+p.indices,p.indexCount);
-    for(const fraction of [.5,.25,.75,.1,.9]){const offset=Math.floor((indices.length/3-1)*fraction)*3,point=new T.Vector3();for(let k=0;k<3;k++)point.add(new T.Vector3().fromArray(positions,indices[offset+k]*3));point.multiplyScalar(1/3).project(camera);const x=(point.x+1)*width/2,y=(1-point.y)*height/2;if(x<safe.left||x>safe.right||y<safe.top||y>safe.bottom)continue;await mouse(x,y);await delay(150);if(await evaluate("!!document.querySelector('.detail-sheet')")){picked=true;break;}}
+    for(const fraction of [.5,.25,.75,.1,.9]){const offset=Math.floor((indices.length/3-1)*fraction)*3,point=new T.Vector3();for(let k=0;k<3;k++)point.add(new T.Vector3().fromArray(positions,indices[offset+k]*3));point.multiplyScalar(1/3).project(camera);const x=(point.x+1)*width/2,y=(1-point.y)*height/2;if(x<safe.left||x>safe.right||y<safe.top||y>safe.bottom)continue;await mouse(x,y);await delay(150);if(await evaluate("!!document.querySelector('.detail-sheet')")){picked=true;xPick={x,y};break;}}
     if(picked)break;
    }
    assert.ok(picked,`${route} ${width} ${slug} visible area geometry pickable`);
    const pickedName=await evaluate("document.querySelector('.structure-title').textContent");
+   if(slug==='lung-roots'){await send('Input.dispatchKeyEvent',{type:'keyDown',key:'h',code:'KeyH',windowsVirtualKeyCode:72});await send('Input.dispatchKeyEvent',{type:'keyUp',key:'h',code:'KeyH',windowsVirtualKeyCode:72});}else await click('.hide-structure');await waitFor("!document.querySelector('.detail-sheet')",'hide scoped selection');assert.equal(await count(),filtered.length-1);
+   await layers(mobile);await evaluate("[...document.querySelectorAll('[role=tab]')].find(e=>e.textContent.startsWith('Hidden')).click()");await delay(150);await click(slug==='lung-roots'?'.restore-hidden':'.hidden-list button');await buttonText('Systems');await closeLayers(mobile);assert.equal(await count(),filtered.length);
+   // Select the same visible triangle again for isolate.
+   await mouse(xPick.x,xPick.y);await waitFor("!!document.querySelector('.detail-sheet')",'restored scoped piece pickable');
    await buttonText('Isolate structure');assert.equal(await count(),1);await buttonText('Clear selection');assert.equal(await count(),filtered.length);
    await explode();assert.equal(await count(),filtered.length);assert.equal(await evaluate('window.__atlasTestRender.displayed'),filtered.length);if(slug==='heart')await screenshot(`${route}-${width}-heart-exploded`);
    // Choosing the same area assembles, clears selection/isolate and preserves systems.
@@ -129,9 +141,19 @@ try{
    // Broad region change removes active station/masks, then reset removes URL state.
    await region('shoulder');assert.equal(await evaluate("document.querySelector('#area-choice').value"),'');assert.equal(await evaluate("new URL(location.href).searchParams.has('area')"),false);
    await click('[aria-label="Assemble and reset"]');assert.equal(await count(),whole);assert.equal(await evaluate('location.search'),'');
-   results.push({slug,representations:rs.length,visible:expected,system,filtered:filtered.length,picked:pickedName,searchException:name,isolate:true,explode:true,clearArea:true,regionClearsArea:true,reset:true});
+   results.push({slug,representations:rs.length,visible:expected,system,filtered:filtered.length,picked:pickedName,searchException:name,isolate:true,explode:true,clearArea:true,regionClearsArea:true,reset:true,hide:true,restore:true,statusCount:true,systemCounts:true});
    console.log(`PASS ${route} ${width} ${slug}: ${rs.length} area / ${filtered.length} ${system}; picked ${pickedName}`);
   }
+  if(process.env.SCOPE_BASELINE){report.push({route,width,height,areas:results});continue;}
+  // Real historically expanded distal artery remains a temporary search exception.
+  await area('lung-roots');
+  const removed=read('data/areas/representation-scope-audit-v1.json').rows.find(r=>r.areaId==='atlas:area:lung-roots'&&r.modelId===model.id).removed;
+  const distal=atlas.concepts.find(c=>c.name.toLowerCase()==='right anterior segmental artery');
+  assert.ok(distal&&distal.elements.every(id=>removed.some(r=>r.sourcePartId===id)));
+  const ordinary=index.representationsForArea('atlas:area:lung-roots',model.id).length;assert.equal(await count(),ordinary);
+  await search(distal.name);assert.equal(await count(),ordinary+distal.elements.length);await waitFor(`window.__atlasTestRender.displayed===${ordinary+distal.elements.length}`,'distal selected exception rendered');
+  let pixels=await evaluate('window.__atlasTestRender.pixels');for(const id of distal.elements)assert.ok(pixels[atlas.parts.findIndex(p=>p.id===id)*4+3]>0,'Distal selection appears on GPU');
+  await buttonText('Clear selection');assert.equal(await count(),ordinary);await assembled();pixels=await evaluate('window.__atlasTestRender.pixels');for(const id of distal.elements)assert.equal(pixels[atlas.parts.findIndex(p=>p.id===id)*4+3],0,'Distal exception disappears from GPU after clear');
   // Direct transitions between two stations sharing Thoracic cannot retain the old mask.
   await area('heart');await area('lung-roots');
   assert.equal(await count(),index.representationsForArea('atlas:area:lung-roots',model.id).length);await assembled();

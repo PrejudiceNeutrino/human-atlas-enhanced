@@ -34,7 +34,12 @@
     "test:viewer-polish": "node --experimental-strip-types --test scripts/viewer-polish.test.mjs",
     "test:viewer-polish:browser": "node --experimental-strip-types scripts/viewer-polish-browser-smoke.mjs",
     "test:viewer-interaction": "node --experimental-strip-types --test scripts/viewer-interaction.test.mjs",
-    "test:viewer-interaction:browser": "node --experimental-strip-types scripts/viewer-interaction-browser-smoke.mjs"
+    "test:viewer-interaction:browser": "node --experimental-strip-types scripts/viewer-interaction-browser-smoke.mjs",
+    "generate:area-scopes": "node --experimental-strip-types scripts/generate-area-scopes.mjs --write",
+    "check:area-scopes": "node --experimental-strip-types scripts/generate-area-scopes.mjs --check",
+    "validate:area-scopes": "node --experimental-strip-types scripts/generate-area-scopes.mjs --validate",
+    "test:area-scopes": "node --experimental-strip-types --test scripts/area-scopes.test.mjs",
+    "test:area-scopes:browser": "node --experimental-strip-types scripts/area-scopes-browser-smoke.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

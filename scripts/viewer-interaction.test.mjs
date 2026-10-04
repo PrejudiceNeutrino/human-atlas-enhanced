@@ -16,7 +16,7 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const sidecar=read('public/identity/core-crosswalk-v1.json'),regions=read('public/regions/canonical-regions-v1.json'),areas=read('public/areas/canonical-areas-v1.json');
 const base={breastView:'tissue',explode:0,visible:[],selected:[],isolate:false,rotate:false,view:'side',reset:3,regionId:'atlas:region:shoulder',areaId:'atlas:area:axilla',hiddenRepresentationIds:[]};
 for(const model of Object.values(MODEL_REGISTRY)){
- const atlas=read(`public${model.manifestUrl}`),identity=createIdentityIndex(model,atlas,sidecar),ri=createRegionIndex(regions,sidecar,identity),ai=createAreaIndex(areas,sidecar,regions,identity);
+ const atlas=read(`public${model.manifestUrl}`),identity=createIdentityIndex(model,atlas,sidecar),ri=createRegionIndex(regions,sidecar,identity),ai=createAreaIndex(areas,sidecar,regions,identity,JSON.parse(fs.readFileSync(new URL('../public/areas/area-representation-scopes-v1.json',import.meta.url),'utf8')));
  const group=atlas.concepts.find(c=>c.elements.length>5&&c.elements.length<30),member=group.elements[0],other=atlas.parts.find(p=>!group.elements.includes(p.id));
  const display=s=>atlas.parts.filter(p=>partIsVisible(p,{...s,hiddenPartIds:hiddenPartIdsForModel(identity,s.hiddenRepresentationIds)})).map(p=>p.id);
  for(const explode of [0,1])test(`${model.id}: isolated member drill-down at explode ${explode}, filters and context preserved`,()=>{
