@@ -43,7 +43,9 @@
     "test:anatomy-discovery": "node --experimental-strip-types --test scripts/anatomy-discovery.test.mjs",
     "test:anatomy-discovery:browser": "node --experimental-strip-types scripts/anatomy-discovery-browser-smoke.mjs",
     "test:presentation": "node --experimental-strip-types --test scripts/presentation.test.mjs",
-    "test:presentation:browser": "node --experimental-strip-types scripts/presentation-browser-smoke.mjs"
+    "test:presentation:browser": "node --experimental-strip-types scripts/presentation-browser-smoke.mjs",
+    "test:explosion": "node --experimental-strip-types --test scripts/explosion-layout.test.mjs",
+    "test:explosion:browser": "node --experimental-strip-types scripts/explosion-browser-smoke.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

@@ -7,9 +7,10 @@ import {setTimeout as delay} from 'node:timers/promises';
 import {MODEL_REGISTRY} from '../app/model-registry.ts';
 import {createIdentityIndex} from '../app/identity-index.ts';
 import {createAreaIndex} from '../app/areas.ts';
+import {createRegionIndex,regionBounds} from '../app/regions.ts';
 import {DEFAULT_VISIBLE} from '../app/anatomy.ts';
 import * as T from 'three';
-import {createExplosionLayout} from '../app/explosion-layout.ts';
+import {createStableExplosionLayout,evaluateExplosionOffset} from '../app/explosion-layout.ts';
 import {gunzipSync} from 'node:zlib';
 import {selectBrowserHelpers} from './select-browser-helpers.mjs';
 import {defaultVisibleForModel} from '../app/viewer-polish.ts';
@@ -41,7 +42,7 @@ try{
  const {select:selectMenu,options:menuOptions}=selectBrowserHelpers({evaluate,click,waitFor,delay});
  const region=slug=>selectMenu('#region-choice',`atlas:region:${slug}`);
  const count=async()=>Number((await evaluate("document.querySelector('.panel-foot span').textContent")).replace(/[^0-9]/g,''));
- const settled=()=>waitFor("window.__atlasTestRender?.maxChange<0.0001",'rendered explosion offsets settled');
+ const settled=async()=>{let previous;for(let i=0;i<100;i++){const pixels=await evaluate('window.__atlasTestRender?.pixels');if(pixels&&JSON.stringify(pixels)===previous)return;previous=JSON.stringify(pixels);await delay(100);}throw new Error('Explosion offsets did not settle');};
  const assembled=async()=>{const expected=await count();await waitFor(`window.__atlasTestRender?.maxOffset<0.0005&&window.__atlasTestRender.displayed===${expected}`,'rendered anatomy assembled');};
  const screenshot=async name=>{const r=await send('Page.captureScreenshot',{format:'png'});fs.writeFileSync(path.join(output,name+'.png'),Buffer.from(r.data,'base64'));};
  failureCapture=async()=>{await screenshot('failure');fs.writeFileSync(path.join(output,'failure.json'),JSON.stringify(await evaluate("({url:location.href,text:document.body.innerText,options:[...document.querySelectorAll('[role=option]')].map(e=>({text:e.textContent,rect:e.getBoundingClientRect().toJSON()}))})"),null,2));};
@@ -125,8 +126,11 @@ try{
    throw new Error(`No visible mesh picked: ${route} ${width}`);
   };
   const packing=async eligible=>{
-   await delay(150);const pixels=await gpu(),layout=createExplosionLayout(eligible,width/height);assert.equal(layout.cells.size,eligible.length);
-   for(const p of atlas.parts){const i=partIndex.get(p.id)*4,cell=layout.cells.get(p.id);if(!cell){assert.equal(pixels[i+3],0);assert.deepEqual(pixels.slice(i,i+3),[0,0,0]);continue;}const center=p.bounds[0].map((v,a)=>(v+p.bounds[1][a])/2),expected=[cell.x-center[0],cell.y+.85-center[1],-center[2]];for(let a=0;a<3;a++)assert.ok(Math.abs(pixels[i+a]-expected[a])<.001,`${p.id} offset matches eligible-only inventory cell`);assert.equal(pixels[i+3],1);}
+   await delay(150);const pixels=await gpu(),active=await evaluate("({region:document.querySelector('#region-choice')?.getAttribute('data-value'),area:document.querySelector('#area-choice')?.getAttribute('data-value'),isolate:!!document.querySelector('.detail-sheet.is-isolated')})");
+   const url=new URL(await evaluate('location.href')),areaId=url.searchParams.get('area'),regionId=url.searchParams.get('region');
+   const scope=active.isolate?null:areaId?index.representationsForArea(areaId,model.id):regionId&&regionId!=='atlas:region:body'?createRegionIndex(regions,sidecar,identity).representationsForRegion(regionId,model.id):null;
+   const b=scope?.length?regionBounds(scope):null,focus=b?.[0].map((n,a)=>(n+b[1][a])/2),layout=createStableExplosionLayout(eligible,model.id,focus);assert.equal(layout.targets.size,eligible.length);
+   for(const p of atlas.parts){const i=partIndex.get(p.id)*4,cell=layout.targets.get(p.id);if(!cell){assert.equal(pixels[i+3],0);assert.deepEqual(pixels.slice(i,i+3),[0,0,0]);continue;}const expected=evaluateExplosionOffset(cell,1,layout.lanes.length);for(let a=0;a<3;a++)assert.ok(Math.abs(pixels[i+a]-expected[a])<.001,`${p.id} offset matches eligible-only inventory cell`);assert.equal(pixels[i+3],1);}
   };
   await checkCount(whole);await assembled();await noOverlap();
   // A: actual mesh selection/hide/restore, count, pick rejection and unchanged camera.
