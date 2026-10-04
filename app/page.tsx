@@ -1,20 +1,21 @@
 import {flushSync} from 'react-dom';
 import {registerAtlasTools} from './agent-tools';
 import {useCallback,useEffect,useMemo,useRef,useState} from 'react';
-import {Activity,ArrowUpRight,ChevronRight,EyeOff,Focus,Info,Layers3,Pause,RotateCcw,RotateCw,Search,Sun,Moon,Monitor,X} from 'lucide-react';
+import {Activity,ArrowUpRight,ChevronRight,EyeOff,Focus,Info,Layers3,Pause,RotateCcw,RotateCw,Sun,Moon,Monitor,X} from 'lucide-react';
 import {Select,SelectTrigger,SelectValue,SelectContent,SelectItem,SelectGroup,SelectLabel} from '@/components/ui/select';
 import {Button} from '@/components/ui/button';
 import {Badge} from '@/components/ui/badge';
 import {Slider} from '@/components/ui/slider';
 import {Switch} from '@/components/ui/switch';
 import {Sheet,SheetContent,SheetTitle,SheetDescription} from '@/components/ui/sheet';
-import {Combobox,ComboboxInput,ComboboxContent,ComboboxList,ComboboxItem,ComboboxEmpty} from '@/components/ui/combobox';
+import {AnatomyDiscovery,type DiscoveryMode} from './anatomy-discovery-panel';
+import {buildDiscoveryIndex,shouldOpenDiscovery} from './anatomy-discovery';
 import AnatomyScene from './scene';
 import {Tabs,TabsList,TabsTrigger,TabsContent} from '@/components/ui/tabs';
 import {allSystemsForAtlas,showAllSystems,toggleAllSystems,selectIncludedMember} from './viewer-interaction';
 import {browserTheme,useTheme} from './theme-store';
 import {THEME_MODES,type ThemeMode} from './theme';
-import {buildSearchConcepts,matchesAnatomySearch,type SearchConcept} from './anatomy-search';
+import {resolveSearchPartIds,type SearchConcept} from './anatomy-search';
 import {createIdentityIndex,type IdentityIndex,type IdentitySidecar} from './identity-index';
 import {hiddenPartIdsForModel,hideSelectedRepresentations,selectRepresentations,restoreHiddenRepresentations,hiddenRepresentationsForModel,restoreHiddenRepresentation,shouldHideSelection} from './hide-restore';
 import {modelForViewer,type ViewerModel} from './model-registry';
@@ -26,7 +27,7 @@ import type {AreaRepresentationScopeDataset} from './area-scope-contracts';
 import type {AreaDataset,AreaId} from './area-contracts';
 import {selectArea,normalizeNavigation,navigationSearch} from './area-navigation';
 import {defaultVisibleForModel,teachingAreaMenuGroups,isAreaRelevantToRegion,scopeRepresentations,systemCountsForScope} from './viewer-polish';
-import {DEFAULT_VISIBLE,partIsVisible,SYSTEMS,EXPLANATIONS,explanation,type Atlas,type Concept,type SceneState,type SystemId,type View} from './anatomy';
+import {DEFAULT_VISIBLE,partIsVisible,SYSTEMS,EXPLANATIONS,explanation,type Atlas,type SceneState,type SystemId,type View} from './anatomy';
 type AnatomySex='male'|'female';
 type AnatomyModel=ViewerModel;
 const defaultVisible=defaultVisibleForModel;
@@ -40,7 +41,7 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
  const source=reconstructed?'BodyParts3D + HRA':sex==='female'?'Human Reference Atlas':'BodyParts3D';
  const sourceUrl=sex==='female'?'https://doi.org/10.48539/HBM352.BTSQ.586':'https://lifesciencedb.jp/bp3d/';
  const detailTitle=useRef<HTMLHeadingElement>(null);
- const [loaded,setLoaded]=useState<{atlas:Atlas;identity:IdentityIndex;regions:RegionIndex;areas:AreaIndex}|null>(null),[state,setState]=useState<SceneState>(()=>({...initial,regionId:initialRegion,areaId:initialArea,visible:defaultVisible(model)})),[progress,setProgress]=useState(0),[error,setError]=useState(''),[panel,setPanel]=useState<'layers'|'search'|null>(null),[details,setDetails]=useState(false),[about,setAbout]=useState(false),[query,setQuery]=useState(''),[chosen,setChosen]=useState<SearchConcept|null>(null);
+ const [loaded,setLoaded]=useState<{atlas:Atlas;identity:IdentityIndex;regions:RegionIndex;areas:AreaIndex}|null>(null),[state,setState]=useState<SceneState>(()=>({...initial,regionId:initialRegion,areaId:initialArea,visible:defaultVisible(model)})),[progress,setProgress]=useState(0),[error,setError]=useState(''),[panel,setPanel]=useState<'layers'|'search'|null>(null),[details,setDetails]=useState(false),[about,setAbout]=useState(false),[discoveryMode,setDiscoveryMode]=useState<DiscoveryMode>('search'),[discoveryFocus,setDiscoveryFocus]=useState(0),[chosen,setChosen]=useState<SearchConcept|null>(null);
  const active=loaded?.identity.modelId===modelRecord.id?loaded:null,atlas=active?.atlas??null,identity=active?.identity??null;
  useEffect(()=>{const abort=new AbortController();setProgress(0);setError('');setLoaded(null);setChosen(null);setDetails(false);setState(s=>switchRegionModel(s,defaultVisible(model)));
   Promise.all([fetch(modelRecord.manifestUrl,{signal:abort.signal}),fetch('/identity/core-crosswalk-v1.json',{signal:abort.signal}),fetch('/regions/canonical-regions-v1.json',{signal:abort.signal}),fetch('/areas/canonical-areas-v1.json',{signal:abort.signal}),fetch('/areas/area-representation-scopes-v1.json',{signal:abort.signal})]).then(async responses=>{if(responses.some(r=>!r.ok))throw new Error('The anatomy catalogue could not be loaded.');const [manifest,crosswalk,regionData,areaData,scopeData]=await Promise.all(responses.map(r=>r.json()));const next=manifest as Atlas,identity=createIdentityIndex(modelRecord,next,crosswalk as IdentitySidecar),regions=createRegionIndex(regionData as RegionDataset,crosswalk as IdentitySidecar,identity),areas=createAreaIndex(areaData as AreaDataset,crosswalk as IdentitySidecar,regionData as RegionDataset,identity,scopeData as AreaRepresentationScopeDataset);return {atlas:next,identity,regions,areas};}).then(result=>{if(!abort.signal.aborted){setLoaded(result);setState(s=>({...s,...normalizeNavigation(s.regionId??BODY_REGION,s.areaId??null,result.regions,result.areas)}));}}).catch(e=>{if(e.name!=='AbortError')setError(e.message);});return()=>abort.abort();},[model]);
@@ -55,7 +56,7 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
  const hiddenPartIds=useMemo(()=>identity?hiddenPartIdsForModel(identity,state.hiddenRepresentationIds):new Set<string>(),[identity,state.hiddenRepresentationIds]);
  const displayState:SceneState={...state,regionPartIds,regionFocus,areaPartIds,areaFocus,hiddenPartIds};
  useEffect(()=>{if(!active)return;const url=new URL(window.location.href);url.search=navigationSearch(url.search,regionId,areaId);window.history.replaceState(null,'',url);},[active,regionId,areaId]);
- useEffect(()=>{const key=(e:KeyboardEvent)=>{if(e.key==='/'&&!(e.target instanceof HTMLInputElement)&&!(e.target instanceof HTMLTextAreaElement)){e.preventDefault();setPanel('search');setDetails(false);}};window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key);},[]);
+ useEffect(()=>{const key=(e:KeyboardEvent)=>{if(shouldOpenDiscovery(e)){e.preventDefault();setDiscoveryMode('search');setDiscoveryFocus(n=>n+1);setPanel('search');}};window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key);},[]);
  const parts=useMemo(()=>new Map(atlas?.parts.map(p=>[p.id,p])),[atlas]);
  const hiddenItems=useMemo(()=>{
   const items=identity?hiddenRepresentationsForModel(identity,state.hiddenRepresentationIds).map(representation=>({representation,part:parts.get(representation.sourcePartId.value)!})):[];
@@ -72,9 +73,8 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
  const matchesVisible=(ids:SystemId[])=>state.visible.length===ids.length&&ids.every(id=>state.visible.includes(id));
  const selectedParts=state.selected.map(id=>parts.get(id)).filter(p=>!!p),selected=selectedParts[0],system=SYSTEMS.find(s=>s.id===selected?.system);
  const visibleCount=atlas?.parts.filter(p=>partIsVisible(p,displayState)).length??0;
- const searchConcepts=useMemo(()=>atlas?buildSearchConcepts(atlas):[],[atlas]);
- const results=useMemo(()=>{if(!atlas)return[];const term=query.toLowerCase().trim();if(!term)return ['heart','brain','liver','stomach','spleen','pancreas','urinary bladder','trachea'].map(name=>atlas.concepts.find(c=>c.name.toLowerCase()===name)).filter((x):x is Concept=>!!x);return searchConcepts.filter(c=>matchesAnatomySearch(c,term)).sort((a,b)=>a.name.length-b.name.length).slice(0,80);},[atlas,query,searchConcepts]);
- const choose=(c:SearchConcept)=>{const canonicalId=identity?.sourceConceptCanonicalId(c.id);const resolved=canonicalId?identity?.resolve(canonicalId,modelRecord.id):null;const selectedIds=resolved?resolved.map(item=>item.sourcePart.id):c.elements;setChosen(c);setState(s=>identity?selectRepresentations(s,identity,selectedIds):s);setDetails(true);setPanel(null);};
+ const discovery=useMemo(()=>atlas&&identity?buildDiscoveryIndex(atlas,identity):[],[atlas,identity]);
+ const choose=(c:SearchConcept)=>{if(!identity)return;const selectedIds=resolveSearchPartIds(c,identity);setChosen(c);setState(s=>selectRepresentations(s,identity,selectedIds));setDetails(true);setPanel(null);};
  useEffect(()=>{if(!atlas||!identity)return;return registerAtlasTools(atlas,c=>flushSync(()=>choose(c)));},[atlas,identity]);
  const choosePart=(id:string,included=false)=>{const p=parts.get(id),representation=identity?.representationForPart(id);if(!p||!representation||representation.modelId!==modelRecord.id)return;setChosen({id:p.conceptId,name:p.name,elements:[id]});setState(s=>included?selectIncludedMember(s,identity!,id):selectRepresentations(s,identity!,[id]));setDetails(true);setPanel(null);};
  const toggle=(id:SystemId)=>{setDetails(false);setState(s=>({...s,selected:[],isolate:false,breastView:(id==='mammary'||id==='integumentary')&&!s.visible.includes(id)?'tissue':s.breastView,visible:s.visible.includes(id)?s.visible.filter(x=>x!==id):[...s.visible,id]}));};
@@ -88,11 +88,13 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
   {atlas&&identity&&<AnatomyScene key={modelRecord.id} atlas={atlas} state={{...displayState,inspectorOpen:details&&selectedParts.length>0}} theme={theme} onSelect={choosePart} onProgress={n=>{setProgress(n);if(n===100)setError('');}} onError={setError}/>}
   <div className="vignette"/>
   {atlas&&(areaId||regionId!==BODY_REGION)&&<div className="region-status glass" role="status">{areaId?(areaRepresentations.length===0?'Teaching area unavailable on this model. Choose None or another area.':visibleCount===0?'No area pieces match the current systems. Enable a system.':`${teachingArea?.name} · ${areaRepresentations.length} area pieces · ${visibleCount} visible`):regionalRepresentations.length===0?'Region unavailable on this model. Choose another region or Whole body.':visibleCount===0?'No pieces match the current systems. Enable a system or choose Whole body.':`${regionalRepresentations.length} regional pieces · ${visibleCount} visible`}</div>}
+  <div className="navigation-rail">
   <header className="identity"><div className="eyebrow"><span className="status-dot"/> INTERACTIVE ANATOMY</div><h1><a className="atlas-home-link" href="/" aria-label="Human Atlas home">Human Atlas</a><Badge variant="outline" className="edition">3D</Badge></h1><div className="identity-meta">{atlas?atlas.parts.length.toLocaleString():reconstructed?'2,245':sex==='female'?'888':'2,234'} modeled pieces <span>·</span> {source}</div><div className="anatomy-choice">
+   <div className="region-choice model-choice"><label htmlFor="model-choice">Model</label>
    <Select value={model} onValueChange={value=>{if(value==='male'||value==='female')onModelChange(value,regionId,areaId);}} items={[{value:'male',label:'Male anatomy'},{value:'female',label:'Female anatomy'}]}>
-    <SelectTrigger aria-label="Choose male or female anatomy"><SelectValue/></SelectTrigger>
+    <SelectTrigger id="model-choice" aria-label="Choose male or female anatomy"><SelectValue/></SelectTrigger>
     <SelectContent className="anatomy-choice-menu"><SelectItem value="male" data-value="male">Male anatomy</SelectItem><SelectItem value="female" data-value="female">Female anatomy</SelectItem></SelectContent>
-   </Select>
+   </Select></div>
    <div className="region-choice"><label htmlFor="region-choice">Region</label>
     <Select value={regionId} disabled={!regionIndex} onValueChange={value=>{if(value)pickRegion(value as RegionId);}} items={(regionIndex?.regions()??[{id:BODY_REGION,name:'Whole body'}]).map(r=>({value:r.id,label:r.name}))}>
      <SelectTrigger id="region-choice" value={regionId} aria-label="Choose anatomical region"><SelectValue/></SelectTrigger>
@@ -114,7 +116,7 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
     </Select>
    </div>
   </div>{teachingArea?.scopeNote&&<p id="area-scope" className="area-scope">{areaId==="atlas:area:brachial-plexus"?"Corridor station · named plexus trunks incomplete.":"Frozen male-source station · female-specific membership pending."}</p>}{sex==='female'&&<p className="coverage-note">{reconstructed?'Female study model · estimated proportions':'Partial skeleton & muscle coverage'}</p>}</header>
-  <nav className="top-actions" aria-label="Explorer panels"><Select value={themeMode} onValueChange={value=>{if(value)browserTheme.setMode(value as ThemeMode);}} items={THEME_MODES.map(value=>({value,label:value[0].toUpperCase()+value.slice(1)}))}><SelectTrigger value={themeMode} className="theme-trigger icon-button" aria-label="Choose theme" title={`Theme: ${themeMode}`}><span aria-hidden="true">{themeMode==='system'?<Monitor size={18}/>:themeMode==='dark'?<Moon size={18}/>:<Sun size={18}/>}</span><span className="sr-only">Theme: {themeMode}</span></SelectTrigger><SelectContent className="theme-menu">{THEME_MODES.map(value=><SelectItem key={value} value={value} data-value={value}>{value[0].toUpperCase()+value.slice(1)}</SelectItem>)}</SelectContent></Select><Button variant="ghost" className={panel==='search'?'active':''} onClick={()=>openPanel('search')} aria-label="Search anatomy"><Search size={18}/><span>Find a structure</span><kbd>/</kbd></Button><Button variant="ghost" className="icon-button" aria-label="About this atlas" onClick={()=>{setDetails(false);setPanel(null);setAbout(true);}}><Info size={18}/></Button></nav>
+
   <section className={`layers-panel glass ${panel==='layers'?'mobile-open':''}`} aria-label="Anatomical visibility">
    <div className="panel-heading"><span>Visibility</span><Button variant="ghost" className="mobile-only icon-button" onClick={()=>setPanel(null)} aria-label="Close systems"><X size={18}/></Button></div>
    <Tabs className="visibility-tabs" value={visibilityTab} onValueChange={value=>setVisibilityTab(String(value))}>
@@ -133,7 +135,8 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
    </Tabs>
    <div className="panel-foot"><span>{visibleCount.toLocaleString()} pieces visible</span>{visibilityTab==='systems'&&<Button variant="ghost" onClick={()=>setState(s=>toggleAllSystems(s,allSystems))}>{allSystems.some(id=>state.visible.includes(id))?'Hide all systems':'Show all systems'}</Button>}</div>
   </section>
-  {panel==='search'&&<section className="search-panel glass" aria-label="Find anatomy"><div className="panel-heading"><span>Find a structure</span><Button variant="ghost" className="icon-button" onClick={()=>setPanel(null)} aria-label="Close search"><X size={18}/></Button></div><Combobox<Concept> items={results} value={null} onValueChange={value=>{if(value)choose(value);}} inputValue={query} onInputValueChange={setQuery} itemToStringLabel={c=>c.name} filter={null} open onOpenChange={open=>{if(!open)setPanel(null);}}><ComboboxInput autoFocus placeholder="Heart, femur, cranial nerve…" aria-label="Search named anatomical structures" showTrigger={false}/><ComboboxContent className="anatomy-search-results"><ComboboxEmpty>No structures match your search.</ComboboxEmpty><ComboboxList>{(c:Concept)=><ComboboxItem key={c.id} value={c}><span className="search-result-name">{c.name}</span><span className="small-number">{c.elements.length} {c.elements.length===1?'piece':'pieces'}</span></ComboboxItem>}</ComboboxList></ComboboxContent></Combobox><p className="search-note">{query?'Showing up to 80 matches. Refine your search to find smaller structures.':'Start with a major organ, or search every named structure.'}</p></section>}
+  </div>
+  <nav className="top-actions" aria-label="Explorer panels"><Select value={themeMode} onValueChange={value=>{if(value)browserTheme.setMode(value as ThemeMode);}} items={THEME_MODES.map(value=>({value,label:value[0].toUpperCase()+value.slice(1)}))}><SelectTrigger value={themeMode} className="theme-trigger icon-button" aria-label="Choose theme" title={`Theme: ${themeMode}`}><span aria-hidden="true">{themeMode==='system'?<Monitor size={18}/>:themeMode==='dark'?<Moon size={18}/>:<Sun size={18}/>}</span><span className="sr-only">Theme: {themeMode}</span></SelectTrigger><SelectContent className="theme-menu">{THEME_MODES.map(value=><SelectItem key={value} value={value} data-value={value}>{value[0].toUpperCase()+value.slice(1)}</SelectItem>)}</SelectContent></Select><AnatomyDiscovery key={modelRecord.id} open={panel==='search'} mode={discoveryMode} focusRequest={discoveryFocus} onModeChange={setDiscoveryMode} onOpenChange={open=>setPanel(open?'search':null)} entries={discovery} systems={activeSystems} pieceCount={identity?.representationCount??0} onChoose={choose}/><Button variant="ghost" className="icon-button" aria-label="About this atlas" onClick={()=>{setDetails(false);setPanel(null);setAbout(true);}}><Info size={18}/></Button></nav>
   <nav className="view-controls glass" aria-label="Camera controls">{(['three-quarter','front','side','back'] as View[]).map((v,i)=><Button variant="ghost" key={v} className={state.view===v?'active':''} aria-pressed={state.view===v} disabled={state.explode>.8&&v!=='front'} onClick={()=>setState(s=>({...s,view:v,reset:s.reset+1,rotate:false}))} title={`${v} view`} aria-label={`${v} view`}><span>{['¾','F','S','B'][i]}</span></Button>)}<i/><Button variant="ghost" disabled={state.explode>=.4} aria-label={state.rotate?'Pause rotation':'Rotate body'} title="Auto rotate" className={state.rotate?'active':''} onClick={()=>setState(s=>({...s,rotate:!s.rotate}))}>{state.rotate?<Pause size={17}/>:<RotateCw size={18}/>}</Button><Button variant="ghost" aria-label="Reset view and layers" title="Reset" onClick={reset}><RotateCcw size={17}/></Button></nav>
   <div className="scene-caption"><span className="caption-line"/><span>{state.isolate?(chosen?.name??'SELECTED STRUCTURE'):state.explode>.95?'ANATOMICAL INVENTORY':state.explode>.05?'SEPARATED STRUCTURES':areaId?teachingArea?.name.toUpperCase():regionId!==BODY_REGION?regionIndex?.region(regionId)?.name.toUpperCase():sex==='female'?'ADULT HUMAN · FEMALE':'ADULT HUMAN · MALE'}</span><span className="caption-line"/></div>
   <div className="bottom-dock glass"><Button variant="ghost" className="mobile-only dock-layers" onClick={()=>openPanel('layers')} aria-label="Open system layers"><Layers3 size={20}/><span>Systems</span></Button><div className="explode-control"><div className="explode-label"><label id="explode-label">Explode anatomy</label><output>{Math.round(state.explode*100)}<span>%</span></output></div><Slider aria-labelledby="explode-label" min={0} max={100} step={1} value={[state.explode*100]} onValueChange={v=>setState(s=>({...s,explode:(Array.isArray(v)?v[0]:v)/100,view:(Array.isArray(v)?v[0]:v)>80?'front':s.view,rotate:false}))}/><div className="slider-endpoints"><span>Assembled</span><span>Every piece</span></div></div><Button variant="ghost" className="dock-reset" onClick={reset} aria-label="Assemble and reset"><RotateCcw size={18}/><span>Reset</span></Button></div>

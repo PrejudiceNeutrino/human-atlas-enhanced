@@ -128,7 +128,7 @@ const key=(overrides={})=>({key:'H',target:null,ctrlKey:false,metaKey:false,altK
 test('H and h guard the same hide action, while slash remains a separate search action',()=>{
  for(const letter of ['H','h']){const s={...base,selected:[part.id]};assert.equal(shouldHideSelection(key({key:letter}),male.identity,s.selected),true);assert.deepEqual(hideSelectedRepresentations(s,male.identity).hiddenRepresentationIds,[rid(male,part)]);}
  assert.equal(shouldHideSelection(key({key:'/'}),male.identity,[part.id]),false);
- const page=fs.readFileSync('app/page.tsx','utf8');assert.match(page,/shouldHideSelection\(event,identity,state\.selected\).*?hideSelected\(\)/);assert.match(page,/onClick=\{hideSelected\}/);assert.match(page,/e\.key==='\/'/);
+ const page=fs.readFileSync('app/page.tsx','utf8');assert.match(page,/shouldHideSelection\(event,identity,state\.selected\).*?hideSelected\(\)/);assert.match(page,/onClick=\{hideSelected\}/);assert.match(page,/shouldOpenDiscovery\(e\)/);
 });
 test('H rejects absent or unresolvable selection, foreign IDs and inappropriate key combinations',()=>{
  assert.equal(shouldHideSelection(key(),male.identity,[]),false);assert.equal(shouldHideSelection(key(),null,[part.id]),false);assert.equal(shouldHideSelection(key(),male.identity,['unknown',rid(female,female.atlas.parts[0])]),false);

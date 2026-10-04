@@ -207,7 +207,7 @@ try{
    const color=await evaluate("getComputedStyle(document.querySelector('[data-slot=select-content][data-open]')).backgroundColor");assert.notEqual(color,'rgb(255, 255, 255)');menus.push({selector,color});await screenshot(`${route}-${width}-dark-menu-${menus.length}`);
    await send('Input.dispatchKeyEvent',{type:'keyDown',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});await send('Input.dispatchKeyEvent',{type:'keyUp',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});await delay(200);
   }
-  await click('[aria-label="Search anatomy"]');await screenshot(`${route}-${width}-dark-search`);assert.notEqual(await evaluate("getComputedStyle(document.querySelector('.anatomy-search-results')).backgroundColor"),'rgb(255, 255, 255)');await click('[aria-label="Close search"]');
+  await click('[aria-label="Search anatomy"]');await screenshot(`${route}-${width}-dark-search`);assert.notEqual(await evaluate("getComputedStyle(document.querySelector('.discovery-panel')).backgroundColor"),'rgb(255, 255, 255)');await click('[aria-label="Close search"]');
   const chest=[];
   if(route==='female'){
    await layers(mobile);for(const name of ['Tissue','Glands','Pectorals']){await buttonText(name);await screenshot(`${route}-${width}-dark-${name.toLowerCase()}`);chest.push({mode:name,visible:await count()});}await closeLayers(mobile);

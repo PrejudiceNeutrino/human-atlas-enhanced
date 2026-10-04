@@ -1,4 +1,5 @@
 import type {Atlas, Concept} from './anatomy';
+import type {IdentityIndex} from './identity-index';
 
 export interface SearchConcept extends Concept {
  searchAliases?: readonly string[];
@@ -7,6 +8,12 @@ export interface SearchConcept extends Concept {
   expectedPartIds: readonly string[];
   missingPartIds: string[];
  };
+}
+
+/** The existing Search selection resolution, shared with discovery and agent selection. */
+export function resolveSearchPartIds(concept:SearchConcept,identity:IdentityIndex):string[] {
+ const canonicalId=identity.sourceConceptCanonicalId(concept.id);
+ return canonicalId?identity.resolve(canonicalId,identity.modelId).map(item=>item.sourcePart.id):concept.elements;
 }
 
 interface MuscleGroup {
