@@ -63,7 +63,7 @@ Evidence: `work/phase-5.2/technical-results.json` and its `technical-*.log` file
 | Public runtime copy integrity | **94/94 files byte-identical** in dist |
 | Dependency versions / package-lock | Unchanged |
 
-Current technical readiness digest: `67f425bce5afc24fe9a140755aa9d90c0e3b10672d86cd1065ca40b79398b7c0`. Presentation changes invalidate old scientific review evidence as designed. Existing independent-review, pose, anatomy placement and named core/pelvic-coverage gaps remain; no readiness gate is weakened.
+Current technical readiness digest: `f13d20549abe9df458b48d2b435b5e19e0e37af322d811818a86ddcfcd89fa61`. Presentation changes invalidate old scientific review evidence as designed. Existing independent-review, pose, anatomy placement and named core/pelvic-coverage gaps remain; no readiness gate is weakened.
 
 ## Retained desktop browser regressions
 
@@ -107,11 +107,11 @@ Full largest-30 list is `work/phase-5.2/largest-blobs.json`. No history is rewri
 
 ## Build and deployment footprint
 
-First Phase 5.2 production build: **260,831,884 bytes / 98 files / 248.75 MiB**, versus pre-existing local dist 260,823,422 bytes, a growth of **8,462 bytes**. All 94 copied public files total **259,541,222 bytes** and match source content exactly. Models/sidecars account for the size; work, browser artifacts, docs, node_modules and source maps are not deployed. The old dist comparison is a local output snapshot, not a measured historical hosted deployment. Existing raw/gzip model pairs support the established loader/fallback and are not removed.
+Final Phase 5.2 production build: **260,831,860 bytes / 98 files / 248.75 MiB**, versus pre-existing local dist 260,823,422 bytes, a growth of **8,438 bytes**. All 94 copied public files total **259,541,222 bytes** and match source content exactly. Models/sidecars account for the size; work, browser artifacts, docs, node_modules and source maps are not deployed. The old dist comparison is a local output snapshot, not a measured historical hosted deployment. Existing raw/gzip model pairs support the established loader/fallback and are not removed.
 
 | Main build resource | Raw / gzip kB |
 |---|---:|
-| Viewer page JS | 871.05 / 243.07 |
+| Viewer page JS | 871.02 / 243.06 |
 | Entry JS | 200.13 / 63.67 |
 | CSS | 218.84 / 34.73 |
 | Largest static model: female-0.bin | 4,803,512 bytes |
@@ -124,6 +124,44 @@ Vite warns about the existing >500 kB JS chunk and reports CSS/resolve plugin ti
 
 ## Fresh clone and final acceptance
 
-Fresh-clone verification and final accepted browser status remain in progress. This intermediate record does not claim completed reproducibility or all acceptance criteria. It will be updated with the exact external path, tested commit, npm ci/check/build/validator/runtime results, final cleanup measurements and final scope assessment before delivery.
+Source checkpoint: `50a258eaa36f58562ffa0d23045b99c57e39d146`. External clone: `C:\Users\mindo\AppData\Local\Temp\human-atlas-phase-5.2-fresh-20261004`. Method: true `git clone --no-local --branch phase-5.2/stabilization-hygiene . <external-temp-path>`, independent object transfer and checkout, not a worktree or copied working directory. Initial inventory verified node_modules/dist/work/build metadata were absent. No local environment file, untracked JSON, donor checkout or old output was provided.
 
-No Phase 5.3/5.4, supplemental anatomy, nerves, HRA upgrades, knowledge, pathology or pharmacology work is included.
+Independent `npm.cmd ci` succeeded: 563 packages installed, 564 audited. The existing lockfile reports 22 advisories (1 low, 4 moderate, 17 high); dependency upgrades are explicitly outside this phase. Local npm allowScripts policy blocked install scripts for esbuild, sharp and workerd, without preventing the required application build/checks. No policy or dependency settings were changed to bypass that restriction.
+
+Fresh-clone TypeScript, build, all model/data validators/generator checks, all **183/183 unit tests**, and **3/3 Python tests** pass. Female readiness gives the expected exit 1 with integrity true, ready false, and the same final digest as the original checkout. Evidence: `work/phase-5.2/fresh-results.json` and `fresh-*.log`. Root and fresh builds produce identical index/CSS/viewer asset filenames and bytes; final output is 260,831,860 bytes. The final metadata correction removed misleading `aria-keyshortcuts=J` from the Restore-all button: J restores one row, not all. It changes no viewer behavior and is included in the independently tested clone.
+
+Fresh production preview owns port 3054. Independent runtime smoke from the clone's own browser harness covers both Male/female-study, Regions, Teaching Areas, Search, H/J, the fixed Hidden footer, persistent isolation, Random Anatomy, explosion, Light/Dark Classic floor, info scroll and Reset. The separate fresh discovery suite covers Browse, sorting/filtering, keyboard behavior and active-model inventory. Both complete suites pass on both routes, with zero JavaScript exceptions. Evidence: `work/phase-5.2/fresh-browser/report.json` and `fresh-discovery/report.json`. No local/untracked runtime dependency was discovered. The fresh clone is retained for review. The final follow-up commit changes documentation only; its production source is identical to the tested checkpoint.
+
+Logical-byte audit after three cleanup runs, fresh smoke and the source commit:
+
+| Measure | Before | After snapshot |
+|---|---:|---:|
+| Whole main workspace | Approximately 16.595 GiB (directory subtotal 17,817,878,394 bytes plus <1 MiB root files) | 7,944,328,815 bytes / 7.399 GiB |
+| work | 16,188,376,149 bytes / 15.077 GiB | 6,305,998,290 bytes / 5.873 GiB |
+| .git | 489,004,451 bytes / 466.35 MiB | 493,029,070 bytes / 470.19 MiB |
+| public/runtime | 259,541,222 bytes / 247.52 MiB | Unchanged |
+| dist | 260,823,422 bytes / 248.74 MiB | 260,831,860 bytes / 248.75 MiB |
+
+Total deleted successful-run inactive profiles: **12,853,346,830 bytes / 11.971 GiB**; net working-folder savings are lower because this phase generated new reports/profiles and retained failed-run evidence. Current source checkpoint has 443 tracked files, 307,850,803 logical bytes (293.59 MiB); nine intentional evidence images total 3,916,021 bytes and account for most tracked/Git growth. These measurements include the completed fresh-smoke evidence and precede the final documentation-only commit. Fresh-clone disk usage is outside this workspace and is retained separately for review.
+
+## Final acceptance and limits
+
+Every Phase 5.2 engineering criterion is satisfied within the existing desktop-only final-browser preference. Evidence mapping:
+
+| Acceptance criteria | Evidence |
+|---|---|
+| 1?6: autorotate | Calibrated mapping, independent controller/storage tests and measured live browser angular rate/persistence |
+| 7?13: H/J and isolation | All-model ordering/guard tests; native ordinary H/J and zero/partial/fully hidden workspace GPU/camera checks |
+| 14?15: information reader | Native reopen-top/focus test and preserved scroll during theme rerender |
+| 16?32: Classic floor | Exact Git regression audit; bounded cylinder/rim tests; reviewed Light/Dark/oblique captures; source-only picker/bounds/layout arrays; retained navigation/isolation/explode tests |
+| 33?47: Reset/visibility | Actual target hover/focus/keyboard checks; persistent footer at all scroll positions/both tabs; independent global Systems behavior and frozen-workspace restore |
+| 48?59: discovery | Visual review plus complete native keyboard, aliases/ranking, active-model inventory, Browse/sort/filter and bounded virtual-rendering suites |
+| 60?77: Random/top-right | Deterministic valid-model pool/no-repeat helpers; native Random?explicit isolation?H/J/Restore composition; measured utility geometry |
+| 78?92: repository | Logical disk/Git/tracked/build audits; safe evidence-preserving cleanup; blob/branch classification; verified ignores/editor settings; all donor/provenance refs retained |
+| 93?99: reproducibility | True independent external clone, npm ci, all unit/model/data checks/build and both routed production smoke/discovery suites |
+| 100?110: regression | All eleven accepted desktop browser commands, all 183 unit tests, all scientific integrity/coverage checks, expected unresolved female readiness |
+| 111?125: protection/non-goals | 152 protected files/85 binaries unchanged; lockfile unchanged; curated artifacts/docs only; strict later-phase diff review |
+
+Known limits: female-study placement, coverage, pose and independent-review gaps remain; scientific readiness is false. Existing npm advisories and the >500 kB viewer JS warning remain without dependency/architecture changes. Final mobile/tablet/physical-touch/accessibility certification is not claimed; Reset dimensions and native mouse/keyboard functionality are covered. Close-up anatomical framing can crop the fixed body-origin stage, which deliberately does not influence bounds/camera. The original supplied reference PNGs are in the conversation only; the tracked pre-fix image is a live capture, not a fabricated copy.
+
+The viewer/repository is ready for separately authorized **Phase 5.3 ? Signature Entrance, Motion Language & Interaction Polish**. No Phase 5.3/5.4, supplemental anatomy, nerves, HRA upgrades, knowledge, pathology or pharmacology work has begun. Main stays at `15c124349e60807e633c296c2527e363c7d13e06`. Final commit SHA and phase-only push status are reported in the delivery message, avoiding a self-referential commit hash in this record.
