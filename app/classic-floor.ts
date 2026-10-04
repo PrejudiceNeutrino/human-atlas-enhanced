@@ -13,5 +13,5 @@ export function createClassicFloor(theme:ResolvedTheme){
  const rimMaterial=new T.MeshBasicMaterial({color:colors[theme].rim,side:T.DoubleSide,toneMapped:false});
  const rim=new T.Mesh(new T.RingGeometry(CLASSIC_FLOOR_RADIUS-.003,CLASSIC_FLOOR_RADIUS,128),rimMaterial);rim.rotation.x=-Math.PI/2;rim.position.y=-.0049;
  for(const mesh of [stage,rim]){mesh.raycast=()=>{};mesh.userData.presentationOnly=true;group.add(mesh);}
- return {group,setTheme:(mode:ResolvedTheme)=>{surface.color.set(colors[mode].surface);edge.color.set(colors[mode].edge);rimMaterial.color.set(colors[mode].rim);}};
+ return {group,setReveal:(value:number)=>{for(const material of [surface,edge,rimMaterial]){material.transparent=value<1;material.opacity=value;}group.visible=value>0;},setTheme:(mode:ResolvedTheme)=>{surface.color.set(colors[mode].surface);edge.color.set(colors[mode].edge);rimMaterial.color.set(colors[mode].rim);}};
 }

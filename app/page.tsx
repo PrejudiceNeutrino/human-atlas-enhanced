@@ -1,6 +1,7 @@
 import {flushSync} from 'react-dom';
+import {motionDuration,typewriterRamp} from './motion';
 import {registerAtlasTools} from './agent-tools';
-import {useCallback,useEffect,useLayoutEffect,useMemo,useRef,useState} from 'react';
+import {useCallback,useEffect,useLayoutEffect,useMemo,useRef,useState,type CSSProperties} from 'react';
 import {Activity,ArrowUpRight,ChevronRight,EyeOff,Focus,Info,Layers3,Shuffle,RotateCcw,Sun,Moon,X} from 'lucide-react';
 import {Select,SelectTrigger,SelectValue,SelectContent,SelectItem,SelectGroup,SelectLabel} from '@/components/ui/select';
 import {Button} from '@/components/ui/button';
@@ -37,6 +38,7 @@ import {DEFAULT_VISIBLE,partIsVisible,SYSTEMS,EXPLANATIONS,explanation,type Atla
 type AnatomySex='male'|'female';
 type AnatomyModel=ViewerModel;
 const defaultVisible=defaultVisibleForModel;
+const eyebrowText='INTERACTIVE ANATOMY',eyebrowTiming=typewriterRamp(eyebrowText.length);
 const initial:SceneState={breastView:'tissue',explode:0,visible:DEFAULT_VISIBLE,selected:[],isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,view:'three-quarter',rotate:false,reset:0,regionId:BODY_REGION,hiddenRepresentationIds:[]};
 export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGION,initialArea=null}:{model:AnatomyModel;onModelChange:(model:AnatomyModel,regionId:RegionId,areaId:AreaId|null)=>void;initialRegion?:RegionId;initialArea?:AreaId|null}){
  const {mode:themeMode,resolved:theme}=useTheme();
@@ -44,6 +46,8 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
  const aboutTitle=useRef<HTMLHeadingElement>(null),aboutScroll=useRef<HTMLDivElement>(null),lastRandomId=useRef<string|null>(null);
  const attachAboutScroll=useCallback((node:HTMLDivElement|null)=>{aboutScroll.current=node;if(node)node.scrollTop=0;},[]);
  const [sceneReady,setSceneReady]=useState(false),[sceneLeaving,setSceneLeaving]=useState(false);
+ const [shellSettled,setShellSettled]=useState(false),[sceneSettled,setSceneSettled]=useState(false);
+ useEffect(()=>{const media=window.matchMedia('(prefers-reduced-motion: reduce)');const settle=()=>{if(media.matches)setShellSettled(true);};settle();const timer=setTimeout(()=>setShellSettled(true),motionDuration('--motion-shell'));media.addEventListener('change',settle);return()=>{clearTimeout(timer);media.removeEventListener('change',settle);};},[]);
  const switchTimer=useRef<ReturnType<typeof setTimeout>|null>(null);
  useEffect(()=>()=>{if(switchTimer.current)clearTimeout(switchTimer.current);},[]);
  const [visibilityTab,setVisibilityTab]=useState('systems');
@@ -56,7 +60,7 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
  const [loaded,setLoaded]=useState<{atlas:Atlas;identity:IdentityIndex;regions:RegionIndex;areas:AreaIndex}|null>(null),[state,setState]=useState<SceneState>(()=>({...initial,regionId:initialRegion,areaId:initialArea,visible:defaultVisible(model)})),[progress,setProgress]=useState(0),[error,setError]=useState(''),[panel,setPanel]=useState<'layers'|'search'|null>(null),[details,setDetails]=useState(false),[about,setAbout]=useState(false),[discoveryMode,setDiscoveryMode]=useState<DiscoveryMode>('search'),[discoveryFocus,setDiscoveryFocus]=useState(0),[chosen,setChosen]=useState<SearchConcept|null>(null);
  useLayoutEffect(()=>{if(about&&aboutScroll.current)aboutScroll.current.scrollTop=0;},[about]);
  const active=loaded?.identity.modelId===modelRecord.id?loaded:null,atlas=active?.atlas??null,identity=active?.identity??null;
- useEffect(()=>{const abort=new AbortController();setSceneReady(false);setSceneLeaving(false);setProgress(0);setError('');setChosen(null);setDetails(false);setState(s=>switchRegionModel(s,defaultVisible(model)));
+ useEffect(()=>{const abort=new AbortController();setSceneReady(false);setSceneSettled(false);setSceneLeaving(false);setProgress(0);setError('');setChosen(null);setDetails(false);setState(s=>switchRegionModel(s,defaultVisible(model)));
   Promise.all([fetch(modelRecord.manifestUrl,{signal:abort.signal}),fetch('/identity/core-crosswalk-v1.json',{signal:abort.signal}),fetch('/regions/canonical-regions-v1.json',{signal:abort.signal}),fetch('/areas/canonical-areas-v1.json',{signal:abort.signal}),fetch('/areas/area-representation-scopes-v1.json',{signal:abort.signal})]).then(async responses=>{if(responses.some(r=>!r.ok))throw new Error('The anatomy catalogue could not be loaded.');const [manifest,crosswalk,regionData,areaData,scopeData]=await Promise.all(responses.map(r=>r.json()));const next=manifest as Atlas,identity=createIdentityIndex(modelRecord,next,crosswalk as IdentitySidecar),regions=createRegionIndex(regionData as RegionDataset,crosswalk as IdentitySidecar,identity),areas=createAreaIndex(areaData as AreaDataset,crosswalk as IdentitySidecar,regionData as RegionDataset,identity,scopeData as AreaRepresentationScopeDataset);return {atlas:next,identity,regions,areas};}).then(result=>{if(!abort.signal.aborted){setLoaded(result);setState(s=>({...s,...normalizeNavigation(s.regionId??BODY_REGION,s.areaId??null,result.regions,result.areas)}));}}).catch(e=>{if(e.name!=='AbortError')setError(e.message);});return()=>abort.abort();},[model]);
  const regionId=state.regionId??BODY_REGION,regionIndex=active?.regions??loaded?.regions;
  const regionalRepresentations=useMemo(()=>regionIndex&&regionId!==BODY_REGION?regionIndex.representationsForRegion(regionId,modelRecord.id):[],[regionIndex,regionId,modelRecord.id]);
@@ -103,14 +107,14 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
  const pickRegion=(id:RegionId)=>{setState(s=>selectRegion(s,id));setChosen(null);setDetails(false);setPanel(null);};
  const pickArea=(id:AreaId|null)=>{setState(s=>selectArea(s,id?areaIndex?.area(id)??null:null));setChosen(null);setDetails(false);setPanel(null);};
  const openPanel=(next:'layers'|'search')=>{setDetails(false);setPanel(p=>p===next?null:next);};
- return <main className="studio" data-scene-ready={sceneReady} data-scene-leaving={sceneLeaving} data-load-error={!!error}>
-  {atlas&&identity&&<AnatomyScene modelId={modelRecord.id} key={modelRecord.id} atlas={atlas} state={{...displayState,inspectorOpen:details&&selectedParts.length>0}} theme={theme} rotationSpeed={rotationSpeed} display={display} revealed={sceneReady&&!sceneLeaving} onReady={()=>setSceneReady(true)} onSelect={choosePart} onProgress={n=>{setProgress(n);if(n===100)setError('');}} onError={setError}/>}
+ return <main className="studio" data-shell-settled={shellSettled} data-entrance={error?'error':shellSettled&&sceneSettled?'settled':sceneReady?'scene':'shell'} data-scene-ready={sceneReady} data-scene-leaving={sceneLeaving} data-load-error={!!error}>
+  {atlas&&identity&&<AnatomyScene modelId={modelRecord.id} key={modelRecord.id} atlas={atlas} state={{...displayState,inspectorOpen:details&&selectedParts.length>0}} theme={theme} rotationSpeed={rotationSpeed} display={display} revealed={sceneReady&&!sceneLeaving&&!error} onReady={()=>setSceneReady(true)} onSettled={()=>setSceneSettled(true)} onSelect={choosePart} onProgress={setProgress} onError={setError}/>}
   <div className="vignette"/>
   {atlas&&(areaId||regionId!==BODY_REGION)&&<div className="region-status glass" role="status">{areaId?(areaRepresentations.length===0?'Teaching area unavailable on this model. Choose None or another area.':visibleCount===0?'No area pieces match the current systems. Enable a system.':`${teachingArea?.name} · ${areaRepresentations.length} area pieces · ${visibleCount} visible`):regionalRepresentations.length===0?'Region unavailable on this model. Choose another region or Whole body.':visibleCount===0?'No pieces match the current systems. Enable a system or choose Whole body.':`${regionalRepresentations.length} regional pieces · ${visibleCount} visible`}</div>}
   <div className="navigation-rail">
-  <header className="identity"><div className="eyebrow"><span className="status-dot"/> INTERACTIVE ANATOMY</div><h1><a className="atlas-home-link" href="/" aria-label="Human Atlas home">Human Atlas</a><Badge variant="outline" className="edition">3D</Badge></h1><div className="identity-meta">{atlas?atlas.parts.length.toLocaleString():reconstructed?'2,245':sex==='female'?'888':'2,234'} modeled pieces <span>·</span> {source}</div><div className="anatomy-choice">
+  <header className="identity"><div className="eyebrow"><span className="status-dot"/><span className="eyebrow-label"><span className="sr-only">INTERACTIVE ANATOMY</span><span aria-hidden="true">{[...eyebrowText].map((letter,index)=><span className="eyebrow-letter" key={index} style={{'--letter-index':index,'--letter-weight':eyebrowTiming[index].weight,'--preceding-weight':eyebrowTiming[index].precedingWeight} as CSSProperties}>{letter}</span>)}</span></span></div><h1><a className="atlas-home-link" href="/" aria-label="Human Atlas home"><span className="wordmark-solid">Human Atlas</span><span className="wordmark-ghost" aria-hidden="true">Human Atlas</span></a><Badge variant="outline" className="edition" style={{'--load-progress':`${progress}%`} as CSSProperties}>3D</Badge></h1><div className="identity-meta">{atlas?atlas.parts.length.toLocaleString():reconstructed?'2,245':sex==='female'?'888':'2,234'} modeled pieces <span>·</span> {source}</div><div className="anatomy-choice">
    <div className="region-choice model-choice"><label htmlFor="model-choice">Model</label>
-   <Select value={model} onValueChange={value=>{if((value==='male'||value==='female')&&value!==model){setSceneLeaving(true);if(switchTimer.current)clearTimeout(switchTimer.current);switchTimer.current=setTimeout(()=>onModelChange(value,regionId,areaId),window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:120);}}} items={[{value:'male',label:'Male anatomy'},{value:'female',label:'Female anatomy'}]}>
+   <Select value={model} onValueChange={value=>{if((value==='male'||value==='female')&&value!==model){setSceneLeaving(true);if(switchTimer.current)clearTimeout(switchTimer.current);switchTimer.current=setTimeout(()=>onModelChange(value,regionId,areaId),motionDuration('--motion-fast'));}}} items={[{value:'male',label:'Male anatomy'},{value:'female',label:'Female anatomy'}]}>
     <SelectTrigger id="model-choice" aria-label="Choose male or female anatomy"><SelectValue/></SelectTrigger>
     <SelectContent className="anatomy-choice-menu"><SelectItem value="male" data-value="male">Male anatomy</SelectItem><SelectItem value="female" data-value="female">Female anatomy</SelectItem></SelectContent>
    </Select></div>

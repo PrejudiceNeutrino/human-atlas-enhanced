@@ -46,7 +46,7 @@ try{
  const assembled=async()=>{const expected=await count();await waitFor(`window.__atlasTestRender?.maxOffset<0.0005&&window.__atlasTestRender.displayed===${expected}`,'rendered anatomy assembled');};
  const screenshot=async name=>{const r=await send('Page.captureScreenshot',{format:'png'});fs.writeFileSync(path.join(output,name+'.png'),Buffer.from(r.data,'base64'));};
  failureCapture=async()=>{await screenshot('failure');fs.writeFileSync(path.join(output,'failure.json'),JSON.stringify(await evaluate("({url:location.href,text:document.body.innerText,options:[...document.querySelectorAll('[role=option]')].map(e=>({text:e.textContent,rect:e.getBoundingClientRect().toJSON()}))})"),null,2));};
- const ready=async()=>{await delay(400);await waitFor("!!document.querySelector('.scene canvas')&&!document.querySelector('.loading')&&!!document.querySelector('#region-choice')",'all model geometry loaded');};
+ const ready=async()=>{await delay(400);await waitFor("!!document.querySelector('.scene canvas')&&!document.querySelector('.loading')&&!!document.querySelector('#region-choice')&&document.querySelector('.studio').dataset.shellSettled==='true'",'model geometry and visible shell loaded');};
  const tab=async name=>{await evaluate(`(()=>{[...document.querySelectorAll('[role=tab]')].find(e=>e.textContent.trim().startsWith(${JSON.stringify(name)})).click()})()`);await delay(150);};
  const layers=async mobile=>{if(mobile)await click('[aria-label="Open system layers"]');await tab('Systems');};
  const closeLayers=async mobile=>{if(mobile)await click('[aria-label="Close systems"]');};
@@ -136,11 +136,11 @@ try{
  holdGeometry=true;held=[];await send('Fetch.enable',{patterns:[{urlPattern:'*models/*.bin*'}]});
  await send('Page.navigate',{url:baseUrl+'/'+route});
  for(let i=0;i<100&&!held.length;i++)await delay(100);assert.ok(held.length);
- await waitFor("!!document.querySelector('.identity')",'startup header');await screenshot(route+'-entrance-start');await delay(120);await screenshot(route+'-entrance-middle');await waitFor("!!document.querySelector('.scene canvas')&&!!window.__atlasTestCamera.projectionMatrix",'loading scene shell');
+ await waitFor("!!document.querySelector('.identity')",'startup header');await screenshot(route+'-entrance-start');await delay(120);await screenshot(route+'-entrance-middle');await waitFor("!!document.querySelector('.scene canvas')&&document.querySelector('.scene canvas').width>0",'loading scene shell');
  assert.equal(await evaluate("getComputedStyle(document.querySelector('.scene canvas')).opacity"),'0');
  assert.equal(await evaluate("document.querySelector('.studio').dataset.sceneReady"),'false');
  assert.ok(await evaluate("!!document.querySelector('.loading[role=status]')"));
- const loadingCamera=await camera();await screenshot(route+'-loading');await delay(500);assert.deepEqual((await camera()).projectionMatrix,loadingCamera.projectionMatrix,'Entrance preserves camera projection');
+ const loadingCamera=await camera();await screenshot(route+'-loading');await waitFor("document.querySelector('.studio').dataset.shellSettled==='true'",'shell entrance complete');assert.deepEqual((await camera()).projectionMatrix,loadingCamera.projectionMatrix,'Entrance preserves camera projection');
  assert.equal(await evaluate("getComputedStyle(document.querySelector('.top-actions')).opacity"),'1');
  holdGeometry=false;for(const requestId of held)await send('Fetch.continueRequest',{requestId});await send('Fetch.disable');await ready();
  await waitFor("document.querySelector('.studio').dataset.sceneReady==='true'&&getComputedStyle(document.querySelector('.scene canvas')).opacity==='1'",'coherent completed anatomy reveal');

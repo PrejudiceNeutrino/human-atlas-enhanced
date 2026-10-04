@@ -1,3 +1,4 @@
+import {motionDuration,motionProgress} from './motion';
 import {useEffect,useRef} from 'react';
 import {isolationCameraKey} from './viewer-interaction';
 import * as T from 'three';
@@ -15,12 +16,14 @@ import {DISPLAY_CONTRAST_SHADER,type DisplaySettings} from './display';
 import {createClassicFloor} from './classic-floor';
 import {orbitRotationSpeed} from './rotation';
 import {SCENE_THEMES,type ResolvedTheme} from './theme';
-interface Props {rotationSpeed:number;modelId:ModelId;display:DisplaySettings;revealed:boolean;onReady:()=>void;theme:ResolvedTheme;atlas:Atlas;state:SceneState;onSelect:(id:string)=>void;onProgress:(n:number)=>void;onError:(s:string)=>void}
-export default function AnatomyScene({atlas,modelId,state,theme,rotationSpeed,display,revealed,onReady,onSelect,onProgress,onError}:Props){
+interface Props {rotationSpeed:number;modelId:ModelId;display:DisplaySettings;revealed:boolean;onReady:()=>void;onSettled:()=>void;theme:ResolvedTheme;atlas:Atlas;state:SceneState;onSelect:(id:string)=>void;onProgress:(n:number)=>void;onError:(s:string)=>void}
+export default function AnatomyScene({atlas,modelId,state,theme,rotationSpeed,display,revealed,onReady,onSettled,onSelect,onProgress,onError}:Props){
  const host=useRef<HTMLDivElement>(null),latest=useRef(state),select=useRef(onSelect);
  const latestRotation=useRef(rotationSpeed);latestRotation.current=rotationSpeed;
  const latestDisplay=useRef(display);latestDisplay.current=display;
  const latestReady=useRef(onReady);latestReady.current=onReady;
+ const latestRevealed=useRef(revealed);latestRevealed.current=revealed;
+ const latestSettled=useRef(onSettled);latestSettled.current=onSettled;
  const latestTheme=useRef(theme);latestTheme.current=theme;
  latest.current=state;select.current=onSelect;
  useEffect(()=>{
@@ -38,7 +41,11 @@ export default function AnatomyScene({atlas,modelId,state,theme,rotationSpeed,di
   scene.add(new T.HemisphereLight(0xffffff,0xa7acb2,.45));
   const key=new T.DirectionalLight(0xfffaf4,2.65);key.position.set(-3,4,4);scene.add(key);
   const rim=new T.DirectionalLight(0xe9f0ff,.85);rim.position.set(2,2,-3);scene.add(rim);
-  const floor=createClassicFloor(latestTheme.current);scene.add(floor.group);
+  const floor=createClassicFloor(latestTheme.current);scene.add(floor.group);floor.setReveal(0);
+  const motionMedia=window.matchMedia('(prefers-reduced-motion: reduce)');
+  const sceneDuration=motionDuration('--motion-slow'),selectionDuration=motionDuration('--motion-fast');
+  let revealStart:number|null=null,floorSettled=false,floorReveal=0;
+  const highlights=new Map<number,{from:number;to:number;start:number}>();
   let rotationTime=performance.now();
   let appliedTheme:ResolvedTheme|null=null;
   const applyTheme=()=>{const mode=latestTheme.current;if(mode===appliedTheme)return;const colors=SCENE_THEMES[mode];renderer.setClearColor(colors.background);floor.setTheme(mode);markerMaterial.color.set(colors.marker);appliedTheme=mode;dirty=true;};
@@ -205,9 +212,21 @@ export default function AnatomyScene({atlas,modelId,state,theme,rotationSpeed,di
      const c=centers[i],target=explosionLayout?.targets.get(p.id);
      let [dx,dy,dz]=target?evaluateExplosionOffset(target,amount,explosionLayout!.lanes.length):[0,0,0];
      const visibility=resolveVisibility(p,s,visibilityContext);if(!visibility.packingEligible)dx=dy=dz=0;
-     const selected=selection.has(p.id)&&visibility.displayed;data.set([dx,dy,dz,visibility.displayed?1:0],i*4);selectedData[i*4]=selected?255:0;
+     const selected=selection.has(p.id)&&visibility.displayed;data.set([dx,dy,dz,visibility.displayed?1:0],i*4);const to=selected?255:0,activeHighlight=highlights.get(i);
+     if((activeHighlight?.to??selectedData[i*4])!==to){
+      if(motionMedia.matches||!ready){selectedData[i*4]=selected?255:0;highlights.delete(i);}
+      else highlights.set(i,{from:selectedData[i*4],to,start:performance.now()});
+     }
      markerPositions.set(data[i*4+3]>.5?[c.x+dx,c.y+dy,c.z+dz]:[10000,10000,10000],i*3);const mesh=pickers[i];if(mesh){mesh.position.set(dx,dy,dz);mesh.updateMatrix();mesh.updateMatrixWorld(true);}
     });partTexture.needsUpdate=true;selectionTexture.needsUpdate=true;markerGeometry.attributes.position.needsUpdate=true;lastState=s;lastExtent=amount;dirty=true;
+   }
+   // Sparse selection interpolation shares the existing frame loop and GPU texture.
+   if(highlights.size){const now=performance.now();for(const [i,h] of highlights){const t=motionProgress(now-h.start,motionMedia.matches?0:selectionDuration);selectedData[i*4]=Math.round(h.from+(h.to-h.from)*t);if(t===1)highlights.delete(i);}selectionTexture.needsUpdate=true;dirty=true;}
+   // Follow the rendered readiness gate, then establish the fixed body-origin stage.
+   if(latestRevealed.current&&!floorSettled){
+    revealStart??=performance.now();const t=motionProgress(performance.now()-revealStart-(motionMedia.matches?0:sceneDuration),motionMedia.matches?0:sceneDuration);
+    if(t!==floorReveal){floor.setReveal(t);floorReveal=t;dirty=true;}
+    if(t===1){floorSettled=true;latestSettled.current();}
    }
    if(s.view!==lastView||s.reset!==lastReset){sliderFrame=null;fit(s.view);if(amount>0)fitExplosion(0);lastView=s.view;lastReset=s.reset;}
    else if(moving)fitExplosion(previousAmount);
