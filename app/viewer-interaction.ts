@@ -45,5 +45,6 @@ export function showAllSystems(state:SceneState,systems:readonly SystemId[]):Sce
  return {...state,visible:[...systems],selected:[],isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,breastView:'tissue'};
 }
 export function toggleAllSystems(state:SceneState,systems:readonly SystemId[]):SceneState {
- return systems.some(id=>state.visible.includes(id))?{...state,visible:[],selected:[],isolate:false}:showAllSystems(state,systems);
+ // The header control changes layers only; presets retain their separate semantics.
+ return {...state,visible:systems.some(id=>state.visible.includes(id))?[]:[...systems],systemVisibilityRevision:(state.systemVisibilityRevision??0)+1};
 }

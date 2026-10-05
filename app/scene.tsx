@@ -230,6 +230,7 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
     camera.position.copy(position);controls.target.copy(target);controls.update();controls.enableDamping=true;dirty=true;
    }
    lastLocked=locked;controls.enableRotate=!locked;
+   const systemsOnlyChange=!!lastState&&s.systemVisibilityRevision!==lastState.systemVisibilityRevision;
    const hiddenChanged=lastState?.hiddenPartIds!==s.hiddenPartIds;
    const changed=hiddenChanged||lastState?.visible!==s.visible||lastState?.selected!==s.selected||lastState?.isolate!==s.isolate||lastState?.isolatedPartIds!==s.isolatedPartIds||lastState?.breastView!==s.breastView||lastState?.regionPartIds!==s.regionPartIds||lastState?.areaPartIds!==s.areaPartIds||lastState?.areaId!==s.areaId;
    const previousAmount=amount,moving=amount!==s.explode;
@@ -265,7 +266,7 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
     if(t===1){floorSettled=true;latestSettled.current();}
    }
    const organs=isOrgansPresentation(s);
-   if(s.view!==lastView||s.reset!==lastReset||organs!==lastOrgans){interruptAssist();sliderFrame=null;fit(s.view);if(amount>0)fitExplosion(0);lastView=s.view;lastReset=s.reset;}
+   if(s.view!==lastView||s.reset!==lastReset||(!systemsOnlyChange&&organs!==lastOrgans)){interruptAssist();sliderFrame=null;fit(s.view);if(amount>0)fitExplosion(0);lastView=s.view;lastReset=s.reset;}
    else if(moving)fitExplosion(previousAmount);
    lastOrgans=organs;
    if(moving&&intent.assist(previousAmount,amount,locked))frontAssist={from:camera.position.clone().sub(controls.target).normalize(),start:performance.now(),duration:motionDuration('--motion-slow')};

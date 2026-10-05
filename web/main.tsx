@@ -11,10 +11,6 @@ const pathname = window.location.pathname.replace(/\/+$/, '') || '/';
 const routeModel = modelForRoute(pathname);
 const model: 'male'|'female'|null = routeModel?.id === 'female-study-v3' ? 'female' : routeModel?.id === 'bp3d-male-4' ? 'male' : null;
 
-document.title = model
-  ? `${model === 'female' ? 'Female' : 'Male'} anatomy · Human Atlas`
-  : 'Page not found · Human Atlas';
-
 function AtlasApp(){
  const [activeModel,setActiveModel]=useState(model);
  useEffect(()=>{const back=()=>window.location.reload();window.addEventListener('popstate',back);return()=>window.removeEventListener('popstate',back);},[]);
@@ -22,7 +18,7 @@ function AtlasApp(){
   <>
     {activeModel ? (
       <Suspense fallback={<main className="route-loading" role="status">Opening {model} anatomy…</main>}>
-        <AtlasViewer model={activeModel} initialRegion={parseNavigation(window.location.search).regionId} initialArea={parseNavigation(window.location.search).areaId} onModelChange={(next,regionId,areaId)=>{if(next!=='male'&&next!=='female')return;window.history.pushState(null,'',`/${next}${navigationSearch(window.location.search,regionId,areaId)}`);document.title=`${next==='female'?'Female':'Male'} anatomy \u00b7 Human Atlas`;setActiveModel(next);}}/>
+        <AtlasViewer model={activeModel} initialRegion={parseNavigation(window.location.search).regionId} initialArea={parseNavigation(window.location.search).areaId} onModelChange={(next,regionId,areaId)=>{if(next!=='male'&&next!=='female')return;window.history.pushState(null,'',`/${next}${navigationSearch(window.location.search,regionId,areaId)}`);setActiveModel(next);}}/>
       </Suspense>
     ) : (
       <main className="route-loading">

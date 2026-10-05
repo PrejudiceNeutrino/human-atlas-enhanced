@@ -42,7 +42,7 @@ for(const model of Object.values(MODEL_REGISTRY)){
   const scope=scopeRepresentations(atlas,identity,ri,ai,base.regionId,base.areaId),counts=systemCountsForScope(scope,atlas,model.id);
   const state={...base,visible:all,hiddenRepresentationIds:[identity.representationForPart(member).id],selected:[],regionPartIds:new Set(scope.map(r=>r.sourcePartId.value)),areaPartIds:new Set(scope.map(r=>r.sourcePartId.value))};
   const off=toggleAllSystems(state,all);assert.deepEqual(off.visible,[]);assert.deepEqual(display(off),[]);
-  const on=toggleAllSystems(off,all);assert.deepEqual(on,showAllSystems(off,all));assert.deepEqual(on.visible,all);assert.ok(!display(on).includes(member));
+  const on=toggleAllSystems(off,all);assert.deepEqual(on,{...state,visible:all,systemVisibilityRevision:2});assert.deepEqual(on.visible,all);assert.ok(!display(on).includes(member));
   for(const s of [off,on]){assert.strictEqual(s.hiddenRepresentationIds,state.hiddenRepresentationIds);assert.equal(s.regionId,state.regionId);assert.equal(s.areaId,state.areaId);assert.deepEqual(systemCountsForScope(scopeRepresentations(atlas,identity,ri,ai,s.regionId,s.areaId),atlas,model.id),counts);}
   assert.deepEqual(restoreHiddenRepresentations(off).visible,[]);assert.deepEqual(display(restoreHiddenRepresentations(off)),[]);
  });

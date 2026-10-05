@@ -410,3 +410,12 @@ h1 .edition::before{content:'';position:absolute;inset:-1px;border-radius:inheri
  .explode-control [data-slot=slider-thumb]::before,.dock-reset .reset-confirmation,.edition-trace,.edition-trace rect,h1 .edition::before{animation:none!important}
  h1 .edition::before,.edition-trace{opacity:0!important}
 }
+
+/* Phase 5.6.3: move only the complete eyebrow row, outside its fade transform. */
+.identity>.eyebrow{position:relative;top:8px}
+.visibility-heading-actions{display:flex;align-items:center;gap:4px}
+.panel-heading .system-visibility-toggle{width:28px;height:28px;padding:0;cursor:pointer;color:var(--primary);border-radius:6px}
+.panel-heading .system-visibility-toggle:disabled{cursor:default}
+.studio-footer>span{white-space:nowrap}
+/* Source display names are shared by inspection and structure captions. */
+.detail-header .structure-title{ text-transform:none }
