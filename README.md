@@ -1,83 +1,170 @@
-# Human Atlas
+# Human Atlas Enhanced
 
-An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Explore the BodyParts3D male reference (**2,234 meshes, 3,432 named concepts**) or a female study prototype (**2,245 meshes, 4,248 concepts**) derived from the BodyParts3D framework, fitted HRA female organs and pelvis, adapted HRA breast contours, and a whole-body morph toward estimated female proportions. The HRA female source atlas still ships for validation and rebuilds but is not offered in the viewer.
+An expanded open-source 3D anatomy explorer built on [ashemag/human-atlas](https://github.com/ashemag/human-atlas), with a focus on model-aware anatomy, dissection, navigation, discoverability, and a more polished scientific-visualization experience.
 
-**[Explore the live demo](https://human-atlas-seven.vercel.app)**
+**[Open the live atlas](https://anatomy.neutrino.live)**
+
+The project currently includes the original **BodyParts3D adult male reference anatomy** and an **experimental derived female study model**. It is intended for education and exploration, not diagnosis, surgery, or clinical decision-making.
+
+## What this fork adds
+
+Compared with the original viewer, this fork now includes:
+
+- **Male and female-study models** with model-scoped anatomical representation identity and no automatic male-to-female geometry fallback.
+- **Canonical anatomy identity** separating named anatomical concepts from the individual meshes that represent them.
+- **Anatomical Regions** for broad body navigation (for example: Head & Jaw, Cervical, Shoulder, Thoracic, Abdominal, Pelvic, Upper Limb, and Lower Limb), including primary and spanning memberships.
+- **17 Teaching Areas** for focused educational navigation (including Orbit, Circle of Willis, Brainstem, Larynx, Brachial plexus, Axilla, Cubital region, Wrist, Hand, Pelvic region, Popliteal region, and Foot), with explicit model-specific display scopes.
+- **Search + Browse** through the active model inventory, with aliases, modeled-piece counts, sorting, system filtering, and keyboard access.
+- **Persistent isolation workspaces** that let users isolate an anatomical assembly, inspect its individual members, and continue dissecting without losing the workspace.
+- **Per-structure dissection** with hide, restore, hidden-history tracking, keyboard controls, and model-safe representation IDs.
+- **Staged anatomical explosion** that first separates major anatomical families and then progressively separates individual pieces with continuous camera behavior.
+- **Random Anatomy** for quickly discovering and isolating modeled structures.
+- **Display controls** for Light/Dark themes, brightness, contrast, and autorotation speed.
+- **Presentation and motion polish** including coordinated entrance motion, smoother model transitions, reduced-motion support, and refined interaction feedback.
+- **A bounded presentation stage** separated from anatomy geometry and ready for further scene-environment work.
+- Core interactions are covered by automated and browser tests so features such as navigation, search, dissection, isolation, model switching, and exploded views can be checked as the atlas grows.
+
+## Models and anatomy data
+
+### Male reference
+
+The male viewer uses **BodyParts3D 4.0**, an adult male reference anatomy containing:
+
+- **2,234 selectable meshes**
+- **3,432 named concepts**
+
+A named concept may correspond to one mesh or to multiple source meshes. The project therefore treats anatomical concepts and rendered representations as separate identities.
+
+### Female study model
+
+The female option is an **experimental derived study model**, not a scanned or independently validated female reference.
+
+It combines BodyParts3D-derived anatomy with fitted/adapted HRA female anatomy and estimated whole-body proportion changes. It is useful for exploration and development, but unresolved coverage, placement, and validation limitations remain.
+
+Female teaching readiness intentionally remains gated pending independent anatomy review.
+
+See:
+
+- [`docs/female-anatomy.md`](docs/female-anatomy.md)
+- [`docs/anatomy-coverage.md`](docs/anatomy-coverage.md)
+- [`public/ATTRIBUTION.md`](public/ATTRIBUTION.md)
+
+## How the atlas is organized
+
+The viewer distinguishes several layers that are easy to conflate in a 3D anatomy application:
+
+**Canonical concept**  
+A named anatomical entity such as a liver, muscle, artery, or grouped structure.
+
+**Representation**  
+One or more model-specific meshes that visually represent that concept.
+
+**Region**  
+A broad anatomical navigation context.
+
+**Teaching Area**  
+A focused educational/station-style grouping with explicit model-specific geometry scope.
+
+**Isolation workspace**  
+A temporary set of representations the user explicitly isolates for inspection and dissection.
+
+This separation allows the male and female models to share anatomical knowledge without pretending their geometry is interchangeable.
 
 ## Explore
 
-- Switch between male reference anatomy and the experimental female study model.
-- Orbit, zoom, and select structures directly on the body.
-- Toggle individual systems or use skeleton and organ presets.
-- Move from assembled anatomy to a spaced inventory of every visible piece.
-- Search anatomical names and source identifiers.
-- Isolate a selected structure and read its details.
-- Use compact controls and detail panels on mobile.
+You can:
+
+- orbit and zoom the anatomy
+- switch between male and female-study models
+- enable or disable anatomical systems
+- navigate by Region
+- navigate by Teaching Area
+- search or browse modeled structures
+- inspect multi-piece anatomical concepts
+- isolate structures and assemblies
+- hide and restore individual structures
+- progressively explode anatomy from assembled body to separated pieces
+- use Random Anatomy to discover structures
+- adjust theme, brightness, contrast, and autorotation
 
 ## Run locally
 
-Requires Node.js 22.13 or newer. No API keys or accounts are needed.
+Requires Node.js 22 or newer.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open http://localhost:3016; `/` responds with HTTP 307 and redirects to `/male`. Go directly to http://localhost:3016/female or http://localhost:3016/male to load that model. Vite development and preview servers use the same redirect, preserving query parameters. To build the static site, run `npm run build`; the output is in `dist/`.
+Open the local URL reported by Vite.
 
-## Validate
+Build the static site with:
 
 ```sh
-npm run check
-node scripts/validate-atlas.mjs
-node scripts/validate-atlas.mjs atlas-female.json
-node scripts/validate-atlas.mjs atlas-female-reconstructed.json
-node scripts/validate-interactions.mjs
 npm run build
 ```
 
-Validation covers mesh buffers, names and concept membership, nonoverlapping exploded layouts at desktop and mobile aspect ratios, search and inspection contracts, and tap-versus-drag handling. Browser interaction checks have exercised selection, system controls, search, isolation, rotation, and 390×844, 320×568, and 844×390 layouts. Phone controls stay clear of the exploded inventory, and isolated structures fit the space above or beside the detail panel. Physical-device performance and real multitouch hardware have not been tested.
+## Validation
 
-## Anatomy data
+The repository contains automated checks for the anatomy manifests, canonical identity system, model-specific mappings, Regions, Teaching Areas, discovery, dissection, isolation, presentation, and explode behavior.
 
-The male viewer uses **BodyParts3D 4.0**, an adult male reference anatomy, licensed **CC BY 4.0**. It does not represent every human structure or variation. Individual source meshes are distinct from named concepts, which may group multiple meshes. Descriptions distinguish general system context from individual organ explanations.
+Common commands include:
 
-Geometry is simplified for browser performance while retaining every source mesh. The packaged model contains 2,288,268 triangles and downloads approximately 33 MB of compressed geometry. Full credits, source links, and adaptation details are in [ATTRIBUTION.md](public/ATTRIBUTION.md).
+```sh
+npm run check
+npm test
+npm run build
+```
 
-> **The female model is a derived study model, not a scanned reference.** The male atlas is BodyParts3D, an actual adult male reference model. This project has not integrated a complete validated female source. The female model reuses the male skeleton, muscles, and shared organs, swaps in the HRA female pelvis and reproductive organs, adds adapted HRA breast contours, and reshapes the assembly with an estimated whole-body field plus localized contour refinements. Its proportions are estimates guided by ecorché illustrations, not measurements of a real body.
+Additional validators and browser-smoke suites live under [`scripts/`](scripts/).
 
-The female option retains **2,181 BodyParts3D meshes** with their source topology, adds **64 fitted HRA female meshes** (the female pelvis in place of the male one, reproductive organs, two anterolateral knee ligaments, and source-derived breast tissue fitted to the chest with reduced forward projection and a slight lower-front lift), and reshapes the shared body framework with a shared whole-body field, a torso-limited waist refinement, and an explicitly scoped glute contour toward estimated female proportions: about 1.62 m stature, narrower shoulders, a wider pelvis, and a smaller skull. Male-specific structures and selected shared pelvic-floor structures are omitted. Those shared structures remain unresolved coverage gaps. Proportions are artistic estimates, bounding-box fits do not validate joint or muscle attachments, and organ placement is experimental, with visible source provenance. It downloads approximately 35 MB of compressed geometry. See [the reconstruction documentation](docs/female-anatomy.md) for the pipeline, exclusions, and limitations.
+## Scientific status
 
-The 16 breast-related structures retain HRA source topology and use a shared local contour and placement adjustment in the final body coordinates. The rest of the body retains the established proportions. There is one female viewer at `/female`; Tissue, Glands and Pectorals change the visible chest layers within that model. See [the breast adaptation](docs/breast-presentation.md).
+The project preserves source provenance and has increasingly strict structural validation, but the complete atlas has **not yet undergone a comprehensive independent scientific audit**.
 
-The current female model supports static exploration of displayed structures. It has no validated pose, muscle activation or movement-mechanics system for yoga/Pilates instruction. The [coverage report](docs/anatomy-coverage.md) and [female documentation](docs/female-anatomy.md) describe unresolved anatomy and proportion assumptions.
+Known upstream and model-level classification, naming, mapping, laterality, regional-membership, and placement questions are being treated separately from UI development. The project should therefore be understood as an evolving educational/scientific visualization system rather than a clinically validated anatomical reference.
 
-`npm run validate:female-readiness` is a separate teaching-release gate and currently **must fail**: independent anatomy and movement reviews are outstanding. It checks atlas integrity, current target discoverability, revision-bound review artifacts and declared teaching scope. `npm run test:female-readiness` verifies the gate itself; passing tests do not approve anatomy. See the [review evidence instructions](data/anatomy/reviews/README.md).
+A future scientific-audit phase is intended to systematically review:
 
-This is an educational explorer, not a diagnostic or surgical tool.
+- upstream issues, pull requests, forks, and known corrections
+- system assignments
+- names and identifiers
+- laterality
+- canonical concept ↔ representation mappings
+- Region memberships
+- Teaching Area memberships
+- gross spatial placement and context
+- male/female discrepancies
 
-## How it works
+Confirmed corrections will be provenance-backed rather than silently inferred.
 
-Geometry is merged into batches. Per-structure GPU textures control translation, visibility, and selection, while component geometry supports accurate picking. Exploded layouts pack only the visible pieces. Rendering updates when the scene changes; orbit controls remain responsive without thousands of separate draw calls.
+## Project direction
 
-The optional WebMCP tools expose anatomy search and inspection in compatible browsers. The visible interface works without them.
+The current development sequence is intentionally layered:
 
-## Rebuilding geometry
+1. **Viewer foundation** — identity, models, Regions, Teaching Areas, discovery, dissection.
+2. **UI / UX refinement** — isolation, staged explosion, presentation, motion, scene controls.
+3. **Scientific validation** — systematic audit of anatomy configuration and known community findings.
+4. **Knowledge buildout** — sourced anatomical descriptions, terminology, relationships, function, supply, innervation, and related educational data.
 
-The repository includes browser-ready geometry. Rebuilding it is optional: obtain the official BodyParts3D OBJ archive and English metadata tables, prepare the joined concepts and display-system mappings, run `scripts/convert-anatomy.py`, then `node scripts/optimize-anatomy.mjs` and `node scripts/compress-models.mjs`. Simplification uses a 0.2% relative error limit per structure.
+The long-term goal is to move beyond a 3D object viewer toward an interactive anatomical knowledge system where selecting anatomy can eventually explain what it is, where it is, how it relates to surrounding structures, and why it matters.
 
-To rebuild the female geometry, `python3 scripts/convert-female.py SOURCE.glb SOURCE_PARTS.json` expects the official HRA united-female v1.5 GLB and a curated node-to-system metadata map. That external metadata map is not bundled, so the restored binary assets are currently the reproducible checkout path. Run `node scripts/optimize-anatomy.mjs atlas-female.json` after conversion; `node scripts/compress-models.mjs` compresses both atlases.
+## Provenance and attribution
 
-Rebuild the experimental female additions with `python3 scripts/build-female-reconstruction.py` (requires NumPy). This uses the already bundled source atlases and writes a separate manifest and chunks; do not run the source simplifier on the composed reconstruction.
+This repository is an enhanced fork of:
 
-## Deploy
+**[ashemag/human-atlas](https://github.com/ashemag/human-atlas)**
 
-Import this repository into Vercel as a Vite project. The included `vercel.json` configures `npm ci`, `npm run build`, and the `dist` output directory. The configuration rewrites `/female` and `/male` to the app entry so direct links and refreshes work. It also temporarily redirects `/` to `/male` (HTTP 307). Other static hosts need this server-side redirect and the same two rewrites to `/index.html`.
+The original application is built around BodyParts3D anatomy and is released under the MIT License. Anatomy datasets and third-party sources retain their own licenses and attribution requirements.
+
+Full anatomy-source credits, licenses, and adaptation notes are maintained in:
+
+[`public/ATTRIBUTION.md`](public/ATTRIBUTION.md)
+
+Please preserve source attribution when redistributing anatomy data.
 
 ## License
 
-Original application code is released under the [MIT License](LICENSE). **The anatomy data has its own CC BY 4.0 license**; preserve the attribution when redistributing it. Third-party dependencies retain their respective licenses.
+Application code is released under the [MIT License](LICENSE).
 
-Issues and pull requests are welcome. Please include reproduction steps and browser/device details for interaction problems.
-
-Female anatomy enhancement experiments (spinal cord, knee structures, quadriceps tendons, and kidney internals) are documented in [the enhancement worklog](docs/female-enhancements.md). Run `npm run audit:female-enhancements -- --output-dir /tmp/female-enhancements` to generate fitting reports without changing the displayed model.
+Anatomy data is subject to its source-specific licensing and attribution requirements; see [`public/ATTRIBUTION.md`](public/ATTRIBUTION.md).
