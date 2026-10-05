@@ -1,0 +1,744 @@
+{
+  "base": "http://127.0.0.1:3071",
+  "viewport": [
+    1440,
+    900
+  ],
+  "inventory": {
+    "model": "bp3d-male-4",
+    "parts": 2234,
+    "chunks": 15,
+    "renderMeshes": 69,
+    "usedMaterials": 15,
+    "allocatedMaterials": 18,
+    "triangles": 2288268,
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4080 (0x00002704) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "three": "185"
+  },
+  "gut": {
+    "title": "Human Atlas",
+    "content": 614,
+    "overlay": false,
+    "canvas": true,
+    "buttons": 41
+  },
+  "records": [
+    {
+      "structure": "liver",
+      "concept": {
+        "id": "FMA7197",
+        "name": "liver",
+        "pieces": 60
+      },
+      "mode": "normal",
+      "alpha": 1,
+      "file": "liver-normal-1.png",
+      "submitMedianMs": 0.30000007152557373,
+      "completedMedianMs": 0.30000007152557373,
+      "completedP95Ms": 0.6000000238418579,
+      "calls": 71,
+      "triangles": 2348630,
+      "geometries": 71,
+      "programs": 6,
+      "materials": 15
+    },
+    {
+      "structure": "liver",
+      "concept": {
+        "id": "FMA7197",
+        "name": "liver",
+        "pieces": 60
+      },
+      "mode": "single",
+      "alpha": 0.1,
+      "file": "liver-single-0.1.png",
+      "submitMedianMs": 0.20000004768371582,
+      "completedMedianMs": 0.20000004768371582,
+      "completedP95Ms": 0.2999999523162842,
+      "calls": 69,
+      "triangles": 2288268,
+      "geometries": 71,
+      "programs": 7,
+      "materials": 30
+    },
+    {
+      "structure": "liver",
+      "concept": {
+        "id": "FMA7197",
+        "name": "liver",
+        "pieces": 60
+      },
+      "mode": "two-pass",
+      "alpha": 0.1,
+      "file": "liver-two-pass-0.1.png",
+      "submitMedianMs": 0.30000007152557373,
+      "completedMedianMs": 0.30000007152557373,
+      "completedP95Ms": 0.6000000238418579,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "liver",
+      "concept": {
+        "id": "FMA7197",
+        "name": "liver",
+        "pieces": 60
+      },
+      "mode": "two-pass",
+      "alpha": 0.2,
+      "file": "liver-two-pass-0.2.png",
+      "submitMedianMs": 0.30000007152557373,
+      "completedMedianMs": 0.30000007152557373,
+      "completedP95Ms": 0.6000000238418579,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "liver",
+      "concept": {
+        "id": "FMA7197",
+        "name": "liver",
+        "pieces": 60
+      },
+      "mode": "two-pass",
+      "alpha": 0.3,
+      "file": "liver-two-pass-0.3.png",
+      "submitMedianMs": 0.2999999523162842,
+      "completedMedianMs": 0.30000007152557373,
+      "completedP95Ms": 0.40000009536743164,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "liver",
+      "concept": {
+        "id": "FMA7197",
+        "name": "liver",
+        "pieces": 60
+      },
+      "mode": "two-pass-pruned",
+      "alpha": 0.1,
+      "file": "liver-two-pass-pruned-0.1.png",
+      "submitMedianMs": 0.20000004768371582,
+      "completedMedianMs": 0.20000004768371582,
+      "completedP95Ms": 0.2999999523162842,
+      "calls": 77,
+      "triangles": 2699988,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "heart",
+      "concept": {
+        "id": "FMA7088",
+        "name": "heart",
+        "pieces": 83
+      },
+      "mode": "normal",
+      "alpha": 1,
+      "file": "heart-normal-1.png",
+      "submitMedianMs": 0.19999992847442627,
+      "completedMedianMs": 0.19999992847442627,
+      "completedP95Ms": 0.30000007152557373,
+      "calls": 71,
+      "triangles": 2348630,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "heart",
+      "concept": {
+        "id": "FMA7088",
+        "name": "heart",
+        "pieces": 83
+      },
+      "mode": "single",
+      "alpha": 0.1,
+      "file": "heart-single-0.1.png",
+      "submitMedianMs": 0.20000004768371582,
+      "completedMedianMs": 0.20000004768371582,
+      "completedP95Ms": 0.3999999761581421,
+      "calls": 69,
+      "triangles": 2288268,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "heart",
+      "concept": {
+        "id": "FMA7088",
+        "name": "heart",
+        "pieces": 83
+      },
+      "mode": "two-pass",
+      "alpha": 0.1,
+      "file": "heart-two-pass-0.1.png",
+      "submitMedianMs": 0.30000007152557373,
+      "completedMedianMs": 0.30000007152557373,
+      "completedP95Ms": 0.9000000953674316,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "heart",
+      "concept": {
+        "id": "FMA7088",
+        "name": "heart",
+        "pieces": 83
+      },
+      "mode": "two-pass",
+      "alpha": 0.2,
+      "file": "heart-two-pass-0.2.png",
+      "submitMedianMs": 0.2999999523162842,
+      "completedMedianMs": 0.2999999523162842,
+      "completedP95Ms": 0.3999999761581421,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "heart",
+      "concept": {
+        "id": "FMA7088",
+        "name": "heart",
+        "pieces": 83
+      },
+      "mode": "two-pass",
+      "alpha": 0.3,
+      "file": "heart-two-pass-0.3.png",
+      "submitMedianMs": 0.3999999761581421,
+      "completedMedianMs": 0.3999999761581421,
+      "completedP95Ms": 0.6000000238418579,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "heart",
+      "concept": {
+        "id": "FMA7088",
+        "name": "heart",
+        "pieces": 83
+      },
+      "mode": "two-pass-pruned",
+      "alpha": 0.1,
+      "file": "heart-two-pass-pruned-0.1.png",
+      "submitMedianMs": 0.30000007152557373,
+      "completedMedianMs": 0.30000007152557373,
+      "completedP95Ms": 1.2000000476837158,
+      "calls": 73,
+      "triangles": 2367066,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "brain",
+      "concept": {
+        "id": "FMA50801",
+        "name": "brain",
+        "pieces": 59
+      },
+      "mode": "normal",
+      "alpha": 1,
+      "file": "brain-normal-1.png",
+      "submitMedianMs": 0.19999992847442627,
+      "completedMedianMs": 0.19999992847442627,
+      "completedP95Ms": 0.2999999523162842,
+      "calls": 71,
+      "triangles": 2348630,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "brain",
+      "concept": {
+        "id": "FMA50801",
+        "name": "brain",
+        "pieces": 59
+      },
+      "mode": "single",
+      "alpha": 0.1,
+      "file": "brain-single-0.1.png",
+      "submitMedianMs": 0.2999999523162842,
+      "completedMedianMs": 0.2999999523162842,
+      "completedP95Ms": 0.3999999761581421,
+      "calls": 69,
+      "triangles": 2288268,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "brain",
+      "concept": {
+        "id": "FMA50801",
+        "name": "brain",
+        "pieces": 59
+      },
+      "mode": "two-pass",
+      "alpha": 0.1,
+      "file": "brain-two-pass-0.1.png",
+      "submitMedianMs": 0.30000007152557373,
+      "completedMedianMs": 0.30000007152557373,
+      "completedP95Ms": 0.7999999523162842,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "brain",
+      "concept": {
+        "id": "FMA50801",
+        "name": "brain",
+        "pieces": 59
+      },
+      "mode": "two-pass",
+      "alpha": 0.2,
+      "file": "brain-two-pass-0.2.png",
+      "submitMedianMs": 0.2999999523162842,
+      "completedMedianMs": 0.2999999523162842,
+      "completedP95Ms": 0.40000009536743164,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "brain",
+      "concept": {
+        "id": "FMA50801",
+        "name": "brain",
+        "pieces": 59
+      },
+      "mode": "two-pass",
+      "alpha": 0.3,
+      "file": "brain-two-pass-0.3.png",
+      "submitMedianMs": 0.2999999523162842,
+      "completedMedianMs": 0.2999999523162842,
+      "completedP95Ms": 0.40000009536743164,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "brain",
+      "concept": {
+        "id": "FMA50801",
+        "name": "brain",
+        "pieces": 59
+      },
+      "mode": "two-pass-pruned",
+      "alpha": 0.1,
+      "file": "brain-two-pass-pruned-0.1.png",
+      "submitMedianMs": 0.20000004768371582,
+      "completedMedianMs": 0.20000004768371582,
+      "completedP95Ms": 0.5,
+      "calls": 75,
+      "triangles": 2489040,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "left kidney",
+      "concept": {
+        "id": "FMA7205",
+        "name": "left kidney",
+        "pieces": 1
+      },
+      "mode": "normal",
+      "alpha": 1,
+      "file": "left-kidney-normal-1.png",
+      "submitMedianMs": 0.19999992847442627,
+      "completedMedianMs": 0.19999992847442627,
+      "completedP95Ms": 0.2999999523162842,
+      "calls": 71,
+      "triangles": 2348630,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "left kidney",
+      "concept": {
+        "id": "FMA7205",
+        "name": "left kidney",
+        "pieces": 1
+      },
+      "mode": "single",
+      "alpha": 0.1,
+      "file": "left-kidney-single-0.1.png",
+      "submitMedianMs": 0.20000004768371582,
+      "completedMedianMs": 0.20000004768371582,
+      "completedP95Ms": 0.2999999523162842,
+      "calls": 69,
+      "triangles": 2288268,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "left kidney",
+      "concept": {
+        "id": "FMA7205",
+        "name": "left kidney",
+        "pieces": 1
+      },
+      "mode": "two-pass",
+      "alpha": 0.1,
+      "file": "left-kidney-two-pass-0.1.png",
+      "submitMedianMs": 0.30000007152557373,
+      "completedMedianMs": 0.30000007152557373,
+      "completedP95Ms": 0.6999999284744263,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "left kidney",
+      "concept": {
+        "id": "FMA7205",
+        "name": "left kidney",
+        "pieces": 1
+      },
+      "mode": "two-pass",
+      "alpha": 0.2,
+      "file": "left-kidney-two-pass-0.2.png",
+      "submitMedianMs": 0.30000007152557373,
+      "completedMedianMs": 0.30000007152557373,
+      "completedP95Ms": 0.40000009536743164,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "left kidney",
+      "concept": {
+        "id": "FMA7205",
+        "name": "left kidney",
+        "pieces": 1
+      },
+      "mode": "two-pass",
+      "alpha": 0.3,
+      "file": "left-kidney-two-pass-0.3.png",
+      "submitMedianMs": 0.30000007152557373,
+      "completedMedianMs": 0.30000007152557373,
+      "completedP95Ms": 0.8999999761581421,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "left kidney",
+      "concept": {
+        "id": "FMA7205",
+        "name": "left kidney",
+        "pieces": 1
+      },
+      "mode": "two-pass-pruned",
+      "alpha": 0.1,
+      "file": "left-kidney-two-pass-pruned-0.1.png",
+      "submitMedianMs": 0.20000004768371582,
+      "completedMedianMs": 0.20000004768371582,
+      "completedP95Ms": 0.5,
+      "calls": 70,
+      "triangles": 2293368,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "abdominal aorta",
+      "concept": {
+        "id": "FMA3789",
+        "name": "abdominal aorta",
+        "pieces": 1
+      },
+      "mode": "normal",
+      "alpha": 1,
+      "file": "abdominal-aorta-normal-1.png",
+      "submitMedianMs": 0.19999992847442627,
+      "completedMedianMs": 0.19999992847442627,
+      "completedP95Ms": 0.2999999523162842,
+      "calls": 71,
+      "triangles": 2348630,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "abdominal aorta",
+      "concept": {
+        "id": "FMA3789",
+        "name": "abdominal aorta",
+        "pieces": 1
+      },
+      "mode": "single",
+      "alpha": 0.1,
+      "file": "abdominal-aorta-single-0.1.png",
+      "submitMedianMs": 0.20000004768371582,
+      "completedMedianMs": 0.20000004768371582,
+      "completedP95Ms": 0.2999999523162842,
+      "calls": 69,
+      "triangles": 2288268,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "abdominal aorta",
+      "concept": {
+        "id": "FMA3789",
+        "name": "abdominal aorta",
+        "pieces": 1
+      },
+      "mode": "two-pass",
+      "alpha": 0.1,
+      "file": "abdominal-aorta-two-pass-0.1.png",
+      "submitMedianMs": 0.3999999761581421,
+      "completedMedianMs": 0.3999999761581421,
+      "completedP95Ms": 0.8000000715255737,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "abdominal aorta",
+      "concept": {
+        "id": "FMA3789",
+        "name": "abdominal aorta",
+        "pieces": 1
+      },
+      "mode": "two-pass",
+      "alpha": 0.2,
+      "file": "abdominal-aorta-two-pass-0.2.png",
+      "submitMedianMs": 0.30000007152557373,
+      "completedMedianMs": 0.30000007152557373,
+      "completedP95Ms": 0.40000009536743164,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "abdominal aorta",
+      "concept": {
+        "id": "FMA3789",
+        "name": "abdominal aorta",
+        "pieces": 1
+      },
+      "mode": "two-pass",
+      "alpha": 0.3,
+      "file": "abdominal-aorta-two-pass-0.3.png",
+      "submitMedianMs": 0.2999999523162842,
+      "completedMedianMs": 0.2999999523162842,
+      "completedP95Ms": 0.7999999523162842,
+      "calls": 138,
+      "triangles": 4576536,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "abdominal aorta",
+      "concept": {
+        "id": "FMA3789",
+        "name": "abdominal aorta",
+        "pieces": 1
+      },
+      "mode": "two-pass-pruned",
+      "alpha": 0.1,
+      "file": "abdominal-aorta-two-pass-pruned-0.1.png",
+      "submitMedianMs": 0.19999992847442627,
+      "completedMedianMs": 0.20000004768371582,
+      "completedP95Ms": 0.30000007152557373,
+      "calls": 70,
+      "triangles": 2374552,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "scaphoid",
+      "concept": {
+        "id": "FMA23709",
+        "name": "scaphoid",
+        "pieces": 2
+      },
+      "mode": "normal",
+      "alpha": 1,
+      "file": "scaphoid-normal-1.png",
+      "submitMedianMs": 0.19999992847442627,
+      "completedMedianMs": 0.19999992847442627,
+      "completedP95Ms": 0.2999999523162842,
+      "calls": 75,
+      "triangles": 2349398,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "scaphoid",
+      "concept": {
+        "id": "FMA23709",
+        "name": "scaphoid",
+        "pieces": 2
+      },
+      "mode": "single",
+      "alpha": 0.1,
+      "file": "scaphoid-single-0.1.png",
+      "submitMedianMs": 0.19999992847442627,
+      "completedMedianMs": 0.20000004768371582,
+      "completedP95Ms": 0.5,
+      "calls": 73,
+      "triangles": 2289036,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "scaphoid",
+      "concept": {
+        "id": "FMA23709",
+        "name": "scaphoid",
+        "pieces": 2
+      },
+      "mode": "two-pass",
+      "alpha": 0.1,
+      "file": "scaphoid-two-pass-0.1.png",
+      "submitMedianMs": 0.2999999523162842,
+      "completedMedianMs": 0.2999999523162842,
+      "completedP95Ms": 0.7000000476837158,
+      "calls": 142,
+      "triangles": 4577304,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "scaphoid",
+      "concept": {
+        "id": "FMA23709",
+        "name": "scaphoid",
+        "pieces": 2
+      },
+      "mode": "two-pass",
+      "alpha": 0.2,
+      "file": "scaphoid-two-pass-0.2.png",
+      "submitMedianMs": 0.2999999523162842,
+      "completedMedianMs": 0.2999999523162842,
+      "completedP95Ms": 0.5,
+      "calls": 142,
+      "triangles": 4577304,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "scaphoid",
+      "concept": {
+        "id": "FMA23709",
+        "name": "scaphoid",
+        "pieces": 2
+      },
+      "mode": "two-pass",
+      "alpha": 0.3,
+      "file": "scaphoid-two-pass-0.3.png",
+      "submitMedianMs": 0.30000007152557373,
+      "completedMedianMs": 0.30000007152557373,
+      "completedP95Ms": 0.8999999761581421,
+      "calls": 142,
+      "triangles": 4577304,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "scaphoid",
+      "concept": {
+        "id": "FMA23709",
+        "name": "scaphoid",
+        "pieces": 2
+      },
+      "mode": "two-pass-pruned",
+      "alpha": 0.1,
+      "file": "scaphoid-two-pass-pruned-0.1.png",
+      "submitMedianMs": 0.19999992847442627,
+      "completedMedianMs": 0.20000004768371582,
+      "completedP95Ms": 0.30000007152557373,
+      "calls": 75,
+      "triangles": 2538290,
+      "geometries": 71,
+      "programs": 9,
+      "materials": 45
+    },
+    {
+      "structure": "scaphoid",
+      "mode": "two-pass-double-sided",
+      "alpha": 0.1,
+      "submitMedianMs": 1.7000000476837158,
+      "completedMedianMs": 1.7999999523162842,
+      "completedP95Ms": 3,
+      "calls": 211,
+      "triangles": 6865572,
+      "geometries": 71,
+      "programs": 11,
+      "materials": 45
+    },
+    {
+      "structure": "single scaphoid member",
+      "mode": "two-pass-pruned-dark-double-sided",
+      "alpha": 0.1,
+      "partIds": [
+        "FJ3278"
+      ],
+      "submitMedianMs": 1.399999976158142,
+      "completedMedianMs": 1.399999976158142,
+      "completedP95Ms": 1.399999976158142,
+      "calls": 139,
+      "triangles": 4736290,
+      "geometries": 71,
+      "programs": 11,
+      "materials": 45
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "interceptionErrors": [],
+  "scope": "Diagnostic rendering; not final UI/picking/device acceptance"
+}
