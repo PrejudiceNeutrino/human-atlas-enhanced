@@ -177,7 +177,7 @@ try{
   await screenshot(theme+'-discovery');await click('[aria-label="Close search"]');await waitFor("!document.querySelector('.discovery-panel')",'discovery completes exit');
   await click('[aria-label="About this atlas"]');await delay(220);await evaluate("document.querySelector('.about-sheet').scrollTop=400");await click('.about-sheet [data-slot="sheet-close"]');await waitFor("!document.querySelector('.about-sheet')",'info completes exit');
   await click('[aria-label="About this atlas"]');assert.equal(await evaluate("document.querySelector('.about-sheet').scrollTop"),0);await key('Escape');await waitFor("!document.querySelector('.about-sheet')",'info closed');
-  await click('[aria-label="Random anatomy"]');await delay(500);assert.equal(await evaluate("!!document.querySelector('.detail-sheet')"),false);assert.ok(await count()>=5);await closeInspector();
+  await click('[aria-label="Random anatomy"]');await delay(500);assert.equal(await evaluate("!!document.querySelector('.detail-sheet')"),true);assert.ok(await count()>=5);await closeInspector();
   await reset();await explode();await reset();assert.equal(await brandEvents(),animationCount);
   await switchModel('female');await finish();assert.equal(await brandEvents(),animationCount);await screenshot(theme+'-female');
   await switchModel('male');await finish();assert.equal(await brandEvents(),animationCount);

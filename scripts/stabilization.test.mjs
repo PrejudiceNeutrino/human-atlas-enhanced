@@ -31,8 +31,8 @@ test('Rotation storage reloads, clamps and tolerates malformed/denied storage',(
 test('Classic floor is a finite filled stage with rim, fixed diameter and disabled raycasting',()=>{
  const floor=createClassicFloor('light'),children=floor.group.children;
  assert.equal(children.length,2);assert.equal(children[0].geometry.type,'CylinderGeometry');assert.equal(children[1].geometry.type,'RingGeometry');
- assert.equal(children[0].geometry.parameters.radiusTop,CLASSIC_FLOOR_RADIUS);assert.equal(CLASSIC_FLOOR_RADIUS*2,1);
- const box=new T.Box3().setFromObject(floor.group);assert.ok(box.max.y<0);assert.ok(box.getSize(new T.Vector3()).x<1.02);
+ assert.equal(children[0].geometry.parameters.radiusTop,CLASSIC_FLOOR_RADIUS);assert.equal(CLASSIC_FLOOR_RADIUS*2,1.12);
+ const box=new T.Box3().setFromObject(floor.group);assert.ok(box.max.y<0);assert.ok(box.getSize(new T.Vector3()).x<1.14);
  const hits=[];for(const mesh of children){mesh.raycast(new T.Raycaster(),hits);assert.equal(mesh.userData.presentationOnly,true);}assert.deepEqual(hits,[]);
  const before=children[0].material[1].color.getHex();floor.setTheme('dark');assert.notEqual(children[0].material[1].color.getHex(),before);
  for(const mesh of children){mesh.geometry.dispose();for(const material of Array.isArray(mesh.material)?mesh.material:[mesh.material])material.dispose();}

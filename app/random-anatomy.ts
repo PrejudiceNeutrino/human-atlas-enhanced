@@ -5,11 +5,15 @@ import {selectRepresentations} from './hide-restore.ts';
 import {resolveSearchPartIds} from './anatomy-search.ts';
 import {isolateSelection,clearActiveSelection} from './viewer-interaction.ts';
 
-/** Freeze the random workspace, then clear only transient inspection/highlight. */
+/** Freeze the random workspace and its inspector identity independently of highlight. */
 export function randomAnatomyWorkspace(state:SceneState,entry:DiscoveryEntry,identity:IdentityIndex):SceneState {
  if(entry.modelId!==identity.modelId)return state;
  const next=selectRepresentations(state,identity,resolveSearchPartIds(entry.concept,identity));
- return next.selected.length?clearActiveSelection(isolateSelection(next,identity)):state;
+ return next.selected.length?{...clearActiveSelection(isolateSelection(next,identity)),workspaceInspector:{modelId:identity.modelId,conceptId:entry.id},inspectorOpen:true}:state;
+}
+export function randomWorkspaceInspector(state:SceneState,entries:readonly DiscoveryEntry[],identity:IdentityIndex|null):DiscoveryEntry|null {
+ const subject=state.workspaceInspector;
+ return state.isolate&&identity&&subject?.modelId===identity.modelId?entries.find(entry=>entry.modelId===identity.modelId&&entry.id===subject.conceptId)??null:null;
 }
 /** Exploration heuristic only: this count is not scientific/educational importance. */
 export function randomAnatomyCandidates(entries:readonly DiscoveryEntry[],identity:IdentityIndex):DiscoveryEntry[]{

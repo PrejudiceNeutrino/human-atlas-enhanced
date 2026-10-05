@@ -26,7 +26,7 @@ export function selectRepresentations(state:SceneState,identity:IdentityIndex,pa
  const ids=new Set(representationIdsForPartIds(identity,partIds));
  const selected=[...new Set(partIds)].filter(id=>{const r=identity.representationForPart(id);return !!r&&ids.has(r.id);});
  const hidden=state.hiddenRepresentationIds??[],remaining=hidden.filter(id=>!ids.has(id));
- return {...state,hiddenRepresentationIds:remaining.length===hidden.length?hidden:remaining,selected,isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,rotate:false};
+ return {...state,hiddenRepresentationIds:remaining.length===hidden.length?hidden:remaining,selected,workspaceInspector:undefined,isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,rotate:false};
 }
 
 export function restoreHiddenRepresentations(state:SceneState):SceneState {

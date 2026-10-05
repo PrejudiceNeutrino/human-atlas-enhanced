@@ -140,13 +140,13 @@ try{
   await evaluate("(()=>{const e=document.createElement('div');e.id='editable-guard';e.contentEditable='true';e.tabIndex=0;document.body.append(e);e.focus()})()");await press('j');assert.equal(await hiddenCount(),guarded);await evaluate("document.querySelector('#editable-guard').remove()");
   await tab('Systems');await assertFooter();await click('.restore-hidden');await checkCount(whole);await reset();
   // Deterministic exploration uses an ordinary explicit isolation workspace.
-  await evaluate('Math.random=()=>0');await click('[aria-label="Random anatomy"]');await delay(500);assert.equal(await evaluate("!!document.querySelector('.detail-sheet')"),false);assert.equal(await evaluate("window.__atlasTestSelection.some(v=>v!==0)"),false);
+  await evaluate('Math.random=()=>0');await click('[aria-label="Random anatomy"]');await delay(500);assert.equal(await evaluate("!!document.querySelector('.detail-sheet')"),true);assert.equal(await evaluate("window.__atlasTestSelection.some(v=>v!==0)"),false);
   const model=MODEL_REGISTRY[route==='male'?'bp3d-male-4':'female-study-v3'],atlas=JSON.parse(fs.readFileSync('public'+model.manifestUrl,'utf8')),identity=createIdentityIndex(model,atlas,JSON.parse(fs.readFileSync('public/identity/core-crosswalk-v1.json','utf8'))),entry=randomAnatomyCandidates(buildDiscoveryIndex(atlas,identity),identity)[0],randomName=entry.name,n=entry.modeledPieceCount;assert.ok(n>=5&&n<=200);await checkCount(n);
   const isolatedGPU=await gpu(),isolatedCamera=await camera();await screenshot(route+'-random-isolation');
   await search(randomName);await buttonText('Isolate structure');await delay(400);await press('h');await waitFor("!document.querySelector('.detail-sheet')",'empty isolation');await checkCount(0);
   for(let i=0;i<3;i++){await evaluate("document.querySelector('.restore-hidden').focus()");await press('j');await checkCount(i+1);await compareCamera(isolatedCamera);}
   await click('.restore-hidden');await checkCount(n);await compareCamera(isolatedCamera);assert.deepEqual(await gpu(),isolatedGPU);
-  await click('[aria-label="Random anatomy"]');await delay(500);assert.equal(await evaluate("!!document.querySelector('.detail-sheet')"),false);assert.notDeepEqual(await gpu(),isolatedGPU);await reset();
+  await click('[aria-label="Random anatomy"]');await delay(500);assert.equal(await evaluate("!!document.querySelector('.detail-sheet')"),true);assert.notDeepEqual(await gpu(),isolatedGPU);await reset();
   // Light/Dark, oblique, Region, Area, small/large isolation and explode composition.
   for(const theme of ['light','dark']){
    if(await evaluate('document.documentElement.dataset.theme')!==theme)await click('.theme-trigger');

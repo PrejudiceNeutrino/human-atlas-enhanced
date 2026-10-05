@@ -13,10 +13,10 @@ export const FEATURED_ANATOMY_IDS=[
  'FMA37347', // Muscle of pectoral girdle.
  'FMA9713', // Right hand: skeletal assembly.
  'FMA11343', // Right foot: skeletal assembly.
- 'FMA37372', // Muscle of hand.
+ 'FMA13478', // Vertebral column: the canonical Spine assembly.
  'FMA37369', // Muscle of foot.
  'FMA10430', // Pelvic wall: model-specific inventory.
- 'FMA71209', // Tributary of axillary vein: venous network.
+ 'FMA7203', // Kidney: paired, recognizable urinary anatomy.
 ] as const;
 
 export function featuredAnatomy(entries:readonly DiscoveryEntry[],modelId:ModelId):DiscoveryEntry[] {

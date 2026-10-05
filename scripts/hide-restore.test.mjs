@@ -69,7 +69,7 @@ test('model switch clears hidden IDs/masks but preserves canonical navigation',(
  const s={...derived(male,hidden(male,[part])),regionId:'atlas:region:thoracic',areaId:'atlas:area:heart'};const next=switchRegionModel(s,['cardiac']);assert.deepEqual(next.hiddenRepresentationIds,[]);assert.equal(next.hiddenPartIds,undefined);assert.equal(next.regionId,s.regionId);assert.equal(next.areaId,s.areaId);assert.deepEqual(next.selected,[]);
 });
 test('full reset clears hiding and retains deterministic Phase 3 reset semantics',()=>{
- const next=resetViewer({...derived(male,hidden(male,[part])),areaId:'atlas:area:heart'},['skeletal']);assert.deepEqual(next,{breastView:'tissue',visible:['skeletal'],regionId:'atlas:region:body',hiddenRepresentationIds:[],selected:[],isolate:false,explode:0,rotate:false,view:'three-quarter',reset:8});
+ const next=resetViewer({...derived(male,hidden(male,[part])),areaId:'atlas:area:heart'},['skeletal']);assert.deepEqual(next,{cameraIntent:'reset',cameraIntentRevision:1,breastView:'tissue',visible:['skeletal'],regionId:'atlas:region:body',hiddenRepresentationIds:[],selected:[],isolate:false,explode:0,rotate:false,view:'three-quarter',reset:8});
 });
 test('Hide all system layers is independent from hidden state',()=>{
  const s={...hidden(male,[part]),visible:[],selected:[],isolate:false};assert.equal(visible(male,s).length,0);assert.deepEqual(s.hiddenRepresentationIds,[rid(male,part)]);assert.equal(visible(male,restoreHiddenRepresentations(s)).length,0);

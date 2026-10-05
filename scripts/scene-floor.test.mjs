@@ -40,7 +40,7 @@ test('Every floor is unpickable, below body origin and bounded by the reviewed s
   assert.deepEqual(ray.intersectObject(floor.group,true),[]);
   floor.group.traverse(o=>{if(o instanceof T.Mesh)assert.equal(o.userData.presentationOnly,true);});
   const active=new T.Box3();floor.group.traverseVisible(o=>{if(o instanceof T.Mesh)active.union(new T.Box3().setFromObject(o));});
-  if(id==='void')assert.equal(active.isEmpty(),true);else {assert.ok(active.max.y<0);assert.ok(active.getSize(new T.Vector3()).x<=1.01601);}
+  if(id==='void')assert.equal(active.isEmpty(),true);else {assert.ok(active.max.y<0);assert.ok(active.getSize(new T.Vector3()).x<=1.13601);}
   floor.dispose();
  }
 });

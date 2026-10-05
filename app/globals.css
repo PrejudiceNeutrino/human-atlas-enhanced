@@ -213,7 +213,8 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 .discovery-list{position:relative;width:100%}
 .discovery-row{position:absolute;left:0;right:0;width:100%;height:56px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:3px;padding:6px 10px;text-align:left;border-radius:6px;transition:none;line-height:1.3}
 .discovery-row .search-result-name{flex:none;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;color:var(--ui-secondary)}
-.discovery-row:hover,.discovery-row:focus-visible{background:var(--accent)!important;outline:2px solid var(--focus);outline-offset:-2px}
+.discovery-row:hover,.discovery-row[aria-selected=true]{background:var(--accent)!important}
+.discovery-row:focus-visible{background:var(--accent)!important;outline:0!important;outline-offset:0;box-shadow:inset 3px 0 var(--focus)}
 .discovery-piece-count{font-size:11px;color:var(--ui-muted);font-variant-numeric:tabular-nums}
 .discovery-empty{font-size:13px;color:var(--ui-muted);padding:16px 10px;margin:0}
 @media(min-width:768px) and (max-width:1000px){.navigation-rail{left:20px;width:222px}}
@@ -378,10 +379,10 @@ h1 .edition{position:relative;overflow:hidden}
 .shortcut-reference dt{flex:0 0 26px}.shortcut-reference dd{margin:0;color:var(--ui-secondary);font-size:12px}
 .shortcut-reference kbd{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border:1px solid var(--border);border-radius:5px;background:var(--control);font-size:12px}
 .about-copy .shortcut-note{font-size:12px;color:var(--ui-muted)}
-.discovery-summary{padding-inline:0}.discovery-row{padding-inline:0}
+.discovery-summary{padding-inline:0}.discovery-row{padding-inline:10px}
 @media(max-height:600px) and (orientation:landscape){.scene-caption{font-size:8px}.view-controls{gap:0;padding:3px}.view-controls button{width:38px}.view-controls i{margin-inline:2px}}
 @media(max-width:370px){.shortcut-reference{grid-template-columns:1fr}}
 
 /* Phase 5.6: a small brand inset composes with the existing finite entrance. */
-.identity>.eyebrow{padding-top:4px}
+.identity>.eyebrow{padding-top:8px}
 .system-list{padding-top:0}

@@ -6,18 +6,18 @@ import {selectRepresentations,representationIdsForPartIds,hiddenPartIdsForModel}
 /** Explicit entry or narrowing: freeze the current-model selection as a new workspace. */
 export function isolateSelection(state:SceneState,identity:IdentityIndex):SceneState {
  const ids=representationIdsForPartIds(identity,state.selected);
- return ids.length?{...state,isolate:true,isolatedRepresentationIds:ids,isolatedPartIds:hiddenPartIdsForModel(identity,ids),explode:0}:state;
+ return ids.length?{...state,workspaceInspector:undefined,isolate:true,isolatedRepresentationIds:ids,isolatedPartIds:hiddenPartIdsForModel(identity,ids),explode:0}:state;
 }
 /** Explicit exit retains selection and independent dissection/navigation state. */
 export function exitIsolation(state:SceneState):SceneState {
- return {...state,isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,explode:0};
+ return {...state,workspaceInspector:undefined,isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,explode:0};
 }
 /** Compatibility for existing callers; UI entry/narrowing and exit use separate actions. */
 export function toggleIsolation(state:SceneState,identity:IdentityIndex):SceneState {
  return state.isolate?exitIsolation(state):isolateSelection(state,identity);
 }
 export function clearActiveSelection(state:SceneState):SceneState {
- return {...state,selected:[],inspectorOpen:false};
+ return {...state,selected:[],inspectorOpen:!!state.workspaceInspector&&state.isolate};
 }
 /** Only workspace/view transitions may refit; inspection, panel closure and dissection do not. */
 export function isolationCameraKey(state:SceneState,aspect:number):string {
@@ -30,7 +30,7 @@ export function selectAssemblyMember(state:SceneState,identity:IdentityIndex,par
  const ids=state.isolatedRepresentationIds??representationIdsForPartIds(identity,state.selected);
  const scope=hiddenPartIdsForModel(identity,ids);
  const next=selectRepresentations(state,identity,[partId]);
- return state.isolate&&scope.has(partId)?{...next,isolate:true,isolatedRepresentationIds:ids,isolatedPartIds:scope}:next;
+ return state.isolate&&scope.has(partId)?{...next,workspaceInspector:state.workspaceInspector,isolate:true,isolatedRepresentationIds:ids,isolatedPartIds:scope}:next;
 }
 export function selectIncludedMember(state:SceneState,identity:IdentityIndex,partId:string):SceneState {
  const scope=state.isolate?hiddenPartIdsForModel(identity,state.isolatedRepresentationIds??representationIdsForPartIds(identity,state.selected)):new Set(state.selected);

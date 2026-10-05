@@ -19,10 +19,11 @@ const make=(specs=[],options={})=>{
  const latest={current:{visible:['muscular','integumentary','mammary'],selected:[],isolate:false,breastView:'tissue',...options.state}};
  const hover={hidden:false},renderer={domElement:{getBoundingClientRect:()=>rect}};
  const isBodySurface=p=>p.system==='integumentary'&&!(p.id.startsWith('VH_F_')&&p.id!=='VH_F_skin');
- const factory=new Function('T','camera','controls','renderer','ready','latest','atlas','pickers','data','partIsVisible','isBodySurface','bounds','worldBox','hitPoint','hover','dirty',compiled);
- const wheel=factory(T,camera,controls,renderer,true,latest,atlas,pickers,data,partIsVisible,isBodySurface,bounds,new T.Box3(),new T.Vector3(),hover,false);
+ let interrupted=0;
+ const factory=new Function('T','camera','controls','renderer','ready','latest','atlas','pickers','data','partIsVisible','isBodySurface','bounds','worldBox','hitPoint','hover','dirty','interruptAssist',compiled);
+ const wheel=factory(T,camera,controls,renderer,true,latest,atlas,pickers,data,partIsVisible,isBodySurface,bounds,new T.Box3(),new T.Vector3(),hover,false,()=>interrupted++);
  const event=(deltaY=-100,extra={})=>({deltaY,deltaMode:0,ctrlKey:false,clientX:rect.left+650,clientY:rect.top+330,prevented:false,stopped:false,preventDefault(){this.prevented=true},stopImmediatePropagation(){this.stopped=true},...extra});
- return {camera,controls,wheel,event,pickers,latest};
+ return {camera,controls,wheel,event,pickers,latest,interrupted:()=>interrupted};
 };
 const screenNear=(a,b,msg)=>assert.ok(Math.hypot(a.x-b.x,a.y-b.y)<1e-9,msg);
 const near=(a,b,msg)=>assert.ok(a.distanceTo(b)<1e-9,msg+`: ${a.distanceTo(b)}`);

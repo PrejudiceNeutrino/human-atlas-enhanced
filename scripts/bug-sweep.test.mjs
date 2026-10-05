@@ -49,7 +49,7 @@ for(const model of Object.values(MODEL_REGISTRY)){
  });
  test(`${model.id}: Random clears highlight while retaining scope, navigation, camera fit and member hide/restore`,()=>{
   const e=randomAnatomyCandidates(entries,identity)[0],state=randomAnatomyWorkspace({...base,regionId:'atlas:region:shoulder',areaId:'atlas:area:axilla'},e,identity);
-  assert.equal(state.isolate,true);assert.deepEqual(state.selected,[]);assert.equal(state.inspectorOpen,false);assert.deepEqual(state.isolatedRepresentationIds,e.representationIds);assert.equal(state.regionId,'atlas:region:shoulder');assert.equal(state.areaId,'atlas:area:axilla');assert.equal(sceneFloorEligible(state),false);
+  assert.equal(state.isolate,true);assert.deepEqual(state.selected,[]);assert.equal(state.inspectorOpen,true);assert.deepEqual(state.isolatedRepresentationIds,e.representationIds);assert.equal(state.regionId,'atlas:region:shoulder');assert.equal(state.areaId,'atlas:area:axilla');assert.equal(sceneFloorEligible(state),false);
   const key=isolationCameraKey(state,1.6);assert.notEqual(key,'');
   for(const id of e.partIds.slice(0,2)){
    const member=selectAssemblyMember(state,identity,id);assert.deepEqual(member.selected,[id]);assert.strictEqual(member.isolatedRepresentationIds,state.isolatedRepresentationIds);assert.equal(isolationCameraKey(member,1.6),key);
