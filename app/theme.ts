@@ -24,5 +24,5 @@ export function createThemeController({storage,apply}:ThemeHost) {
 }
 export const SCENE_THEMES={
  light:{background:'#e4e8eb',ring:'#8c969f',innerRing:'#a4aeb8',marker:'#64748b'},
- dark:{background:'#202a33',ring:'#81919e',innerRing:'#71828f',marker:'#a4b6c6'},
+ dark:{background:'#141414',ring:'#92928f',innerRing:'#777774',marker:'#bcbcb7'},
 } as const;

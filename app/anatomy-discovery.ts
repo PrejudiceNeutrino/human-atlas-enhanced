@@ -1,3 +1,4 @@
+import {viewerShortcut} from './viewer-shortcuts.ts';
 import type {Atlas,SystemId} from './anatomy';
 import type {IdentityIndex} from './identity-index';
 import type {ModelId,RepresentationId} from './identity-contracts';
@@ -44,10 +45,7 @@ export function searchDiscoveryEntries(entries:readonly DiscoveryEntry[],query:s
  });
  return entries.filter(entry=>matchesAnatomySearch(entry.concept,term)).sort((a,b)=>a.name.length-b.name.length).slice(0,80);
 }
-export function shouldOpenDiscovery(event:Pick<KeyboardEvent,'key'|'target'|'ctrlKey'|'metaKey'|'altKey'|'defaultPrevented'|'isComposing'|'repeat'>):boolean {
- const target=event.target as Element|null;
- return event.key==='/'&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!event.defaultPrevented&&!event.isComposing&&!event.repeat&&!target?.closest?.('input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="combobox"],[role="textbox"],[role="searchbox"]');
-}
+export function shouldOpenDiscovery(event:Pick<KeyboardEvent,'key'|'target'|'ctrlKey'|'metaKey'|'altKey'|'defaultPrevented'|'isComposing'|'repeat'>):boolean {return viewerShortcut(event)==='find';}
 
 export const DISCOVERY_ROW_HEIGHT=56;
 export const DISCOVERY_OVERSCAN=4;

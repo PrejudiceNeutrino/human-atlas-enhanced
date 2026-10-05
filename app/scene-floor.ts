@@ -6,7 +6,7 @@ import type {ResolvedTheme} from './theme';
 
 const palettes={
  light:{line:'#718697',accent:'#547c91',center:'#647583',intensity:.52,centerOpacity:.09},
- dark:{line:'#839baa',accent:'#a3bdcf',center:'#121b24',intensity:.65,centerOpacity:.22},
+ dark:{line:'#999995',accent:'#a3c4c9',center:'#080808',intensity:.65,centerOpacity:.22},
 } as const;
 /** All five procedural styles share one program: switching changes uniforms, not shaders. */
 const fragmentShader=`

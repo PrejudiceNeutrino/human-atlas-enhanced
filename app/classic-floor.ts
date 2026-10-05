@@ -2,7 +2,7 @@ import * as T from 'three';
 import type {ResolvedTheme} from './theme';
 
 export const CLASSIC_FLOOR_RADIUS=.5;
-const colors={light:{surface:'#d0d7dc',edge:'#bcc7ce',rim:'#aebdc7'},dark:{surface:'#33424e',edge:'#293743',rim:'#556b7b'}} as const;
+const colors={light:{surface:'#d0d7dc',edge:'#bcc7ce',rim:'#aebdc7'},dark:{surface:'#303030',edge:'#242424',rim:'#626260'}} as const;
 /** Presentation only. Never register in anatomy pickers, bounds, inventories or layouts. */
 export function createClassicFloor(theme:ResolvedTheme){
  const group=new T.Group();group.name='Classic floor';

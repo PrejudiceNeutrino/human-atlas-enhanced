@@ -152,7 +152,7 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 .anatomy-choice-menu [data-slot=select-group]{padding:0}
 .anatomy-choice-menu [data-slot=select-label]{padding:9px 8px 3px;font-size:9px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--ui-muted)}
 .anatomy-choice-menu [data-slot=select-label][data-current-region=true]{color:var(--ui-link)}
-.anatomy-choice-menu [data-slot=select-item][data-region-relevant=true]{box-shadow:inset 2px 0 var(--ui-link)}
+
 .area-relevance-dot{width:4px;height:4px;align-self:center;border-radius:50%;background:var(--ui-link);flex-shrink:0}
 .region-choice [data-slot=select-trigger]{width:100%;height:44px;font-size:12px;letter-spacing:.02em}
 .anatomy-choice [data-slot=select-trigger]{height:44px}
@@ -163,7 +163,7 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 
 /* Presentation tokens are shared by the viewer and portal-mounted controls. */
 :root{--panel:#ffffffeb;--control:#ffffffd9;--control-input:#f7f9fa;--ui-secondary:#475665;--ui-muted:#75818d;--ui-faint:#87929d;--ui-link:#537a89;--focus:#538d9a;--selected-control:#e1ebef;--primary-hover:#3b5261;--switch-active:#536875;--scrollbar:#b9c3cc}
-:root[data-theme=dark]{color-scheme:dark;color:var(--foreground);background:var(--background);--background:#202a33;--foreground:#e8edf1;--card:#2b3742;--card-foreground:#e8edf1;--popover:#2b3742;--popover-foreground:#e8edf1;--primary:#88b7c5;--primary-foreground:#172731;--primary-hover:#a5ccd6;--secondary:#36434f;--secondary-foreground:#e8edf1;--muted:#35424e;--muted-foreground:#b3c0cb;--accent:#40515f;--accent-foreground:#f0f4f7;--border:#bacbd52b;--input:#bacbd54a;--ring:#a3d1db;--panel:#293540f2;--control:#2b3742eb;--control-input:#24303a;--ui-secondary:#d0dbe3;--ui-muted:#b3c0cb;--ui-faint:#a5b4c1;--ui-link:#9cc8d4;--focus:#a3d1db;--selected-control:#425c6b;--switch-active:#88b7c5;--scrollbar:#718391}
+:root[data-theme=dark]{color-scheme:dark;color:var(--foreground);background:var(--background);--background:#141414;--foreground:#f0f0ef;--card:#232323;--card-foreground:#f0f0ef;--popover:#292929;--popover-foreground:#f0f0ef;--primary:#88b7c5;--primary-foreground:#152124;--primary-hover:#a5ccd6;--secondary:#303030;--secondary-foreground:#f0f0ef;--muted:#303030;--muted-foreground:#bdbdbb;--accent:#383838;--accent-foreground:#f5f5f3;--border:#ffffff24;--input:#ffffff38;--ring:#a3d1db;--panel:#232323f5;--control:#2b2b2bf2;--control-input:#1d1d1d;--ui-secondary:#dededb;--ui-muted:#bdbdbb;--ui-faint:#a7a7a4;--ui-link:#9cc8d4;--focus:#a3d1db;--selected-control:#34474b;--switch-active:#88b7c5;--scrollbar:#777775}
 .visibility-tabs{display:flex;flex-direction:column;flex:1;min-height:0;gap:0}
 .visibility-tab-list{width:100%;height:auto!important;min-height:44px;margin:10px 0 4px;flex-shrink:0;background:var(--muted);padding:3px}
 .visibility-tab-list [role=tab]{min-height:38px;flex:1;border:1px solid transparent;font-size:12px;color:var(--ui-muted);gap:7px}
@@ -177,7 +177,7 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 .top-actions .theme-trigger{width:44px;min-width:44px;justify-content:center;gap:0;padding:0;background:var(--control);border:1px solid var(--border);border-radius:10px}
 .theme-trigger>svg{display:block}
 :root[data-theme=dark] .glass{border-color:var(--border);box-shadow:0 2px 5px #00000012,0 16px 48px #00000020}
-:root[data-theme=dark] .vignette{background:radial-gradient(ellipse at 51% 43%,transparent 35%,#10182024 100%)}
+:root[data-theme=dark] .vignette{background:radial-gradient(ellipse at 51% 43%,transparent 35%,#00000038 100%)}
 :root[data-theme=dark] .system-row [data-slot=switch-thumb]{background:#e8edf1}
 :root[data-theme=dark] .system-row [data-slot=switch]{--primary:var(--switch-active)}
 @media(max-width:767px){.visibility-tab-list [role=tab]{min-height:44px}.panel-foot{gap:6px}.panel-foot button{white-space:normal;font-size:10px}}
@@ -368,3 +368,17 @@ h1 .edition{position:relative;overflow:hidden}
 @keyframes atlas-caret-blink{0%,24%,50%,74%{opacity:1}25%,49%,75%,100%{opacity:0}}
 .studio[data-shell-settled=false] .identity .eyebrow-letter:last-child::after{animation-name:atlas-caret-blink;animation-duration:var(--motion-caret-blink)}
 @media(prefers-reduced-motion:reduce){.eyebrow-letter::after{animation:none!important}}
+
+/* Phase 5.5: final interaction, help and presentation polish. */
+:root[data-theme=dark] .part-hover{background:#303030f5;color:var(--foreground)}
+.view-controls button:disabled{opacity:.45}
+.studio[data-view-locked=true] .scene canvas{cursor:default}
+.scene-caption{display:flex;bottom:var(--dock-clearance,180px)}
+.shortcut-reference{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:16px 0}
+.shortcut-reference>div{display:flex;gap:10px;align-items:center;min-width:0}
+.shortcut-reference dt{flex:0 0 26px}.shortcut-reference dd{margin:0;color:var(--ui-secondary);font-size:12px}
+.shortcut-reference kbd{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border:1px solid var(--border);border-radius:5px;background:var(--control);font-size:12px}
+.about-copy .shortcut-note{font-size:12px;color:var(--ui-muted)}
+.discovery-summary{padding-inline:0}.discovery-row{padding-inline:0}
+@media(max-height:600px) and (orientation:landscape){.scene-caption{font-size:8px}.view-controls{gap:0;padding:3px}.view-controls button{width:38px}.view-controls i{margin-inline:2px}}
+@media(max-width:370px){.shortcut-reference{grid-template-columns:1fr}}
