@@ -163,7 +163,7 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 
 /* Presentation tokens are shared by the viewer and portal-mounted controls. */
 :root{--panel:#ffffffeb;--control:#ffffffd9;--control-input:#f7f9fa;--ui-secondary:#475665;--ui-muted:#75818d;--ui-faint:#87929d;--ui-link:#537a89;--focus:#538d9a;--selected-control:#e1ebef;--primary-hover:#3b5261;--switch-active:#536875;--scrollbar:#b9c3cc}
-:root[data-theme=dark]{color-scheme:dark;color:var(--foreground);background:var(--background);--background:#141414;--foreground:#f0f0ef;--card:#232323;--card-foreground:#f0f0ef;--popover:#292929;--popover-foreground:#f0f0ef;--primary:#88b7c5;--primary-foreground:#152124;--primary-hover:#a5ccd6;--secondary:#303030;--secondary-foreground:#f0f0ef;--muted:#303030;--muted-foreground:#bdbdbb;--accent:#383838;--accent-foreground:#f5f5f3;--border:#ffffff24;--input:#ffffff38;--ring:#a3d1db;--panel:#232323f5;--control:#2b2b2bf2;--control-input:#1d1d1d;--ui-secondary:#dededb;--ui-muted:#bdbdbb;--ui-faint:#a7a7a4;--ui-link:#9cc8d4;--focus:#a3d1db;--selected-control:#34474b;--switch-active:#88b7c5;--scrollbar:#777775}
+:root[data-theme=dark]{color-scheme:dark;color:var(--foreground);background:var(--background);--background:#141414;--foreground:#f0f0ef;--card:#232323;--card-foreground:#f0f0ef;--popover:#292929;--popover-foreground:#f0f0ef;--primary:#70cbd5;--primary-foreground:#152124;--primary-hover:#94dce3;--secondary:#303030;--secondary-foreground:#f0f0ef;--muted:#303030;--muted-foreground:#bdbdbb;--accent:#383838;--accent-foreground:#f5f5f3;--border:#ffffff24;--input:#ffffff38;--ring:#94dce3;--panel:#232323f5;--control:#2b2b2bf2;--control-input:#1d1d1d;--ui-secondary:#dededb;--ui-muted:#bdbdbb;--ui-faint:#a7a7a4;--ui-link:#9cc8d4;--focus:var(--ring);--selected-control:#34474b;--switch-active:var(--primary);--scrollbar:#777775}
 .visibility-tabs{display:flex;flex-direction:column;flex:1;min-height:0;gap:0}
 .visibility-tab-list{width:100%;height:auto!important;min-height:44px;margin:10px 0 4px;flex-shrink:0;background:var(--muted);padding:3px}
 .visibility-tab-list [role=tab]{min-height:38px;flex:1;border:1px solid transparent;font-size:12px;color:var(--ui-muted);gap:7px}
@@ -350,8 +350,7 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
  .detail-sheet,.about-sheet,.discovery-panel,.display-popover,.rotation-popover,.anatomy-choice-menu{transition:none!important;transform:none!important;translate:0!important;scale:1!important}
 }
 
-h1 .edition{position:relative;overflow:hidden}
-.studio[data-scene-ready=false]:not([data-load-error=true]) h1 .edition::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:var(--load-progress,0%);background:var(--ui-link);transition:width var(--motion-fast) var(--motion-curve)}
+h1 .edition{position:relative;overflow:visible}
 .atlas-home-link:focus-within .wordmark-solid{opacity:1!important}
 .atlas-home-link:focus-within .wordmark-ghost{opacity:0!important}
 
@@ -386,3 +385,28 @@ h1 .edition{position:relative;overflow:hidden}
 /* Phase 5.6: a small brand inset composes with the existing finite entrance. */
 .identity>.eyebrow{padding-top:8px}
 .system-list{padding-top:0}
+
+/* Phase 5.6.2: three deliberate cues; anatomy and the thumb itself stay still. */
+:root{--explode-halo:#538d9a;--explode-halo-peak:.16;--badge-trace:var(--ui-link)}
+:root[data-theme=dark]{--explode-halo:var(--primary);--explode-halo-peak:.28;--badge-trace:var(--primary)}
+.explode-control [data-slot=slider-thumb]::before{content:'';position:absolute;inset:-5px;border-radius:50%;box-shadow:0 0 4px 1px var(--explode-halo);opacity:0;pointer-events:none}
+.explode-slider[data-idle-pulse=true] [data-slot=slider-thumb]::before{animation:atlas-explode-idle 3000ms var(--motion-enter-curve) infinite}
+@keyframes atlas-explode-idle{0%,100%{opacity:0;transform:scale(1)}50%{opacity:var(--explode-halo-peak);transform:scale(1.15)}}
+.dock-reset .reset-confirmation{animation:atlas-reset-confirmation 650ms var(--motion-enter-curve);transform-box:fill-box;transform-origin:center}
+@keyframes atlas-reset-confirmation{from{transform:rotate(0)}to{transform:rotate(-360deg)}}
+h1 .edition .edition-trace{position:absolute;inset:-1px;width:calc(100% + 2px);height:calc(100% + 2px);pointer-events:none;opacity:0}
+.edition-trace svg{display:block;width:100%;height:100%}
+.edition-trace rect{fill:none;stroke:var(--badge-trace);stroke-width:1;vector-effect:non-scaling-stroke;stroke-dasharray:100;stroke-dashoffset:100}
+.studio[data-shell-settled=false] .edition-trace rect{animation:atlas-badge-trace 720ms var(--motion-enter-curve) 480ms both}
+h1 .edition::before{content:'';position:absolute;inset:-1px;border-radius:inherit;box-shadow:0 0 5px 1px var(--badge-trace);opacity:0;pointer-events:none}
+.studio[data-shell-settled=false] h1 .edition::before{animation:atlas-badge-glow 650ms var(--motion-enter-curve) 1200ms both}
+@keyframes atlas-badge-trace{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+@keyframes atlas-badge-trace-fade{0%{opacity:0}10%,100%{opacity:1}}
+@keyframes atlas-badge-glow{0%,100%{opacity:0}35%{opacity:.3}}
+/* The completed trace fades with the one-shot glow, leaving the ordinary border. */
+.studio[data-shell-settled=false] h1 .edition .edition-trace{animation:atlas-badge-trace-fade 720ms linear 480ms both,atlas-badge-trace-settle 650ms linear 1200ms forwards}
+@keyframes atlas-badge-trace-settle{from{opacity:1}to{opacity:0}}
+@media(prefers-reduced-motion:reduce){
+ .explode-control [data-slot=slider-thumb]::before,.dock-reset .reset-confirmation,.edition-trace,.edition-trace rect,h1 .edition::before{animation:none!important}
+ h1 .edition::before,.edition-trace{opacity:0!important}
+}

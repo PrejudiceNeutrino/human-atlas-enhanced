@@ -10,6 +10,7 @@ import {createAreaIndex} from '../app/areas.ts';
 import {SYSTEMS,DEFAULT_VISIBLE,partIsVisible} from '../app/anatomy.ts';
 import {regionBounds} from '../app/regions.ts';
 import {fitRegionCamera} from '../app/region-camera.ts';
+import {focusedViewport,modelGrounding} from '../app/spatial-presentation.ts';
 import * as T from 'three';
 import {gunzipSync} from 'node:zlib';
 import {selectBrowserHelpers} from './select-browser-helpers.mjs';
@@ -107,13 +108,13 @@ try{
    await layers(mobile);await buttonText(systemName,"document.querySelector('.system-list')");await closeLayers(mobile);
    const filtered=rs.filter(r=>r.sourcePart.system===system);assert.equal(await count(),filtered.length);assert.ok(filtered.length>0);
    // Pick actual current-model triangles under the active station and system filter.
-   const safe={left:mobile?20:285,right:width-(mobile?62:90),top:mobile?320:130,bottom:height-(mobile?175:200)},f=fitRegionCamera(regionBounds(rs),'three-quarter',34,width,height,safe),camera=new T.PerspectiveCamera(34,width/height,.005,100);
-   camera.setViewOffset(width,height,f.offsetX,f.offsetY,width,height);camera.position.copy(f.center).addScaledVector(f.direction,f.distance);camera.lookAt(f.center);camera.updateMatrixWorld();
+   const safe={left:mobile?20:285,right:width-(mobile?62:90),top:mobile?320:130,bottom:height-(mobile?175:200)},f=fitRegionCamera(regionBounds(rs),'three-quarter',34,width,height,focusedViewport(width,height)),camera=new T.PerspectiveCamera(34,width/height,.005,100);
+   f.center.y+=modelGrounding(atlas.parts);camera.setViewOffset(width,height,f.offsetX,f.offsetY,width,height);camera.position.copy(f.center).addScaledVector(f.direction,f.distance);camera.lookAt(f.center);camera.updateMatrixWorld();
    const buffers=new Map();let picked=false;
    for(const {sourcePart:p} of filtered){
     if(!buffers.has(p.chunk)){const c=atlas.chunks[p.chunk],raw=`public${c.url}`;buffers.set(p.chunk,fs.existsSync(raw)?fs.readFileSync(raw):gunzipSync(fs.readFileSync(`public${c.gzip}`)));}
     const buffer=buffers.get(p.chunk),positions=new Float32Array(buffer.buffer,buffer.byteOffset+p.positions,p.vertexCount*3),indices=new Uint32Array(buffer.buffer,buffer.byteOffset+p.indices,p.indexCount);
-    for(const fraction of [.5,.25,.75,.1,.9]){const offset=Math.floor((indices.length/3-1)*fraction)*3,point=new T.Vector3();for(let k=0;k<3;k++)point.add(new T.Vector3().fromArray(positions,indices[offset+k]*3));point.multiplyScalar(1/3).project(camera);const x=(point.x+1)*width/2,y=(1-point.y)*height/2;if(x<safe.left||x>safe.right||y<safe.top||y>safe.bottom)continue;await mouse(x,y);await delay(150);if(await evaluate("!!document.querySelector('.detail-sheet')")){picked=true;break;}}
+    for(const fraction of [.5,.25,.75,.1,.9]){const offset=Math.floor((indices.length/3-1)*fraction)*3,point=new T.Vector3();for(let k=0;k<3;k++)point.add(new T.Vector3().fromArray(positions,indices[offset+k]*3));point.multiplyScalar(1/3);point.y+=modelGrounding(atlas.parts);point.project(camera);const x=(point.x+1)*width/2,y=(1-point.y)*height/2;if(x<safe.left||x>safe.right||y<safe.top||y>safe.bottom)continue;await mouse(x,y);await delay(150);if(await evaluate("!!document.querySelector('.detail-sheet')")){picked=true;break;}}
     if(picked)break;
    }
    assert.ok(picked,`${route} ${width} ${slug} visible area geometry pickable`);

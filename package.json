@@ -60,7 +60,9 @@
     "test:bug-sweep": "node --experimental-strip-types --test scripts/bug-sweep.test.mjs",
     "test:bug-sweep:browser": "node --experimental-strip-types scripts/bug-sweep-browser-smoke.mjs",
     "test:spatial-cleanup": "node --experimental-strip-types --test scripts/spatial-cleanup.test.mjs",
-    "test:spatial-cleanup:browser": "node --experimental-strip-types scripts/spatial-cleanup-browser-smoke.mjs"
+    "test:spatial-cleanup:browser": "node --experimental-strip-types scripts/spatial-cleanup-browser-smoke.mjs",
+    "test:microinteraction": "node --experimental-strip-types --test scripts/microinteraction.test.mjs",
+    "test:microinteraction:browser": "node --experimental-strip-types scripts/microinteraction-browser-smoke.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",
