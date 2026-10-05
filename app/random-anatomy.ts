@@ -1,5 +1,16 @@
 import type {DiscoveryEntry} from './anatomy-discovery';
 import type {IdentityIndex} from './identity-index';
+import type {SceneState} from './anatomy';
+import {selectRepresentations} from './hide-restore.ts';
+import {resolveSearchPartIds} from './anatomy-search.ts';
+import {isolateSelection,clearActiveSelection} from './viewer-interaction.ts';
+
+/** Freeze the random workspace, then clear only transient inspection/highlight. */
+export function randomAnatomyWorkspace(state:SceneState,entry:DiscoveryEntry,identity:IdentityIndex):SceneState {
+ if(entry.modelId!==identity.modelId)return state;
+ const next=selectRepresentations(state,identity,resolveSearchPartIds(entry.concept,identity));
+ return next.selected.length?clearActiveSelection(isolateSelection(next,identity)):state;
+}
 /** Exploration heuristic only: this count is not scientific/educational importance. */
 export function randomAnatomyCandidates(entries:readonly DiscoveryEntry[],identity:IdentityIndex):DiscoveryEntry[]{
  return entries.filter(entry=>entry.modelId===identity.modelId&&entry.modeledPieceCount>=5&&entry.modeledPieceCount<=200&&entry.partIds.length===entry.modeledPieceCount&&entry.representationIds.length===entry.modeledPieceCount&&entry.representationIds.every((id,i)=>{

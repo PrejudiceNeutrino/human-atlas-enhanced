@@ -88,7 +88,7 @@ function DiscoveryContent({mode,focusRequest,onModeChange,onOpenChange,entries,s
    <TabsContent value="search" className="discovery-content">
     <label className="sr-only" htmlFor="anatomy-query">Search named anatomical structures</label>
     <input ref={input} id="anatomy-query" className="discovery-input" aria-label="Search named anatomical structures" placeholder="Heart, femur, cranial nerve…" value={query} onChange={event=>setQuery(event.target.value)}/>
-    <p className="discovery-summary">{query?'Up to 80 matches · refine your search for smaller structures.':'Common structures · discover the full inventory in Browse.'}</p>
+    <p className="discovery-summary">{query?'Up to 80 matches · refine your search for smaller structures.':'Featured anatomy · discover the full inventory in Browse.'}</p>
     <DiscoveryList entries={results} onChoose={onChoose} inputRef={input}/>
    </TabsContent>
    <TabsContent value="browse" className="discovery-content">

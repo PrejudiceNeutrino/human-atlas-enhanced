@@ -76,12 +76,15 @@ export function createSceneFloor(theme:ResolvedTheme,preset:SceneFloorPreset='cl
  group.add(classic.group,mesh);
  let current=preset,requested=preset,reveal=1,opacity=1,time=0;
  let transition:{elapsed:number;duration:number;from:number;switched:boolean}|null=null;
+ let eligible=true,eligibilityOpacity=1;
+ let eligibilityTransition:{elapsed:number;duration:number;from:number;to:number}|null=null;
  const present=()=>{
   const definition=sceneFloorDefinition(current);
-  uniforms.uFloorPreset.value=definition.shader;uniforms.uFloorOpacity.value=reveal*opacity;
-  classic.setReveal(current==='classic'?reveal*opacity:0);
-  mesh.visible=definition.shader>0&&reveal*opacity>0;
-  group.visible=current!=='void'&&reveal*opacity>0;
+  const renderedOpacity=reveal*opacity*eligibilityOpacity;
+  uniforms.uFloorPreset.value=definition.shader;uniforms.uFloorOpacity.value=renderedOpacity;
+  classic.setReveal(current==='classic'?renderedOpacity:0);
+  mesh.visible=definition.shader>0&&renderedOpacity>0;
+  group.visible=current!=='void'&&renderedOpacity>0;
  };
  const setTheme=(mode:ResolvedTheme)=>{const colors=palettes[mode];classic.setTheme(mode);uniforms.uFloorLine.value.set(colors.line);uniforms.uFloorAccent.value.set(colors.accent);uniforms.uFloorCenter.value.set(colors.center);uniforms.uFloorIntensity.value=colors.intensity;uniforms.uFloorCenterOpacity.value=colors.centerOpacity;};
  present();
@@ -91,6 +94,14 @@ export function createSceneFloor(theme:ResolvedTheme,preset:SceneFloorPreset='cl
   prewarm:(renderer:T.WebGLRenderer,camera:T.Camera,scene:T.Scene)=>{renderer.compile(mesh,camera,scene);},
   setTheme,
   setReveal:(value:number)=>{reveal=value;present();},
+  /** Independent binary context target; never changes the remembered preset. */
+  setEligible:(value:boolean,duration=0)=>{
+   if(value===eligible)return false;
+   eligible=value;
+   if(duration<=0||reveal===0){eligibilityOpacity=value?1:0;eligibilityTransition=null;present();}
+   else eligibilityTransition={elapsed:0,duration,from:eligibilityOpacity,to:value?1:0};
+   return true;
+  },
   setPreset:(value:SceneFloorPreset,duration=0)=>{
    if(value===requested)return false;
    requested=value;
@@ -102,6 +113,13 @@ export function createSceneFloor(theme:ResolvedTheme,preset:SceneFloorPreset='cl
   update:(delta:number,reducedMotion:boolean,visible:boolean)=>{
    if(!visible)return false;
    let changed=false;
+   if(eligibilityTransition){
+    eligibilityTransition.elapsed+=Math.max(0,delta)*1000;
+    const t=motionProgress(eligibilityTransition.elapsed,reducedMotion?0:eligibilityTransition.duration);
+    eligibilityOpacity=eligibilityTransition.from+(eligibilityTransition.to-eligibilityTransition.from)*t;
+    if(t===1)eligibilityTransition=null;
+    present();changed=true;
+   }
    if(transition){
     transition.elapsed+=Math.max(0,delta)*1000;
     const t=reducedMotion?1:Math.min(1,transition.elapsed/transition.duration);

@@ -56,7 +56,9 @@
     "test:scene-floor": "node --experimental-strip-types --test scripts/scene-floor.test.mjs",
     "test:scene-floor:browser": "node --experimental-strip-types scripts/scene-floor-browser-smoke.mjs",
     "test:final-ui": "node --experimental-strip-types --test scripts/final-ui.test.mjs",
-    "test:final-ui:browser": "node --experimental-strip-types scripts/final-ui-browser-smoke.mjs"
+    "test:final-ui:browser": "node --experimental-strip-types scripts/final-ui-browser-smoke.mjs",
+    "test:bug-sweep": "node --experimental-strip-types --test scripts/bug-sweep.test.mjs",
+    "test:bug-sweep:browser": "node --experimental-strip-types scripts/bug-sweep-browser-smoke.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

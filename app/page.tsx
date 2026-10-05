@@ -15,14 +15,14 @@ import AnatomyScene from './scene';
 import {EXPLODE_FAMILY_BY_SYSTEM,SYSTEM_SEPARATION_END,explosionValueText,explosionStageText} from './explosion-layout';
 import {resolveVisibility} from './visibility';
 import {Tabs,TabsList,TabsTrigger,TabsContent} from '@/components/ui/tabs';
-import {allSystemsForAtlas,showAllSystems,toggleAllSystems,selectIncludedMember,selectAssemblyMember,isolateSelection,exitIsolation,clearActiveSelection} from './viewer-interaction';
+import {allSystemsForAtlas,showAllSystems,selectIncludedMember,selectAssemblyMember,isolateSelection,exitIsolation,clearActiveSelection} from './viewer-interaction';
 import {VIEWER_SHORTCUTS,viewerShortcut} from './viewer-shortcuts';
 import {browserTheme,useTheme} from './theme-store';
 import {useDisplay} from './display-store';
 import {DisplayControls} from './display-controls';
 import {RotationControls} from './rotation-controls';
 import {useRotation} from './rotation-store';
-import {randomAnatomyCandidates,chooseRandomAnatomy} from './random-anatomy';
+import {randomAnatomyCandidates,chooseRandomAnatomy,randomAnatomyWorkspace} from './random-anatomy';
 import {resolveSearchPartIds,type SearchConcept} from './anatomy-search';
 import {createIdentityIndex,type IdentityIndex,type IdentitySidecar} from './identity-index';
 import {hiddenPartIdsForModel,hideSelectedRepresentations,selectRepresentations,restoreHiddenRepresentations,hiddenRepresentationsForModel,restoreHiddenRepresentation,restoreNewestHidden} from './hide-restore';
@@ -101,7 +101,7 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
  const randomCandidates=useMemo(()=>identity?randomAnatomyCandidates(discovery,identity):[],[discovery,identity]);
  const choose=(c:SearchConcept,isolate=false)=>{if(!identity)return;const selectedIds=resolveSearchPartIds(c,identity);setChosen(c);setState(s=>{const next=selectRepresentations(s,identity,selectedIds);return isolate?isolateSelection(next,identity):next;});setDetails(true);setPanel(null);};
  useEffect(()=>{if(!atlas||!identity)return;return registerAtlasTools(atlas,c=>flushSync(()=>choose(c)));},[atlas,identity]);
- const randomAnatomy=()=>{const entry=chooseRandomAnatomy(randomCandidates,lastRandomId.current);if(!entry)return;lastRandomId.current=entry.id;choose(entry.concept,true);};
+ const randomAnatomy=()=>{if(!identity)return;const entry=chooseRandomAnatomy(randomCandidates,lastRandomId.current);if(!entry)return;lastRandomId.current=entry.id;setState(s=>randomAnatomyWorkspace(s,entry,identity));setChosen(entry.concept);setDetails(false);setPanel(null);};
  const choosePart=(id:string,included=false)=>{const p=parts.get(id),representation=identity?.representationForPart(id);if(!p||!representation||representation.modelId!==modelRecord.id)return;setChosen({id:p.conceptId,name:p.name,elements:[id]});setState(s=>included?selectIncludedMember(s,identity!,id):selectAssemblyMember(s,identity!,id));setDetails(true);setPanel(null);};
  const toggle=(id:SystemId)=>{setDetails(false);setState(s=>({...s,selected:[],isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,breastView:(id==='mammary'||id==='integumentary')&&!s.visible.includes(id)?'tissue':s.breastView,visible:s.visible.includes(id)?s.visible.filter(x=>x!==id):[...s.visible,id]}));};
  const hideSelected=useCallback(()=>{if(!identity)return;setState(s=>hideSelectedRepresentations(s,identity));setChosen(null);setDetails(false);},[identity]);
@@ -152,7 +152,6 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
     <TabsList className="visibility-tab-list" aria-label="Visibility tools"><TabsTrigger value="systems">Systems</TabsTrigger><TabsTrigger value="hidden">Hidden <span className="hidden-count" aria-label={`${hiddenItems.length} hidden structures`}>{hiddenItems.length}</span></TabsTrigger></TabsList>
     <TabsContent value="systems" className="visibility-content" aria-label="Systems">
    <div className="layer-presets"><Button variant="ghost" aria-pressed={matchesVisible(allSystems)} onClick={()=>setState(s=>showAllSystems(s,allSystems))}>All</Button><Button variant="ghost" aria-pressed={state.visible.length===1&&state.visible[0]==='skeletal'} onClick={()=>setState(s=>({...s,selected:[],isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,visible:['skeletal']}))}>Skeleton</Button><Button variant="ghost" aria-pressed={matchesVisible(organSystems)} onClick={()=>setState(s=>({...s,selected:[],isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,visible:organSystems}))}>Organs</Button></div>
-   <Button variant="ghost" className="systems-global-action" onClick={()=>setState(s=>toggleAllSystems(s,allSystems))}>{allSystems.some(id=>state.visible.includes(id))?'Hide all systems':'Show all systems'}</Button>
    {reconstructed&&<div className="breast-views" role="group" aria-label="Chest tissue view"><span>Chest detail</span><div>{([{id:'tissue',label:'Tissue'},{id:'cutaway',label:'Glands'},{id:'muscle',label:'Pectorals'}] as const).map(view=><Button key={view.id} variant="ghost" aria-pressed={state.breastView===view.id} onClick={()=>{setDetails(false);setState(s=>({...s,breastView:view.id,selected:[],isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,visible:[...new Set([...s.visible.filter(id=>id!=='integumentary'&&(view.id!=='muscle'||id!=='mammary')),...(view.id==='muscle'?[]:['mammary' as const]),'muscular' as const])]}));}}>{view.label}</Button>)}</div><p>{state.breastView==='tissue'?'Adapted HRA fat and connective tissue.':state.breastView==='cutaway'?'Outer fat envelope removed to reveal glands and ducts.':'Breast tissues hidden to reveal the chest muscles.'}</p></div>}
    <div className="system-list">{activeSystems.map(s=><div className={`system-row ${state.visible.includes(s.id)?'enabled':''} ${counts[s.id]===0?'empty-scope':''}`} key={s.id}>
     <Button variant="ghost" className="system-name" disabled={counts[s.id]===0} title={counts[s.id]===0?`No ${s.name.toLowerCase()} pieces in this scope`:`Show only ${s.name.toLowerCase()}`} onClick={()=>setState(v=>({...v,visible:[s.id],isolate:false,isolatedRepresentationIds:undefined,isolatedPartIds:undefined,selected:[],breastView:s.id==='mammary'||s.id==='integumentary'?'tissue':v.breastView}))}><span className="system-dot" style={{background:s.color}}/>{s.name}<span className="system-count">{counts[s.id]}</span></Button>

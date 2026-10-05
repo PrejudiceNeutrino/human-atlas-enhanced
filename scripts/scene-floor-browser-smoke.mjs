@@ -211,7 +211,7 @@ try{
     await waitFor(`document.querySelector('.explode-control output').textContent==='${amount}%'`,'explode percent');await settled();await delay(250);const before=await snapshot();await chooseFloor(preset==='classic'?'grid':'classic');await assertSnapshot(before);await chooseFloor(preset);await screenshot(route+'-'+preset+'-explode-'+amount);
    }
   }
-  for(const preset of ['classic','event-horizon']){await reset();await chooseFloor(preset);await click('[aria-label="Random anatomy"]');await waitFor("!!document.querySelector('.detail-sheet.is-isolated')",'Random isolation');assert.equal(await storedFloor(),preset);await screenshot(route+'-'+preset+'-random');await closeInspector();}
+  for(const preset of ['classic','event-horizon']){await reset();await chooseFloor(preset);await click('[aria-label="Random anatomy"]');await delay(500);assert.equal(await evaluate("!!document.querySelector('.detail-sheet')"),false);assert.ok(await count()>=5);assert.equal(await storedFloor(),preset);await screenshot(route+'-'+preset+'-random');await closeInspector();}
   await reset();await chooseFloor('event-horizon');await switchModel(route==='male'?'female':'male');await finish();assert.equal(await storedFloor(),'event-horizon');await screenshot(route+'-model-switch');
  }
  // Responsive review is optional when the user narrows acceptance to desktop.

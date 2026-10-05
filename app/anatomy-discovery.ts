@@ -1,4 +1,5 @@
 import {viewerShortcut} from './viewer-shortcuts.ts';
+import {featuredAnatomy} from './featured-anatomy.ts';
 import type {Atlas,SystemId} from './anatomy';
 import type {IdentityIndex} from './identity-index';
 import type {ModelId,RepresentationId} from './identity-contracts';
@@ -37,12 +38,10 @@ export function sortDiscoveryEntries(entries:readonly DiscoveryEntry[],sort:Disc
 export function filterDiscoveryEntries(entries:readonly DiscoveryEntry[],system:SystemId|'all'):DiscoveryEntry[] {
  return entries.filter(entry=>system==='all'||entry.systemIds.includes(system));
 }
-/** Preserve source order for suggestions and mature shortest-name-first query ranking. */
+/** Editorial landing entries; mature shortest-name-first query ranking is unchanged. */
 export function searchDiscoveryEntries(entries:readonly DiscoveryEntry[],query:string):DiscoveryEntry[] {
  const term=query.toLowerCase().trim();
- if(!term)return ['heart','brain','liver','stomach','spleen','pancreas','urinary bladder','trachea'].flatMap(name=>{
-  const entry=entries.find(entry=>entry.name.toLowerCase()===name);return entry?[entry]:[];
- });
+ if(!term)return entries.length?featuredAnatomy(entries,entries[0].modelId):[];
  return entries.filter(entry=>matchesAnatomySearch(entry.concept,term)).sort((a,b)=>a.name.length-b.name.length).slice(0,80);
 }
 export function shouldOpenDiscovery(event:Pick<KeyboardEvent,'key'|'target'|'ctrlKey'|'metaKey'|'altKey'|'defaultPrevented'|'isComposing'|'repeat'>):boolean {return viewerShortcut(event)==='find';}

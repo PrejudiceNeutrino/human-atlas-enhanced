@@ -37,6 +37,7 @@ try{
  const waitFor=async(expression,label)=>{for(let i=0;i<300;i++){if(await evaluate(expression))return;await delay(100);}throw new Error(`Timeout: ${label}`);};
  const mouse=async(x,y)=>{await send('Input.dispatchMouseEvent',{type:'mousePressed',x,y,button:'left',clickCount:1});await send('Input.dispatchMouseEvent',{type:'mouseReleased',x,y,button:'left',clickCount:1});};
  const click=async selector=>{const p=await evaluate(`(()=>{const e=document.querySelector(${JSON.stringify(selector)});if(!e)throw new Error('Missing '+${JSON.stringify(selector)});e.scrollIntoView({block:'nearest'});const r=e.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2};})()`);await mouse(p.x,p.y);await delay(150);};
+ const disableSystems=async()=>{for(const selector of await evaluate("Array.from(document.querySelectorAll('.system-row [data-slot=switch]')).filter(e=>e.getAttribute('aria-checked')==='true'&&!e.disabled).map(e=>'[aria-label=\"'+e.getAttribute('aria-label')+'\"]')"))await click(selector);};
  const buttonText=async(text,scope='document')=>{await evaluate(`(()=>{const e=[...${scope}.querySelectorAll('button')].find(e=>e.textContent.trim()===${JSON.stringify(text)}||(${JSON.stringify(scope)}.includes('system-list')&&e.textContent.trim().startsWith(${JSON.stringify(text)})));if(!e)throw new Error('Missing button '+${JSON.stringify(text)});e.click();})()`);await delay(150);};
  const {select:selectMenu,options:menuOptions}=selectBrowserHelpers({evaluate,click,waitFor,delay});
  const region=slug=>selectMenu('#region-choice',`atlas:region:${slug}`);
@@ -169,14 +170,14 @@ try{
   for(const scope of ['body','shoulder','heart']){
    if(scope==='heart')await area('heart');else await region(scope);
    await layers(mobile);const counts=await evaluate("document.querySelector('.system-list').textContent"),url=await evaluate('location.search');
-   await buttonText('Hide all systems');await checkCount(0);assert.equal(await hiddenCount(),1);
-   assert.equal(await evaluate("document.querySelector('.systems-global-action').textContent"),'Show all systems');
-   await buttonText('Show all systems');assert.equal(await hiddenCount(),1);await piecesHidden(single.elements);
+   await disableSystems();await checkCount(0);assert.equal(await hiddenCount(),1);
+   assert.equal(await evaluate("!!document.querySelector('.systems-global-action')"),false);
+   await buttonText('All');assert.equal(await hiddenCount(),1);await piecesHidden(single.elements);
    assert.equal(await evaluate('location.search'),url);assert.equal(await evaluate("document.querySelector('.system-list').textContent"),counts);
    assert.equal(await evaluate("document.querySelector('[aria-label=\"Show reproductive\"]').getAttribute('aria-checked')"),'true','Explicit All enables reproductive on both models');
    inventory.push({scope,visible:await count()});await closeLayers(mobile);
   }
-  await layers(mobile);await buttonText('Hide all systems');await tab('Hidden');await restore();await checkCount(0);await buttonText('Show all systems');await closeLayers(mobile);
+  await layers(mobile);await disableSystems();await tab('Hidden');await restore();await checkCount(0);await buttonText('All');await closeLayers(mobile);
   // Theme is independent: actual uniforms, GPU state, URLs and model/network stay unchanged.
   await reset();await search('left clavicle');await hide();await region('shoulder');await search(single.name);await buttonText('Isolate structure');await explode();await delay(800);
   // Utility controls are intentionally hidden beside the landscape inspector; close inspector without clearing isolate.

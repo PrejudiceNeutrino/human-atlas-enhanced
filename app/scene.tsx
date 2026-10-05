@@ -14,6 +14,7 @@ import {isBodySurface,resolveVisibility} from './visibility';
 import {fitRegionCamera} from './region-camera';
 import {DISPLAY_CONTRAST_SHADER,type DisplaySettings} from './display';
 import {createSceneFloor} from './scene-floor';
+import {sceneFloorEligible} from './floor-eligibility';
 import {orbitRotationSpeed} from './rotation';
 import {SCENE_THEMES,type ResolvedTheme} from './theme';
 interface Props {viewLocked:boolean;rotationSpeed:number;modelId:ModelId;display:DisplaySettings;revealed:boolean;onReady:()=>void;onSettled:()=>void;theme:ResolvedTheme;atlas:Atlas;state:SceneState;onSelect:(id:string)=>void;onProgress:(n:number)=>void;onError:(s:string)=>void}
@@ -43,6 +44,7 @@ export default function AnatomyScene({atlas,modelId,state,viewLocked,theme,rotat
   const key=new T.DirectionalLight(0xfffaf4,2.65);key.position.set(-3,4,4);scene.add(key);
   const rim=new T.DirectionalLight(0xe9f0ff,.85);rim.position.set(2,2,-3);scene.add(rim);
   const floor=createSceneFloor(latestTheme.current,latestDisplay.current.sceneFloor);scene.add(floor.group);floor.setReveal(0);floor.prewarm(renderer,camera,scene);
+  let appliedFloorEligible=sceneFloorEligible(latest.current);floor.setEligible(appliedFloorEligible);
   const motionMedia=window.matchMedia('(prefers-reduced-motion: reduce)');
   const sceneDuration=motionDuration('--motion-slow'),selectionDuration=motionDuration('--motion-fast');
   let revealStart:number|null=null,floorSettled=false,floorReveal=0;
@@ -248,6 +250,8 @@ export default function AnatomyScene({atlas,modelId,state,viewLocked,theme,rotat
     lastIsolate=isolateKey;
    }
    controls.enableRotate=!locked;controls.mouseButtons.LEFT=T.MOUSE.ROTATE;controls.touches.ONE=T.TOUCH.ROTATE;markers.visible=amount>.75;controls.autoRotate=s.rotate&&!locked&&!s.isolate&&amount<.4;controls.autoRotateSpeed=orbitRotationSpeed(latestRotation.current);const now=performance.now(),delta=Math.min(.1,(now-rotationTime)/1000);rotationTime=now;controls.update(controls.autoRotate?delta:undefined);if(controls.autoRotate)dirty=true;
+   const floorEligible=sceneFloorEligible(s);
+   if(floorEligible!==appliedFloorEligible){floor.setEligible(floorEligible,motionDuration('--motion-medium'));appliedFloorEligible=floorEligible;dirty=true;}
    if(floor.update(delta,motionMedia.matches,!document.hidden))dirty=true;
    if(dirty){renderer.render(scene,camera);targets=[];if(amount>.45){const hasSolid=atlas.parts.some((p,i)=>!isBodySurface(p)&&data[i*4+3]>.5),targetContext={systems:new Set(s.visible),selected:new Set(s.selected),hasSolid};atlas.parts.forEach((p,i)=>{if(data[i*4+3]<.5||!resolveVisibility(p,s,targetContext).pickable)return;let left=Infinity,right=-Infinity,top=Infinity,bottom=-Infinity;for(let corner=0;corner<8;corner++){projected.set(p.bounds[(corner&1)?1:0][0]+data[i*4],p.bounds[(corner&2)?1:0][1]+data[i*4+1],p.bounds[(corner&4)?1:0][2]+data[i*4+2]).project(camera);const x=(projected.x+1)*el.clientWidth/2,y=(1-projected.y)*el.clientHeight/2;left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y);}projected.copy(centers[i]).add(new T.Vector3(data[i*4],data[i*4+1],data[i*4+2])).project(camera);if(projected.z< -1||projected.z>1)return;targets.push({index:i,x:(projected.x+1)*el.clientWidth/2,y:(1-projected.y)*el.clientHeight/2,left,right,top,bottom});});}dirty=false;if(ready&&!readyReported){readyReported=true;latestReady.current();}}
 

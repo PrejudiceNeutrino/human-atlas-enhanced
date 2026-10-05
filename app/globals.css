@@ -317,7 +317,6 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 .panel-foot{gap:5px;padding-inline:0}
 .panel-foot>span{font-size:9px;white-space:nowrap}
 .panel-foot .restore-hidden{width:auto;min-height:44px;margin:0;padding:0 4px;font-size:10px;white-space:nowrap}
-.systems-global-action{width:100%;min-height:32px;padding:4px;font-size:10px;color:var(--ui-muted);margin-bottom:5px}
 .bottom-dock .dock-reset{position:relative;flex:0 0 48px;width:48px;min-width:48px;height:56px;min-height:44px;padding:7px 4px;border:0;border-radius:9px;gap:6px;justify-content:center;align-self:center}
 .bottom-dock .dock-reset:before{content:'';position:absolute;left:-11px;top:5px;bottom:5px;width:1px;background:var(--border);pointer-events:none}
 .bottom-dock .dock-reset:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
@@ -382,3 +381,7 @@ h1 .edition{position:relative;overflow:hidden}
 .discovery-summary{padding-inline:0}.discovery-row{padding-inline:0}
 @media(max-height:600px) and (orientation:landscape){.scene-caption{font-size:8px}.view-controls{gap:0;padding:3px}.view-controls button{width:38px}.view-controls i{margin-inline:2px}}
 @media(max-width:370px){.shortcut-reference{grid-template-columns:1fr}}
+
+/* Phase 5.6: a small brand inset composes with the existing finite entrance. */
+.identity>.eyebrow{padding-top:4px}
+.system-list{padding-top:0}

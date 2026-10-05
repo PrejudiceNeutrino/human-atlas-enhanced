@@ -52,7 +52,7 @@ for(const {model,atlas,identity,entries} of models){
   for(const system of multi.systemIds)assert.equal(filterDiscoveryEntries(entries,system).filter(e=>e.id===multi.id).length,1);
  });
  test(`${model.id}: suggestions, aliases and shortest-name ranking preserved`,()=>{
-  assert.ok(searchDiscoveryEntries(entries,'').length<=8);
+  assert.ok(searchDiscoveryEntries(entries,'').length<=15);
   assert.equal(searchDiscoveryEntries(entries,'no such structure xyz').length,0);
   const matches=searchDiscoveryEntries(entries,'heart');assert.ok(matches.length>0);
   for(let i=1;i<matches.length;i++)assert.ok(matches[i-1].name.length<=matches[i].name.length);
