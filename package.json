@@ -52,7 +52,9 @@
     "test:stabilization:browser": "node --experimental-strip-types scripts/stabilization-browser-smoke.mjs",
     "clean:work": "node scripts/clean-work.mjs",
     "test:motion": "node --experimental-strip-types --test scripts/motion.test.mjs",
-    "test:motion:browser": "node --experimental-strip-types scripts/motion-browser-smoke.mjs"
+    "test:motion:browser": "node --experimental-strip-types scripts/motion-browser-smoke.mjs",
+    "test:scene-floor": "node --experimental-strip-types --test scripts/scene-floor.test.mjs",
+    "test:scene-floor:browser": "node --experimental-strip-types scripts/scene-floor-browser-smoke.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

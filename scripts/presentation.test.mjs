@@ -11,14 +11,14 @@ import {selectRegion,switchRegionModel} from '../app/region-navigation.ts';
 
 test('Display values validate types, nonfinite values, defaults and independent bounds',()=>{
  for(const value of [null,undefined,'bad',[],{brightness:'1',contrast:NaN},{brightness:Infinity,contrast:-Infinity}])assert.deepEqual(normalizeDisplay(value),DISPLAY_DEFAULTS);
- assert.deepEqual(normalizeDisplay({brightness:99,contrast:-99}),{brightness:1.3,contrast:.85});
- assert.deepEqual(normalizeDisplay({brightness:.1,contrast:2}),{brightness:.7,contrast:1.15});
+ assert.deepEqual(normalizeDisplay({brightness:99,contrast:-99}),{brightness:1.3,contrast:.85,sceneFloor:'classic'});
+ assert.deepEqual(normalizeDisplay({brightness:.1,contrast:2}),{brightness:.7,contrast:1.15,sceneFloor:'classic'});
 });
 test('Display persists, reloads, resets only its own values, and tolerates unavailable storage',()=>{
  const values=new Map(),storage={getItem:key=>values.get(key)??null,setItem:(key,value)=>values.set(key,value)};
  const controller=createDisplayController(storage);let changes=0;controller.subscribe(()=>changes++);
  controller.set({brightness:1.24,contrast:.91});assert.equal(changes,1);
- assert.deepEqual(createDisplayController(storage).getSnapshot(),{brightness:1.24,contrast:.91});
+ assert.deepEqual(createDisplayController(storage).getSnapshot(),{brightness:1.24,contrast:.91,sceneFloor:'classic'});
  controller.reset();assert.deepEqual(controller.getSnapshot(),DISPLAY_DEFAULTS);assert.deepEqual(JSON.parse(values.get(DISPLAY_KEY)),DISPLAY_DEFAULTS);
  values.set(DISPLAY_KEY,'broken JSON');assert.deepEqual(createDisplayController(storage).getSnapshot(),DISPLAY_DEFAULTS);
  const denied=createDisplayController({getItem:()=>{throw Error('denied');},setItem:()=>{throw Error('denied');}});denied.set({brightness:.8,contrast:1.1});assert.equal(denied.getSnapshot().brightness,.8);

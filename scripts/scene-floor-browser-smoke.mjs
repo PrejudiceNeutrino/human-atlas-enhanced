@@ -5,19 +5,13 @@ import {spawn} from 'node:child_process';
 import assert from 'node:assert/strict';
 import {setTimeout as delay} from 'node:timers/promises';
 import {MODEL_REGISTRY} from '../app/model-registry.ts';
-import {createIdentityIndex} from '../app/identity-index.ts';
-import {createAreaIndex} from '../app/areas.ts';
-import {DEFAULT_VISIBLE} from '../app/anatomy.ts';
 import * as T from 'three';
-import {createExplosionLayout} from '../app/explosion-layout.ts';
-import {gunzipSync} from 'node:zlib';
 import {selectBrowserHelpers} from './select-browser-helpers.mjs';
-import {defaultVisibleForModel} from '../app/viewer-polish.ts';
 
 const baseUrl=process.env.ATLAS_URL??'http://127.0.0.1:3039';
 const chrome=process.env.CHROME_PATH??['C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','/usr/bin/google-chrome','/usr/bin/chromium'].find(p=>fs.existsSync(p));
 if(!chrome)throw new Error('Set CHROME_PATH to an installed Chromium executable.');
-const output=path.resolve(process.env.SMOKE_OUTPUT??'work/phase-4.9/browser');fs.mkdirSync(output,{recursive:true});
+const output=path.resolve(process.env.SMOKE_OUTPUT??'work/phase-5.4/browser');fs.mkdirSync(output,{recursive:true});
 const profile=fs.mkdtempSync(path.join(output,'chrome-'));
 const processHandle=spawn(chrome,['--headless=new','--remote-debugging-port=0',`--user-data-dir=${profile}`,'--no-first-run','--no-default-browser-check','--disable-extensions',...(process.env.CHROME_ANGLE?[`--use-angle=${process.env.CHROME_ANGLE}`,'--enable-unsafe-swiftshader']:[]),'about:blank'],{stdio:['ignore','ignore','pipe'],windowsHide:true});
 processHandle.stderr.on('data',d=>fs.appendFileSync(path.join(output,'chrome.log'),d));
@@ -102,15 +96,6 @@ try{
  const hideByKey=async letter=>{await pressKey(letter);await waitFor("!document.querySelector('.detail-sheet')&&!window.__atlasTestSelection.some(x=>x!==0)",'shortcut hides and clears GPU selection');};
  const hiddenOrder=async()=>{await tab('Hidden');return evaluate("[...document.querySelectorAll('.hidden-list li')].map(e=>e.dataset.representationId)");};
  const restoreOne=async id=>{await tab('Hidden');await click(`.hidden-list li[data-representation-id="${id}"] button`);await delay(150);};
- // Inspect actual screenshot pixels in a temporary 2D canvas; no production rendering changes.
- const selectionPixels=async(name,width,height)=>{
-  const shot=await send('Page.captureScreenshot',{format:'png'});fs.writeFileSync(path.join(output,name+'.png'),Buffer.from(shot.data,'base64'));
-  const left=width<768?0:285,top=height<600?90:width<768?320:130,right=width-(width<768?62:90),bottom=height-(height<600?110:width<768?175:200);
-  return evaluate(`new Promise((resolve,reject)=>{const img=new Image();img.onerror=reject;img.onload=()=>{const canvas=document.createElement('canvas');canvas.width=img.width;canvas.height=img.height;const ctx=canvas.getContext('2d');ctx.drawImage(img,0,0);const pixels=ctx.getImageData(${left},${top},${right-left},${bottom-top}).data,colors=new Set();let teal=0;for(let i=0;i<pixels.length;i+=4){const r=pixels[i],g=pixels[i+1],b=pixels[i+2];if(g>100&&b>60&&r<g*.78&&b>r*1.15&&g>b*1.04){teal++;colors.add(r+','+g+','+b);}}resolve({tealPixels:teal,shadedColors:colors.size});};img.src=${JSON.stringify('data:image/png;base64,'+shot.data)};})`);
- };
-
-
-
  await send('Page.addScriptToEvaluateOnNewDocument',{source:`(()=>{
   window.__presentation={uniforms:{},shaderCompiles:0,framebuffers:0,entrances:[],canvasStates:[]};
   document.addEventListener('animationstart',e=>{if(e.animationName.startsWith('atlas-enter'))window.__presentation.entrances.push({name:e.animationName,time:performance.now()});});
@@ -127,105 +112,112 @@ try{
  const key=async name=>{const codes={Home:36,End:35,Escape:27,Enter:13};await send('Input.dispatchKeyEvent',{type:'keyDown',key:name,code:name,windowsVirtualKeyCode:codes[name],...(name==='Enter'?{text:'\r'}:{})});await send('Input.dispatchKeyEvent',{type:'keyUp',key:name,code:name,windowsVirtualKeyCode:codes[name]});};
  const chooseTheme=async mode=>{if(await evaluate('document.documentElement.dataset.theme')!==mode)await click('.theme-trigger');await delay(220);};
  const displaySlider=async(index,end)=>{await evaluate(`document.querySelectorAll('.display-setting input[type=range]')[${index}].focus()`);await key(end?'End':'Home');await delay(200);};
- for(const route of ['male','female']){
- const width=1440,height=900,mobile=false,model=MODEL_REGISTRY[route==='male'?'bp3d-male-4':'female-study-v3'];
- const atlas=read(`public${model.manifestUrl}`),identity=createIdentityIndex(model,atlas,sidecar),partIndex=new Map(atlas.parts.map((p,i)=>[p.id,i])),buffers=new Map();
- await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
- await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'no-preference'}]});
- // Hold actual chunk requests to prove the readiness gate, without slowing production.
- holdGeometry=true;held=[];await send('Fetch.enable',{patterns:[{urlPattern:'*models/*.bin*'}]});
- await send('Page.navigate',{url:baseUrl+'/'+route});
- for(let i=0;i<100&&!held.length;i++)await delay(100);assert.ok(held.length);
- await waitFor("!!document.querySelector('.identity')",'startup header');await screenshot(route+'-entrance-start');await delay(120);await screenshot(route+'-entrance-middle');await waitFor("!!document.querySelector('.scene canvas')&&document.querySelector('.scene canvas').width>0",'loading scene shell');
- assert.equal(await evaluate("getComputedStyle(document.querySelector('.scene canvas')).opacity"),'0');
- assert.equal(await evaluate("document.querySelector('.studio').dataset.sceneReady"),'false');
- assert.ok(await evaluate("!!document.querySelector('.loading[role=status]')"));
- const loadingCamera=await camera();await screenshot(route+'-loading');await waitFor("document.querySelector('.studio').dataset.shellSettled==='true'",'shell entrance complete');assert.deepEqual((await camera()).projectionMatrix,loadingCamera.projectionMatrix,'Entrance preserves camera projection');
- assert.equal(await evaluate("getComputedStyle(document.querySelector('.top-actions')).opacity"),'1');
- holdGeometry=false;for(const requestId of held)await send('Fetch.continueRequest',{requestId});await send('Fetch.disable');await ready();
- await waitFor("document.querySelector('.studio').dataset.sceneReady==='true'&&getComputedStyle(document.querySelector('.scene canvas')).opacity==='1'",'coherent completed anatomy reveal');
- assert.equal(await evaluate('document.documentElement.scrollWidth<=innerWidth'),true);
- // Deterministic old-theme migration, including on a dark OS.
- await evaluate("localStorage.setItem('human-atlas-theme','system');localStorage.setItem('human-atlas-display','bad JSON')");
- await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:'dark'}]});await send('Page.reload');await ready();await delay(600);
- assert.equal(await evaluate('document.documentElement.dataset.theme'),'light');assert.equal(await evaluate("localStorage.getItem('human-atlas-theme')"),'light');
- assert.equal(await evaluate("document.querySelectorAll('.theme-trigger').length"),1);assert.equal(await evaluate("!!document.querySelector('[aria-label=\"Choose theme\"]')"),false);
- const whole=route==='male'?2217:2239;
- await checkCount(whole);
- const beforeTheme=await snapshot();await evaluate("document.querySelector('.theme-trigger').focus()");await key('Enter');await waitFor("document.documentElement.dataset.theme==='dark'",'keyboard switches to Dark');await assertSnapshot(beforeTheme);await key('Enter');await waitFor("document.documentElement.dataset.theme==='light'",'keyboard switches to Light');await assertSnapshot(beforeTheme);
- assert.equal(await evaluate("getComputedStyle(document.querySelector('.theme-trigger svg')).display"),'block','Theme icon visible');
- // Exact slash -> pectoral -> assembly -> real 3D member click.
- await pressKey('/');await evaluate("(()=>{const e=document.querySelector('[aria-label=\"Search named anatomical structures\"]');Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(e,'pectoral');e.dispatchEvent(new Event('input',{bubbles:true}));})()");
- await waitFor("[...document.querySelectorAll('[role=option]')].some(e=>e.textContent.toLowerCase().includes('muscle of pectoral girdle'))",'pectoral result');
- await evaluate("[...document.querySelectorAll('[role=option]')].find(e=>e.textContent.toLowerCase().includes('muscle of pectoral girdle')).click()");await delay(300);await buttonText('Isolate structure');await checkCount(22);await delay(400);
- const group=atlas.concepts.find(c=>c.name.toLowerCase()==='muscle of pectoral girdle'),before=await gpu(),assemblyCamera=await camera();
-  const pick=async eligible=>{
-   const matrices=await camera(),view=new T.Matrix4().fromArray(matrices.viewMatrix),projection=new T.Matrix4().fromArray(matrices.projectionMatrix),pixels=await gpu();
-   const safe={left:mobile?20:285,right:width-(mobile?62:370),top:mobile?320:130,bottom:height-(mobile?175:200)};
-   for(const p of eligible){
-    if(!buffers.has(p.chunk)){const c=atlas.chunks[p.chunk],raw=`public${c.url}`;buffers.set(p.chunk,fs.existsSync(raw)?fs.readFileSync(raw):gunzipSync(fs.readFileSync(`public${c.gzip}`)));}
-    const buffer=buffers.get(p.chunk),positions=new Float32Array(buffer.buffer,buffer.byteOffset+p.positions,p.vertexCount*3),indices=new Uint32Array(buffer.buffer,buffer.byteOffset+p.indices,p.indexCount),offset=partIndex.get(p.id)*4;
-    for(const fraction of [.5,.25,.75,.1,.9]){const triangle=Math.floor((indices.length/3-1)*fraction)*3,point=new T.Vector3();for(let k=0;k<3;k++)point.add(new T.Vector3().fromArray(positions,indices[triangle+k]*3));point.multiplyScalar(1/3).add(new T.Vector3(...pixels.slice(offset,offset+3))).applyMatrix4(view).applyMatrix4(projection);const x=(point.x+1)*width/2,y=(1-point.y)*height/2;if(point.z< -1||point.z>1||x<safe.left||x>safe.right||y<safe.top||y>safe.bottom)continue;await mouse(x,y);await delay(150);if(await evaluate("document.querySelector('.structure-meta span:last-child strong')?.textContent==='1'")){const reference=await evaluate("document.querySelector('.structure-meta span:first-child strong').textContent");const highlighted=await evaluate('window.__atlasTestSelection'),selected=atlas.parts.filter((p,i)=>highlighted[i*4]>0);assert.equal(selected.length,1,'Direct pick highlights exactly one GPU representation');const picked=selected[0];assert.equal(picked.provenance?.sourceId??picked.conceptId,reference,'Direct pick has a valid active-model source reference');assert.equal(await evaluate("document.querySelector('.structure-meta span:last-child strong').textContent"),'1');return {part:picked,x,y};}}
-   }
-   throw new Error(`No visible mesh picked: ${route} ${width}`);
-  };
-
- const serratus=atlas.parts.find(p=>p.name.toLowerCase()==='left serratus anterior');
- const member=await pick([serratus,...atlas.parts.filter(p=>group.elements.includes(p.id)&&p!==serratus)]);
- await checkCount(22);assert.deepEqual((await gpu()).filter((_,i)=>i%4===3),before.filter((_,i)=>i%4===3));await assertCamera(assemblyCamera);
- assert.equal(await evaluate("document.querySelectorAll('.member-list button').length"),22,'Assembly stays browsable after member pick');
- await screenshot(route+'-direct-member');
- await click('.member-list button');await checkCount(22);await assertCamera(assemblyCamera);assert.equal(await evaluate('window.__atlasTestSelection.filter((x,i)=>i%4===0&&x>0).length'),1);
- await buttonText('Show surrounding anatomy');await checkCount(whole);assert.equal(await evaluate("!!document.querySelector('.detail-sheet.is-isolated')"),false);
- const shades=[];
- for(const theme of ['light','dark']){
-  await chooseTheme(theme);await reset();await delay(300);await screenshot(route+'-'+theme+'-whole');
-  await click('[aria-label="Display settings"]');assert.ok(await evaluate("[...document.querySelectorAll('.display-setting [data-slot=slider-track]')].every(e=>parseFloat(getComputedStyle(e).height)>=4)"),'Display tracks have visible dimensions');await screenshot(route+'-'+theme+'-display');await key('Escape');await delay(200);
-  await click('[aria-label="Search anatomy"]');await screenshot(route+'-'+theme+'-search');await click('[aria-label="Close search"]');
-  await search(group.name);await buttonText('Isolate structure');await checkCount(22);await screenshot(route+'-'+theme+'-isolated-group');
-  // Display/reset and theme changes preserve exact GPU masks, selection, camera, URL and hides.
-  await reset();await search('right clavicle');await hide();await region('shoulder');await area('axilla');await search(group.name);await buttonText('Isolate structure');await explode();await closeInspector();await delay(500);await settled();
-  const stable=await snapshot(),requests=network.filter(u=>/\/(models|identity|regions|areas)\//.test(u)).length;
-  const resources=await evaluate("({...window.__presentation,canvas:!!(window.__savedCanvas=document.querySelector('.scene canvas'))})");
-  await click('[aria-label="Display settings"]');
-  for(const end of [false,true]){await displaySlider(0,end);await displaySlider(1,end);const uniforms=await evaluate('window.__presentation.uniforms');assert.ok(Math.abs(uniforms.toneMappingExposure-(end?1.3:.7))<.00001);assert.ok(Math.abs(uniforms.displayContrast-(end?1.15:.85))<.00001);await assertSnapshot(stable);}
-  await buttonText('Reset display');await assertSnapshot(stable);assert.deepEqual(await evaluate('JSON.parse(localStorage.getItem("human-atlas-display"))'),{brightness:1,contrast:1,sceneFloor:'classic'});
-  await key('Escape');await delay(200);
-  assert.equal(await evaluate("window.__savedCanvas===document.querySelector('.scene canvas')"),true);
-  assert.equal(network.filter(u=>/\/(models|identity|regions|areas)\//.test(u)).length,requests);
-  const afterResources=await evaluate('window.__presentation');assert.equal(afterResources.shaderCompiles,resources.shaderCompiles);assert.equal(afterResources.framebuffers,resources.framebuffers);
-  for(const system of ['skeletal','muscular','arterial','venous']){
-   await reset();const candidates=atlas.concepts.filter(c=>c.elements.length===1&&atlas.parts.some(p=>p.id===c.elements[0]&&p.system===system&&(system!=='skeletal'||p.name.toLowerCase()==='right clavicle')));
-   const score=c=>{const p=atlas.parts.find(p=>p.id===c.elements[0]);return p.bounds[0].reduce((v,n,i)=>v*(p.bounds[1][i]-n),1);};const concept=candidates.sort((a,b)=>score(b)-score(a))[0];assert.ok(concept);
-   await search(concept.name);await buttonText('Isolate structure');await closeInspector();await delay(400);
-   const baseline=await selectionPixels(`${route}-${theme}-${system}-baseline`,width,height);assert.ok(baseline.tealPixels>20&&baseline.shadedColors>16);
-   for(const end of [false,true]){
-    await click('[aria-label="Display settings"]');await displaySlider(0,end);await displaySlider(1,end);await key('Escape');await delay(200);
-    const pixels=await selectionPixels(`${route}-${theme}-${system}-${end?'max':'min'}`,width,height);assert.ok(pixels.tealPixels>20&&pixels.shadedColors>16,'Curved lit teal survives display limits');shades.push({theme,system,end,...pixels});
-   }
-   await click('[aria-label="Display settings"]');await buttonText('Reset display');await key('Escape');await delay(150);
+ // Observe real GPU work in the test process; no runtime diagnostics added to the product.
+ await send('Page.addScriptToEvaluateOnNewDocument',{source:`(()=>{
+  window.__floor={uniforms:{},compiles:0,buffers:0,textures:0,framebuffers:0,draws:0,frames:[],shaderErrors:[]};
+  const names=new WeakMap();
+  const proto=WebGL2RenderingContext.prototype;
+  const locate=proto.getUniformLocation;proto.getUniformLocation=function(program,name){const loc=locate.call(this,program,name);if(loc)names.set(loc,name);return loc;};
+  const uniform=proto.uniform1f;proto.uniform1f=function(loc,value){const name=names.get(loc);if(name?.startsWith('uFloor'))window.__floor.uniforms[name]=value;return uniform.call(this,loc,value);};
+  for(const [create,remove,key] of [['createBuffer','deleteBuffer','buffers'],['createTexture','deleteTexture','textures'],['createFramebuffer','deleteFramebuffer','framebuffers']]){
+   const make=proto[create],dispose=proto[remove];proto[create]=function(...args){window.__floor[key]++;return make.apply(this,args);};proto[remove]=function(...args){if(args[0])window.__floor[key]--;return dispose.apply(this,args);};
   }
-  await reset();await region('shoulder');await screenshot(route+'-'+theme+'-region');await area('heart');await screenshot(route+'-'+theme+'-area');await reset();
+  const compile=proto.compileShader;proto.compileShader=function(...args){window.__floor.compiles++;return compile.apply(this,args);};
+  const shaderLog=proto.getShaderInfoLog;proto.getShaderInfoLog=function(...args){const log=shaderLog.apply(this,args);if(log)window.__floor.shaderErrors.push(log);return log;};
+  const clear=proto.clear;proto.clear=function(...args){window.__floor.draws=0;return clear.apply(this,args);};
+  for(const method of ['drawElements','drawArrays','drawElementsInstanced','drawArraysInstanced']){const draw=proto[method];proto[method]=function(...args){window.__floor.draws++;return draw.apply(this,args);};}
+  let previous;function sample(now){if(previous&&window.__floor.record)window.__floor.frames.push(now-previous);previous=now;requestAnimationFrame(sample);}requestAnimationFrame(sample);
+ })()`});
+ const floorValue=()=>evaluate("document.querySelector('#scene-floor-choice')?.value");
+ const openDisplay=async()=>{if(!await evaluate("!!document.querySelector('.display-popover')"))await click('[aria-label="Display settings"]');};
+ const closeDisplay=async()=>{if(await evaluate("!!document.querySelector('.display-popover')")){await key('Escape');await waitFor("!document.querySelector('.display-popover')",'Display closed');}};
+ const chooseFloor=async id=>{await openDisplay();await selectMenu('#scene-floor-choice',id);assert.equal(await floorValue(),id);await closeDisplay();await delay(220);};
+ const storedFloor=()=>evaluate("JSON.parse(localStorage.getItem('human-atlas-display')??'{}').sceneFloor??'classic'");
+ const resources=()=>evaluate("({buffers:window.__floor.buffers,textures:window.__floor.textures,framebuffers:window.__floor.framebuffers,compiles:window.__floor.compiles})");
+ const finish=()=>waitFor("document.querySelector('.studio')?.dataset.entrance==='settled'",'entrance settled');
+ const presets=['classic','minimal','grid','scanner','orbital','event-horizon','void'],shaders={minimal:1,grid:2,scanner:3,orbital:4,'event-horizon':5};
+ await send('Emulation.setDeviceMetricsOverride',{width:1440,height:900,deviceScaleFactor:1,mobile:false});
+ await send('Page.navigate',{url:baseUrl+'/male'});await ready();await finish();
+ assert.equal(await storedFloor(),'classic');await screenshot('initial-classic');
+ console.log('PASS initial production page, Classic default and operable controls');
+ if(process.env.FLOOR_PROBE==='1'){
+  const report=[];
+  const stable=await snapshot();
+  for(const preset of presets){
+   await evaluate('window.__floor.frames=[];window.__floor.record=true');
+   const before=await resources();await chooseFloor(preset);await delay(500);await evaluate('window.__floor.record=false');
+   const intervals=await evaluate('window.__floor.frames'),sorted=[...intervals].sort((a,b)=>a-b);
+   const matrices=await camera(),point=new T.Vector3(.435,-.0049,0).applyMatrix4(new T.Matrix4().fromArray(matrices.viewMatrix)).applyMatrix4(new T.Matrix4().fromArray(matrices.projectionMatrix));
+   const x=(point.x+1)*1440/2,y=(1-point.y)*900/2;
+   assert.ok(x>285&&x<1300&&y>400&&y<730,'Floor test point lies outside UI and feet');
+   await mouse(x,y);await delay(200);await assertSnapshot(stable);
+   report.push({preset,draws:await evaluate('window.__floor.draws'),compileDelta:(await resources()).compiles-before.compiles,switchFrames:{count:intervals.length,median:sorted[Math.floor(sorted.length*.5)],p95:sorted[Math.floor(sorted.length*.95)],max:Math.max(...intervals)},floorClickUnchanged:true});
+  }
+  await openDisplay();await screenshot('display-desktop');await closeDisplay();
+  await chooseFloor('scanner');await delay(200);const phase=await evaluate('window.__floor.uniforms.uFloorTime');
+  await send('Page.setWebLifecycleState',{state:'frozen'});await delay(1500);await send('Page.setWebLifecycleState',{state:'active'});await send('Page.bringToFront');const resumed=await evaluate('window.__floor.uniforms.uFloorTime');assert.ok(resumed-phase<=.2,'Frozen tab does not catch up decorative phase');
+  assert.deepEqual(await evaluate('window.__floor.shaderErrors'),[]);assert.deepEqual(errors,[]);
+  fs.writeFileSync(path.join(output,'probe-report.json'),JSON.stringify({passed:true,report,frozenTab:{before:phase,after:resumed},exceptions:errors},null,2));console.log('PASS first-use switches, floor background clicks and frozen-tab phase');
+ }else{
+ const visuals=[],frames=[];
+ for(const theme of ['light','dark']){
+  await chooseTheme(theme);await reset();await delay(500);
+  const baseline=await snapshot(),requests=network.filter(u=>/\/(models|identity|regions|areas)\//.test(u)).length;
+  for(const preset of presets){
+   await chooseFloor(preset);await assertSnapshot(baseline);
+   assert.equal(network.filter(u=>/\/(models|identity|regions|areas)\//.test(u)).length,requests,'No assets reloaded');
+   if(shaders[preset])assert.equal(await evaluate('window.__floor.uniforms.uFloorPreset'),shaders[preset]);
+   await screenshot(theme+'-'+preset);const draws=await evaluate('window.__floor.draws');visuals.push({theme,preset,draws});
+   if(['classic','scanner','orbital','event-horizon'].includes(preset)){
+    await evaluate('window.__floor.frames=[];window.__floor.record=true');await delay(2500);await evaluate('window.__floor.record=false');
+    const intervals=await evaluate('window.__floor.frames');const sorted=[...intervals].sort((a,b)=>a-b);frames.push({theme,preset,count:intervals.length,median:sorted[Math.floor(sorted.length*.5)],p95:sorted[Math.floor(sorted.length*.95)],max:Math.max(...intervals)});
+   }
+  }
  }
- // Persist display + binary choice across reload, clamp invalid out-of-range values.
- await chooseTheme('dark');await click('[aria-label="Display settings"]');await displaySlider(0,true);await displaySlider(1,false);await key('Escape');await send('Page.reload');await ready();
- assert.equal(await evaluate('document.documentElement.dataset.theme'),'dark');await click('[aria-label="Display settings"]');assert.deepEqual(await evaluate("[...document.querySelectorAll('.display-setting output')].map(e=>e.textContent)"),['130%','85%']);await key('Escape');
- await evaluate("localStorage.setItem('human-atlas-display',JSON.stringify({brightness:99,contrast:-99}))");await send('Page.reload');await ready();await click('[aria-label="Display settings"]');assert.deepEqual(await evaluate("[...document.querySelectorAll('.display-setting output')].map(e=>e.textContent)"),['130%','85%']);await buttonText('Reset display');await key('Escape');
- // Startup never replays for navigation/discovery; model changes keep the header and document stable.
- await delay(800);const entrances=await evaluate('window.__presentation.entrances.length');
- await region('shoulder');await area('heart');await click('[aria-label="Search anatomy"]');await click('[aria-label="Close search"]');await reset();
- assert.equal(await evaluate('window.__presentation.entrances.length'),entrances);
- await evaluate("window.__stableHeader=document.querySelector('.identity');window.__stableDocument=document;");
- await switchModel(route==='male'?'female':'male');await waitFor("document.querySelector('.scene').dataset.revealed==='true'",'model reveal');await delay(400);
- assert.equal(await evaluate('window.__stableHeader===document.querySelector(".identity")&&window.__stableDocument===document'),true);assert.equal(await evaluate('window.__presentation.entrances.length'),entrances);
- assert.equal(await evaluate("getComputedStyle(document.querySelector('.scene canvas')).opacity"),'1');await screenshot(route+'-model-switch');
- report.push({route,passed:true,scope:22,directMember:member.part.name,displayUniforms:true,resetIndependent:true,noRefetchOrRecompile:true,readinessGate:true,stableCamera:true,noEntranceReplay:true,modelSwitch:true,shades});console.log('PASS '+route);
+ // A complete slow sweep in both palettes, with intermediate visual captures.
+ for(const theme of ['light','dark']){await chooseTheme(theme);await chooseFloor('scanner');const start=await evaluate('window.__floor.uniforms.uFloorTime');for(let i=0;i<4;i++){await delay(6200);await screenshot(theme+'-scanner-cycle-'+i);}const end=await evaluate('window.__floor.uniforms.uFloorTime');assert.ok(end-start>=24,'Full 24-second sweep observed');}
+ // Every stored preset restores through a real reload; invalid values migrate safely.
+ for(const preset of presets){await chooseFloor(preset);await send('Page.reload');await ready();await finish();await openDisplay();assert.equal(await floorValue(),preset);await closeDisplay();}
+ await evaluate("localStorage.setItem('human-atlas-display',JSON.stringify({brightness:1,contrast:1,sceneFloor:'removed'}))");await send('Page.reload');await ready();await finish();await openDisplay();assert.equal(await floorValue(),'classic');await closeDisplay();
+ // Live reduced-motion retains each procedural style and freezes GPU phase.
+ for(const preset of ['scanner','orbital','event-horizon']){
+  await chooseFloor(preset);await delay(250);assert.ok(await evaluate('window.__floor.uniforms.uFloorTime')>0);
+  await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});await delay(300);
+  assert.equal(await evaluate('window.__floor.uniforms.uFloorTime'),0);await delay(400);assert.equal(await evaluate('window.__floor.uniforms.uFloorTime'),0);assert.equal(await storedFloor(),preset);await screenshot('reduced-'+preset);
+  await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'no-preference'}]});
  }
- // Reduced motion removes every startup animation and canvas fade.
- await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});await send('Page.navigate',{url:baseUrl+'/male'});await ready();
- assert.equal(await evaluate('window.__presentation.entrances.length'),0);assert.equal(await evaluate("getComputedStyle(document.querySelector('.scene canvas')).transitionDuration"),'0s');assert.equal(await evaluate("getComputedStyle(document.querySelector('.scene canvas')).opacity"),'1');
- // Manifest and chunk failures remain visible and terminate preparation.
- for(const pattern of ['*models/atlas.json','*models/*.bin*']){failManifest=true;await send('Fetch.enable',{patterns:[{urlPattern:pattern}]});const previousOrigin=await evaluate('performance.timeOrigin');await send('Page.reload');await waitFor(`performance.timeOrigin!==${previousOrigin}`,'new failure-test document');await waitFor("!!document.querySelector('.error[role=alert]')",'immediate load error');assert.equal(await evaluate("!!document.querySelector('.loading[role=status]')"),false);assert.equal(await evaluate("getComputedStyle(document.querySelector('.error')).pointerEvents"),'auto');await screenshot(pattern.includes('bin')?'chunk-error':'catalogue-error');await send('Fetch.disable');failManifest=false;}
- assert.deepEqual(errors,[],'No JavaScript exceptions');
- fs.writeFileSync(path.join(output,'report.json'),JSON.stringify({passed:true,desktopOnly:true,reducedMotion:true,errorsVisible:true,suites:report,errors},null,2));
+ // Repeated switches reuse GPU objects and program, including Classic/void round trips.
+ await chooseFloor('grid');const warm=await resources();
+ for(let cycle=0;cycle<4;cycle++)for(const preset of presets)await chooseFloor(preset);
+ await chooseFloor('grid');assert.deepEqual(await resources(),warm);const memory={before:warm,after:await resources(),cycles:4};
+ // Floor + Reset display preserve hidden history, navigation, isolate, explode, camera and textures.
+ await reset();await search('right clavicle');await hide();await region('shoulder');await area('axilla');await search('right pectoral girdle');await buttonText('Isolate structure');await closeInspector();await explode();await delay(500);
+ const composed=await snapshot();
+ for(const preset of presets){await chooseFloor(preset);await assertSnapshot(composed);}
+ await openDisplay();await displaySlider(0,true);await displaySlider(1,false);await buttonText('Reset display');assert.deepEqual(await evaluate("JSON.parse(localStorage.getItem('human-atlas-display'))"),{brightness:1,contrast:1,sceneFloor:'classic'});assert.equal(await floorValue(),'classic');await closeDisplay();await assertSnapshot(composed);await screenshot('composed-reset');
+ const scopes=[];
+ for(const route of ['male','female']){
+  await send('Page.navigate',{url:baseUrl+'/'+route});await ready();await finish();
+  for(const preset of ['classic','grid','event-horizon']){
+   await reset();await chooseFloor(preset);
+   for(const slug of ['head-jaw','thoracic','ankle-foot']){await region(slug);await delay(300);const before=await snapshot();await chooseFloor(preset==='classic'?'grid':'classic');await assertSnapshot(before);await chooseFloor(preset);await screenshot(route+'-'+preset+'-region-'+slug);scopes.push({route,preset,region:slug});}
+   await reset();
+   for(const slug of ['heart','brachial-plexus']){await area(slug);await delay(300);await screenshot(route+'-'+preset+'-area-'+slug);assert.equal(await storedFloor(),preset);}
+   for(const name of [route==='female'?'abdomen proper':'abdomen','right pectoral girdle','right clavicle']){await reset();await search(name);await buttonText('Isolate structure');await closeInspector();await delay(300);const before=await snapshot();await chooseFloor(preset==='classic'?'grid':'classic');await assertSnapshot(before);await chooseFloor(preset);await screenshot(route+'-'+preset+'-isolate-'+name.replaceAll(' ','-'));}
+   await reset();
+   for(const amount of [0,50,100]){
+    await evaluate("document.querySelector('.explode-control input[type=range]').focus()");await send('Input.dispatchKeyEvent',{type:'keyDown',key:'Home',code:'Home',windowsVirtualKeyCode:36});await send('Input.dispatchKeyEvent',{type:'keyUp',key:'Home',code:'Home',windowsVirtualKeyCode:36});
+    for(let i=0;i<amount;i++){await send('Input.dispatchKeyEvent',{type:'keyDown',key:'ArrowRight',code:'ArrowRight',windowsVirtualKeyCode:39});await send('Input.dispatchKeyEvent',{type:'keyUp',key:'ArrowRight',code:'ArrowRight',windowsVirtualKeyCode:39});}
+    await waitFor(`document.querySelector('.explode-control output').textContent==='${amount}%'`,'explode percent');await settled();await delay(250);const before=await snapshot();await chooseFloor(preset==='classic'?'grid':'classic');await assertSnapshot(before);await chooseFloor(preset);await screenshot(route+'-'+preset+'-explode-'+amount);
+   }
+  }
+  for(const preset of ['classic','event-horizon']){await reset();await chooseFloor(preset);await click('[aria-label="Random anatomy"]');await waitFor("!!document.querySelector('.detail-sheet.is-isolated')",'Random isolation');assert.equal(await storedFloor(),preset);await screenshot(route+'-'+preset+'-random');await closeInspector();}
+  await reset();await chooseFloor('event-horizon');await switchModel(route==='male'?'female':'male');await finish();assert.equal(await storedFloor(),'event-horizon');await screenshot(route+'-model-switch');
+ }
+ // Responsive review is optional when the user narrows acceptance to desktop.
+ for(const [width,height] of (process.env.SMOKE_DESKTOP?[]:[[390,844],[740,420]])){await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:true});await reset();await chooseFloor('event-horizon');await openDisplay();await screenshot('display-'+width);assert.equal(await evaluate('document.documentElement.scrollWidth<=innerWidth'),true);await closeDisplay();}
+ assert.deepEqual(errors,[]);assert.deepEqual(await evaluate('window.__floor.shaderErrors'),[]);
+ fs.writeFileSync(path.join(output,'report.json'),JSON.stringify({passed:true,desktopOnly:!!process.env.SMOKE_DESKTOP,visuals,frames,memory,scopes,persistence:true,reset:true,modelSwitch:true,reducedMotion:true,random:true,noReload:true,noSemanticChange:true,exceptions:errors},null,2));
+ console.log('PASS seven floor presets, both palettes/models, GPU independence, persistence, reduced motion and resource switching');
+ }
 }catch(error){if(failureCapture)try{await failureCapture();}catch{}throw error;}finally{ws?.close();processHandle.kill();}

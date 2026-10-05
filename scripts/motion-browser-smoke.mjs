@@ -188,7 +188,7 @@ try{
   console.log('PASS motion '+theme);
  }
  // Representative responsive surfaces, including closing behavior and overflow.
- for(const [width,height] of [[390,844],[740,420]]){
+ for(const [width,height] of (process.env.SMOKE_DESKTOP?[]:[[390,844],[740,420]])){
   await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:true});await send('Page.navigate',{url:baseUrl+'/male'});await ready();await finish();await noOverlap();
   await click('[aria-label="Search anatomy"]');await delay(220);await screenshot('responsive-'+width+'-search');await click('[aria-label="Close search"]');await waitFor("!document.querySelector('.discovery-panel')",'responsive close');
   await search('heart');await delay(220);await screenshot('responsive-'+width+'-inspector');await closeInspector();
@@ -202,5 +202,5 @@ try{
  await search('heart');await delay(200);await buttonText('Isolate structure');await closeInspector();await explode();await reset();await screenshot('reduced-motion');
  for(const pattern of ['*models/atlas.json','*models/*.bin*']){failManifest=true;await send('Fetch.enable',{patterns:[{urlPattern:pattern}]});const previousOrigin=await evaluate('performance.timeOrigin');await send('Page.reload');await waitFor(`performance.timeOrigin!==${previousOrigin}`,'failure document');await waitFor("document.querySelector('.studio')?.dataset.entrance==='error'",'error overrides entrance');assert.equal(await evaluate("!!document.querySelector('.loading[role=status]')"),false);assert.equal(await evaluate("getComputedStyle(document.querySelector('.error')).opacity"),'1');await screenshot(pattern.includes('bin')?'chunk-error':'catalogue-error');await send('Fetch.disable');failManifest=false;}
  assert.deepEqual(errors,[]);
- fs.writeFileSync(path.join(output,'report.json'),JSON.stringify({passed:true,report,responsive:true,reducedMotion:true,errorsVisible:true,exceptions:errors},null,2));
+ fs.writeFileSync(path.join(output,'report.json'),JSON.stringify({passed:true,desktopOnly:!!process.env.SMOKE_DESKTOP,report,responsive:!process.env.SMOKE_DESKTOP,reducedMotion:true,errorsVisible:true,exceptions:errors},null,2));
 }catch(error){if(failureCapture)try{await failureCapture();}catch{}throw error;}finally{ws?.close();processHandle.kill();}
