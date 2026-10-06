@@ -1,0 +1,229 @@
+{
+  "passed": true,
+  "viewport": [
+    1440,
+    900
+  ],
+  "records": [
+    {
+      "theme": "light",
+      "name": "liver",
+      "normalCalls": 71,
+      "revealCalls": 74,
+      "normalTriangles": 2348630,
+      "revealTriangles": 2633240,
+      "targetParts": 60,
+      "maskUploadsOnEntry": 1,
+      "resources": {
+        "geometries": 71,
+        "textures": 5,
+        "programs": 8,
+        "objects": 138
+      }
+    },
+    {
+      "theme": "light",
+      "name": "heart",
+      "normalCalls": 71,
+      "revealCalls": 69,
+      "normalTriangles": 2348630,
+      "revealTriangles": 2296556,
+      "targetParts": 83,
+      "maskUploadsOnEntry": 1,
+      "resources": {
+        "geometries": 71,
+        "textures": 5,
+        "programs": 8,
+        "objects": 138
+      }
+    },
+    {
+      "theme": "light",
+      "name": "brain",
+      "normalCalls": 71,
+      "revealCalls": 71,
+      "normalTriangles": 2348630,
+      "revealTriangles": 2419012,
+      "targetParts": 59,
+      "maskUploadsOnEntry": 1,
+      "resources": {
+        "geometries": 71,
+        "textures": 5,
+        "programs": 8,
+        "objects": 138
+      }
+    },
+    {
+      "theme": "light",
+      "name": "left-kidney",
+      "normalCalls": 71,
+      "revealCalls": 67,
+      "normalTriangles": 2348630,
+      "revealTriangles": 2226620,
+      "targetParts": 1,
+      "maskUploadsOnEntry": 1,
+      "resources": {
+        "geometries": 71,
+        "textures": 5,
+        "programs": 8,
+        "objects": 138
+      }
+    },
+    {
+      "theme": "light",
+      "name": "abdominal-aorta",
+      "normalCalls": 71,
+      "revealCalls": 67,
+      "normalTriangles": 2348630,
+      "revealTriangles": 2307804,
+      "targetParts": 1,
+      "maskUploadsOnEntry": 1,
+      "resources": {
+        "geometries": 71,
+        "textures": 5,
+        "programs": 8,
+        "objects": 138
+      }
+    },
+    {
+      "theme": "light",
+      "name": "scaphoid",
+      "normalCalls": 75,
+      "revealCalls": 72,
+      "normalTriangles": 2349398,
+      "revealTriangles": 2471542,
+      "targetParts": 2,
+      "maskUploadsOnEntry": 1,
+      "resources": {
+        "geometries": 71,
+        "textures": 5,
+        "programs": 8,
+        "objects": 138
+      }
+    },
+    {
+      "theme": "dark",
+      "name": "liver",
+      "normalCalls": 71,
+      "revealCalls": 74,
+      "normalTriangles": 2348630,
+      "revealTriangles": 2633240,
+      "targetParts": 60,
+      "maskUploadsOnEntry": 1,
+      "resources": {
+        "geometries": 71,
+        "textures": 5,
+        "programs": 8,
+        "objects": 138
+      }
+    },
+    {
+      "theme": "dark",
+      "name": "heart",
+      "normalCalls": 71,
+      "revealCalls": 69,
+      "normalTriangles": 2348630,
+      "revealTriangles": 2296556,
+      "targetParts": 83,
+      "maskUploadsOnEntry": 1,
+      "resources": {
+        "geometries": 71,
+        "textures": 5,
+        "programs": 8,
+        "objects": 138
+      }
+    },
+    {
+      "theme": "dark",
+      "name": "brain",
+      "normalCalls": 71,
+      "revealCalls": 71,
+      "normalTriangles": 2348630,
+      "revealTriangles": 2419012,
+      "targetParts": 59,
+      "maskUploadsOnEntry": 1,
+      "resources": {
+        "geometries": 71,
+        "textures": 5,
+        "programs": 8,
+        "objects": 138
+      }
+    },
+    {
+      "theme": "dark",
+      "name": "abdominal-aorta",
+      "normalCalls": 71,
+      "revealCalls": 67,
+      "normalTriangles": 2348630,
+      "revealTriangles": 2307804,
+      "targetParts": 1,
+      "maskUploadsOnEntry": 1,
+      "resources": {
+        "geometries": 71,
+        "textures": 5,
+        "programs": 8,
+        "objects": 138
+      }
+    },
+    {
+      "theme": "dark",
+      "name": "female FMA7197",
+      "normalCalls": 70,
+      "revealCalls": 81,
+      "targetParts": 60
+    },
+    {
+      "theme": "dark",
+      "name": "female FMA7088",
+      "normalCalls": 70,
+      "revealCalls": 73,
+      "targetParts": 83
+    }
+  ],
+  "checks": [
+    "Liver Search explicit Reveal and exit",
+    "light liver",
+    "light heart",
+    "light brain",
+    "light left-kidney",
+    "light abdominal-aorta",
+    "light scaphoid",
+    "dark liver",
+    "dark heart",
+    "dark brain",
+    "dark abdominal-aorta",
+    "12 repeated cycles with unchanged resources",
+    "actual target-priority and ghost triangle picking",
+    "partial Hidden target, J restore as target, H exits",
+    "Eye preserves subject and existing selected exception; ordinary system toggle exits",
+    "isolation member, surrounding exit, Random root/member and explicit narrow",
+    "explode 0",
+    "explode 30",
+    "explode 50",
+    "explode 100",
+    "locked camera",
+    "orbit, presets, lock and camera-only preset reset",
+    "floor classic",
+    "floor minimal",
+    "floor grid",
+    "floor scanner",
+    "floor orbital",
+    "floor event-horizon",
+    "floor void",
+    "Brightness/Contrast, all floor presets and both live theme directions",
+    "explicit Area member",
+    "Region and explicit Area scopes, navigation exit",
+    "female FMA7197",
+    "female FMA7088",
+    "both model switches clear Reveal and GPU mask",
+    "clear selection and closed-inspector escape",
+    "reduced motion immediate switching"
+  ],
+  "hero": {
+    "normalCalls": 75,
+    "revealCalls": 78
+  },
+  "errors": [],
+  "consoleErrors": [],
+  "interceptionErrors": []
+}

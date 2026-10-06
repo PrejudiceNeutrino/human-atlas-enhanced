@@ -64,7 +64,9 @@
     "test:microinteraction": "node --experimental-strip-types --test scripts/microinteraction.test.mjs",
     "test:microinteraction:browser": "node --experimental-strip-types scripts/microinteraction-browser-smoke.mjs",
     "test:shell-cleanup": "node --experimental-strip-types --test scripts/shell-cleanup.test.mjs",
-    "test:shell-cleanup:browser": "node --experimental-strip-types scripts/shell-cleanup-browser-smoke.mjs"
+    "test:shell-cleanup:browser": "node --experimental-strip-types scripts/shell-cleanup-browser-smoke.mjs",
+    "test:context-reveal": "node --experimental-strip-types --test scripts/context-reveal.test.mjs",
+    "test:context-reveal:browser": "node scripts/context-reveal-browser-smoke.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

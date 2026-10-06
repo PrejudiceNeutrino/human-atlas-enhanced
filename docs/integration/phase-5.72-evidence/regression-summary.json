@@ -1,0 +1,70 @@
+{
+  "completed": [
+    {
+      "suite": "regions",
+      "exit": 0,
+      "report": "work\\phase-5.72\\regression\\regions\\report.json"
+    },
+    {
+      "suite": "areas",
+      "exit": 0,
+      "report": "work\\phase-5.72\\regression\\areas\\report.json"
+    },
+    {
+      "suite": "hide-restore",
+      "exit": 0,
+      "report": "work\\phase-5.72\\regression\\hide-restore\\report.json"
+    },
+    {
+      "suite": "viewer-polish",
+      "exit": 0,
+      "report": "work\\phase-5.72\\regression\\viewer-polish\\report.json"
+    },
+    {
+      "suite": "viewer-interaction",
+      "exit": 0,
+      "report": "work\\phase-5.72\\regression\\viewer-interaction\\report.json"
+    },
+    {
+      "suite": "area-scopes",
+      "exit": 0,
+      "report": "work\\phase-5.72\\regression\\area-scopes\\report.json"
+    },
+    {
+      "suite": "anatomy-discovery",
+      "exit": 0,
+      "report": "work\\phase-5.72\\regression\\anatomy-discovery\\report.json"
+    },
+    {
+      "suite": "presentation",
+      "exit": 0,
+      "report": "work\\phase-5.72\\regression\\presentation\\report.json"
+    },
+    {
+      "suite": "explosion",
+      "exit": 1,
+      "report": "work\\phase-5.72\\regression\\explosion\\report.json"
+    },
+    {
+      "suite": "isolation-workspace",
+      "exit": 1,
+      "report": "work\\phase-5.72\\regression\\isolation-workspace\\report.json"
+    },
+    {
+      "suite": "stabilization",
+      "exit": 0,
+      "report": "work\\phase-5.72\\regression\\stabilization\\report.json"
+    },
+    {
+      "suite": "motion",
+      "exit": 1,
+      "report": "work\\phase-5.72\\regression\\motion\\report.json"
+    },
+    {
+      "suite": "scene-floor",
+      "exit": 0,
+      "report": "work\\phase-5.72\\regression\\scene-floor\\report.json"
+    }
+  ],
+  "cutoff": "User accepted pass, stopped testing and requested main delivery. Failed checks remain unresolved; Final UI interrupted; subsequent suites unrun and waived."
+}

@@ -1,6 +1,8 @@
 import {motionDuration,motionProgress} from './motion';
 import {useEffect,useRef} from 'react';
 import {isolationCameraKey} from './viewer-interaction';
+import {revealHitWins} from './context-reveal';
+import {createContextRevealRenderer} from './context-reveal-renderer';
 import * as T from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
@@ -81,8 +83,8 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
   type Target={index:number;x:number;y:number;left:number;right:number;top:number;bottom:number};let targets:Target[]=[];
   const projected=new T.Vector3();
   const findTarget=(x:number,y:number,radius:number)=>{
-   let best=-1,score=Infinity;const state=latest.current,context={systems:new Set(state.visible),selected:new Set(state.selected),hasSolid:atlas.parts.some((p,i)=>!isBodySurface(p)&&data[i*4+3]>.5)};
-   for(const t of targets){if(!resolveVisibility(atlas.parts[t.index],state,context).pickable)continue;const dx=Math.max(t.left-x,0,x-t.right),dy=Math.max(t.top-y,0,y-t.bottom),distance=Math.hypot(dx,dy);if(distance>radius)continue;const candidate=distance+Math.hypot(t.x-x,t.y-y)*.025;if(candidate<score){score=candidate;best=t.index;}}
+   let best=-1,score=Infinity,bestTarget=false;const state=latest.current,context={systems:new Set(state.visible),selected:new Set(state.selected),hasSolid:atlas.parts.some((p,i)=>!isBodySurface(p)&&data[i*4+3]>.5)};
+   for(const t of targets){if(!resolveVisibility(atlas.parts[t.index],state,context).pickable)continue;const dx=Math.max(t.left-x,0,x-t.right),dy=Math.max(t.top-y,0,y-t.bottom),distance=Math.hypot(dx,dy);if(distance>radius)continue;const candidate=distance+Math.hypot(t.x-x,t.y-y)*.025;if(revealHitWins(candidate,revealRenderer.isTarget(t.index),score,bestTarget)){score=candidate;best=t.index;bestTarget=revealRenderer.isTarget(t.index);}}
    return best;
   };
   const isBreastTissue=(p:Part)=>p.system==='integumentary'&&p.id.startsWith('VH_F_')&&p.id!=='VH_F_skin';
@@ -105,10 +107,11 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
   const mats=new Map<string,T.Material>(SYSTEMS.map(s=>[s.id,materialFor(s.id)]));
   // Source-derived HRA breast tissues use a plain material; source IDs retain their layer controls.
   mats.set('hra-breast',materialFor('reproductive',false));
+  const revealRenderer=createContextRevealRenderer(atlas,modelId,anatomyGroup);let visibilityRevision=0;
   let loaded=0,readyReported=false;
   const loadChunk=async(ci:number)=>{
    const chunk=atlas.chunks[ci],compressed=!!chunk.gzip&&typeof DecompressionStream!=='undefined';const response=await fetch(compressed?chunk.gzip!:chunk.url,{signal:abort.signal});const buffer=await decodeModelResponse(response,chunk.bytes,compressed);if(disposed)return;
-   const groups=new Map<string,T.BufferGeometry[]>();
+   const groups=new Map<string,{geometries:T.BufferGeometry[];indices:number[]}>();
    atlas.parts.forEach((p,i)=>{
     if(p.chunk!==ci)return;
     const g=new T.BufferGeometry();g.setAttribute('position',new T.BufferAttribute(new Float32Array(buffer,p.positions,p.vertexCount*3),3));
@@ -116,9 +119,9 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
     g.setAttribute('normal',new T.BufferAttribute(new Int16Array(buffer,p.normals,p.vertexCount*3),3,true));g.setIndex(new T.BufferAttribute(new Uint32Array(buffer,p.indices,p.indexCount),1));
     g.boundingBox=bounds[i].clone();g.computeBoundingSphere();const pick=new T.Mesh(g);pick.matrixAutoUpdate=false;pickers[i]=pick;geometries.push(g);
     g.setAttribute('partIndex',new T.BufferAttribute(new Float32Array(p.vertexCount).fill(i),1));
-    const category=p.system==='mammary'||isBreastTissue(p)?'hra-breast':p.system;const list=groups.get(category)??[];list.push(g);groups.set(category,list);
+    const category=p.system==='mammary'||isBreastTissue(p)?'hra-breast':p.system;const list=groups.get(category)??{geometries:[],indices:[]};list.geometries.push(g);list.indices.push(i);groups.set(category,list);
    });
-   groups.forEach((gs,system)=>{const geometry=mergeGeometries(gs,false);if(!geometry)throw new Error('Could not assemble anatomy geometry.');geometries.push(geometry);const mesh=new T.Mesh(geometry,mats.get(system));mesh.frustumCulled=false;anatomyGroup.add(mesh);});
+   groups.forEach((batch,system)=>{const geometry=mergeGeometries(batch.geometries,false);if(!geometry)throw new Error('Could not assemble anatomy geometry.');geometries.push(geometry);const mesh=new T.Mesh(geometry,mats.get(system));mesh.frustumCulled=false;anatomyGroup.add(mesh);revealRenderer.registerBatch(mesh,batch.indices);});
    lastState=null;loaded++;onProgress(Math.round(loaded/atlas.chunks.length*100));dirty=true;
   };
   (async()=>{try{let cursor=0;await Promise.all(Array.from({length:3},async()=>{while(cursor<atlas.chunks.length){const i=cursor++;await loadChunk(i);}}));if(!disposed){ready=true;dirty=true;}}catch(e){if(!disposed)onError(e instanceof Error?e.message:'Could not load the anatomy.');}})();
@@ -170,9 +173,9 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
   const cancel=(e:PointerEvent)=>tap.cancel(e.pointerId);
   const up=(e:PointerEvent)=>{
    const validTap=tap.up(e.pointerId,e.clientX,e.clientY);if(!validTap||!ready)return;const rect=renderer.domElement.getBoundingClientRect();pointer.set((e.clientX-rect.left)/rect.width*2-1,-(e.clientY-rect.top)/rect.height*2+1);raycaster.setFromCamera(pointer,camera);
-   let nearest=Infinity,found=-1;const hasSolid=atlas.parts.some((p,i)=>!isBodySurface(p)&&data[i*4+3]>.5);
+   let nearest=Infinity,found=-1,bestTarget=false;const hasSolid=atlas.parts.some((p,i)=>!isBodySurface(p)&&data[i*4+3]>.5);
    const pickState=latest.current,pickContext={systems:new Set(pickState.visible),selected:new Set(pickState.selected),hasSolid};
-   pickers.forEach((mesh,i)=>{if(!mesh||data[i*4+3]<.5||!resolveVisibility(atlas.parts[i],pickState,pickContext).pickable)return;worldBox.copy(bounds[i]).translate(mesh.position);if(!raycaster.ray.intersectBox(worldBox,hitPoint))return;const hits=raycaster.intersectObject(mesh,false);if(hits[0]&&hits[0].distance<nearest){nearest=hits[0].distance;found=i;}});
+   pickers.forEach((mesh,i)=>{if(!mesh||data[i*4+3]<.5||!resolveVisibility(atlas.parts[i],pickState,pickContext).pickable)return;worldBox.copy(bounds[i]).translate(mesh.position);if(!raycaster.ray.intersectBox(worldBox,hitPoint))return;const hits=raycaster.intersectObject(mesh,false);if(hits[0]&&revealHitWins(hits[0].distance,revealRenderer.isTarget(i),nearest,bestTarget)){nearest=hits[0].distance;found=i;bestTarget=revealRenderer.isTarget(i);}});
    if(found<0&&amount>.45)found=findTarget(e.clientX-rect.left,e.clientY-rect.top,e.pointerType==='touch'?24:16);if(found>=0){hover.hidden=true;select.current(atlas.parts[found].id);}
   };
   renderer.domElement.addEventListener('pointerdown',down);renderer.domElement.addEventListener('pointermove',move);renderer.domElement.addEventListener('pointerup',up);renderer.domElement.addEventListener('pointercancel',cancel);
@@ -198,13 +201,13 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
    // Check both the rendered visibility texture and current state during layer transitions.
    const visible=atlas.parts.map((p,i)=>!!pickers[i]&&data[i*4+3]>.5&&partIsVisible(p,s,lookups));
    const hasSolid=atlas.parts.some((p,i)=>visible[i]&&!isBodySurface(p));
-   let nearest=Infinity,found=false;
+   let nearest=Infinity,found=false,bestTarget=false;
    pickers.forEach((mesh,i)=>{
     if(!mesh||!visible[i]||(hasSolid&&isBodySurface(atlas.parts[i])))return;
     worldBox.copy(bounds[i]).translate(mesh.position);if(!wheelRaycaster.ray.intersectBox(worldBox,hitPoint))return;
-    const hit=wheelRaycaster.intersectObject(mesh,false)[0];if(!hit||hit.distance>=nearest)return;
+    const hit=wheelRaycaster.intersectObject(mesh,false)[0];if(!hit||!revealHitWins(hit.distance,revealRenderer.isTarget(i),nearest,bestTarget))return;
     wheelProjection.copy(hit.point).project(camera);if(wheelProjection.z< -1||wheelProjection.z>1)return;
-    nearest=hit.distance;wheelAnchor.copy(hit.point);found=true;
+    nearest=hit.distance;bestTarget=revealRenderer.isTarget(i);wheelAnchor.copy(hit.point);found=true;
    });
    if(!found){
     camera.getWorldDirection(wheelDirection);wheelPlane.setFromNormalAndCoplanarPoint(wheelDirection,controls.target);
@@ -255,8 +258,9 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
       else highlights.set(i,{from:selectedData[i*4],to,start:performance.now()});
      }
      markerPositions.set(data[i*4+3]>.5?[c.x+dx,c.y+dy+groundOffset,c.z+dz]:[10000,10000,10000],i*3);const mesh=pickers[i];if(mesh){mesh.position.set(dx,dy+groundOffset,dz);mesh.updateMatrix();mesh.updateMatrixWorld(true);}
-    });partTexture.needsUpdate=true;selectionTexture.needsUpdate=true;markerGeometry.attributes.position.needsUpdate=true;lastState=s;lastExtent=amount;dirty=true;
+    });partTexture.needsUpdate=true;selectionTexture.needsUpdate=true;markerGeometry.attributes.position.needsUpdate=true;visibilityRevision++;lastState=s;lastExtent=amount;dirty=true;
    }
+   if(revealRenderer.sync(s,data,visibilityRevision))dirty=true;
    // Sparse selection interpolation shares the existing frame loop and GPU texture.
    if(highlights.size){const now=performance.now();for(const [i,h] of highlights){const t=motionProgress(now-h.start,motionMedia.matches?0:selectionDuration);selectedData[i*4]=Math.round(h.from+(h.to-h.from)*t);if(t===1)highlights.delete(i);}selectionTexture.needsUpdate=true;dirty=true;}
    // Follow the rendered readiness gate, then establish the fixed body-origin stage.
@@ -286,7 +290,7 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
 
   };animate();
   const contextLost=(e:Event)=>{e.preventDefault();onError('The 3D session was paused by your device. Reload to continue.');};renderer.domElement.addEventListener('webglcontextlost',contextLost);
-  return()=>{disposed=true;abort.abort();cancelAnimationFrame(frame);observer.disconnect();renderer.domElement.removeEventListener('wheel',wheel,true);controls.dispose();floor.dispose();scene.remove(floor.group);geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());scene.traverse(o=>{if(o instanceof T.Mesh&&!geometries.includes(o.geometry)){o.geometry.dispose();const ms=Array.isArray(o.material)?o.material:[o.material];ms.forEach(m=>m.dispose());}});env.dispose();partTexture.dispose();selectionTexture.dispose();markerGeometry.dispose();markerMaterial.dispose();hover.remove();renderer.dispose();renderer.domElement.remove();};
+  return()=>{disposed=true;abort.abort();cancelAnimationFrame(frame);observer.disconnect();renderer.domElement.removeEventListener('wheel',wheel,true);controls.dispose();revealRenderer.dispose();floor.dispose();scene.remove(floor.group);geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());scene.traverse(o=>{if(o instanceof T.Mesh&&!geometries.includes(o.geometry)){o.geometry.dispose();const ms=Array.isArray(o.material)?o.material:[o.material];ms.forEach(m=>m.dispose());}});env.dispose();partTexture.dispose();selectionTexture.dispose();markerGeometry.dispose();markerMaterial.dispose();hover.remove();renderer.dispose();renderer.domElement.remove();};
  },[atlas,modelId]);
  return <div className="scene" data-revealed={revealed} ref={host}/>;
 }

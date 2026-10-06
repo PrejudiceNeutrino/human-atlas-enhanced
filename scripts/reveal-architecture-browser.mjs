@@ -55,7 +55,7 @@ try{
 
  const setup=function(){
   const a=window.__revealAudit,{T}=a;
-  a.original=[...a.anatomyGroup.children];a.originalMaterials=a.original.map(m=>m.material);
+  a.original=a.anatomyGroup.children.filter(mesh=>mesh.name!=='Anatomy reveal context');a.originalMaterials=a.original.map(m=>m.material);
   a.batchParts=a.original.map(m=>[...new Set(m.geometry.attributes.partIndex.array)]);
   a.maskData=new Uint8Array(a.selectionTexture.image.data.length);
   a.mask=new T.DataTexture(a.maskData,a.selectionTexture.image.width,1);a.mask.magFilter=T.NearestFilter;a.mask.minFilter=T.NearestFilter;a.mask.generateMipmaps=false;a.mask.needsUpdate=true;

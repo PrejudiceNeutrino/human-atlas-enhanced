@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import * as T from 'three';
 import ts from 'typescript';
 import {partIsVisible} from '../app/anatomy.ts';
+import {revealHitWins} from '../app/context-reveal.ts';
 const source=fs.readFileSync(new URL('../app/scene.tsx',import.meta.url),'utf8');
 const start=source.indexOf('  const wheelPlane='),end=source.indexOf("  renderer.domElement.addEventListener('wheel'",start);
 assert(start>0&&end>start);
@@ -20,8 +21,8 @@ const make=(specs=[],options={})=>{
  const hover={hidden:false},renderer={domElement:{getBoundingClientRect:()=>rect}};
  const isBodySurface=p=>p.system==='integumentary'&&!(p.id.startsWith('VH_F_')&&p.id!=='VH_F_skin');
  let interrupted=0;
- const factory=new Function('T','camera','controls','renderer','ready','latest','atlas','pickers','data','partIsVisible','isBodySurface','bounds','worldBox','hitPoint','hover','dirty','interruptAssist',compiled);
- const wheel=factory(T,camera,controls,renderer,true,latest,atlas,pickers,data,partIsVisible,isBodySurface,bounds,new T.Box3(),new T.Vector3(),hover,false,()=>interrupted++);
+ const factory=new Function('T','camera','controls','renderer','ready','latest','atlas','pickers','data','partIsVisible','isBodySurface','bounds','worldBox','hitPoint','hover','dirty','interruptAssist','revealHitWins','revealRenderer',compiled);
+ const wheel=factory(T,camera,controls,renderer,true,latest,atlas,pickers,data,partIsVisible,isBodySurface,bounds,new T.Box3(),new T.Vector3(),hover,false,()=>interrupted++,revealHitWins,{isTarget:i=>(options.revealTargets??[]).includes(i)});
  const event=(deltaY=-100,extra={})=>({deltaY,deltaMode:0,ctrlKey:false,clientX:rect.left+650,clientY:rect.top+330,prevented:false,stopped:false,preventDefault(){this.prevented=true},stopImmediatePropagation(){this.stopped=true},...extra});
  return {camera,controls,wheel,event,pickers,latest,interrupted:()=>interrupted};
 };
@@ -49,6 +50,9 @@ for(const hidden of [{state:{visible:['muscular']}},{state:{breastView:'muscle'}
 }
 {
  const ctx=make([],{controls:{enableZoom:false}});const before=ctx.camera.position.clone(),e=ctx.event();ctx.wheel(e);near(ctx.camera.position,before,'disabled zoom unchanged');assert(!e.prevented&&!e.stopped);ctx.controls.enableZoom=true;for(const d of [0,NaN,Infinity])ctx.wheel(ctx.event(d));near(ctx.camera.position,before,'zero/nonfinite delta ignored');checks++;
+}
+{
+ const target=make([{z:0},{z:1}],{revealTargets:[0]}),onlyTarget=make([{z:0}]),ordinary=make([{z:0},{z:1}]);target.wheel(target.event());onlyTarget.wheel(onlyTarget.event());ordinary.wheel(ordinary.event());near(target.camera.position,onlyTarget.camera.position,'Reveal target anchors through nearer ghost');assert(target.camera.position.distanceTo(ordinary.camera.position)>1e-3);checks++;
 }
 assert(source.includes("removeEventListener('wheel',wheel,true)"));
 console.log(`PASS ${checks} actual wheel-handler scenario groups; cleanup capture flag verified.`);
