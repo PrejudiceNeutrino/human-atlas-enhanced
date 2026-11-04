@@ -6,7 +6,7 @@ const names=JSON.parse(readFileSync(new URL('../data/anatomy/sources/mesh-name-i
 test('knowledge pilot has unique source concept IDs backed by source mesh index',()=>{
  const ids=new Set();
  for(const r of d.records){
-  assert.match(r.sourceConceptId,/^FMA\\d+$/);
+  assert.match(r.sourceConceptId,/^FMA\d+$/);
   assert.ok(!ids.has(r.sourceConceptId));ids.add(r.sourceConceptId);
   assert.ok(names.some(n=>n.conceptId===r.sourceConceptId),r.sourceConceptId);
   for(const k of ['name','summary','definition','function','reviewStatus','system','kind'])assert.ok(r[k],k);
