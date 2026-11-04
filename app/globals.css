@@ -419,9 +419,3 @@ h1 .edition::before{content:'';position:absolute;inset:-1px;border-radius:inheri
 .studio-footer>span{white-space:nowrap}
 /* Source display names are shared by inspection and structure captions. */
 .detail-header .structure-title{ text-transform:none }
-
-/* Phase 6: semantic knowledge fields inside the existing structure inspector. */
-.knowledge-details{display:grid;gap:.6rem;padding:.7rem 0 1rem;font-size:.84rem;line-height:1.55;color:var(--muted-foreground,#667482)}
-.knowledge-details p{margin:0;overflow-wrap:anywhere}
-.knowledge-details strong{color:var(--foreground,#222c36);font-weight:600}
-.knowledge-details a{display:inline-block;margin-right:1rem;text-decoration:underline;text-underline-offset:3px}
