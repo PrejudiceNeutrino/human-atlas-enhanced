@@ -21,6 +21,40 @@
   ],
   "records": [
     {
+      "sourceConceptId": "ATLAS:label:right-hepatic-biliary-tree",
+      "name": "Right hepatic biliary tree",
+      "latin": "",
+      "aliases": [
+        "Right intrahepatic bile duct tree",
+        "Right hepatic bile duct branches"
+      ],
+      "system": "digestive",
+      "kind": "duct-network",
+      "summary": "The right hepatic biliary tree is the branching network of ducts that collects bile from the right functional liver and directs it toward the right hepatic duct.",
+      "definition": "An interconnected intrahepatic biliary drainage network that includes smaller ducts and segmental and sectoral tributaries. Its branches converge toward the right hepatic duct in a common anatomical pattern, but confluence and segmental drainage vary between people.",
+      "hierarchy": [
+        "Digestive system",
+        "Biliary system",
+        "Intrahepatic bile ducts",
+        "Right hepatic biliary drainage"
+      ],
+      "function": "Collects and transports bile produced by hepatocytes toward the extrahepatic ducts.",
+      "relationships": [
+        "Receives bile from the right anterior and posterior hepatic sectors in typical anatomy",
+        "Converges toward the right hepatic duct or variable hepatic duct confluences",
+        "Accompanies portal venous and hepatic arterial branches within portal tracts"
+      ],
+      "development": "The intrahepatic biliary system differentiates from the embryonic ductal plate around portal mesenchyme.",
+      "clinical": "Variations in duct branching are important during liver resection, living-donor transplantation, biliary reconstruction, and imaging.",
+      "reviewStatus": "candidate",
+      "sourceIds": [
+        "FIPAT-TA2",
+        "BP3D-SOURCE",
+        "NCBI-BILIARY"
+      ],
+      "note": "Curated exact-display-label entry because the selected tree is a grouped or source-broad structure. No individual Latin equivalent asserted; component terminology requires reconciliation."
+    },
+    {
       "sourceConceptId": "FMA14669",
       "name": "Right hepatic duct",
       "latin": "Ductus hepaticus dexter",
