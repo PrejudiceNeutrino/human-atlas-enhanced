@@ -1,5 +1,6 @@
 import pilot from '../data/anatomy/knowledge/poc-v2.json';
-import type {CanonicalConceptId,ModelId,ReviewStatus,SystemId} from './identity-contracts';
+import type {CanonicalConceptId,ModelId,ReviewStatus} from './identity-contracts';
+import type {SystemId} from './anatomy';
 import type {IdentityIndex} from './identity-index';
 
 export type KnowledgeKind='muscle'|'bone'|'nerve'|'artery'|'vein'|'organ'|'duct'|'duct-network'|'group'|'ligament'|'joint'|'other';
