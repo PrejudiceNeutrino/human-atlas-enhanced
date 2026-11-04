@@ -54,6 +54,8 @@
     "clean:work": "node scripts/clean-work.mjs",
     "test:motion": "node --experimental-strip-types --test scripts/motion.test.mjs",
     "test:reset-camera": "node --experimental-strip-types --test scripts/reset-camera.test.mjs",
+    "test:explode-playback": "node --experimental-strip-types --test scripts/explode-playback.test.mjs",
+    "test:explosion-camera": "node --experimental-strip-types --test scripts/explosion-camera.test.mjs",
     "test:motion:browser": "node --experimental-strip-types scripts/motion-browser-smoke.mjs",
     "test:scene-floor": "node --experimental-strip-types --test scripts/scene-floor.test.mjs",
     "test:scene-floor:browser": "node --experimental-strip-types scripts/scene-floor-browser-smoke.mjs",

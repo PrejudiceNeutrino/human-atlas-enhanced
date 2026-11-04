@@ -240,7 +240,7 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 }
 
 /* Phase 5.3: one finite shell timeline; scene readiness is independent. */
-:root{--motion-fast:120ms;--motion-medium:180ms;--motion-slow:280ms;--motion-reset:650ms;--motion-brand:900ms;--motion-stagger:80ms;--motion-shell:3800ms;--motion-entrance:480ms;--motion-type-fast:40ms;--motion-type-slow:180ms;--motion-caret-blink:2000ms;--motion-enter-curve:cubic-bezier(.22,.45,.35,1);--motion-duration:var(--motion-medium);--motion-curve:cubic-bezier(.2,.7,.2,1);--motion-emphasized:cubic-bezier(.16,1,.3,1)}
+:root{--motion-fast:120ms;--motion-medium:180ms;--motion-slow:280ms;--motion-reset:650ms;--motion-explode-systems:2600ms;--motion-explode-pieces:4200ms;--motion-brand:900ms;--motion-stagger:80ms;--motion-shell:3800ms;--motion-entrance:480ms;--motion-type-fast:40ms;--motion-type-slow:180ms;--motion-caret-blink:2000ms;--motion-enter-curve:cubic-bezier(.22,.45,.35,1);--motion-duration:var(--motion-medium);--motion-curve:cubic-bezier(.2,.7,.2,1);--motion-emphasized:cubic-bezier(.16,1,.3,1)}
 .studio{background:var(--background);transition:background-color var(--motion-medium) var(--motion-curve)}
 .scene canvas{opacity:0;transition:opacity var(--motion-slow) var(--motion-curve)}
 .scene[data-revealed=true] canvas{opacity:1}

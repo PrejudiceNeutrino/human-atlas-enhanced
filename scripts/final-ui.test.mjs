@@ -15,3 +15,9 @@ test('All eight actions defer to typing, editable ancestors, modifier chords, co
   for(const token of ['input','textarea','select','contenteditable','combobox','textbox','searchbox','slider','spinbutton','listbox','menu'])assert.equal(viewerShortcut(event(key,{target:{closest:selector=>selector.includes(token)?{}:null}})),null,`${key}/${token}`);
  }
 });
+
+test('Every viewer shortcut defers while focus is inside the Learn chooser',()=>{
+ for(const {key} of VIEWER_SHORTCUTS){
+  assert.equal(viewerShortcut(event(key,{target:{closest:selector=>selector.includes('[data-atlas-shortcuts="disabled"]')?{}:null}})),null,key);
+ }
+});

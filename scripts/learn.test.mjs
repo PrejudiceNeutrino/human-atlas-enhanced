@@ -14,7 +14,7 @@ const dom = new JSDOM('<!doctype html><html lang="en"><head><title>Human Atlas</
   url: 'http://localhost/learn/digestive', pretendToBeVisual: true,
 });
 const { window } = dom;
-for (const key of ['window', 'document', 'navigator', 'HTMLElement', 'Element', 'Node', 'DocumentFragment', 'MutationObserver', 'Event', 'MouseEvent', 'KeyboardEvent']) {
+for (const key of ['window', 'document', 'navigator', 'HTMLElement', 'HTMLInputElement', 'HTMLButtonElement', 'HTMLAnchorElement', 'Element', 'Node', 'DocumentFragment', 'MutationObserver', 'Event', 'MouseEvent', 'KeyboardEvent']) {
   Object.defineProperty(globalThis, key, { configurable: true, value: key === 'window' ? window : window[key] });
 }
 globalThis.getComputedStyle = window.getComputedStyle.bind(window);
@@ -40,9 +40,8 @@ const { default: axe } = await import('axe-core');
 // Bundle only the page's local modules. Keep React and UI libraries external so
 // tests share one React instance and never touch a running Vite server's cache.
 const output = path.resolve('work/learn-tests/page.mjs');
-await build({ absWorkingDir: process.cwd(), entryPoints: [path.resolve('app/learn/page.tsx')], outfile: output, tsconfig: path.resolve('tsconfig.json'), bundle: true, platform: 'node', format: 'esm', packages: 'external', loader: { '.css': 'empty' }, alias: { '@': process.cwd() } });
-const { default: LearnPage } = await import(pathToFileURL(output).href);
-const learnSubjects = [{ slug: 'digestive', href: '/learn/digestive', title: 'Digestive System' }];
+await build({ absWorkingDir: process.cwd(), stdin: { contents: "export {default} from './app/learn/page'; export {SiteNavigation} from './app/site-navigation'; export {learnSubjects} from './app/learn/subjects';", resolveDir: process.cwd(), sourcefile: 'learn-test-entry.ts' }, outfile: output, tsconfig: path.resolve('tsconfig.json'), bundle: true, platform: 'node', format: 'esm', packages: 'external', loader: { '.css': 'empty' }, alias: { '@': process.cwd() } });
+const { default: LearnPage, SiteNavigation, learnSubjects } = await import(pathToFileURL(output).href);
 const root = createRoot(document.querySelector('#root'));
 const render = async pathname => {
   flushSync(() => root.render(createElement(LearnPage, { pathname, key: pathname })));
@@ -159,4 +158,40 @@ test('theme switching uses the shared persisted preference', { timeout: 10000 },
   assert.equal(window.localStorage.getItem('human-atlas-theme'), document.documentElement.dataset.theme);
   await click(themeButton);
   assert.equal(document.documentElement.dataset.theme, previous);
+});
+
+test('Learn opens an accessible subject chooser without navigating or replacing the explorer', { timeout: 10000 }, async () => {
+  window.history.replaceState(null, '', '/male?region=atlas%3Aregion%3Athoracic');
+  flushSync(() => root.render(createElement('main', { id: 'explorer-fixture', 'data-camera-pose': 'preserved' }, createElement(SiteNavigation, { section: 'explore' }))));
+  await delay(60);
+  const explorer = document.querySelector('#explorer-fixture'), trigger = document.querySelector('.learn-menu-trigger');
+  const href = window.location.href;
+  assert.equal(trigger.tagName, 'BUTTON'); assert.equal(trigger.textContent, 'Learn');
+  assert.equal(document.querySelector('.site-navigation a[href="/learn"]'), null);
+  trigger.focus(); await click(trigger);
+  const dialog = document.querySelector('[role="dialog"]');
+  assert.ok(dialog); assert.equal(dialog.getAttribute('aria-modal'), 'true');
+  assert.equal(document.getElementById(dialog.getAttribute('aria-labelledby')).textContent, 'Learn');
+  assert.equal(document.getElementById(dialog.getAttribute('aria-describedby')).textContent, 'Choose a system to explore.');
+  assert.ok(document.querySelector('.learn-menu-backdrop')); assert.equal(dialog.dataset.atlasShortcuts, 'disabled');
+  assert.equal(window.location.href, href); assert.equal(document.querySelector('#explorer-fixture'), explorer);
+  const links = [...dialog.querySelectorAll('.learn-menu-subject')]; assert.equal(links.length, learnSubjects.length);
+  links.forEach((link, index) => {
+    assert.equal(link.getAttribute('href'), learnSubjects[index].href);
+    assert.equal(link.querySelector('.learn-menu-subject-title').textContent, learnSubjects[index].title);
+  });
+  assert.equal(document.activeElement, links[0]);
+  const results = await axe.run(document, { rules: { 'color-contrast': { enabled: false } } });
+  assert.deepEqual(results.violations.map(({ id, description }) => ({ id, description })), []);
+  await click(dialog.querySelector('[aria-label="Close Learn menu"]'));
+  assert.equal(document.querySelector('[role="dialog"]'), null); assert.equal(document.activeElement, trigger);
+  assert.equal(window.location.href, href); assert.equal(document.querySelector('#explorer-fixture'), explorer);
+});
+
+test('Escape dismisses the Learn chooser and returns focus to Learn', { timeout: 10000 }, async () => {
+  const trigger = document.querySelector('.learn-menu-trigger'); trigger.focus(); await click(trigger);
+  assert.ok(document.querySelector('[role="dialog"]'));
+  document.activeElement.dispatchEvent(new window.KeyboardEvent('keydown', { key: 'Escape', code: 'Escape', bubbles: true, cancelable: true }));
+  await delay(80);
+  assert.equal(document.querySelector('[role="dialog"]'), null); assert.equal(document.activeElement, trigger);
 });

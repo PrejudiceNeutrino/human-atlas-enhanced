@@ -11,6 +11,7 @@ import { motionProgress } from '../app/motion.ts';
 import { resetViewer } from '../app/region-navigation.ts';
 import { isolationCameraKey } from '../app/viewer-interaction.ts';
 import { resolveVisibility } from '../app/visibility.ts';
+import { explosionPlaybackAmount } from '../app/explode-playback.ts';
 
 const close = (actual, expected, label = 'pose') => assert.ok(actual.distanceTo(expected) < 1e-9, label);
 const cameraFixture = () => {
@@ -92,14 +93,15 @@ function sceneFixture({ isolated = false, locked = false, reduced = false, initi
   const state = resetViewer(previous, ['muscular']);
   const picker = { position: new T.Vector3(), updateMatrix() { writes++; }, updateMatrixWorld() {} };
   const env = {
-    T, captureCameraPose, createCameraReturn, motionProgress, resetMotion: null, resetFade: null, frontAssist: null, el: { style: {} },
+    T, captureCameraPose, createCameraReturn, motionProgress, resetMotion: null, assembledReturn: false, resetFade: null, frontAssist: null, assistedViewPending: null, el: { style: {} },
+    explosionPlaybackAmount, latestExplodePlayback: { current: null }, latestPlaybackUpdate: { current() {} }, playbackReportRun: null, playbackReportTime: 0, playbackReportComplete: false,
     requestAnimationFrame: () => 1, performance: { now: () => clock }, document: { hidden: false },
     disposed: false, frame: 0, ready: !initial, readyReported: true, dirty: false,
     latest: { current: state }, latestLock: { current: locked }, motionMedia: { matches: reduced },
     camera, controls: { target, enableDamping: true, autoRotate: false, mouseButtons: {}, touches: {}, update() {}, },
     lastState: previous, lastReset: initial ? -1 : previous.reset, lastView: previous.view, lastIsolate: isolationCameraKey(previous, camera.aspect),
     intentRevision: previous.cameraIntentRevision, intent: createCameraIntent(), lastLocked: locked, lastOrgans: false,
-    amount: previous.explode, lastExtent: previous.explode, sliderFrame: {}, sliderLayoutChanged: false,
+    amount: previous.explode, lastExtent: previous.explode, sliderFrame: {}, explosionZoom: null,
     applyTheme() {}, applyDisplay() {}, fit() { camera.position.copy(normalPosition); target.copy(normalTarget); camera.clearViewOffset(); },
     fitExplosion() { throw Error('Reset must not animate explosion or refit its layout'); },
     atlas: { parts: [{ id: 'part', system: 'muscular' }] }, modelId: 'bp3d-male-4',
@@ -205,4 +207,113 @@ test('Region changes and camera presets keep their established immediate camera 
     const ctx = sceneFixture(); Object.assign(ctx.env.latest.current, patch); ctx.tick(1000);
     assert.equal(ctx.env.resetMotion, null); close(ctx.camera.position, ctx.normalPosition);
   }
+});
+
+function playbackFixture() {
+  const ctx = sceneFixture();
+  const state = { ...ctx.env.lastState, explode: 0 };
+  Object.assign(ctx.env, { latest: { current: state }, lastState: state, amount: 0, lastExtent: 0, lastReset: state.reset, lastView: state.view, fitExplosion() {} });
+  ctx.env.intent.orbit(); // Keep the sample's customized camera during playback.
+  const run = { from: 0, to: .3, start: 1000, duration: 2600, scope: {}, current: 0, cancelled: false };
+  ctx.env.latestExplodePlayback.current = run;
+  ctx.env.explosionLayout.targets.set('part', {});
+  ctx.env.evaluateExplosionOffset = (_target, amount) => [amount, 0, 0];
+  return { ...ctx, run };
+}
+
+test('Playback transforms advance on every scene frame without React amount feedback', () => {
+  const ctx = playbackFixture(), reports = [];
+  ctx.env.latestPlaybackUpdate.current = (_run, amount, done) => reports.push({ amount, done });
+  ctx.tick(1000); ctx.tick(1016); const first = ctx.env.data[0];
+  ctx.tick(1032); assert.ok(ctx.env.data[0] > first, 'second rendered frame advances before any UI report');
+  assert.equal(reports.length, 0); assert.equal(ctx.env.latest.current.explode, 0);
+  ctx.tick(1064); assert.equal(reports.length, 1); const previous = ctx.env.data[0];
+  ctx.tick(1080); assert.ok(ctx.env.data[0] > previous, 'an unchanged React value cannot rewind playback');
+  ctx.tick(2300); assert.ok(Math.abs(ctx.env.data[0] - .15) < 1e-6);
+  ctx.tick(3600); assert.equal(ctx.env.amount, .3); assert.equal(reports.filter(report => report.done).length, 1);
+  ctx.tick(3616); assert.equal(reports.filter(report => report.done).length, 1);
+});
+
+test('Playback pause retains the last rendered amount until React acknowledges it', () => {
+  const ctx = playbackFixture(); ctx.tick(1000); ctx.tick(2300);
+  const paused = ctx.env.amount; ctx.run.cancelled = true; ctx.tick(2316);
+  assert.equal(ctx.env.amount, paused, 'stale UI amount must not cause a backwards jump');
+  ctx.env.latest.current = { ...ctx.env.latest.current, explode: paused };
+  ctx.env.latestExplodePlayback.current = null; ctx.tick(2332);
+  assert.equal(ctx.env.amount, paused);
+});
+
+test('Continuous explosion frames let the existing front-camera assist finish', () => {
+  const ctx = playbackFixture(); ctx.env.intent.reset();
+  ctx.tick(1000); ctx.tick(1016); assert.ok(ctx.env.frontAssist);
+  ctx.tick(1032); assert.ok(ctx.env.frontAssist, 'next expansion frame must not cancel its own camera assist');
+});
+
+test('A delayed React view acknowledgement cannot snap a completed camera assist backwards', () => {
+  const ctx = playbackFixture(); ctx.env.intent.reset(); let fits = 0;
+  ctx.env.fit = () => { fits++; };
+  ctx.tick(1000); ctx.tick(1016); ctx.tick(1300);
+  assert.equal(ctx.env.lastView, 'front'); assert.ok(ctx.env.assistedViewPending);
+  const pose = ctx.camera.position.clone(); ctx.tick(1316);
+  assert.equal(fits, 0); close(ctx.camera.position, pose);
+  ctx.env.latest.current = { ...ctx.env.latest.current, view: 'front' }; ctx.tick(1332);
+  assert.equal(ctx.env.assistedViewPending, null); assert.equal(fits, 0);
+});
+
+function collapseFixture(options = {}) {
+  const ctx = sceneFixture(options), state = { ...ctx.env.lastState, view: 'front', explode: 0 };
+  Object.assign(ctx.env, { latest: { current: state }, lastState: { ...state, explode: .3 },
+    amount: .3, lastExtent: .3, lastReset: state.reset, lastView: state.view,
+    fitExplosion() { ctx.camera.position.copy(ctx.target).add(new T.Vector3(0, .02, 1).normalize().multiplyScalar(7)); },
+  });
+  ctx.env.intent.orbit();
+  return ctx;
+}
+
+test('Manual zero restores the three-quarter angle while retaining assembled zoom, pan, projection and scene state', () => {
+  const ctx = collapseFixture(), state = ctx.env.latest.current, target = ctx.target.clone(), projection = ctx.camera.projectionMatrix.clone();
+  let assisted;
+  ctx.env.latestAssistedView.current = view => { assisted = view; };
+  ctx.tick(1000);
+  close(ctx.camera.position.clone().sub(ctx.target).normalize(), new T.Vector3(0, .02, 1).normalize(), 'first frame retains the restored source angle');
+  assert.ok(ctx.env.assembledReturn); assert.equal(ctx.env.resetFade, null);
+  ctx.tick(1325);
+  assert.ok(ctx.camera.position.x > ctx.target.x);
+  assert.ok(Math.abs(ctx.camera.position.distanceTo(ctx.target) - 7) < 1e-9);
+  ctx.tick(1650);
+  close(ctx.camera.position.clone().sub(ctx.target).normalize(), new T.Vector3(.35, .06, 1).normalize());
+  close(ctx.target, target); assert.deepEqual(ctx.camera.projectionMatrix, projection);
+  assert.equal(ctx.env.latest.current, state, 'no full viewer reset'); assert.equal(assisted, 'three-quarter');
+  ctx.tick(1700); // React has not acknowledged the camera view yet.
+  assert.equal(ctx.env.lastView, 'three-quarter'); assert.equal(ctx.env.resetMotion, null);
+  ctx.env.latest.current = { ...state, view: assisted }; ctx.tick(1750);
+  assert.equal(ctx.env.assistedViewPending, null);
+  assert.ok(Math.abs(ctx.camera.position.distanceTo(ctx.target) - 7) < 1e-9);
+});
+
+test('Manual zero obeys reduced motion and view lock, and new input cancels its angle return', () => {
+  const reduced = collapseFixture({ reduced: true }); reduced.tick(1000);
+  assert.equal(reduced.env.resetMotion, null); assert.equal(reduced.env.lastView, 'three-quarter');
+  const locked = collapseFixture({ locked: true }); locked.tick(1000);
+  assert.equal(locked.env.resetMotion, null); assert.equal(locked.env.lastView, 'front');
+  const interrupted = collapseFixture(); interrupted.tick(1000); interrupted.tick(1200);
+  const pose = interrupted.camera.position.clone(); interrupted.interruptAssist(); interrupted.tick(1500);
+  close(interrupted.camera.position, pose); assert.equal(interrupted.env.assembledReturn, false);
+  const resumed = collapseFixture(); resumed.tick(1000); resumed.env.latest.current = { ...resumed.env.latest.current, explode: .1 }; resumed.tick(1100);
+  assert.equal(resumed.env.resetMotion, null); assert.equal(resumed.env.assembledReturn, false);
+});
+
+test('Manual zero drains real OrbitControls damping without displacing its pan or final angle', () => {
+  const dom = new JSDOM('<canvas></canvas>'), ctx = collapseFixture();
+  const controls = new OrbitControls(ctx.camera, dom.window.document.querySelector('canvas'));
+  controls.target = ctx.target; controls.enableDamping = true;
+  controls._sphericalDelta.theta = .4; controls._panOffset.set(.2, .1, 0);
+  ctx.env.controls = controls; const target = ctx.target.clone();
+  try {
+    ctx.tick(1000); ctx.tick(1650); ctx.tick(1700);
+    close(ctx.target, target);
+    close(ctx.camera.position.clone().sub(ctx.target).normalize(), new T.Vector3(.35, .06, 1).normalize());
+    assert.ok(Math.abs(ctx.camera.position.distanceTo(ctx.target) - 7) < 1e-9);
+    assert.equal(controls.enableDamping, true);
+  } finally { controls.dispose(); dom.window.close(); }
 });

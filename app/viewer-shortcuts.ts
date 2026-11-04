@@ -14,6 +14,6 @@ type ShortcutEvent=Pick<KeyboardEvent,'key'|'target'|'ctrlKey'|'metaKey'|'altKey
 export function viewerShortcut(event:ShortcutEvent):ViewerShortcutAction|null {
  if(event.ctrlKey||event.metaKey||event.altKey||event.defaultPrevented||event.isComposing||event.repeat)return null;
  const target=event.target as Element|null;
- if(target?.closest?.('input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="combobox"],[role="textbox"],[role="searchbox"],[role="slider"],[role="spinbutton"],[role="listbox"],[role="menu"]'))return null;
+ if(target?.closest?.('input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="combobox"],[role="textbox"],[role="searchbox"],[role="slider"],[role="spinbutton"],[role="listbox"],[role="menu"],[data-atlas-shortcuts="disabled"]'))return null;
  return VIEWER_SHORTCUTS.find(shortcut=>shortcut.key.toLowerCase()===event.key.toLowerCase())?.action??null;
 }

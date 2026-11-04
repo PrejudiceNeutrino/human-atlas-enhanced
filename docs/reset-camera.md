@@ -23,10 +23,12 @@ The renderer computes its destination using the established `fit()` behavior, af
 
 ## Verification
 
-- `npm run test:reset-camera`: 11/11 passed. Tests the interpolation and actual scene-frame code, including initial continuity, exact destination, shortest orbit, mobile projection, normal/exploded mode choice, unchanged exploded pixels until transparent, single hidden reassembly, opacity-only fade-in, repeated Reset, interruption, reduced motion, initial-load gating, preset/navigation boundaries, isolation exit and locked view. Real OrbitControls instances additionally verify damping is drained for both modes without a jump or final drift.
+- `npm run test:reset-camera`: 18/18 passed. Tests the interpolation and actual scene-frame code, including initial continuity, exact destination, shortest orbit, mobile projection, normal/exploded mode choice, unchanged exploded pixels until transparent, single hidden reassembly, opacity-only fade-in, repeated Reset, interruption, reduced motion, initial-load gating, preset/navigation boundaries, isolation exit and locked view. Real OrbitControls instances additionally verify damping is drained for both modes without a jump or final drift. The added cases cover renderer-owned explosion playback, paused progress, front assist, delayed view acknowledgement and manual-zero three-quarter return with preserved scale/pan/projection, cancellation and view-lock behavior.
 - `npm run test:motion`: 6/6 passed, preserving the immediate selection-highlight fix and other motion contracts.
 - `node --experimental-strip-types scripts/cursor-zoom.test.mjs`: 11 actual wheel-handler scenario groups passed.
-- `npm run check`: passed. `npm run build`: passed in 16.55 seconds, with Vite's large-chunk warning.
+- `npm run check`: passed. `npm run build`: passed for the final combined refinement in 15.89 seconds, with Vite's large-chunk and plugin-timing warnings.
 - Live browser visual smoothness, GPU frame times and touch gestures were not certified; the browser-control inventory was unavailable.
 
 Added `app/camera-return.ts`, `scripts/reset-camera.test.mjs` and this record. Updated `app/scene.tsx`, the motion token in `app/globals.css`, and the `test:reset-camera` alias in `package.json`. Canonical anatomy data and model assets are unchanged. Included in the [local main handoff](integration/LEARN_AND_VIEWER_HANDOFF_2026_11_04.md); no push or deployment is part of this delivery.
+
+The later [explosion playback refinement](explode-playback.md) also reuses this camera interpolation when the slider returns to zero: it restores the original slight three-quarter angle at the assembled zoom, preserving exploration settings. That camera-only return is separate from a full Reset. Its cumulative file inventory and local Git boundary are in the [chooser and explosion handoff](integration/LEARN_MENU_AND_EXPLOSION_HANDOFF_2026_11_04.md).
