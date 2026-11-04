@@ -7,6 +7,7 @@ import {modelForRoute} from '../app/model-registry';
 import '../app/globals.css';
 
 const AtlasViewer = lazy(() => import('../app/page'));
+const LearnPage = lazy(() => import('../app/learn/page'));
 const pathname = window.location.pathname.replace(/\/+$/, '') || '/';
 const routeModel = modelForRoute(pathname);
 const model: 'male'|'female'|null = routeModel?.id === 'female-study-v3' ? 'female' : routeModel?.id === 'bp3d-male-4' ? 'male' : null;
@@ -16,7 +17,11 @@ function AtlasApp(){
  useEffect(()=>{const back=()=>window.location.reload();window.addEventListener('popstate',back);return()=>window.removeEventListener('popstate',back);},[]);
  return (
   <>
-    {activeModel ? (
+    {pathname === '/learn' || pathname.startsWith('/learn/') ? (
+      <Suspense fallback={<main className="route-loading" role="status">Opening Learn…</main>}>
+        <LearnPage pathname={pathname} />
+      </Suspense>
+    ) : activeModel ? (
       <Suspense fallback={<main className="route-loading" role="status">Opening {model} anatomy…</main>}>
         <AtlasViewer model={activeModel} initialRegion={parseNavigation(window.location.search).regionId} initialArea={parseNavigation(window.location.search).areaId} onModelChange={(next,regionId,areaId)=>{if(next!=='male'&&next!=='female')return;window.history.pushState(null,'',`/${next}${navigationSearch(window.location.search,regionId,areaId)}`);setActiveModel(next);}}/>
       </Suspense>

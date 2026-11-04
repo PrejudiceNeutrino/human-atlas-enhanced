@@ -31,7 +31,7 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 .identity-meta{font-size:11px;letter-spacing:0}
 .anatomy-choice{margin-top:14px}.anatomy-choice [data-slot=select-trigger]{border-radius:9px;min-height:38px;color:var(--foreground);background:var(--control);box-shadow:0 1px 2px var(--border)}
 .top-actions{gap:8px}.top-actions button{height:42px;border:1px solid var(--border);background:var(--control);border-radius:10px;font-size:12px;padding:0 13px;gap:9px}.top-actions button:hover{background:var(--card)}.top-actions .icon-button{width:42px;min-width:42px}.top-actions kbd{margin-left:18px}
-.layers-panel{top:200px;padding:18px 14px 0}.panel-heading{font-size:13px;font-weight:600;padding:0 3px}.panel-heading .small-number{font-size:10px;background:var(--muted);color:var(--ui-muted);height:21px;padding:0 7px}
+.layers-panel{top:200px;padding:8px 14px 0}.panel-heading{font-size:13px;font-weight:600;padding:0 3px}.panel-heading .small-number{font-size:10px;background:var(--muted);color:var(--ui-muted);height:21px;padding:0 7px}
 .layer-presets{gap:2px;background:var(--muted);border:0;border-radius:9px;padding:3px;margin:15px 0 9px}.layer-presets button{height:30px;min-height:30px;flex:1;font-size:11px;border:0;padding:0 6px;border-radius:6px;color:var(--ui-muted);font-weight:500}.layer-presets button[aria-pressed=true]{background:var(--card);color:var(--foreground);box-shadow:0 1px 3px var(--border)}
 .system-row{opacity:1;gap:8px}.system-name{font-weight:400;color:var(--ui-faint);font-size:12px;border-radius:7px;padding:0 5px;justify-content:flex-start}.enabled .system-name{color:var(--ui-secondary)}.system-dot{width:6px;height:6px;box-shadow:0 0 0 2px var(--border)}.system-count{font-variant-numeric:tabular-nums;font-size:10px}.system-list{padding-right:16px}.system-row [data-slot=switch]{transform:none;--primary:var(--switch-active)}.system-row [data-slot=switch-thumb]{background:var(--card)}
 .panel-foot{font-size:10px;padding-inline:4px;min-height:44px}.panel-foot button{font-size:10px;font-weight:400;padding:0 5px}
@@ -187,7 +187,7 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 
 .part-hover{background:var(--popover);color:var(--popover-foreground);border:1px solid var(--border)}
 /* Phase 4.8: a single navigation column and contained, anchored discovery surface. */
-.navigation-rail{position:absolute;left:30px;top:29px;bottom:175px;width:254px;display:flex;flex-direction:column;gap:16px;pointer-events:none;z-index:2}
+.navigation-rail{position:absolute;left:30px;top:29px;bottom:72px;width:254px;display:flex;flex-direction:column;gap:16px;pointer-events:none;z-index:2}
 .navigation-rail .identity{position:static;flex-shrink:0;width:100%}
 .navigation-rail .anatomy-choice{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;width:100%;max-width:none}
 .navigation-rail .region-choice{display:flex;flex-direction:column;align-items:stretch;gap:4px;width:100%}
@@ -240,7 +240,7 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 }
 
 /* Phase 5.3: one finite shell timeline; scene readiness is independent. */
-:root{--motion-fast:120ms;--motion-medium:180ms;--motion-slow:280ms;--motion-brand:900ms;--motion-stagger:80ms;--motion-shell:3800ms;--motion-entrance:480ms;--motion-type-fast:40ms;--motion-type-slow:180ms;--motion-caret-blink:2000ms;--motion-enter-curve:cubic-bezier(.22,.45,.35,1);--motion-duration:var(--motion-medium);--motion-curve:cubic-bezier(.2,.7,.2,1);--motion-emphasized:cubic-bezier(.16,1,.3,1)}
+:root{--motion-fast:120ms;--motion-medium:180ms;--motion-slow:280ms;--motion-reset:650ms;--motion-brand:900ms;--motion-stagger:80ms;--motion-shell:3800ms;--motion-entrance:480ms;--motion-type-fast:40ms;--motion-type-slow:180ms;--motion-caret-blink:2000ms;--motion-enter-curve:cubic-bezier(.22,.45,.35,1);--motion-duration:var(--motion-medium);--motion-curve:cubic-bezier(.2,.7,.2,1);--motion-emphasized:cubic-bezier(.16,1,.3,1)}
 .studio{background:var(--background);transition:background-color var(--motion-medium) var(--motion-curve)}
 .scene canvas{opacity:0;transition:opacity var(--motion-slow) var(--motion-curve)}
 .scene[data-revealed=true] canvas{opacity:1}

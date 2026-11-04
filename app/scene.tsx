@@ -16,6 +16,7 @@ import {isBodySurface,resolveVisibility} from './visibility';
 import {fitRegionCamera} from './region-camera';
 import {focusedViewport,isOrgansPresentation,modelGrounding} from './spatial-presentation';
 import {createCameraIntent} from './camera-intent';
+import {captureCameraPose,createCameraReturn} from './camera-return';
 import {DISPLAY_CONTRAST_SHADER,type DisplaySettings} from './display';
 import {createSceneFloor} from './scene-floor';
 import {sceneFloorEligible} from './floor-eligibility';
@@ -46,7 +47,9 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
   camera.position.set(1.4,1.05,3.6);controls.target.set(0,.85,0);controls.enableDamping=true;controls.dampingFactor=.085;controls.minDistance=.07;controls.maxDistance=40;controls.maxPolarAngle=Math.PI*.96;controls.addEventListener('change',()=>{dirty=true;});
   const intent=createCameraIntent();let intentRevision=-1;
   let frontAssist:{from:T.Vector3;start:number;duration:number}|null=null;
-  const interruptAssist=()=>{if(frontAssist){frontAssist=null;sliderFrame=null;dirty=true;}};
+  let resetMotion:ReturnType<typeof createCameraReturn>|null=null;
+  let resetFade:{reset:number;revision:number;start:number;fadeOut:number;fadeIn:number;committed:boolean}|null=null;
+  const interruptAssist=()=>{if(frontAssist||resetMotion){frontAssist=null;resetMotion=null;sliderFrame=null;dirty=true;}};
   // Start covers pointer, touch and pan: cancel animation before any user input.
   // Only an actual orientation change during the interaction records orbit intent.
   let interacting=false,interactionDirection=new T.Vector3();
@@ -166,7 +169,7 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
    camera.position.sub(controls.target).multiplyScalar(ratio).add(controls.target);
    controls.maxDistance=Math.max(40,camera.position.distanceTo(controls.target)*2);sliderFrame.scale=scale;dirty=true;
   };
-  const resize=()=>{lastState=null;sliderFrame=null;renderer.setPixelRatio(Math.min(devicePixelRatio,el.clientWidth<768||el.clientHeight<600?1.5:2));camera.aspect=el.clientWidth/el.clientHeight;camera.updateProjectionMatrix();renderer.setSize(el.clientWidth,el.clientHeight);fit(latest.current.view);if(amount>0)fitExplosion(0);};const observer=new ResizeObserver(resize);observer.observe(el);
+  const resize=()=>{interruptAssist();if(resetFade){resetFade.fadeOut=0;resetFade.fadeIn=0;}lastState=null;sliderFrame=null;renderer.setPixelRatio(Math.min(devicePixelRatio,el.clientWidth<768||el.clientHeight<600?1.5:2));camera.aspect=el.clientWidth/el.clientHeight;camera.updateProjectionMatrix();renderer.setSize(el.clientWidth,el.clientHeight);fit(latest.current.view);if(amount>0)fitExplosion(0);};const observer=new ResizeObserver(resize);observer.observe(el);
   const raycaster=new T.Raycaster(),pointer=new T.Vector2(),tap=new PointerTap(),worldBox=new T.Box3(),hitPoint=new T.Vector3();
   const down=(e:PointerEvent)=>{interruptAssist();hover.hidden=true;tap.down(e.pointerId,e.clientX,e.clientY,e.pointerType==='touch'?12:5);};
   const move=(e:PointerEvent)=>{tap.move(e.pointerId,e.clientX,e.clientY);if(e.buttons||amount<.5||e.pointerType==='touch'){hover.hidden=true;return;}const rect=el.getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top,index=findTarget(x,y,12);hover.hidden=index<0;renderer.domElement.style.cursor=index<0?'grab':'pointer';if(index>=0){hover.textContent=atlas.parts[index].name;hover.style.left=`${Math.max(8,Math.min(x+14,el.clientWidth-260))}px`;hover.style.top=`${Math.max(8,Math.min(y+18,el.clientHeight-55))}px`;}};
@@ -222,10 +225,37 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
   let lastExtent=-1,lastLocked=false,lastOrgans=false;
   const animate=()=>{
    if(disposed)return;frame=requestAnimationFrame(animate);const s=latest.current;
+   // Only an explicit Reset animates; initial load, navigation and camera presets keep their own behavior.
+   const resetRequested=ready&&lastReset>=0&&s.reset!==lastReset&&s.cameraIntent==='reset'&&(s.cameraIntentRevision??0)!==intentRevision&&s.explode===0;
+   let fadeCommit=false,fadeInterrupted=false;
+   if(resetFade){
+    // Repeated Reset keeps the fade continuous; other navigation or slider input supersedes it.
+    if(resetRequested&&(s.cameraIntentRevision??0)!==resetFade.revision){resetFade.reset=s.reset;resetFade.revision=s.cameraIntentRevision??0;}
+    if(s.reset!==resetFade.reset||(s.cameraIntentRevision??0)!==resetFade.revision||s.explode!==0||s.rotate){resetFade=null;el.style.opacity='';renderer.domElement.style.pointerEvents='';fadeInterrupted=true;}
+   }
+   if(!resetFade&&!fadeInterrupted&&resetRequested&&amount>0&&!motionMedia.matches){
+    interruptAssist();hover.hidden=true;
+    resetFade={reset:s.reset,revision:s.cameraIntentRevision??0,start:performance.now(),fadeOut:motionDuration('--motion-fast'),fadeIn:motionDuration('--motion-slow'),committed:false};
+    renderer.domElement.style.pointerEvents='none';
+   }
+   if(resetFade){
+    const elapsed=performance.now()-resetFade.start;
+    if(!resetFade.committed){
+     const progress=motionProgress(elapsed,motionMedia.matches?0:resetFade.fadeOut);
+     el.style.opacity=String(1-progress);
+     // Keep the already rendered exploded canvas intact until fully transparent.
+     if(progress<1)return;
+     resetFade.committed=true;fadeCommit=true;renderer.domElement.style.pointerEvents='';
+    }
+    const progress=motionProgress(elapsed-(motionMedia.matches?0:resetFade.fadeOut),motionMedia.matches?0:resetFade.fadeIn);
+    el.style.opacity=String(progress);
+    if(progress===1){resetFade=null;el.style.opacity='';}
+   }
+   const resetOrigin=resetRequested&&!fadeCommit&&!fadeInterrupted&&!motionMedia.matches?captureCameraPose(camera,controls.target):null;
    applyTheme();applyDisplay();
    const locked=latestLock.current;
    if((s.cameraIntentRevision??0)!==intentRevision){interruptAssist();if(s.cameraIntent==='preset')intent.preset();else intent.reset();intentRevision=s.cameraIntentRevision??0;}
-   if(locked)interruptAssist();
+   if(locked&&frontAssist)interruptAssist();
    if(locked&&!lastLocked){
     // Drain residual damping without moving the orientation captured at lock time.
     const position=camera.position.clone(),target=controls.target.clone();
@@ -237,7 +267,7 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
    const hiddenChanged=lastState?.hiddenPartIds!==s.hiddenPartIds;
    const changed=hiddenChanged||lastState?.visible!==s.visible||lastState?.selected!==s.selected||lastState?.isolate!==s.isolate||lastState?.isolatedPartIds!==s.isolatedPartIds||lastState?.breastView!==s.breastView||lastState?.regionPartIds!==s.regionPartIds||lastState?.areaPartIds!==s.areaPartIds||lastState?.areaId!==s.areaId;
    const previousAmount=amount,moving=amount!==s.explode;
-   if(moving){amount=s.explode;dirty=true;}
+   if(moving){interruptAssist();amount=s.explode;dirty=true;}
    if(changed||moving||lastExtent<0){
     if(changed){hover.hidden=true;renderer.domElement.style.cursor='grab';}
     const visible=new Set(s.visible),selection=new Set(s.selected),visibilityContext={systems:visible,selected:selection};
@@ -254,7 +284,8 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
      const visibility=resolveVisibility(p,s,visibilityContext);if(!visibility.packingEligible)dx=dy=dz=0;
      const selected=selection.has(p.id)&&visibility.displayed;data.set([dx,dy,dz,visibility.displayed?1:0],i*4);const to=selected?255:0,activeHighlight=highlights.get(i);
      if((activeHighlight?.to??selectedData[i*4])!==to){
-      if(motionMedia.matches||!ready){selectedData[i*4]=selected?255:0;highlights.delete(i);}
+      // Confirm a new selection on its first frame; only the old highlight fades out.
+      if(selected||motionMedia.matches||!ready){selectedData[i*4]=selected?255:0;highlights.delete(i);}
       else highlights.set(i,{from:selectedData[i*4],to,start:performance.now()});
      }
      markerPositions.set(data[i*4+3]>.5?[c.x+dx,c.y+dy+groundOffset,c.z+dz]:[10000,10000,10000],i*3);const mesh=pickers[i];if(mesh){mesh.position.set(dx,dy+groundOffset,dz);mesh.updateMatrix();mesh.updateMatrixWorld(true);}
@@ -270,17 +301,26 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
     if(t===1){floorSettled=true;latestSettled.current();}
    }
    const organs=isOrgansPresentation(s);
-   if(s.view!==lastView||s.reset!==lastReset||(!systemsOnlyChange&&organs!==lastOrgans)){interruptAssist();sliderFrame=null;fit(s.view);if(amount>0)fitExplosion(0);lastView=s.view;lastReset=s.reset;}
+   if(s.view!==lastView||s.reset!==lastReset||(!systemsOnlyChange&&organs!==lastOrgans)){
+    interruptAssist();sliderFrame=null;
+    // Clear accumulated OrbitControls damping before computing the exact destination.
+    if(resetOrigin||fadeCommit){const damping=controls.enableDamping;controls.autoRotate=false;controls.enableDamping=false;controls.update();controls.enableDamping=damping;}
+    fit(s.view);if(amount>0)fitExplosion(0);lastView=s.view;lastReset=s.reset;
+   }
    else if(moving)fitExplosion(previousAmount);
    lastOrgans=organs;
    if(moving&&intent.assist(previousAmount,amount,locked))frontAssist={from:camera.position.clone().sub(controls.target).normalize(),start:performance.now(),duration:motionDuration('--motion-slow')};
    const isolateKey=isolationCameraKey(s,camera.aspect);
    if(isolateKey!==lastIsolate){
+    interruptAssist();
     if(s.isolate){const box=new T.Box3();atlas.parts.forEach((p,i)=>{if(s.isolatedPartIds?.has(p.id)??s.selected.includes(p.id))box.union(bounds[i].clone().translate(new T.Vector3(data[i*4],data[i*4+1]+groundOffset,data[i*4+2])));});
      if(!box.isEmpty()){const center=box.getCenter(new T.Vector3()),size=box.getSize(new T.Vector3());const w=el.clientWidth,h=el.clientHeight,mobile=w<768,landscape=w>h&&h<=600;let left=20,right=w-20,top=mobile?250:110,bottom=h-170;if(s.inspectorOpen){if(landscape){right=w-335;top=100;bottom=h-125;}else if(mobile){const sheet=document.querySelector('.detail-sheet')?.getBoundingClientRect(),header=document.querySelector('.identity')?.getBoundingClientRect();top=(header?.bottom??94)+16;bottom=(sheet?.top??h*.58-139)-16;}else{right=w-370;left=w>1100?285:25;}}const availableWidth=Math.max(150,right-left),availableHeight=Math.max(40,bottom-top);camera.setViewOffset(w,h,w/2-(left+right)/2,h/2-(top+bottom)/2,w,h);const distance=Math.max(.07,Math.max(size.y*h/availableHeight,size.x*w/availableWidth/camera.aspect,size.z)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))*1.35);controls.maxDistance=Math.max(40,distance*2);sliderFrame=null;controls.target.copy(center);camera.position.copy(center).add((s.view==='front'?new T.Vector3(0,.02,1):s.view==='back'?new T.Vector3(0,.02,-1):s.view==='side'?new T.Vector3(1,.02,0):new T.Vector3(.2,.1,1)).normalize().multiplyScalar(distance));controls.update();dirty=true;}
     }else if(lastIsolate){sliderFrame=null;camera.clearViewOffset();fit(s.view);}
     lastIsolate=isolateKey;
    }
+   // Capture the final fit after isolation exit too, so its framing cannot override the return.
+   if(resetOrigin)resetMotion=createCameraReturn(camera,controls.target,resetOrigin,performance.now(),motionDuration('--motion-reset'));
+   if(resetMotion){const done=resetMotion.update(performance.now(),motionMedia.matches);dirty=true;if(done)resetMotion=null;}
    if(frontAssist){const t=motionProgress(performance.now()-frontAssist.start,motionMedia.matches?0:frontAssist.duration),distance=camera.position.distanceTo(controls.target),direction=frontAssist.from.clone().lerp(new T.Vector3(0,.02,1).normalize(),t).normalize();camera.position.copy(controls.target).addScaledVector(direction,distance);sliderFrame=null;dirty=true;if(t===1){frontAssist=null;lastView='front';latestAssistedView.current('front');}}
    controls.enableRotate=!locked;controls.mouseButtons.LEFT=T.MOUSE.ROTATE;controls.touches.ONE=T.TOUCH.ROTATE;markers.visible=amount>.75;controls.autoRotate=s.rotate&&!locked&&!s.isolate&&amount<.4;controls.autoRotateSpeed=orbitRotationSpeed(latestRotation.current);const now=performance.now(),delta=Math.min(.1,(now-rotationTime)/1000);rotationTime=now;controls.update(controls.autoRotate?delta:undefined);if(controls.autoRotate){intent.orbit();dirty=true;}
    const floorEligible=sceneFloorEligible(s);
@@ -290,7 +330,7 @@ export default function AnatomyScene({onAssistedView,atlas,modelId,state,viewLoc
 
   };animate();
   const contextLost=(e:Event)=>{e.preventDefault();onError('The 3D session was paused by your device. Reload to continue.');};renderer.domElement.addEventListener('webglcontextlost',contextLost);
-  return()=>{disposed=true;abort.abort();cancelAnimationFrame(frame);observer.disconnect();renderer.domElement.removeEventListener('wheel',wheel,true);controls.dispose();revealRenderer.dispose();floor.dispose();scene.remove(floor.group);geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());scene.traverse(o=>{if(o instanceof T.Mesh&&!geometries.includes(o.geometry)){o.geometry.dispose();const ms=Array.isArray(o.material)?o.material:[o.material];ms.forEach(m=>m.dispose());}});env.dispose();partTexture.dispose();selectionTexture.dispose();markerGeometry.dispose();markerMaterial.dispose();hover.remove();renderer.dispose();renderer.domElement.remove();};
+  return()=>{disposed=true;el.style.opacity='';abort.abort();cancelAnimationFrame(frame);observer.disconnect();renderer.domElement.removeEventListener('wheel',wheel,true);controls.dispose();revealRenderer.dispose();floor.dispose();scene.remove(floor.group);geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());scene.traverse(o=>{if(o instanceof T.Mesh&&!geometries.includes(o.geometry)){o.geometry.dispose();const ms=Array.isArray(o.material)?o.material:[o.material];ms.forEach(m=>m.dispose());}});env.dispose();partTexture.dispose();selectionTexture.dispose();markerGeometry.dispose();markerMaterial.dispose();hover.remove();renderer.dispose();renderer.domElement.remove();};
  },[atlas,modelId]);
  return <div className="scene" data-revealed={revealed} ref={host}/>;
 }

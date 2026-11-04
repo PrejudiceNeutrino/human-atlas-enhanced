@@ -10,6 +10,7 @@ The project currently includes the original **BodyParts3D adult male reference a
 
 Compared with the original viewer, this fork now includes:
 
+- **Learn** at `/learn`, with a Digestive System subject at `/learn/digestive`, source-preserving Markdown lessons, and independently expandable explanations. See [`docs/learn.md`](docs/learn.md) for content and extension conventions.
 - **Male and female-study models** with model-scoped anatomical representation identity and no automatic male-to-female geometry fallback.
 - **Canonical anatomy identity** separating named anatomical concepts from the individual meshes that represent them.
 - **Anatomical Regions** for broad body navigation (for example: Head & Jaw, Cervical, Shoulder, Thoracic, Abdominal, Pelvic, Upper Limb, and Lower Limb), including primary and spanning memberships.
@@ -112,11 +113,14 @@ Common commands include:
 
 ```sh
 npm run check
+npm run test:learn
 npm test
 npm run build
 ```
 
 Additional validators and browser-smoke suites live under [`scripts/`](scripts/).
+
+The [2026-11-04 Learn and viewer handoff](docs/integration/LEARN_AND_VIEWER_HANDOFF_2026_11_04.md) documents the educational section, toolbar/panel refinements, selection feedback, Reset transitions, full changed-file inventory, and the completed and unavailable validation coverage.
 
 ## Scientific status
 

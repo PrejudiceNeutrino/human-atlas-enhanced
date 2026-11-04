@@ -6,6 +6,14 @@
   "installCommand": "npm ci",
   "rewrites": [
     {
+      "source": "/learn",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/learn/:subject",
+      "destination": "/index.html"
+    },
+    {
       "source": "/female",
       "destination": "/index.html"
     },
