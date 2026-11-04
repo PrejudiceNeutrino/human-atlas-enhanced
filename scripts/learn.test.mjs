@@ -10,6 +10,19 @@ import { build } from 'esbuild';
 
 const source = fs.readFileSync('data/learn/digestive-system-why-is-this-cool.json');
 const data = JSON.parse(source);
+const revisedSources = [
+  ['general-overview', '9bbdc7f72bee03f2dbdad6382fa7a07be9acb2052dd058af42df8672db6107fd', 8],
+  ['deep-dive', '5b441393a464d77f312ba6ca499c2b3a3102e98990d301142927496fb293ac1a', 15],
+  ['exam-cram', '92f7389c434386137e0a853a8bbbb673a78b8bf76b6a1db7455c5bbe0c8a7370', 15],
+].map(([slug, hash, sectionCount]) => {
+  const bytes = fs.readFileSync(`data/learn/digestive-system-${slug}.json`);
+  return { bytes, hash, sectionCount, article: JSON.parse(bytes) };
+});
+const connections = JSON.parse(fs.readFileSync('data/learn/digestive-system-how-it-connects.json'));
+const articleSources = [
+  ...revisedSources.map(source => ({ article: source.article, tabTitle: source.article.title })),
+  { article: connections, tabTitle: 'How It Connects' },
+];
 const dom = new JSDOM('<!doctype html><html lang="en"><head><title>Human Atlas</title></head><body><div id="root"></div></body></html>', {
   url: 'http://localhost/learn/digestive', pretendToBeVisual: true,
 });
@@ -25,7 +38,14 @@ window.matchMedia = query => ({
   matches: query.includes('prefers-reduced-motion'), media: query,
   addEventListener() {}, removeEventListener() {}, addListener() {}, removeListener() {},
 });
-window.ResizeObserver = globalThis.ResizeObserver = class { observe() {} unobserve() {} disconnect() {} };
+const resizeCallbacks = new Set();
+const resizeTargets = new Map();
+window.ResizeObserver = globalThis.ResizeObserver = class {
+  constructor(callback) { this.callback = callback; }
+  observe(element) { resizeCallbacks.add(this.callback); resizeTargets.set(this.callback, element); }
+  unobserve() {}
+  disconnect() { resizeCallbacks.delete(this.callback); resizeTargets.delete(this.callback); }
+};
 window.HTMLElement.prototype.getAnimations = () => [];
 // Canvas metrics are unavailable in this DOM-only environment.
 window.HTMLCanvasElement.prototype.getContext = () => null;
@@ -40,8 +60,8 @@ const { default: axe } = await import('axe-core');
 // Bundle only the page's local modules. Keep React and UI libraries external so
 // tests share one React instance and never touch a running Vite server's cache.
 const output = path.resolve('work/learn-tests/page.mjs');
-await build({ absWorkingDir: process.cwd(), stdin: { contents: "export {default} from './app/learn/page'; export {SiteNavigation} from './app/site-navigation'; export {learnSubjects} from './app/learn/subjects';", resolveDir: process.cwd(), sourcefile: 'learn-test-entry.ts' }, outfile: output, tsconfig: path.resolve('tsconfig.json'), bundle: true, platform: 'node', format: 'esm', packages: 'external', loader: { '.css': 'empty' }, alias: { '@': process.cwd() } });
-const { default: LearnPage, SiteNavigation, learnSubjects } = await import(pathToFileURL(output).href);
+await build({ absWorkingDir: process.cwd(), stdin: { contents: "export {default} from './app/learn/page'; export {SiteNavigation} from './app/site-navigation'; export {learnSubjects} from './app/learn/subjects'; export {EducationalMarkdown} from './app/learn/educational-markdown';", resolveDir: process.cwd(), sourcefile: 'learn-test-entry.ts' }, outfile: output, tsconfig: path.resolve('tsconfig.json'), bundle: true, platform: 'node', format: 'esm', packages: 'external', loader: { '.css': 'empty' }, alias: { '@': process.cwd() } });
+const { default: LearnPage, SiteNavigation, learnSubjects, EducationalMarkdown } = await import(pathToFileURL(output).href);
 const root = createRoot(document.querySelector('#root'));
 const render = async pathname => {
   flushSync(() => root.render(createElement(LearnPage, { pathname, key: pathname })));
@@ -58,6 +78,8 @@ const click = async button => {
   flushSync(() => button.click());
   await delay(60);
 };
+const tab = title => [...document.querySelectorAll('[role="tab"]')].find(node => node.querySelector('span')?.textContent === title);
+const selectTab = async title => { assert.ok(tab(title), title); await click(tab(title)); };
 after(async () => {
   flushSync(() => root.unmount());
   window.close();
@@ -82,12 +104,15 @@ test('Learn navigation, subject registry, landing page and unknown subject', { t
   await render('/learn/digestive');
   assert.equal(document.title, 'Digestive System · Human Atlas');
   assert.equal(document.querySelector('h1').textContent, 'Digestive System');
-  assert.equal(document.querySelector('.learn-section > h2').textContent, data.title);
+  assert.equal(tab('General Overview').getAttribute('aria-selected'), 'true');
+  assert.equal(document.querySelector('.learn-article-header > h2').textContent, 'General Overview');
   assert.equal(document.querySelector('.learn-subjects [aria-current]').textContent, 'Digestive');
 });
 
 test('all three entries conserve the complete Markdown text, emphasis, table and transport sequence', { timeout: 10000 }, async () => {
   await render('/learn/digestive');
+  await selectTab("Why's This Cool?");
+  assert.equal(document.querySelector('.learn-facts > h2').textContent, "Why's This Cool?");
   const entries = [...document.querySelectorAll('.learn-entry')];
   assert.equal(entries.length, 3);
   entries.forEach((entry, index) => {
@@ -114,6 +139,7 @@ test('all three entries conserve the complete Markdown text, emphasis, table and
 test('explanations start collapsed and toggle independently with accessible relationships', { timeout: 10000 }, async () => {
   await render('/learn');
   await render('/learn/digestive');
+  await selectTab("Why's This Cool?");
   const buttons = triggers();
   assert.equal(buttons.length, 3);
   buttons.forEach((button, index) => {
@@ -160,6 +186,233 @@ test('theme switching uses the shared persisted preference', { timeout: 10000 },
   assert.equal(document.documentElement.dataset.theme, previous);
 });
 
+test('all revised JSON sources retain exact ZIP-entry bytes, order and valid unique section identifiers', () => {
+  for (const { bytes, hash, sectionCount, article } of revisedSources) {
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), hash);
+    assert.equal(article.sections.length, sectionCount);
+    assert.equal(new Set(article.sections.map(section => section.id)).size, sectionCount);
+    assert.ok(article.sections.every(section => section.title && section.markdown));
+  }
+  assert.deepEqual(learnSubjects.map(subject => subject.slug), ['digestive']);
+  assert.deepEqual(learnSubjects[0].tabs.map(item => item.title), ['General Overview', 'Deep Dive', 'How It Connects', "Why's This Cool?", 'Exam Cram', 'Quizzes']);
+});
+
+test('six ordered tabs have accessible relationships and Quizzes is a disabled Coming Soon control', { timeout: 10000 }, async () => {
+  await render('/learn'); await render('/learn/digestive');
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  assert.equal(document.querySelector('[role="tablist"]').getAttribute('aria-label'), 'Digestive System content');
+  assert.equal(tabs.length, 6);
+  assert.equal(tabs.filter(node => node.getAttribute('aria-selected') === 'true').length, 1);
+  assert.equal(tab('General Overview').getAttribute('tabindex'), '0');
+  const quizzes = tab('Quizzes');
+  assert.ok(quizzes.disabled || quizzes.getAttribute('aria-disabled') === 'true');
+  assert.match(quizzes.textContent, /Coming Soon/); assert.equal(quizzes.tagName, 'BUTTON');
+  const location = window.location.href; await click(quizzes);
+  assert.equal(tab('General Overview').getAttribute('aria-selected'), 'true');
+  assert.equal(window.location.href, location);
+  for (const title of ['General Overview', 'Deep Dive', 'How It Connects', "Why's This Cool?", 'Exam Cram']) {
+    await selectTab(title);
+    const button = tab(title), panel = document.getElementById(button.getAttribute('aria-controls'));
+    assert.ok(panel); assert.equal(panel.getAttribute('role'), 'tabpanel');
+    assert.equal(panel.getAttribute('aria-labelledby'), button.id); assert.equal(panel.hidden, false);
+    assert.equal(document.querySelectorAll('.learn-entry').length, 3, 'the existing facts appear only once');
+  }
+  const ids = [...document.querySelectorAll('[id]')].map(node => node.id);
+  assert.equal(ids.length, new Set(ids).size);
+});
+
+test('all 48 article sections render complete wording, headings, lists, emphasis and tables without metadata paragraphs', { timeout: 15000 }, async () => {
+  for (const { article, tabTitle } of articleSources) {
+    await selectTab(tabTitle);
+    const rendered = document.querySelector('.learn-reading');
+    assert.equal(normalize(rendered.querySelector('.learn-article-header').textContent), normalize(article.title + standardText(article.introMarkdown)));
+    const sections = [...rendered.querySelectorAll('.learn-article-section')];
+    assert.equal(sections.length, article.sections.length);
+    sections.forEach((section, index) => {
+      const original = article.sections[index], markdown = section.querySelector('.learn-markdown');
+      assert.equal(section.querySelector('h3').textContent, original.title);
+      assert.equal(section.querySelector('h3').id, `${article.id}-${original.id}`);
+      assert.equal(normalize(markdown.textContent), standardText(original.markdown), original.id);
+      const expected = JSDOM.fragment(renderToStaticMarkup(createElement(Markdown, { remarkPlugins: [remarkGfm], children: original.markdown })));
+      for (const selector of ['p', 'li', 'strong', 'em', 'table', 'tr', 'th', 'td']) {
+        assert.equal(markdown.querySelectorAll(selector).length, expected.querySelectorAll(selector).length, `${original.id} ${selector}`);
+      }
+      assert.deepEqual([...markdown.querySelectorAll('th, td')].map(cell => cell.textContent), [...expected.querySelectorAll('th, td')].map(cell => cell.textContent));
+      markdown.querySelectorAll('th').forEach(cell => assert.equal(cell.getAttribute('scope'), 'col'));
+      markdown.querySelectorAll('.learn-table').forEach(table => {
+        assert.equal(table.getAttribute('tabindex'), '0'); assert.equal(table.getAttribute('aria-label'), `${original.title} table`);
+      });
+    });
+    assert.equal(normalize(rendered.querySelector('.learn-article-header > .learn-markdown').textContent), standardText(article.introMarkdown));
+    assert.doesNotMatch(rendered.textContent, /slideReferences|sourceFiles|introMarkdown/);
+  }
+  await selectTab('Exam Cram');
+  assert.ok(document.getElementById('digestive-system-exam-cram-visual-labels'));
+  assert.ok(document.getElementById('digestive-system-exam-cram-rapid-recall'));
+});
+
+test('How It Connects preserves the entire pasted journey and supports section bookmarks', { timeout: 10000 }, async () => {
+  assert.equal(connections.title, 'The Journey of Digestion');
+  assert.equal(connections.sections.length, 10);
+  const reconstructed = `# ${connections.title}\n\n${connections.introMarkdown}\n\n` + connections.sections.map(section => `## ${section.title}\n\n${section.markdown}`).join('\n\n');
+  // Full supplied text with CRLF normalized to LF and only terminal newlines removed.
+  assert.equal(createHash('sha256').update(reconstructed).digest('hex'), 'fd3fc71facdcd9520e277744b798452877e987f2d8e9de2435ef6a10c4b3c1bf');
+  await selectTab('How It Connects');
+  assert.equal(document.querySelector('.learn-article-header h2').textContent, connections.title);
+  assert.equal(document.querySelector('.learn-article-header em').textContent, 'How your body turns a meal into the materials that keep you alive.');
+  const links = document.querySelectorAll('[aria-label="The Journey of Digestion contents"] a');
+  assert.equal(links.length, 20, 'ten topics in each desktop/mobile index');
+  await click(links[6]); await delay(30);
+  const hash = window.location.hash;
+  assert.equal(hash, links[6].getAttribute('href'));
+  await render('/learn'); await render('/learn/digestive');
+  assert.equal(tab('How It Connects').getAttribute('aria-selected'), 'true');
+  assert.ok(document.getElementById(hash.slice(1)));
+  await selectTab('General Overview'); assert.equal(window.location.hash, '');
+});
+
+test('Deep Dive indexes every topic with existing-page anchors and keyboard-focusable destinations', { timeout: 10000 }, async () => {
+  await selectTab('Deep Dive');
+  const article = revisedSources[1].article;
+  for (const index of document.querySelectorAll('[aria-label="Deep Dive contents"]')) {
+    const links = [...index.querySelectorAll('a')]; assert.equal(links.length, article.sections.length);
+    links.forEach((link, i) => {
+      assert.equal(link.textContent, article.sections[i].title);
+      const heading = document.getElementById(link.getAttribute('href').slice(1));
+      assert.equal(heading.textContent, article.sections[i].title); assert.equal(heading.getAttribute('tabindex'), '-1');
+    });
+  }
+  const link = document.querySelector('[aria-label="Deep Dive contents"] a'); await click(link);
+  assert.equal(document.activeElement.id, link.getAttribute('href').slice(1));
+  await delay(30);
+  const hash = window.location.hash; assert.equal(hash, link.getAttribute('href'));
+  await render('/learn'); await render('/learn/digestive');
+  assert.equal(tab('Deep Dive').getAttribute('aria-selected'), 'true', 'a bookmarked topic opens its tab');
+  await selectTab('General Overview'); assert.equal(window.location.hash, '');
+  assert.equal(document.querySelectorAll('[aria-label="General Overview contents"]').length, 2);
+});
+
+test('keyboard tab navigation uses roving focus and manual activation; Coming Soon is discoverable but cannot activate', { timeout: 10000 }, async () => {
+  await selectTab('General Overview'); tab('General Overview').focus();
+  const press = async (key, code = key) => {
+    flushSync(() => document.activeElement.dispatchEvent(new window.KeyboardEvent('keydown', { key, code, bubbles: true, cancelable: true })));
+    await delay(60);
+    // jsdom does not synthesize a native button's default Enter/Space click.
+    // Emulate that browser default; arrow/Home/End focus above runs the real tab handlers.
+    if (key === 'Enter' || key === ' ') {
+      assert.equal(document.activeElement.tagName, 'BUTTON');
+      await click(document.activeElement);
+    }
+  };
+  await press('ArrowRight'); assert.equal(document.activeElement, tab('Deep Dive'));
+  assert.equal(tab('General Overview').getAttribute('aria-selected'), 'true');
+  await press('Enter'); assert.equal(tab('Deep Dive').getAttribute('aria-selected'), 'true');
+  await press('ArrowRight'); assert.equal(document.activeElement, tab('How It Connects'));
+  await press('Enter'); assert.equal(tab('How It Connects').getAttribute('aria-selected'), 'true');
+  await press('End'); assert.equal(document.activeElement.textContent, tab('Quizzes').textContent);
+  await press('Enter'); assert.equal(tab('How It Connects').getAttribute('aria-selected'), 'true');
+  await press('ArrowLeft'); assert.equal(document.activeElement.textContent, tab('Exam Cram').textContent);
+  await press('ArrowLeft'); assert.equal(document.activeElement.textContent, tab("Why's This Cool?").textContent);
+  await press(' ', 'Space'); assert.equal(tab("Why's This Cool?").getAttribute('aria-selected'), 'true');
+  await press('ArrowRight'); assert.equal(document.activeElement.textContent, tab('Exam Cram').textContent);
+  await press('ArrowRight'); assert.equal(document.activeElement.textContent, tab('Quizzes').textContent);
+  await press('ArrowRight'); assert.equal(document.activeElement.textContent, tab('General Overview').textContent);
+  await press('Home'); assert.equal(document.activeElement.textContent, tab('General Overview').textContent);
+});
+
+test('switching from a scrolled article starts the next tab at its top without smooth motion', { timeout: 10000 }, async () => {
+  const tabs = document.querySelector('.learn-reading-tabs');
+  const rect = tabs.getBoundingClientRect, scroll = tabs.scrollIntoView;
+  let options;
+  tabs.getBoundingClientRect = () => ({ top: -800 }); tabs.scrollIntoView = value => { options = value; };
+  try {
+    await selectTab('Exam Cram');
+    assert.deepEqual(options, { block: 'start', behavior: 'instant' });
+    assert.equal(tab('Exam Cram').getAttribute('aria-selected'), 'true');
+  } finally { tabs.getBoundingClientRect = rect; tabs.scrollIntoView = scroll; }
+});
+
+test('the mobile Deep Dive index starts collapsed and can expose its complete section list', { timeout: 10000 }, async () => {
+  await selectTab('Deep Dive');
+  const index = document.querySelector('.learn-index-mobile'); assert.equal(index.tagName, 'DETAILS');
+  assert.equal(index.open, false); await click(index.querySelector('summary')); assert.equal(index.open, true);
+  assert.equal(index.querySelectorAll('a').length, 15);
+  await click(index.querySelector('summary')); assert.equal(index.open, false);
+});
+
+test('all five content tabs have compact shared indexes with working, unique section targets', { timeout: 10000 }, async () => {
+  for (const [title, count, indexTitle = title] of [['General Overview', 8], ['How It Connects', 10, 'The Journey of Digestion'], ['Deep Dive', 15], ['Exam Cram', 15], ["Why's This Cool?", 3]]) {
+    await selectTab(title);
+    const panel = document.getElementById(tab(title).getAttribute('aria-controls'));
+    const indexes = panel.querySelectorAll(`nav[aria-label="${indexTitle} contents"]`);
+    assert.equal(indexes.length, 2, title);
+    indexes.forEach(index => {
+      const links = [...index.querySelectorAll('a')]; assert.equal(links.length, count);
+      links.forEach(link => assert.equal(document.getElementById(link.getAttribute('href').slice(1))?.textContent, link.textContent));
+    });
+    const ids = [...document.querySelectorAll('[id]')].map(node => node.id);
+    assert.equal(ids.length, new Set(ids).size);
+  }
+});
+
+test('scroll-aware highlighting follows the reading position in every tab, including upward scroll, resize and article end', { timeout: 12000 }, async () => {
+  const shell = document.querySelector('.learn-shell');
+  Object.defineProperty(shell, 'clientHeight', { configurable: true, value: 800 });
+  Object.defineProperty(shell, 'scrollHeight', { configurable: true, value: 10000 });
+  for (const title of ['General Overview', 'How It Connects', 'Deep Dive', 'Exam Cram', "Why's This Cool?"]) {
+    shell.scrollTop = 0; await selectTab(title);
+    const panel = document.getElementById(tab(title).getAttribute('aria-controls'));
+    const links = [...panel.querySelector('.learn-index-desktop nav').querySelectorAll('a')];
+    const headings = links.map(link => document.getElementById(link.getAttribute('href').slice(1)));
+    const originals = headings.map(heading => heading.getBoundingClientRect);
+    const bar = document.querySelector('.learn-tab-bar'), barRect = bar.getBoundingClientRect;
+    bar.getBoundingClientRect = () => ({ bottom: 80 });
+    headings.forEach((heading, i) => { heading.getBoundingClientRect = () => ({ top: 200 + i * 400 - shell.scrollTop }); });
+    const expectCurrent = i => {
+      const current = [...panel.querySelectorAll('a[aria-current="location"]')];
+      assert.equal(current.length, 2, `${title}: both indexes highlight one item`);
+      assert.ok(current.every(link => link.getAttribute('href') === `#${headings[i].id}`), `${title}: section ${i}`);
+    };
+    const scroll = async top => { shell.scrollTop = top; shell.dispatchEvent(new window.Event('scroll')); await delay(60); };
+    try {
+      window.dispatchEvent(new window.Event('resize')); await delay(60); expectCurrent(0);
+      await scroll(550); expectCurrent(1);
+      await scroll(0); expectCurrent(0);
+      shell.scrollTop = 950; resizeCallbacks.forEach(callback => callback()); await delay(60); expectCurrent(2);
+      await scroll(9200); expectCurrent(headings.length - 1);
+    } finally {
+      headings.forEach((heading, i) => { heading.getBoundingClientRect = originals[i]; });
+      bar.getBoundingClientRect = barRect; shell.scrollTop = 0;
+    }
+  }
+  assert.equal([...resizeTargets.values()].filter(element => element.matches('.learn-article-layout')).length, 1, 'only the visible reading layout observes scroll-related reflow; Base UI has its own panel observers');
+});
+
+test('facts accordions retain independent open state across article tab changes', { timeout: 10000 }, async () => {
+  await render('/learn'); await render('/learn/digestive'); await selectTab("Why's This Cool?");
+  assert.deepEqual(triggers().map(button => button.getAttribute('aria-expanded')), ['false', 'false', 'false']);
+  await click(triggers()[0]); await click(triggers()[2]);
+  await selectTab('Exam Cram'); assert.ok(triggers()[0].closest('[role="tabpanel"]').hidden);
+  await selectTab("Why's This Cool?");
+  assert.deepEqual(triggers().map(button => button.getAttribute('aria-expanded')), ['true', 'false', 'true']);
+});
+
+test('every article tab passes the DOM accessibility audit', { timeout: 15000 }, async () => {
+  for (const { article, tabTitle } of articleSources) {
+    await selectTab(tabTitle);
+    const results = await axe.run(document, { rules: { 'color-contrast': { enabled: false } } });
+    assert.deepEqual(results.violations.map(({ id, description }) => ({ id, description })), [], article.title);
+  }
+});
+
+test('shared Markdown rendering does not execute raw HTML or unsafe link schemes', () => {
+  const html = renderToStaticMarkup(createElement(EducationalMarkdown, { children: '<script>alert(1)</script>\n\n[Unsafe](javascript:alert%281%29)\n\n**Retained emphasis**' }));
+  const fragment = JSDOM.fragment(html);
+  assert.equal(fragment.querySelector('script'), null);
+  assert.notEqual(fragment.querySelector('a').getAttribute('href')?.startsWith('javascript:'), true);
+  assert.equal(fragment.querySelector('strong').textContent, 'Retained emphasis');
+});
+
 test('Learn opens an accessible subject chooser without navigating or replacing the explorer', { timeout: 10000 }, async () => {
   window.history.replaceState(null, '', '/male?region=atlas%3Aregion%3Athoracic');
   flushSync(() => root.render(createElement('main', { id: 'explorer-fixture', 'data-camera-pose': 'preserved' }, createElement(SiteNavigation, { section: 'explore' }))));
@@ -179,6 +432,12 @@ test('Learn opens an accessible subject chooser without navigating or replacing 
   links.forEach((link, index) => {
     assert.equal(link.getAttribute('href'), learnSubjects[index].href);
     assert.equal(link.querySelector('.learn-menu-subject-title').textContent, learnSubjects[index].title);
+    const preview = link.querySelector('.learn-menu-subject-preview');
+    assert.equal(preview.getAttribute('role'), 'list');
+    assert.equal(preview.getAttribute('aria-label'), `${learnSubjects[index].title} sections`);
+    assert.deepEqual([...preview.querySelectorAll('.learn-menu-preview-item > span:first-child')].map(item => item.textContent), learnSubjects[index].tabs.map(item => item.title));
+    assert.equal(preview.querySelector('.learn-menu-preview-status').textContent, 'Coming Soon');
+    assert.equal(link.querySelector('.learn-menu-subject-count').textContent, '5 sections');
   });
   assert.equal(document.activeElement, links[0]);
   const results = await axe.run(document, { rules: { 'color-contrast': { enabled: false } } });

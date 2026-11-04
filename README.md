@@ -10,7 +10,7 @@ The project currently includes the original **BodyParts3D adult male reference a
 
 Compared with the original viewer, this fork now includes:
 
-- **Learn** opens a glass subject chooser over the current page, with a Digestive System subject at `/learn/digestive`, source-preserving Markdown lessons, and independently expandable explanations. `/learn` remains available directly. See [`docs/learn.md`](docs/learn.md) for content and extension conventions.
+- **Learn** opens a glass subject chooser over the current page. Digestive System at `/learn/digestive` has General Overview, Deep Dive, How It Connects, the original Why's This Cool? explanations, Exam Cram, and a disabled Quizzes (Coming Soon) tab. All five readings have compact section indexes with scroll-aware highlighting. `/learn` remains available directly. See [`docs/learn.md`](docs/learn.md) for content and extension conventions.
 - **Male and female-study models** with model-scoped anatomical representation identity and no automatic male-to-female geometry fallback.
 - **Canonical anatomy identity** separating named anatomical concepts from the individual meshes that represent them.
 - **Anatomical Regions** for broad body navigation (for example: Head & Jaw, Cervical, Shoulder, Thoracic, Abdominal, Pelvic, Upper Limb, and Lower Limb), including primary and spanning memberships.
@@ -123,6 +123,8 @@ Additional validators and browser-smoke suites live under [`scripts/`](scripts/)
 The [2026-11-04 Learn and viewer handoff](docs/integration/LEARN_AND_VIEWER_HANDOFF_2026_11_04.md) documents the educational section, toolbar/panel refinements, selection feedback, Reset transitions, full changed-file inventory, and the completed and unavailable validation coverage.
 
 The subsequent [Learn chooser and explosion handoff](docs/integration/LEARN_MENU_AND_EXPLOSION_HANDOFF_2026_11_04.md) documents all changes since that delivery: glass subject selection, softened navigation, staged Play/Pause expansion, camera scale correction and the return to the original three-quarter angle at zero. Playback behavior and tests are described in [`docs/explode-playback.md`](docs/explode-playback.md).
+
+The [Digestive Learn handoff](docs/integration/DIGESTIVE_LEARN_HANDOFF_2026_11_04.md) documents the following local delivery: revised articles and How It Connects, final tab order/labels, shared section indexes with scroll-aware highlighting, wider subject preview and the female Chest detail panel placement, with the complete changed-file inventory and verification limits.
 
 ## Scientific status
 

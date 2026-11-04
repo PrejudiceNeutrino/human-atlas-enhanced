@@ -101,7 +101,7 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 .atlas-home-link{pointer-events:auto;text-decoration:none;border-radius:4px}
 .route-loading{height:100%;display:flex;flex-direction:column;gap:20px;align-items:center;justify-content:center;padding:24px;text-align:center}
 
-.breast-views{padding:10px 0 8px;border-bottom:1px solid var(--border);flex-shrink:0}.breast-views>span{font-size:11px;color:var(--ui-muted)}.breast-views>div{display:flex;gap:4px;margin-top:6px}.breast-views button{flex:1;min-height:30px;padding:4px 6px;font-size:11px;border-radius:4px;color:var(--ui-muted)}.breast-views button[aria-pressed=true]{background:var(--accent);color:var(--primary)}.breast-views p{font-size:10px;line-height:1.4;color:var(--ui-muted);margin:6px 0 0;min-height:28px}
+.breast-views{margin-top:8px;padding:10px 0 8px;border-top:1px solid var(--border);flex-shrink:0}.breast-views>span{font-size:11px;color:var(--ui-muted)}.breast-views>div{display:flex;gap:4px;margin-top:6px}.breast-views button{flex:1;min-height:30px;padding:4px 6px;font-size:11px;border-radius:4px;color:var(--ui-muted)}.breast-views button[aria-pressed=true]{background:var(--accent);color:var(--primary)}.breast-views p{font-size:10px;line-height:1.4;color:var(--ui-muted);margin:6px 0 0;min-height:28px}
 
 @media(max-width:767px){.breast-views button{min-height:44px}}
 

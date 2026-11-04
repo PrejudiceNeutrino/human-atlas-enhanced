@@ -23,14 +23,15 @@ const transportSequence: Plugin<[], Root> = () => tree => {
   }
 };
 
-export function EducationalMarkdown({ children, headingOffset = 0 }: {
+export function EducationalMarkdown({ children, headingOffset = 0, tableLabel }: {
   children: string;
   headingOffset?: number;
+  tableLabel?: string;
 }) {
   const components = useMemo(() => {
     const renderers: Components = {
       table: ({ node: _node, ...props }) => (
-        <div className="learn-table"><table {...props} /></div>
+        <div className="learn-table" role={tableLabel ? 'region' : undefined} aria-label={tableLabel} tabIndex={tableLabel ? 0 : undefined}><table {...props} /></div>
       ),
       th: ({ node: _node, ...props }) => <th scope="col" {...props} />,
     };
@@ -39,7 +40,7 @@ export function EducationalMarkdown({ children, headingOffset = 0 }: {
       renderers[`h${level}`] = ({ node: _node, ...props }) => <Heading {...props} />;
     }
     return renderers;
-  }, [headingOffset]);
+  }, [headingOffset, tableLabel]);
   return (
     <div className="learn-markdown">
       <Markdown remarkPlugins={[remarkGfm, transportSequence]} components={components}>

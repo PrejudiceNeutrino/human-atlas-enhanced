@@ -1,0 +1,156 @@
+{
+  "id": "digestive-system-general-overview",
+  "title": "General Overview",
+  "subject": "digestive-system",
+  "subtitle": "Digestive System | Start Here",
+  "introMarkdown": "The digestive system turns food into molecules your cells can use, transfers those molecules into your body, and eliminates what remains. It does this through muscular movement, digestive chemicals, specialized absorptive surfaces, and communication between nerves and hormones.\n\nThe **gastrointestinal (GI) tract**, also called the *alimentary canal*, is the continuous passage from mouth to anus. **Accessory organs**—including the teeth, tongue, salivary glands, liver, gallbladder, and pancreas—help digestion without food traveling through them as part of the main tube.",
+  "sections": [
+    {
+      "id": "food-pathway",
+      "title": "The Journey of Food",
+      "markdown": "- **Mouth:** Teeth and tongue break up food; saliva moistens it and begins starch digestion.\n- **Pharynx and esophagus:** Swallowing and peristalsis carry the food bolus into the stomach.\n- **Stomach:** Stores and churns food, secretes acid and protein-digesting enzymes, and produces semi-fluid *chyme*.\n- **Small intestine:** Receives bile and pancreatic secretions; completes most chemical digestion and absorbs most nutrients.\n- **Large intestine:** Reabsorbs remaining water and electrolytes, compacts feces, and stores waste for elimination.\n\n**Route:** Oral cavity → pharynx → esophagus → stomach → duodenum → jejunum → ileum → cecum → colon → rectum → anal canal.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          5,
+          6,
+          34,
+          53
+        ],
+        "Digestive.pptx": [
+          2,
+          30,
+          34
+        ]
+      }
+    },
+    {
+      "id": "seven-functions",
+      "title": "Seven Core Functions",
+      "markdown": "The instructor's Chapter 24 slides define seven digestive functions:\n\n- **Ingestion:** Bring food into the mouth.\n- **Mechanical processing:** Physically crush, mix, and churn it.\n- **Chemical digestion:** Enzymes break large food molecules into smaller ones.\n- **Secretion:** Release water, acids, enzymes, mucus, and buffers.\n- **Absorption:** Transfer nutrients, water, and electrolytes into blood or lymph.\n- **Compaction:** Remove water from indigestible material to form feces.\n- **Defecation:** Eliminate feces.\n\n**Motility** is still essential: it describes the muscle activity that mixes and propels digestive contents, rather than being a separate item in this particular seven-function list.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          4,
+          9,
+          10,
+          11
+        ],
+        "Digestive.pptx": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "mechanical-versus-chemical",
+      "title": "Movement and Chemical Breakdown",
+      "markdown": "**Mechanical digestion** changes the size or distribution of food without changing its molecules; chewing, stomach churning, and intestinal mixing are examples.\n\n**Chemical digestion** uses enzymes to break starches into sugars, proteins into amino acids and peptides, and fats primarily into fatty acids and monoglycerides.\n\n**Peristalsis** pushes contents forward. **Segmentation** primarily mixes them. Powerful **mass movements** transport material over larger distances through the colon.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          2,
+          9,
+          10,
+          11
+        ],
+        "Digestive.pptx": [
+          2,
+          13
+        ]
+      }
+    },
+    {
+      "id": "digestive-helpers",
+      "title": "The Accessory Organs",
+      "markdown": "- **Salivary glands:** Produce saliva for lubrication, antimicrobial protection, and initial carbohydrate digestion.\n- **Pancreas:** Sends digestive enzymes and bicarbonate into the duodenum.\n- **Liver:** Produces bile and processes absorbed nutrients.\n- **Gallbladder:** Stores and concentrates bile, releasing it when needed.\n\n**Bile is not a digestive enzyme.** It disperses fat into smaller droplets so pancreatic lipase can work more effectively.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          16,
+          17,
+          42,
+          45,
+          48,
+          50
+        ],
+        "Digestive.pptx": [
+          6,
+          23,
+          25,
+          28
+        ]
+      }
+    },
+    {
+      "id": "absorption",
+      "title": "Where Nutrients Go",
+      "markdown": "The **duodenum** mixes incoming chyme with bile and pancreatic secretions. The **jejunum** absorbs much of the digested nutrient load. The **ileum** is especially important for reclaiming bile salts and absorbing vitamin B12.\n\nCircular folds (*plicae circulares*), **villi**, and microscopic **microvilli** enlarge the intestinal absorptive surface. Most sugars and amino acids reach the liver through portal blood. Much of the long-chain dietary fat enters lymphatic **lacteals** as particles called *chylomicrons* before reaching the bloodstream.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          34,
+          35,
+          36,
+          38,
+          39,
+          40
+        ],
+        "Digestive.pptx": [
+          30,
+          31
+        ]
+      }
+    },
+    {
+      "id": "digestive-control",
+      "title": "How Digestion Is Coordinated",
+      "markdown": "The digestive tract responds to stretch, acidity, and the chemical composition of food. The **enteric nervous system**, brainstem reflexes, and gastrointestinal hormones work together to control contractions and secretions.\n\n**Gastrin** increases stomach activity; **secretin** promotes bicarbonate secretion in response to acid; **CCK** promotes pancreatic enzyme release and gallbladder contraction in response to fats and proteins. When chyme reaches the duodenum, feedback generally slows gastric emptying.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          12,
+          26,
+          27,
+          28,
+          29,
+          32,
+          33
+        ]
+      }
+    },
+    {
+      "id": "defenses-and-waste",
+      "title": "Protection and Waste Removal",
+      "markdown": "Your stomach protects its own lining with a mucus–bicarbonate barrier while using acid to help denature proteins and kill many microbes. The small intestine has antimicrobial **Paneth cells** and immune tissue such as **Peyer's patches**.\n\nIn the colon, bacteria ferment some leftover material while the intestinal wall reabsorbs water. Rectal stretching triggers the **defecation reflex**; the internal anal sphincter acts involuntarily, while the external sphincter is under voluntary control.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          24,
+          25,
+          37,
+          40,
+          53,
+          55,
+          56
+        ],
+        "Digestive.pptx": [
+          31,
+          33,
+          34
+        ]
+      }
+    },
+    {
+      "id": "anatomy-study",
+      "title": "What Anatomy Students Also Need to Identify",
+      "markdown": "In addition to understanding functions, anatomy classes often expect students to recognize structures on diagrams and lab models. For the digestive system, important examples include the **four stomach regions**, **tooth layers**, **salivary glands**, **pancreatic ducts**, **liver lobes**, **bile ducts**, **intestinal folds and villi**, and **segments of the large intestine**.\n\nThe **Deep Dive** explains these structures. **Exam Cram** lists the instructor's high-yield terms for rapid review.",
+      "slideReferences": {
+        "Digestive.pptx": [
+          3,
+          10,
+          18,
+          19,
+          21,
+          24,
+          28,
+          31,
+          34,
+          35
+        ]
+      }
+    }
+  ]
+}

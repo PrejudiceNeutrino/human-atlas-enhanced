@@ -1,2 +1,6 @@
 # Preserve the supplied educational source and its byte-level integrity check.
 /data/learn/digestive-system-why-is-this-cool.json -text
+/data/learn/digestive-system-general-overview.json -text
+/data/learn/digestive-system-how-it-connects.json -text
+/data/learn/digestive-system-deep-dive.json -text
+/data/learn/digestive-system-exam-cram.json -text

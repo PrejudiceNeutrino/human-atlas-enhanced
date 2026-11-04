@@ -32,7 +32,7 @@ export function LearnSubjectMenu({ active }: { active: boolean }) {
         </header>
         <nav className="learn-menu-subjects" aria-label="Learn subjects">
           {learnSubjects.map((subject, index) => {
-            const entryCount = subject.sections.reduce((count, section) => count + section.sections.length, 0);
+            const sectionCount = subject.tabs.filter(tab => tab.kind !== 'coming-soon').length;
             return (
               <a
                 ref={index === 0 ? firstSubject : undefined}
@@ -43,8 +43,15 @@ export function LearnSubjectMenu({ active }: { active: boolean }) {
                 <span className="learn-menu-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
                 <span className="learn-menu-subject-copy">
                   <span className="learn-menu-subject-title">{subject.title}</span>
-                  <span className="learn-menu-subject-preview">{subject.sections[0]?.title}</span>
-                  <span className="learn-menu-subject-count">{entryCount} {entryCount === 1 ? 'explanation' : 'explanations'}</span>
+                  <span className="learn-menu-subject-preview" role="list" aria-label={`${subject.title} sections`}>
+                    {subject.tabs.map(tab => (
+                      <span className="learn-menu-preview-item" role="listitem" key={tab.id}>
+                        <span>{tab.title}</span>
+                        {tab.kind === 'coming-soon' && <span className="learn-menu-preview-status">Coming Soon</span>}
+                      </span>
+                    ))}
+                  </span>
+                  <span className="learn-menu-subject-count">{sectionCount} {sectionCount === 1 ? 'section' : 'sections'}</span>
                 </span>
                 <span className="learn-menu-subject-arrow" aria-hidden="true"><ArrowUpRight size={18} /></span>
               </a>

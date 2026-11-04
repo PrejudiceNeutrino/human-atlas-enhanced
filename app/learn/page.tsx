@@ -3,7 +3,7 @@ import { ArrowUpRight, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { SiteNavigation } from '../site-navigation';
 import { browserTheme, useTheme } from '../theme-store';
-import { EducationalEntry } from './educational-entry';
+import { SubjectTabs } from './subject-tabs';
 import { learnSubjects, subjectForPath } from './subjects';
 import './learn.css';
 
@@ -39,19 +39,12 @@ export default function LearnPage({ pathname }: { pathname: string }) {
           </a>
         ))}
       </nav>
-      <main id="learn-content" className="learn-content" tabIndex={-1}>
+      <main id="learn-content" className="learn-content" data-subject={subject?.slug} tabIndex={-1}>
         <div className="learn-page-heading">
           {subject && <a className="learn-breadcrumb" href="/learn">Learn</a>}
           <h1>{title}</h1>
         </div>
-        {subject ? subject.sections.map(section => (
-          <section key={section.id} className="learn-section" aria-labelledby={`${section.id}-heading`}>
-            <h2 id={`${section.id}-heading`}>{section.title}</h2>
-            {section.sections.map((entry, index) => (
-              <EducationalEntry key={entry.id} sectionId={section.id} entry={entry} index={index} />
-            ))}
-          </section>
-        )) : (
+        {subject ? <SubjectTabs key={subject.slug} subject={subject} /> : (
           <div className="learn-subject-list">
             {learnSubjects.map(item => (
               <a className="learn-subject-card" key={item.slug} href={item.href}>
