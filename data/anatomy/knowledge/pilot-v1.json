@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "scope": "Curated pilot; no inference from unsourced mesh labels",
+  "sources": [
+    {
+      "id": "FIPAT-TA2",
+      "title": "FIPAT Terminologia Anatomica (2nd edition)",
+      "url": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "note": "Terminology standard; Latin fields are provisional candidates until term-level TA2 review."
+    },
+    {
+      "id": "NCBI-BILIARY",
+      "title": "Anatomy, Abdomen and Pelvis: Biliary Ducts",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK459246/"
+    },
+    {
+      "id": "BP3D-SOURCE",
+      "title": "BodyParts3D source anatomical inventory",
+      "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html"
+    }
+  ],
+  "records": [
+    {
+      "sourceConceptId": "FMA14669",
+      "name": "Right hepatic duct",
+      "latin": "Ductus hepaticus dexter",
+      "aliases": [
+        "Right liver duct"
+      ],
+      "system": "digestive",
+      "kind": "duct",
+      "summary": "The right hepatic duct collects bile from the right functional liver and ordinarily joins the left hepatic duct to form the common hepatic duct.",
+      "definition": "An extrahepatic continuation of intrahepatic bile drainage from the right liver. Its contributing anterior and posterior sectoral ducts vary in branching and junction pattern.",
+      "hierarchy": [
+        "Digestive system",
+        "Biliary system",
+        "Hepatic ducts"
+      ],
+      "function": "Conveys bile toward the common hepatic duct.",
+      "relationships": [
+        "Typically formed by right anterior and posterior hepatic sectoral ducts",
+        "Ordinarily joins the left hepatic duct at the hepatic duct confluence"
+      ],
+      "clinical": "Biliary branching variants are important in liver surgery, transplantation and biliary drainage.",
+      "reviewStatus": "candidate",
+      "sourceIds": [
+        "FIPAT-TA2",
+        "BP3D-SOURCE",
+        "NCBI-BILIARY"
+      ],
+      "note": "Editorial educational synthesis; terminology and detailed clinical fields require individual expert review."
+    },
+    {
+      "sourceConceptId": "FMA14670",
+      "name": "Left hepatic duct",
+      "latin": "Ductus hepaticus sinister",
+      "aliases": [
+        "Left liver duct"
+      ],
+      "system": "digestive",
+      "kind": "duct",
+      "summary": "The left hepatic duct carries bile drained from the left functional liver toward the confluence with the right hepatic duct.",
+      "definition": "Collecting duct of the left functional liver, receiving tributaries from left hepatic segments and sometimes the caudate lobe.",
+      "hierarchy": [
+        "Digestive system",
+        "Biliary system",
+        "Hepatic ducts"
+      ],
+      "function": "Transports bile out of the left liver.",
+      "relationships": [
+        "Receives segmental biliary tributaries",
+        "Ordinarily unites with the right hepatic duct to form the common hepatic duct"
+      ],
+      "clinical": "Variation in drainage patterns matters for biliary reconstruction and hepatic resection.",
+      "reviewStatus": "candidate",
+      "sourceIds": [
+        "FIPAT-TA2",
+        "BP3D-SOURCE",
+        "NCBI-BILIARY"
+      ],
+      "note": "Editorial educational synthesis; terminology and detailed clinical fields require individual expert review."
+    },
+    {
+      "sourceConceptId": "FMA14668",
+      "name": "Common hepatic duct",
+      "latin": "Ductus hepaticus communis",
+      "aliases": [
+        "CHD"
+      ],
+      "system": "digestive",
+      "kind": "duct",
+      "summary": "The common hepatic duct carries bile from the hepatic duct confluence toward its junction with the cystic duct.",
+      "definition": "A segment of the extrahepatic biliary tract extending from the confluence of the right and left hepatic ducts to the junction with the cystic duct.",
+      "hierarchy": [
+        "Digestive system",
+        "Biliary system",
+        "Extrahepatic bile ducts"
+      ],
+      "function": "Conducts hepatic bile toward the common bile duct or, via the cystic duct, the gallbladder.",
+      "relationships": [
+        "Continues from the confluence of the right and left hepatic ducts",
+        "Meets the cystic duct to form the common bile duct"
+      ],
+      "clinical": "An important landmark during biliary surgery; its position and branching may vary.",
+      "reviewStatus": "candidate",
+      "sourceIds": [
+        "FIPAT-TA2",
+        "BP3D-SOURCE",
+        "NCBI-BILIARY"
+      ],
+      "note": "Editorial educational synthesis; terminology and detailed clinical fields require individual expert review."
+    },
+    {
+      "sourceConceptId": "FMA7202",
+      "name": "Gallbladder",
+      "latin": "Vesica biliaris",
+      "aliases": [
+        "Vesica fellea"
+      ],
+      "system": "digestive",
+      "kind": "organ",
+      "summary": "The gallbladder stores and concentrates bile between meals and releases it into the biliary tract during digestion.",
+      "definition": "A hollow, muscular organ on the visceral surface of the liver connected to the extrahepatic biliary tree through the cystic duct.",
+      "hierarchy": [
+        "Digestive system",
+        "Accessory digestive organs",
+        "Biliary system"
+      ],
+      "function": "Stores and concentrates bile; contracts in response to feeding, particularly via cholecystokinin.",
+      "relationships": [
+        "Lies against the inferior surface of the liver",
+        "Communicates with the common bile duct through the cystic duct"
+      ],
+      "bloodSupply": "Cystic artery, usually from the right hepatic artery.",
+      "innervation": "Autonomic fibers through the hepatic plexus; sensory pathways contribute to referred pain.",
+      "development": "Develops from the hepatic diverticulum of the embryonic foregut.",
+      "clinical": "Gallstones may obstruct the cystic duct or migrate into the common bile duct.",
+      "reviewStatus": "candidate",
+      "sourceIds": [
+        "FIPAT-TA2",
+        "BP3D-SOURCE",
+        "NCBI-BILIARY"
+      ],
+      "note": "Editorial educational synthesis; terminology and detailed clinical fields require individual expert review."
+    },
+    {
+      "sourceConceptId": "FMA7148",
+      "name": "Stomach",
+      "latin": "Gaster",
+      "aliases": [
+        "Ventriculus"
+      ],
+      "system": "digestive",
+      "kind": "organ",
+      "summary": "The stomach stores food, mixes it with gastric secretions, and regulates delivery of chyme into the duodenum.",
+      "definition": "An expandable muscular segment of the alimentary canal between the esophagus and duodenum, organized into cardia, fundus, body and pyloric region.",
+      "hierarchy": [
+        "Digestive system",
+        "Alimentary canal",
+        "Foregut"
+      ],
+      "function": "Mechanical mixing, acid and enzyme secretion, intrinsic factor production, and controlled gastric emptying.",
+      "relationships": [
+        "Continuous with the esophagus proximally and duodenum distally",
+        "Located mainly in the epigastric and left upper abdominal regions"
+      ],
+      "bloodSupply": "Branches of the celiac trunk via the gastric, gastro-omental and short gastric arteries.",
+      "innervation": "Vagal parasympathetic fibers and sympathetic fibers primarily through the celiac plexus.",
+      "development": "Forms through expansion and rotation of the embryonic foregut.",
+      "clinical": "Peptic ulcer disease can affect the gastric mucosa and may cause bleeding or perforation.",
+      "reviewStatus": "candidate",
+      "sourceIds": [
+        "FIPAT-TA2",
+        "BP3D-SOURCE",
+        "NCBI-BILIARY"
+      ],
+      "note": "Editorial educational synthesis; terminology and detailed clinical fields require individual expert review."
+    },
+    {
+      "sourceConceptId": "FMA7198",
+      "name": "Pancreas",
+      "latin": "Pancreas",
+      "aliases": [],
+      "system": "digestive",
+      "kind": "organ",
+      "summary": "The pancreas produces digestive enzymes and bicarbonate for the duodenum and releases hormones that regulate blood glucose.",
+      "definition": "An elongated, predominantly retroperitoneal gland extending from the duodenal C-loop toward the splenic hilum, with exocrine and endocrine components.",
+      "hierarchy": [
+        "Digestive system",
+        "Accessory digestive organs",
+        "Pancreas"
+      ],
+      "function": "Exocrine secretion of digestive enzymes and bicarbonate; endocrine secretion including insulin and glucagon.",
+      "relationships": [
+        "Its head lies within the curve of the duodenum",
+        "Its tail approaches the splenic hilum"
+      ],
+      "bloodSupply": "Pancreaticoduodenal arcades and branches of the splenic artery.",
+      "innervation": "Autonomic fibers reaching the organ through celiac and superior mesenteric plexuses.",
+      "development": "Arises from dorsal and ventral endodermal pancreatic buds that fuse.",
+      "clinical": "Pancreatitis, duct obstruction, and pancreatic tumors may affect adjacent biliary structures.",
+      "reviewStatus": "candidate",
+      "sourceIds": [
+        "FIPAT-TA2",
+        "BP3D-SOURCE",
+        "NCBI-BILIARY"
+      ],
+      "note": "Editorial educational synthesis; terminology and detailed clinical fields require individual expert review."
+    },
+    {
+      "sourceConceptId": "FMA7206",
+      "name": "Duodenum",
+      "latin": "Duodenum",
+      "aliases": [],
+      "system": "digestive",
+      "kind": "organ",
+      "summary": "The duodenum is the first part of the small intestine, receiving gastric contents, bile, and pancreatic secretions.",
+      "definition": "A C-shaped segment of small intestine between the stomach and jejunum, divided into superior, descending, horizontal and ascending parts.",
+      "hierarchy": [
+        "Digestive system",
+        "Alimentary canal",
+        "Small intestine"
+      ],
+      "function": "Neutralizes gastric acid and participates in digestion and nutrient absorption.",
+      "relationships": [
+        "Surrounds the head of the pancreas",
+        "Receives biliary and pancreatic secretions at the major duodenal papilla in typical anatomy"
+      ],
+      "bloodSupply": "Superior and inferior pancreaticoduodenal arteries.",
+      "innervation": "Autonomic fibers via the celiac and superior mesenteric plexuses.",
+      "development": "Develops from the terminal foregut and proximal midgut.",
+      "clinical": "Duodenal ulcers and obstruction can affect this segment.",
+      "reviewStatus": "candidate",
+      "sourceIds": [
+        "FIPAT-TA2",
+        "BP3D-SOURCE",
+        "NCBI-BILIARY"
+      ],
+      "note": "Editorial educational synthesis; terminology and detailed clinical fields require individual expert review."
+    },
+    {
+      "sourceConceptId": "FMA7394",
+      "name": "Trachea",
+      "latin": "Trachea",
+      "aliases": [
+        "Windpipe"
+      ],
+      "system": "respiratory",
+      "kind": "airway",
+      "summary": "The trachea is the cartilage-supported airway connecting the larynx to the main bronchi.",
+      "definition": "A flexible airway reinforced by C-shaped hyaline cartilage rings and lined by respiratory mucosa.",
+      "hierarchy": [
+        "Respiratory system",
+        "Conducting airways",
+        "Trachea"
+      ],
+      "function": "Conducts, warms and helps clear inspired air.",
+      "relationships": [
+        "Begins inferior to the cricoid cartilage",
+        "Bifurcates at the carina into right and left main bronchi"
+      ],
+      "bloodSupply": "Regional branches including inferior thyroid and bronchial arteries.",
+      "innervation": "Autonomic innervation with vagal parasympathetic input.",
+      "development": "Forms from the ventral laryngotracheal diverticulum of the foregut.",
+      "clinical": "Endotracheal intubation and tracheostomy require knowledge of its position and neighboring structures.",
+      "reviewStatus": "candidate",
+      "sourceIds": [
+        "FIPAT-TA2",
+        "BP3D-SOURCE"
+      ],
+      "note": "Editorial educational synthesis; terminology and detailed clinical fields require individual expert review."
+    },
+    {
+      "sourceConceptId": "FMA13295",
+      "name": "Diaphragm",
+      "latin": "Diaphragma",
+      "aliases": [
+        "Thoracic diaphragm"
+      ],
+      "system": "muscular",
+      "kind": "muscle",
+      "summary": "The diaphragm is the principal muscle of inspiration, separating the thoracic cavity from the abdomen.",
+      "definition": "A dome-shaped musculotendinous partition with sternal, costal and lumbar attachments converging on a central tendon.",
+      "hierarchy": [
+        "Muscular system",
+        "Muscles of respiration",
+        "Diaphragm"
+      ],
+      "function": "Contraction lowers the diaphragm and increases thoracic volume during inspiration.",
+      "origin": "Xiphoid process, inferior six costal cartilages and adjacent ribs, and lumbar crura and arcuate ligaments.",
+      "insertion": "Central tendon of the diaphragm.",
+      "innervation": "Phrenic nerves (C3–C5) provide motor supply.",
+      "bloodSupply": "Pericardiacophrenic, musculophrenic, superior phrenic and inferior phrenic arteries.",
+      "relationships": [
+        "Separates thorax and abdomen",
+        "Contains caval, esophageal and aortic passageways"
+      ],
+      "development": "Forms from septum transversum, pleuroperitoneal membranes, dorsal mesentery of esophagus and body wall.",
+      "clinical": "Phrenic nerve injury may impair ventilation and produce hemidiaphragm elevation.",
+      "reviewStatus": "candidate",
+      "sourceIds": [
+        "FIPAT-TA2",
+        "BP3D-SOURCE"
+      ],
+      "note": "Editorial educational synthesis; terminology and detailed clinical fields require individual expert review."
+    },
+    {
+      "sourceConceptId": "FMA38928",
+      "name": "Right rectus femoris",
+      "latin": "Musculus rectus femoris dexter",
+      "aliases": [
+        "Right quadriceps rectus femoris"
+      ],
+      "system": "muscular",
+      "kind": "muscle",
+      "summary": "The right rectus femoris crosses the hip and knee, flexing the hip and extending the knee.",
+      "definition": "A bipennate muscle of the anterior thigh and one of the four quadriceps femoris components.",
+      "hierarchy": [
+        "Muscular system",
+        "Lower limb",
+        "Anterior thigh",
+        "Quadriceps femoris"
+      ],
+      "function": "Extends the knee and assists hip flexion.",
+      "origin": "Anterior inferior iliac spine (straight head) and ilium superior to the acetabulum (reflected head).",
+      "insertion": "Patella via quadriceps tendon and tibial tuberosity via patellar ligament.",
+      "innervation": "Femoral nerve (L2–L4).",
+      "bloodSupply": "Predominantly lateral circumflex femoral artery branches.",
+      "relationships": [
+        "Superficial to vastus intermedius",
+        "Part of the quadriceps extensor mechanism"
+      ],
+      "development": "Differentiates from embryonic limb-bud muscle precursors.",
+      "clinical": "May be strained during sprinting or kicking; avulsion can occur at the anterior inferior iliac spine.",
+      "reviewStatus": "candidate",
+      "sourceIds": [
+        "FIPAT-TA2",
+        "BP3D-SOURCE"
+      ],
+      "note": "Editorial educational synthesis; terminology and detailed clinical fields require individual expert review."
+    },
+    {
+      "sourceConceptId": "FMA38929",
+      "name": "Left rectus femoris",
+      "latin": "Musculus rectus femoris sinister",
+      "aliases": [
+        "Left quadriceps rectus femoris"
+      ],
+      "system": "muscular",
+      "kind": "muscle",
+      "summary": "The left rectus femoris crosses the hip and knee, flexing the hip and extending the knee.",
+      "definition": "A bipennate muscle of the anterior thigh and one of the four quadriceps femoris components.",
+      "hierarchy": [
+        "Muscular system",
+        "Lower limb",
+        "Anterior thigh",
+        "Quadriceps femoris"
+      ],
+      "function": "Extends the knee and assists hip flexion.",
+      "origin": "Anterior inferior iliac spine (straight head) and ilium superior to the acetabulum (reflected head).",
+      "insertion": "Patella via quadriceps tendon and tibial tuberosity via patellar ligament.",
+      "innervation": "Femoral nerve (L2–L4).",
+      "bloodSupply": "Predominantly lateral circumflex femoral artery branches.",
+      "relationships": [
+        "Superficial to vastus intermedius",
+        "Part of the quadriceps extensor mechanism"
+      ],
+      "development": "Differentiates from embryonic limb-bud muscle precursors.",
+      "clinical": "May be strained during sprinting or kicking; avulsion can occur at the anterior inferior iliac spine.",
+      "reviewStatus": "candidate",
+      "sourceIds": [
+        "FIPAT-TA2",
+        "BP3D-SOURCE"
+      ],
+      "note": "Editorial educational synthesis; terminology and detailed clinical fields require individual expert review."
+    }
+  ]
+}
