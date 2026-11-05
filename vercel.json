@@ -6,6 +6,10 @@
   "installCommand": "npm ci",
   "rewrites": [
     {
+      "source": "/notes",
+      "destination": "/index.html"
+    },
+    {
       "source": "/learn",
       "destination": "/index.html"
     },

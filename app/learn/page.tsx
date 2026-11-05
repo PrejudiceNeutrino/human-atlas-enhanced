@@ -4,8 +4,10 @@ import { Button } from '@/components/ui/button';
 import { SiteNavigation } from '../site-navigation';
 import { browserTheme, useTheme } from '../theme-store';
 import { SubjectTabs } from './subject-tabs';
+import { AnnotationReader } from '../notes/annotation-reader';
 import { learnSubjects, subjectForPath } from './subjects';
 import './learn.css';
+import '../notes/notes.css';
 
 export default function LearnPage({ pathname }: { pathname: string }) {
   const subject = subjectForPath(pathname);
@@ -44,7 +46,7 @@ export default function LearnPage({ pathname }: { pathname: string }) {
           {subject && <a className="learn-breadcrumb" href="/learn">Learn</a>}
           <h1>{title}</h1>
         </div>
-        {subject ? <SubjectTabs key={subject.slug} subject={subject} /> : (
+        {subject ? <AnnotationReader key={subject.slug}><SubjectTabs subject={subject} /></AnnotationReader> : (
           <div className="learn-subject-list">
             {learnSubjects.map(item => (
               <a className="learn-subject-card" key={item.slug} href={item.href}>

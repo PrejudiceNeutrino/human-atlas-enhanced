@@ -1,7 +1,36 @@
-import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
+import { ArrowLeft, ArrowRight, ChevronDown } from 'lucide-react';
 
 export interface ReadingSectionLink { id: string; title: string }
+
+interface ReadingPageLink { id: string; title: string }
+export const ReadingPageContext = createContext<{
+  links: ReadingPageLink[];
+  previous?: ReadingPageLink;
+  next?: ReadingPageLink;
+  onNavigate: (id: string) => void;
+} | null>(null);
+
+function ReadingPageArrows() {
+  const pages = useContext(ReadingPageContext);
+  if (!pages) return null;
+  return (
+    <div className="learn-page-arrows" role="group" aria-label="Reading page navigation">
+      <button type="button" disabled={!pages.previous}
+        aria-label={pages.previous ? `Previous page: ${pages.previous.title}` : 'Previous page'}
+        title={pages.previous ? `Previous: ${pages.previous.title}` : 'First page'}
+        onClick={() => { if (pages.previous) pages.onNavigate(pages.previous.id); }}>
+        <ArrowLeft size={18} aria-hidden="true" />
+      </button>
+      <button type="button" disabled={!pages.next}
+        aria-label={pages.next ? `Next page: ${pages.next.title}` : 'Next page'}
+        title={pages.next ? `Next: ${pages.next.title}` : 'Last page'}
+        onClick={() => { if (pages.next) pages.onNavigate(pages.next.id); }}>
+        <ArrowRight size={18} aria-hidden="true" />
+      </button>
+    </div>
+  );
+}
 
 function SectionLinks({ title, sections, current }: {
   title: string;
@@ -75,11 +104,13 @@ export function ReadingLayout({ title, sections, enabled = true, children }: {
         <div className="learn-index-sticky">
           <p className="learn-index-label">On this page</p>
           <SectionLinks title={title} sections={sections} current={current} />
+          <ReadingPageArrows />
         </div>
       </aside>
       <details className="learn-index-mobile">
         <summary>On this page<ChevronDown size={16} aria-hidden="true" /></summary>
         <SectionLinks title={title} sections={sections} current={current} />
+        <ReadingPageArrows />
       </details>
       <div className="learn-article-sections">{children}</div>
     </div>

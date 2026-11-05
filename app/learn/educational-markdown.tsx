@@ -1,8 +1,23 @@
-import { useMemo, type ElementType } from 'react';
+import { useContext, useMemo, type ElementType } from 'react';
 import Markdown, { type Components } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import type { Root, Paragraph } from 'mdast';
 import type { Plugin } from 'unified';
+import { AnnotationDocumentContext, AnnotationSourceContext } from '../notes/annotation-context';
+import { annotationBlocksPlugin } from '../notes/annotation-model';
+import { AnnotatedBlock, AnnotationParagraph, AnnotationListItem, AnnotationTableHeader, AnnotationTableCell } from '../notes/annotation-render';
+import { ReadingPageContext } from './section-index';
+
+const EducationalLink: Components['a'] = ({ node: _node, href, ...props }) => {
+  const pages = useContext(ReadingPageContext);
+  const pageId = href?.startsWith('#') ? href.slice(1) : undefined;
+  return <a {...props} href={href} onClick={event => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (!pageId || !pages?.links.some(page => page.id === pageId)) return;
+    event.preventDefault();
+    pages.onNavigate(pageId);
+  }} />;
+};
 
 // The source expresses a sequence as step paragraphs separated by ↓ paragraphs.
 // Mark those existing nodes for styling; leave every word and arrow intact.
@@ -23,29 +38,34 @@ const transportSequence: Plugin<[], Root> = () => tree => {
   }
 };
 
-export function EducationalMarkdown({ children, headingOffset = 0, tableLabel }: {
+export function EducationalMarkdown({ children, headingOffset = 0, tableLabel, sourceId }: {
   children: string;
   headingOffset?: number;
   tableLabel?: string;
+  sourceId?: string;
 }) {
+  const documentScope=useContext(AnnotationDocumentContext);
   const components = useMemo(() => {
     const renderers: Components = {
+      a: EducationalLink,
       table: ({ node: _node, ...props }) => (
         <div className="learn-table" role={tableLabel ? 'region' : undefined} aria-label={tableLabel} tabIndex={tableLabel ? 0 : undefined}><table {...props} /></div>
       ),
       th: ({ node: _node, ...props }) => <th scope="col" {...props} />,
     };
+    renderers.p=AnnotationParagraph;renderers.li=AnnotationListItem;
+    renderers.th=AnnotationTableHeader;renderers.td=AnnotationTableCell;
     for (const level of [1, 2, 3, 4, 5, 6] as const) {
       const Heading = `h${Math.min(level + headingOffset, 6)}` as ElementType;
-      renderers[`h${level}`] = ({ node: _node, ...props }) => <Heading {...props} />;
+      renderers[`h${level}`] = ({ node: _node, ...props }) => <AnnotatedBlock tag={Heading as string} {...props} />;
     }
     return renderers;
   }, [headingOffset, tableLabel]);
   return (
-    <div className="learn-markdown">
-      <Markdown remarkPlugins={[remarkGfm, transportSequence]} components={components}>
+    <AnnotationSourceContext value={sourceId}><div className="learn-markdown" data-annotation-source={sourceId} data-annotation-subject={sourceId?documentScope?.subjectId:undefined} data-annotation-tab={sourceId?documentScope?.tabId:undefined}>
+      <Markdown remarkPlugins={sourceId?[remarkGfm, transportSequence, annotationBlocksPlugin]:[remarkGfm, transportSequence]} components={components}>
         {children}
       </Markdown>
-    </div>
+    </div></AnnotationSourceContext>
   );
 }

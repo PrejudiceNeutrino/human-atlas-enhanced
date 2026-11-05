@@ -39,6 +39,7 @@
 .learn-markdown ul { list-style: disc; }
 .learn-markdown ol { list-style: decimal; }
 .learn-markdown a { color: var(--ui-link); text-underline-offset: 3px; }
+.learn-markdown a strong { color: inherit; }
 .learn-disclosure { margin-top: 22px; }
 .learn-more-trigger { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; padding: 0 15px; border: 1px solid var(--border); border-radius: 9px; background: var(--control); color: var(--foreground); font-size: 13px; font-weight: 500; }
 .learn-more-trigger:hover { background: var(--accent); }
@@ -69,15 +70,31 @@
 .learn-content[data-subject] { width: min(1080px, 100%); }
 .learn-content[data-subject] .learn-page-heading { margin-bottom: 32px; }
 .learn-reading-tabs[data-slot="tabs"] { display: block; scroll-margin-top: 16px; }
-.learn-tab-bar { position: sticky; top: 0; z-index: 10; margin-bottom: 36px; padding-block: 12px; background: var(--background); }
-.learn-tab-list[data-slot="tabs-list"] { display: flex; justify-content: flex-start; gap: 4px; width: 100%; height: auto; padding: 5px; border-radius: 14px; background: var(--muted); overflow-x: auto; scrollbar-width: thin; scroll-padding-inline: 8px; }
+.learn-tab-bar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 8px; margin-bottom: 36px; padding-block: 12px; background: var(--background); }
+.learn-tab-list[data-slot="tabs-list"] { display: flex; flex: 1; min-width: 0; justify-content: flex-start; gap: 4px; width: auto; height: auto; padding: 5px; border-radius: 14px; background: var(--muted); overflow-x: auto; scrollbar-width: thin; scroll-padding-inline: 8px; }
+.learn-section-guide-trigger[data-slot="dialog-trigger"] { display: grid; place-items: center; flex: 0 0 44px; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 12px; color: var(--ui-muted); background: var(--muted); }
+.learn-section-guide-trigger[data-slot="dialog-trigger"]:hover, .learn-section-guide-trigger[data-popup-open] { color: var(--foreground); background: var(--card); }
+.learn-section-guide.learn-menu-surface[data-slot="dialog-content"] { display: flex; flex-direction: column; width: min(880px, calc(100vw - 32px)); max-width: 880px; max-height: min(900px, calc(100dvh - 48px)); overflow: hidden; }
+.learn-section-guide > .learn-menu-heading, .learn-section-guide > .learn-menu-footer { flex-shrink: 0; }
+.learn-section-guide-body { min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; padding: 2px 4px 4px; }
+.learn-section-guide-entries { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 0; }
+.learn-section-guide-entries > div { min-width: 0; padding: 20px 22px; border-radius: 14px; background: color-mix(in srgb, var(--card) 66%, transparent); }
+.learn-section-guide-entries > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.learn-section-guide dt { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; font-size: 16px; font-weight: 500; letter-spacing: -.2px; }
+.learn-section-guide dd { margin: 0; color: var(--ui-secondary); font-size: 14px; line-height: 1.7; }
+.learn-section-guide-planned { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border); }
+.learn-section-guide-planned dt { color: var(--ui-muted); }
+.learn-section-guide-planned dd { filter: blur(1.6px); opacity: .48; user-select: none; }
+@media (max-width: 600px) { .learn-section-guide-entries { grid-template-columns: minmax(0, 1fr); gap: 12px; } .learn-section-guide-entries > div { padding: 18px; } .learn-section-guide .learn-menu-title { font-size: 30px; } }
+@media (forced-colors: active) { .learn-section-guide-planned dd { filter: none; opacity: 1; } }
 .learn-tab-trigger[data-slot="tabs-trigger"] { flex: 1 0 auto; gap: 8px; height: auto; min-height: 46px; padding: 10px 16px; border: 0; border-radius: 10px; font-size: 13px; line-height: 1.4; color: var(--ui-secondary); transition: background-color var(--motion-medium) var(--motion-curve), color var(--motion-medium) var(--motion-curve); }
 .learn-tab-trigger[data-active] { color: var(--foreground); background: var(--card); box-shadow: 0 1px 4px var(--border); }
 .learn-tab-trigger:disabled { opacity: 1; color: var(--ui-muted); cursor: default; }
 .learn-coming-soon { padding: 3px 6px; border-radius: 5px; background: var(--border); font-size: 9px; font-weight: 500; letter-spacing: .02em; }
 .learn-tab-panel { min-width: 0; }
 .learn-tab-panel[hidden] { display: none; }
-.learn-facts > h2 { margin-bottom: 32px; }
+.learn-reading-intro { margin: 0; color: var(--ui-secondary); font-size: 16px; line-height: 1.85; overflow-wrap: break-word; }
+.learn-reading-intro--after-opening { margin-top: 16px; }
 .learn-facts .learn-entry h3 { scroll-margin-top: 100px; }
 .learn-facts .learn-entry:first-child { padding-top: 0; }
 .learn-article-header { max-width: 740px; margin-bottom: 42px; }
@@ -98,6 +115,11 @@
 .learn-index-sticky { position: sticky; top: 100px; max-height: calc(100dvh - 124px); overflow-y: auto; scrollbar-width: thin; padding: 4px 12px 12px 0; }
 .learn-index-desktop { align-self: stretch; }
 .learn-index-label { margin: 0 0 12px; font-size: 10px; font-weight: 500; letter-spacing: .06em; color: var(--ui-muted); }
+.learn-page-arrows { display: flex; gap: 8px; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border); }
+.learn-page-arrows button { display: grid; place-items: center; flex: 1; min-width: 44px; min-height: 44px; border-radius: 9px; background: var(--control); color: var(--ui-secondary); transition: background-color var(--motion-fast), color var(--motion-fast); }
+.learn-page-arrows button:enabled:hover { background: var(--accent); color: var(--foreground); }
+.learn-page-arrows button:disabled { opacity: .35; }
+.learn-index-mobile .learn-page-arrows { margin-top: 0; margin-bottom: 12px; }
 :is(.learn-index-desktop, .learn-index-mobile) ol { display: flex; flex-direction: column; gap: 3px; list-style: none; margin: 0; padding: 0; }
 :is(.learn-index-desktop, .learn-index-mobile) a { display: block; padding: 7px 9px; border-left: 2px solid transparent; border-radius: 0 6px 6px 0; color: var(--ui-secondary); font-size: 11px; line-height: 1.4; text-decoration: none; overflow-wrap: anywhere; transition: background-color var(--motion-fast) var(--motion-curve), color var(--motion-fast) var(--motion-curve); }
 :is(.learn-index-desktop, .learn-index-mobile) a:hover { color: var(--foreground); background: var(--accent); }

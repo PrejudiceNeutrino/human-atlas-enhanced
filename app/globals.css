@@ -419,3 +419,9 @@ h1 .edition::before{content:'';position:absolute;inset:-1px;border-radius:inheri
 .studio-footer>span{white-space:nowrap}
 /* Source display names are shared by inspection and structure captions. */
 .detail-header .structure-title{ text-transform:none }
+
+/* Native text selection shares the atlas teal palette across reading and controls. */
+:root{--text-selection-background:#b9d7d6;--text-selection-foreground:#173c40}
+:root[data-theme=dark]{--text-selection-background:#315b61;--text-selection-foreground:#f0fbf9}
+::selection{background-color:var(--text-selection-background);color:var(--text-selection-foreground);text-shadow:none}
+@media (forced-colors:active){::selection{background-color:Highlight;color:HighlightText}}

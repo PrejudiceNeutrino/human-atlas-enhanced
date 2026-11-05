@@ -69,7 +69,7 @@
   .studio .view-controls { top: max(340px, calc(env(safe-area-inset-top) + 322px)); }
 }
 
-@media (max-width: 359px) {
+@media (max-width: 480px) {
   .studio .top-actions { flex-wrap: wrap; }
   .studio .top-actions .site-navigation { margin-right: auto; }
   .studio .top-actions > .toolbar-divider { width: 100%; height: 1px; }
