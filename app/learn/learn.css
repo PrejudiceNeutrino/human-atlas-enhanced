@@ -119,6 +119,7 @@
 .learn-page-arrows button { display: grid; place-items: center; flex: 1; min-width: 44px; min-height: 44px; border-radius: 9px; background: var(--control); color: var(--ui-secondary); transition: background-color var(--motion-fast), color var(--motion-fast); }
 .learn-page-arrows button:enabled:hover { background: var(--accent); color: var(--foreground); }
 .learn-page-arrows button:disabled { opacity: .35; }
+.learn-index-desktop .learn-page-arrows button { min-height: 38px; border-radius: 8px; }
 .learn-index-mobile .learn-page-arrows { margin-top: 0; margin-bottom: 12px; }
 :is(.learn-index-desktop, .learn-index-mobile) ol { display: flex; flex-direction: column; gap: 3px; list-style: none; margin: 0; padding: 0; }
 :is(.learn-index-desktop, .learn-index-mobile) a { display: block; padding: 7px 9px; border-left: 2px solid transparent; border-radius: 0 6px 6px 0; color: var(--ui-secondary); font-size: 11px; line-height: 1.4; text-decoration: none; overflow-wrap: anywhere; transition: background-color var(--motion-fast) var(--motion-curve), color var(--motion-fast) var(--motion-curve); }
@@ -128,7 +129,7 @@
 .learn-reading--cram .learn-article-sections { display: grid; gap: 20px; }
 .learn-reading--cram .learn-article-section { padding: 26px 30px; border: 1px solid var(--border); border-radius: 16px; background: var(--panel); }
 .learn-reading--cram .learn-article-section > h3 { font-size: 22px; }
-.learn-reading--cram .learn-markdown { font-size: 15px; line-height: 1.8; }
+.learn-reading--cram .learn-article-sections .learn-markdown { font-size: 15px; line-height: 1.8; }
 .learn-reading--cram .learn-markdown li { margin-block: 12px; }
 
 @media (max-width: 850px) {

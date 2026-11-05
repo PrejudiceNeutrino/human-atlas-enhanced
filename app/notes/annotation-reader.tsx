@@ -19,6 +19,8 @@ export function AnnotationReader({children}:{children:ReactNode}) {
     let timer:ReturnType<typeof setTimeout>;
     const capture=()=>{if(editor)return;const selection=window.getSelection();
       if(!selection||selection.isCollapsed){if(!toolbar.current?.contains(document.activeElement)){setPending(null);setMessage('');}return;}
+      const anchor=selection.anchorNode instanceof Element?selection.anchorNode:selection.anchorNode?.parentElement;
+      if(anchor?.closest('[data-annotation-excluded]')){setPending(null);setMessage('');return;}
       if(!root.current?.contains(selection.anchorNode)||!root.current.contains(selection.focusNode)){setPending(null);setMessage('');return;}
       try{const selected=captureAnnotationSelection(root.current,annotationSources,selection);setPending(selected);if(selected)setMessage('');}
       catch(error){setPending(null);setMessage(error instanceof Error?error.message:'Select a heading or passage in the reading.');}

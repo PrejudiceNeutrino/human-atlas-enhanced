@@ -198,7 +198,7 @@ test('revised JSON retains ZIP-entry bytes apart from the two requested navigati
     assert.ok(article.sections.every(section => section.title && section.markdown));
   }
   assert.deepEqual(learnSubjects.map(subject => subject.slug), ['digestive']);
-  assert.deepEqual(learnSubjects[0].tabs.map(item => item.title), ['General Overview', 'Deep Dive', 'How It Connects', "Who Cares?", 'Exam Cram', 'Quizzes']);
+  assert.deepEqual(learnSubjects[0].tabs.map(item => item.title), ['General Overview', 'Deep Dive', 'How It Connects', "Who Cares?", 'Exam Cram', 'Study Tools']);
 });
 
 test('Overview references open the corresponding tabs with bookmarks and destination focus', { timeout: 10000 }, async () => {
@@ -217,18 +217,18 @@ test('Overview references open the corresponding tabs with bookmarks and destina
   }
 });
 
-test('six ordered tabs have accessible relationships and Quizzes is a disabled Coming Soon control', { timeout: 10000 }, async () => {
+test('six ordered tabs have accessible relationships and Study Tools replaces the disabled quiz placeholder', { timeout: 10000 }, async () => {
   await render('/learn'); await render('/learn/digestive');
   const tabs = [...document.querySelectorAll('[role="tab"]')];
   assert.equal(document.querySelector('[role="tablist"]').getAttribute('aria-label'), 'Digestive System content');
   assert.equal(tabs.length, 6);
   assert.equal(tabs.filter(node => node.getAttribute('aria-selected') === 'true').length, 1);
   assert.equal(tab('General Overview').getAttribute('tabindex'), '0');
-  const quizzes = tab('Quizzes');
-  assert.ok(quizzes.disabled || quizzes.getAttribute('aria-disabled') === 'true');
-  assert.match(quizzes.textContent, /Coming Soon/); assert.equal(quizzes.tagName, 'BUTTON');
+  const quizzes = tab('Study Tools');
+  assert.equal(quizzes.disabled,false);assert.notEqual(quizzes.getAttribute('aria-disabled'),'true');
+  assert.doesNotMatch(quizzes.textContent, /Coming Soon/); assert.equal(quizzes.tagName, 'BUTTON');
   const location = window.location.href; await click(quizzes);
-  assert.equal(tab('General Overview').getAttribute('aria-selected'), 'true');
+  assert.equal(tab('Study Tools').getAttribute('aria-selected'), 'true');
   assert.equal(window.location.href, location);
   for (const title of ['General Overview', 'Deep Dive', 'How It Connects', "Who Cares?", 'Exam Cram']) {
     await selectTab(title);
@@ -333,13 +333,13 @@ test('keyboard tab navigation uses roving focus and manual activation; Coming So
   await press('Enter'); assert.equal(tab('Deep Dive').getAttribute('aria-selected'), 'true');
   await press('ArrowRight'); assert.equal(document.activeElement, tab('How It Connects'));
   await press('Enter'); assert.equal(tab('How It Connects').getAttribute('aria-selected'), 'true');
-  await press('End'); assert.equal(document.activeElement.textContent, tab('Quizzes').textContent);
-  await press('Enter'); assert.equal(tab('How It Connects').getAttribute('aria-selected'), 'true');
+  await press('End'); assert.equal(document.activeElement.textContent, tab('Study Tools').textContent);
+  await press('Enter'); assert.equal(tab('Study Tools').getAttribute('aria-selected'), 'true');
   await press('ArrowLeft'); assert.equal(document.activeElement.textContent, tab('Exam Cram').textContent);
   await press('ArrowLeft'); assert.equal(document.activeElement.textContent, tab("Who Cares?").textContent);
   await press(' ', 'Space'); assert.equal(tab("Who Cares?").getAttribute('aria-selected'), 'true');
   await press('ArrowRight'); assert.equal(document.activeElement.textContent, tab('Exam Cram').textContent);
-  await press('ArrowRight'); assert.equal(document.activeElement.textContent, tab('Quizzes').textContent);
+  await press('ArrowRight'); assert.equal(document.activeElement.textContent, tab('Study Tools').textContent);
   await press('ArrowRight'); assert.equal(document.activeElement.textContent, tab('General Overview').textContent);
   await press('Home'); assert.equal(document.activeElement.textContent, tab('General Overview').textContent);
 });
@@ -376,14 +376,14 @@ test('reading arrows follow tab order, stop at the ends, and focus the destinati
       assert.equal(document.activeElement, document.getElementById(`${id}-heading`));
       assert.deepEqual(options, { block: 'start', behavior: 'instant' });
     }
-    assert.equal(arrows('desktop')[1].disabled, true);
-    assert.equal(arrows('mobile')[1].disabled, true);
+    assert.equal(arrows('desktop')[1].getAttribute('aria-label'), 'Next page: Study Tools');
+    assert.equal(arrows('mobile')[1].disabled, false);
     activePanel().querySelector('.learn-index-mobile').open = true;
     await click(arrows('mobile')[0]);
     assert.equal(tab("Who Cares?").getAttribute('aria-selected'), 'true');
     assert.equal(arrows('desktop')[0].getAttribute('aria-label'), 'Previous page: How It Connects');
     assert.equal(arrows('mobile')[1].getAttribute('aria-label'), 'Next page: Exam Cram');
-    assert.equal(tab('Quizzes').getAttribute('aria-selected'), 'false');
+    assert.equal(tab('Study Tools').getAttribute('aria-selected'), 'false');
   } finally { tabs.scrollIntoView = originalScroll; }
 });
 
@@ -481,10 +481,10 @@ test('the far-right info control opens a modal guide with general descriptions a
   assert.equal(document.getElementById(guide.getAttribute('aria-labelledby')).textContent,'Section guide');
   assert.equal(document.getElementById(guide.getAttribute('aria-describedby')).textContent,'Choose the learning approach that best fits what you want to understand, explore, or review.');
   const available=learnSubjects[0].tabs.filter(tab=>tab.kind!=='coming-soon'),entries=[...available,...upcomingLearningSections];
-  assert.deepEqual([...guide.querySelectorAll('dt')].map(node=>node.childNodes[0].textContent),['General Overview','Deep Dive','How It Connects','Who Cares?','Exam Cram','Gallery','Study Tools']);
+  assert.deepEqual([...guide.querySelectorAll('dt')].map(node=>node.childNodes[0].textContent),['General Overview','Deep Dive','How It Connects','Who Cares?','Exam Cram','Study Tools','Gallery']);
   assert.deepEqual([...guide.querySelectorAll('dd')].map(node=>node.textContent),entries.map(tab=>tab.description));
   assert.ok(entries.every(tab=>tab.description.length>80));
-  const previews=guide.querySelector('.learn-section-guide-planned');assert.equal(previews.querySelectorAll('.learn-coming-soon').length,2);assert.equal(previews.querySelectorAll('a,button,[tabindex]').length,0);
+  const previews=guide.querySelector('.learn-section-guide-planned');assert.equal(previews.querySelectorAll('.learn-coming-soon').length,1);assert.equal(previews.querySelectorAll('a,button,[tabindex]').length,0);
   assert.equal(tab('General Overview').getAttribute('aria-selected'),'true');assert.equal(window.location.href,location);
   const results=await axe.run(document,{rules:{'color-contrast':{enabled:false}}});
   assert.deepEqual(results.violations.map(item=>item.id),[]);
@@ -518,8 +518,8 @@ test('Learn opens an accessible subject chooser without navigating or replacing 
     assert.equal(preview.getAttribute('role'), 'list');
     assert.equal(preview.getAttribute('aria-label'), `${learnSubjects[index].title} sections`);
     assert.deepEqual([...preview.querySelectorAll('.learn-menu-preview-item > span:first-child')].map(item => item.textContent), learnSubjects[index].tabs.map(item => item.title));
-    assert.equal(preview.querySelector('.learn-menu-preview-status').textContent, 'Coming Soon');
-    assert.equal(link.querySelector('.learn-menu-subject-count').textContent, '5 sections');
+    assert.equal(preview.querySelector('.learn-menu-preview-status'), null);
+    assert.equal(link.querySelector('.learn-menu-subject-count').textContent, '6 sections');
   });
   assert.equal(document.activeElement, links[0]);
   const results = await axe.run(document, { rules: { 'color-contrast': { enabled: false } } });

@@ -9,6 +9,7 @@ import { annotationStore } from '../notes/annotation-store';
 import { annotationSources } from '../notes/annotation-content';
 import { SectionGuide } from './section-guide';
 import { ReadingPageContext } from './section-index';
+import { StudyToolsLoader } from './study-tools/loader';
 
 // A bookmarked section belongs to its existing subject page, not another route.
 function tabForHash(subject: LearnSubject, hash: string) {
@@ -26,6 +27,7 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
   const tabsRef = useRef<HTMLDivElement>(null);
   const previousTab = useRef(activeTab);
   const pageNavigation = useRef(false);
+  const pendingHashTarget = useRef<string|null>(null);
   const availableTabs = subject.tabs.filter(tab => tab.kind !== 'coming-soon');
   const pageIndex = availableTabs.findIndex(tab => tab.id === activeTab);
   const [requestedDisclosure,setRequestedDisclosure]=useState<string|null>(null);
@@ -43,11 +45,20 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
   },[subject]);
 
   useLayoutEffect(() => {
-    const hash = window.location.hash;
-    if (tabForHash(subject, hash)) document.getElementById(hash.slice(1))?.scrollIntoView?.({ block: 'start', behavior: 'instant' });
+    const followHash = () => {
+      const hash=window.location.hash,linked=tabForHash(subject,hash);if(!linked)return;
+      const target=hash.slice(1)===linked.id?`${linked.id}-heading`:hash.slice(1);
+      pendingHashTarget.current=target;setActiveTab(linked.id);
+      const heading=document.getElementById(target);
+      if(heading&&!heading.closest('[hidden]')){heading.focus({preventScroll:true});heading.scrollIntoView?.({block:'start',behavior:'instant'});pendingHashTarget.current=null;}
+    };
+    followHash();window.addEventListener('hashchange',followHash);return()=>window.removeEventListener('hashchange',followHash);
   }, [subject]);
 
   useLayoutEffect(() => {
+    if(pendingHashTarget.current){const heading=document.getElementById(pendingHashTarget.current);
+      if(heading&&!heading.closest('[hidden]')){heading.focus({preventScroll:true});heading.scrollIntoView?.({block:'start',behavior:'instant'});pendingHashTarget.current=null;previousTab.current=activeTab;return;}
+    }
     if (previousTab.current === activeTab) return;
     previousTab.current = activeTab;
     // Switching while deep in an article starts the next reading at its top.
@@ -98,6 +109,8 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
             <EducationalArticle article={articles[tab.id]} presentation={tab.presentation} readingIntro={tab.readingIntro} />
           ) : tab.kind === 'facts' ? (
             <EducationalFacts section={factSections[tab.id]} title={tab.title} readingIntro={tab.readingIntro} enabled={activeTab === tab.id} />
+          ) : tab.kind === 'study-tools' ? (
+            <StudyToolsLoader subjectTitle={subject.title} route={subject.href} tabId={tab.id}/>
           ) : null}
           </AnnotationJumpContext></AnnotationDocumentContext>
         </TabsContent>

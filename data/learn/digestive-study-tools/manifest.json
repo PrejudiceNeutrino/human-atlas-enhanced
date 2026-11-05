@@ -1,0 +1,112 @@
+{
+  "kind": "human-atlas-study-tools",
+  "schemaVersion": 1,
+  "subjectId": "digestive",
+  "title": "Digestive System Study Tools",
+  "curriculum": "Chapter 24 · Digestive System",
+  "sources": [
+    {
+      "id": "deep-dive",
+      "kind": "learn-article",
+      "file": "data/learn/digestive-system-deep-dive.json"
+    },
+    {
+      "id": "exam-cram",
+      "kind": "learn-article",
+      "file": "data/learn/digestive-system-exam-cram.json"
+    },
+    {
+      "id": "overview",
+      "kind": "learn-article",
+      "file": "data/learn/digestive-system-general-overview.json"
+    },
+    {
+      "id": "physiology-slides",
+      "kind": "presentation",
+      "file": "24-Digestive System.pptx",
+      "slideCount": 61
+    },
+    {
+      "id": "anatomy-slides",
+      "kind": "presentation",
+      "file": "Digestive.pptx",
+      "slideCount": 39
+    }
+  ],
+  "topics": [
+    {
+      "id": "foundations",
+      "label": "Foundations & digestive functions",
+      "sortOrder": 1
+    },
+    {
+      "id": "gut-wall",
+      "label": "GI wall, peritoneum & motility",
+      "sortOrder": 2
+    },
+    {
+      "id": "oral",
+      "label": "Oral cavity, saliva & teeth",
+      "sortOrder": 3
+    },
+    {
+      "id": "swallowing",
+      "label": "Pharynx, esophagus & swallowing",
+      "sortOrder": 4
+    },
+    {
+      "id": "stomach",
+      "label": "Stomach & gastric cells",
+      "sortOrder": 5
+    },
+    {
+      "id": "gastric-regulation",
+      "label": "Gastric phases & regulatory signals",
+      "sortOrder": 6
+    },
+    {
+      "id": "hormones",
+      "label": "GI hormones",
+      "sortOrder": 7
+    },
+    {
+      "id": "small-intestine",
+      "label": "Small intestine & absorption",
+      "sortOrder": 8
+    },
+    {
+      "id": "pancreas",
+      "label": "Pancreas & enzymes",
+      "sortOrder": 9
+    },
+    {
+      "id": "hepatobiliary",
+      "label": "Liver, gallbladder & bile",
+      "sortOrder": 10
+    },
+    {
+      "id": "colon",
+      "label": "Large intestine & defecation",
+      "sortOrder": 11
+    },
+    {
+      "id": "conditions",
+      "label": "Common digestive conditions",
+      "sortOrder": 12
+    }
+  ],
+  "files": {
+    "concepts": "concepts.json",
+    "multipleChoice": "multiple-choice.json",
+    "fillInTheBlank": "fill-in-the-blank.json",
+    "flashcards": "flashcards.json"
+  },
+  "editorialNote": "Source references point to the relevant existing Learn section and its recorded lecture slide references. They are contextual source pointers, not verbatim quotations or independently verified slide-level claims.",
+  "createdDate": "2026-11-04",
+  "counts": {
+    "concepts": 194,
+    "multipleChoice": 111,
+    "fillInTheBlank": 55,
+    "flashcards": 101
+  }
+}

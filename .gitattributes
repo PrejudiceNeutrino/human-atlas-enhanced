@@ -4,3 +4,4 @@
 /data/learn/digestive-system-how-it-connects.json -text
 /data/learn/digestive-system-deep-dive.json -text
 /data/learn/digestive-system-exam-cram.json -text
+/data/learn/digestive-study-tools/*.json -text
