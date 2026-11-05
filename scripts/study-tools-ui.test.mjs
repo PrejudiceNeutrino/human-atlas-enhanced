@@ -38,8 +38,8 @@ const currentQuestion=()=>bank.multipleChoice.find(question=>question.stem===pan
 await annotationStore.initialize();
 after(async()=>{flushSync(()=>root.unmount());await annotationStore.dispose();window.close();});
 
-test('enabled Study Tools exposes all four counts and exact topics without a gallery route, editorial UI or geometry',async()=>{
- await open();assert.equal(tab('Study Tools').getAttribute('aria-selected'),'true');assert.equal(tab('Quizzes'),undefined);assert.equal(tab('Gallery'),undefined);
+test('enabled Study Tools exposes all four counts and exact topics alongside Gallery without editorial UI or geometry',async()=>{
+ await open();assert.equal(tab('Study Tools').getAttribute('aria-selected'),'true');assert.equal(tab('Quizzes'),undefined);assert.ok(tab('Gallery'));
  assert.equal(tools().querySelector('header p').textContent,'Digestive System · Chapter 24');
  assert.deepEqual([...tools().querySelectorAll('.study-overview-count')].map(node=>node.textContent),['111 questions','55 questions','194 concepts','101 cards']);
  const topic=tools().querySelector('[aria-label="Study topic"]');assert.deepEqual([...topic.options].map(option=>[option.value,option.text]),[['all','All Topics'],...bank.manifest.topics.map(topic=>[topic.id,topic.label])]);
@@ -94,6 +94,25 @@ test('flashcards flip/reset faces, mark progress, persist across remounts, and r
  await click(named(panel,'Needs Review only'));assert.equal(panel.querySelector('.study-card-text').textContent,card.front);assert.match(panel.querySelector('.study-session-navigation').textContent,/1 of 1/);await click(named(panel,'Mark Known'));assert.equal(readProgress().flashcards[card.id].reviews,2);
  await click(named(panel,'Needs Review only'));assert.match(panel.textContent,/No cards are marked Needs Review/);await open();await activity('Flashcards');assert.equal(readProgress().flashcards[card.id].status,'known');assert.match(pane('flashcards').textContent,/1 known/);
 });
+test('flashcard modal arrows work from blank areas immediately and release keyboard control on close',async()=>{
+ await open();await reset();await activity('Flashcards');
+ const panel=pane('flashcards'),dialog=document.querySelector('.study-flash-dialog:not([hidden])');assert.ok(dialog);
+ for(const selector of ['.study-flash-dialog-header','.study-session-heading','.study-flash-progress','.study-flashcard','.study-flash-ratingbar','.study-session-navigation','.study-flash-shortcut-guide']){
+  const area=dialog.querySelector(selector);assert.ok(area,selector);await click(area);
+  assert.equal((await press(document.activeElement,'ArrowRight')).defaultPrevented,true,selector);
+  assert.match(panel.querySelector('.study-session-navigation').textContent,/2 of 101/,selector);
+  await press(document.activeElement,'ArrowLeft');assert.match(panel.querySelector('.study-session-navigation').textContent,/1 of 101/,selector);
+  const front=panel.querySelector('.study-card-side').textContent;
+  await press(document.activeElement,'ArrowUp');assert.notEqual(panel.querySelector('.study-card-side').textContent,front,selector);
+  await press(document.activeElement,'ArrowDown');assert.equal(panel.querySelector('.study-card-side').textContent,front,selector);
+ }
+ const field=document.createElement('input');dialog.append(field);field.focus();assert.equal((await press(field,'ArrowRight')).defaultPrevented,false);assert.match(panel.querySelector('.study-session-navigation').textContent,/1 of 101/);field.remove();
+ await click(named(panel,'List view'));assert.equal((await press(document.activeElement,'ArrowDown')).defaultPrevented,false);
+ await click(named(panel,'Back to cards'));await press(document.activeElement,'ArrowRight');assert.match(panel.querySelector('.study-session-navigation').textContent,/2 of 101/);
+ await press(document.activeElement,'Escape');await waitFor(()=>dialog.hasAttribute('hidden'),'flashcards closed');
+ assert.equal((await press(document.body,'ArrowRight')).defaultPrevented,false);assert.match(panel.querySelector('.study-session-navigation').textContent,/2 of 101/);
+});
+
 test('flashcard keyboard shortcuts navigate, flip, mark both states, shuffle/restart and list every shortcut in the interface',async()=>{
  await reset();await activity('Flashcards');const panel=pane('flashcards');let face=panel.querySelector('.study-flashcard'),card=bank.flashcards.find(card=>card.front===panel.querySelector('.study-card-text').textContent);panel.querySelector('h3').focus();
  assert.equal(panel.querySelector('.study-flash-auto input').checked,false);assert.equal((await press(panel.querySelector('h3'),'ArrowLeft')).defaultPrevented,true);assert.equal(panel.querySelector('.study-card-text').textContent,card.front);

@@ -37,6 +37,7 @@ export type LearnTab = {
   | { kind: 'article'; presentation: 'overview' | 'reference' | 'cram' }
   | { kind: 'facts' }
   | { kind: 'study-tools' }
+  | { kind: 'gallery' }
   | { kind: 'coming-soon' }
 );
 
@@ -49,9 +50,7 @@ export interface LearnSubject {
 }
 
 // Informational previews only; these do not create tabs or routes.
-export const upcomingLearningSections = [
-  { id: 'gallery', title: 'Gallery', description: 'Examine curated illustrations, diagrams, photographs, and other visual references that support the educational material. Enlarge images to investigate important details.' },
-];
+export const upcomingLearningSections: { id: string; title: string; description: string }[] = [];
 
 // Subject navigation and pages share one small registry.
 export const learnSubjects: LearnSubject[] = [
@@ -66,6 +65,7 @@ export const learnSubjects: LearnSubject[] = [
       { id: 'digestive-system-how-it-connects', title: 'How It Connects', kind: 'article', presentation: 'overview', readingIntro: 'Follow a meal from intake to elimination to see how digestive organs, chemical signals, and transport pathways work together. Connect the individual structures and processes into one continuous journey.', description: "Discover how individual concepts work together as part of a larger system. Follow processes step by step and understand the relationships that connect what you've learned." },
       { id: 'digestive-system-why-is-this-cool', title: "Who Cares?", kind: 'facts', readingIntro: 'Discover the surprising science behind your gut’s nerve network, stomach acid, and fat transport. Open “More Info” for the explanation behind each fact.', description: 'Explore fascinating discoveries, surprising phenomena, and interesting applications that reveal what makes the subject worth studying. Expand each explanation to learn the underlying science.' },
       { id: 'digestive-system-exam-cram', title: 'Exam Cram', kind: 'article', presentation: 'cram', description: 'Review essential terminology, high-priority concepts, and important relationships in a condensed format. Designed for efficient revision, memorization, and exam preparation.' },
+      { id: 'digestive-system-gallery', title: 'Gallery', kind: 'gallery', description: 'Examine curated illustrations, diagrams, photographs, and other visual references that support the educational material. Enlarge images to investigate important details. Available in the local study edition.' },
       { id: 'digestive-system-study-tools', title: 'Study Tools', kind: 'study-tools', description: 'Reinforce your understanding through multiple-choice questions, fill-in-the-blank exercises, flashcards, and a searchable glossary. Test your knowledge and identify topics that need further review.' },
     ],
   },

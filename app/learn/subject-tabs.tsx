@@ -10,6 +10,7 @@ import { annotationSources } from '../notes/annotation-content';
 import { SectionGuide } from './section-guide';
 import { ReadingPageContext } from './section-index';
 import { StudyToolsLoader } from './study-tools/loader';
+import { GalleryLoader } from './gallery/loader';
 
 // A bookmarked section belongs to its existing subject page, not another route.
 function tabForHash(subject: LearnSubject, hash: string) {
@@ -111,6 +112,8 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
             <EducationalFacts section={factSections[tab.id]} title={tab.title} readingIntro={tab.readingIntro} enabled={activeTab === tab.id} />
           ) : tab.kind === 'study-tools' ? (
             <StudyToolsLoader subjectTitle={subject.title} route={subject.href} tabId={tab.id}/>
+          ) : tab.kind === 'gallery' ? (
+            <GalleryLoader tabId={tab.id} subjectSlug={subject.slug}/>
           ) : null}
           </AnnotationJumpContext></AnnotationDocumentContext>
         </TabsContent>

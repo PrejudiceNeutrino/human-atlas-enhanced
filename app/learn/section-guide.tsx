@@ -24,14 +24,14 @@ export function SectionGuide({ subject }: { subject: LearnSubject }) {
           <dl className="learn-section-guide-entries">
             {available.map(tab => <div key={tab.id}><dt>{tab.title}</dt><dd>{tab.description}</dd></div>)}
           </dl>
-          <dl className="learn-section-guide-entries learn-section-guide-planned">
+          {upcomingLearningSections.length > 0 && <dl className="learn-section-guide-entries learn-section-guide-planned">
             {upcomingLearningSections.map(section => <div key={section.id}>
               <dt>{section.title}<span className="learn-coming-soon">Coming Soon</span></dt><dd>{section.description}</dd>
             </div>)}
-          </dl>
+          </dl>}
         </div>
         <div className="learn-menu-footer">
-          <span>{available.length} learning approaches · {upcomingLearningSections.length} coming soon</span>
+          <span>{available.length} learning approaches{upcomingLearningSections.length > 0 ? ` · ${upcomingLearningSections.length} coming soon` : ''}</span>
           <span className="learn-menu-key-hint"><kbd>Esc</kbd> to close</span>
         </div>
       </DialogContent>
