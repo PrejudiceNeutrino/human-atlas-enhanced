@@ -1,7 +1,16 @@
 import type {Atlas,SceneState,SystemId} from './anatomy';
 import {SYSTEMS} from './anatomy.ts';
 import type {IdentityIndex} from './identity-index';
+import type {CanonicalConceptId} from './identity-contracts';
 import {selectRepresentations,representationIdsForPartIds,hiddenPartIdsForModel} from './hide-restore.ts';
+
+/** Explicit Learn-to-Explore requests use the same canonical/model resolver as selection. */
+export function canonicalExploreSelection(atlas:Atlas,identity:IdentityIndex,request:string|null){
+ if(!request?.startsWith('atlas:concept:'))return null;
+ const representations=identity.resolve(request as CanonicalConceptId,identity.modelId).filter(({representation:r,link})=>r.modelId===identity.modelId&&r.available&&r.vertexCount>0&&r.indexCount>0&&link.relation!=='candidate'&&!['candidate','rejected','unresolved'].includes(link.review.status));
+ const source=atlas.concepts.find(concept=>identity.sourceConceptCanonicalId(concept.id)===request);
+ return source&&representations.length?{id:source.id,name:source.name,elements:[...new Set(representations.map(item=>item.sourcePart.id))]}:null;
+}
 
 /** Explicit entry or narrowing: freeze the current-model selection as a new workspace. */
 export function isolateSelection(state:SceneState,identity:IdentityIndex):SceneState {

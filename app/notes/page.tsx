@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Download, Upload, StickyNote, Moon, Sun } from 'lucide-react';
+import { Download, Upload, StickyNote } from 'lucide-react';
 import { SiteNavigation } from '../site-navigation';
-import { browserTheme, useTheme } from '../theme-store';
+import { AppearanceControls } from '../appearance-controls';
 import { learnSubjects } from '../learn/subjects';
 import { annotationStore, useAnnotations } from './annotation-store';
 import { annotationSources, annotationTargetUrl, sourceFor, sortAnnotations } from './annotation-content';
@@ -12,7 +12,7 @@ import '../learn/learn.css';
 import './notes.css';
 
 export default function NotesPage() {
-  const state=useAnnotations(),{mode}=useTheme(),[subject,setSubject]=useState(''),[tab,setTab]=useState(''),[onlyNotes,setOnlyNotes]=useState(false),[onlyUnresolved,setOnlyUnresolved]=useState(false);
+  const state=useAnnotations(),[subject,setSubject]=useState(''),[tab,setTab]=useState(''),[onlyNotes,setOnlyNotes]=useState(false),[onlyUnresolved,setOnlyUnresolved]=useState(false);
   const [editor,setEditor]=useState<Annotation|null>(null),[message,setMessage]=useState(''),[busy,setBusy]=useState(false);
   const input=useRef<HTMLInputElement>(null),returnFocus=useRef<HTMLElement|null>(null);
   const records=useMemo(()=>sortAnnotations(resolvedAnnotations(state.records,annotationSources)),[state.records]);
@@ -35,8 +35,7 @@ export default function NotesPage() {
   const remove=(record:Annotation)=>{if(!window.confirm('Delete this highlight and its personal note?'))return;void run(async()=>{await annotationStore.remove(record.id);setMessage('Highlight deleted.');});};
   return <div className="learn-shell notes-shell">
     <a className="learn-skip-link" href="#notes-content">Skip to notes</a>
-    <header className="learn-header"><a className="learn-wordmark" href="/" aria-label="Human Atlas home">Human Atlas</a><SiteNavigation section="notes"/>
-      <button className="learn-theme-trigger" aria-label={`Switch to ${mode==='light'?'dark':'light'} mode`} onClick={()=>browserTheme.setMode(mode==='light'?'dark':'light')}>{mode==='light'?<Moon size={18}/>:<Sun size={18}/>}</button>
+    <header className="learn-header"><a className="learn-wordmark" href="/" aria-label="Human Atlas home">Human Atlas</a><SiteNavigation section="notes"/><AppearanceControls/>
     </header>
     <main id="notes-content" className="notes-content" tabIndex={-1}>
       <header className="notes-heading"><div className="notes-eyebrow"><StickyNote size={15} aria-hidden="true"/> Personal study space</div><h1>Notes</h1><p>Your highlights, with your thinking alongside them.</p></header>

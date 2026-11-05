@@ -6,6 +6,7 @@ import {Select,SelectTrigger,SelectValue,SelectContent,SelectItem} from '@/compo
 import {browserDisplay,useDisplay} from './display-store';
 import {DISPLAY_LIMITS} from './display';
 import {SCENE_FLOOR_PRESETS,normalizeSceneFloor} from './scene-floor-presets';
+import {PaletteOptions} from './appearance-controls';
 export function DisplayControls(){
  const settings=useDisplay();
  return <Popover>
@@ -21,6 +22,7 @@ export function DisplayControls(){
     </Select>
    </div>
    <Button variant="ghost" className="reset-display" onClick={browserDisplay.reset}>Reset display</Button>
+   <PaletteOptions/>
   </PopoverContent>
  </Popover>;
 }

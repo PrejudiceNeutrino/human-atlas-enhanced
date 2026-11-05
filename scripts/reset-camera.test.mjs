@@ -93,6 +93,7 @@ function sceneFixture({ isolated = false, locked = false, reduced = false, initi
   const state = resetViewer(previous, ['muscular']);
   const picker = { position: new T.Vector3(), updateMatrix() { writes++; }, updateMatrixWorld() {} };
   const env = {
+    embedded: false, latestActive: { current: true }, latestZoom: { current: 0 }, lastZoom: 0,
     T, captureCameraPose, createCameraReturn, motionProgress, resetMotion: null, assembledReturn: false, resetFade: null, frontAssist: null, assistedViewPending: null, el: { style: {} },
     explosionPlaybackAmount, latestExplodePlayback: { current: null }, latestPlaybackUpdate: { current() {} }, playbackReportRun: null, playbackReportTime: 0, playbackReportComplete: false,
     requestAnimationFrame: () => 1, performance: { now: () => clock }, document: { hidden: false },

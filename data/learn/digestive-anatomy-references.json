@@ -1,0 +1,18 @@
+{
+  "subjectId": "digestive",
+  "visualizeTabId": "digestive-system-visualize",
+  "referenceArticleId": "digestive-system-deep-dive",
+  "primarySystems": ["digestive"],
+  "contextRegionIds": ["atlas:region:cervical", "atlas:region:thoracic", "atlas:region:lumbar", "atlas:region:hip"],
+  "contextSystems": ["skeletal", "respiratory", "cardiac", "urinary"],
+  "structures": [
+    {"conceptId":"atlas:concept:002773","label":"Stomach","sectionId":"stomach","summary":"The stomach is a muscular, expandable organ located between the esophagus and the duodenum."},
+    {"conceptId":"atlas:concept:002829","label":"Liver","sectionId":"liver-gallbladder-and-bile","summary":"The liver is one of the body's largest and most metabolically active organs. Its functions extend well beyond digestion."},
+    {"conceptId":"atlas:concept:002833","label":"Gallbladder","sectionId":"liver-gallbladder-and-bile","summary":"The gallbladder stores and concentrates bile produced by the liver."},
+    {"conceptId":"atlas:concept:002830","label":"Pancreas","sectionId":"pancreas","summary":"The pancreas is an accessory digestive organ with both exocrine and endocrine functions."},
+    {"conceptId":"atlas:concept:002838","label":"Duodenum","sectionId":"small-intestine","summary":"The first and shortest region, approximately 25 cm long. It receives acidic chyme from the stomach along with bile and pancreatic secretions."},
+    {"conceptId":"atlas:concept:002831","label":"Small intestine","sectionId":"small-intestine","summary":"The small intestine is the primary site of chemical digestion and nutrient absorption."},
+    {"conceptId":"atlas:concept:002832","label":"Large intestine","sectionId":"large-intestine","summary":"The large intestine is the final major region of the digestive tract. It consists of the cecum, colon, rectum, and anal canal."},
+    {"conceptId":"atlas:concept:002763","label":"Esophagus","sectionId":"pharynx-esophagus-and-swallowing","summary":"The esophagus transports food primarily through muscular contractions rather than gravity, allowing swallowing even when the body is horizontal or inverted."}
+  ]
+}

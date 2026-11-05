@@ -1,0 +1,44 @@
+.learn-anatomy { padding: 24px; border: 1px solid var(--border); border-radius: 18px; background: var(--panel); min-width: 0; }
+.learn-anatomy button, .learn-anatomy-references button, .learn-companion-header button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; padding: 9px 13px; border: 1px solid var(--input); border-radius: 9px; background: var(--control); color: var(--foreground); font: inherit; font-size: 12px; line-height: 1.5; }
+.learn-anatomy button:enabled:hover, .learn-anatomy-references button:hover { background: var(--accent); }
+.learn-anatomy-controls { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,2fr); gap: 14px; margin-bottom: 18px; }
+.learn-anatomy-controls label { display: flex; flex-direction: column; gap: 7px; font-size: 11px; color: var(--ui-muted); }
+.learn-anatomy-controls select { min-width: 0; width: 100%; min-height: 44px; padding: 9px 11px; border: 1px solid var(--input); border-radius: 9px; background: var(--control-input); color: var(--foreground); font: inherit; font-size: 13px; }
+.learn-anatomy-controls select:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+.learn-anatomy-stage { position: relative; height: clamp(430px,64dvh,670px); overflow: hidden; border-radius: 12px; background: var(--background); isolation: isolate; }
+.learn-anatomy-stage .scene { position: absolute; inset: 0; }
+.learn-anatomy-stage[data-interactive=false] .scene { pointer-events: none; }
+.learn-anatomy-stage:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+.learn-anatomy-enable { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); white-space: nowrap; box-shadow: 0 4px 20px #10263820; touch-action: pan-y; }
+.learn-anatomy-status { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 24px; margin: 0; background: var(--background); color: var(--ui-secondary); font-size: 13px; line-height: 1.8; text-align: center; }
+.learn-anatomy-loading { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 430px; padding: 26px; color: var(--ui-secondary); font-size: 14px; line-height: 1.8; text-align: center; }
+.learn-anatomy-actions, .learn-anatomy-views, .learn-anatomy-links { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.learn-anatomy-views { margin-top: 10px; }
+.learn-anatomy-views button { min-width: 60px; }
+.learn-anatomy button[aria-pressed=true] { background: var(--primary); color: var(--primary-foreground); }
+.learn-anatomy-context { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; padding: 5px; color: var(--ui-secondary); font-size: 12px; }
+.learn-anatomy-context input { width: 17px; height: 17px; accent-color: var(--ui-link); }
+.learn-anatomy-selection { min-height: 90px; padding-top: 20px; }
+.learn-anatomy-selection h4 { margin: 0 0 9px; font-size: 18px; font-weight: 500; line-height: 1.5; }
+.learn-anatomy-selection p { margin: 0; color: var(--ui-secondary); font-size: 13px; line-height: 1.8; }
+.learn-anatomy-selection small { display: block; margin-top: 8px; color: var(--ui-muted); font-size: 11px; }
+.learn-anatomy-links { justify-content: space-between; }
+.learn-anatomy-links a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: var(--ui-link); font-size: 12px; }
+.learn-anatomy-help, .learn-anatomy-disclosure { margin: 16px 0 0; color: var(--ui-muted); font-size: 11px; line-height: 1.8; }
+.learn-anatomy-disclosure { padding-top: 12px; border-top: 1px solid var(--border); }
+.learn-anatomy-references { display: flex; flex-wrap: wrap; gap: 8px; margin: -4px 0 18px; }
+.learn-anatomy-references:empty { display: none; }
+.learn-content[data-subject]:has(.learn-reading-companion-open) { width: min(1560px,100%); }
+.learn-companion-layout { display: grid; grid-template-columns: minmax(0,1fr) minmax(340px,420px); gap: 28px; align-items: start; }
+.learn-companion-reading { min-width: 0; }
+.learn-companion-sticky { position: sticky; top: 92px; max-height: calc(100dvh - 110px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; border: 1px solid var(--border); border-radius: 16px; background: var(--card); }
+.learn-companion-aside { align-self: stretch; min-width: 0; }
+.learn-companion-header { display: flex; align-items: center; gap: 7px; padding: 13px 14px; }
+.learn-companion-header h3 { flex: 1; min-width: 0; margin: 0; font-size: 17px; font-weight: 500; line-height: 1.5; scroll-margin-top: 100px; }
+.learn-companion-header button { flex: 0 0 40px; padding-inline: 9px; }
+.learn-anatomy--compact { padding: 15px; border: 0; border-radius: 0; background: transparent; }
+.learn-anatomy--compact .learn-anatomy-stage { height: 330px; }
+.learn-anatomy--compact .learn-anatomy-controls { grid-template-columns: minmax(0,1fr); }
+.learn-anatomy--compact .learn-anatomy-loading { min-height: 330px; }
+@media(max-width:1250px){.learn-content[data-subject]:has(.learn-reading-companion-open) { width: min(1080px,100%); }.learn-companion-layout { grid-template-columns: minmax(0,1fr); }.learn-companion-aside { order: -1; }.learn-companion-sticky { position: static; max-height: none; }.learn-anatomy--compact .learn-anatomy-controls { grid-template-columns: minmax(0,1fr) minmax(0,2fr); }.learn-anatomy--compact .learn-anatomy-stage { height: 390px; }}
+@media(max-width:600px){.learn-anatomy { padding: 16px; }.learn-anatomy-controls, .learn-anatomy--compact .learn-anatomy-controls { grid-template-columns: minmax(0,1fr); }.learn-anatomy-stage { height: 440px; }.learn-anatomy--compact .learn-anatomy-stage { height: 350px; }.learn-anatomy-actions { gap: 6px; }}

@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
-import { ArrowUpRight, Moon, Sun } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { ArrowUpRight } from 'lucide-react';
 import { SiteNavigation } from '../site-navigation';
-import { browserTheme, useTheme } from '../theme-store';
+import { AppearanceControls } from '../appearance-controls';
 import { SubjectTabs } from './subject-tabs';
 import { AnnotationReader } from '../notes/annotation-reader';
 import { learnSubjects, subjectForPath } from './subjects';
@@ -12,7 +11,6 @@ import '../notes/notes.css';
 export default function LearnPage({ pathname }: { pathname: string }) {
   const subject = subjectForPath(pathname);
   const title = subject?.title ?? (pathname === '/learn' ? 'Learn' : 'Page not found');
-  const { mode } = useTheme();
   useEffect(() => {
     document.title = `${title} · Human Atlas`;
   }, [title]);
@@ -23,15 +21,7 @@ export default function LearnPage({ pathname }: { pathname: string }) {
       <header className="learn-header">
         <a className="learn-wordmark" href="/" aria-label="Human Atlas home">Human Atlas</a>
         <SiteNavigation section="learn" />
-        <Button
-          variant="ghost"
-          className="learn-theme-trigger"
-          aria-label={`Switch to ${mode === 'light' ? 'dark' : 'light'} mode`}
-          title={`Switch to ${mode === 'light' ? 'dark' : 'light'} mode`}
-          onClick={() => browserTheme.setMode(mode === 'light' ? 'dark' : 'light')}
-        >
-          {mode === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-        </Button>
+        <AppearanceControls/>
       </header>
       <nav className="learn-subjects" aria-label="Learn subjects">
         <span>Subjects</span>

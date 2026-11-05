@@ -11,6 +11,7 @@ import { SectionGuide } from './section-guide';
 import { ReadingPageContext } from './section-index';
 import { StudyToolsLoader } from './study-tools/loader';
 import { GalleryLoader } from './gallery/loader';
+import { VisualizePage } from './anatomy-companion/visualize-page';
 
 // A bookmarked section belongs to its existing subject page, not another route.
 function tabForHash(subject: LearnSubject, hash: string) {
@@ -114,6 +115,8 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
             <StudyToolsLoader subjectTitle={subject.title} route={subject.href} tabId={tab.id}/>
           ) : tab.kind === 'gallery' ? (
             <GalleryLoader tabId={tab.id} subjectSlug={subject.slug}/>
+          ) : tab.kind === 'visualize' ? (
+            <VisualizePage tabId={tab.id} subjectId={subject.slug}/>
           ) : null}
           </AnnotationJumpContext></AnnotationDocumentContext>
         </TabsContent>

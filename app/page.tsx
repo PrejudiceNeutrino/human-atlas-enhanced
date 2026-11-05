@@ -20,7 +20,7 @@ import AnatomyScene from './scene';
 import {EXPLODE_FAMILY_BY_SYSTEM,SYSTEM_SEPARATION_END,explosionValueText,explosionStageText} from './explosion-layout';
 import {resolveVisibility} from './visibility';
 import {Tabs,TabsList,TabsTrigger,TabsContent} from '@/components/ui/tabs';
-import {allSystemsForAtlas,showAllSystems,toggleAllSystems,selectIncludedMember,selectAssemblyMember,isolateSelection,exitIsolation,clearActiveSelection} from './viewer-interaction';
+import {allSystemsForAtlas,showAllSystems,toggleAllSystems,selectIncludedMember,selectAssemblyMember,isolateSelection,exitIsolation,clearActiveSelection,canonicalExploreSelection} from './viewer-interaction';
 import {VIEWER_SHORTCUTS,viewerShortcut} from './viewer-shortcuts';
 import {browserTheme,useTheme} from './theme-store';
 import {useDisplay} from './display-store';
@@ -115,6 +115,8 @@ export default function AtlasViewer({model,onModelChange,initialRegion=BODY_REGI
  const explodePlayLabel=explodePlayback.playing?'Pause expansion':state.explode>=1?'Every piece is fully expanded':`Play expansion to ${explodePlayback.destination===SYSTEM_SEPARATION_END?'Systems apart':'Every piece'}`;
  const randomCandidates=useMemo(()=>identity?randomAnatomyCandidates(discovery,identity):[],[discovery,identity]);
  const choose=(c:SearchConcept,isolate=false)=>{if(!identity)return;const selectedIds=resolveSearchPartIds(c,identity);setChosen(c);setState(s=>{const next=selectRepresentations(exitContextReveal(s),identity,selectedIds);return isolate?isolateSelection(next,identity):next;});setDetails(true);setPanel(null);};
+ const requestedConcept=useRef(new URLSearchParams(window.location.search).get('concept')),appliedConcept=useRef('');
+ useEffect(()=>{if(!atlas||!identity||!requestedConcept.current)return;const key=`${identity.modelId}/${requestedConcept.current}`;if(appliedConcept.current===key)return;appliedConcept.current=key;const target=canonicalExploreSelection(atlas,identity,requestedConcept.current);if(target)choose(target,true);},[atlas,identity]);
  useEffect(()=>{if(!atlas||!identity)return;return registerAtlasTools(atlas,c=>flushSync(()=>choose(c)));},[atlas,identity]);
  const randomAnatomy=()=>{if(!identity)return;const entry=chooseRandomAnatomy(randomCandidates,lastRandomId.current);if(!entry)return;lastRandomId.current=entry.id;setState(s=>randomAnatomyWorkspace(s,entry,identity));setChosen(entry.concept);setDetails(true);setPanel(null);};
  const choosePart=(id:string,included=false)=>{const p=parts.get(id),representation=identity?.representationForPart(id);if(!p||!representation||representation.modelId!==modelRecord.id)return;setChosen({id:p.conceptId,name:p.name,elements:[id]});setState(s=>included?selectIncludedMember(s,identity!,id):selectAssemblyMember(s,identity!,id));setDetails(true);setPanel(null);};

@@ -80,6 +80,33 @@ const click = async button => {
 };
 const tab = title => [...document.querySelectorAll('[role="tab"]')].find(node => node.querySelector('span')?.textContent === title);
 const selectTab = async title => { assert.ok(tab(title), title); await click(tab(title)); };
+
+test('anatomy learning lives in Visualize and leaves Overview free of model loading', async () => {
+  await render('/learn/digestive'); await selectTab('General Overview');
+  assert.equal(document.querySelector('.learn-anatomy'), null);
+  assert.equal(document.querySelectorAll('.learn-article-section').length, 8);
+  await selectTab('Visualize');
+  assert.equal(document.getElementById('digestive-system-visualize-heading').textContent, 'Visualize');
+  const model = document.querySelector('.learn-visualize');
+  assert.equal(model.hasAttribute('data-annotation-excluded'), true);
+  assert.equal(model.querySelector('canvas'), null);
+  assert.ok(model.querySelector('button').textContent.includes('Load interactive model'));
+});
+
+test('anatomy learning opens curated references without changing reading text and supports collapse/close focus', async () => {
+  await render('/learn/digestive'); await selectTab('Deep Dive');
+  const text = [...document.querySelectorAll('.learn-article-section .learn-markdown')].map(node => node.textContent);
+  const actions = [...document.querySelectorAll('.learn-anatomy-references button')];
+  assert.equal(actions.length, 8);
+  const action = actions.find(button => button.textContent === 'View Stomach in 3D');
+  await click(action);
+  const companion = document.querySelector('.learn-companion-aside'); assert.ok(companion); assert.equal(companion.hasAttribute('data-annotation-excluded'), true);
+  assert.equal(document.activeElement, companion.querySelector('h3'));
+  assert.deepEqual([...document.querySelectorAll('.learn-article-section .learn-markdown')].map(node => node.textContent), text);
+  await click(companion.querySelector('[aria-label="Collapse Anatomy Companion"]')); assert.equal(companion.querySelector('.learn-anatomy'), null);
+  await click(companion.querySelector('[aria-label="Expand Anatomy Companion"]')); assert.ok(companion.querySelector('.learn-anatomy'));
+  await click(companion.querySelector('[aria-label="Close Anatomy Companion"]')); assert.equal(document.querySelector('.learn-companion-aside'), null); assert.equal(document.activeElement, action);
+});
 after(async () => {
   flushSync(() => root.unmount());
   window.close();
@@ -178,13 +205,16 @@ test('DOM accessibility audit passes with all explanations open and with them co
 });
 
 test('theme switching uses the shared persisted preference', { timeout: 10000 }, async () => {
-  const themeButton = document.querySelector('.learn-theme-trigger');
   const previous = document.documentElement.dataset.theme;
-  await click(themeButton);
+  await click(document.querySelector('[aria-label="Appearance settings"]'));
+  const popup = document.querySelector('.appearance-popover');
+  const choose = mode => [...popup.querySelectorAll('.appearance-mode button')].find(button => button.textContent === mode);
+  await click(choose(previous === 'dark' ? 'Light' : 'Dark'));
   assert.notEqual(document.documentElement.dataset.theme, previous);
   assert.equal(window.localStorage.getItem('human-atlas-theme'), document.documentElement.dataset.theme);
-  await click(themeButton);
+  await click(choose(previous === 'dark' ? 'Dark' : 'Light'));
   assert.equal(document.documentElement.dataset.theme, previous);
+  await click(document.querySelector('[aria-label="Appearance settings"]'));
 });
 
 test('revised JSON retains ZIP-entry bytes apart from the two requested navigation links, order and unique section identifiers', () => {
@@ -198,7 +228,7 @@ test('revised JSON retains ZIP-entry bytes apart from the two requested navigati
     assert.ok(article.sections.every(section => section.title && section.markdown));
   }
   assert.deepEqual(learnSubjects.map(subject => subject.slug), ['digestive']);
-  assert.deepEqual(learnSubjects[0].tabs.map(item => item.title), ['General Overview', 'Deep Dive', 'How It Connects', "Who Cares?", 'Exam Cram', 'Gallery', 'Study Tools']);
+  assert.deepEqual(learnSubjects[0].tabs.map(item => item.title), ['General Overview', 'Deep Dive', 'How It Connects', "Who Cares?", 'Visualize', 'Gallery', 'Exam Cram', 'Study Tools']);
 });
 
 test('Overview references open the corresponding tabs with bookmarks and destination focus', { timeout: 10000 }, async () => {
@@ -221,7 +251,7 @@ test('six ordered tabs have accessible relationships and Study Tools replaces th
   await render('/learn'); await render('/learn/digestive');
   const tabs = [...document.querySelectorAll('[role="tab"]')];
   assert.equal(document.querySelector('[role="tablist"]').getAttribute('aria-label'), 'Digestive System content');
-  assert.equal(tabs.length, 7);
+  assert.equal(tabs.length, 8);
   assert.equal(tabs.filter(node => node.getAttribute('aria-selected') === 'true').length, 1);
   assert.equal(tab('General Overview').getAttribute('tabindex'), '0');
   const quizzes = tab('Study Tools');
@@ -335,12 +365,14 @@ test('keyboard tab navigation uses roving focus and manual activation; Coming So
   await press('Enter'); assert.equal(tab('How It Connects').getAttribute('aria-selected'), 'true');
   await press('End'); assert.equal(document.activeElement.textContent, tab('Study Tools').textContent);
   await press('Enter'); assert.equal(tab('Study Tools').getAttribute('aria-selected'), 'true');
-  await press('ArrowLeft'); assert.equal(document.activeElement.textContent, tab('Gallery').textContent);
   await press('ArrowLeft'); assert.equal(document.activeElement.textContent, tab('Exam Cram').textContent);
+  await press('ArrowLeft'); assert.equal(document.activeElement.textContent, tab('Gallery').textContent);
+  await press('ArrowLeft'); assert.equal(document.activeElement.textContent, tab('Visualize').textContent);
   await press('ArrowLeft'); assert.equal(document.activeElement.textContent, tab("Who Cares?").textContent);
   await press(' ', 'Space'); assert.equal(tab("Who Cares?").getAttribute('aria-selected'), 'true');
-  await press('ArrowRight'); assert.equal(document.activeElement.textContent, tab('Exam Cram').textContent);
+  await press('ArrowRight'); assert.equal(document.activeElement.textContent, tab('Visualize').textContent);
   await press('ArrowRight'); assert.equal(document.activeElement.textContent, tab('Gallery').textContent);
+  await press('ArrowRight'); assert.equal(document.activeElement.textContent, tab('Exam Cram').textContent);
   await press('ArrowRight'); assert.equal(document.activeElement.textContent, tab('Study Tools').textContent);
   await press('ArrowRight'); assert.equal(document.activeElement.textContent, tab('General Overview').textContent);
   await press('Home'); assert.equal(document.activeElement.textContent, tab('General Overview').textContent);
@@ -368,7 +400,11 @@ test('reading arrows follow tab order, stop at the ends, and focus the destinati
   let options;
   tabs.scrollIntoView = value => { options = value; };
   try {
-    for (const title of ['Deep Dive', 'How It Connects', "Who Cares?", 'Exam Cram']) {
+    assert.equal(arrows('desktop')[1].getAttribute('aria-label'), 'Next page: Deep Dive');
+    await click(arrows('desktop')[1]);assert.equal(tab('Deep Dive').getAttribute('aria-selected'),'true');
+    assert.equal(document.activeElement,document.getElementById('digestive-system-deep-dive-heading'));
+    await selectTab('Deep Dive');
+    for (const title of ['How It Connects', "Who Cares?"]) {
       const next = arrows('desktop')[1];
       assert.equal(next.getAttribute('aria-label'), `Next page: ${title}`);
       next.focus(); await click(next);
@@ -378,13 +414,13 @@ test('reading arrows follow tab order, stop at the ends, and focus the destinati
       assert.equal(document.activeElement, document.getElementById(`${id}-heading`));
       assert.deepEqual(options, { block: 'start', behavior: 'instant' });
     }
-    assert.equal(arrows('desktop')[1].getAttribute('aria-label'), 'Next page: Gallery');
+    assert.equal(arrows('desktop')[1].getAttribute('aria-label'), 'Next page: Visualize');
     assert.equal(arrows('mobile')[1].disabled, false);
     activePanel().querySelector('.learn-index-mobile').open = true;
     await click(arrows('mobile')[0]);
-    assert.equal(tab("Who Cares?").getAttribute('aria-selected'), 'true');
-    assert.equal(arrows('desktop')[0].getAttribute('aria-label'), 'Previous page: How It Connects');
-    assert.equal(arrows('mobile')[1].getAttribute('aria-label'), 'Next page: Exam Cram');
+    assert.equal(tab('How It Connects').getAttribute('aria-selected'), 'true');
+    assert.equal(arrows('desktop')[0].getAttribute('aria-label'), 'Previous page: Deep Dive');
+    assert.equal(arrows('mobile')[1].getAttribute('aria-label'), 'Next page: Who Cares?');
     assert.equal(tab('Study Tools').getAttribute('aria-selected'), 'false');
   } finally { tabs.scrollIntoView = originalScroll; }
 });
@@ -483,7 +519,7 @@ test('the far-right info control opens a modal guide with general descriptions a
   assert.equal(document.getElementById(guide.getAttribute('aria-labelledby')).textContent,'Section guide');
   assert.equal(document.getElementById(guide.getAttribute('aria-describedby')).textContent,'Choose the learning approach that best fits what you want to understand, explore, or review.');
   const available=learnSubjects[0].tabs.filter(tab=>tab.kind!=='coming-soon'),entries=[...available,...upcomingLearningSections];
-  assert.deepEqual([...guide.querySelectorAll('dt')].map(node=>node.childNodes[0].textContent),['General Overview','Deep Dive','How It Connects','Who Cares?','Exam Cram','Gallery','Study Tools']);
+  assert.deepEqual([...guide.querySelectorAll('dt')].map(node=>node.childNodes[0].textContent),['General Overview','Deep Dive','How It Connects','Who Cares?','Visualize','Gallery','Exam Cram','Study Tools']);
   assert.deepEqual([...guide.querySelectorAll('dd')].map(node=>node.textContent),entries.map(tab=>tab.description));
   assert.ok(entries.every(tab=>tab.description.length>80));
   assert.equal(guide.querySelector('.learn-section-guide-planned'),null);
@@ -521,7 +557,7 @@ test('Learn opens an accessible subject chooser without navigating or replacing 
     assert.equal(preview.getAttribute('aria-label'), `${learnSubjects[index].title} sections`);
     assert.deepEqual([...preview.querySelectorAll('.learn-menu-preview-item > span:first-child')].map(item => item.textContent), learnSubjects[index].tabs.map(item => item.title));
     assert.equal(preview.querySelector('.learn-menu-preview-status'), null);
-    assert.equal(link.querySelector('.learn-menu-subject-count').textContent, '7 sections');
+    assert.equal(link.querySelector('.learn-menu-subject-count').textContent, '8 sections');
   });
   assert.equal(document.activeElement, links[0]);
   const results = await axe.run(document, { rules: { 'color-contrast': { enabled: false } } });

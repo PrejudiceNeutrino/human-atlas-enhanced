@@ -1,0 +1,244 @@
+/* UI-only palettes adapted from engineering-club src/app/palette-themes.css.
+   Human Atlas Classic remains entirely in globals.css; no Classic overrides.
+   Scientific status/system colors and WebGL themes are deliberately excluded. */
+
+:root[data-palette="ignition"]:not([data-theme="dark"]) {
+  --background: #f7f4ed;
+  --foreground: #19232d;
+  --card: #ffffff;
+  --card-foreground: #19232d;
+  --popover: #ffffff;
+  --popover-foreground: #19232d;
+  --primary: #b93c28;
+  --primary-hover: #943020;
+  --primary-foreground: #ffffff;
+  --secondary: #edb454;
+  --secondary-foreground: #242019;
+  --muted: #efede6;
+  --muted-foreground: #606b72;
+  --accent: #f5e9e2;
+  --accent-foreground: #19232d;
+  --border: #d9d7cf;
+  --input: #858580;
+  --ring: #a53523;
+  --panel: color-mix(in srgb,#ffffff 94%,transparent);
+  --control: #ffffff;
+  --control-input: #efede6;
+  --ui-secondary: color-mix(in srgb,#19232d 82%,#f7f4ed);
+  --ui-muted: #606b72;
+  --ui-faint: #606b72;
+  --ui-link: #b93c28;
+  --focus: #a53523;
+  --selected-control: #f5e5dc;
+  --switch-active: #b93c28;
+  --scrollbar: #8b7770;
+  --text-selection-background: #b93c28;
+  --text-selection-foreground: #ffffff;
+  --palette-detail: #edb454;
+  --palette-editorial: #b93c28;
+  --explode-halo: #b93c28;
+  --badge-trace: #b93c28;
+}
+
+:root[data-palette="ignition"][data-theme="dark"] {
+  --background: #101419;
+  --foreground: #f4f0e8;
+  --card: #1d242b;
+  --card-foreground: #f4f0e8;
+  --popover: #1d242b;
+  --popover-foreground: #f4f0e8;
+  --primary: #ff866b;
+  --primary-hover: #ffa78f;
+  --primary-foreground: #17191e;
+  --secondary: #ebc174;
+  --secondary-foreground: #242019;
+  --muted: #232b33;
+  --muted-foreground: #b0b9bd;
+  --accent: #333034;
+  --accent-foreground: #f4f0e8;
+  --border: #37434d;
+  --input: #77838b;
+  --ring: #ebc174;
+  --panel: color-mix(in srgb,#1d242b 94%,transparent);
+  --control: #1d242b;
+  --control-input: #232b33;
+  --ui-secondary: color-mix(in srgb,#f4f0e8 82%,#101419);
+  --ui-muted: #b0b9bd;
+  --ui-faint: #b0b9bd;
+  --ui-link: #ff866b;
+  --focus: #ebc174;
+  --selected-control: #3c3030;
+  --switch-active: #ff866b;
+  --scrollbar: #8f7870;
+  --text-selection-background: #ff866b;
+  --text-selection-foreground: #17191e;
+  --palette-detail: #ebc174;
+  --palette-editorial: #ff866b;
+  --explode-halo: #ff866b;
+  --badge-trace: #ff866b;
+}
+
+:root[data-palette="ultraviolet"]:not([data-theme="dark"]) {
+  --background: #f5f3fa;
+  --foreground: #241e36;
+  --card: #ffffff;
+  --card-foreground: #241e36;
+  --popover: #ffffff;
+  --popover-foreground: #241e36;
+  --primary: #6339c2;
+  --primary-hover: #4d279f;
+  --primary-foreground: #ffffff;
+  --secondary: #d9ef72;
+  --secondary-foreground: #241e36;
+  --muted: #eeebf5;
+  --muted-foreground: #6f667c;
+  --accent: #ede6fa;
+  --accent-foreground: #241e36;
+  --border: #ded9e9;
+  --input: #8d819f;
+  --ring: #6339c2;
+  --panel: color-mix(in srgb,#ffffff 94%,transparent);
+  --control: #ffffff;
+  --control-input: #eeebf5;
+  --ui-secondary: color-mix(in srgb,#241e36 82%,#f5f3fa);
+  --ui-muted: #6f667c;
+  --ui-faint: #6f667c;
+  --ui-link: #6339c2;
+  --focus: #6339c2;
+  --selected-control: #e7ddf7;
+  --switch-active: #6339c2;
+  --scrollbar: #89769f;
+  --text-selection-background: #6339c2;
+  --text-selection-foreground: #ffffff;
+  --palette-detail: #d9ef72;
+  --palette-editorial: #6339c2;
+  --explode-halo: #6339c2;
+  --badge-trace: #6339c2;
+}
+
+:root[data-palette="ultraviolet"][data-theme="dark"] {
+  --background: #12101d;
+  --foreground: #f4f0fc;
+  --card: #211c34;
+  --card-foreground: #f4f0fc;
+  --popover: #211c34;
+  --popover-foreground: #f4f0fc;
+  --primary: #c2a8ff;
+  --primary-hover: #d8c7ff;
+  --primary-foreground: #1d152a;
+  --secondary: #ddf17b;
+  --secondary-foreground: #241e36;
+  --muted: #29223d;
+  --muted-foreground: #b8b0cc;
+  --accent: #352a4b;
+  --accent-foreground: #f4f0fc;
+  --border: #413755;
+  --input: #8a7c9f;
+  --ring: #ddf17b;
+  --panel: color-mix(in srgb,#211c34 94%,transparent);
+  --control: #211c34;
+  --control-input: #29223d;
+  --ui-secondary: color-mix(in srgb,#f4f0fc 82%,#12101d);
+  --ui-muted: #b8b0cc;
+  --ui-faint: #b8b0cc;
+  --ui-link: #c2a8ff;
+  --focus: #ddf17b;
+  --selected-control: #3d3057;
+  --switch-active: #c2a8ff;
+  --scrollbar: #8c7ba5;
+  --text-selection-background: #c2a8ff;
+  --text-selection-foreground: #1d152a;
+  --palette-detail: #ddf17b;
+  --palette-editorial: #c2a8ff;
+  --explode-halo: #c2a8ff;
+  --badge-trace: #c2a8ff;
+}
+
+:root[data-palette="iris-ember"]:not([data-theme="dark"]) {
+  --background: #f8f6f1;
+  --foreground: #241e31;
+  --card: #ffffff;
+  --card-foreground: #241e31;
+  --popover: #ffffff;
+  --popover-foreground: #241e31;
+  --primary: #5c3cb8;
+  --primary-hover: #462b92;
+  --primary-foreground: #ffffff;
+  --secondary: #efad9d;
+  --secondary-foreground: #241e31;
+  --muted: #f0eaf7;
+  --muted-foreground: #665d6b;
+  --accent: #ece5f5;
+  --accent-foreground: #241e31;
+  --border: #ddd7e2;
+  --input: #8c8095;
+  --ring: #5c3cb8;
+  --panel: color-mix(in srgb,#ffffff 94%,transparent);
+  --control: #ffffff;
+  --control-input: #f0eaf7;
+  --ui-secondary: color-mix(in srgb,#241e31 82%,#f8f6f1);
+  --ui-muted: #665d6b;
+  --ui-faint: #665d6b;
+  --ui-link: #5c3cb8;
+  --focus: #5c3cb8;
+  --selected-control: #e8dff2;
+  --switch-active: #5c3cb8;
+  --scrollbar: #8b788f;
+  --text-selection-background: #5c3cb8;
+  --text-selection-foreground: #ffffff;
+  --palette-detail: #efad9d;
+  --palette-editorial: #b73d31;
+  --explode-halo: #5c3cb8;
+  --badge-trace: #5c3cb8;
+}
+
+:root[data-palette="iris-ember"][data-theme="dark"] {
+  --background: #161320;
+  --foreground: #f5f0e9;
+  --card: #211c2c;
+  --card-foreground: #f5f0e9;
+  --popover: #211c2c;
+  --popover-foreground: #f5f0e9;
+  --primary: #bda7ff;
+  --primary-hover: #d8c8ff;
+  --primary-foreground: #171320;
+  --secondary: #e28b70;
+  --secondary-foreground: #171320;
+  --muted: #322742;
+  --muted-foreground: #c4bbca;
+  --accent: #362c43;
+  --accent-foreground: #f5f0e9;
+  --border: #45384f;
+  --input: #95829f;
+  --ring: #bda7ff;
+  --panel: color-mix(in srgb,#211c2c 94%,transparent);
+  --control: #211c2c;
+  --control-input: #322742;
+  --ui-secondary: color-mix(in srgb,#f5f0e9 82%,#161320);
+  --ui-muted: #c4bbca;
+  --ui-faint: #c4bbca;
+  --ui-link: #bda7ff;
+  --focus: #bda7ff;
+  --selected-control: #3d3050;
+  --switch-active: #bda7ff;
+  --scrollbar: #968298;
+  --text-selection-background: #bda7ff;
+  --text-selection-foreground: #171320;
+  --palette-detail: #e28b70;
+  --palette-editorial: #e28b70;
+  --explode-halo: #bda7ff;
+  --badge-trace: #bda7ff;
+}
+
+/* Palette roots recolor ordinary UI through the existing semantic tokens. */
+:root[data-palette]:not([data-palette="classic"]) { color: var(--foreground); background: var(--background); }
+:root[data-palette]:not([data-palette="classic"]) :is(.eyebrow-label,.notes-eyebrow,.learn-breadcrumb) { color: var(--palette-editorial); }
+
+/* Neutral scene staging is keyed ONLY by the original Light/Dark preference.
+   None of these values depend on a UI palette. Canvas/material code is unchanged. */
+:root { --scene-background: #e4e8eb; --scene-foreground: #20242b; --scene-popover: #ffffff; --scene-border: #18253618; --scene-muted: #75818d; }
+:root[data-theme="dark"] { --scene-background: #141414; --scene-foreground: #f0f0ef; --scene-popover: #303030f5; --scene-border: #ffffff24; --scene-muted: #bdbdbb; }
+:root[data-palette]:not([data-palette="classic"]) :is(.studio,.learn-anatomy-stage,.learn-anatomy-status) { background: var(--scene-background); }
+:root[data-palette]:not([data-palette="classic"]) .scene-caption { color: var(--scene-muted); }
+:root[data-palette]:not([data-palette="classic"]) .caption-line { background: var(--scene-border); }
+:root[data-palette]:not([data-palette="classic"]) .scene .part-hover { background: var(--scene-popover); color: var(--scene-foreground); border-color: var(--scene-border); box-shadow: 0 5px 18px var(--scene-border); }

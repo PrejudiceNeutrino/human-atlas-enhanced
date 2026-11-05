@@ -1,10 +1,12 @@
 import '../app/theme-store';
+import '../app/palette-store';
 import {createRoot} from 'react-dom/client';
 import {lazy, Suspense,useState,useEffect} from 'react';
 import {Analytics} from '@vercel/analytics/react';
 import {parseNavigation,navigationSearch} from '../app/area-navigation';
 import {modelForRoute} from '../app/model-registry';
 import '../app/globals.css';
+import '../app/palette-themes.css';
 
 const AtlasViewer = lazy(() => import('../app/page'));
 const LearnPage = lazy(() => import('../app/learn/page'));
