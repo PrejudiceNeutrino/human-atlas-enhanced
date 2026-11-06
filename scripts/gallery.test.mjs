@@ -86,4 +86,36 @@ test('public gallery failures show a retry action that restores the complete col
   assert.equal(document.querySelector('[role="alert"]'), null);
 });
 
+test('the compact viewer keeps controls together and preserves details, zoom and figure navigation', async () => {
+  await render('viewer');
+  const opener = document.querySelector('.learn-gallery-card');
+  await click(opener);
+  const dialog = document.querySelector('[role="dialog"]');
+  assert.ok(dialog);
+  const toolbar = dialog.querySelector('.learn-gallery-viewer-toolbar');
+  assert.equal(toolbar.querySelectorAll('button').length, 8);
+  assert.equal(dialog.querySelectorAll('button').length, 8);
+  assert.equal(dialog.querySelector('[data-slot="dialog-title"]').textContent, manifest.items[0].title);
+  const toggle = toolbar.querySelector('.learn-gallery-details-toggle');
+  const details = document.getElementById(toggle.getAttribute('aria-controls'));
+  assert.equal(toggle.getAttribute('aria-expanded'), 'false');
+  assert.equal(details.className, 'sr-only');
+  assert.ok(details.textContent.includes(manifest.items[0].description));
+  await click(toggle);
+  assert.equal(toggle.getAttribute('aria-expanded'), 'true');
+  assert.equal(details.className, 'learn-gallery-details');
+  assert.ok(details.textContent.includes('Source: Digestive.pptx'));
+  await click(toolbar.querySelector('[aria-label="Zoom in"]'));
+  assert.equal(toolbar.querySelector('output').textContent, '125%');
+  await click(toolbar.querySelector('[title="Fit image (0)"]'));
+  assert.equal(toolbar.querySelector('output').textContent, '100%');
+  await click(toolbar.querySelector('[aria-label="Next figure"]'));
+  assert.equal(dialog.querySelector('[data-slot="dialog-title"]').textContent, manifest.items[1].title);
+  assert.equal(dialog.querySelector('.learn-gallery-details-toggle').getAttribute('aria-expanded'), 'true');
+  assert.equal(dialog.querySelector('output').textContent, '100%');
+  await click(dialog.querySelector('[aria-label="Close image viewer"]'));
+  assert.equal(document.querySelector('[role="dialog"]'), null);
+  assert.equal(document.activeElement, opener);
+});
+
 after(() => { flushSync(() => root.unmount()); window.close(); globalThis.fetch = originalFetch; });

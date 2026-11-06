@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState, type PointerEvent as ReactPointerEvent, type ReactNode } from 'react';
 import { Minus, Plus, RotateCcw, Scan } from 'lucide-react';
 import type { GalleryFigure } from './model';
 
@@ -6,7 +6,7 @@ type Point = { x: number; y: number };
 type Geometry = { width: number; height: number; stageWidth: number; stageHeight: number; fit: number };
 const clamp = (value: number, limit: number) => Math.max(-limit, Math.min(limit, value));
 
-export function ZoomFigure({ figure, src }: { figure: GalleryFigure; src: string }) {
+export function ZoomFigure({ figure, src, navigation, actions, caption }: { figure: GalleryFigure; src: string; navigation: ReactNode; actions: ReactNode; caption: ReactNode }) {
   const stage = useRef<HTMLDivElement>(null), picture = useRef<HTMLImageElement>(null);
   const geometry = useRef<Geometry>({ width: 0, height: 0, stageWidth: 0, stageHeight: 0, fit: 1 });
   const view = useRef({ scale: 1, x: 0, y: 0 }), pointers = useRef(new Map<number, Point>());
@@ -91,19 +91,24 @@ export function ZoomFigure({ figure, src }: { figure: GalleryFigure; src: string
     else if (event.key === '-') { event.preventDefault(); zoomTo(view.current.scale / 1.25); }
     else if (event.key === '0') { event.preventDefault(); apply(1, 0, 0); }
   }}>
-    <div className="learn-gallery-zoom-controls" role="group" aria-label="Image zoom">
+    <header className="learn-gallery-viewer-toolbar" aria-label="Image viewer controls">
+      {navigation}
+      <div className="learn-gallery-zoom-controls" role="group" aria-label="Image zoom">
       <button type="button" aria-label="Zoom out" title="Zoom out (−)" disabled={failed || scale <= 1.001} onClick={() => zoomTo(view.current.scale / 1.25)}><Minus size={17} aria-hidden="true"/></button>
       <output aria-label="Zoom relative to fit">{Math.round(scale * 100)}%</output>
       <button type="button" aria-label="Zoom in" title="Zoom in (+)" disabled={failed || scale >= maximum - .001} onClick={() => zoomTo(view.current.scale * 1.25)}><Plus size={17} aria-hidden="true"/></button>
       <button type="button" disabled={failed} onClick={() => apply(1, 0, 0)} title="Fit image (0)"><RotateCcw size={15} aria-hidden="true"/>Fit</button>
-      <button type="button" disabled={failed || maximum <= 1.001} onClick={() => zoomTo(maximum)} title="One image pixel per screen CSS pixel"><Scan size={15} aria-hidden="true"/>Actual size</button>
-    </div>
+      <button type="button" aria-label="Actual size" disabled={failed || maximum <= 1.001} onClick={() => zoomTo(maximum)} title="Actual size: one image pixel per screen CSS pixel"><Scan size={15} aria-hidden="true"/>1:1</button>
+      </div>
+      {actions}
+    </header>
     <div ref={stage} className="learn-gallery-image-stage" role="group" aria-label="Image inspection area" aria-describedby="learn-gallery-gestures" tabIndex={0}
       onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={pointerEnd} onPointerCancel={pointerEnd} onLostPointerCapture={pointerEnd}
       onDoubleClick={event => { if (!failed) zoomTo(view.current.scale > 1 ? 1 : maximum, localPoint({ x: event.clientX, y: event.clientY })); }}>
       {loading && !failed && <span className="learn-gallery-image-status" role="status">Loading full-size figure…</span>}
       {failed ? <p className="learn-gallery-image-status" role="alert">This figure could not load. Close and reopen it to retry.</p> : <img ref={picture} src={src} alt={figure.alt} width={figure.width} height={figure.height} decoding="async" draggable={false} onLoad={() => setLoading(false)} onError={() => { setFailed(true); setLoading(false); }} style={{ width: size.width, height: size.height }} />}
     </div>
-    <p id="learn-gallery-gestures" className="learn-gallery-gestures">Scroll or pinch to zoom · Drag to pan · Double-click to fit / enlarge · + / − zoom · 0 fit</p>
+    <span id="learn-gallery-gestures" className="sr-only">Scroll or pinch to zoom. Drag to pan. Double-click to fit or enlarge. Plus and minus zoom, 0 fits, Left and Right browse figures, Escape closes.</span>
+    {caption}
   </div>;
 }

@@ -1,5 +1,5 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, Images, Search, X } from 'lucide-react';
+import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { ArrowLeft, ArrowRight, Info, Search, X } from 'lucide-react';
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog';
 import { categoryLabel, figureSource, filterFigures, parseGallery, type GalleryCollection } from './model';
 import { ZoomFigure } from './zoom-figure';
@@ -9,6 +9,8 @@ import './gallery.css';
 function GalleryContent({ collection, assetBase }: { collection: GalleryCollection; assetBase: string }) {
   const [category, setCategory] = useState('all'), [query, setQuery] = useState('');
   const [selected, setSelected] = useState<string | null>(null);
+  const [showDetails, setShowDetails] = useState(false);
+  const detailsId = useId();
   const [thumbnailErrors, setThumbnailErrors] = useState<string[]>([]);
   const opener = useRef<HTMLButtonElement | null>(null);
   const figures = useMemo(() => filterFigures(collection.items, category, query), [collection, category, query]);
@@ -36,14 +38,11 @@ function GalleryContent({ collection, assetBase }: { collection: GalleryCollecti
           if (event.key === 'ArrowLeft') { event.preventDefault(); navigate(-1); }
           else if (event.key === 'ArrowRight') { event.preventDefault(); navigate(1); }
         }}>
-        {figure && <>
-          <header className="learn-gallery-viewer-header"><div className="learn-menu-eyebrow"><Images size={15} aria-hidden="true"/><span>Human Atlas · Gallery</span></div><div className="learn-gallery-page-controls"><button type="button" aria-label="Previous figure" aria-keyshortcuts="ArrowLeft" disabled={figures.length < 2} onClick={() => navigate(-1)}><ArrowLeft size={18} aria-hidden="true"/></button><span aria-live="polite">{index + 1} / {figures.length}</span><button type="button" aria-label="Next figure" aria-keyshortcuts="ArrowRight" disabled={figures.length < 2} onClick={() => navigate(1)}><ArrowRight size={18} aria-hidden="true"/></button></div><DialogClose className="learn-gallery-close" aria-label="Close image viewer"><X size={19} aria-hidden="true"/></DialogClose></header>
-          <div className="learn-gallery-viewer-body">
-            <ZoomFigure key={figure.id} figure={figure} src={`${assetBase}/${figure.image}`}/>
-            <div className="learn-gallery-figure-copy"><span className="learn-gallery-category">{categoryLabel(figure.category)}</span><DialogTitle className="learn-gallery-figure-title">{figure.title}</DialogTitle><DialogDescription className="learn-gallery-figure-description">{figure.description}</DialogDescription><p className="learn-gallery-provenance">{figureSource(figure)}</p></div>
-          </div>
-          <footer className="learn-gallery-viewer-footer"><span>← / → Previous / next figure</span><span>Esc Close viewer</span></footer>
-        </>}
+        {figure && <ZoomFigure key={figure.id} figure={figure} src={`${assetBase}/${figure.image}`}
+          navigation={<div className="learn-gallery-page-controls" role="group" aria-label="Figure navigation"><button type="button" aria-label="Previous figure" title="Previous figure (←)" aria-keyshortcuts="ArrowLeft" disabled={figures.length < 2} onClick={() => navigate(-1)}><ArrowLeft size={18} aria-hidden="true"/></button><span aria-live="polite">{index + 1} / {figures.length}</span><button type="button" aria-label="Next figure" title="Next figure (→)" aria-keyshortcuts="ArrowRight" disabled={figures.length < 2} onClick={() => navigate(1)}><ArrowRight size={18} aria-hidden="true"/></button></div>}
+          actions={<div className="learn-gallery-viewer-actions"><button type="button" className="learn-gallery-details-toggle" aria-expanded={showDetails} aria-controls={detailsId} onClick={() => setShowDetails(value => !value)}><Info size={17} aria-hidden="true"/><span>Details</span></button><DialogClose className="learn-gallery-close" aria-label="Close image viewer" title="Close viewer (Esc)"><X size={19} aria-hidden="true"/></DialogClose></div>}
+          caption={<footer className="learn-gallery-figure-copy"><div className="learn-gallery-caption-heading"><DialogTitle className="learn-gallery-figure-title">{figure.title}</DialogTitle><span className="learn-gallery-category">{categoryLabel(figure.category)}</span></div><div id={detailsId} className={showDetails ? 'learn-gallery-details' : 'sr-only'}><DialogDescription className="learn-gallery-figure-description">{figure.description}</DialogDescription><p className="learn-gallery-provenance">{figureSource(figure)}</p><p className="learn-gallery-gestures">Scroll or pinch to zoom · Drag to pan · Double-click to fit / enlarge · + / − zoom · 0 fit · ← / → browse · Esc close</p></div></footer>}
+        />}
       </DialogContent>
     </Dialog>
   </>;
