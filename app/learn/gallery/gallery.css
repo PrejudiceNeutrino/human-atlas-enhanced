@@ -10,7 +10,6 @@
 .learn-gallery-search { display: flex; align-items: center; gap: 9px; flex: 1 1 160px; min-width: 160px; min-height: 44px; padding: 0 12px; border: 1px solid var(--input); border-radius: 9px; background: var(--control-input); color: var(--ui-muted); }
 .learn-gallery-search:focus-within { outline: 2px solid var(--focus); outline-offset: 3px; }
 .learn-gallery-search input { min-width: 0; width: 100%; min-height: 44px; border: 0; outline: none; color: var(--foreground); background: transparent; font: inherit; font-size: 13px; }
-.learn-gallery-count { flex-shrink: 0; margin: 0; color: var(--ui-muted); font-size: 11px; line-height: 1.7; white-space: nowrap; }
 .learn-gallery-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; margin: 0; padding: 0; list-style: none; }
 .learn-gallery-grid > li { position: relative; min-width: 0; }
 .learn-gallery .learn-gallery-starred-filter { display: inline-flex; flex-shrink: 0; align-items: center; gap: 7px; padding-inline: 10px; font-size: 12px; white-space: nowrap; transition: none; }

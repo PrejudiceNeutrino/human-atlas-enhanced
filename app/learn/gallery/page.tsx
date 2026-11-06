@@ -44,7 +44,7 @@ function GalleryContent({ collection, assetBase, subjectSlug }: { collection: Ga
       <div className="learn-gallery-filters" role="group" aria-label="Gallery categories">{filterOptions.map(option => <button key={option.id} type="button" aria-pressed={category === option.id} onClick={() => setCategory(option.id)}>{option.label}<span>{option.count}</span></button>)}</div>
       <button ref={starredFilter} type="button" className="learn-gallery-starred-filter" aria-pressed={preferences.starredOnly} title="Show only your starred figures. Saved in this browser." onClick={() => preferencesStore.toggleStarredOnly()}><Star size={16} aria-hidden="true" fill={preferences.starredOnly ? 'currentColor' : 'none'}/>Starred only<span>{starred.size}</span></button>
       <label className="learn-gallery-search"><Search size={17} aria-hidden="true"/><span className="sr-only">Search gallery titles, descriptions and tags</span><input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Search figures…"/></label>
-      <p className="learn-gallery-count" role="status" aria-live="polite">{figures.length} of {collection.items.length} figures<span className="sr-only">{preferences.starredOnly ? ' · Starred only' : ''}{query.trim() ? ` matching “${query.trim()}”` : ''}</span></p>
+      <p className="sr-only" role="status" aria-live="polite">{figures.length} of {collection.items.length} figures{preferences.starredOnly ? ' · Starred only' : ''}{query.trim() ? ` matching “${query.trim()}”` : ''}</p>
     </div>
     {preferencesError && <p className="learn-gallery-preferences-error" role="status">{preferencesError}</p>}
     {figures.length ? <ul className="learn-gallery-grid">{figures.map(item => <li key={item.id}>
