@@ -131,7 +131,7 @@
 .learn-viewer-help-popover dl > div { display: flex; align-items: baseline; gap: 14px; }
 .learn-viewer-help-popover dt { min-width: 64px; color: var(--ui-link); font-size: 11px; }
 .learn-viewer-help-popover dd { margin: 0; }
-.learn-viewer-visibility > .learn-anatomy-context { display: flex; gap: 8px; margin-top: 8px; padding-inline: 0; font-size: 11px; }
+.learn-viewer-visibility > .learn-anatomy-context { display: flex; gap: 8px; margin: 0 0 12px; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--control-input); font-size: 12px; }
 .learn-anatomy--compact .learn-viewer-topbar { gap: 12px; }
 .learn-anatomy--compact .learn-viewer-topbar .learn-anatomy-controls { flex-basis: 100%; grid-template-columns: minmax(0,1fr); }
 .learn-anatomy--compact .learn-viewer-toolbar { flex-basis: 100%; }

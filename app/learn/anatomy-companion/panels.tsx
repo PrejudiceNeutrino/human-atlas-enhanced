@@ -16,6 +16,7 @@ export function LearningVisibility({ id, parts, state, hidden, visibleCount, les
   const enabled = systems.some(system => state.visible.includes(system.id));
   return <section id={id} className="learn-viewer-panel learn-viewer-visibility" aria-label="Anatomical visibility">
     <header className="learn-viewer-panel-heading"><h3>Visibility</h3><div><button type="button" aria-label={enabled ? 'Hide all systems' : 'Show all systems'} title={enabled ? 'Hide all systems' : 'Show all systems'} onClick={onToggleAll}>{enabled ? <Eye size={16}/> : <EyeOff size={16}/>}</button><button type="button" aria-label="Close visibility panel" onClick={onClose}><X size={16}/></button></div></header>
+    <label className="learn-anatomy-context"><input type="checkbox" checked={context} onChange={event => onContextChange(event.target.checked)}/>Surrounding context</label>
     <Tabs defaultValue="systems" className="learn-viewer-visibility-tabs">
       <TabsList aria-label="Visibility tools"><TabsTrigger value="systems">Systems</TabsTrigger><TabsTrigger value="hidden">Hidden <span>{hidden.length}</span></TabsTrigger></TabsList>
       <TabsContent value="systems">
@@ -25,7 +26,6 @@ export function LearningVisibility({ id, parts, state, hidden, visibleCount, les
       <TabsContent value="hidden"><div className="learn-viewer-hidden-list">{hidden.length ? <ul aria-label="Hidden structures, newest first">{hidden.map(item => <li key={item.id}><span>{item.part.name}<small>{item.part.provenance?.sourceId ?? item.part.id}</small></span><button type="button" aria-label={`Restore ${item.part.name}`} onClick={() => onRestore(item.id)}>Restore</button></li>)}</ul> : <p>No structures hidden. Select anatomy and press H to hide it.</p>}</div></TabsContent>
     </Tabs>
     <footer className="learn-viewer-panel-foot"><span>{visibleCount} pieces visible</span><button type="button" disabled={!hidden.length} title="Restore all hidden structures. J restores the newest." onClick={onRestoreAll}>Restore all hidden</button></footer>
-    <label className="learn-anatomy-context"><input type="checkbox" checked={context} onChange={event => onContextChange(event.target.checked)}/>Surrounding context</label>
   </section>;
 }
 
