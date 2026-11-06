@@ -90,6 +90,7 @@
 .learn-tab-trigger[data-slot="tabs-trigger"] { flex: 1 0 auto; gap: 8px; height: auto; min-height: 46px; padding: 10px 16px; border: 0; border-radius: 10px; font-size: 13px; line-height: 1.4; color: var(--ui-secondary); transition: background-color var(--motion-medium) var(--motion-curve), color var(--motion-medium) var(--motion-curve); }
 .learn-tab-trigger[data-active] { color: var(--foreground); background: var(--card); box-shadow: 0 1px 4px var(--border); }
 .learn-tab-trigger:disabled { opacity: 1; color: var(--ui-muted); cursor: default; }
+.learn-tab-new { padding: 2px 5px; border-radius: 4px; background: color-mix(in srgb,var(--primary) 12%,var(--card)); color: var(--ui-link); font-size: 9px; font-weight: 600; line-height: 1.4; letter-spacing: .04em; text-transform: uppercase; }
 .learn-coming-soon { padding: 3px 6px; border-radius: 5px; background: var(--border); font-size: 9px; font-weight: 500; letter-spacing: .02em; }
 .learn-tab-panel { min-width: 0; }
 .learn-gallery-slot { min-height: 100dvh; }
