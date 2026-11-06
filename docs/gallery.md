@@ -18,7 +18,7 @@ Opening a card uses the existing Base UI Dialog with the site's glass backdrop, 
 
 ## Starred images
 
-Each card has an always-visible star button separate from the inspection action. The viewer has the same toggle in its existing toolbar. Filled stars and pressed states indicate the saved selection. Starred only is an independent filter below the category/search controls, with the total starred count. It combines with categories and search, preserves the original figure order, and limits viewer navigation to the filtered selection.
+Each card has an always-visible star button separate from the inspection action. The viewer has the same toggle in its existing toolbar. Filled stars and pressed states indicate the saved selection. Starred only is an independent filter with the total starred count. Categories, Starred only, search and the result count share one compact row at desktop widths and wrap as needed on smaller screens. It combines with categories and search, preserves the original figure order, and limits viewer navigation to the filtered selection.
 
 Stars and the Starred only preference persist per subject in browser local storage (`human-atlas-gallery:v1:<subjectSlug>`), independently of Notes and Study Tools progress. This is a browser-local selection, without an account or cross-device sync. Changes in another same-origin tab refresh the gallery. If storage is unreadable or unavailable, the gallery remains usable for the session and shows the saving limitation.
 
