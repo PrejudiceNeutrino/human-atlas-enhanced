@@ -4,6 +4,7 @@ import { createIdentityIndex, type IdentityIndex, type IdentitySidecar } from '.
 import { createRegionIndex, type RegionIndex } from '../../regions';
 import type { RegionDataset } from '../../region-contracts';
 import type { AnatomyLesson } from './references';
+import { isolateSelection } from '../../viewer-interaction';
 
 export interface LearningCatalogue { model: Model; atlas: Atlas; identity: IdentityIndex; regions: RegionIndex }
 
@@ -42,7 +43,14 @@ export function learningScope(catalogue: LearningCatalogue, lesson: AnatomyLesso
   const chunkIds = [...new Set(parts.map(part => part.chunk))].sort((a, b) => a - b);
   // A runtime view of the existing manifest: original offsets, bytes, names, IDs and bounds stay unchanged.
   const atlas: Atlas = { ...catalogue.atlas, parts: parts.map(part => ({ ...part, chunk: chunkIds.indexOf(part.chunk) })), chunks: chunkIds.map(index => catalogue.atlas.chunks[index]) };
-  return { atlas, digestive, fullBounds: partBounds(parts.filter(part => digestive.has(part.id))), chunkIds };
+  return { atlas, digestive, partIds: included, fullBounds: partBounds(parts.filter(part => digestive.has(part.id))), chunkIds };
+}
+
+/** An explicit lesson request opens its actual assembly, using Explore isolation. */
+export function initialLearningState(catalogue: LearningCatalogue, scope: ReturnType<typeof learningScope>, conceptId: CanonicalConceptId | '' = '', reset = 0): SceneState {
+  const parts = conceptId ? availableRepresentations(catalogue, conceptId).map(item => item.sourcePart).filter(part => scope.partIds.has(part.id)) : [];
+  const state = learningSceneState(catalogue, scope, parts.map(part => part.id), partBounds(parts), false, reset, 'three-quarter', 'preset');
+  return parts.length ? isolateSelection(state, catalogue.identity) : state;
 }
 
 export function learningSceneState(catalogue: LearningCatalogue, scope: ReturnType<typeof learningScope>, selected: string[], focus: [number[], number[]] | null, context: boolean, reset: number, view: SceneState['view'], intent: 'reset' | 'preset'): SceneState {

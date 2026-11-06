@@ -12,6 +12,7 @@ import { resetViewer } from '../app/region-navigation.ts';
 import { isolationCameraKey } from '../app/viewer-interaction.ts';
 import { resolveVisibility } from '../app/visibility.ts';
 import { explosionPlaybackAmount } from '../app/explode-playback.ts';
+import { fitRegionCamera } from '../app/region-camera.ts';
 
 const close = (actual, expected, label = 'pose') => assert.ok(actual.distanceTo(expected) < 1e-9, label);
 const cameraFixture = () => {
@@ -317,4 +318,46 @@ test('Manual zero drains real OrbitControls damping without displacing its pan o
     assert.ok(Math.abs(ctx.camera.position.distanceTo(ctx.target) - 7) < 1e-9);
     assert.equal(controls.enableDamping, true);
   } finally { controls.dispose(); dom.window.close(); }
+});
+
+
+test('embedded isolation fits every selected bound corner inside the actual canvas', () => {
+  for (const [width, height] of [[340, 330], [760, 590]]) {
+    const ctx = sceneFixture(), env = ctx.env;
+    env.embedded = true;
+    env.el.clientWidth = width; env.el.clientHeight = height;
+    env.camera.aspect = width / height; env.camera.updateProjectionMatrix();
+    const bounds = new T.Box3(new T.Vector3(-.03, .8, -.03), new T.Vector3(.03, 1.2, .03));
+    env.bounds = [bounds];
+    env.fitRegionCamera = fitRegionCamera;
+    env.viewport = (w, h) => ({ left: 16, right: w - 16, top: 16, bottom: h - 16 });
+    env.latest.current = { ...env.latest.current, isolate: true, isolatedPartIds: new Set(['part']), selected: ['part'], cameraIntent: 'preset', cameraIntentRevision: env.intentRevision, reset: env.lastReset, view: 'front' };
+    ctx.tick(1000);
+    env.camera.lookAt(env.controls.target); env.camera.updateMatrixWorld(true);
+    const center = bounds.getCenter(new T.Vector3());
+    assert.ok(env.controls.target.distanceTo(center) < 1e-9);
+    for (let corner = 0; corner < 8; corner++) {
+      const point = new T.Vector3(corner & 1 ? bounds.max.x : bounds.min.x, corner & 2 ? bounds.max.y : bounds.min.y, corner & 4 ? bounds.max.z : bounds.min.z).project(env.camera);
+      const x = (point.x + 1) * width / 2, y = (1 - point.y) * height / 2;
+      assert.ok(x >= 16 && x <= width - 16 && y >= 16 && y <= height - 16, `${width}x${height}: ${x}, ${y}`);
+    }
+  }
+});
+
+test('actual embedded explosion fitting receives the canvas budget without full-screen panel margins', () => {
+  const start = source.indexOf('  const fitExplosion='), end = source.indexOf('  const resize=', start);
+  const code = ts.transpileModule(source.slice(start, end) + ';return fitExplosion;', { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.None } }).outputText;
+  const createFit = new Function('env', `with(env){${code}}`);
+  for (const [width, height] of [[340, 330], [760, 590]]) {
+    let available;
+    const camera = new T.PerspectiveCamera(34, width / height, .005, 100); camera.position.set(0, 1, 3);
+    const env = { embedded: true, el: { clientWidth: width, clientHeight: height }, camera, controls: { target: new T.Vector3(0, 1, 0) }, T,
+      explosionLayout: { targets: new Map([['part', {}]]), lanes: [{}] }, explosionZoom: null, sliderFrame: null, amount: 1, dirty: false,
+      explosionWorldBounds: () => [[-1, 0, -.2], [1, 2, .2]], explosionProgress: () => ({ piece: 1, family: 1 }),
+      explosionFitDistance: (...args) => { available = args.slice(-2); return 4; },
+    };
+    createFit(env)(0);
+    assert.deepEqual(available, [width - 32, height - 32]);
+    assert.ok(Math.abs(camera.position.distanceTo(env.controls.target) - 4) < 1e-9);
+  }
 });

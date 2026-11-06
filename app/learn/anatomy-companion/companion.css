@@ -1,11 +1,11 @@
-.learn-anatomy { padding: 24px; border: 1px solid var(--border); border-radius: 18px; background: var(--panel); min-width: 0; }
-.learn-anatomy button, .learn-anatomy-references button, .learn-companion-header button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; padding: 9px 13px; border: 1px solid var(--input); border-radius: 9px; background: var(--control); color: var(--foreground); font: inherit; font-size: 12px; line-height: 1.5; }
-.learn-anatomy button:enabled:hover, .learn-anatomy-references button:hover { background: var(--accent); }
+.learn-anatomy { padding: 16px; border: 1px solid var(--border); border-radius: 18px; background: var(--panel); min-width: 0; }
+.learn-anatomy button:not([role="switch"]):not(.explode-play):not(.dock-reset), .learn-anatomy-references button, .learn-companion-header button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; padding: 9px 13px; border: 1px solid var(--input); border-radius: 9px; background: var(--control); color: var(--foreground); font: inherit; font-size: 12px; line-height: 1.5; }
+.learn-anatomy button:not([role="switch"]):not(.explode-play):not(.dock-reset):enabled:hover, .learn-anatomy-references button:hover { background: var(--accent); }
 .learn-anatomy-controls { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,2fr); gap: 14px; margin-bottom: 18px; }
 .learn-anatomy-controls label { display: flex; flex-direction: column; gap: 7px; font-size: 11px; color: var(--ui-muted); }
 .learn-anatomy-controls select { min-width: 0; width: 100%; min-height: 44px; padding: 9px 11px; border: 1px solid var(--input); border-radius: 9px; background: var(--control-input); color: var(--foreground); font: inherit; font-size: 13px; }
 .learn-anatomy-controls select:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
-.learn-anatomy-stage { position: relative; height: clamp(430px,64dvh,670px); overflow: hidden; border-radius: 12px; background: var(--background); isolation: isolate; }
+.learn-anatomy-stage { position: relative; min-width: 0; height: clamp(480px,66dvh,740px); overflow: hidden; border-radius: 12px; background: var(--background); isolation: isolate; }
 .learn-anatomy-stage .scene { position: absolute; inset: 0; }
 .learn-anatomy-stage[data-interactive=false] .scene { pointer-events: none; }
 .learn-anatomy-stage:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
@@ -15,7 +15,7 @@
 .learn-anatomy-actions, .learn-anatomy-views, .learn-anatomy-links { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .learn-anatomy-views { margin-top: 10px; }
 .learn-anatomy-views button { min-width: 60px; }
-.learn-anatomy button[aria-pressed=true] { background: var(--primary); color: var(--primary-foreground); }
+.learn-anatomy button:not([role="switch"]):not(.explode-play):not(.dock-reset)[aria-pressed=true] { background: var(--primary); color: var(--primary-foreground); }
 .learn-anatomy-context { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; padding: 5px; color: var(--ui-secondary); font-size: 12px; }
 .learn-anatomy-context input { width: 17px; height: 17px; accent-color: var(--ui-link); }
 .learn-anatomy-selection { min-height: 90px; padding-top: 20px; }
@@ -33,12 +33,114 @@
 .learn-companion-reading { min-width: 0; }
 .learn-companion-sticky { position: sticky; top: 92px; max-height: calc(100dvh - 110px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; border: 1px solid var(--border); border-radius: 16px; background: var(--card); }
 .learn-companion-aside { align-self: stretch; min-width: 0; }
-.learn-companion-header { display: flex; align-items: center; gap: 7px; padding: 13px 14px; }
+.learn-companion-header { position: sticky; top: 0; z-index: 2; background: var(--card); display: flex; align-items: center; gap: 7px; padding: 13px 14px; }
 .learn-companion-header h3 { flex: 1; min-width: 0; margin: 0; font-size: 17px; font-weight: 500; line-height: 1.5; scroll-margin-top: 100px; }
 .learn-companion-header button { flex: 0 0 40px; padding-inline: 9px; }
 .learn-anatomy--compact { padding: 15px; border: 0; border-radius: 0; background: transparent; }
-.learn-anatomy--compact .learn-anatomy-stage { height: 330px; }
+.learn-anatomy--compact .learn-anatomy-stage { height: clamp(300px,43dvh,440px); }
 .learn-anatomy--compact .learn-anatomy-controls { grid-template-columns: minmax(0,1fr); }
 .learn-anatomy--compact .learn-anatomy-loading { min-height: 330px; }
 @media(max-width:1250px){.learn-content[data-subject]:has(.learn-reading-companion-open) { width: min(1080px,100%); }.learn-companion-layout { grid-template-columns: minmax(0,1fr); }.learn-companion-aside { order: -1; }.learn-companion-sticky { position: static; max-height: none; }.learn-anatomy--compact .learn-anatomy-controls { grid-template-columns: minmax(0,1fr) minmax(0,2fr); }.learn-anatomy--compact .learn-anatomy-stage { height: 390px; }}
 @media(max-width:600px){.learn-anatomy { padding: 16px; }.learn-anatomy-controls, .learn-anatomy--compact .learn-anatomy-controls { grid-template-columns: minmax(0,1fr); }.learn-anatomy-stage { height: 440px; }.learn-anatomy--compact .learn-anatomy-stage { height: 350px; }.learn-anatomy-actions { gap: 6px; }}
+
+
+/* Explore's controls arranged around the actual embedded canvas, with no panel overlays. */
+.learn-content[data-subject]:has(.learn-visualize) { width: min(1480px,100%); }
+.learn-viewer { min-width: 0; }
+.learn-viewer button:disabled { opacity: .4; cursor: default; }
+.learn-viewer button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.learn-viewer-toolbar, .learn-viewer-toolbar > div { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.learn-viewer-topbar { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px 20px; margin-bottom: 16px; }
+.learn-viewer-topbar .learn-anatomy-controls { flex: 0 1 500px; grid-template-columns: minmax(150px,180px) minmax(190px,1fr); width: 100%; margin: 0; }
+.learn-viewer-toolbar { flex: 1 1 440px; justify-content: space-between; gap: 8px 16px; margin: 0; }
+.learn-viewer-toolbar button[aria-expanded=true] { background: var(--accent); }
+.learn-viewer-toolbar a { display: inline-flex; align-items: center; gap: 5px; min-height: 44px; padding-inline: 6px; font-size: 12px; color: var(--ui-link); }
+.learn-viewer-hidden-count { color: var(--ui-muted); font-size: 10px; }
+.learn-viewer-workspace { display: grid; grid-template-columns: 210px minmax(0,1fr) 240px; align-items: start; gap: 14px; min-width: 0; }
+.learn-viewer-workspace[data-visibility=false] { grid-template-columns: minmax(0,1fr) 240px; }
+.learn-viewer-workspace[data-inspector=false] { grid-template-columns: 210px minmax(0,1fr); }
+.learn-viewer-workspace[data-visibility=false][data-inspector=false] { grid-template-columns: minmax(0,1fr); }
+.learn-viewer-panel { min-width: 0; padding: 12px; border: 1px solid var(--border); border-radius: 14px; background: var(--card); }
+.learn-viewer-panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 12px; }
+.learn-viewer-panel-heading h3 { margin: 0; font-size: 13px; font-weight: 600; }
+.learn-viewer-panel-heading > div { display: flex; gap: 2px; }
+.learn-anatomy .learn-viewer-panel-heading button { width: 32px; min-height: 32px; padding: 5px; border: 0; background: transparent; }
+.learn-viewer-visibility-tabs[data-slot=tabs] { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.learn-viewer-visibility-tabs [data-slot=tabs-list] { display: flex; flex: 0 0 auto; flex-direction: row; align-self: stretch; width: 100%; height: 44px; gap: 2px; padding: 4px; background: var(--muted); }
+.learn-viewer-visibility-tabs [data-slot=tabs-content] { flex: none; min-width: 0; width: 100%; }
+.learn-viewer-visibility-tabs [data-slot=tabs-content][hidden] { display: none; }
+.learn-anatomy .learn-viewer-visibility-tabs [data-slot=tabs-trigger] { flex: 1; min-width: 0; min-height: 36px; padding: 5px; border: 0; background: transparent; font-size: 11px; }
+.learn-anatomy .learn-viewer-visibility-tabs [data-active] { background: var(--card); color: var(--foreground); }
+.learn-viewer-visibility-tabs [data-slot=tabs-trigger] span { margin-left: 5px; font-size: 10px; color: var(--ui-muted); }
+.learn-viewer-system-list { display: grid; gap: 12px; padding-block: 14px; }
+.learn-viewer-system-row { display: flex; align-items: center; gap: 7px; font-size: 12px; color: var(--ui-secondary); }
+.learn-viewer-system-row .system-dot { flex: 0 0 7px; width: 7px; height: 7px; border-radius: 50%; }
+.learn-viewer-system-row small { margin-left: auto; font-size: 10px; color: var(--ui-muted); }
+.learn-viewer-subheading { display: block; margin: 12px 0 6px; color: var(--ui-muted); font-size: 10px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; }
+.learn-viewer-structure-list { max-height: 280px; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+.learn-anatomy .learn-viewer-structure-list button { display: flex; justify-content: flex-start; width: 100%; gap: 7px; padding: 8px; border: 0; background: transparent; text-align: left; font-size: 12px; }
+.learn-viewer-structure-list button span { flex: 1; }
+.learn-viewer-structure-list button small { color: var(--ui-muted); font-size: 10px; }
+.learn-viewer-panel-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); color: var(--ui-muted); font-size: 10px; }
+.learn-anatomy .learn-viewer-panel-foot button { min-height: 36px; padding: 5px 0; border: 0; background: transparent; font-size: 10px; }
+.learn-viewer-hidden-list { max-height: 390px; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+.learn-viewer-hidden-list > p { margin: 12px 0; font-size: 12px; line-height: 1.7; color: var(--ui-secondary); }
+.learn-viewer-hidden-list ul { list-style: none; padding: 0; margin: 0; }
+.learn-viewer-hidden-list li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 0; font-size: 12px; border-bottom: 1px solid var(--border); }
+.learn-viewer-hidden-list li > span { min-width: 0; overflow-wrap: anywhere; }
+.learn-viewer-hidden-list small { display: block; margin-top: 3px; color: var(--ui-muted); font-size: 9px; }
+.learn-anatomy .learn-viewer-hidden-list button { min-height: 36px; padding: 5px; border: 0; background: transparent; font-size: 11px; }
+.learn-viewer-center { min-width: 0; }
+.learn-viewer-canvas-row { display: grid; grid-template-columns: minmax(0,1fr) 44px; gap: 8px; align-items: stretch; }
+.learn-viewer-camera { display: flex; flex-direction: column; align-self: center; gap: 2px; padding: 4px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); }
+.learn-anatomy .learn-viewer-camera button { flex-shrink: 0; width: 34px; min-height: 34px; padding: 4px; border: 0; font-size: 11px; }
+.learn-viewer-camera i { display: block; height: 1px; margin: 4px; background: var(--border); }
+.learn-viewer-inspector-copy h4 { margin: 8px 0; font-size: 19px; line-height: 1.4; font-weight: 500; overflow-wrap: anywhere; }
+.learn-viewer-inspector-copy p { margin: 0; font-size: 12px; line-height: 1.8; color: var(--ui-secondary); }
+.learn-viewer-inspector-copy small { display: block; margin-top: 9px; color: var(--ui-muted); font-size: 10px; }
+.learn-viewer-inspector-actions { display: flex; flex-direction: column; gap: 7px; margin-top: 16px; }
+.learn-viewer-inspector-actions button { justify-content: flex-start; }
+.learn-viewer-inspector-actions kbd { margin-left: auto; color: var(--ui-muted); font: inherit; font-size: 10px; }
+.learn-viewer-members .learn-viewer-structure-list { max-height: 190px; }
+.learn-anatomy--compact .learn-viewer-workspace { display: flex; flex-direction: column; }
+.learn-anatomy--compact .learn-viewer-workspace > * { width: 100%; }
+.learn-anatomy--compact .learn-viewer-center { order: 0; }
+.learn-anatomy--compact .learn-viewer-visibility { order: 1; }
+.learn-anatomy--compact .learn-viewer-inspector { order: 2; }
+.learn-anatomy--compact .learn-viewer-structure-list { max-height: 180px; }
+.learn-anatomy--compact .learn-viewer-toolbar > div { gap: 6px; }
+.learn-anatomy--compact .learn-viewer-toolbar a { padding-inline: 0; }
+@media(max-width:1100px) {
+  .learn-viewer-workspace[data-visibility][data-inspector] { display: flex; flex-direction: column; }
+  .learn-viewer-workspace > * { width: 100%; }
+  .learn-viewer-center { order: 0; }
+  .learn-viewer-visibility { order: 1; }
+  .learn-viewer-inspector { order: 2; }
+  .learn-viewer-structure-list { max-height: 180px; }
+}
+@media(max-width:600px) {
+  .learn-viewer-toolbar { gap: 6px; }
+  .learn-anatomy .learn-viewer-toolbar button { padding-inline: 9px; }
+  .learn-viewer-hidden-count { display: none; }
+}
+
+.learn-anatomy .learn-viewer-help-trigger { width: 38px; padding-inline: 7px; }
+.learn-viewer-help-popover { width: min(320px,calc(100vw - 32px)); padding: 18px; border: 1px solid var(--border); border-radius: 14px; background: var(--card); color: var(--foreground); }
+.learn-viewer-help-popover p { margin: 10px 0; color: var(--ui-secondary); font-size: 12px; line-height: 1.7; }
+.learn-viewer-help-popover dl { display: grid; gap: 8px; margin: 14px 0; font-size: 12px; }
+.learn-viewer-help-popover dl > div { display: flex; align-items: baseline; gap: 14px; }
+.learn-viewer-help-popover dt { min-width: 64px; color: var(--ui-link); font-size: 11px; }
+.learn-viewer-help-popover dd { margin: 0; }
+.learn-viewer-visibility > .learn-anatomy-context { display: flex; gap: 8px; margin-top: 8px; padding-inline: 0; font-size: 11px; }
+.learn-anatomy--compact .learn-viewer-topbar { gap: 12px; }
+.learn-anatomy--compact .learn-viewer-topbar .learn-anatomy-controls { flex-basis: 100%; grid-template-columns: minmax(0,1fr); }
+.learn-anatomy--compact .learn-viewer-toolbar { flex-basis: 100%; }
+.learn-anatomy--compact .learn-viewer-canvas-row { display: flex; flex-direction: column-reverse; }
+.learn-anatomy--compact .learn-viewer-camera { flex-direction: row; flex-wrap: wrap; align-self: stretch; justify-content: center; }
+.learn-anatomy--compact .learn-viewer-camera i { width: 1px; height: 20px; margin: 5px; }
+@media(max-width:600px) { .learn-viewer-topbar .learn-anatomy-controls { flex-basis: 100%; grid-template-columns: minmax(0,1fr); } }
+
+/* Share Explore's dock appearance; only its placement changes in an embedded scene. */
+.learn-anatomy .learn-viewer-explode.bottom-dock { position: static; inset: auto; transform: none; width: min(460px,100%); max-width: 100%; margin: 12px auto 0; }
+.learn-anatomy .learn-viewer-explode.bottom-dock:focus-within { transform: none !important; }
+.learn-anatomy--compact .learn-viewer-explode.bottom-dock { padding: 13px; gap: 14px; }

@@ -21,3 +21,14 @@ test('Every viewer shortcut defers while focus is inside the Learn chooser',()=>
   assert.equal(viewerShortcut(event(key,{target:{closest:selector=>selector.includes('[data-atlas-shortcuts="disabled"]')?{}:null}})),null,key);
  }
 });
+
+test('An embedded viewer accepts keys only inside its own boundary and still defers to editors',()=>{
+ const scope={contains:target=>target===inside||target===nested},inside={closest:selector=>selector.includes('data-atlas-shortcuts')?scope:null},nested={closest:selector=>selector.includes('data-atlas-shortcuts')?nested:null};
+ assert.equal(viewerShortcut(event('h',{target:inside}),scope),'hide');
+ assert.equal(viewerShortcut(event('j',{target:inside}),scope),'restore');
+ assert.equal(viewerShortcut(event('h',{target:nested}),scope),null);
+ assert.equal(viewerShortcut(event('h',{target:{closest:()=>null}}),scope),null);
+ assert.equal(viewerShortcut(event('h',{target:inside})),null,'Explore window handler still defers to the Learn boundary');
+ const editor={closest:()=>({})},editorScope={contains:target=>target===editor};
+ assert.equal(viewerShortcut(event('h',{target:editor}),editorScope),null);
+});

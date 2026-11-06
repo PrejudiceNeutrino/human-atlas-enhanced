@@ -160,7 +160,7 @@ export default function AnatomyScene({embedded=false,active=true,stageOffset,zoo
   const explosionWorldBounds=(value:number)=>{const box=evaluateExplosionBounds(explosionLayout!,value);return box.map(side=>[side[0],side[1]+groundOffset,side[2]]) as ExplosionBounds;};
   const fitExplosion=(_previousAmount:number)=>{
    if(!explosionLayout?.targets.size)return;
-   const w=el.clientWidth,h=el.clientHeight,availableWidth=w-(w<768?40:600),availableHeight=h-(w<768?350:270);
+   const w=el.clientWidth,h=el.clientHeight,availableWidth=embedded?w-32:w-(w<768?40:600),availableHeight=embedded?h-32:h-(w<768?350:270);
    // Camera-direction reanchoring must not adopt an already expanded zoom as its base.
    if(!explosionZoom)explosionZoom={distance:camera.position.distanceTo(controls.target),scale:1};
    if(!sliderFrame){
@@ -332,7 +332,11 @@ export default function AnatomyScene({embedded=false,active=true,stageOffset,zoo
     interruptAssist();
     explosionZoom=null;
     if(s.isolate){const box=new T.Box3();atlas.parts.forEach((p,i)=>{if(s.isolatedPartIds?.has(p.id)??s.selected.includes(p.id))box.union(bounds[i].clone().translate(new T.Vector3(data[i*4],data[i*4+1]+groundOffset,data[i*4+2])));});
-     if(!box.isEmpty()){const center=box.getCenter(new T.Vector3()),size=box.getSize(new T.Vector3());const w=el.clientWidth,h=el.clientHeight,mobile=w<768,landscape=w>h&&h<=600;let left=20,right=w-20,top=mobile?250:110,bottom=h-170;if(s.inspectorOpen){if(landscape){right=w-335;top=100;bottom=h-125;}else if(mobile){const sheet=document.querySelector('.detail-sheet')?.getBoundingClientRect(),header=document.querySelector('.identity')?.getBoundingClientRect();top=(header?.bottom??94)+16;bottom=(sheet?.top??h*.58-139)-16;}else{right=w-370;left=w>1100?285:25;}}const availableWidth=Math.max(150,right-left),availableHeight=Math.max(40,bottom-top);camera.setViewOffset(w,h,w/2-(left+right)/2,h/2-(top+bottom)/2,w,h);const distance=Math.max(.07,Math.max(size.y*h/availableHeight,size.x*w/availableWidth/camera.aspect,size.z)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))*1.35);controls.maxDistance=Math.max(40,distance*2);sliderFrame=null;controls.target.copy(center);camera.position.copy(center).add((s.view==='front'?new T.Vector3(0,.02,1):s.view==='back'?new T.Vector3(0,.02,-1):s.view==='side'?new T.Vector3(1,.02,0):new T.Vector3(.2,.1,1)).normalize().multiplyScalar(distance));controls.update();dirty=true;}
+     if(!box.isEmpty()&&embedded){
+      const w=el.clientWidth,h=el.clientHeight,framing=fitRegionCamera([box.min.toArray(),box.max.toArray()],s.view,camera.fov,w,h,viewport(w,h));
+      camera.setViewOffset(w,h,framing.offsetX,framing.offsetY,w,h);controls.maxDistance=Math.max(40,framing.distance*2);controls.target.copy(framing.center);camera.position.copy(framing.center).addScaledVector(framing.direction,framing.distance);controls.update();dirty=true;
+     }
+     else if(!box.isEmpty()){const center=box.getCenter(new T.Vector3()),size=box.getSize(new T.Vector3());const w=el.clientWidth,h=el.clientHeight,mobile=w<768,landscape=w>h&&h<=600;let left=20,right=w-20,top=mobile?250:110,bottom=h-170;if(s.inspectorOpen){if(landscape){right=w-335;top=100;bottom=h-125;}else if(mobile){const sheet=document.querySelector('.detail-sheet')?.getBoundingClientRect(),header=document.querySelector('.identity')?.getBoundingClientRect();top=(header?.bottom??94)+16;bottom=(sheet?.top??h*.58-139)-16;}else{right=w-370;left=w>1100?285:25;}}const availableWidth=Math.max(150,right-left),availableHeight=Math.max(40,bottom-top);camera.setViewOffset(w,h,w/2-(left+right)/2,h/2-(top+bottom)/2,w,h);const distance=Math.max(.07,Math.max(size.y*h/availableHeight,size.x*w/availableWidth/camera.aspect,size.z)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))*1.35);controls.maxDistance=Math.max(40,distance*2);sliderFrame=null;controls.target.copy(center);camera.position.copy(center).add((s.view==='front'?new T.Vector3(0,.02,1):s.view==='back'?new T.Vector3(0,.02,-1):s.view==='side'?new T.Vector3(1,.02,0):new T.Vector3(.2,.1,1)).normalize().multiplyScalar(distance));controls.update();dirty=true;}
     }else if(lastIsolate){sliderFrame=null;camera.clearViewOffset();fit(s.view);}
     lastIsolate=isolateKey;
    }

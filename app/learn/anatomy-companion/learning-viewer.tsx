@@ -24,6 +24,6 @@ export function LearningAnatomyViewer({ lesson, requested, compact = false }: { 
     observer.observe(node); return () => observer.disconnect();
   }, []);
   return <div ref={host} className={`learn-anatomy ${compact ? 'learn-anatomy--compact' : ''}`} data-annotation-excluded data-atlas-shortcuts="disabled">
-    <ViewerBoundary>{started ? <Suspense fallback={<div className="learn-anatomy-loading" role="status">Opening interactive anatomy…</div>}><Viewer lesson={lesson} requested={requested} active={visible}/></Suspense> : <div className="learn-anatomy-loading"><p>Interactive anatomy loads when this panel is in view.</p><button type="button" onClick={() => { setVisible(true); setStarted(true); }}>Load interactive model</button></div>}</ViewerBoundary>
+    <ViewerBoundary>{started ? <Suspense fallback={<div className="learn-anatomy-loading" role="status">Opening interactive anatomy…</div>}><Viewer lesson={lesson} requested={requested} active={visible} compact={compact}/></Suspense> : <div className="learn-anatomy-loading"><p>Interactive anatomy loads when this panel is in view.</p><button type="button" onClick={() => { setVisible(true); setStarted(true); }}>Load interactive model</button></div>}</ViewerBoundary>
   </div>;
 }

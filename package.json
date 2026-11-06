@@ -12,7 +12,7 @@
     "check": "tsc --noEmit",
     "test:palettes": "node --experimental-strip-types --test scripts/palette.test.mjs scripts/palette-ui.test.mjs",
     "test:learn": "node --test scripts/learn.test.mjs",
-    "test:anatomy-companion": "node --test scripts/anatomy-companion.test.mjs",
+    "test:anatomy-companion": "node --test scripts/anatomy-companion.test.mjs scripts/anatomy-companion-ui.test.mjs",
     "test:annotations": "node --test scripts/annotations.test.mjs scripts/annotations-ui.test.mjs",
     "test:study-tools": "node --test scripts/study-tools.test.mjs scripts/study-tools-ui.test.mjs",
     "audit:coverage": "node scripts/anatomy-coverage.mjs",
