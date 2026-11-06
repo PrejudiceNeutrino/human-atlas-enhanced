@@ -2,8 +2,8 @@
 .learn-gallery button { min-height: 44px; padding: 10px 15px; border: 1px solid color-mix(in srgb,var(--primary) 45%,var(--card)); border-radius: 9px; background: color-mix(in srgb,var(--primary) 6%,var(--card)); color: var(--foreground); font: inherit; font-size: 13px; line-height: 1.5; }
 .learn-gallery button:enabled:hover { background: var(--accent); color: var(--foreground); }
 .learn-gallery button:disabled { opacity: .4; }
-.learn-gallery-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-bottom: 22px; }
-.learn-gallery-filters { display: flex; flex: 1 1 auto; flex-wrap: wrap; justify-content: space-between; gap: 18px; }
+.learn-gallery-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 22px; }
+.learn-gallery-filters { display: flex; flex: 0 1 auto; flex-wrap: wrap; justify-content: flex-start; gap: 12px; }
 .learn-gallery-filters button { display: inline-flex; align-items: center; gap: 7px; padding-inline: 10px; font-size: 12px; white-space: nowrap; transition: none; }
 .learn-gallery-filters button span { font-size: 10px; opacity: .7; font-variant-numeric: tabular-nums; }
 .learn-gallery .learn-gallery-filters button[aria-pressed=true] { background: var(--primary); color: var(--primary-foreground); border-color: var(--primary); }
