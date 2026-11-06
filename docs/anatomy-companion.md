@@ -1,6 +1,6 @@
 # Visualize and Anatomy Companion
 
-The Digestive System has a dedicated **Visualize** tab immediately before Gallery. Overview remains a reading page without an embedded model. Visualize provides a large interactive digestive model; eight explicit **View … in 3D** actions in Deep Dive open a reusable companion alongside the article. The same existing `AnatomyScene` powers both contexts and Explore.
+The Digestive System has a dedicated **Visualize** tab immediately before Gallery. Visualize uses a shared 1480px page width for its site header, subject navigation, content and footer; reading tabs retain their 1080px layout. Opening the wider desktop companion keeps those same page edges aligned with its 1560px workspace, returning to 1080px when the companion stacks on narrower screens. Overview remains a reading page without an embedded model. Visualize provides a large interactive digestive model; eight explicit **View … in 3D** actions in Deep Dive open a reusable companion alongside the article. The same existing `AnatomyScene` powers both contexts and Explore.
 
 ## Using it
 

@@ -1,5 +1,6 @@
 /* Reading pages reuse the atlas palette, controls, type and motion tokens. */
 .learn-shell {
+  --learn-layout-width: 1080px;
   height: 100dvh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -9,7 +10,10 @@
   padding: 0 max(24px, env(safe-area-inset-right)) 0 max(24px, env(safe-area-inset-left));
 }
 
-.learn-header, .learn-subjects, .learn-footer { width: min(1080px, 100%); margin-inline: auto; }
+.learn-shell:has(.learn-visualize) { --learn-layout-width: 1480px; }
+.learn-shell:has(.learn-reading-companion-open) { --learn-layout-width: 1560px; }
+@media (max-width: 1250px) { .learn-shell:has(.learn-reading-companion-open) { --learn-layout-width: 1080px; } }
+.learn-header, .learn-subjects, .learn-footer { width: min(var(--learn-layout-width), 100%); margin-inline: auto; }
 .learn-header { display: flex; align-items: center; gap: 20px; padding-block: 25px 20px; border-bottom: 1px solid var(--border); }
 .learn-wordmark { font-size: 27px; font-weight: 600; letter-spacing: -1px; text-decoration: none; }
 .learn-header .site-navigation { margin-left: auto; }
@@ -67,7 +71,7 @@
 .learn-skip-link:focus { transform: none; }
 
 /* Subject readings share one tab layout and preserve the established facts panels. */
-.learn-content[data-subject] { width: min(1080px, 100%); }
+.learn-content[data-subject] { width: min(var(--learn-layout-width), 100%); }
 .learn-content[data-subject] .learn-page-heading { margin-bottom: 32px; }
 .learn-reading-tabs[data-slot="tabs"] { display: block; scroll-margin-top: 16px; }
 .learn-tab-bar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 8px; margin-bottom: 36px; padding-block: 12px; background: var(--background); }
