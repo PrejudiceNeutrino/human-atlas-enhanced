@@ -97,7 +97,7 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
           {subject.tabs.map(tab => (
             <TabsTrigger key={tab.id} value={tab.id} disabled={tab.kind === 'coming-soon'} className="learn-tab-trigger">
               <span>{tab.title}</span>
-              {tab.kind === 'gallery' && <span className="learn-tab-new">New</span>}
+              {(tab.kind === 'gallery' || tab.kind === 'visualize') && <span className="learn-tab-new">New</span>}
               {tab.kind === 'coming-soon' && <span className="learn-coming-soon">Coming Soon</span>}
             </TabsTrigger>
           ))}

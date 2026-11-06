@@ -13,6 +13,11 @@
 .study-tools label { display: flex; flex-direction: column; gap: 8px; color: var(--ui-secondary); font-size: 13px; }
 .study-topbar { display: grid; grid-template-columns: minmax(0,440px) minmax(0,1fr); align-items: end; gap: 10px 24px; margin-bottom: 24px; }
 .study-topbar label { width: 100%; }
+.study-topic-control { display: flex; min-width: 0; flex-direction: column; gap: 8px; }
+.study-tools .study-topic-trigger[data-slot=select-trigger] { width: 100%; min-width: 0; height: 44px; padding: 10px 12px; border-color: var(--input); background: var(--control-input); color: var(--foreground); font-size: 13px; font-weight: 400; box-shadow: none; }
+.study-tools .study-topic-trigger:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; box-shadow: none; }
+.study-topic-menu [data-slot=select-item] { min-height: 40px; padding: 8px 30px 8px 12px; font-size: 13px; }
+.study-topic-menu [data-slot=select-item] > span:first-child { min-width: 0; flex-shrink: 1; white-space: normal; }
 .study-storage-note { grid-column: 1 / -1; width: 100%; max-width: none; text-align: left; text-wrap: pretty; font-size: 11px; color: var(--ui-muted); line-height: 1.6; }
 .study-export-control { display: flex; justify-self: end; }
 .study-export-status { margin: 0; font-size: 12px; }
@@ -173,8 +178,8 @@
 .study-tools .study-card-ratings button[aria-pressed=true] { border-color: var(--primary); background: var(--primary); color: var(--primary-foreground); }
 .study-tools .study-card-ratings button:enabled:hover { border-color: var(--primary); background: var(--study-button-hover); color: var(--foreground); }
 .study-tools .study-card-ratings button[aria-pressed=true]:enabled:hover { background: var(--primary-hover); color: var(--primary-foreground); }
-.study-tools .study-activity-nav button { border-color: transparent; box-shadow: none; }
-.study-tools .study-activity-nav button[aria-current] { border-color: var(--study-button-border); box-shadow: 0 1px 3px #10263814; }
+.study-tools .study-activity-nav button { border-color: transparent; box-shadow: none; transition: none; }
+.study-tools .study-activity-nav button[aria-current], .study-tools .study-activity-nav button[aria-current]:enabled:hover { background: var(--card); color: var(--foreground); border-color: var(--study-button-border); box-shadow: 0 1px 3px #10263814; }
 .study-tools .study-progress-footer button:not(.study-primary) { color: var(--study-error); }
 .study-tools button:disabled { box-shadow: none; }
 .study-mc-start-panel { display: flex; align-items: center; justify-content: space-between; gap: 24px; }

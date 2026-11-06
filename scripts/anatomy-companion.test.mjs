@@ -4,9 +4,11 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import test from 'node:test';
 import { build } from 'esbuild';
+import ts from 'typescript';
+import * as T from 'three';
 const output = path.resolve('work/anatomy-companion/model.mjs');
-await build({ absWorkingDir: process.cwd(), stdin: { contents: "export * from './app/learn/anatomy-companion/model';export * from './app/learn/anatomy-companion/references';export * from './app/model-registry';export * from './app/identity-index';export * from './app/regions';export {canonicalExploreSelection} from './app/viewer-interaction';", resolveDir: process.cwd() }, outfile: output, bundle: true, platform: 'node', format: 'esm', packages: 'external' });
-const { anatomyLessons: [lesson], MODEL_REGISTRY, createIdentityIndex, createRegionIndex, availableRepresentations, learningScope, learningSceneState, partBounds, canonicalExploreSelection } = await import(pathToFileURL(output).href);
+await build({ absWorkingDir: process.cwd(), stdin: { contents: "export * from './app/learn/anatomy-companion/model';export * from './app/learn/anatomy-companion/references';export * from './app/model-registry';export * from './app/identity-index';export * from './app/regions';export * from './app/region-camera';export * from './app/spatial-presentation';export {canonicalExploreSelection} from './app/viewer-interaction';", resolveDir: process.cwd() }, outfile: output, bundle: true, platform: 'node', format: 'esm', packages: 'external' });
+const { anatomyLessons: [lesson], MODEL_REGISTRY, createIdentityIndex, createRegionIndex, availableRepresentations, learningScope, initialLearningState, learningSceneState, partBounds, canonicalExploreSelection, fitRegionCamera, modelGrounding } = await import(pathToFileURL(output).href);
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const sidecar = read('public/identity/core-crosswalk-v1.json'), regions = read('public/regions/canonical-regions-v1.json');
 const catalogues = ['bp3d-male-4', 'female-study-v3'].map(id => {
@@ -62,4 +64,49 @@ test('unavailable, candidate and foreign-model requests return no substitute; co
   assert.deepEqual(state.contextReveal.targetRepresentationIds, resolved.map(item => item.representation.id));
   const complete = learningSceneState(catalogue, scope, [], null, false, 4, 'three-quarter', 'reset');
   assert.deepEqual(complete.regionFocus, scope.fullBounds); assert.equal(complete.contextReveal, undefined); assert.deepEqual(complete.selected, []);
+});
+
+// Run the real renderer fit and resize paths with real atlas bounds and a CPU
+// camera. This catches resize callbacks overwriting an isolated object's fit.
+test('all lesson objects fill the embedded viewport on entry, reset and same-aspect resize', () => {
+  const source = fs.readFileSync('app/scene.tsx', 'utf8');
+  const fitStart = source.indexOf('  const viewport='), fitEnd = source.indexOf('  const explosionWorldBounds=', fitStart);
+  const resizeStart = source.indexOf('  const resize='), resizeEnd = source.indexOf(';const observer=', resizeStart);
+  assert.ok(fitStart > 0 && fitEnd > fitStart && resizeEnd > resizeStart);
+  const code = ts.transpileModule(source.slice(fitStart, fitEnd) + source.slice(resizeStart, resizeEnd) + ';return {fit,resize};', { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.None } }).outputText;
+  const factory = new Function('env', `with(env){${code}}`);
+  for (const catalogue of catalogues) for (const reference of lesson.structures) {
+    const scope = learningScope(catalogue, lesson, false), state = initialLearningState(catalogue, scope, reference.conceptId);
+    const camera = new T.PerspectiveCamera(34, 1, .005, 100), target = new T.Vector3();
+    const groundOffset = modelGrounding(catalogue.atlas.parts);
+    const env = { T, embedded: true, latest: { current: state }, atlas: scope.atlas, camera, groundOffset, fitRegionCamera,
+      bounds: scope.atlas.parts.map(part => new T.Box3(new T.Vector3(...part.bounds[0]), new T.Vector3(...part.bounds[1]))),
+      controls: { target, maxDistance: 40, update() { camera.lookAt(target); camera.updateMatrixWorld(); } },
+      el: { clientWidth: 400, clientHeight: 400 }, renderer: { setPixelRatio() {}, setSize() {} }, devicePixelRatio: 1,
+      interruptAssist() {}, resetFade: null, lastState: null, sliderFrame: null, explosionZoom: null, amount: 0, dirty: false,
+    };
+    const { fit, resize } = factory(env);
+    const check = label => {
+      const { clientWidth: w, clientHeight: h } = env.el;
+      let left = Infinity, right = -Infinity, top = Infinity, bottom = -Infinity;
+      for (const part of scope.atlas.parts.filter(part => state.isolatedPartIds.has(part.id))) for (let i = 0; i < 8; i++) {
+        const point = new T.Vector3(part.bounds[i & 1 ? 1 : 0][0], part.bounds[i & 2 ? 1 : 0][1] + groundOffset, part.bounds[i & 4 ? 1 : 0][2]).project(camera);
+        const x = (point.x + 1) * w / 2, y = (1 - point.y) * h / 2;
+        assert.ok(x >= 16 && x <= w - 16 && y >= 16 && y <= h - 16 && point.z > -1 && point.z < 1, `${reference.label}: ${label} clips a corner`);
+        left = Math.min(left, x); right = Math.max(right, x); top = Math.min(top, y); bottom = Math.max(bottom, y);
+      }
+      assert.ok(Math.max((right - left) / (w - 32), (bottom - top) / (h - 32)) > .6, `${reference.label}: ${label} is too small`);
+    };
+    assert.deepEqual(state.selected, []);
+    fit(state.view); check('initial fit');
+    // A ResizeObserver can run again without an aspect/selection key change.
+    camera.position.sub(target).multiplyScalar(20).add(target);
+    env.el.clientWidth = 320; env.el.clientHeight = 320;
+    resize(); check('same-aspect resize');
+    for (const [w, h] of [[388, 396], [700, 390], [320, 440]]) {
+      env.el.clientWidth = w; env.el.clientHeight = h;
+      resize(); check(`${w}x${h}`);
+    }
+    fit(state.view); check('reset fit');
+  }
 });

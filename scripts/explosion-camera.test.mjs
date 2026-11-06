@@ -23,7 +23,7 @@ function fixture(file = 'atlas.json', initialDistance = 4, width = 1440, height 
   const model = file === 'atlas.json' ? 'bp3d-male-4' : 'female-study-v3';
   const camera = new T.PerspectiveCamera(34, width / height, .005, 100), target = new T.Vector3(0, .68, 0);
   camera.position.copy(target).addScaledVector(new T.Vector3(.35, .06, 1).normalize(), initialDistance);
-  const env = { T, camera, controls: { target, maxDistance: 40 }, el: { clientWidth: width, clientHeight: height }, groundOffset: modelGrounding(atlas.parts),
+  const env = { T, embedded: false, camera, controls: { target, maxDistance: 40 }, el: { clientWidth: width, clientHeight: height }, groundOffset: modelGrounding(atlas.parts),
     explosionLayout: createStableExplosionLayout(parts, model), evaluateExplosionBounds, explosionFitDistance, explosionProgress,
     sliderFrame: null, explosionZoom: null, amount: 0, dirty: false };
   const fit = factory(env);

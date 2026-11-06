@@ -138,6 +138,14 @@ export default function AnatomyScene({embedded=false,active=true,stageOffset,zoo
   const viewport=(w:number,h:number)=>embedded?{left:16,right:w-16,top:16,bottom:h-16}:focusedViewport(w,h);
   const fit=(view:SceneState['view'],_extent=0)=>{
    explosionZoom=null;
+   if(embedded&&latest.current.isolate){
+    const state=latest.current,box=new T.Box3();
+    atlas.parts.forEach((part,index)=>{if(state.isolatedPartIds?.has(part.id)??state.selected.includes(part.id))box.union(bounds[index]);});
+    if(!box.isEmpty()){
+     const w=el.clientWidth,h=el.clientHeight,framing=fitRegionCamera([box.min.toArray(),box.max.toArray()],view,camera.fov,w,h,viewport(w,h));framing.center.y+=groundOffset;
+     camera.setViewOffset(w,h,framing.offsetX,framing.offsetY,w,h);controls.maxDistance=Math.max(40,framing.distance*2);controls.target.copy(framing.center);camera.position.copy(framing.center).addScaledVector(framing.direction,framing.distance);controls.update();dirty=true;return;
+    }
+   }
    const focus=latest.current.areaId?latest.current.areaFocus:latest.current.regionFocus;
    if(focus&&!latest.current.isolate){
     const w=el.clientWidth,h=el.clientHeight;

@@ -46,13 +46,22 @@ const render = async (key, options = {}) => {
   flushSync(() => root.render(createElement('div', { className: `learn-anatomy ${options.compact ? 'learn-anatomy--compact' : ''}` }, createElement(Viewer, { lesson, active: true, ...options, key }))));
   for (let attempt = 0; attempt < 100; attempt++) {
     await delay(20);
-    if (document.querySelector('canvas') && button('Zoom in') && !button('Zoom in').disabled) return;
+    if (document.querySelector('canvas') && scene()?.revealed) return;
   }
   throw new Error('Workspace did not become ready: ' + document.body.textContent);
 };
 const click = async element => { assert.ok(element); flushSync(() => element.click()); await delay(40); };
 const key = async (target, key) => { flushSync(() => target.dispatchEvent(new window.KeyboardEvent('keydown', { key, bubbles: true }))); await delay(20); };
-const choose = async conceptId => { const select = document.querySelector('.learn-anatomy-controls label:last-child select'); flushSync(() => { select.value = conceptId; select.dispatchEvent(new window.Event('change', { bubbles: true })); }); await delay(30); };
+const selectOption = async (trigger, value) => {
+  await click(trigger);
+  const menu = document.querySelector('.learn-anatomy-menu[data-open]');
+  assert.ok(menu);
+  assert.equal(document.documentElement.hasAttribute('data-base-ui-scroll-locked'), false);
+  const option = [...menu.querySelectorAll('[role="option"]')].find(option => option.getAttribute('data-value') === value);
+  await click(option);
+  assert.ok(!menu.isConnected || !menu.hasAttribute('data-open'));
+};
+const choose = conceptId => selectOption(button('Focus anatomy'), conceptId);
 
 test('Visualize uses scoped Explore dissection, inspector, camera and reset actions', async () => {
   await render('visualize');
@@ -61,11 +70,13 @@ test('Visualize uses scoped Explore dissection, inspector, camera and reset acti
   assert.equal(document.querySelector('.learn-viewer-inspector'), null);
   assert.equal(scene().state.explode, 0);
   await choose(lesson.structures[0].conceptId);
-  const stomach = [...scene().state.selected];
+  assert.equal(scene().state.selected.length, 0);
+  const stomach = [...scene().state.isolatedPartIds];
   assert.equal(stomach.length, 1);
   assert.equal(scene().state.isolate, true);
   assert.equal(scene().state.isolatedPartIds.size, 1);
   const stage = document.querySelector('.learn-anatomy-stage');
+  flushSync(() => scene().onSelect(stomach[0]));
   await key(stage, 'h');
   assert.equal(scene().state.selected.length, 0);
   assert.equal(scene().state.hiddenRepresentationIds.length, 1);
@@ -73,13 +84,15 @@ test('Visualize uses scoped Explore dissection, inspector, camera and reset acti
   await key(stage, 'j');
   assert.equal(scene().state.hiddenPartIds.size, 0);
   await choose(lesson.structures[1].conceptId);
-  assert.equal(scene().state.selected.length, 60);
-  await key(document.querySelector('select'), 'h');
-  assert.equal(scene().state.selected.length, 60, 'typing and selectors do not dispatch viewer shortcuts');
+  assert.equal(scene().state.selected.length, 0);
+  assert.equal(scene().state.isolatedPartIds.size, 60);
+  flushSync(() => scene().onSelect([...scene().state.isolatedPartIds][0]));
+  await key(button('Focus anatomy'), 'h');
+  assert.equal(scene().state.selected.length, 1, 'typing and selectors do not dispatch viewer shortcuts');
   await key(document.querySelector('#outside'), 'h');
-  assert.equal(scene().state.selected.length, 60, 'reading controls outside the viewer are untouched');
+  assert.equal(scene().state.selected.length, 1, 'reading controls outside the viewer are untouched');
   await click(textButton('Hide selectedH'));
-  assert.equal(scene().state.hiddenRepresentationIds.length, 60);
+  assert.equal(scene().state.hiddenRepresentationIds.length, 1);
   await click(textButton('Restore all hidden'));
   assert.equal(scene().state.hiddenPartIds.size, 0);
   await key(stage, 'r');
@@ -99,6 +112,37 @@ test('Visualize uses scoped Explore dissection, inspector, camera and reset acti
   assert.equal(scene().state.visible.length, 0);
   await click(button('Show all systems'));
   assert.ok(scene().state.visible.includes('digestive'));
+});
+
+test('opening an organ keeps natural colors and member selection independent of its visible assembly', async () => {
+  await render('natural-colors');
+  await choose(lesson.structures[5].conceptId);
+  assert.equal(scene().state.selected.length, 0);
+  assert.equal(scene().state.isolatedPartIds.size, 56);
+  assert.equal(document.querySelectorAll('.learn-viewer-members [aria-pressed="true"]').length, 0);
+  assert.ok(document.querySelector('.learn-viewer-inspector-copy').textContent.includes('56 included pieces'));
+  const assembly = [...scene().state.isolatedPartIds];
+  await click(document.querySelector('.learn-viewer-members button'));
+  assert.equal(scene().state.selected.length, 1);
+  assert.deepEqual([...scene().state.isolatedPartIds], assembly);
+  assert.equal(document.querySelectorAll('.learn-viewer-members [aria-pressed="true"]').length, 1);
+  await click(textButton('Clear selection'));
+  assert.equal(scene().state.selected.length, 0);
+  assert.deepEqual([...scene().state.isolatedPartIds], assembly);
+
+  await choose(lesson.structures[5].conceptId);
+  await click(document.querySelector('.learn-anatomy-context input'));
+  assert.equal(scene().state.isolate, false);
+  assert.equal(scene().state.selected.length, 0);
+  assert.equal(scene().state.contextReveal.targetRepresentationIds.length, 56);
+  await click(document.querySelector('.learn-anatomy-context input'));
+  assert.equal(scene().state.isolate, true);
+  assert.equal(scene().state.selected.length, 0);
+  assert.equal(scene().state.isolatedPartIds.size, 56);
+  await click(document.querySelector('.learn-anatomy-context input'));
+  await choose(lesson.structures[1].conceptId);
+  assert.equal(scene().state.selected.length, 0, 'context focus also leaves the assembly unselected');
+  assert.equal(scene().state.contextReveal.targetRepresentationIds.length, 60);
 });
 
 test('explosion playback and slider use the existing scene run, pause on scope change and reset', async () => {
@@ -127,39 +171,48 @@ test('explosion playback and slider use the existing scene run, pause on scope c
   assert.equal(scene().explodePlayback, null);
 });
 
-test('the companion starts at the requested real assembly and supports the same controls and model changes', async () => {
+test('the compact companion shows only the requested object and explosion controls', async () => {
   const esophagus = lesson.structures[7], request = { conceptId: esophagus.conceptId, revision: 1 };
   await render('companion', { compact: true, requested: request });
-  assert.equal(document.querySelector('.learn-viewer-visibility'), null);
-  assert.ok(document.querySelector('.learn-viewer-inspector'));
-  assert.equal(scene().state.selected.length, 1);
+  for (const selector of ['.learn-viewer-topbar', '.learn-viewer-visibility', '.learn-viewer-inspector', '.learn-viewer-camera', '.learn-anatomy-disclosure']) assert.equal(document.querySelector(selector), null);
+  assert.equal(document.querySelector('.learn-viewer-workspace').dataset.visibility, 'false');
+  assert.equal(document.querySelector('.learn-viewer-workspace').dataset.inspector, 'false');
+  assert.equal(document.querySelector('.learn-anatomy-stage').dataset.interactive, 'true');
+  assert.equal(scene().state.selected.length, 0);
+  assert.equal(scene().state.isolatedPartIds.size, 1);
   assert.equal(scene().state.isolate, true);
-  const selected = scene().atlas.parts.find(part => part.id === scene().state.selected[0]);
+  const selected = scene().atlas.parts.find(part => scene().state.isolatedPartIds.has(part.id));
   assert.equal(selected.conceptId, 'FMA7131');
   assert.deepEqual(scene().state.regionFocus, selected.bounds);
-  await click(textButton('Visibility0 hidden'));
-  assert.ok(document.querySelector('.learn-viewer-visibility'));
   await key(document.querySelector('.learn-anatomy-stage'), 'h');
-  assert.equal(scene().state.hiddenPartIds.size, 1);
-  await key(document.querySelector('.learn-anatomy-stage'), 'j');
-  assert.equal(scene().state.hiddenPartIds.size, 0);
-  const context = document.querySelector('.learn-anatomy-context input');
-  await click(context);
-  assert.equal(scene().atlas.parts.length, 266);
-  assert.equal(scene().state.isolate, false);
-  assert.equal(scene().state.contextReveal.targetRepresentationIds.length, 142);
-  await render('companion', { compact: true, requested: { conceptId: esophagus.conceptId, revision: 2 } });
-  assert.equal(scene().state.isolate, false);
-  assert.equal(scene().state.selected.length, 1);
-  assert.equal(scene().state.contextReveal.targetRepresentationIds.length, 1);
-  const model = document.querySelector('.learn-anatomy-controls label:first-child select');
-  flushSync(() => { model.value = 'female-study-v3'; model.dispatchEvent(new window.Event('change', { bubbles: true })); });
-  await delay(150);
-  assert.equal(scene().modelId, 'female-study-v3');
+  assert.equal(scene().state.hiddenPartIds.size, 0, 'hidden controls cannot hide the requested object');
+  flushSync(() => scene().onSelect(selected.id));
+  assert.equal(document.querySelector('.learn-viewer-inspector'), null);
   assert.equal(scene().state.isolate, true);
-  assert.ok(scene().state.isolatedRepresentationIds.every(id => id.includes('female-study-v3')));
-  assert.equal(scene().state.hiddenPartIds.size, 0);
-  assert.ok(document.querySelector('.learn-anatomy-disclosure').textContent.includes('estimated proportions'));
+
+  await render('companion', { compact: true, requested: { conceptId: lesson.structures[1].conceptId, revision: 2 } });
+  assert.equal(scene().state.selected.length, 0);
+  assert.equal(scene().state.isolatedPartIds.size, 60);
+  assert.equal(scene().state.isolate, true);
+  const play = [...document.querySelectorAll('button')].find(element => element.getAttribute('aria-label')?.startsWith('Play expansion'));
+  await click(play);
+  const run = scene().explodePlayback;
+  assert.ok(run);
+  flushSync(() => scene().onExplodePlaybackUpdate(run, .5, false));
+  assert.equal(scene().state.explode, .5);
+  await click(button('Assemble and reset'));
+  assert.equal(scene().state.explode, 0);
+  assert.equal(scene().state.selected.length, 0);
+  assert.equal(scene().state.isolatedPartIds.size, 60);
+  assert.equal(scene().state.isolate, true, 'reset reassembles the requested organ without showing the whole system');
+  assert.equal(scene().state.isolatedPartIds.size, 60);
+  assert.equal(document.querySelector('.learn-viewer-inspector'), null);
+  assert.ok([...document.querySelectorAll('button')].every(element => element.closest('.learn-viewer-explode')));
+  await render('companion', { compact: true, requested: { conceptId: esophagus.conceptId, revision: 3 } });
+  assert.equal(scene().explodePlayback, null);
+  assert.equal(scene().state.selected.length, 0);
+  assert.equal(scene().state.isolatedPartIds.size, 1);
+  assert.equal(scene().state.isolate, true);
 });
 
 
@@ -174,6 +227,28 @@ test('Visibility tabs remain horizontal above their content and the explosion tr
   await click([...tabs.querySelectorAll('[role="tab"]')].find(element => element.textContent.startsWith('Hidden')));
   assert.equal(tabs.querySelector('[role="tab"][aria-selected="true"]').textContent, 'Hidden 0');
   for (const panel of tabs.querySelectorAll('[role="tabpanel"][hidden]')) assert.equal(getComputedStyle(panel).display, 'none');
+});
+
+test('themed anatomy menus preserve page scrolling, labels and keyboard shortcut boundaries', async () => {
+  await render('selects');
+  const focus = button('Focus anatomy'), shell = document.querySelector('#root');
+  assert.equal(focus.querySelector('[data-slot="select-value"]').textContent, 'Complete digestive system');
+  const bodyStyle = document.body.getAttribute('style'), htmlStyle = document.documentElement.getAttribute('style');
+  await click(focus);
+  const menu = document.querySelector('.learn-anatomy-menu[data-open]');
+  assert.ok(menu);
+  assert.deepEqual([...menu.querySelectorAll('[role="option"]')].map(option => option.getAttribute('data-value')), ['', ...lesson.structures.map(item => item.conceptId)]);
+  assert.equal(document.body.getAttribute('style'), bodyStyle);
+  assert.equal(document.documentElement.getAttribute('style'), htmlStyle);
+  const wheel = new window.WheelEvent('wheel', { deltaY: 100, bubbles: true, cancelable: true });
+  shell.dispatchEvent(wheel); assert.equal(wheel.defaultPrevented, false);
+  await key(document.activeElement, 'Escape');
+  assert.ok(!menu.hasAttribute('data-open'));
+  assert.equal(document.activeElement, focus);
+  const zoom = scene().zoomSteps;
+  await key(focus, '+'); assert.equal(scene().zoomSteps, zoom, 'select editing never triggers scene zoom');
+  await key(document.querySelector('.learn-anatomy-stage'), '/');
+  assert.equal(document.activeElement, focus);
 });
 
 test('renderer failures preserve controls and Explore link and Retry remounts a single scene', async () => {

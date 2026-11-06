@@ -1,6 +1,7 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { BookOpen, Layers3, ListChecks, TextCursorInput, X } from 'lucide-react';
 import { Dialog, DialogClose, DialogContent, DialogDescription } from '@/components/ui/dialog';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { studyBank, unresolvedReferences } from './data';
 import { byTopic } from './model';
 import { createStudyProgressStore, useStudyProgress } from './progress';
@@ -20,6 +21,7 @@ const activities=[
   {id:'flashcards' as const,title:'Flashcards',unit:'cards',Icon:Layers3,description:'Practice recall and keep track of what you know or want to review.'},
 ];
 export function StudyToolsWorkspace({subjectTitle,route,tabId,bank:studyBank,unresolvedReferences=[]}:{subjectTitle:string;route:string;tabId:string;bank:StudyBank;unresolvedReferences?:string[]}){
+  const topicControlId=useId();
   const [activity,setActivity]=useState<Activity|'overview'>('overview'),[topic,setTopic]=useState('all'),[focusedId,setFocusedId]=useState<string|null>(null),root=useRef<HTMLElement>(null),previousActivity=useRef(activity);
   const [store]=useState(()=>{let storage:Storage|undefined;try{storage=window.localStorage;}catch{/* Progress errors are visible below. */}return createStudyProgressStore(studyBank.manifest.subjectId,storage);});
   const state=useStudyProgress(store);
@@ -41,6 +43,7 @@ export function StudyToolsWorkspace({subjectTitle,route,tabId,bank:studyBank,unr
   const counts={'multiple-choice':questions.length,'fill-in-the-blank':recall.length,glossary:byTopic(studyBank.concepts,topic).length,flashcards:cards.length};
   const totals={'multiple-choice':studyBank.multipleChoice.length,'fill-in-the-blank':studyBank.fillInTheBlank.length,glossary:studyBank.concepts.length,flashcards:studyBank.flashcards.length};
   const topics=[...studyBank.manifest.topics].sort((a,b)=>a.sortOrder-b.sortOrder);
+  const topicOptions=[{value:'all',label:'All Topics'},...topics.map(item=>({value:item.id,label:item.label}))];
   const related=(id:string)=>{setTopic('all');setFocusedId(id);setActivity('glossary');};
   const exportReview=()=>{
     const report=createStudyReviewExport(studyBank,state.progress,topic),url=URL.createObjectURL(new Blob([JSON.stringify(report,null,2)],{type:'application/json'})),link=document.createElement('a');
@@ -48,7 +51,7 @@ export function StudyToolsWorkspace({subjectTitle,route,tabId,bank:studyBank,unr
   };
   return <section className="study-tools" ref={root} data-annotation-excluded data-atlas-shortcuts="disabled" aria-labelledby={`${tabId}-heading`}>
     <header className="learn-article-header"><h2 id={`${tabId}-heading`} tabIndex={-1}>Study Tools</h2><p className="learn-reading-intro">{subjectTitle} · {studyBank.manifest.curriculum.split(' · ')[0]}</p></header>
-    <div className="study-topbar"><label>Topic<select aria-label="Study topic" value={topic} onChange={event=>{setTopic(event.target.value);setFocusedId(null);setExportMessage('');}}><option value="all">All Topics</option>{topics.map(topic=><option key={topic.id} value={topic.id}>{topic.label}</option>)}</select></label><div className="study-export-control"><button type="button" onClick={exportReview} title="Download study results and a review list. Personal Notes are not included.">Export review notes</button></div><span className="study-storage-note">Progress stays in this browser, separate from your Notes.</span></div>
+    <div className="study-topbar"><div className="study-topic-control"><label htmlFor={topicControlId}>Topic</label><Select modal={false} items={topicOptions} value={topic} onValueChange={value=>{if(typeof value!=='string')return;setTopic(value);setFocusedId(null);setExportMessage('');}}><SelectTrigger id={topicControlId} className="study-topic-trigger" aria-label="Study topic"><SelectValue/></SelectTrigger><SelectContent className="anatomy-choice-menu study-topic-menu" data-atlas-shortcuts="disabled">{topicOptions.map(item=><SelectItem key={item.value} value={item.value} data-value={item.value}>{item.label}</SelectItem>)}</SelectContent></Select></div><div className="study-export-control"><button type="button" onClick={exportReview} title="Download study results and a review list. Personal Notes are not included.">Export review notes</button></div><span className="study-storage-note">Progress stays in this browser, separate from your Notes.</span></div>
     <p className="study-export-status" role="status">{exportMessage}</p>
     {state.error&&<p className="study-storage-error" role="status">{state.error}</p>}
     {unresolvedReferences.length>0&&<details className="study-storage-error"><summary>{unresolvedReferences.length} source references could not be resolved</summary><ul>{unresolvedReferences.map(ref=><li key={ref}>{ref}</li>)}</ul></details>}

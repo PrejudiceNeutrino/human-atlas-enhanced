@@ -19,7 +19,7 @@ URL.createObjectURL=blob=>{exportedBlob=blob;return'blob:study-review';};URL.rev
 const nativeClick=window.HTMLAnchorElement.prototype.click;window.HTMLAnchorElement.prototype.click=function(){if(!this.href.startsWith('blob:'))nativeClick.call(this);};
 const {createElement}=await import('react'),{createRoot}=await import('react-dom/client'),{flushSync}=await import('react-dom'),{default:axe}=await import('axe-core');
 const output=path.resolve('work/study-tools-tests/ui.mjs');
-const buildResult=await build({stdin:{contents:"export {default as LearnPage} from './app/learn/page';export * from './app/learn/study-tools/data';export * from './app/learn/study-tools/progress';export * from './app/notes/annotation-store';export * from './app/notes/annotation-content';",resolveDir:process.cwd()},outfile:output,bundle:true,platform:'node',format:'esm',packages:'external',loader:{'.css':'empty'},tsconfig:path.resolve('tsconfig.json'),alias:{'@':process.cwd()},metafile:true});
+await build({stdin:{contents:"export {default as LearnPage} from './app/learn/page';export * from './app/learn/study-tools/data';export * from './app/learn/study-tools/progress';export * from './app/notes/annotation-store';export * from './app/notes/annotation-content';",resolveDir:process.cwd()},outfile:output,bundle:true,platform:'node',format:'esm',packages:'external',loader:{'.css':'empty'},tsconfig:path.resolve('tsconfig.json'),alias:{'@':process.cwd()}});
 const {LearnPage,studyBank:bank,studyProgressKey,annotationStore,annotationSources}=await import(pathToFileURL(output).href),root=createRoot(document.querySelector('#root'));let renderKey=0;
 const waitFor=async(predicate,label)=>{for(let i=0;i<70;i++){if(predicate())return;await delay(30);}assert.ok(predicate(),label);};
 const click=async element=>{assert.ok(element,'click target exists');flushSync(()=>element.click());await delay(65);};
@@ -30,7 +30,14 @@ const pane=name=>document.getElementById(`study-${name}-heading`)?.closest('.stu
 const open=async()=>{window.history.replaceState(null,'','/learn/digestive');flushSync(()=>root.render(createElement(LearnPage,{pathname:'/learn/digestive',key:++renderKey})));await delay(80);await click(tab('Study Tools'));await waitFor(()=>tools(),'study chunk');};
 const closeFlashcards=async()=>{const dialog=document.querySelector('.study-flash-dialog:not([hidden])');if(dialog)await click(named(dialog,'Close flashcard viewer'));};
 const activity=async label=>{await closeFlashcards();await click([...tools().querySelectorAll('.study-activity-nav button')].find(button=>button.textContent.startsWith(label)));};
-const change=async(element,value)=>{const proto=element.tagName==='SELECT'?window.HTMLSelectElement.prototype:window.HTMLInputElement.prototype;Object.getOwnPropertyDescriptor(proto,'value').set.call(element,value);flushSync(()=>element.dispatchEvent(new window.Event(element.tagName==='SELECT'?'change':'input',{bubbles:true})));await delay(45);};
+const change=async(element,value)=>{
+ if(element.getAttribute('role')==='combobox'){
+  await click(element);await waitFor(()=>document.querySelector('.study-topic-menu[data-open]'),'topic menu');
+  const option=[...document.querySelectorAll('.study-topic-menu[data-open] [role=option]')].find(option=>option.getAttribute('data-value')===value);
+  await click(option);await waitFor(()=>!document.querySelector('.study-topic-menu[data-open]'),'topic menu closed');return;
+ }
+ const proto=element.tagName==='SELECT'?window.HTMLSelectElement.prototype:window.HTMLInputElement.prototype;Object.getOwnPropertyDescriptor(proto,'value').set.call(element,value);flushSync(()=>element.dispatchEvent(new window.Event(element.tagName==='SELECT'?'change':'input',{bubbles:true})));await delay(45);
+};
 const readProgress=()=>JSON.parse(window.localStorage.getItem(studyProgressKey('digestive')));
 const press=async(target,key,options={})=>{const event=new window.KeyboardEvent('keydown',{key,code:key===' '?'Space':key,bubbles:true,cancelable:true,...options});flushSync(()=>target.dispatchEvent(event));await delay(45);return event;};
 const reset=async()=>{await closeFlashcards();confirmation=true;await click(named(tools(),'Reset Study Progress'));};
@@ -42,8 +49,14 @@ test('enabled Study Tools exposes all four counts and exact topics alongside Gal
  await open();assert.equal(tab('Study Tools').getAttribute('aria-selected'),'true');assert.equal(tab('Quizzes'),undefined);assert.ok(tab('Gallery'));
  assert.equal(tools().querySelector('header p').textContent,'Digestive System · Chapter 24');
  assert.deepEqual([...tools().querySelectorAll('.study-overview-count')].map(node=>node.textContent),['111 questions','55 questions','194 concepts','101 cards']);
- const topic=tools().querySelector('[aria-label="Study topic"]');assert.deepEqual([...topic.options].map(option=>[option.value,option.text]),[['all','All Topics'],...bank.manifest.topics.map(topic=>[topic.id,topic.label])]);
- assert.equal(tools().querySelector('iframe'),null);assert.doesNotMatch(tools().textContent,/Editorial Review|Export correction/);assert.ok(!Object.keys(buildResult.metafile.inputs).some(file=>file.endsWith('/scene.tsx')||file.includes('/models/')));assert.equal(networkCalls,0);
+ const topic=tools().querySelector('[aria-label="Study topic"]');assert.equal(topic.getAttribute('role'),'combobox');assert.equal(topic.querySelector('[data-slot=select-value]').textContent,'All Topics');
+ const shell=document.querySelector('.learn-shell'),bodyStyle=document.body.getAttribute('style'),htmlStyle=document.documentElement.getAttribute('style');
+ await click(topic);await waitFor(()=>document.querySelector('.study-topic-menu[data-open]'),'themed topic menu');
+ assert.equal(document.documentElement.hasAttribute('data-base-ui-scroll-locked'),false);assert.equal(document.body.getAttribute('style'),bodyStyle);assert.equal(document.documentElement.getAttribute('style'),htmlStyle);
+ const wheel=new window.WheelEvent('wheel',{deltaY:100,bubbles:true,cancelable:true});shell.dispatchEvent(wheel);assert.equal(wheel.defaultPrevented,false,'page wheel scrolling remains available outside the open menu');
+ assert.deepEqual([...document.querySelectorAll('.study-topic-menu[data-open] [role=option]')].map(option=>[option.getAttribute('data-value'),option.textContent.trim()]),[['all','All Topics'],...bank.manifest.topics.map(topic=>[topic.id,topic.label])]);
+ await press(document.activeElement,'Escape');await waitFor(()=>!document.querySelector('.study-topic-menu[data-open]'),'topic menu dismissed');assert.equal(topic.querySelector('[data-slot=select-value]').textContent,'All Topics');assert.equal(document.activeElement,topic);
+ assert.equal(tools().querySelector('iframe'),null);assert.doesNotMatch(tools().textContent,/Editorial Review|Export correction/);assert.equal(tools().querySelector('canvas'),null);assert.equal(networkCalls,0);
 });
 test('multiple choice preserves randomized answer positions, accepts one submission, keeps scroll position and makes Next directly available',async()=>{
  await reset();await activity('Multiple Choice');await click(named(pane('multiple-choice'),'Start session'));
@@ -62,8 +75,8 @@ test('multiple choice preserves randomized answer positions, accepts one submiss
 test('persistent session controls support 20/all questions, missed review and topic-filtered pools',async()=>{
  const size=tools().querySelector('[aria-label="Questions per session"]');await change(size,'20');await click(named(tools(),'New randomized session'));assert.match(pane('multiple-choice').querySelector('.study-session-navigation').textContent,/1 of 20/);
  await change(size,'all');await click(named(tools(),'New randomized session'));assert.match(pane('multiple-choice').querySelector('.study-session-navigation').textContent,/1 of 111/);
- const topic=bank.manifest.topics[2];await change(tools().querySelector('[aria-label="Study topic"]'),topic.id);await click(named(tools(),'New randomized session'));assert.equal(currentQuestion().topicId,topic.id);assert.equal(tools().querySelector('[aria-label="Study topic"]').value,topic.id);
- await activity('Flashcards');assert.equal(tools().querySelector('[aria-label="Study topic"]').value,topic.id);assert.ok(bank.flashcards.filter(card=>card.topicId===topic.id).some(card=>card.front===pane('flashcards').querySelector('.study-card-text').textContent));await closeFlashcards();await change(tools().querySelector('[aria-label="Study topic"]'),'all');
+ const topic=bank.manifest.topics[2];await change(tools().querySelector('[aria-label="Study topic"]'),topic.id);await click(named(tools(),'New randomized session'));assert.equal(currentQuestion().topicId,topic.id);assert.equal(tools().querySelector('[aria-label="Study topic"]').querySelector('[data-slot=select-value]').textContent,topic.label);
+ await activity('Flashcards');assert.equal(tools().querySelector('[aria-label="Study topic"]').querySelector('[data-slot=select-value]').textContent,topic.label);assert.ok(bank.flashcards.filter(card=>card.topicId===topic.id).some(card=>card.front===pane('flashcards').querySelector('.study-card-text').textContent));await closeFlashcards();await change(tools().querySelector('[aria-label="Study topic"]'),'all');
 });
 test('fill in the blank preserves the sentence, handles hints/retry and never scores a revealed answer as independent recall',async()=>{
  await reset();await activity('Fill in the Blank');let panel=pane('fill-in-the-blank');
@@ -173,6 +186,6 @@ test('fill full key completes all authored prompts, includes alternatives and ex
  await click(named(key,'Back to practice'));panel=pane('fill-in-the-blank');assert.equal(panel.querySelector('input').value,'Draft to keep');assert.equal(panel.querySelector('.study-fill-prompt').textContent,prompt);assert.equal(panel.querySelector('.study-feedback'),null);assert.equal(document.activeElement,named(tools(),'Reveal full key'));
 });
 test('activity controls, feedback and theme controls pass DOM accessibility checks',async()=>{
- for(const label of ['Multiple Choice','Fill in the Blank','Glossary','Flashcards']){await activity(label);const result=await axe.run(document,{rules:{'color-contrast':{enabled:false}}});assert.deepEqual(result.violations.map(issue=>issue.id),[],label);}
- const theme=document.querySelector('.learn-theme-trigger');await click(theme);assert.ok(['dark','light'].includes(document.documentElement.dataset.theme));
+ for(const label of ['Multiple Choice','Fill in the Blank','Glossary','Flashcards']){await activity(label);const result=await axe.run(document,{rules:{'color-contrast':{enabled:false}}});assert.deepEqual(result.violations.map(issue=>issue.id),[],label+' '+JSON.stringify(result.violations.map(issue=>({id:issue.id,nodes:issue.nodes.map(node=>({html:node.html,summary:node.failureSummary}))}))));}
+ await closeFlashcards();await click(document.querySelector('[aria-label="Appearance settings"]'));await click(named(document.querySelector('.appearance-popover'),'Dark'));assert.equal(document.documentElement.dataset.theme,'dark');
 });
