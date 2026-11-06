@@ -36,7 +36,7 @@ export const categoryLabel = (id: string, fallback = id) => categoryLabels[id] ?
 export function parseGallery(input: unknown): GalleryCollection {
   const data = input as GalleryCollection;
   if (!data || data.schemaVersion !== 1 || !Array.isArray(data.items) || !Array.isArray(data.gallerySections) || data.count !== data.items.length) {
-    throw new Error('The local gallery manifest is incomplete or unsupported.');
+    throw new Error('The gallery manifest is incomplete or unsupported.');
   }
   const sections = new Set(data.gallerySections.map(section => section.id));
   const ids = new Set<string>();
@@ -48,7 +48,7 @@ export function parseGallery(input: unknown): GalleryCollection {
         item.image !== `images/${item.id}.webp` || item.thumbnail !== `thumbnails/${item.id}.webp` ||
         !item.source || typeof item.source.deck !== 'string' || !Array.isArray(item.source.slides) || !item.source.slides.length ||
         !item.source.slides.every(slide => Number.isInteger(slide) && slide > 0)) {
-      throw new Error('The local gallery contains an invalid or duplicated figure.');
+      throw new Error('The gallery contains an invalid or duplicated figure.');
     }
     ids.add(item.id);
   }

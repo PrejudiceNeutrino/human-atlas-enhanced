@@ -6,9 +6,6 @@ import { ZoomFigure } from './zoom-figure';
 import '../subject-menu.css';
 import './gallery.css';
 
-declare const __LOCAL_GALLERY_ENABLED__: boolean;
-const locallyEnabled = typeof __LOCAL_GALLERY_ENABLED__ !== 'undefined' && __LOCAL_GALLERY_ENABLED__;
-
 function GalleryContent({ collection, assetBase }: { collection: GalleryCollection; assetBase: string }) {
   const [category, setCategory] = useState('all'), [query, setQuery] = useState('');
   const [selected, setSelected] = useState<string | null>(null);
@@ -56,19 +53,19 @@ export default function EducationalGallery({ tabId, subjectSlug }: { tabId: stri
   const [collection, setCollection] = useState<GalleryCollection | null>(null), [error, setError] = useState(''), [attempt, setAttempt] = useState(0);
   const heading = useRef<HTMLHeadingElement>(null);
   useLayoutEffect(() => { if (document.activeElement === document.body) heading.current?.focus({ preventScroll: true }); }, []);
-  const assetBase = `/__local-gallery/${subjectSlug}`;
+  const assetBase = `/images/learn/${subjectSlug}/gallery`;
   useEffect(() => {
-    if (!locallyEnabled) return;
     const controller = new AbortController();
+    setCollection(null);
     setError('');
-    void fetch(`${assetBase}/gallery.json`, { signal: controller.signal, cache: 'no-store', credentials: 'same-origin' }).then(async response => {
-      if (!response.ok) throw new Error('Local gallery files are unavailable. Import the supplied ZIP and restart the development server.');
+    void fetch(`${assetBase}/gallery.json`, { signal: controller.signal, credentials: 'same-origin' }).then(async response => {
+      if (!response.ok) throw new Error('The gallery could not load. Please try again.');
       return parseGallery(await response.json());
-    }).then(data => { if (!controller.signal.aborted) setCollection(data); }).catch(reason => { if (!controller.signal.aborted) setError(reason instanceof Error ? reason.message : 'The local gallery could not load.'); });
+    }).then(data => { if (!controller.signal.aborted) setCollection(data); }).catch(reason => { if (!controller.signal.aborted) setError(reason instanceof Error ? reason.message : 'The gallery could not load.'); });
     return () => controller.abort();
   }, [assetBase, attempt]);
   return <section className="learn-gallery" data-annotation-excluded data-atlas-shortcuts="disabled" aria-labelledby={`${tabId}-heading`}>
     <header className="learn-article-header"><h2 ref={heading} id={`${tabId}-heading`} tabIndex={-1}>Digestive System Gallery</h2><p className="learn-reading-intro">30 curated anatomical models, illustrations, and physiological diagrams from the course lectures.</p></header>
-    {!locallyEnabled ? <div className="learn-gallery-notice"><Images size={23} aria-hidden="true"/><h3>Available in local study mode</h3><p>This course image collection is available in the configured local edition of Human Atlas.</p></div> : error ? <div className="learn-gallery-notice" role="alert"><h3>Gallery unavailable</h3><p>{error}</p><button type="button" onClick={() => setAttempt(value => value + 1)}>Try again</button></div> : collection ? <GalleryContent collection={collection} assetBase={assetBase}/> : <p role="status">Loading gallery…</p>}
+    {error ? <div className="learn-gallery-notice" role="alert"><h3>Gallery unavailable</h3><p>{error}</p><button type="button" onClick={() => setAttempt(value => value + 1)}>Try again</button></div> : collection ? <GalleryContent collection={collection} assetBase={assetBase}/> : <p role="status">Loading gallery…</p>}
   </section>;
 }

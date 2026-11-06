@@ -1,0 +1,957 @@
+{
+  "schemaVersion": 1,
+  "title": "Digestive System — Selected Anatomy & Physiology Figures",
+  "description": "A manually curated, nonredundant collection extracted from two class slide decks, with source slide provenance.",
+  "selectionMethod": "Manual review of all 100 slides, complementary views preserved, obvious repeated figures removed, text-only slides omitted.",
+  "count": 30,
+  "gallerySections": [
+    {
+      "id": "anatomical-models",
+      "title": "Classroom anatomical models"
+    },
+    {
+      "id": "anatomical-diagrams",
+      "title": "Gross anatomy and relationships"
+    },
+    {
+      "id": "histology",
+      "title": "Tissues and microscopic structures"
+    },
+    {
+      "id": "physiology-diagrams",
+      "title": "Processes and regulation"
+    }
+  ],
+  "items": [
+    {
+      "id": "a01",
+      "title": "Complete digestive tract model",
+      "category": "anatomical-models",
+      "description": "Tall whole-body classroom model showing the digestive organs in anatomical position.",
+      "tags": [
+        "digestive tract",
+        "organ model"
+      ],
+      "image": "images/a01.webp",
+      "thumbnail": "thumbnails/a01.webp",
+      "width": 663,
+      "height": 1431,
+      "sha256": "8540f5dc9cdfebee4d5510b7484d1e9ba2515b45b6295971a95b77dc7af69a02",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          1
+        ],
+        "cropNormalized": [
+          0.49,
+          0,
+          0.75,
+          1
+        ]
+      },
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Tall whole-body classroom model showing the digestive organs in anatomical position."
+    },
+    {
+      "id": "a02",
+      "title": "Oral cavity: front view",
+      "category": "anatomical-diagrams",
+      "description": "Front-facing oral cavity diagram identifying the lips, frenula, fauces, uvula and tongue.",
+      "tags": [
+        "oral cavity",
+        "frenula",
+        "fauces"
+      ],
+      "image": "images/a02.webp",
+      "thumbnail": "thumbnails/a02.webp",
+      "width": 1985,
+      "height": 1431,
+      "sha256": "214ba804518ae3e5c94b92a1f522f18645a9c4e67a133366786836b98d464918",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          4
+        ],
+        "cropNormalized": [
+          0.12,
+          0,
+          0.9,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Front-facing oral cavity diagram identifying the lips, frenula, fauces, uvula and tongue."
+    },
+    {
+      "id": "a03",
+      "title": "Oral cavity and pharynx: sagittal view",
+      "category": "anatomical-diagrams",
+      "description": "Sagittal view of tongue and oral cavity, including related throat anatomy.",
+      "tags": [
+        "tongue",
+        "pharynx",
+        "sagittal"
+      ],
+      "image": "images/a03.webp",
+      "thumbnail": "thumbnails/a03.webp",
+      "width": 1985,
+      "height": 1431,
+      "sha256": "8fc75641671cf010ce9eaf9cab955e6de881be5f0c8618ffa0b51c776349c355",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          5
+        ],
+        "cropNormalized": [
+          0.12,
+          0,
+          0.9,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Sagittal view of tongue and oral cavity, including related throat anatomy."
+    },
+    {
+      "id": "a04",
+      "title": "Salivary glands on a teaching model",
+      "category": "anatomical-models",
+      "description": "Model photograph locating the parotid and submandibular salivary glands.",
+      "tags": [
+        "parotid",
+        "submandibular",
+        "salivary glands"
+      ],
+      "image": "images/a04.webp",
+      "thumbnail": "thumbnails/a04.webp",
+      "width": 2316,
+      "height": 1103,
+      "sha256": "ac8e13efb3681ff6119ef26732cdf342371d1fe99f7e1a7317b97444fedf7c78",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          8
+        ],
+        "cropNormalized": [
+          0,
+          0.12,
+          0.91,
+          0.89
+        ]
+      },
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Model photograph locating the parotid and submandibular salivary glands."
+    },
+    {
+      "id": "a05",
+      "title": "Sublingual gland and pharynx on a teaching model",
+      "category": "anatomical-models",
+      "description": "Sagittal teaching-model view identifying the sublingual salivary gland and pharynx.",
+      "tags": [
+        "sublingual",
+        "pharynx",
+        "salivary glands"
+      ],
+      "image": "images/a05.webp",
+      "thumbnail": "thumbnails/a05.webp",
+      "width": 2138,
+      "height": 1224,
+      "sha256": "0c3c043183c354461a95e72fcfe67ed1dd58565c6405998d23d02940fb50d59f",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          9
+        ],
+        "cropNormalized": [
+          0.07,
+          0.075,
+          0.91,
+          0.93
+        ]
+      },
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Sagittal teaching-model view identifying the sublingual salivary gland and pharynx."
+    },
+    {
+      "id": "a06",
+      "title": "Tooth internal anatomy",
+      "category": "anatomical-diagrams",
+      "description": "Tooth cutaway showing crown, root, enamel, dentin, pulp cavity, root canal and periodontal structures.",
+      "tags": [
+        "tooth",
+        "enamel",
+        "dentin",
+        "pulp"
+      ],
+      "image": "images/a06.webp",
+      "thumbnail": "thumbnails/a06.webp",
+      "width": 1998,
+      "height": 1431,
+      "sha256": "6453f4b8901459b86b2f28390ba6b24fbb57f818e7714fd310dcaea60748ae72",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          11
+        ],
+        "cropNormalized": [
+          0.125,
+          0,
+          0.91,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Tooth cutaway showing crown, root, enamel, dentin, pulp cavity, root canal and periodontal structures."
+    },
+    {
+      "id": "a07",
+      "title": "Dental arches and tooth classes",
+      "category": "anatomical-diagrams",
+      "description": "Primary and permanent dentition diagrams with incisors, canines, premolars and molars.",
+      "tags": [
+        "dentition",
+        "incisors",
+        "canines",
+        "molars"
+      ],
+      "image": "images/a07.webp",
+      "thumbnail": "thumbnails/a07.webp",
+      "width": 1171,
+      "height": 1431,
+      "sha256": "00a0dad4e8174dc7eee8a4589b2d73fb3441330bb7f413e0382f4c697115e430",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          12
+        ],
+        "cropNormalized": [
+          0.46,
+          0,
+          0.92,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Primary and permanent dentition diagrams with incisors, canines, premolars and molars."
+    },
+    {
+      "id": "a08",
+      "title": "Intestinal wall and villi",
+      "category": "histology",
+      "description": "Cross-sectional illustration showing intestinal wall layers, villi, vessels, and nerve plexuses.",
+      "tags": [
+        "intestinal wall",
+        "villi",
+        "lacteal",
+        "plexus"
+      ],
+      "image": "images/a08.webp",
+      "thumbnail": "thumbnails/a08.webp",
+      "width": 1985,
+      "height": 1431,
+      "sha256": "9a134fcec475e316b360b8df6832746799b9d019ecac108484b1aedcc4391515",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          14
+        ],
+        "cropNormalized": [
+          0.12,
+          0,
+          0.9,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Cross-sectional illustration showing intestinal wall layers, villi, vessels, and nerve plexuses."
+    },
+    {
+      "id": "a09",
+      "title": "Stomach regions and muscle layers",
+      "category": "anatomical-diagrams",
+      "description": "Stomach cutaway showing the fundus, cardia, body, pylorus, rugae and muscle layers.",
+      "tags": [
+        "stomach",
+        "rugae",
+        "pylorus"
+      ],
+      "image": "images/a09.webp",
+      "thumbnail": "thumbnails/a09.webp",
+      "width": 2328,
+      "height": 1431,
+      "sha256": "d68ac0c9ab727683c361aa58cc8e949a0fcc4da02418ec372aacbbe91ef22cf7",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          18
+        ],
+        "cropNormalized": [
+          0.035,
+          0,
+          0.95,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Stomach cutaway showing the fundus, cardia, body, pylorus, rugae and muscle layers."
+    },
+    {
+      "id": "a10",
+      "title": "Pancreas and duct system: teaching model",
+      "category": "anatomical-models",
+      "description": "Teaching-model photograph identifying pancreatic head, body, tail and ducts.",
+      "tags": [
+        "pancreas",
+        "pancreatic duct",
+        "accessory duct"
+      ],
+      "image": "images/a10.webp",
+      "thumbnail": "thumbnails/a10.webp",
+      "width": 2545,
+      "height": 1431,
+      "sha256": "fde38c979940e6a3857183caca047c7427ef1bfcc24d4e7abc3ad18a53036887",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          22
+        ],
+        "cropNormalized": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Teaching-model photograph identifying pancreatic head, body, tail and ducts."
+    },
+    {
+      "id": "a11",
+      "title": "Liver: anterior teaching-model view",
+      "category": "anatomical-models",
+      "description": "Anterior view of the liver showing lobes and falciform ligament.",
+      "tags": [
+        "liver",
+        "right lobe",
+        "left lobe",
+        "falciform ligament"
+      ],
+      "image": "images/a11.webp",
+      "thumbnail": "thumbnails/a11.webp",
+      "width": 2545,
+      "height": 1431,
+      "sha256": "62bd91b0771e3c9df30fe5f41edf4c2854a0b4f3f6bbdb9f71ac580fddf9cd3d",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          26
+        ],
+        "cropNormalized": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Anterior view of the liver showing lobes and falciform ligament."
+    },
+    {
+      "id": "a12",
+      "title": "Liver: inferior teaching-model view",
+      "category": "anatomical-models",
+      "description": "Inferior/posterior model view identifying the caudate and quadrate lobes and gallbladder.",
+      "tags": [
+        "liver",
+        "caudate",
+        "quadrate",
+        "gallbladder"
+      ],
+      "image": "images/a12.webp",
+      "thumbnail": "thumbnails/a12.webp",
+      "width": 2545,
+      "height": 1431,
+      "sha256": "445e68340d081f876f8739294b27524d5c2f8343cc375662a4208a405d153fae",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          27
+        ],
+        "cropNormalized": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Inferior/posterior model view identifying the caudate and quadrate lobes and gallbladder."
+    },
+    {
+      "id": "a13",
+      "title": "Hepatic ducts and gallbladder: teaching model",
+      "category": "anatomical-models",
+      "description": "Detailed teaching-model view of the right and left hepatic ducts, cystic duct and common bile duct.",
+      "tags": [
+        "common bile duct",
+        "cystic duct",
+        "liver"
+      ],
+      "image": "images/a13.webp",
+      "thumbnail": "thumbnails/a13.webp",
+      "width": 2545,
+      "height": 1431,
+      "sha256": "c53c0d7cb9f1fe10ffde95d2d7e915312c54dc49fcc8d7f4d5c5c25d0e1f798c",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          29
+        ],
+        "cropNormalized": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Detailed teaching-model view of the right and left hepatic ducts, cystic duct and common bile duct."
+    },
+    {
+      "id": "a14",
+      "title": "Large intestine: teaching model",
+      "category": "anatomical-models",
+      "description": "Annotated large-intestine model identifying colonic segments, flexures, appendix and taeniae coli.",
+      "tags": [
+        "cecum",
+        "colon",
+        "haustrum",
+        "appendix"
+      ],
+      "image": "images/a14.webp",
+      "thumbnail": "thumbnails/a14.webp",
+      "width": 2545,
+      "height": 1431,
+      "sha256": "e345b4ae35785ab2f35a2fcb7a5d13846b4c0d19b0a1fbf8bd30b5ad9c9d7e36",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          35
+        ],
+        "cropNormalized": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Annotated large-intestine model identifying colonic segments, flexures, appendix and taeniae coli."
+    },
+    {
+      "id": "a15",
+      "title": "Rectum and anal sphincters: teaching model",
+      "category": "anatomical-models",
+      "description": "Model view showing the rectum, anal canal, and internal and external anal sphincters.",
+      "tags": [
+        "rectum",
+        "sphincters",
+        "anus"
+      ],
+      "image": "images/a15.webp",
+      "thumbnail": "thumbnails/a15.webp",
+      "width": 2545,
+      "height": 1431,
+      "sha256": "0ccbb01582c343de239e92e54856f6e88382ced049a2efbcae23b7e343b1aca0",
+      "source": {
+        "deck": "Digestive.pptx",
+        "slides": [
+          36
+        ],
+        "cropNormalized": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Model view showing the rectum, anal canal, and internal and external anal sphincters."
+    },
+    {
+      "id": "p01",
+      "title": "Digestive organs and accessory structures",
+      "category": "anatomical-diagrams",
+      "description": "Whole-system illustration identifying the alimentary canal and the liver, pancreas and gallbladder.",
+      "tags": [
+        "GI tract",
+        "accessory organs"
+      ],
+      "image": "images/p01.webp",
+      "thumbnail": "thumbnails/p01.webp",
+      "width": 1794,
+      "height": 1403,
+      "sha256": "70ce9cf907de8b16d3dab02b1fb7395013ef712be99939bc830470d5b049210c",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          5
+        ],
+        "cropNormalized": [
+          0.03,
+          0.02,
+          0.97,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Whole-system illustration identifying the alimentary canal and the liver, pancreas and gallbladder."
+    },
+    {
+      "id": "p02",
+      "title": "Peritoneum and retroperitoneal anatomy",
+      "category": "anatomical-diagrams",
+      "description": "Sagittal abdominal illustration showing the mesentery, peritoneum and retroperitoneal relationships.",
+      "tags": [
+        "mesentery",
+        "retroperitoneal",
+        "peritoneum"
+      ],
+      "image": "images/p02.webp",
+      "thumbnail": "thumbnails/p02.webp",
+      "width": 1355,
+      "height": 1331,
+      "sha256": "2134cfa3ced152b8928b7efba6eda09608805c92353432712dbdee48bf34466f",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          8
+        ],
+        "cropNormalized": [
+          0,
+          0.07,
+          0.71,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Sagittal abdominal illustration showing the mesentery, peritoneum and retroperitoneal relationships."
+    },
+    {
+      "id": "p03",
+      "title": "Peristalsis: muscular propulsion",
+      "category": "physiology-diagrams",
+      "description": "Step-by-step diagram showing peristaltic contractions moving a bolus forward.",
+      "tags": [
+        "peristalsis",
+        "motility"
+      ],
+      "image": "images/p03.webp",
+      "thumbnail": "thumbnails/p03.webp",
+      "width": 878,
+      "height": 1431,
+      "sha256": "12bf146b8d542f132fe6d4774fb9dd3323ab33ba85af02e75226728553d5c606",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          10
+        ],
+        "cropNormalized": [
+          0.54,
+          0,
+          1,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Step-by-step diagram showing peristaltic contractions moving a bolus forward."
+    },
+    {
+      "id": "p04",
+      "title": "Segmentation: intestinal mixing",
+      "category": "physiology-diagrams",
+      "description": "Step-by-step diagram showing segmentation contractions mixing intestinal contents.",
+      "tags": [
+        "segmentation",
+        "motility"
+      ],
+      "image": "images/p04.webp",
+      "thumbnail": "thumbnails/p04.webp",
+      "width": 706,
+      "height": 1431,
+      "sha256": "4ed37a42d9dc2435ef72383054eedc0e207422a9e2b1cdbda6543dffe4c10cd3",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          11
+        ],
+        "cropNormalized": [
+          0.63,
+          0,
+          1,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Step-by-step diagram showing segmentation contractions mixing intestinal contents."
+    },
+    {
+      "id": "p05",
+      "title": "Three phases of swallowing",
+      "category": "physiology-diagrams",
+      "description": "Sequential illustrations of buccal, pharyngeal and esophageal swallowing phases.",
+      "tags": [
+        "deglutition",
+        "swallowing",
+        "pharynx"
+      ],
+      "image": "images/p05.webp",
+      "thumbnail": "thumbnails/p05.webp",
+      "width": 974,
+      "height": 1431,
+      "sha256": "d8fe28e04f9648fb9e2c0c936d7bd15af633242314814edd306858d26e47e7cb",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          21
+        ],
+        "cropNormalized": [
+          0.49,
+          0,
+          1,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Sequential illustrations of buccal, pharyngeal and esophageal swallowing phases."
+    },
+    {
+      "id": "p06",
+      "title": "Stomach wall cross section",
+      "category": "histology",
+      "description": "Detailed stomach-wall diagram showing gastric pits, mucosa, vessels and three external muscular layers.",
+      "tags": [
+        "gastric mucosa",
+        "gastric pits",
+        "muscle layers"
+      ],
+      "image": "images/p06.webp",
+      "thumbnail": "thumbnails/p06.webp",
+      "width": 1908,
+      "height": 1431,
+      "sha256": "c42afcc5f4c4b976e5c91aaa27e5cd2e83a2bd5704823524a1f0a41969dc2f15",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          23
+        ],
+        "cropNormalized": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Detailed stomach-wall diagram showing gastric pits, mucosa, vessels and three external muscular layers."
+    },
+    {
+      "id": "p07",
+      "title": "Gastric glands and secretory cells",
+      "category": "histology",
+      "description": "Gastric gland cutaway identifying chief, parietal, mucus and G cells.",
+      "tags": [
+        "gastric glands",
+        "chief cells",
+        "parietal cells"
+      ],
+      "image": "images/p07.webp",
+      "thumbnail": "thumbnails/p07.webp",
+      "width": 954,
+      "height": 1431,
+      "sha256": "72cc38bb0f48b868e3c52ef1bfdc3c3cb81a4139e2bb9e4b6af9f1f52a6a27e7",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          24
+        ],
+        "cropNormalized": [
+          0.5,
+          0,
+          1,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Gastric gland cutaway identifying chief, parietal, mucus and G cells."
+    },
+    {
+      "id": "p08",
+      "title": "Cephalic, gastric and intestinal control phases",
+      "category": "physiology-diagrams",
+      "description": "Combined comparison of the three phases regulating gastric secretions and emptying.",
+      "tags": [
+        "gastric phase",
+        "cephalic phase",
+        "intestinal phase"
+      ],
+      "image": "images/p08.webp",
+      "thumbnail": "thumbnails/p08.webp",
+      "width": 1672,
+      "height": 2436,
+      "sha256": "4b9c6f678decc01aa6fe3e9d3e2d32ed1869f975b74aa4700a64b6e158bfe8b2",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          27,
+          28,
+          29
+        ],
+        "cropNormalized": null
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Combined comparison of the three phases regulating gastric secretions and emptying."
+    },
+    {
+      "id": "p09",
+      "title": "Small intestinal villus and histology",
+      "category": "histology",
+      "description": "Villus structure and associated histological view of an absorptive intestinal projection.",
+      "tags": [
+        "villus",
+        "lacteal",
+        "micrograph"
+      ],
+      "image": "images/p09.webp",
+      "thumbnail": "thumbnails/p09.webp",
+      "width": 1680,
+      "height": 588,
+      "sha256": "6d949acd9b44c2115ae38af59264865c869490e6f82e0dc0265337eb0701d838",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          36
+        ],
+        "cropNormalized": [
+          0.07,
+          0.54,
+          0.95,
+          0.95
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Villus structure and associated histological view of an absorptive intestinal projection."
+    },
+    {
+      "id": "p10",
+      "title": "Duodenum, jejunum, and ileum compared",
+      "category": "histology",
+      "description": "Comparative cross-section showing different structural features of the three small-intestine regions.",
+      "tags": [
+        "duodenum",
+        "jejunum",
+        "ileum",
+        "Brunner glands"
+      ],
+      "image": "images/p10.webp",
+      "thumbnail": "thumbnails/p10.webp",
+      "width": 1832,
+      "height": 1431,
+      "sha256": "da9b33db4648edf78c78a31566b46701b979bb336e27c13bb44eca9eabe0d99d",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          41
+        ],
+        "cropNormalized": [
+          0.02,
+          0,
+          0.98,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Comparative cross-section showing different structural features of the three small-intestine regions."
+    },
+    {
+      "id": "p11",
+      "title": "Pancreas: endocrine and exocrine tissues",
+      "category": "histology",
+      "description": "Illustration and tissue examples distinguishing pancreatic islets, acini and ducts.",
+      "tags": [
+        "pancreatic acini",
+        "pancreatic islets",
+        "histology"
+      ],
+      "image": "images/p11.webp",
+      "thumbnail": "thumbnails/p11.webp",
+      "width": 1908,
+      "height": 1431,
+      "sha256": "dbe21c2e86408d0b637ce039dea8f474d3716563b571a3095663ade0f14ee94c",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          44
+        ],
+        "cropNormalized": [
+          0.0,
+          0,
+          1,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Illustration and tissue examples distinguishing pancreatic islets, acini and ducts."
+    },
+    {
+      "id": "p12",
+      "title": "Hepatic lobules, sinusoids, and hepatocytes",
+      "category": "histology",
+      "description": "Liver microstructure with hepatic portal anatomy, sinusoids and microscopic tissue views.",
+      "tags": [
+        "hepatocytes",
+        "sinusoids",
+        "Kupffer cells"
+      ],
+      "image": "images/p12.webp",
+      "thumbnail": "thumbnails/p12.webp",
+      "width": 1747,
+      "height": 1431,
+      "sha256": "fd1c4981fd1868110b8f03a8510d6f94ff697301075ac5846fc2ee6f0b8c0c19",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          47
+        ],
+        "cropNormalized": [
+          0.045,
+          0,
+          0.96,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Liver microstructure with hepatic portal anatomy, sinusoids and microscopic tissue views."
+    },
+    {
+      "id": "p13",
+      "title": "Bile production, storage, and release",
+      "category": "physiology-diagrams",
+      "description": "Diagram connecting bile production in the liver with gallbladder storage and CCK-triggered release.",
+      "tags": [
+        "bile",
+        "gallbladder",
+        "CCK"
+      ],
+      "image": "images/p13.webp",
+      "thumbnail": "thumbnails/p13.webp",
+      "width": 1814,
+      "height": 1431,
+      "sha256": "dabfc6468c8984538c3d461e8468bb17828d035d8707820c1dbc378ada9021d5",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          51
+        ],
+        "cropNormalized": [
+          0.025,
+          0,
+          0.975,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Diagram connecting bile production in the liver with gallbladder storage and CCK-triggered release."
+    },
+    {
+      "id": "p14",
+      "title": "Colon vasculature and anatomy",
+      "category": "anatomical-diagrams",
+      "description": "Detailed vascular illustration of the large intestine, including colonic segments and named vessels.",
+      "tags": [
+        "large intestine",
+        "vascular supply",
+        "colon"
+      ],
+      "image": "images/p14.webp",
+      "thumbnail": "thumbnails/p14.webp",
+      "width": 1832,
+      "height": 1431,
+      "sha256": "bd9be25579763d08718428ebf3cbdeb4ffc6645a06285f8d59cc91bd0f09137f",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          54
+        ],
+        "cropNormalized": [
+          0.02,
+          0,
+          0.98,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Detailed vascular illustration of the large intestine, including colonic segments and named vessels."
+    },
+    {
+      "id": "p15",
+      "title": "Defecation reflex pathways",
+      "category": "physiology-diagrams",
+      "description": "Illustrated pathways for short and long defecation reflexes.",
+      "tags": [
+        "defecation",
+        "spinal reflex",
+        "sphincters"
+      ],
+      "image": "images/p15.webp",
+      "thumbnail": "thumbnails/p15.webp",
+      "width": 1709,
+      "height": 1431,
+      "sha256": "4ce3255921eb65408b793bd2e0c8fd6121c7e416e822a768c9626e322a7ed188",
+      "source": {
+        "deck": "24-Digestive System.pptx",
+        "slides": [
+          57
+        ],
+        "cropNormalized": [
+          0.055,
+          0,
+          0.95,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Illustrated pathways for short and long defecation reflexes."
+    }
+  ]
+}

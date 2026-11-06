@@ -47,16 +47,9 @@ def main():
             target = destination.joinpath(*relative.parts)
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(archive.read(entry))
-    # Preserve existing environment settings and enable only this local development feature.
-    env = root / ".env.local"
-    lines = env.read_text(encoding="utf-8").splitlines() if env.exists() else []
-    key = "HUMAN_ATLAS_LOCAL_GALLERY"
-    lines = [line for line in lines if not line.startswith(key + "=")]
-    lines.append(key + "=1")
-    env.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("Installed 30 full-size WebPs and 30 thumbnails; hashes and decoded dimensions verified.")
     print("Original metadata, source notes and reference previews retained in .local-gallery/digestive/.")
-    print("Local gallery enabled in ignored .env.local. Restart npm run dev to load the configuration.")
+    print("Archive import only. The main site uses tracked assets in public/images/learn/digestive/gallery/.")
 
 
 if __name__ == "__main__":
