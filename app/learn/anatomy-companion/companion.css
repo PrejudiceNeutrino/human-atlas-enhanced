@@ -1,6 +1,6 @@
 .learn-anatomy { padding: 16px; border: 1px solid var(--border); border-radius: 18px; background: var(--panel); min-width: 0; }
 .learn-anatomy button:not([role="switch"]):not(.explode-play):not(.dock-reset), .learn-anatomy-references button, .learn-companion-header button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; padding: 9px 13px; border: 1px solid var(--input); border-radius: 9px; background: var(--control); color: var(--foreground); font: inherit; font-size: 12px; line-height: 1.5; }
-.learn-anatomy button:not([role="switch"]):not(.explode-play):not(.dock-reset):enabled:hover, .learn-anatomy-references button:hover { background: var(--accent); }
+.learn-anatomy button:not([role="switch"]):not(.explode-play):not(.dock-reset):enabled:hover, .learn-anatomy-references button:hover { background: var(--accent); color: var(--foreground); }
 .learn-anatomy-controls { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,2fr); gap: 14px; margin-bottom: 18px; }
 .learn-anatomy-controls label { display: flex; flex-direction: column; gap: 7px; font-size: 11px; color: var(--ui-muted); }
 .learn-anatomy-controls select { min-width: 0; width: 100%; min-height: 44px; padding: 9px 11px; border: 1px solid var(--input); border-radius: 9px; background: var(--control-input); color: var(--foreground); font: inherit; font-size: 13px; }
@@ -16,6 +16,7 @@
 .learn-anatomy-views { margin-top: 10px; }
 .learn-anatomy-views button { min-width: 60px; }
 .learn-anatomy button:not([role="switch"]):not(.explode-play):not(.dock-reset)[aria-pressed=true] { background: var(--primary); color: var(--primary-foreground); }
+.learn-anatomy button:not([role="switch"]):not(.explode-play):not(.dock-reset)[aria-pressed=true]:enabled:hover { background: var(--primary); color: var(--primary-foreground); }
 .learn-anatomy-context { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; padding: 5px; color: var(--ui-secondary); font-size: 12px; }
 .learn-anatomy-context input { width: 17px; height: 17px; accent-color: var(--ui-link); }
 .learn-anatomy-selection { min-height: 90px; padding-top: 20px; }
