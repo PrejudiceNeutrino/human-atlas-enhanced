@@ -93,8 +93,8 @@ test('the compact viewer keeps controls together and preserves details, zoom and
   const dialog = document.querySelector('[role="dialog"]');
   assert.ok(dialog);
   const toolbar = dialog.querySelector('.learn-gallery-viewer-toolbar');
-  assert.equal(toolbar.querySelectorAll('button').length, 8);
-  assert.equal(dialog.querySelectorAll('button').length, 8);
+  assert.equal(toolbar.querySelectorAll('button').length, 9);
+  assert.equal(dialog.querySelectorAll('button').length, 9);
   assert.equal(dialog.querySelector('[data-slot="dialog-title"]').textContent, manifest.items[0].title);
   const toggle = toolbar.querySelector('.learn-gallery-details-toggle');
   const details = document.getElementById(toggle.getAttribute('aria-controls'));
@@ -116,6 +116,96 @@ test('the compact viewer keeps controls together and preserves details, zoom and
   await click(dialog.querySelector('[aria-label="Close image viewer"]'));
   assert.equal(document.querySelector('[role="dialog"]'), null);
   assert.equal(document.activeElement, opener);
+});
+
+const preferencesKey = 'human-atlas-gallery:v1:digestive';
+const cardStar = id => [...document.querySelectorAll('.learn-gallery-card-star')].find(button => button.getAttribute('aria-label') === `Star figure: ${manifest.items.find(item => item.id === id).title}`);
+
+test('stars do not open the viewer and the saved starred-only selection survives remounting', async () => {
+  window.localStorage.clear();
+  await render('star-cards');
+  await click(cardStar('a01'));
+  await click(cardStar('a02'));
+  assert.equal(document.querySelector('[role="dialog"]'), null);
+  assert.equal(cardStar('a01').getAttribute('aria-pressed'), 'true');
+  await click(document.querySelector('.learn-gallery-starred-filter'));
+  assert.equal(document.querySelectorAll('.learn-gallery-card').length, 2);
+  assert.deepEqual(JSON.parse(window.localStorage.getItem(preferencesKey)).starredIds, ['a01', 'a02']);
+  await render('star-remount');
+  assert.equal(document.querySelectorAll('.learn-gallery-card').length, 2);
+  assert.equal(document.querySelector('.learn-gallery-starred-filter').getAttribute('aria-pressed'), 'true');
+  const diagrams = [...document.querySelectorAll('.learn-gallery-filters button')].find(button => button.textContent.startsWith('Anatomical Diagrams'));
+  await click(diagrams);
+  assert.equal(document.querySelectorAll('.learn-gallery-card').length, 1);
+  assert.ok(document.querySelector('.learn-gallery-card').textContent.includes(manifest.items[1].title));
+  await click(document.querySelector('.learn-gallery-filters button'));
+  const input = document.querySelector('.learn-gallery-search input');
+  flushSync(() => {
+    Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set.call(input, 'oral');
+    input.dispatchEvent(new window.Event('input', { bubbles: true }));
+  });
+  assert.equal(document.querySelectorAll('.learn-gallery-card').length, 1);
+  assert.ok(document.querySelector('.learn-gallery-card').textContent.includes(manifest.items[1].title));
+});
+
+test('unstarring in the filtered viewer advances through starred figures and handles the last one', async () => {
+  window.localStorage.setItem(preferencesKey, JSON.stringify({ version: 1, starredIds: ['a01', 'a02'], starredOnly: true }));
+  await render('star-viewer');
+  await click(document.querySelector('.learn-gallery-card'));
+  await click(document.querySelector('.learn-gallery-viewer-actions .learn-gallery-star'));
+  const dialog = document.querySelector('[role="dialog"]');
+  assert.ok(dialog);
+  assert.equal(dialog.querySelector('[data-slot="dialog-title"]').textContent, manifest.items[1].title);
+  assert.equal(dialog.querySelector('[aria-label="Next figure"]').disabled, true);
+  await click(dialog.querySelector('.learn-gallery-star'));
+  assert.equal(document.querySelector('[role="dialog"]'), null);
+  assert.equal(document.querySelectorAll('.learn-gallery-card').length, 0);
+  assert.ok(document.querySelector('.learn-gallery-empty').textContent.includes('No starred figures yet'));
+  assert.equal(document.activeElement, document.querySelector('.learn-gallery-starred-filter'));
+  await click(document.querySelector('.learn-gallery-empty button'));
+  assert.equal(document.querySelectorAll('.learn-gallery-card').length, 30);
+});
+
+test('the viewer star updates the card and storage, and cross-tab preferences refresh the selection', async () => {
+  window.localStorage.clear();
+  await render('viewer-star-sync');
+  await click(document.querySelector('.learn-gallery-card'));
+  await click(document.querySelector('.learn-gallery-viewer-actions .learn-gallery-star'));
+  assert.equal(document.querySelector('.learn-gallery-viewer-actions .learn-gallery-star').getAttribute('aria-pressed'), 'true');
+  await click(document.querySelector('[aria-label="Close image viewer"]'));
+  assert.equal(cardStar('a01').getAttribute('aria-pressed'), 'true');
+  assert.deepEqual(JSON.parse(window.localStorage.getItem(preferencesKey)).starredIds, ['a01']);
+  window.localStorage.setItem(preferencesKey, JSON.stringify({ version: 1, starredIds: ['a02'], starredOnly: true }));
+  flushSync(() => window.dispatchEvent(new window.StorageEvent('storage', { key: preferencesKey, storageArea: window.localStorage })));
+  assert.equal(document.querySelectorAll('.learn-gallery-card').length, 1);
+  assert.equal(cardStar('a02').getAttribute('aria-pressed'), 'true');
+  await click(document.querySelector('.learn-gallery-card'));
+  window.localStorage.setItem(preferencesKey, JSON.stringify({ version: 1, starredIds: [], starredOnly: true }));
+  flushSync(() => window.dispatchEvent(new window.StorageEvent('storage', { key: preferencesKey, storageArea: window.localStorage })));
+  await delay(60);
+  assert.equal(document.querySelector('[role="dialog"]'), null);
+  window.localStorage.setItem(preferencesKey, JSON.stringify({ version: 1, starredIds: ['a02'], starredOnly: true }));
+  flushSync(() => window.dispatchEvent(new window.StorageEvent('storage', { key: preferencesKey, storageArea: window.localStorage })));
+  assert.equal(document.querySelector('[role="dialog"]'), null, 'a later storage update must not reopen a dismissed figure');
+});
+
+test('unreadable and unavailable storage preserve a working session with a visible saving limit', async () => {
+  window.localStorage.setItem(preferencesKey, '{broken');
+  await render('corrupt-stars');
+  assert.equal(document.querySelectorAll('.learn-gallery-card').length, 30);
+  assert.ok(document.querySelector('.learn-gallery-preferences-error'));
+  const storage = window.localStorage;
+  Object.defineProperty(window, 'localStorage', { configurable: true, get() { throw new Error('Blocked'); } });
+  try {
+    await render('blocked-stars');
+    await click(cardStar('a01'));
+    await click(document.querySelector('.learn-gallery-starred-filter'));
+    assert.equal(document.querySelectorAll('.learn-gallery-card').length, 1);
+    assert.ok(document.querySelector('.learn-gallery-preferences-error').textContent.includes('could not be saved'));
+  } finally {
+    Object.defineProperty(window, 'localStorage', { configurable: true, value: storage });
+    storage.clear();
+  }
 });
 
 after(() => { flushSync(() => root.unmount()); window.close(); globalThis.fetch = originalFetch; });
