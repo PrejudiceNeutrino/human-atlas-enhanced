@@ -1,5 +1,7 @@
 # Gallery Label Practice
 
+The Gallery introduction includes a compact self-test tip and a noninteractive preview of the Label Practice control, using its matching tag icon and themed styling. The [discovery polish handoff](integration/LEARN_DISCOVERY_POLISH_2026_11_06.md) records this follow-up and its verification.
+
 Open **Learn → Digestive → Gallery**, open a labeled figure, then enable **Label Practice** (the tag icon on narrow screens). Ordinary image inspection is the default. Hide All, Reveal All, Reset Practice, a revealed counter, optional cover numbers, and a numbered label list sit in a secondary strip. The existing viewer still owns navigation, zoom, pan, pinch, Fit, 1:1, Details, stars, dismissal, and focus return.
 
 Click or tap a cover to reveal the original printed pixels; click again to hide them. A drag beyond six CSS pixels pans without revealing. A pinch never counts as a reveal. Covers also accept Enter and Space, and the label list provides larger alternative targets. Hidden accessible names contain only label numbers. The image gets a generic practice alt description; revealing a cover exposes its curated answer to assistive technology.

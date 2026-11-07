@@ -2,6 +2,10 @@
 
 Study Tools replaces the disabled Quizzes placeholder with authored multiple-choice, fill-in-the-blank, glossary and flashcard activities. See [Study Tools](study-tools.md) for the exact imported counts/hashes, local progress, source navigation, file inventory and verification limits. Gallery provides all 30 curated figures on the main site; see [Gallery](gallery.md) for assets, inspection controls and provenance.
 
+The Visualize and Gallery launch badges expire automatically at **12:00 a.m. Eastern on Wednesday, November 11, 2026**. The fixed cutoff applies to every visitor, including pages already open at that time; it does not restart with each visit or require a new build.
+
+The Gallery tutorial, timed launch badges, and revised Study Tools introduction are recorded in the [Learn discovery polish handoff](integration/LEARN_DISCOVERY_POLISH_2026_11_06.md), including verification boundaries and local delivery state.
+
 The [Notes and Learn cumulative handoff](integration/NOTES_LEARN_HANDOFF_2026_11_04.md) covers every change since `863a708`, including personal Notes/Highlights, grouped selections, the current guide/labels/navigation, complete file inventory, validation limits and local delivery state.
 
 The General Overview's final paragraph links **Deep Dive** and **Exam Cram** to their existing tabs. These two Markdown link wrappers are the only changes to that supplied JSON; all wording and emphasis are preserved. Normal activation switches tabs, updates the bookmark and focuses the destination title without reloading. Modified clicks retain native link behavior. The source integrity test removes only these exact wrappers before comparing the original ZIP hash.

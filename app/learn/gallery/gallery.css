@@ -1,4 +1,6 @@
 .learn-gallery { min-width: 0; }
+.learn-gallery-practice-tip { margin: 16px 0 0; color: var(--ui-secondary); font-size: 13px; line-height: 1.9; }
+.learn-gallery-practice-preview { display: inline-flex; align-items: center; gap: 7px; margin: 2px 4px; padding: 5px 10px; border: 1px solid var(--border); border-radius: 9px; background: var(--control); color: var(--foreground); font-size: 12px; line-height: 1.5; vertical-align: middle; white-space: nowrap; }
 .learn-gallery button { min-height: 44px; padding: 10px 15px; border: 1px solid color-mix(in srgb,var(--primary) 45%,var(--card)); border-radius: 9px; background: color-mix(in srgb,var(--primary) 6%,var(--card)); color: var(--foreground); font: inherit; font-size: 13px; line-height: 1.5; }
 .learn-gallery button:enabled:hover { background: var(--accent); color: var(--foreground); }
 .learn-gallery button:disabled { opacity: .4; }

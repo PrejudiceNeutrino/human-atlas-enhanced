@@ -1,5 +1,7 @@
 # Digestive System Study Tools
 
+The heading's introduction now explains the practice questions, flashcards, glossary, and topic filtering instead of displaying chapter metadata. See the [Learn discovery polish handoff](integration/LEARN_DISCOVERY_POLISH_2026_11_06.md) for the complete follow-up change set and verification limits.
+
 Later Gallery and flashcard changes since `a21d4fc` are documented in the [Gallery/flashcard cumulative handoff](integration/GALLERY_FLASHCARDS_HANDOFF_2026_11_04.md). The older implementation checks below remain historical; the handoff separates the targeted arrow-key regression result from follow-ups that were not retested.
 
 Implemented on `main` after `ed80a55`, using the supplied `digestive-system-study-tools-content.zip` and the user's implementation prompt. This document covers all changes since that baseline, including subsequent interface refinements. This is software integration of authored material, not new educational content. Delivery is a local commit only; no push or deployment is authorized.

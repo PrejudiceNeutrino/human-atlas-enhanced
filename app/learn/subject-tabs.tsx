@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { EducationalArticle, articleSectionId } from './educational-article';
 import { EducationalFacts } from './educational-entry';
@@ -16,6 +16,9 @@ import { LearnContextMenu } from './context-menu/learn-context-menu';
 import { PageSectionsProvider } from './context-menu/page-sections';
 import { useReadingHash } from '../notes/notes-navigation';
 
+// Remove the launch badges at the start of Wednesday in the site's Eastern time zone.
+const NEW_BADGES_EXPIRE_AT = Date.parse('2026-11-11T00:00:00-05:00');
+
 // A bookmarked section belongs to its existing subject page, not another route.
 function tabForHash(subject: LearnSubject, hash: string) {
   return subject.tabs.find(tab => tab.kind !== 'coming-soon' && (
@@ -29,6 +32,17 @@ function tabForHash(subject: LearnSubject, hash: string) {
 
 export function SubjectTabs({ subject }: { subject: LearnSubject }) {
   const readingHash = useReadingHash();
+  const [showNewBadges, setShowNewBadges] = useState(() => Date.now() < NEW_BADGES_EXPIRE_AT);
+  useEffect(() => {
+    let timer: number | undefined;
+    const checkExpiry = () => {
+      const remaining = NEW_BADGES_EXPIRE_AT - Date.now();
+      if (remaining <= 0) { setShowNewBadges(false); return; }
+      timer = window.setTimeout(checkExpiry, Math.min(remaining, 2_147_483_647));
+    };
+    checkExpiry();
+    return () => window.clearTimeout(timer);
+  }, []);
   const [activeTab, setActiveTab] = useState(() => tabForHash(subject, window.location.hash)?.id ?? subject.tabs[0].id);
   const tabsRef = useRef<HTMLDivElement>(null);
   const previousTab = useRef(activeTab);
@@ -104,7 +118,7 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
           {subject.tabs.map(tab => (
             <TabsTrigger key={tab.id} value={tab.id} disabled={tab.kind === 'coming-soon'} className="learn-tab-trigger">
               <span>{tab.title}</span>
-              {(tab.kind === 'gallery' || tab.kind === 'visualize') && <span className="learn-tab-new">New</span>}
+              {showNewBadges && (tab.kind === 'gallery' || tab.kind === 'visualize') && <span className="learn-tab-new">New</span>}
               {tab.kind === 'coming-soon' && <span className="learn-coming-soon">Coming Soon</span>}
             </TabsTrigger>
           ))}

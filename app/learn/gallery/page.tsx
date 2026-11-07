@@ -1,5 +1,5 @@
 import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
-import { ArrowLeft, ArrowRight, Info, Search, Star, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Info, Search, Star, Tags, X } from 'lucide-react';
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog';
 import { categoryLabel, figureSource, filterFigures, parseGallery, type GalleryCollection } from './model';
 import { LabelPracticeFigure } from './label-practice-figure';
@@ -92,7 +92,9 @@ export default function EducationalGallery({ tabId, subjectSlug }: { tabId: stri
     return () => controller.abort();
   }, [assetBase, attempt]);
   return <section className="learn-gallery" data-annotation-excluded data-atlas-shortcuts="disabled" aria-labelledby={`${tabId}-heading`}>
-    <header className="learn-article-header"><h2 ref={heading} id={`${tabId}-heading`} tabIndex={-1}>Digestive System Gallery</h2><p className="learn-reading-intro">30 curated anatomical models, illustrations, and physiological diagrams from the course lectures.</p></header>
+    <header className="learn-article-header"><h2 ref={heading} id={`${tabId}-heading`} tabIndex={-1}>Digestive System Gallery</h2><p className="learn-reading-intro">30 curated anatomical models, illustrations, and physiological diagrams from the course lectures.</p>
+      <p className="learn-gallery-practice-tip">For a quick self-test, look for <span className="learn-gallery-practice-preview"><Tags size={16} aria-hidden="true"/>Label Practice</span> when viewing a figure. Name each covered structure, then click or tap a cover to reveal the answer.</p>
+    </header>
     {error ? <div className="learn-gallery-notice" role="alert"><h3>Gallery unavailable</h3><p>{error}</p><button type="button" onClick={() => setAttempt(value => value + 1)}>Try again</button></div> : collection ? <GalleryContent key={subjectSlug} collection={collection} assetBase={assetBase} subjectSlug={subjectSlug}/> : <p role="status">Loading gallery…</p>}
   </section>;
 }

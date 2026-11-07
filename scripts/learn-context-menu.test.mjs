@@ -139,7 +139,7 @@ test('Digestive Model opens the existing Visualize tab in Learn and focuses its 
   await delay(150);
   assert.equal(window.location.pathname, '/learn/digestive');
   assert.equal(window.location.hash, '#digestive-system-visualize');
-  assert.equal(document.querySelector('.learn-tab-trigger[aria-selected="true"]').textContent, 'VisualizeNew');
+  assert.equal(document.querySelector('.learn-tab-trigger[aria-selected="true"] > span').textContent, 'Visualize');
   assert.equal(document.activeElement.id, 'digestive-system-visualize-heading');
   assert.ok(document.querySelector('.learn-visualize .learn-anatomy'));
   assert.equal(menu('Page context menu'), null);

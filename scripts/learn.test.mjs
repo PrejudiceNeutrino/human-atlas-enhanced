@@ -81,6 +81,31 @@ const click = async button => {
 const tab = title => [...document.querySelectorAll('[role="tab"]')].find(node => node.querySelector('span')?.textContent === title);
 const selectTab = async title => { assert.ok(tab(title), title); await click(tab(title)); };
 
+test('Visualize and Gallery launch badges expire at Wednesday midnight Eastern, including an open page', async () => {
+  const expiry = Date.parse('2026-11-11T00:00:00-05:00');
+  const originalNow = Date.now, originalTimeout = window.setTimeout;
+  let now = expiry - 1000, expireOpenPage;
+  Date.now = () => now;
+  window.setTimeout = (callback, milliseconds, ...args) => {
+    if (milliseconds === 1000) expireOpenPage = callback;
+    return originalTimeout.call(window, callback, milliseconds, ...args);
+  };
+  try {
+    await render('/learn'); await render('/learn/digestive');
+    assert.deepEqual([...document.querySelectorAll('.learn-tab-new')].map(badge => badge.parentElement.querySelector('span').textContent), ['Visualize', 'Gallery']);
+    assert.equal(typeof expireOpenPage, 'function');
+    now = expiry;
+    flushSync(() => expireOpenPage());
+    assert.equal(document.querySelectorAll('.learn-tab-new').length, 0, 'an already open page expires without reloading');
+    await render('/learn'); await render('/learn/digestive');
+    assert.equal(document.querySelectorAll('.learn-tab-new').length, 0, 'opening at or after the cutoff does not show badges');
+  } finally {
+    await render('/learn');
+    Date.now = originalNow;
+    window.setTimeout = originalTimeout;
+  }
+});
+
 test('anatomy learning lives in Visualize and leaves Overview free of model loading', async () => {
   await render('/learn/digestive'); await selectTab('General Overview');
   assert.equal(document.querySelector('.learn-anatomy'), null);
