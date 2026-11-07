@@ -47,6 +47,7 @@ export interface LearnSubject {
   label: string;
   title: string;
   href: string;
+  modelShortcut?: { label: string; tabId: string };
   tabs: LearnTab[];
 }
 
@@ -60,6 +61,7 @@ export const learnSubjects: LearnSubject[] = [
     label: 'Digestive',
     title: 'Digestive System',
     href: '/learn/digestive',
+    modelShortcut: { label: 'Digestive Model', tabId: 'digestive-system-visualize' },
     tabs: [
       { id: 'digestive-system-general-overview', title: 'General Overview', kind: 'article', presentation: 'overview', description: 'Start with an accessible introduction to the subject, covering its fundamental concepts, major components, and essential functions. Ideal for building a foundation before exploring the details.' },
       { id: 'digestive-system-deep-dive', title: 'Deep Dive', kind: 'article', presentation: 'reference', description: 'Explore the subject in greater depth through detailed explanations, terminology, structures, mechanisms, and relationships. Designed for comprehensive understanding and reference.' },

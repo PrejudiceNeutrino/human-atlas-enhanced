@@ -1,0 +1,124 @@
+/* Adapted from Engineering Club context-menu.css; Human Atlas tokens only. */
+.site-context-host {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+.site-context-panel {
+  position: fixed;
+  width: min(264px, calc(100vw - 16px));
+  max-height: calc(100dvh - 16px);
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  color: var(--foreground);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow:
+    0 12px 40px color-mix(in srgb, var(--foreground) 12%, transparent),
+    0 2px 8px color-mix(in srgb, var(--foreground) 12%, transparent);
+  pointer-events: auto;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+  animation: context-menu-appear 90ms ease-out;
+}
+.site-context-caption {
+  padding: 6px 9px 8px;
+  color: var(--ui-muted);
+  font: 10px/1.4 ui-monospace, monospace;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+html[data-theme="dark"] .site-context-panel {
+  box-shadow: 0 14px 38px #00000066, 0 2px 8px #00000040;
+}
+.site-context-panel:focus {
+  outline: none;
+}
+.site-context-caption button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.site-context-items {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  min-height: 0;
+}
+.site-context-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  min-height: 36px;
+  padding: 6px 9px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.site-context-item > span:first-child {
+  overflow-wrap: anywhere;
+}
+.site-context-item small {
+  color: var(--ui-muted);
+  font: 10px ui-monospace, monospace;
+  flex-shrink: 0;
+}
+.site-context-item:hover,
+.site-context-item[aria-expanded="true"] {
+  background: var(--accent);
+}
+.site-context-item:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: -2px;
+  background: var(--accent);
+}
+.site-context-item:active {
+  background: var(--muted);
+}
+.site-context-item[data-current] {
+  color: var(--ui-muted);
+  cursor: default;
+}
+.site-context-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 5px 6px;
+}
+.site-context-hint {
+  padding: 10px 8px 5px;
+  color: var(--ui-muted);
+  border-top: 1px solid var(--border);
+  margin-top: 5px;
+  font: 10px/1.5 ui-monospace, monospace;
+}
+.site-context-quick-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 8px 4px 3px; margin-top: 5px; border-top: 1px solid var(--border); }
+.site-context-quick-nav .site-context-item { justify-content: center; min-height: 38px; background: var(--control); border: 1px solid var(--border); }
+.site-context-quick-nav .site-context-item:enabled:hover { background: var(--accent); color: var(--ui-link); }
+.site-context-quick-nav .site-context-item:disabled { opacity: .35; cursor: default; }
+.site-context-quick-nav .site-context-item > span { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@keyframes context-menu-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+html[data-animations="off"] .site-context-panel {
+  animation: none;
+}
+
+@media(prefers-reduced-motion: reduce) { .site-context-panel { animation: none; } }

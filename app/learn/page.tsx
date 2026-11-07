@@ -5,6 +5,8 @@ import { AppearanceControls } from '../appearance-controls';
 import { SubjectTabs } from './subject-tabs';
 import { AnnotationReader } from '../notes/annotation-reader';
 import { learnSubjects, subjectForPath } from './subjects';
+import { LearnContextMenu } from './context-menu/learn-context-menu';
+import { LearnBackToTop } from './back-to-top';
 import './learn.css';
 import '../notes/notes.css';
 
@@ -17,6 +19,7 @@ export default function LearnPage({ pathname }: { pathname: string }) {
 
   return (
     <div className="learn-shell">
+      {!subject && <LearnContextMenu/>}
       <a className="learn-skip-link" href="#learn-content">Skip to content</a>
       <header className="learn-header">
         <a className="learn-wordmark" href="/" aria-label="Human Atlas home">Human Atlas</a>
@@ -47,6 +50,7 @@ export default function LearnPage({ pathname }: { pathname: string }) {
         )}
       </main>
       <footer className="learn-footer"><a href="/male">Explore the 3D atlas <ArrowUpRight size={14} aria-hidden="true" /></a></footer>
+      <LearnBackToTop/>
     </div>
   );
 }

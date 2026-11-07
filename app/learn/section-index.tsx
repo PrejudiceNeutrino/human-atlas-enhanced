@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
 import { ArrowLeft, ArrowRight, ChevronDown } from 'lucide-react';
+import { useRegisterPageSections } from './context-menu/page-sections';
 
 export interface ReadingSectionLink { id: string; title: string }
 
@@ -69,6 +70,7 @@ export function ReadingLayout({ title, sections, enabled = true, children }: {
   enabled?: boolean;
   children: ReactNode;
 }) {
+  useRegisterPageSections(sections, enabled);
   const layout = useRef<HTMLDivElement>(null);
   const [current, setCurrent] = useState(sections[0]?.id ?? '');
   useEffect(() => {

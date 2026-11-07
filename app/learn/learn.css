@@ -1,4 +1,24 @@
 /* Reading pages reuse the atlas palette, controls, type and motion tokens. */
+.learn-back-to-top { position: fixed; right: max(28px, env(safe-area-inset-right)); bottom: max(24px, env(safe-area-inset-bottom)); z-index: 40; display: grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 1px solid var(--border); border-radius: 50%; background: var(--card); color: var(--ui-link); box-shadow: 0 6px 22px color-mix(in srgb, var(--foreground) 12%, transparent); cursor: pointer; animation: atlas-enter-up var(--motion-fast) var(--motion-curve); transition: transform var(--motion-fast) var(--motion-curve), box-shadow var(--motion-fast) var(--motion-curve), background-color var(--motion-fast) var(--motion-curve); }
+.learn-back-to-top:hover { transform: translateY(-2px); background: var(--accent); box-shadow: 0 9px 26px color-mix(in srgb, var(--foreground) 16%, transparent); }
+.learn-back-to-top:active { transform: translateY(0); }
+.learn-back-to-top:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
+.learn-back-to-top-ring { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke-width: 1.5; pointer-events: none; transform: rotate(-90deg); }
+.learn-back-to-top-track { stroke: var(--border); }
+.learn-back-to-top-progress { stroke: currentColor; stroke-linecap: round; }
+.learn-back-to-top-arrow { display: grid; place-items: center; width: 22px; height: 28px; overflow: hidden; }
+.learn-back-to-top::before { content: ''; position: absolute; inset: -1px; border: 1px solid var(--ui-link); border-radius: inherit; opacity: 0; pointer-events: none; }
+.learn-back-to-top[data-traveling] { animation: learn-top-lift var(--learn-top-duration) cubic-bezier(.22,1,.36,1) both, learn-top-fade var(--learn-top-duration) ease-in both; }
+.learn-back-to-top[data-traveling]::before { animation: learn-top-pulse var(--learn-top-duration) ease-out both; }
+.learn-back-to-top[data-traveling] .learn-back-to-top-arrow svg { animation: learn-top-arrow var(--learn-top-duration) cubic-bezier(.22,1,.36,1) both; }
+.learn-back-to-top[data-traveling] .learn-back-to-top-ring { animation: learn-top-orbit var(--learn-top-duration) cubic-bezier(.65,0,.2,1) both; }
+@keyframes learn-top-lift { 0%,100% { transform: translateY(0) scale(1); } 12% { transform: translateY(3px) scale(.9); } 38% { transform: translateY(-9px) scale(1.06); box-shadow: 0 14px 30px color-mix(in srgb, var(--ui-link) 22%, transparent); } 75% { transform: translateY(-2px) scale(.98); } }
+@keyframes learn-top-arrow { 0%,100% { transform: translateY(0); opacity: 1; } 12% { transform: translateY(4px); opacity: 1; } 35% { transform: translateY(-28px); opacity: 0; } 48% { transform: translateY(26px); opacity: 0; } 76% { transform: translateY(-2px); opacity: 1; } 90% { transform: translateY(1px); opacity: 1; } }
+@keyframes learn-top-pulse { 0%,12% { transform: scale(.95); opacity: 0; } 24% { opacity: .45; } 78%,100% { transform: scale(1.65); opacity: 0; } }
+@keyframes learn-top-orbit { from { transform: rotate(-90deg); } to { transform: rotate(270deg); } }
+@keyframes learn-top-fade { 0%,78% { opacity: 1; } 100% { opacity: 0; } }
+@media(max-width:600px) { .learn-back-to-top { right: max(20px, env(safe-area-inset-right)); bottom: max(20px, env(safe-area-inset-bottom)); } }
+@media(prefers-reduced-motion:reduce) { .learn-back-to-top, .learn-back-to-top[data-traveling], .learn-back-to-top[data-traveling]::before, .learn-back-to-top[data-traveling] .learn-back-to-top-arrow svg, .learn-back-to-top[data-traveling] .learn-back-to-top-ring { animation: none; transition: none; }.learn-back-to-top:hover { transform: none; } }
 .learn-shell {
   --learn-layout-width: 1080px;
   height: 100dvh;

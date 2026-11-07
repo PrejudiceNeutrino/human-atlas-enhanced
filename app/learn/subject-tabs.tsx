@@ -12,6 +12,8 @@ import { ReadingPageContext } from './section-index';
 import { StudyToolsLoader } from './study-tools/loader';
 import { GalleryLoader } from './gallery/loader';
 import { VisualizePage } from './anatomy-companion/visualize-page';
+import { LearnContextMenu } from './context-menu/learn-context-menu';
+import { PageSectionsProvider } from './context-menu/page-sections';
 
 // A bookmarked section belongs to its existing subject page, not another route.
 function tabForHash(subject: LearnSubject, hash: string) {
@@ -33,6 +35,15 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
   const availableTabs = subject.tabs.filter(tab => tab.kind !== 'coming-soon');
   const pageIndex = availableTabs.findIndex(tab => tab.id === activeTab);
   const [requestedDisclosure,setRequestedDisclosure]=useState<string|null>(null);
+  const activateTab = (id: string, bookmark = false) => {
+    if (!availableTabs.some(tab => tab.id === id) || id === activeTab) return;
+    pageNavigation.current = bookmark;
+    const linkedTab = tabForHash(subject, window.location.hash);
+    if (bookmark) window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#${id}`);
+    else if (linkedTab && linkedTab.id !== id) window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    setRequestedDisclosure(null);
+    setActiveTab(id);
+  };
 
   useLayoutEffect(()=>{
     const id=new URLSearchParams(window.location.hash.slice(1)).get('annotation');if(!id)return;
@@ -74,23 +85,17 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
   }, [activeTab]);
 
   return (
+    <PageSectionsProvider>
     <ReadingPageContext value={{
       links: availableTabs,
       previous: availableTabs[pageIndex - 1],
       next: availableTabs[pageIndex + 1],
-      onNavigate: id => {
-        if (!availableTabs.some(tab => tab.id === id) || id === activeTab) return;
-        pageNavigation.current = true;
-        window.history.replaceState(null, '', window.location.pathname + window.location.search + `#${id}`);
-        setRequestedDisclosure(null);
-        setActiveTab(id);
-      },
+      onNavigate: id => activateTab(id, true),
     }}>
+    <LearnContextMenu subject={subject} activeTab={activeTab} onNavigate={id => activateTab(id, true)}/>
     <Tabs ref={tabsRef} value={activeTab} className="learn-reading-tabs" onValueChange={value => {
       if (typeof value !== 'string') return;
-      const linkedTab = tabForHash(subject, window.location.hash);
-      if (linkedTab && linkedTab.id !== value) window.history.replaceState(null, '', window.location.pathname + window.location.search);
-      setActiveTab(value);
+      activateTab(value);
     }}>
       <div className="learn-tab-bar">
         <TabsList className="learn-tab-list" aria-label={`${subject.title} content`} activateOnFocus={false}>
@@ -124,5 +129,6 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
       ))}
     </Tabs>
     </ReadingPageContext>
+    </PageSectionsProvider>
   );
 }
