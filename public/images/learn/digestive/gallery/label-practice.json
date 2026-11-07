@@ -1,0 +1,4863 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "digestive",
+  "figures": [
+    {
+      "figureId": "a01",
+      "sourceImageSha256": "8540f5dc9cdfebee4d5510b7484d1e9ba2515b45b6295971a95b77dc7af69a02",
+      "reviewStatus": "not-applicable",
+      "coverage": "none",
+      "reviewNotes": "No meaningful printed structure labels: model identification numbers or a general process title only.",
+      "labels": []
+    },
+    {
+      "figureId": "a02",
+      "sourceImageSha256": "214ba804518ae3e5c94b92a1f522f18645a9c4e67a133366786836b98d464918",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "All printed structure labels reviewed, including the repeated upper/lower lip terminology notes. Tight opaque covers over the tongue hide printed text only.",
+      "labels": [
+        {
+          "id": "a02-01-uvula",
+          "label": "Uvula",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.236,
+              "y": 0.064,
+              "width": 0.092,
+              "height": 0.039,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a02-02-fauces",
+          "label": "Fauces",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.212,
+              "y": 0.144,
+              "width": 0.114,
+              "height": 0.038,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a02-03-upper-lip",
+          "label": "Upper lip",
+          "acceptedAnswers": [
+            "Superior labium"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.188,
+              "y": 0.221,
+              "width": 0.142,
+              "height": 0.049,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.005,
+              "y": 0.431,
+              "width": 0.364,
+              "height": 0.038,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a02-04-palatoglossal-arch",
+          "label": "Palatoglossal arch",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.135,
+              "y": 0.287,
+              "width": 0.2,
+              "height": 0.077,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a02-05-retractor",
+          "label": "Retractor",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.755,
+              "y": 0.132,
+              "width": 0.139,
+              "height": 0.04,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a02-06-labial-frenulum",
+          "label": "Labial frenulum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.782,
+              "y": 0.198,
+              "width": 0.078,
+              "height": 0.05,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a02-07-tongue",
+          "label": "Tongue",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.528,
+              "y": 0.532,
+              "width": 0.116,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a02-08-palatine-tonsil",
+          "label": "Palatine tonsil",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.208,
+              "y": 0.606,
+              "width": 0.132,
+              "height": 0.079,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a02-09-lingual-frenulum",
+          "label": "Lingual frenulum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.798,
+              "y": 0.57,
+              "width": 0.138,
+              "height": 0.083,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a02-10-lower-lip",
+          "label": "Lower lip",
+          "acceptedAnswers": [
+            "Inferior labium"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.192,
+              "y": 0.734,
+              "width": 0.14,
+              "height": 0.042,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.004,
+              "y": 0.462,
+              "width": 0.35,
+              "height": 0.039,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a02-11-openings-of-submandibular-ducts",
+          "label": "Openings of submandibular ducts",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.084,
+              "y": 0.791,
+              "width": 0.308,
+              "height": 0.08,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a03",
+      "sourceImageSha256": "8fc75641671cf010ce9eaf9cab955e6de881be5f0c8618ffa0b51c776349c355",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "All 27 printed labels reviewed. Covers inside the nasal cavity/tongue are restricted to the printed text; the editor can flag any mask that obscures useful anatomy.",
+      "labels": [
+        {
+          "id": "a03-01-opening-of-parotid-duct",
+          "label": "Opening of parotid duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.336,
+              "y": 0.047,
+              "width": 0.146,
+              "height": 0.08,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-02-soft-palate",
+          "label": "Soft palate",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.738,
+              "y": 0.048,
+              "width": 0.132,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-03-nasal-cavity",
+          "label": "Nasal cavity",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.234,
+              "y": 0.158,
+              "width": 0.144,
+              "height": 0.049,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-04-palatoglossal-arch",
+          "label": "Palatoglossal arch",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.421,
+              "y": 0.158,
+              "width": 0.159,
+              "height": 0.08,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-05-pharyngeal-tonsil",
+          "label": "Pharyngeal tonsil",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.74,
+              "y": 0.119,
+              "width": 0.205,
+              "height": 0.047,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-06-entrance-to-auditory-tube",
+          "label": "Entrance to auditory tube",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.735,
+              "y": 0.181,
+              "width": 0.16,
+              "height": 0.08,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-07-hard-palate",
+          "label": "Hard palate",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.02,
+              "y": 0.269,
+              "width": 0.174,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-08-upper-lip",
+          "label": "Upper lip",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.085,
+              "y": 0.333,
+              "width": 0.11,
+              "height": 0.047,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-09-nasopharynx",
+          "label": "Nasopharynx",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.739,
+              "y": 0.268,
+              "width": 0.161,
+              "height": 0.048,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-10-cheek",
+          "label": "Cheek",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.107,
+              "y": 0.397,
+              "width": 0.087,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-11-dorsum",
+          "label": "Dorsum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.09,
+              "y": 0.44,
+              "width": 0.103,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-12-uvula",
+          "label": "Uvula",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.739,
+              "y": 0.362,
+              "width": 0.075,
+              "height": 0.045,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-13-palatine-tonsil",
+          "label": "Palatine tonsil",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.74,
+              "y": 0.408,
+              "width": 0.174,
+              "height": 0.046,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-14-root-of-tongue",
+          "label": "Root of tongue",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.018,
+              "y": 0.493,
+              "width": 0.176,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-15-lower-lip",
+          "label": "Lower lip",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.084,
+              "y": 0.534,
+              "width": 0.11,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-16-gingiva",
+          "label": "Gingiva",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.096,
+              "y": 0.582,
+              "width": 0.1,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-17-vestibule",
+          "label": "Vestibule",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.08,
+              "y": 0.638,
+              "width": 0.117,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-18-body-of-tongue",
+          "label": "Body of tongue",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.358,
+              "y": 0.555,
+              "width": 0.098,
+              "height": 0.127,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-19-geniohyoid-muscle",
+          "label": "Geniohyoid muscle",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.051,
+              "y": 0.682,
+              "width": 0.146,
+              "height": 0.078,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-20-mylohyoid-muscle",
+          "label": "Mylohyoid muscle",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.068,
+              "y": 0.826,
+              "width": 0.13,
+              "height": 0.081,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-21-hyoid-bone",
+          "label": "Hyoid bone",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.258,
+              "y": 0.865,
+              "width": 0.136,
+              "height": 0.048,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-22-fauces",
+          "label": "Fauces",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.738,
+              "y": 0.496,
+              "width": 0.092,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-23-palatopharyngeal-arch",
+          "label": "Palatopharyngeal arch",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.736,
+              "y": 0.603,
+              "width": 0.204,
+              "height": 0.078,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-24-oropharynx",
+          "label": "Oropharynx",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.738,
+              "y": 0.681,
+              "width": 0.148,
+              "height": 0.046,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-25-lingual-tonsil",
+          "label": "Lingual tonsil",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.736,
+              "y": 0.722,
+              "width": 0.174,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-26-epiglottis",
+          "label": "Epiglottis",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.737,
+              "y": 0.769,
+              "width": 0.118,
+              "height": 0.046,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-27-laryngopharynx",
+          "label": "Laryngopharynx",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.736,
+              "y": 0.811,
+              "width": 0.198,
+              "height": 0.049,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a04",
+      "sourceImageSha256": "ac8e13efb3681ff6119ef26732cdf342371d1fe99f7e1a7317b97444fedf7c78",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Both printed gland callouts reviewed. Molded teaching-model numbers are not answer labels.",
+      "labels": [
+        {
+          "id": "a04-01-parotid-salivary-gland",
+          "label": "Parotid salivary gland",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.038,
+              "y": 0.446,
+              "width": 0.198,
+              "height": 0.047,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a04-02-submandibular-salivary-gland",
+          "label": "Submandibular salivary gland",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.002,
+              "y": 0.771,
+              "width": 0.268,
+              "height": 0.047,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a05",
+      "sourceImageSha256": "0c3c043183c354461a95e72fcfe67ed1dd58565c6405998d23d02940fb50d59f",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Both visible callouts reviewed. The identifiable right-edge Sublingual Salivary Gland text is covered through the image boundary; the supplied crop itself is unchanged.",
+      "labels": [
+        {
+          "id": "a05-01-pharynx",
+          "label": "Pharynx",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.08,
+              "y": 0.761,
+              "width": 0.091,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a05-02-sublingual-salivary-gland",
+          "label": "Sublingual salivary gland",
+          "acceptedAnswers": [
+            "Sublingual gland"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.829,
+              "y": 0.744,
+              "width": 0.171,
+              "height": 0.089,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a06",
+      "sourceImageSha256": "6453f4b8901459b86b2f28390ba6b24fbb57f818e7714fd310dcaea60748ae72",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Printed label bounds and transcription visually reviewed against the source image.",
+      "labels": [
+        {
+          "id": "a06-01-crown",
+          "label": "Crown",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.026,
+              "y": 0.176,
+              "width": 0.087,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-02-neck",
+          "label": "Neck",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.042,
+              "y": 0.334,
+              "width": 0.071,
+              "height": 0.037,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-03-root",
+          "label": "Root",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.046,
+              "y": 0.587,
+              "width": 0.068,
+              "height": 0.039,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-04-pulp-cavity",
+          "label": "Pulp cavity",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.667,
+              "y": 0.074,
+              "width": 0.137,
+              "height": 0.039,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-05-enamel",
+          "label": "Enamel",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.667,
+              "y": 0.117,
+              "width": 0.097,
+              "height": 0.037,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-06-dentin",
+          "label": "Dentin",
+          "acceptedAnswers": [
+            "Dentine"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.668,
+              "y": 0.159,
+              "width": 0.088,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-07-gingiva",
+          "label": "Gingiva",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.665,
+              "y": 0.238,
+              "width": 0.1,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-08-gingival-sulcus",
+          "label": "Gingival sulcus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.664,
+              "y": 0.308,
+              "width": 0.187,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-09-cementum",
+          "label": "Cementum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.664,
+              "y": 0.445,
+              "width": 0.137,
+              "height": 0.039,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-10-periodontal-ligament",
+          "label": "Periodontal ligament",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.665,
+              "y": 0.55,
+              "width": 0.244,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-11-root-canal",
+          "label": "Root canal",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.664,
+              "y": 0.645,
+              "width": 0.131,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-12-bone-of-alveolus",
+          "label": "Bone of alveolus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.664,
+              "y": 0.717,
+              "width": 0.198,
+              "height": 0.038,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-13-apical-foramen",
+          "label": "Apical foramen",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.666,
+              "y": 0.786,
+              "width": 0.182,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-14-branches-of-alveolar-vessels-and-nerve",
+          "label": "Branches of alveolar vessels and nerve",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.663,
+              "y": 0.844,
+              "width": 0.244,
+              "height": 0.07,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a07",
+      "sourceImageSha256": "00a0dad4e8174dc7eee8a4589b2d73fb3441330bb7f413e0382f4c697115e430",
+      "reviewStatus": "candidate",
+      "coverage": "none",
+      "reviewNotes": "Dental age callouts and repeated tooth names need careful grouping; cropped text at the left edge must be excluded before publication.",
+      "labels": []
+    },
+    {
+      "figureId": "a08",
+      "sourceImageSha256": "9a134fcec475e316b360b8df6832746799b9d019ecac108484b1aedcc4391515",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Printed label bounds and transcription visually reviewed against the source image.",
+      "labels": [
+        {
+          "id": "a08-01-villi",
+          "label": "Villi",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.256,
+              "y": 0.0,
+              "width": 0.063,
+              "height": 0.071,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-02-intestinal-crypt",
+          "label": "Intestinal crypt",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.34,
+              "y": 0.0,
+              "width": 0.128,
+              "height": 0.109,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-03-lymphoid-nodule",
+          "label": "Lymphoid nodule",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.471,
+              "y": 0.0,
+              "width": 0.134,
+              "height": 0.109,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-04-lacteal",
+          "label": "Lacteal",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.638,
+              "y": 0.0,
+              "width": 0.106,
+              "height": 0.072,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-05-mucosa",
+          "label": "Mucosa",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.068,
+              "y": 0.341,
+              "width": 0.109,
+              "height": 0.046,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-06-muscularis-mucosae",
+          "label": "Muscularis mucosae",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.03,
+              "y": 0.477,
+              "width": 0.148,
+              "height": 0.077,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-07-submucosa",
+          "label": "Submucosa",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.02,
+              "y": 0.554,
+              "width": 0.158,
+              "height": 0.046,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-08-muscularis-externa",
+          "label": "Muscularis externa",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.029,
+              "y": 0.681,
+              "width": 0.152,
+              "height": 0.079,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-09-serosa",
+          "label": "Serosa",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.077,
+              "y": 0.793,
+              "width": 0.104,
+              "height": 0.046,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-10-submucosal-artery-and-vein",
+          "label": "Submucosal artery and vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.724,
+              "y": 0.282,
+              "width": 0.202,
+              "height": 0.082,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-11-lymphatic-vessel",
+          "label": "Lymphatic vessel",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.723,
+              "y": 0.396,
+              "width": 0.146,
+              "height": 0.079,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-12-submucosal-plexus",
+          "label": "Submucosal plexus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.723,
+              "y": 0.485,
+              "width": 0.176,
+              "height": 0.082,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-13-circular-layer-of-smooth-muscle",
+          "label": "Circular layer of smooth muscle",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.723,
+              "y": 0.589,
+              "width": 0.234,
+              "height": 0.081,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-14-myenteric-plexus",
+          "label": "Myenteric plexus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.723,
+              "y": 0.707,
+              "width": 0.227,
+              "height": 0.053,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a08-15-longitudinal-layer-of-smooth-muscle",
+          "label": "Longitudinal layer of smooth muscle",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.692,
+              "y": 0.791,
+              "width": 0.236,
+              "height": 0.081,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a09",
+      "sourceImageSha256": "d68ac0c9ab727683c361aa58cc8e949a0fcc4da02418ec372aacbbe91ef22cf7",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "All diagram callouts reviewed. The cropped green general figure title is not an answer label.",
+      "labels": [
+        {
+          "id": "a09-01-esophagus",
+          "label": "Esophagus",
+          "acceptedAnswers": [
+            "Oesophagus"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.27,
+              "y": 0.093,
+              "width": 0.087,
+              "height": 0.035,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-02-cardia",
+          "label": "Cardia",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.297,
+              "y": 0.2,
+              "width": 0.058,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-03-fundus",
+          "label": "Fundus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.691,
+              "y": 0.093,
+              "width": 0.065,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-04-anterior-surface",
+          "label": "Anterior surface",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.496,
+              "y": 0.146,
+              "width": 0.069,
+              "height": 0.057,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-05-longitudinal-muscle-layer",
+          "label": "Longitudinal muscle layer",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.256,
+              "y": 0.295,
+              "width": 0.1,
+              "height": 0.057,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-06-circular-muscle-layer",
+          "label": "Circular muscle layer",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.257,
+              "y": 0.39,
+              "width": 0.099,
+              "height": 0.059,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-07-lesser-curvature-medial-surface",
+          "label": "Lesser curvature (medial surface)",
+          "acceptedAnswers": [
+            "Lesser curvature"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.288,
+              "y": 0.481,
+              "width": 0.125,
+              "height": 0.059,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-08-pyloric-sphincter",
+          "label": "Pyloric sphincter",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.144,
+              "y": 0.505,
+              "width": 0.126,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-09-duodenum",
+          "label": "Duodenum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.119,
+              "y": 0.554,
+              "width": 0.088,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-10-body",
+          "label": "Body",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.769,
+              "y": 0.481,
+              "width": 0.054,
+              "height": 0.037,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-11-left-gastroepiploic-vessels",
+          "label": "Left gastroepiploic vessels",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.769,
+              "y": 0.562,
+              "width": 0.142,
+              "height": 0.058,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-12-oblique-muscle-layer-overlying-mucosa",
+          "label": "Oblique muscle layer overlying mucosa",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.69,
+              "y": 0.679,
+              "width": 0.156,
+              "height": 0.059,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-13-greater-curvature-lateral-surface",
+          "label": "Greater curvature (lateral surface)",
+          "acceptedAnswers": [
+            "Greater curvature"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.69,
+              "y": 0.79,
+              "width": 0.135,
+              "height": 0.061,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-14-pyloric-canal",
+          "label": "Pyloric canal",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.179,
+              "y": 0.812,
+              "width": 0.102,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-15-pylorus",
+          "label": "Pylorus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.265,
+              "y": 0.87,
+              "width": 0.067,
+              "height": 0.033,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-16-pyloric-antrum",
+          "label": "Pyloric antrum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.312,
+              "y": 0.902,
+              "width": 0.114,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a09-17-rugae",
+          "label": "Rugae",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.459,
+              "y": 0.904,
+              "width": 0.06,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a10",
+      "sourceImageSha256": "fde38c979940e6a3857183caca047c7427ef1bfcc24d4e7abc3ad18a53036887",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Printed label bounds and transcription visually reviewed against the source image.",
+      "labels": [
+        {
+          "id": "a10-01-pancreatic-duct",
+          "label": "Pancreatic duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.032,
+              "y": 0.422,
+              "width": 0.098,
+              "height": 0.08,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a10-02-accessory-pancreatic-duct",
+          "label": "Accessory pancreatic duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.014,
+              "y": 0.603,
+              "width": 0.099,
+              "height": 0.12,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a10-03-tail",
+          "label": "Tail",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.887,
+              "y": 0.337,
+              "width": 0.047,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a10-04-body",
+          "label": "Body",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.852,
+              "y": 0.511,
+              "width": 0.056,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a10-05-pancreas-entire-organ",
+          "label": "Pancreas (entire organ)",
+          "acceptedAnswers": [
+            "Pancreas"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.852,
+              "y": 0.691,
+              "width": 0.123,
+              "height": 0.081,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a10-06-head",
+          "label": "Head",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.008,
+              "y": 0.917,
+              "width": 0.059,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a11",
+      "sourceImageSha256": "62bd91b0771e3c9df30fe5f41edf4c2854a0b4f3f6bbdb9f71ac580fddf9cd3d",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Printed label bounds and transcription visually reviewed against the source image.",
+      "labels": [
+        {
+          "id": "a11-01-liver-whole-organ",
+          "label": "Liver (whole organ)",
+          "acceptedAnswers": [
+            "Liver"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.001,
+              "y": 0.068,
+              "width": 0.123,
+              "height": 0.08,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a11-02-right-lobe",
+          "label": "Right lobe",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.023,
+              "y": 0.345,
+              "width": 0.1,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a11-03-falciform-ligament",
+          "label": "Falciform ligament",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.038,
+              "y": 0.435,
+              "width": 0.087,
+              "height": 0.081,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a11-04-left-lobe",
+          "label": "Left lobe",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.889,
+              "y": 0.213,
+              "width": 0.09,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a12",
+      "sourceImageSha256": "445e68340d081f876f8739294b27524d5c2f8343cc375662a4208a405d153fae",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "All four visible callouts reviewed, including the identifiable Round Ligament term at the left image boundary. Molded model numbers remain visible.",
+      "labels": [
+        {
+          "id": "a12-01-caudate-lobe",
+          "label": "Caudate lobe",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.082,
+              "y": 0.098,
+              "width": 0.123,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a12-02-quadrate-lobe",
+          "label": "Quadrate lobe",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.006,
+              "y": 0.801,
+              "width": 0.131,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a12-03-gall-bladder",
+          "label": "Gall bladder",
+          "acceptedAnswers": [
+            "Gallbladder"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.837,
+              "y": 0.195,
+              "width": 0.11,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a12-04-round-ligament",
+          "label": "Round ligament",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.0,
+              "y": 0.189,
+              "width": 0.125,
+              "height": 0.039,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a13",
+      "sourceImageSha256": "c53c0d7cb9f1fe10ffde95d2d7e915312c54dc49fcc8d7f4d5c5c25d0e1f798c",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "All five visible duct callouts reviewed, including Cystic Duct at the left image boundary. Covers extend to the boundary without altering the supplied crop.",
+      "labels": [
+        {
+          "id": "a13-01-right-hepatic-duct",
+          "label": "Right hepatic duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.0,
+              "y": 0.236,
+              "width": 0.073,
+              "height": 0.12,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a13-02-common-hepatic-duct",
+          "label": "Common hepatic duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.0,
+              "y": 0.397,
+              "width": 0.08,
+              "height": 0.123,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a13-03-left-hepatic-duct",
+          "label": "Left hepatic duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.92,
+              "y": 0.13,
+              "width": 0.076,
+              "height": 0.123,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a13-04-common-bile-duct",
+          "label": "Common bile duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.837,
+              "y": 0.704,
+              "width": 0.159,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a13-05-cystic-duct",
+          "label": "Cystic duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.0,
+              "y": 0.633,
+              "width": 0.091,
+              "height": 0.04,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a14",
+      "sourceImageSha256": "e345b4ae35785ab2f35a2fcb7a5d13846b4c0d19b0a1fbf8bd30b5ad9c9d7e36",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Printed label bounds and transcription visually reviewed against the source image.",
+      "labels": [
+        {
+          "id": "a14-01-right-colic-flexure",
+          "label": "Right colic flexure",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.019,
+              "y": 0.081,
+              "width": 0.158,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a14-02-haustra-pockets",
+          "label": "Haustra (pockets)",
+          "acceptedAnswers": [
+            "Haustra"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.083,
+              "y": 0.231,
+              "width": 0.085,
+              "height": 0.084,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a14-03-ascending-colon",
+          "label": "Ascending colon",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.007,
+              "y": 0.333,
+              "width": 0.143,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a14-04-ileocecal-valve",
+          "label": "Ileocecal valve",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.006,
+              "y": 0.455,
+              "width": 0.131,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a14-05-cecum",
+          "label": "Cecum",
+          "acceptedAnswers": [
+            "Caecum"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.015,
+              "y": 0.541,
+              "width": 0.105,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a14-06-appendix",
+          "label": "Appendix",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.112,
+              "y": 0.694,
+              "width": 0.09,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a14-07-left-colic-flexure",
+          "label": "Left colic flexure",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.803,
+              "y": 0.027,
+              "width": 0.146,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a14-08-transverse-colon",
+          "label": "Transverse colon",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.803,
+              "y": 0.107,
+              "width": 0.147,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a14-09-large-intestine-whole-organ",
+          "label": "Large intestine (whole organ)",
+          "acceptedAnswers": [
+            "Large intestine"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.802,
+              "y": 0.204,
+              "width": 0.131,
+              "height": 0.082,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a14-10-descending-colon",
+          "label": "Descending colon",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.828,
+              "y": 0.374,
+              "width": 0.156,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a14-11-taeniae-coli-white-band",
+          "label": "Taeniae coli (white band)",
+          "acceptedAnswers": [
+            "Taeniae coli"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.801,
+              "y": 0.496,
+              "width": 0.117,
+              "height": 0.085,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a14-12-sigmoid-colon",
+          "label": "Sigmoid colon",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.821,
+              "y": 0.632,
+              "width": 0.128,
+              "height": 0.045,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a14-13-sigmoid-flexure",
+          "label": "Sigmoid flexure",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.822,
+              "y": 0.709,
+              "width": 0.14,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a14-14-rectum",
+          "label": "Rectum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.793,
+              "y": 0.817,
+              "width": 0.079,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a15",
+      "sourceImageSha256": "0ccbb01582c343de239e92e54856f6e88382ced049a2efbcae23b7e343b1aca0",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Four callouts on the surrounding model background are covered with opaque neutral rectangles; no anatomical structure is behind the covered text.",
+      "labels": [
+        {
+          "id": "a15-01-internal-anal-sphincter",
+          "label": "Internal anal sphincter",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.09,
+              "y": 0.342,
+              "width": 0.194,
+              "height": 0.043,
+              "fill": "#f5ead8"
+            }
+          ]
+        },
+        {
+          "id": "a15-02-external-anal-sphincter",
+          "label": "External anal sphincter",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.0,
+              "y": 0.671,
+              "width": 0.195,
+              "height": 0.045,
+              "fill": "#f5ead8"
+            }
+          ]
+        },
+        {
+          "id": "a15-03-rectum",
+          "label": "Rectum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.718,
+              "y": 0.29,
+              "width": 0.077,
+              "height": 0.042,
+              "fill": "#f5ead8"
+            }
+          ]
+        },
+        {
+          "id": "a15-04-anus",
+          "label": "Anus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.825,
+              "y": 0.509,
+              "width": 0.058,
+              "height": 0.044,
+              "fill": "#f5ead8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p01",
+      "sourceImageSha256": "70ce9cf907de8b16d3dab02b1fb7395013ef712be99939bc830470d5b049210c",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Structure names reviewed, including repeated Esophagus and Stomach words in adjacent functional captions. General title and functional descriptions remain as study context.",
+      "labels": [
+        {
+          "id": "p01-01-oral-cavity-teeth-tongue",
+          "label": "Oral cavity, teeth, tongue",
+          "acceptedAnswers": [
+            "Oral cavity teeth tongue"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.077,
+              "y": 0.17,
+              "width": 0.134,
+              "height": 0.057,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-02-mouth",
+          "label": "Mouth",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.282,
+              "y": 0.218,
+              "width": 0.063,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-03-liver",
+          "label": "Liver",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.112,
+              "y": 0.346,
+              "width": 0.062,
+              "height": 0.035,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-04-gallbladder",
+          "label": "Gallbladder",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.08,
+              "y": 0.518,
+              "width": 0.132,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-05-pancreas",
+          "label": "Pancreas",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.095,
+              "y": 0.647,
+              "width": 0.101,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-06-large-intestine",
+          "label": "Large intestine",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.068,
+              "y": 0.815,
+              "width": 0.151,
+              "height": 0.035,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-07-salivary-glands",
+          "label": "Salivary glands",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.778,
+              "y": 0.168,
+              "width": 0.158,
+              "height": 0.031,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-08-pharynx",
+          "label": "Pharynx",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.812,
+              "y": 0.33,
+              "width": 0.091,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-09-esophagus",
+          "label": "Esophagus",
+          "acceptedAnswers": [
+            "Oesophagus"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.801,
+              "y": 0.47,
+              "width": 0.112,
+              "height": 0.034,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.863,
+              "y": 0.385,
+              "width": 0.104,
+              "height": 0.035,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-10-stomach",
+          "label": "Stomach",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.81,
+              "y": 0.611,
+              "width": 0.094,
+              "height": 0.035,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.747,
+              "y": 0.521,
+              "width": 0.074,
+              "height": 0.033,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-11-small-intestine",
+          "label": "Small intestine",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.783,
+              "y": 0.82,
+              "width": 0.149,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-12-anus",
+          "label": "Anus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.643,
+              "y": 0.943,
+              "width": 0.057,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p02",
+      "sourceImageSha256": "2134cfa3ced152b8928b7efba6eda09608805c92353432712dbdee48bf34466f",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Printed label bounds and transcription visually reviewed against the source image.",
+      "labels": [
+        {
+          "id": "p02-01-falciform-ligament",
+          "label": "Falciform ligament",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.24,
+              "y": 0.009,
+              "width": 0.156,
+              "height": 0.077,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-02-diaphragm",
+          "label": "Diaphragm",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.527,
+              "y": 0.01,
+              "width": 0.173,
+              "height": 0.046,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-03-liver",
+          "label": "Liver",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.527,
+              "y": 0.181,
+              "width": 0.093,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-04-pancreas",
+          "label": "Pancreas",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.141,
+              "y": 0.312,
+              "width": 0.149,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-05-duodenum",
+          "label": "Duodenum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.117,
+              "y": 0.378,
+              "width": 0.173,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-06-mesentery-proper",
+          "label": "Mesentery proper",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.124,
+              "y": 0.47,
+              "width": 0.166,
+              "height": 0.079,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-07-sigmoid-mesocolon",
+          "label": "Sigmoid mesocolon",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.116,
+              "y": 0.592,
+              "width": 0.174,
+              "height": 0.077,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-08-rectum",
+          "label": "Rectum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.162,
+              "y": 0.711,
+              "width": 0.128,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-09-urinary-bladder",
+          "label": "Urinary bladder",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.165,
+              "y": 0.76,
+              "width": 0.125,
+              "height": 0.079,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-10-lesser-omentum",
+          "label": "Lesser omentum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.789,
+              "y": 0.208,
+              "width": 0.151,
+              "height": 0.077,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-11-stomach",
+          "label": "Stomach",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.789,
+              "y": 0.286,
+              "width": 0.141,
+              "height": 0.045,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-12-transverse-mesocolon",
+          "label": "Transverse mesocolon",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.789,
+              "y": 0.346,
+              "width": 0.176,
+              "height": 0.078,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-13-transverse-colon",
+          "label": "Transverse colon",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.79,
+              "y": 0.434,
+              "width": 0.174,
+              "height": 0.08,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-14-greater-omentum",
+          "label": "Greater omentum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.79,
+              "y": 0.531,
+              "width": 0.152,
+              "height": 0.079,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-15-parietal-peritoneum",
+          "label": "Parietal peritoneum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.79,
+              "y": 0.631,
+              "width": 0.179,
+              "height": 0.08,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-16-small-intestine",
+          "label": "Small intestine",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.789,
+              "y": 0.72,
+              "width": 0.145,
+              "height": 0.078,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-17-uterus",
+          "label": "Uterus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.79,
+              "y": 0.801,
+              "width": 0.115,
+              "height": 0.046,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p03",
+      "sourceImageSha256": "12bf146b8d542f132fe6d4774fb9dd3323ab33ba85af02e75226728553d5c606",
+      "reviewStatus": "candidate",
+      "coverage": "none",
+      "reviewNotes": "Repeated bolus and muscle terms also appear in process captions. Needs coordinated multi-region masks before publication.",
+      "labels": []
+    },
+    {
+      "figureId": "p04",
+      "sourceImageSha256": "4ed37a42d9dc2435ef72383054eedc0e207422a9e2b1cdbda6543dffe4c10cd3",
+      "reviewStatus": "not-applicable",
+      "coverage": "none",
+      "reviewNotes": "No meaningful printed structure labels: model identification numbers or a general process title only.",
+      "labels": []
+    },
+    {
+      "figureId": "p05",
+      "sourceImageSha256": "d8fe28e04f9648fb9e2c0c936d7bd15af633242314814edd306858d26e47e7cb",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "All structure, process and phase labels reviewed; the repeated Esophagus text is a second region of one answer.",
+      "labels": [
+        {
+          "id": "p05-01-hard-palate",
+          "label": "Hard palate",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.309,
+              "y": 0.003,
+              "width": 0.188,
+              "height": 0.037,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-02-soft-palate",
+          "label": "Soft palate",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.539,
+              "y": 0.004,
+              "width": 0.176,
+              "height": 0.037,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-03-tongue",
+          "label": "Tongue",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.307,
+              "y": 0.055,
+              "width": 0.123,
+              "height": 0.038,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-04-bolus",
+          "label": "Bolus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.614,
+              "y": 0.053,
+              "width": 0.098,
+              "height": 0.038,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-05-esophagus",
+          "label": "Esophagus",
+          "acceptedAnswers": [
+            "Oesophagus"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.307,
+              "y": 0.129,
+              "width": 0.18,
+              "height": 0.039,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.116,
+              "y": 0.776,
+              "width": 0.178,
+              "height": 0.039,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-06-epiglottis",
+          "label": "Epiglottis",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.564,
+              "y": 0.109,
+              "width": 0.154,
+              "height": 0.038,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-07-trachea",
+          "label": "Trachea",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.578,
+              "y": 0.146,
+              "width": 0.134,
+              "height": 0.037,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-08-buccal-phase",
+          "label": "Buccal phase",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.38,
+              "y": 0.174,
+              "width": 0.276,
+              "height": 0.04,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-09-pharyngeal-phase",
+          "label": "Pharyngeal phase",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.336,
+              "y": 0.424,
+              "width": 0.362,
+              "height": 0.039,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-10-peristalsis",
+          "label": "Peristalsis",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.546,
+              "y": 0.541,
+              "width": 0.166,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-11-diaphragm",
+          "label": "Diaphragm",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.116,
+              "y": 0.816,
+              "width": 0.182,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-12-thoracic-cavity",
+          "label": "Thoracic cavity",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.795,
+              "y": 0.785,
+              "width": 0.143,
+              "height": 0.065,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-13-stomach",
+          "label": "Stomach",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.558,
+              "y": 0.876,
+              "width": 0.152,
+              "height": 0.038,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-14-esophageal-phase",
+          "label": "Esophageal phase",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.336,
+              "y": 0.924,
+              "width": 0.362,
+              "height": 0.038,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p06",
+      "sourceImageSha256": "c42afcc5f4c4b976e5c91aaa27e5cd2e83a2bd5704823524a1f0a41969dc2f15",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "All diagram callouts reviewed. The purple Stomach Wall heading is general figure context, not an answer label.",
+      "labels": [
+        {
+          "id": "p06-01-gastric-pit-opening-to-gastric-gland",
+          "label": "Gastric pit (opening to gastric gland)",
+          "acceptedAnswers": [
+            "Gastric pit"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.014,
+              "y": 0.073,
+              "width": 0.201,
+              "height": 0.108,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p06-02-mucous-epithelium",
+          "label": "Mucous epithelium",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.051,
+              "y": 0.209,
+              "width": 0.158,
+              "height": 0.077,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p06-03-lymphatic-vessel",
+          "label": "Lymphatic vessel",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.052,
+              "y": 0.327,
+              "width": 0.156,
+              "height": 0.076,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p06-04-lamina-propria",
+          "label": "Lamina propria",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.071,
+              "y": 0.438,
+              "width": 0.123,
+              "height": 0.079,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p06-05-muscularis-mucosae",
+          "label": "Muscularis mucosae",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.047,
+              "y": 0.526,
+              "width": 0.164,
+              "height": 0.075,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p06-06-submucosa",
+          "label": "Submucosa",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.041,
+              "y": 0.623,
+              "width": 0.177,
+              "height": 0.047,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p06-07-oblique-muscle",
+          "label": "Oblique muscle",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.065,
+              "y": 0.671,
+              "width": 0.123,
+              "height": 0.075,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p06-08-circular-muscle",
+          "label": "Circular muscle",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.068,
+              "y": 0.756,
+              "width": 0.12,
+              "height": 0.076,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p06-09-longitudinal-muscle",
+          "label": "Longitudinal muscle",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.036,
+              "y": 0.847,
+              "width": 0.183,
+              "height": 0.077,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p06-10-serosa",
+          "label": "Serosa",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.073,
+              "y": 0.926,
+              "width": 0.115,
+              "height": 0.045,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p06-11-artery-and-vein",
+          "label": "Artery and vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.881,
+              "y": 0.454,
+              "width": 0.1,
+              "height": 0.108,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p06-12-myenteric-plexus",
+          "label": "Myenteric plexus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.842,
+              "y": 0.905,
+              "width": 0.15,
+              "height": 0.081,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p07",
+      "sourceImageSha256": "72cc38bb0f48b868e3c52ef1bfdc3c3cb81a4139e2bb9e4b6af9f1f52a6a27e7",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Eight meaningful printed callouts reviewed. The tiny cropped fragment at the left edge is unrelated slide text and is not a practice target.",
+      "labels": [
+        {
+          "id": "p07-01-gastric-pit",
+          "label": "Gastric pit",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.036,
+              "y": 0.144,
+              "width": 0.184,
+              "height": 0.09,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-02-gastric-gland",
+          "label": "Gastric gland",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.03,
+              "y": 0.615,
+              "width": 0.194,
+              "height": 0.089,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-03-mucous-cells",
+          "label": "Mucous cells",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.791,
+              "y": 0.049,
+              "width": 0.209,
+              "height": 0.089,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-04-neck",
+          "label": "Neck",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.791,
+              "y": 0.208,
+              "width": 0.144,
+              "height": 0.052,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-05-parietal-cells",
+          "label": "Parietal cells",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.791,
+              "y": 0.327,
+              "width": 0.202,
+              "height": 0.082,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-06-chief-cells",
+          "label": "Chief cells",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.79,
+              "y": 0.499,
+              "width": 0.152,
+              "height": 0.086,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-07-smooth-muscle-cell",
+          "label": "Smooth muscle cell",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.789,
+              "y": 0.651,
+              "width": 0.211,
+              "height": 0.122,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-08-g-cell",
+          "label": "G cell",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.788,
+              "y": 0.895,
+              "width": 0.158,
+              "height": 0.054,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p08",
+      "sourceImageSha256": "4b9c6f678decc01aa6fe3e9d3e2d32ed1869f975b74aa4700a64b6e158bfe8b2",
+      "reviewStatus": "candidate",
+      "coverage": "none",
+      "reviewNotes": "Dense three-panel composite with repeated labels and explanatory text. Needs full-size transcription and coordinated masks.",
+      "labels": []
+    },
+    {
+      "figureId": "p09",
+      "sourceImageSha256": "6d949acd9b44c2115ae38af59264865c869490e6f82e0dc0265337eb0701d838",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Both illustrated and microscopic callouts reviewed, with shared regions for Goblet cell(s) and Lacteal.",
+      "labels": [
+        {
+          "id": "p09-01-goblet-cell",
+          "label": "Goblet cell",
+          "acceptedAnswers": [
+            "Goblet cells"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.246,
+              "y": 0.062,
+              "width": 0.101,
+              "height": 0.048,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.871,
+              "y": 0.54,
+              "width": 0.073,
+              "height": 0.076,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-02-epithelium",
+          "label": "Epithelium",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.249,
+              "y": 0.136,
+              "width": 0.103,
+              "height": 0.047,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-03-nerve",
+          "label": "Nerve",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.259,
+              "y": 0.241,
+              "width": 0.063,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-04-lacteal",
+          "label": "Lacteal",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.257,
+              "y": 0.321,
+              "width": 0.073,
+              "height": 0.043,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.865,
+              "y": 0.756,
+              "width": 0.075,
+              "height": 0.045,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-05-capillary-network",
+          "label": "Capillary network",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.256,
+              "y": 0.383,
+              "width": 0.089,
+              "height": 0.077,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-06-lamina-propria",
+          "label": "Lamina propria",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.268,
+              "y": 0.516,
+              "width": 0.075,
+              "height": 0.075,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-07-arteriole",
+          "label": "Arteriole",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.022,
+              "y": 0.704,
+              "width": 0.087,
+              "height": 0.047,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-08-lymphatic-vessel",
+          "label": "Lymphatic vessel",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.026,
+              "y": 0.783,
+              "width": 0.097,
+              "height": 0.074,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-09-venule",
+          "label": "Venule",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.275,
+              "y": 0.789,
+              "width": 0.072,
+              "height": 0.046,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-10-capillaries",
+          "label": "Capillaries",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.423,
+              "y": 0.596,
+              "width": 0.101,
+              "height": 0.049,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-11-brush-border",
+          "label": "Brush border",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.864,
+              "y": 0.321,
+              "width": 0.074,
+              "height": 0.08,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p10",
+      "sourceImageSha256": "da9b33db4648edf78c78a31566b46701b979bb336e27c13bb44eca9eabe0d99d",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Printed label bounds and transcription visually reviewed against the source image.",
+      "labels": [
+        {
+          "id": "p10-01-duodenum",
+          "label": "Duodenum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.134,
+              "y": 0.239,
+              "width": 0.166,
+              "height": 0.045,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-02-jejunum",
+          "label": "Jejunum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.744,
+              "y": 0.14,
+              "width": 0.138,
+              "height": 0.046,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-03-ileum",
+          "label": "Ileum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.345,
+              "y": 0.86,
+              "width": 0.096,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-04-duodenal-glands",
+          "label": "Duodenal glands",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.009,
+              "y": 0.381,
+              "width": 0.202,
+              "height": 0.045,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-05-plicae-circulares",
+          "label": "Plicae circulares",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.46,
+              "y": 0.388,
+              "width": 0.125,
+              "height": 0.08,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-06-villi",
+          "label": "Villi",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.511,
+              "y": 0.55,
+              "width": 0.059,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-07-aggregated-lymphoid-nodules",
+          "label": "Aggregated lymphoid nodules",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.445,
+              "y": 0.901,
+              "width": 0.349,
+              "height": 0.076,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-08-serosa",
+          "label": "Serosa",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.843,
+              "y": 0.218,
+              "width": 0.095,
+              "height": 0.045,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-09-muscularis-externa",
+          "label": "Muscularis externa",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.842,
+              "y": 0.28,
+              "width": 0.138,
+              "height": 0.078,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-10-submucosa",
+          "label": "Submucosa",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.842,
+              "y": 0.393,
+              "width": 0.149,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-11-mucosa",
+          "label": "Mucosa",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.843,
+              "y": 0.457,
+              "width": 0.105,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-12-muscularis-mucosae",
+          "label": "Muscularis mucosae",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.843,
+              "y": 0.536,
+              "width": 0.138,
+              "height": 0.078,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p11",
+      "sourceImageSha256": "dbe21c2e86408d0b637ce039dea8f474d3716563b571a3095663ade0f14ee94c",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "All diagram and micrograph labels reviewed, including repeated duct names and their printed Wirsung/Santorini alternative names in the lecture notes.",
+      "labels": [
+        {
+          "id": "p11-01-common-bile-duct",
+          "label": "Common bile duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.097,
+              "y": 0.055,
+              "width": 0.123,
+              "height": 0.065,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-02-accessory-pancreatic-duct",
+          "label": "Accessory pancreatic duct",
+          "acceptedAnswers": [
+            "Accessory duct",
+            "Duct of Santorini"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.009,
+              "y": 0.1,
+              "width": 0.104,
+              "height": 0.09,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.002,
+              "y": 0.753,
+              "width": 0.212,
+              "height": 0.049,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.024,
+              "y": 0.882,
+              "width": 0.243,
+              "height": 0.055,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-03-pancreatic-duct",
+          "label": "Pancreatic duct",
+          "acceptedAnswers": [
+            "Duct of Wirsung"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.214,
+              "y": 0.072,
+              "width": 0.1,
+              "height": 0.065,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.001,
+              "y": 0.619,
+              "width": 0.214,
+              "height": 0.047,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.024,
+              "y": 0.708,
+              "width": 0.238,
+              "height": 0.048,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.294,
+              "y": 0.798,
+              "width": 0.209,
+              "height": 0.046,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-04-lobules",
+          "label": "Lobules",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.376,
+              "y": 0.101,
+              "width": 0.083,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-05-head-of-pancreas",
+          "label": "Head of pancreas",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.181,
+              "y": 0.296,
+              "width": 0.092,
+              "height": 0.062,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-06-body-of-pancreas",
+          "label": "Body of pancreas",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.293,
+              "y": 0.18,
+              "width": 0.086,
+              "height": 0.065,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-07-tail-of-pancreas",
+          "label": "Tail of pancreas",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.508,
+              "y": 0.071,
+              "width": 0.091,
+              "height": 0.066,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-08-duodenal-papilla",
+          "label": "Duodenal papilla",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.002,
+              "y": 0.47,
+              "width": 0.096,
+              "height": 0.065,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-09-duodenum",
+          "label": "Duodenum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.175,
+              "y": 0.409,
+              "width": 0.108,
+              "height": 0.04,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-10-connective-tissue-septum",
+          "label": "Connective tissue septum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.682,
+              "y": 0.006,
+              "width": 0.128,
+              "height": 0.065,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-11-ducts",
+          "label": "Ducts",
+          "acceptedAnswers": [
+            "Duct"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.828,
+              "y": 0.012,
+              "width": 0.071,
+              "height": 0.039,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.815,
+              "y": 0.924,
+              "width": 0.061,
+              "height": 0.04,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-12-exocrine-cells-in-pancreatic-acini",
+          "label": "Exocrine cells in pancreatic acini",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.59,
+              "y": 0.153,
+              "width": 0.129,
+              "height": 0.093,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-13-endocrine-cells-in-pancreatic-islet",
+          "label": "Endocrine cells in pancreatic islet",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.571,
+              "y": 0.246,
+              "width": 0.153,
+              "height": 0.067,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-14-pancreatic-islet-endocrine",
+          "label": "Pancreatic islet (endocrine)",
+          "acceptedAnswers": [
+            "Pancreatic islet"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.558,
+              "y": 0.411,
+              "width": 0.139,
+              "height": 0.068,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-15-pancreatic-acini-exocrine",
+          "label": "Pancreatic acini (exocrine)",
+          "acceptedAnswers": [
+            "Pancreatic acini"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.554,
+              "y": 0.923,
+              "width": 0.226,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p12",
+      "sourceImageSha256": "fd1c4981fd1868110b8f03a8510d6f94ff697301075ac5846fc2ee6f0b8c0c19",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Repeated bile-duct and hepatic-portal-vein branch callouts are coordinated regions of the same answer.",
+      "labels": [
+        {
+          "id": "p12-01-interlobular-septum",
+          "label": "Interlobular septum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.104,
+              "y": 0.446,
+              "width": 0.109,
+              "height": 0.057,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p12-02-bile-duct",
+          "label": "Bile duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.21,
+              "y": 0.445,
+              "width": 0.059,
+              "height": 0.057,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.354,
+              "y": 0.86,
+              "width": 0.095,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p12-03-branch-of-hepatic-portal-vein",
+          "label": "Branch of hepatic portal vein",
+          "acceptedAnswers": [
+            "Hepatic portal vein branch"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.301,
+              "y": 0.446,
+              "width": 0.173,
+              "height": 0.057,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.316,
+              "y": 0.667,
+              "width": 0.168,
+              "height": 0.077,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.833,
+              "y": 0.867,
+              "width": 0.13,
+              "height": 0.072,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p12-04-portal-area",
+          "label": "Portal area",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.511,
+              "y": 0.445,
+              "width": 0.068,
+              "height": 0.056,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p12-05-bile-ductules",
+          "label": "Bile ductules",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.643,
+              "y": 0.446,
+              "width": 0.086,
+              "height": 0.057,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p12-06-sinusoid",
+          "label": "Sinusoid",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.355,
+              "y": 0.528,
+              "width": 0.095,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p12-07-hepatocytes",
+          "label": "Hepatocytes",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.34,
+              "y": 0.607,
+              "width": 0.119,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p12-08-central-vein",
+          "label": "Central vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.833,
+              "y": 0.528,
+              "width": 0.119,
+              "height": 0.038,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p12-09-kupffer-cells",
+          "label": "Kupffer cells",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.832,
+              "y": 0.567,
+              "width": 0.124,
+              "height": 0.039,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p12-10-bile-canaliculi",
+          "label": "Bile canaliculi",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.832,
+              "y": 0.706,
+              "width": 0.098,
+              "height": 0.057,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p12-11-branch-of-hepatic-artery-proper",
+          "label": "Branch of hepatic artery proper",
+          "acceptedAnswers": [
+            "Hepatic artery proper branch"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.316,
+              "y": 0.791,
+              "width": 0.165,
+              "height": 0.057,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p13",
+      "sourceImageSha256": "dabfc6468c8984538c3d461e8468bb17828d035d8707820c1dbc378ada9021d5",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Selected diagram callouts reviewed with repeated terms masked in process captions. Gallbladder and sphincter narrative questions are not yet curated.",
+      "labels": [
+        {
+          "id": "p13-01-liver",
+          "label": "Liver",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.81,
+              "y": 0.392,
+              "width": 0.071,
+              "height": 0.047,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.841,
+              "y": 0.082,
+              "width": 0.063,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-02-duodenum",
+          "label": "Duodenum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.287,
+              "y": 0.645,
+              "width": 0.129,
+              "height": 0.047,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.642,
+              "y": 0.702,
+              "width": 0.127,
+              "height": 0.046,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.677,
+              "y": 0.862,
+              "width": 0.14,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-03-cck",
+          "label": "CCK",
+          "acceptedAnswers": [
+            "Cholecystokinin"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.374,
+              "y": 0.7,
+              "width": 0.068,
+              "height": 0.048,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.792,
+              "y": 0.661,
+              "width": 0.06,
+              "height": 0.045,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-04-lipid-droplet",
+          "label": "Lipid droplet",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.286,
+              "y": 0.82,
+              "width": 0.096,
+              "height": 0.088,
+              "fill": "#f9ee86"
+            },
+            {
+              "shape": "rect",
+              "x": 0.213,
+              "y": 0.77,
+              "width": 0.063,
+              "height": 0.044,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.03,
+              "y": 0.808,
+              "width": 0.084,
+              "height": 0.046,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p14",
+      "sourceImageSha256": "bd9be25579763d08718428ebf3cbdeb4ffc6645a06285f8d59cc91bd0f09137f",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Printed label bounds and transcription visually reviewed against the source image.",
+      "labels": [
+        {
+          "id": "p14-01-hepatic-portal-vein",
+          "label": "Hepatic portal vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.251,
+              "y": 0.0,
+              "width": 0.174,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-02-aorta",
+          "label": "Aorta",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.476,
+              "y": 0.0,
+              "width": 0.064,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-03-splenic-vein",
+          "label": "Splenic vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.569,
+              "y": 0.0,
+              "width": 0.127,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-04-superior-mesenteric-vein",
+          "label": "Superior mesenteric vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.175,
+              "y": 0.044,
+              "width": 0.225,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-05-inferior-vena-cava",
+          "label": "Inferior vena cava",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.249,
+              "y": 0.087,
+              "width": 0.165,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-06-superior-mesenteric-artery",
+          "label": "Superior mesenteric artery",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.618,
+              "y": 0.039,
+              "width": 0.245,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-07-inferior-mesenteric-vein",
+          "label": "Inferior mesenteric vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.64,
+              "y": 0.081,
+              "width": 0.217,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-08-transverse-colon",
+          "label": "Transverse colon",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.197,
+              "y": 0.133,
+              "width": 0.206,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-09-left-colic-splenic-flexure",
+          "label": "Left colic (splenic) flexure",
+          "acceptedAnswers": [
+            "Left colic flexure",
+            "Splenic flexure"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.758,
+              "y": 0.129,
+              "width": 0.174,
+              "height": 0.066,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-10-right-colic-hepatic-flexure",
+          "label": "Right colic (hepatic) flexure",
+          "acceptedAnswers": [
+            "Right colic flexure",
+            "Hepatic flexure"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.06,
+              "y": 0.231,
+              "width": 0.149,
+              "height": 0.068,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-11-middle-colic-artery-and-vein",
+          "label": "Middle colic artery and vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.074,
+              "y": 0.308,
+              "width": 0.145,
+              "height": 0.067,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-12-ascending-colon",
+          "label": "Ascending colon",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.018,
+              "y": 0.388,
+              "width": 0.198,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-13-right-colic-artery-and-vein",
+          "label": "Right colic artery and vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.055,
+              "y": 0.438,
+              "width": 0.168,
+              "height": 0.065,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-14-fatty-appendices",
+          "label": "Fatty appendices",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.104,
+              "y": 0.53,
+              "width": 0.117,
+              "height": 0.069,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-15-ileocecal-valve",
+          "label": "Ileocecal valve",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.092,
+              "y": 0.625,
+              "width": 0.143,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-16-cecum",
+          "label": "Cecum",
+          "acceptedAnswers": [
+            "Caecum"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.177,
+              "y": 0.694,
+              "width": 0.076,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-17-appendix",
+          "label": "Appendix",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.284,
+              "y": 0.77,
+              "width": 0.097,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-18-ileum",
+          "label": "Ileum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.382,
+              "y": 0.619,
+              "width": 0.061,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-19-rectal-artery",
+          "label": "Rectal artery",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.456,
+              "y": 0.616,
+              "width": 0.073,
+              "height": 0.062,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-20-intestinal-arteries-and-veins",
+          "label": "Intestinal arteries and veins",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.399,
+              "y": 0.55,
+              "width": 0.161,
+              "height": 0.069,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-21-greater-omentum-cut",
+          "label": "Greater omentum (cut)",
+          "acceptedAnswers": [
+            "Greater omentum"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.763,
+              "y": 0.271,
+              "width": 0.173,
+              "height": 0.072,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-22-left-colic-vein",
+          "label": "Left colic vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.765,
+              "y": 0.361,
+              "width": 0.135,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-23-inferior-mesenteric-artery",
+          "label": "Inferior mesenteric artery",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.774,
+              "y": 0.414,
+              "width": 0.178,
+              "height": 0.067,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-24-descending-colon",
+          "label": "Descending colon",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.783,
+              "y": 0.481,
+              "width": 0.207,
+              "height": 0.042,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-25-haustra",
+          "label": "Haustra",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.781,
+              "y": 0.532,
+              "width": 0.088,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-26-left-colic-artery",
+          "label": "Left colic artery",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.776,
+              "y": 0.585,
+              "width": 0.154,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-27-sigmoid-arteries-and-veins",
+          "label": "Sigmoid arteries and veins",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.774,
+              "y": 0.624,
+              "width": 0.156,
+              "height": 0.067,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-28-taenia-coli",
+          "label": "Taenia coli",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.75,
+              "y": 0.693,
+              "width": 0.112,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-29-sigmoid-flexure",
+          "label": "Sigmoid flexure",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.745,
+              "y": 0.735,
+              "width": 0.15,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-30-sigmoid-colon",
+          "label": "Sigmoid colon",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.735,
+              "y": 0.786,
+              "width": 0.168,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-31-rectum",
+          "label": "Rectum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.459,
+              "y": 0.832,
+              "width": 0.082,
+              "height": 0.041,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p15",
+      "sourceImageSha256": "4ce3255921eb65408b793bd2e0c8fd6121c7e416e822a768c9626e322a7ed188",
+      "reviewStatus": "candidate",
+      "coverage": "none",
+      "reviewNotes": "Reflex-pathway narration contains the answers in repeated callouts. Needs a curated process-question/mask plan.",
+      "labels": []
+    }
+  ]
+}

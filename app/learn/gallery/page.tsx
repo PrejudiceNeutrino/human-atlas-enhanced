@@ -2,7 +2,8 @@ import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState, useSyncEx
 import { ArrowLeft, ArrowRight, Info, Search, Star, X } from 'lucide-react';
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog';
 import { categoryLabel, figureSource, filterFigures, parseGallery, type GalleryCollection } from './model';
-import { ZoomFigure } from './zoom-figure';
+import { LabelPracticeFigure } from './label-practice-figure';
+import { usePracticeDataset } from './label-practice-loader';
 import { createGalleryPreferencesStore } from './preferences';
 import '../subject-menu.css';
 import './gallery.css';
@@ -11,6 +12,8 @@ function GalleryContent({ collection, assetBase, subjectSlug }: { collection: Ga
   const [category, setCategory] = useState('all'), [query, setQuery] = useState('');
   const [selected, setSelected] = useState<string | null>(null);
   const [showDetails, setShowDetails] = useState(false);
+  const [practiceEnabled, setPracticeEnabled] = useState(false);
+  const annotations = usePracticeDataset(assetBase, subjectSlug, collection, !!selected);
   const detailsId = useId();
   const [thumbnailErrors, setThumbnailErrors] = useState<string[]>([]);
   const [preferencesStore] = useState(() => {
@@ -59,11 +62,11 @@ function GalleryContent({ collection, assetBase, subjectSlug }: { collection: Ga
         initialFocus={() => document.querySelector<HTMLElement>('.learn-gallery-viewer .learn-gallery-image-stage')}
         finalFocus={() => opener.current?.isConnected ? opener.current : starredFilter.current}
         onKeyDown={event => {
-          if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || event.target instanceof HTMLInputElement || event.target instanceof HTMLTextAreaElement || (event.target as Element).closest('[contenteditable="true"]')) return;
+          if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || (event.target as Element).closest('input,textarea,select,[contenteditable="true"]')) return;
           if (event.key === 'ArrowLeft') { event.preventDefault(); navigate(-1); }
           else if (event.key === 'ArrowRight') { event.preventDefault(); navigate(1); }
         }}>
-        {figure && <ZoomFigure key={figure.id} figure={figure} src={`${assetBase}/${figure.image}`}
+        {figure && <LabelPracticeFigure key={figure.id} figure={figure} src={`${assetBase}/${figure.image}`} gallery={collection} subjectId={subjectSlug} dataset={annotations.dataset} annotationError={annotations.error} annotationReady={annotations.done && !annotations.error} enabled={practiceEnabled} onEnabledChange={setPracticeEnabled}
           navigation={<div className="learn-gallery-page-controls" role="group" aria-label="Figure navigation"><button type="button" aria-label="Previous figure" title="Previous figure (←)" aria-keyshortcuts="ArrowLeft" disabled={figures.length < 2} onClick={() => navigate(-1)}><ArrowLeft size={18} aria-hidden="true"/></button><span aria-live="polite">{index + 1} / {figures.length}</span><button type="button" aria-label="Next figure" title="Next figure (→)" aria-keyshortcuts="ArrowRight" disabled={figures.length < 2} onClick={() => navigate(1)}><ArrowRight size={18} aria-hidden="true"/></button></div>}
           actions={<div className="learn-gallery-viewer-actions"><button type="button" className="learn-gallery-star" aria-label={`Star figure: ${figure.title}`} aria-pressed={starred.has(figure.id)} title={starred.has(figure.id) ? 'Remove star' : 'Star this figure'} onClick={() => toggleStar(figure.id)}><Star size={18} aria-hidden="true" fill={starred.has(figure.id) ? 'currentColor' : 'none'}/></button><button type="button" className="learn-gallery-details-toggle" aria-label="Figure details" title="Figure details" aria-expanded={showDetails} aria-controls={detailsId} onClick={() => setShowDetails(value => !value)}><Info size={17} aria-hidden="true"/><span>Details</span></button><DialogClose className="learn-gallery-close" aria-label="Close image viewer" title="Close viewer (Esc)"><X size={19} aria-hidden="true"/></DialogClose></div>}
           caption={<footer className="learn-gallery-figure-copy"><div className="learn-gallery-caption-heading"><DialogTitle className="learn-gallery-figure-title">{figure.title}</DialogTitle><span className="learn-gallery-category">{categoryLabel(figure.category)}</span></div><div id={detailsId} className={showDetails ? 'learn-gallery-details' : 'sr-only'}><DialogDescription className="learn-gallery-figure-description">{figure.description}</DialogDescription><p className="learn-gallery-provenance">{figureSource(figure)}</p><p className="learn-gallery-gestures">Scroll or pinch to zoom · Drag to pan · Double-click to fit / enlarge · + / − zoom · 0 fit · ← / → browse · Esc close</p></div></footer>}

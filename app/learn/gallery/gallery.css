@@ -49,7 +49,8 @@
 .learn-gallery-image-stage[data-zoomed=true] { cursor: grab; }
 .learn-gallery-image-stage[data-zoomed=true]:active { cursor: grabbing; }
 .learn-gallery-image-stage:focus-visible { outline: 2px solid var(--focus); outline-offset: -3px; }
-.learn-gallery-image-stage img { position: absolute; left: 50%; top: 50%; max-width: none; max-height: none; transform: translate(-50%,-50%); transform-origin: center; user-select: none; -webkit-user-drag: none; }
+.learn-gallery-image-space { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); transform-origin: center; }
+.learn-gallery-image-space > img { display: block; width: 100%; height: 100%; max-width: none; max-height: none; user-select: none; -webkit-user-drag: none; }
 .learn-gallery-image-status { position: absolute; inset: 0; display: grid; place-items: center; padding: 30px; margin: 0; color: #52616c; font-size: 14px; text-align: center; }
 .learn-gallery-figure-copy { flex-shrink: 0; max-height: min(240px,32dvh); padding: 12px 20px; overflow-y: auto; overscroll-behavior: contain; border-top: 1px solid var(--border); }
 .learn-gallery-caption-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 8px 24px; }

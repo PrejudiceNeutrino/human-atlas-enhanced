@@ -44,6 +44,7 @@ export function parseGallery(input: unknown): GalleryCollection {
     if (!item || typeof item.id !== 'string' || !/^[a-z0-9-]+$/.test(item.id) || ids.has(item.id) ||
         !sections.has(item.category) || !['title', 'description', 'alt', 'sourceType', 'rightsReview'].every(key => typeof item[key as keyof GalleryFigure] === 'string') ||
         !Array.isArray(item.tags) || !item.tags.every(tag => typeof tag === 'string') ||
+        !/^[a-f0-9]{64}$/.test(item.sha256) ||
         !Number.isFinite(item.width) || !Number.isFinite(item.height) || item.width <= 0 || item.height <= 0 ||
         item.image !== `images/${item.id}.webp` || item.thumbnail !== `thumbnails/${item.id}.webp` ||
         !item.source || typeof item.source.deck !== 'string' || !Array.isArray(item.source.slides) || !item.source.slides.length ||

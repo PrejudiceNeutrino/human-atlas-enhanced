@@ -1,5 +1,7 @@
 # Digestive System Gallery
 
+Label Practice now adds optional click-to-reveal covers to the existing viewer, with 272 reviewed answers across 24 figures. See the [feature and curator guide](gallery-label-practice.md), [all-figure coverage report](gallery-label-practice-coverage.md), and [local delivery handoff](integration/GALLERY_LABEL_PRACTICE_2026_11_06.md). The historical checks below describe their respective deliveries; the new handoff records current verification.
+
 Learn -> Digestive -> Gallery makes all **30 curated figures** and **30 supplied WebP thumbnails** available on the main site. The gallery uses the same assets in development, preview and production, without an environment opt-in. The tab order is General Overview, Deep Dive, How It Connects, Who Cares?, Visualize, Gallery, Exam Cram, Study Tools.
 
 ## Assets and provenance

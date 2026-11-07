@@ -6,21 +6,23 @@ type Point = { x: number; y: number };
 type Geometry = { width: number; height: number; stageWidth: number; stageHeight: number; fit: number };
 const clamp = (value: number, limit: number) => Math.max(-limit, Math.min(limit, value));
 
-export function ZoomFigure({ figure, src, navigation, actions, caption }: { figure: GalleryFigure; src: string; navigation: ReactNode; actions: ReactNode; caption: ReactNode }) {
-  const stage = useRef<HTMLDivElement>(null), picture = useRef<HTMLImageElement>(null);
+export function ZoomFigure({ figure, src, navigation, actions, caption, controls, overlay, imageAlt, onMaskActivate, editing = false }: { figure: GalleryFigure; src: string; navigation: ReactNode; actions: ReactNode; caption: ReactNode; controls?: ReactNode; overlay?: ReactNode; imageAlt?: string; onMaskActivate?: (id: string) => void; editing?: boolean }) {
+  const stage = useRef<HTMLDivElement>(null), imageSpace = useRef<HTMLDivElement>(null);
   const geometry = useRef<Geometry>({ width: 0, height: 0, stageWidth: 0, stageHeight: 0, fit: 1 });
   const view = useRef({ scale: 1, x: 0, y: 0 }), pointers = useRef(new Map<number, Point>());
   const [size, setSize] = useState({ width: 0, height: 0 }), [scale, setScale] = useState(1);
   const [loading, setLoading] = useState(true), [failed, setFailed] = useState(false);
+  const lastMaskTap = useRef(-Infinity);
+  const gesture = useRef<{ start: Point; label: string | null; moved: boolean } | null>(null);
 
   function apply(nextScale: number, x: number, y: number) {
     const g = geometry.current, maximum = Math.max(1, 1 / g.fit);
     const zoom = Math.max(1, Math.min(maximum, nextScale));
     view.current = { scale: zoom, x: clamp(x, Math.max(0, (g.width * zoom - g.stageWidth) / 2 + 16)), y: clamp(y, Math.max(0, (g.height * zoom - g.stageHeight) / 2 + 16)) };
     if (zoom === 1) { view.current.x = 0; view.current.y = 0; }
-    if (picture.current) picture.current.style.transform = `translate(-50%, -50%) translate(${view.current.x}px, ${view.current.y}px) scale(${zoom})`;
+    if (imageSpace.current) imageSpace.current.style.transform = `translate(-50%, -50%) translate(${view.current.x}px, ${view.current.y}px) scale(${zoom})`;
     if (stage.current) stage.current.dataset.zoomed = String(zoom > 1.001);
-    // Panning only updates the image transform; it does not rerender the gallery or viewer.
+    // Image and annotations share this one transform; panning does not rerender them.
     setScale(previous => Math.abs(previous - zoom) > .001 ? zoom : previous);
   }
   function zoomTo(next: number, point?: Point) {
@@ -63,18 +65,21 @@ export function ZoomFigure({ figure, src, navigation, actions, caption }: { figu
   }, [failed]);
 
   const pointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
-    if (failed || (event.pointerType === 'mouse' && event.button !== 0)) return;
+    if (failed || editing || (event.pointerType === 'mouse' && event.button !== 0)) return;
     event.currentTarget.focus({ preventScroll: true });
     event.currentTarget.setPointerCapture(event.pointerId);
     pointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    if (pointers.current.size === 1) gesture.current = { start: { x: event.clientX, y: event.clientY }, label: (event.target as Element).closest('[data-practice-label]')?.getAttribute('data-practice-label') ?? null, moved: false };
+    else if (gesture.current) gesture.current.moved = true;
   };
   const pointerMove = (event: ReactPointerEvent<HTMLDivElement>) => {
     if (!pointers.current.has(event.pointerId)) return;
+    if (gesture.current && Math.hypot(event.clientX - gesture.current.start.x, event.clientY - gesture.current.start.y) > 6) gesture.current.moved = true;
     const before = [...pointers.current.values()];
     const previous = pointers.current.get(event.pointerId)!;
     pointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
     const after = [...pointers.current.values()];
-    if (after.length === 1) apply(view.current.scale, view.current.x + event.clientX - previous.x, view.current.y + event.clientY - previous.y);
+    if (after.length === 1 && gesture.current?.moved) apply(view.current.scale, view.current.x + event.clientX - previous.x, view.current.y + event.clientY - previous.y);
     else if (after.length === 2) {
       const distance = (points: Point[]) => Math.hypot(points[0].x - points[1].x, points[0].y - points[1].y);
       const midpoint = (points: Point[]) => ({ x: (points[0].x + points[1].x) / 2, y: (points[0].y + points[1].y) / 2 });
@@ -83,10 +88,15 @@ export function ZoomFigure({ figure, src, navigation, actions, caption }: { figu
       apply(view.current.scale, view.current.x + b.x - a.x, view.current.y + b.y - a.y);
     }
   };
-  const pointerEnd = (event: ReactPointerEvent<HTMLDivElement>) => { pointers.current.delete(event.pointerId); };
+  const pointerEnd = (event: ReactPointerEvent<HTMLDivElement>) => {
+    const tap = gesture.current;
+    const tracked = pointers.current.delete(event.pointerId);
+    if (tracked && event.type === 'pointerup' && !pointers.current.size && tap?.label && !tap.moved && Math.hypot(event.clientX - tap.start.x, event.clientY - tap.start.y) <= 6) { lastMaskTap.current = performance.now(); onMaskActivate?.(tap.label); }
+    if (!pointers.current.size) gesture.current = null;
+  };
   const maximum = Math.max(1, 1 / geometry.current.fit);
   return <div className="learn-gallery-inspector" onKeyDown={event => {
-    if (event.ctrlKey || event.metaKey || event.altKey || event.target instanceof HTMLInputElement || failed) return;
+    if (event.ctrlKey || event.metaKey || event.altKey || (event.target as Element).closest('input,textarea,select,[contenteditable=true]') || failed) return;
     if (event.key === '+' || event.key === '=') { event.preventDefault(); zoomTo(view.current.scale * 1.25); }
     else if (event.key === '-') { event.preventDefault(); zoomTo(view.current.scale / 1.25); }
     else if (event.key === '0') { event.preventDefault(); apply(1, 0, 0); }
@@ -102,11 +112,15 @@ export function ZoomFigure({ figure, src, navigation, actions, caption }: { figu
       </div>
       {actions}
     </header>
+    {controls}
     <div ref={stage} className="learn-gallery-image-stage" role="group" aria-label="Image inspection area" aria-describedby="learn-gallery-gestures" tabIndex={0}
       onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={pointerEnd} onPointerCancel={pointerEnd} onLostPointerCapture={pointerEnd}
-      onDoubleClick={event => { if (!failed) zoomTo(view.current.scale > 1 ? 1 : maximum, localPoint({ x: event.clientX, y: event.clientY })); }}>
+      onDoubleClick={event => { if (!failed && !editing && performance.now() - lastMaskTap.current > 500 && !(event.target as Element).closest('[data-practice-label]')) zoomTo(view.current.scale > 1 ? 1 : maximum, localPoint({ x: event.clientX, y: event.clientY })); }}>
       {loading && !failed && <span className="learn-gallery-image-status" role="status">Loading full-size figure…</span>}
-      {failed ? <p className="learn-gallery-image-status" role="alert">This figure could not load. Close and reopen it to retry.</p> : <img ref={picture} src={src} alt={figure.alt} width={figure.width} height={figure.height} decoding="async" draggable={false} onLoad={() => setLoading(false)} onError={() => { setFailed(true); setLoading(false); }} style={{ width: size.width, height: size.height }} />}
+      {failed ? <p className="learn-gallery-image-status" role="alert">This figure could not load. Close and reopen it to retry.</p> : <div ref={imageSpace} className="learn-gallery-image-space" style={{ width: size.width, height: size.height }}>
+        <img src={src} alt={imageAlt ?? figure.alt} width={figure.width} height={figure.height} decoding="async" draggable={false} onLoad={() => setLoading(false)} onError={() => { setFailed(true); setLoading(false); }}/>
+        {!loading && overlay}
+      </div>}
     </div>
     <span id="learn-gallery-gestures" className="sr-only">Scroll or pinch to zoom. Drag to pan. Double-click to fit or enlarge. Plus and minus zoom, 0 fits, Left and Right browse figures, Escape closes.</span>
     {caption}
