@@ -10,7 +10,7 @@ export function NoteEditor({record,onClose,returnFocus}:{record:Annotation;onClo
   const save=async()=>{setBusy(true);setError('');try{await annotationStore.saveNote(record.id,note,record.modifiedAt);onClose();}catch(error){setError(error instanceof Error?error.message:'Could not save this note.');}finally{setBusy(false);}};
   const remove=async()=>{if(!window.confirm('Delete this highlight and its personal note?'))return;setBusy(true);try{await annotationStore.remove(record.id);onClose();}catch{setError('Could not delete this highlight. Your note is still available.');}finally{setBusy(false);}};
   return <Dialog open onOpenChange={open=>{if(!open)close();}}>
-    <DialogContent className="notes-editor" initialFocus={field} finalFocus={()=>returnFocus.current?.isConnected?returnFocus.current:document.querySelector<HTMLElement>('.annotation-help a, #notes-content')} aria-modal="true" data-atlas-shortcuts="disabled" showCloseButton={false}>
+    <DialogContent className="notes-editor" initialFocus={field} finalFocus={()=>returnFocus.current?.isConnected?returnFocus.current:document.getElementById('notes-content')??document.querySelector<HTMLElement>('.site-notes-trigger')} aria-modal="true" data-atlas-shortcuts="disabled" showCloseButton={false}>
       <DialogTitle>Personal note</DialogTitle>
       <DialogDescription>Saved in this browser. Nothing is uploaded or synced.</DialogDescription>
       <blockquote>{annotationExcerpt(record)}</blockquote>

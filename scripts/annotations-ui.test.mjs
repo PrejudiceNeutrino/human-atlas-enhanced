@@ -34,7 +34,7 @@ const output=path.resolve('work/annotation-tests/ui.mjs');
 await build({stdin:{contents:"export {default as LearnPage} from './app/learn/page';export {default as NotesPage} from './app/notes/page';export * from './app/notes/annotation-store';export * from './app/notes/annotation-storage';export * from './app/notes/annotation-content';export * from './app/notes/annotation-core';",resolveDir:process.cwd()},outfile:output,tsconfig:path.resolve('tsconfig.json'),bundle:true,packages:'external',platform:'node',format:'esm',loader:{'.css':'empty'},alias:{'@':process.cwd()}});
 const {LearnPage,NotesPage,annotationStore,createAnnotationStore,createAnnotationStorage,annotationSources,annotationTargetUrl,ANNOTATION_EXPORT_KIND,fingerprint}=await import(pathToFileURL(output).href);
 const root=createRoot(document.querySelector('#root'));let renderKey=0;
-const render=async Component=>{flushSync(()=>root.render(createElement(Component,{pathname:'/learn/digestive',key:++renderKey})));await delay(90);};
+const render=async Component=>{flushSync(()=>root.render(createElement(Component===NotesPage?LearnPage:Component,{pathname:'/learn/digestive',initialNotesOpen:Component===NotesPage,key:++renderKey})));await delay(90);if(Component===NotesPage)await waitFor(()=>document.querySelector('#notes-content'),'lazy Notes workspace');};
 const click=async element=>{assert.ok(element,'control exists');flushSync(()=>element.click());await delay(80);};
 const named=(root,label)=>[...root.querySelectorAll('button,a')].find(item=>item.textContent===label);
 const tab=label=>[...document.querySelectorAll('[role=tab]')].find(item=>item.querySelector('span')?.textContent===label);
@@ -59,7 +59,7 @@ after(async()=>{flushSync(()=>root.unmount());await annotationStore.dispose();wi
 
 test('selection creates a persistent highlight across inline emphasis without changing educational text or selection identity',async()=>{
   await annotationStore.clear();await render(LearnPage);
-  assert.equal(document.querySelector('.site-navigation a[href="/notes"]').textContent,'Notes');
+  assert.equal(document.querySelector('.site-notes-trigger').textContent,'Notes');
   const block=document.querySelector('.learn-markdown[data-annotation-source$="/intro"]').querySelectorAll('[data-annotation-block]')[1],before=block.textContent;
   const emphasis=block.querySelector('strong').textContent;
   const excerpt=await select(block,4,55);await click(named(document.querySelector('.annotation-toolbar'),'Highlight'));
@@ -272,4 +272,58 @@ test('blocked optional BroadcastChannel does not disable storage; note timestamp
     assert.ok(Date.parse(store.getSnapshot().records[0].modifiedAt)>Date.parse(record.modifiedAt));
     await store.clear();
   }finally{await store.dispose();if(prior)Object.defineProperty(window,'BroadcastChannel',prior);else delete window.BroadcastChannel;}
+});
+
+
+test('Notes opens over the mounted reading and restores header focus and scroll', async () => {
+  window.history.replaceState(null, '', '/learn/digestive');
+  await render(LearnPage);
+  const shell = document.querySelector('.learn-shell'), reading = document.querySelector('.learn-reading'), title = document.title, href = window.location.href;
+  shell.scrollTop = 730;
+  for (const selector of ['.site-notes-trigger']) {
+    const trigger = document.querySelector(selector); trigger.focus(); await click(trigger);
+    await waitFor(() => document.querySelector('#notes-content'), 'Notes content');
+    assert.equal(document.querySelector('.learn-reading'), reading);
+    assert.equal(shell.scrollTop, 730);
+    assert.equal(document.title, title); assert.equal(window.location.href, href);
+    assert.equal(document.querySelector('.notes-workspace-dialog').getAttribute('aria-modal'), 'true');
+    await click(document.querySelector('[aria-label="Close Notes"]'));
+    await waitFor(() => !document.querySelector('.notes-workspace-dialog'), 'Notes closed');
+    assert.equal(document.activeElement, trigger);
+  }
+});
+
+test('Notes keeps its editor nested, protects drafts and returns to the workspace', async () => {
+  await annotationStore.clear(); const record = makeRecord(); await annotationStore.create(record);
+  await render(LearnPage); await click(document.querySelector('.site-notes-trigger'));
+  await waitFor(() => document.querySelector('.notes-entry'), 'saved entry');
+  await click(named(document.querySelector('.notes-entry'), 'Edit note'));
+  await waitFor(() => document.querySelector('.notes-editor'), 'nested editor');
+  assert.equal(document.querySelectorAll('[role="dialog"]').length, 2);
+  await change(document.querySelector('.notes-editor textarea'), 'Unsaved modal draft');
+  confirmation = false; await click(named(document.querySelector('.notes-editor'), 'Cancel'));
+  assert.ok(document.querySelector('.notes-editor')); assert.equal(document.querySelector('textarea').value, 'Unsaved modal draft');
+  confirmation = true; await click(named(document.querySelector('.notes-editor'), 'Cancel'));
+  assert.equal(document.querySelector('.notes-editor'), null); assert.ok(document.querySelector('.notes-workspace-dialog'));
+  assert.equal(annotationStore.getSnapshot().records[0].note, record.note);
+  await click(document.querySelector('[aria-label="Close Notes"]'));
+});
+
+test('revisiting a highlight from Notes activates and focuses the existing reading without remounting', async () => {
+  await annotationStore.clear(); window.history.replaceState(null, '', '/learn/digestive');
+  const source = annotationSources.find(item => item.disclosureId && item.blocks.length), record = makeRecord(source);
+  await annotationStore.create(record); await render(LearnPage);
+  const shell = document.querySelector('.learn-shell');
+  for (let revisit = 0; revisit < 2; revisit++) {
+    await click(document.querySelector('.site-notes-trigger'));
+    await waitFor(() => document.querySelector('.notes-entry-actions a'), 'revisit link');
+    await click(document.querySelector('.notes-entry-actions a'));
+    await waitFor(() => document.activeElement?.dataset.annotationId === record.id, 'focused saved passage');
+    assert.equal(document.querySelector('.learn-shell'), shell);
+    assert.equal(document.querySelector('.notes-workspace-dialog'), null);
+    assert.equal(tab("Who Cares?").getAttribute('aria-selected'), 'true');
+    assert.equal(document.getElementById(`${source.disclosureId}-trigger`).getAttribute('aria-expanded'), 'true');
+    assert.equal(window.location.hash, '#annotation=' + record.id);
+  }
+  assert.equal(networkCalls, 0);
 });

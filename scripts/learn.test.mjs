@@ -122,7 +122,6 @@ test('Learn navigation, subject registry, landing page and unknown subject', { t
   assert.equal(document.querySelector('h1').textContent, 'Learn');
   assert.equal(document.querySelector('[aria-label="Main navigation"] [aria-current]').textContent, 'Learn');
   for (const subject of learnSubjects) {
-    assert.ok(document.querySelector(`.learn-subjects a[href="${subject.href}"]`));
     assert.equal(document.querySelector(`.learn-subject-card[href="${subject.href}"]`).textContent, subject.title);
   }
   await render('/learn/missing');
@@ -133,7 +132,18 @@ test('Learn navigation, subject registry, landing page and unknown subject', { t
   assert.equal(document.querySelector('h1').textContent, 'Digestive System');
   assert.equal(tab('General Overview').getAttribute('aria-selected'), 'true');
   assert.equal(document.querySelector('.learn-article-header > h2').textContent, 'General Overview');
-  assert.equal(document.querySelector('.learn-subjects [aria-current]').textContent, 'Digestive');
+  assert.equal(document.querySelector('.learn-subjects'), null);
+  const switcher = document.querySelector('.learn-subject-switcher');
+  assert.equal(switcher.querySelector('span').textContent, 'Digestive');
+  assert.equal(switcher.getAttribute('aria-label'), 'Change learning subject: Digestive System');
+  const href = window.location.href;
+  await click(switcher);
+  const chooser = document.querySelector('[role="dialog"]');
+  assert.equal(chooser.querySelectorAll('.learn-menu-subject').length, learnSubjects.length);
+  assert.equal(chooser.querySelector('.learn-menu-subject[aria-current="page"]').getAttribute('href'), '/learn/digestive');
+  assert.equal(window.location.href, href);
+  await click(chooser.querySelector('[aria-label="Close Learn menu"]'));
+  assert.equal(document.activeElement, switcher);
 });
 
 test('all three entries conserve the complete Markdown text, emphasis, table and transport sequence', { timeout: 10000 }, async () => {

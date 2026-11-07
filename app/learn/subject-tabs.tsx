@@ -14,6 +14,7 @@ import { GalleryLoader } from './gallery/loader';
 import { VisualizePage } from './anatomy-companion/visualize-page';
 import { LearnContextMenu } from './context-menu/learn-context-menu';
 import { PageSectionsProvider } from './context-menu/page-sections';
+import { useReadingHash } from '../notes/notes-navigation';
 
 // A bookmarked section belongs to its existing subject page, not another route.
 function tabForHash(subject: LearnSubject, hash: string) {
@@ -27,6 +28,7 @@ function tabForHash(subject: LearnSubject, hash: string) {
 }
 
 export function SubjectTabs({ subject }: { subject: LearnSubject }) {
+  const readingHash = useReadingHash();
   const [activeTab, setActiveTab] = useState(() => tabForHash(subject, window.location.hash)?.id ?? subject.tabs[0].id);
   const tabsRef = useRef<HTMLDivElement>(null);
   const previousTab = useRef(activeTab);
@@ -46,7 +48,7 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
   };
 
   useLayoutEffect(()=>{
-    const id=new URLSearchParams(window.location.hash.slice(1)).get('annotation');if(!id)return;
+    const id=new URLSearchParams(readingHash.hash.slice(1)).get('annotation');if(!id)return;
     let alive=true;
     void annotationStore.initialize().then(()=>{
       const record=annotationStore.getSnapshot().records.find(item=>item.id===id&&item.target.subjectId===subject.slug);
@@ -55,7 +57,7 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
       const source=annotationSources.find(item=>item.target.sourceId===record.target.sourceId);
       setRequestedDisclosure(source?.disclosureId??null);
     });return()=>{alive=false;};
-  },[subject]);
+  },[subject,readingHash]);
 
   useLayoutEffect(() => {
     const followHash = () => {

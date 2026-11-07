@@ -73,8 +73,10 @@ test('first command, actual tabs, in-place navigation and live reading sections 
   assert.equal(document.querySelector('.learn-shell').__scrolledTo.behavior, 'instant');
   await context(); await click(item('Back to top'));
   assert.deepEqual(document.querySelector('.learn-shell').__scrolledTo, { top: 0, behavior: 'instant' });
-  await context(); assert.equal(item('My Notes').getAttribute('href'), '/notes');
-  await key(menu('Page context menu'), 'Escape');
+  await context(); await click(item('My Notes'));
+  assert.ok(document.querySelector('.notes-workspace-dialog'));
+  assert.equal(window.location.pathname, '/learn/digestive');
+  await click(document.querySelector('[aria-label="Close Notes"]'));
 });
 
 test('nested keyboard navigation, dismissal, positioning and shared appearance updates', async () => {

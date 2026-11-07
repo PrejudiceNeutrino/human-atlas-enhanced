@@ -28,8 +28,8 @@ after(async()=>{flushSync(()=>root.unmount());await annotationStore.dispose();wi
 
 test('Learn and Notes expose all palettes, preserve independent Light/Dark controls and update across storage events',async()=>{
   for(const Component of [LearnPage,NotesPage]){
-    flushSync(()=>{browserPalette.setPalette('classic');browserTheme.setMode('light');root.render(createElement(Component,{pathname:'/learn/digestive'}));});await delay(90);
-    await click(named(document,'Appearance settings'));
+    flushSync(()=>{browserPalette.setPalette('classic');browserTheme.setMode('light');root.render(createElement(LearnPage,{pathname:'/learn/digestive',initialNotesOpen:Component===NotesPage,key:Component===NotesPage?'notes':'learn'}));});await delay(90);
+    await click(named(Component===NotesPage?document.querySelector('.notes-workspace-dialog'):document,'Appearance settings'));
     const popup=document.querySelector('.appearance-popover');assert.ok(popup);assert.equal(popup.querySelectorAll('input[type=radio]').length,4);
     assert.deepEqual([...popup.querySelectorAll('.palette-option strong')].map(node=>node.textContent),['Classic','Ignition','Ultraviolet','Iris & Ember']);
     await selectPalette(popup,'ultraviolet');assert.equal(document.documentElement.dataset.palette,'ultraviolet');assert.equal(window.localStorage.getItem('human-atlas-palette'),'ultraviolet');assert.equal(browserTheme.getSnapshot().mode,'light');

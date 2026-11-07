@@ -7,7 +7,7 @@ Learn uses the Engineering Club context-menu architecture with Human Atlas navig
 - **Digestive Model** is first and activates the existing **Visualize** tab inside Learn. Its real link is `/learn/digestive#digestive-system-visualize`; ordinary activation stays in the mounted page. It uses the existing embedded anatomy viewer and its model controls.
 - **Navigate** lists available tabs from `LearnSubject.tabs` in registered order, including the current `Who Cares?` title and Visualize. Unavailable placeholders are omitted and the current tab is indicated.
 - **On This Page** lists the active reading layout's real section headings. It updates the existing section hash, scrolls `.learn-shell` below the sticky tab strip, and focuses the heading. It is omitted where no section index is registered.
-- **My Notes** uses the existing `/notes` workspace.
+- **My Notes** opens the shared Notes dialog over the current page; see [Notes dialog handoff](notes-dialog.md).
 - **Back to top** shares its controller and animation with the floating button.
 - **Appearance** uses the existing theme and palette stores. It contains Light / Dark and Classic, Ignition, Ultraviolet, and Iris & Ember.
 - **Reload page** reloads the current document.

@@ -1,6 +1,8 @@
 /* Reading pages reuse the atlas palette, controls, type and motion tokens. */
 .learn-back-to-top { position: fixed; right: max(28px, env(safe-area-inset-right)); bottom: max(24px, env(safe-area-inset-bottom)); z-index: 40; display: grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 1px solid var(--border); border-radius: 50%; background: var(--card); color: var(--ui-link); box-shadow: 0 6px 22px color-mix(in srgb, var(--foreground) 12%, transparent); cursor: pointer; animation: atlas-enter-up var(--motion-fast) var(--motion-curve); transition: transform var(--motion-fast) var(--motion-curve), box-shadow var(--motion-fast) var(--motion-curve), background-color var(--motion-fast) var(--motion-curve); }
 .learn-back-to-top:hover { transform: translateY(-2px); background: var(--accent); box-shadow: 0 9px 26px color-mix(in srgb, var(--foreground) 16%, transparent); }
+:root[data-theme=dark] .learn-back-to-top { box-shadow: 0 4px 14px #00000040; --learn-top-lift-shadow: 0 10px 22px #00000066; }
+:root[data-theme=dark] .learn-back-to-top:hover { box-shadow: 0 6px 18px #00000052; }
 .learn-back-to-top:active { transform: translateY(0); }
 .learn-back-to-top:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
 .learn-back-to-top-ring { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke-width: 1.5; pointer-events: none; transform: rotate(-90deg); }
@@ -12,7 +14,7 @@
 .learn-back-to-top[data-traveling]::before { animation: learn-top-pulse var(--learn-top-duration) ease-out both; }
 .learn-back-to-top[data-traveling] .learn-back-to-top-arrow svg { animation: learn-top-arrow var(--learn-top-duration) cubic-bezier(.22,1,.36,1) both; }
 .learn-back-to-top[data-traveling] .learn-back-to-top-ring { animation: learn-top-orbit var(--learn-top-duration) cubic-bezier(.65,0,.2,1) both; }
-@keyframes learn-top-lift { 0%,100% { transform: translateY(0) scale(1); } 12% { transform: translateY(3px) scale(.9); } 38% { transform: translateY(-9px) scale(1.06); box-shadow: 0 14px 30px color-mix(in srgb, var(--ui-link) 22%, transparent); } 75% { transform: translateY(-2px) scale(.98); } }
+@keyframes learn-top-lift { 0%,100% { transform: translateY(0) scale(1); } 12% { transform: translateY(3px) scale(.9); } 38% { transform: translateY(-9px) scale(1.06); box-shadow: var(--learn-top-lift-shadow, 0 14px 30px color-mix(in srgb, var(--ui-link) 22%, transparent)); } 75% { transform: translateY(-2px) scale(.98); } }
 @keyframes learn-top-arrow { 0%,100% { transform: translateY(0); opacity: 1; } 12% { transform: translateY(4px); opacity: 1; } 35% { transform: translateY(-28px); opacity: 0; } 48% { transform: translateY(26px); opacity: 0; } 76% { transform: translateY(-2px); opacity: 1; } 90% { transform: translateY(1px); opacity: 1; } }
 @keyframes learn-top-pulse { 0%,12% { transform: scale(.95); opacity: 0; } 24% { opacity: .45; } 78%,100% { transform: scale(1.65); opacity: 0; } }
 @keyframes learn-top-orbit { from { transform: rotate(-90deg); } to { transform: rotate(270deg); } }
@@ -33,18 +35,25 @@
 .learn-shell:has(.learn-visualize) { --learn-layout-width: 1480px; }
 .learn-shell:has(.learn-reading-companion-open) { --learn-layout-width: 1560px; }
 @media (max-width: 1250px) { .learn-shell:has(.learn-reading-companion-open) { --learn-layout-width: 1080px; } }
-.learn-header, .learn-subjects, .learn-footer { width: min(var(--learn-layout-width), 100%); margin-inline: auto; }
+.learn-header, .learn-footer { width: min(var(--learn-layout-width), 100%); margin-inline: auto; }
 .learn-header { display: flex; align-items: center; gap: 20px; padding-block: 25px 20px; border-bottom: 1px solid var(--border); }
 .learn-wordmark { font-size: 27px; font-weight: 600; letter-spacing: -1px; text-decoration: none; }
 .learn-header .site-navigation { margin-left: auto; }
 .learn-header .learn-theme-trigger { width: 44px; height: 44px; padding: 0; border: 1px solid var(--border); border-radius: 10px; background: var(--control); }
-.learn-subjects { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 18px; padding-block: 12px; font-size: 13px; }
-.learn-subjects > span { font-size: 11px; letter-spacing: .06em; color: var(--ui-muted); }
-.learn-subjects a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 4px; color: var(--ui-muted); text-decoration: none; border-bottom: 2px solid transparent; }
-.learn-subjects a:hover, .learn-subjects a[aria-current] { color: var(--foreground); border-bottom-color: var(--ui-link); }
 .learn-content { width: min(850px, 100%); margin: 55px auto 100px; outline: none; }
 .learn-page-heading { margin-bottom: 58px; }
 .learn-breadcrumb { display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; color: var(--ui-muted); text-underline-offset: 4px; }
+.learn-subject-path { display: flex; align-items: center; gap: 10px; min-width: 0; margin-bottom: 16px; }
+.learn-subject-path .learn-breadcrumb { flex-shrink: 0; text-decoration: none; }
+.learn-subject-path .learn-breadcrumb:hover { color: var(--foreground); }
+.learn-breadcrumb-divider { flex-shrink: 0; color: var(--ui-muted); opacity: .65; }
+.learn-subject-switcher[data-slot=dialog-trigger] { display: inline-flex; align-items: center; gap: 9px; min-width: 0; max-width: min(360px, calc(100% - 76px)); min-height: 40px; padding: 8px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--control); color: var(--foreground); font: inherit; font-size: 12px; line-height: 1.4; cursor: pointer; transition: background-color var(--motion-fast) var(--motion-curve), border-color var(--motion-fast) var(--motion-curve); }
+.learn-subject-switcher > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.learn-subject-switcher > svg { flex-shrink: 0; color: var(--ui-muted); }
+.learn-subject-switcher > svg:first-child { color: var(--ui-link); }
+.learn-subject-switcher:hover, .learn-subject-switcher[data-popup-open] { background: var(--accent); border-color: color-mix(in srgb, var(--ui-link) 30%, var(--border)); }
+.learn-subject-switcher:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+@media(prefers-reduced-motion:reduce) { .learn-subject-switcher[data-slot=dialog-trigger] { transition: none; } }
 .learn-page-heading h1 { display: block; margin: 12px 0 0; font-size: clamp(36px, 5vw, 52px); line-height: 1.12; font-weight: 600; letter-spacing: -1.6px; }
 .learn-section + .learn-section { margin-top: 72px; }
 .learn-section > h2 { margin: 0 0 12px; font-size: 26px; line-height: 1.3; letter-spacing: -.6px; font-weight: 500; }

@@ -10,8 +10,10 @@ import '../app/palette-themes.css';
 
 const AtlasViewer = lazy(() => import('../app/page'));
 const LearnPage = lazy(() => import('../app/learn/page'));
-const NotesPage = lazy(() => import('../app/notes/page'));
-const pathname = window.location.pathname.replace(/\/+$/, '') || '/';
+const requestedPath = window.location.pathname.replace(/\/+$/, '') || '/';
+const legacyNotes = requestedPath === '/notes';
+const pathname = legacyNotes ? '/learn' : requestedPath;
+if (legacyNotes) window.history.replaceState(null, '', '/learn' + window.location.search + window.location.hash);
 const routeModel = modelForRoute(pathname);
 const model: 'male'|'female'|null = routeModel?.id === 'female-study-v3' ? 'female' : routeModel?.id === 'bp3d-male-4' ? 'male' : null;
 
@@ -22,10 +24,8 @@ function AtlasApp(){
   <>
     {pathname === '/learn' || pathname.startsWith('/learn/') ? (
       <Suspense fallback={<main className="route-loading" role="status">Opening Learn…</main>}>
-        <LearnPage pathname={pathname} />
+        <LearnPage pathname={pathname} initialNotesOpen={legacyNotes}/>
       </Suspense>
-    ) : pathname === '/notes' ? (
-      <Suspense fallback={<main className="route-loading" role="status">Opening Notes…</main>}><NotesPage/></Suspense>
     ) : activeModel ? (
       <Suspense fallback={<main className="route-loading" role="status">Opening {model} anatomy…</main>}>
         <AtlasViewer model={activeModel} initialRegion={parseNavigation(window.location.search).regionId} initialArea={parseNavigation(window.location.search).areaId} onModelChange={(next,regionId,areaId)=>{if(next!=='male'&&next!=='female')return;window.history.pushState(null,'',`/${next}${navigationSearch(window.location.search,regionId,areaId)}`);setActiveModel(next);}}/>

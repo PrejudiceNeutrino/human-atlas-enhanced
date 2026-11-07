@@ -7,8 +7,10 @@ import { resolvedAnnotations } from './annotation-model';
 import { captureAnnotationSelection, type PendingAnnotation } from './annotation-selection';
 import { NoteEditor } from './note-editor';
 import type { Annotation } from './annotation-core';
+import { useReadingHash } from './notes-navigation';
 
 export function AnnotationReader({children}:{children:ReactNode}) {
+  const readingHash = useReadingHash(), jumpNavigation = useRef(readingHash);
   const root=useRef<HTMLDivElement>(null),returnFocus=useRef<HTMLElement|null>(null),toolbar=useRef<HTMLDivElement>(null);
   const jumped=useRef<string|null>(null);
   const state=useAnnotations(),[pending,setPending]=useState<PendingAnnotation|null>(null),[editor,setEditor]=useState<Annotation|null>(null),[message,setMessage]=useState(''),[busy,setBusy]=useState(false);
@@ -56,7 +58,8 @@ export function AnnotationReader({children}:{children:ReactNode}) {
     };window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key);
   });
   useEffect(()=>{
-    const id=new URLSearchParams(window.location.hash.slice(1)).get('annotation');if(!id||state.status!=='ready'||jumped.current===id)return;
+    if(jumpNavigation.current!==readingHash){jumped.current=null;jumpNavigation.current=readingHash;}
+    const id=new URLSearchParams(readingHash.hash.slice(1)).get('annotation');if(!id||state.status!=='ready'||jumped.current===id)return;
     const record=records.find(item=>item.id===id);if(!record||record.status!=='anchored'){setMessage('This saved highlight could not be safely placed. It remains available in Notes.');return;}
     let timer:ReturnType<typeof setTimeout>,frame=0;
     const jump=()=>{
@@ -69,7 +72,7 @@ export function AnnotationReader({children}:{children:ReactNode}) {
     const observer=new MutationObserver(()=>{if(!frame)frame=requestAnimationFrame(jump);});
     if(root.current)observer.observe(root.current,{childList:true,subtree:true,attributes:true,attributeFilter:['hidden']});
     frame=requestAnimationFrame(jump);return()=>{observer.disconnect();cancelAnimationFrame(frame);clearTimeout(timer);};
-  },[records,state.status]);
+  },[records,state.status,readingHash]);
   const open=(target:EventTarget|null)=>{if((target as Element)?.closest('a'))return;const mark=(target as Element)?.closest<HTMLElement>('[data-annotation-id]');if(!mark)return;
     const record=records.find(item=>item.id===mark.dataset.annotationId);if(record){returnFocus.current=mark;setPending(null);setEditor(record);}
   };
@@ -77,7 +80,7 @@ export function AnnotationReader({children}:{children:ReactNode}) {
     <div className="annotation-reader" ref={root} onClick={event=>{if(window.getSelection()?.isCollapsed!==false)open(event.target);}} onKeyDown={event=>{
       if((event.key==='Enter'||event.key===' ')&&!(event.target as Element).closest('a')&&(event.target as Element).closest('[data-annotation-id]')){event.preventDefault();open(event.target);}
     }}>
-      <p className="annotation-help">Select a heading, passage or whole section to highlight or add a personal note. <a href="/notes">Your Notes</a><span className="sr-only"> Keyboard: select text with Shift and arrow keys, then Alt+H to highlight or Alt+N to add a note. Selections can span headings, paragraphs, lists and table cells in the current reading.</span></p>
+      <p className="sr-only">Select text with Shift and arrow keys, then Alt+H to highlight or Alt+N to add a note. Selections can span headings, paragraphs, lists and table cells in the current reading.</p>
       {state.status==='error'&&<p role="status" className="notes-error">{state.error} <button onClick={()=>void annotationStore.retry()}>Retry storage</button></p>}
       <p className="annotation-status" role="status" aria-live="polite">{message}</p>
       {children}

@@ -8,6 +8,7 @@ import { PALETTE_OPTIONS } from '../../palette';
 import { learnSubjects, type LearnSubject } from '../subjects';
 import { backToLearnTop, learnScrollBehavior } from '../scroll-navigation';
 import { ReadingPageContext } from '../section-index';
+import { openNotes } from '../../notes/notes-navigation';
 import { eligibleContextTarget } from './context-target';
 import { MenuPanel, type MenuCommand } from './menu-panel';
 import { usePageSections } from './page-sections';
@@ -119,7 +120,7 @@ export function LearnContextMenu({ subject, activeTab, onNavigate }: {
     }),
   })) });
   commands.push(
-    { id: 'notes', label: 'My Notes', href: '/notes', divider: true, run: () => finish(() => window.location.assign('/notes')) },
+    { id: 'notes', label: 'My Notes', divider: true, run: () => finish(() => openNotes(), true) },
     { id: 'top', label: 'Back to top', run: () => finish(backToLearnTop) },
     { id: 'appearance', label: 'Appearance', children: [
       { id: 'theme', label: 'Light / Dark', children: (['light', 'dark'] as const).map(choice => ({ id: choice, label: choice === 'light' ? 'Light' : 'Dark', checked: mode === choice, run: () => browserTheme.setMode(choice) })) },

@@ -1,18 +1,21 @@
 import { useRef } from 'react';
-import { ArrowUpRight, BookOpen, X } from 'lucide-react';
+import { ArrowUpRight, BookOpen, Check, ChevronDown, X } from 'lucide-react';
 import {
   Dialog, DialogTrigger, DialogContent, DialogTitle, DialogDescription, DialogClose,
 } from '@/components/ui/dialog';
-import { learnSubjects } from './subjects';
+import { learnSubjects, type LearnSubject } from './subjects';
 import './subject-menu.css';
 
-export function LearnSubjectMenu({ active }: { active: boolean }) {
+export function LearnSubjectMenu({ active, subject: currentSubject }: { active: boolean; subject?: LearnSubject }) {
   const firstSubject = useRef<HTMLAnchorElement>(null);
+  const currentPath = currentSubject?.href ?? window.location.pathname;
+  const selectedIndex = Math.max(0, learnSubjects.findIndex(item => item.href === currentPath));
 
   return (
     <Dialog>
-      <DialogTrigger className="learn-menu-trigger" aria-current={active ? 'page' : undefined}>
-        Learn
+      <DialogTrigger className={currentSubject ? 'learn-subject-switcher' : 'learn-menu-trigger'} aria-current={!currentSubject && active ? 'page' : undefined}
+        aria-label={currentSubject ? `Change learning subject: ${currentSubject.title}` : undefined}>
+        {currentSubject ? <><BookOpen size={15} aria-hidden="true"/><span>{currentSubject.label}</span><ChevronDown size={14} aria-hidden="true"/></> : 'Learn'}
       </DialogTrigger>
       <DialogContent
         className="learn-menu-surface"
@@ -35,10 +38,11 @@ export function LearnSubjectMenu({ active }: { active: boolean }) {
             const sectionCount = subject.tabs.filter(tab => tab.kind !== 'coming-soon').length;
             return (
               <a
-                ref={index === 0 ? firstSubject : undefined}
+                ref={index === selectedIndex ? firstSubject : undefined}
                 className="learn-menu-subject"
                 href={subject.href}
                 key={subject.slug}
+                aria-current={currentPath === subject.href ? 'page' : undefined}
               >
                 <span className="learn-menu-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
                 <span className="learn-menu-subject-copy">
@@ -53,7 +57,7 @@ export function LearnSubjectMenu({ active }: { active: boolean }) {
                   </span>
                   <span className="learn-menu-subject-count">{sectionCount} {sectionCount === 1 ? 'section' : 'sections'}</span>
                 </span>
-                <span className="learn-menu-subject-arrow" aria-hidden="true"><ArrowUpRight size={18} /></span>
+                <span className="learn-menu-subject-arrow" aria-hidden="true">{currentPath === subject.href ? <Check size={18}/> : <ArrowUpRight size={18}/>}</span>
               </a>
             );
           })}

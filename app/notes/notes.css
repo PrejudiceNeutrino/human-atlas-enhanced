@@ -1,4 +1,4 @@
-.notes-content { width: min(1000px, 100%); margin: 58px auto 72px; outline: none; }
+.notes-content { width: 100%; margin: 0; outline: none; }
 .notes-shell .learn-theme-trigger { display: grid; place-items: center; flex-shrink: 0; }
 .notes-heading { margin-bottom: 30px; }
 .notes-eyebrow { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--ui-muted); letter-spacing: .06em; }
@@ -38,17 +38,18 @@
 .notes-backup-footer { border-top: 1px solid var(--border); margin-top: 40px; padding-top: 24px; }
 .notes-backup-footer p { max-width: 640px; margin-bottom: 16px; font-size: 12px; line-height: 1.7; color: var(--ui-muted); }
 .notes-error { color: var(--destructive); font-size: 13px; line-height: 1.6; }
-.annotation-help { margin: 0 0 12px; font-size: 11px; line-height: 1.7; color: var(--ui-muted); }
-.annotation-help a { margin-left: 10px; color: var(--ui-link); text-underline-offset: 3px; }
 .annotation-status { margin: 0; min-height: 0; font-size: 12px; color: var(--ui-secondary); line-height: 1.6; }
 .annotation-status:not(:empty) { position: fixed; z-index: 44; right: max(18px,env(safe-area-inset-right)); bottom: max(18px,env(safe-area-inset-bottom)); max-width: min(460px,calc(100vw - 36px)); padding: 12px 16px; border: 1px solid var(--border); border-radius: 10px; background: var(--popover); box-shadow: 0 8px 28px #10263818; }
 .annotation-highlight { background: #c7a74e36; color: inherit; border-bottom: 1px solid #a3843b80; border-radius: 2px; padding: 1px 0; cursor: pointer; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .annotation-highlight[data-has-note] { border-bottom-style: dotted; border-bottom-width: 2px; }
 .annotation-highlight:focus-visible, .annotation-target { outline: 2px solid var(--ui-link); outline-offset: 3px; }
 :root[data-theme=dark] .annotation-highlight { background: #c7a74e32; border-bottom-color: #ddbd73a0; }
-.annotation-toolbar { position: fixed; z-index: 45; display: flex; gap: 2px; padding: 4px; border: 1px solid var(--border); border-radius: 11px; background: var(--popover); box-shadow: 0 8px 28px #10263824; color: var(--foreground); }
-.annotation-toolbar button { min-height: 44px; padding: 8px 12px; border-radius: 7px; font-size: 12px; }
+.annotation-toolbar { position: fixed; z-index: 45; display: flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid var(--border); border-radius: 9px; background: var(--popover); box-shadow: 0 8px 28px #10263824; color: var(--foreground); }
+.annotation-toolbar button { min-height: 32px; padding: 5px 10px; border-radius: 6px; font-size: 12px; line-height: 1.2; }
 .annotation-toolbar button:hover { background: var(--accent); }
+.annotation-toolbar button[aria-label="Dismiss selection tools"] { display: grid; place-items: center; width: 28px; min-width: 28px; min-height: 28px; padding: 0; color: var(--ui-muted); font-size: 16px; }
+.annotation-toolbar button[aria-label="Dismiss selection tools"]:hover { color: var(--foreground); }
+@media(pointer:coarse) { .annotation-toolbar button { min-height: 44px; padding: 8px 12px; }.annotation-toolbar button[aria-label="Dismiss selection tools"] { width: 36px; min-width: 36px; min-height: 44px; padding: 0; } }
 .notes-editor[data-slot=dialog-content] { display: block; width: min(560px,calc(100vw - 32px)); max-width: 560px; max-height: calc(100dvh - 40px); overflow-y: auto; padding: 28px; border-radius: 18px; }
 .notes-editor [data-slot=dialog-title] { margin-bottom: 10px; font-size: 24px; }
 .notes-editor [data-slot=dialog-description] { font-size: 12px; line-height: 1.6; }
@@ -61,5 +62,18 @@
 .notes-editor .notes-danger { margin-left: auto; }
 @media(max-width:600px) { .notes-content { margin-top: 34px; }.notes-entry { padding: 20px 18px; }.notes-entry-meta { flex-direction: column; gap: 6px; }.notes-filters > label:not(.notes-check) { width: 100%; }.notes-filters select { width: 100%; }.notes-editor[data-slot=dialog-content] { padding: 24px 18px; }.notes-editor textarea { font-size: 16px; } }
 @media(prefers-reduced-motion:reduce) { .annotation-target,.annotation-toolbar,.notes-shell *,.notes-editor * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
-@media print { .annotation-toolbar,.annotation-help,.annotation-status,.notes-editor { display:none!important; }.annotation-highlight { background:#c7a74e24; } }
+@media print { .annotation-toolbar,.annotation-status,.notes-editor { display:none!important; }.annotation-highlight { background:#c7a74e24; } }
+.notes-workspace-dialog.learn-menu-surface[data-slot=dialog-content] { display: flex; flex-direction: column; width: min(1180px,calc(100vw - 48px)); max-width: 1180px; height: min(900px,calc(100dvh - 56px)); max-height: calc(100dvh - 56px); overflow: hidden; padding: 28px 32px 0; border-radius: 18px; }
+.notes-dialog-heading { display: flex; align-items: flex-start; justify-content: space-between; flex-shrink: 0; gap: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+.notes-dialog-title { min-width: 0; }
+.notes-dialog-title .learn-menu-title { margin: 14px 0 10px; }
+.notes-dialog-actions { display: flex; flex-shrink: 0; gap: 8px; }
+.notes-dialog-close[data-slot] { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid var(--border); border-radius: 10px; background: transparent; color: var(--ui-muted); cursor: pointer; }
+.notes-dialog-close[data-slot]:hover { background: var(--accent); color: var(--foreground); }
+.notes-dialog-close:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+.notes-dialog-body { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; padding: 24px 6px 28px 0; }
+.notes-dialog-body .notes-content { margin: 0; }
+.notes-dialog-loading { padding: 32px; text-align: center; color: var(--ui-secondary); }
+@media(max-width:600px) { .notes-workspace-dialog.learn-menu-surface[data-slot=dialog-content] { width: calc(100vw - 20px); height: calc(100dvh - 24px); max-height: calc(100dvh - 24px); padding: 22px 18px 0; border-radius: 16px; }.notes-dialog-heading { gap: 12px; padding-bottom: 20px; }.notes-dialog-title .learn-menu-title { font-size: 30px; }.notes-dialog-title .learn-menu-description { font-size: 12px; }.notes-dialog-actions { gap: 4px; }.notes-dialog-body { padding-block: 20px; }.notes-dialog-body .notes-privacy { padding: 14px 16px; font-size: 12px; }.notes-dialog-body .notes-status:empty { min-height: 0; margin-block: 0; } }
+@media(prefers-reduced-motion:reduce) { .notes-workspace-dialog * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
 .notes-selection-kind { display: inline-block; margin-bottom: 10px; color: var(--ui-muted); font-size: 11px; }
