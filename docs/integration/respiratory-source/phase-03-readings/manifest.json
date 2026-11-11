@@ -1,0 +1,26 @@
+{
+  "project": "Human Atlas — Respiratory System",
+  "phase": 3,
+  "status": "completed editorial draft, not merged into website",
+  "articleCounts": {
+    "howItConnects": 11,
+    "whoCares": 3,
+    "examCram": 18
+  },
+  "studyGuideObjectivesMapped": 30,
+  "originalSources": [
+    "23-Respiratory System.pptx",
+    "Respiratory - Copy.pptx",
+    "23-Study Guide.docx"
+  ],
+  "articleIds": [
+    "respiratory-system-how-it-connects",
+    "respiratory-system-why-is-this-cool",
+    "respiratory-system-exam-cram"
+  ],
+  "notes": [
+    "Original scientific writing informed by the instructor lectures, with contextual scientific extensions labeled.",
+    "Lecture shorthand is retained for exam recognition while scientifically material distinctions are flagged.",
+    "Earlier phase contents preserved byte-for-byte in cumulative ZIP."
+  ]
+}

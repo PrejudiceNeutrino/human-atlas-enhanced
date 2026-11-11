@@ -2,7 +2,6 @@ import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 're
 import { BookOpen, Layers3, ListChecks, TextCursorInput, X } from 'lucide-react';
 import { Dialog, DialogClose, DialogContent, DialogDescription } from '@/components/ui/dialog';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { studyBank, unresolvedReferences } from './data';
 import { byTopic } from './model';
 import { createStudyProgressStore, useStudyProgress } from './progress';
 import { MultipleChoice } from './multiple-choice';
@@ -39,7 +38,7 @@ export function StudyToolsWorkspace({subjectTitle,route,tabId,bank:studyBank,unr
   useLayoutEffect(()=>{if(previousActivity.current===activity)return;previousActivity.current=activity;
     root.current?.querySelector<HTMLElement>(activity==='overview'?'h2':`#study-${activity}-heading`)?.focus();
   },[activity]);
-  const questions=useMemo(()=>byTopic(studyBank.multipleChoice,topic),[topic]),recall=useMemo(()=>byTopic(studyBank.fillInTheBlank,topic),[topic]),cards=useMemo(()=>byTopic(studyBank.flashcards,topic),[topic]);
+  const questions=useMemo(()=>byTopic(studyBank.multipleChoice,topic),[topic,studyBank]),recall=useMemo(()=>byTopic(studyBank.fillInTheBlank,topic),[topic,studyBank]),cards=useMemo(()=>byTopic(studyBank.flashcards,topic),[topic,studyBank]);
   const counts={'multiple-choice':questions.length,'fill-in-the-blank':recall.length,glossary:byTopic(studyBank.concepts,topic).length,flashcards:cards.length};
   const totals={'multiple-choice':studyBank.multipleChoice.length,'fill-in-the-blank':studyBank.fillInTheBlank.length,glossary:studyBank.concepts.length,flashcards:studyBank.flashcards.length};
   const topics=[...studyBank.manifest.topics].sort((a,b)=>a.sortOrder-b.sortOrder);
@@ -74,6 +73,4 @@ export function StudyToolsWorkspace({subjectTitle,route,tabId,bank:studyBank,unr
   </section>;
 }
 
-export default function DigestiveStudyTools(props:{subjectTitle:string;route:string;tabId:string}){
-  return <StudyToolsWorkspace {...props} bank={studyBank} unresolvedReferences={unresolvedReferences}/>;
-}
+export default StudyToolsWorkspace;

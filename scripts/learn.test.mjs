@@ -262,7 +262,7 @@ test('revised JSON retains ZIP-entry bytes apart from the two requested navigati
     assert.equal(new Set(article.sections.map(section => section.id)).size, sectionCount);
     assert.ok(article.sections.every(section => section.title && section.markdown));
   }
-  assert.deepEqual(learnSubjects.map(subject => subject.slug), ['digestive']);
+  assert.deepEqual(learnSubjects.map(subject => subject.slug), ['digestive', 'respiratory']);
   assert.deepEqual(learnSubjects[0].tabs.map(item => item.title), ['General Overview', 'Deep Dive', 'How It Connects', "Who Cares?", 'Visualize', 'Gallery', 'Exam Cram', 'Study Tools']);
 });
 

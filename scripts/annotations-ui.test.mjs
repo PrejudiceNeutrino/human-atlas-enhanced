@@ -192,7 +192,7 @@ test('all Learn blocks correspond to canonical catalog text; existing tables and
     await click(tab(label));
     const panel=document.getElementById(tab(label).getAttribute('aria-controls'));
     const rendered=[...panel.querySelectorAll('[data-annotation-block]')];
-    for(const source of annotationSources.filter(source=>source.target.tabId===tab(label).getAttribute('data-value')||source.tabTitle===label)){
+    for(const source of annotationSources.filter(source=>source.target.subjectId==='digestive'&&(source.target.tabId===tab(label).getAttribute('data-value')||source.tabTitle===label))){
       const blocks=rendered.filter(block=>block.closest('[data-annotation-source]')?.dataset.annotationSource===source.target.sourceId);
       assert.equal(blocks.length,source.blocks.length,source.target.sourceId);
       blocks.forEach(block=>assert.equal(block.textContent,source.blocks.find(item=>item.id===block.dataset.annotationBlock)?.text,source.target.sourceId));

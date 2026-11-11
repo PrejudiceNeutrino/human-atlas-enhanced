@@ -1,0 +1,23 @@
+{
+  "valid": true,
+  "count": 29,
+  "webpFileCount": 58,
+  "byCategory": {
+    "anatomical-models": 4,
+    "anatomical-diagrams": 9,
+    "histology": 5,
+    "physiology-diagrams": 11
+  },
+  "originalSlidesReviewed": {
+    "23-Respiratory System.pptx": 42,
+    "Respiratory - Copy.pptx": 19
+  },
+  "allSlideReferencesInRange": true,
+  "allImagesDecodable": true,
+  "allFullResolutionImagesHaveThumbnails": true,
+  "notes": "Automated image, format, and metadata checks. Human scientific review recommended before publication.",
+  "validDeepDiveReferences": true,
+  "candidateStructureCount": 23,
+  "confirmedCanonicalIndividualStructureIds": 0,
+  "allMediaSha256Valid": true
+}

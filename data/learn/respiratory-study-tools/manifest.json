@@ -1,0 +1,134 @@
+{
+  "kind": "human-atlas-study-tools",
+  "schemaVersion": 1,
+  "subjectId": "respiratory",
+  "title": "Respiratory System Study Tools",
+  "curriculum": "Chapter 23 · Respiratory System",
+  "sources": [
+    {
+      "id": "overview",
+      "kind": "learn-article",
+      "file": "data/learn/respiratory-system-general-overview.json"
+    },
+    {
+      "id": "deep",
+      "kind": "learn-article",
+      "file": "data/learn/respiratory-system-deep-dive.json"
+    },
+    {
+      "id": "exam",
+      "kind": "learn-article",
+      "file": "data/learn/respiratory-system-exam-cram.json"
+    },
+    {
+      "id": "connected",
+      "kind": "learn-article",
+      "file": "data/learn/respiratory-system-how-it-connects.json"
+    },
+    {
+      "id": "physiology-slides",
+      "kind": "presentation",
+      "file": "23-Respiratory System.pptx",
+      "slideCount": 42
+    },
+    {
+      "id": "anatomy-slides",
+      "kind": "presentation",
+      "file": "Respiratory - Copy.pptx",
+      "slideCount": 19
+    },
+    {
+      "id": "guide",
+      "kind": "study-guide",
+      "file": "23-Study Guide.docx",
+      "questionCount": 29,
+      "terminologyItems": 11
+    }
+  ],
+  "topics": [
+    {
+      "id": "foundations",
+      "label": "Functions, organization & terminology",
+      "sortOrder": 1
+    },
+    {
+      "id": "nose",
+      "label": "Nose, sinuses & pharynx",
+      "sortOrder": 2
+    },
+    {
+      "id": "mucosa",
+      "label": "Respiratory mucosa & histology",
+      "sortOrder": 3
+    },
+    {
+      "id": "larynx",
+      "label": "Larynx, voice & cough reflex",
+      "sortOrder": 4
+    },
+    {
+      "id": "trachea",
+      "label": "Trachea, bronchi & bronchioles",
+      "sortOrder": 5
+    },
+    {
+      "id": "lungs",
+      "label": "Lung anatomy & pleura",
+      "sortOrder": 6
+    },
+    {
+      "id": "alveoli",
+      "label": "Alveoli, cells & respiratory membrane",
+      "sortOrder": 7
+    },
+    {
+      "id": "ventilation",
+      "label": "Breathing mechanics & pressure",
+      "sortOrder": 8
+    },
+    {
+      "id": "volumes",
+      "label": "Lung volumes & capacities",
+      "sortOrder": 9
+    },
+    {
+      "id": "diffusion",
+      "label": "Gas diffusion & partial pressures",
+      "sortOrder": 10
+    },
+    {
+      "id": "oxygen",
+      "label": "Hemoglobin & oxygen transport",
+      "sortOrder": 11
+    },
+    {
+      "id": "carbon",
+      "label": "Carbon dioxide transport & blood pH",
+      "sortOrder": 12
+    },
+    {
+      "id": "control",
+      "label": "Brainstem regulation & reflexes",
+      "sortOrder": 13
+    },
+    {
+      "id": "conditions",
+      "label": "Respiratory conditions & clinical mechanisms",
+      "sortOrder": 14
+    }
+  ],
+  "files": {
+    "concepts": "concepts.json",
+    "multipleChoice": "multiple-choice.json",
+    "fillInTheBlank": "fill-in-the-blank.json",
+    "flashcards": "flashcards.json"
+  },
+  "counts": {
+    "concepts": 192,
+    "multipleChoice": 106,
+    "fillInTheBlank": 67,
+    "flashcards": 114,
+    "topics": 14
+  },
+  "contentStatus": "Editorial draft, source-linked and mechanically validated; not independently peer-reviewed"
+}

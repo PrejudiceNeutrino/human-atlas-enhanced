@@ -1,0 +1,5112 @@
+{
+  "subjectId": "respiratory",
+  "candidateCount": 23,
+  "models": [
+    {
+      "modelId": "bp3d-male-4",
+      "experimental": false,
+      "structureShortcuts": 12,
+      "primaryParts": 119,
+      "scopedParts": 349,
+      "coverage": [
+        {
+          "candidateId": "lungs",
+          "label": "Lungs (both together)",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "right-lung",
+          "label": "Right lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "left-lung",
+          "label": "Left lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "right-superior-lobe",
+          "label": "Superior lobe of right lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "right-middle-lobe",
+          "label": "Middle lobe of right lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "right-inferior-lobe",
+          "label": "Inferior lobe of right lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "left-superior-lobe",
+          "label": "Superior lobe of left lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "left-inferior-lobe",
+          "label": "Inferior lobe of left lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "trachea",
+          "label": "Trachea",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002991"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "larynx",
+          "label": "Larynx",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        },
+        {
+          "candidateId": "diaphragm",
+          "label": "Diaphragm",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:000078"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "right-main-bronchus",
+          "label": "Right main bronchus",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002992"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "left-main-bronchus",
+          "label": "Left main bronchus",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002993"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "nasal-cavity",
+          "label": "Nasal cavity",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        },
+        {
+          "candidateId": "pharynx",
+          "label": "Pharynx",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        },
+        {
+          "candidateId": "epiglottis",
+          "label": "Epiglottis",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002121"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "thyroid-cartilage",
+          "label": "Thyroid cartilage",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002109"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "cricoid-cartilage",
+          "label": "Cricoid cartilage",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:003389"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "arytenoid-cartilage",
+          "label": "Arytenoid cartilages",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002112"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "pleura",
+          "label": "Pleura",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        },
+        {
+          "candidateId": "pulmonary-vessels",
+          "label": "Pulmonary arteries and veins",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002484",
+            "atlas:concept:002497"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "sternum-ribs",
+          "label": "Rib cage / sternum",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:003007"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "nasal-conchae",
+          "label": "Nasal conchae",
+          "status": "partial-anatomy",
+          "shortcuts": [
+            "atlas:concept:002098"
+          ],
+          "note": "Only the explicitly labeled anatomical subset is offered."
+        }
+      ],
+      "verified": [
+        {
+          "conceptId": "atlas:concept:002991",
+          "label": "Trachea",
+          "sectionId": "trachea",
+          "summary": "",
+          "sourceConceptId": "FMA7394",
+          "candidateId": "trachea",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2541",
+              "name": "Trachea",
+              "sourceConceptId": "FMA7394",
+              "system": "respiratory",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:000078",
+          "label": "Diaphragm",
+          "sectionId": "breathing-muscles",
+          "summary": "",
+          "sourceConceptId": "FMA13295",
+          "candidateId": "diaphragm",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ3131",
+              "name": "Diaphragm",
+              "sourceConceptId": "FMA13295",
+              "system": "muscular",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002992",
+          "label": "Right main bronchus",
+          "sectionId": "bronchial-tree",
+          "summary": "",
+          "sourceConceptId": "FMA7395",
+          "candidateId": "right-main-bronchus",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2539",
+              "name": "Right main bronchus proper",
+              "sourceConceptId": "FMA68418",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002993",
+          "label": "Left main bronchus",
+          "sectionId": "bronchial-tree",
+          "summary": "",
+          "sourceConceptId": "FMA7396",
+          "candidateId": "left-main-bronchus",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2450",
+              "name": "Left main bronchus",
+              "sourceConceptId": "FMA7396",
+              "system": "respiratory",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002121",
+          "label": "Epiglottis",
+          "sectionId": "larynx-cartilages",
+          "summary": "",
+          "sourceConceptId": "FMA55130",
+          "candidateId": "epiglottis",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2770",
+              "name": "Epiglottis",
+              "sourceConceptId": "FMA55130",
+              "system": "respiratory",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002109",
+          "label": "Thyroid cartilage",
+          "sectionId": "larynx-cartilages",
+          "summary": "",
+          "sourceConceptId": "FMA55099",
+          "candidateId": "thyroid-cartilage",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2808",
+              "name": "Thyroid cartilage",
+              "sourceConceptId": "FMA55099",
+              "system": "skeletal",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:003389",
+          "label": "Cricoid cartilage",
+          "sectionId": "larynx-cartilages",
+          "summary": "",
+          "sourceConceptId": "FMA9615",
+          "candidateId": "cricoid-cartilage",
+          "representationCount": 2,
+          "parts": [
+            {
+              "id": "FJ2440",
+              "name": "Cricoid cartilage",
+              "sourceConceptId": "FMA9615",
+              "system": "skeletal",
+              "relation": "exact"
+            },
+            {
+              "id": "FJ2769",
+              "name": "Cricoid cartilage",
+              "sourceConceptId": "FMA9615",
+              "system": "skeletal",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002112",
+          "label": "Arytenoid cartilages",
+          "sectionId": "larynx-cartilages",
+          "summary": "",
+          "sourceConceptId": "FMA55109",
+          "candidateId": "arytenoid-cartilage",
+          "representationCount": 2,
+          "parts": [
+            {
+              "id": "FJ2775",
+              "name": "Left arytenoid cartilage",
+              "sourceConceptId": "FMA55114",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2792",
+              "name": "Right arytenoid cartilage",
+              "sourceConceptId": "FMA55113",
+              "system": "skeletal",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002484",
+          "label": "Pulmonary arteries",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "FMA66326",
+          "candidateId": "pulmonary-vessels",
+          "representationCount": 99,
+          "parts": [
+            {
+              "id": "FJ2041",
+              "name": "Right anterior segmental artery",
+              "sourceConceptId": "FMA8620",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2044",
+              "name": "Right anterior segmental artery",
+              "sourceConceptId": "FMA8620",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2881",
+              "name": "Left posterior basal segmental artery",
+              "sourceConceptId": "FMA8647",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2882",
+              "name": "Left lateral basal segmental artery",
+              "sourceConceptId": "FMA8646",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2883",
+              "name": "Left anterior basal segmental artery",
+              "sourceConceptId": "FMA8645",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2884",
+              "name": "Left medial basal segmental artery",
+              "sourceConceptId": "FMA8644",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2885",
+              "name": "Left medial basal segmental artery",
+              "sourceConceptId": "FMA8644",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2886",
+              "name": "Left anterior basal segmental artery",
+              "sourceConceptId": "FMA8645",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2887",
+              "name": "Left anterior basal segmental artery",
+              "sourceConceptId": "FMA8645",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2888",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2889",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2890",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2891",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2892",
+              "name": "Left posterior basal segmental artery",
+              "sourceConceptId": "FMA8647",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2893",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2894",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2895",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2896",
+              "name": "Inferior lingular artery",
+              "sourceConceptId": "FMA8640",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2897",
+              "name": "Inferior lingular artery",
+              "sourceConceptId": "FMA8640",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2898",
+              "name": "Superior lingular artery",
+              "sourceConceptId": "FMA8639",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2899",
+              "name": "Superior lingular artery",
+              "sourceConceptId": "FMA8639",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2900",
+              "name": "Superior lingular artery",
+              "sourceConceptId": "FMA8639",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2901",
+              "name": "Superior lingular artery",
+              "sourceConceptId": "FMA8639",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2902",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2903",
+              "name": "Left posterior basal segmental artery",
+              "sourceConceptId": "FMA8647",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2904",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2905",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2906",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2907",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2908",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2909",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2910",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2911",
+              "name": "Left posterior segmental artery",
+              "sourceConceptId": "FMA8635",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2912",
+              "name": "Left posterior segmental artery",
+              "sourceConceptId": "FMA8635",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2913",
+              "name": "Left posterior segmental artery",
+              "sourceConceptId": "FMA8635",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2914",
+              "name": "Left posterior basal segmental artery",
+              "sourceConceptId": "FMA8647",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2915",
+              "name": "Left apical segmental artery",
+              "sourceConceptId": "FMA8634",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2916",
+              "name": "Left apical segmental artery",
+              "sourceConceptId": "FMA8634",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2917",
+              "name": "Left apical segmental artery",
+              "sourceConceptId": "FMA8634",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2918",
+              "name": "Left apical segmental artery",
+              "sourceConceptId": "FMA8634",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2919",
+              "name": "Left posterior basal segmental artery",
+              "sourceConceptId": "FMA8647",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2920",
+              "name": "Left posterior basal segmental artery",
+              "sourceConceptId": "FMA8647",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2921",
+              "name": "Left lateral basal segmental artery",
+              "sourceConceptId": "FMA8646",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2922",
+              "name": "Left lateral basal segmental artery",
+              "sourceConceptId": "FMA8646",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2923",
+              "name": "Left lateral basal segmental artery",
+              "sourceConceptId": "FMA8646",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2924",
+              "name": "Left pulmonary artery",
+              "sourceConceptId": "FMA50873",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2967",
+              "name": "Apical part of right apical segmental artery",
+              "sourceConceptId": "FMA68662",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2968",
+              "name": "Apical part of right posterior segmental artery",
+              "sourceConceptId": "FMA68670",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2969",
+              "name": "Apical part of right posterior segmental artery",
+              "sourceConceptId": "FMA68670",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2970",
+              "name": "Posterior part of right posterior segmental artery",
+              "sourceConceptId": "FMA68673",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2971",
+              "name": "Posterior part of right posterior segmental artery",
+              "sourceConceptId": "FMA68673",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2972",
+              "name": "Posterior part of right posterior segmental artery",
+              "sourceConceptId": "FMA68673",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2973",
+              "name": "Right upper lobar artery",
+              "sourceConceptId": "FMA68197",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2974",
+              "name": "Posterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68677",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2975",
+              "name": "Anterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68683",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2976",
+              "name": "Anterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68683",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2977",
+              "name": "Anterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68683",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2978",
+              "name": "Anterior part of right apical segmental artery",
+              "sourceConceptId": "FMA68665",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2979",
+              "name": "Anterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68683",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2980",
+              "name": "Posterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68677",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2981",
+              "name": "Posterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68677",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2982",
+              "name": "Anterior branch of lateral segmental artery",
+              "sourceConceptId": "FMA68691",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2983",
+              "name": "Posterior branch of lateral segmental artery",
+              "sourceConceptId": "FMA68690",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2984",
+              "name": "Posterior branch of lateral segmental artery",
+              "sourceConceptId": "FMA68690",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2985",
+              "name": "Anterior branch of lateral segmental artery",
+              "sourceConceptId": "FMA68691",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2986",
+              "name": "Superior branch of medial segmental artery",
+              "sourceConceptId": "FMA68693",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2987",
+              "name": "Inferior branch of medial segmental artery",
+              "sourceConceptId": "FMA68694",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2988",
+              "name": "Inferior branch of medial segmental artery",
+              "sourceConceptId": "FMA68694",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2989",
+              "name": "Anterior part of right apical segmental artery",
+              "sourceConceptId": "FMA68665",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2990",
+              "name": "Superior branch of medial segmental artery",
+              "sourceConceptId": "FMA68693",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2991",
+              "name": "Lateral branch of right superior segmental artery",
+              "sourceConceptId": "FMA68712",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2992",
+              "name": "Lateral branch of right superior segmental artery",
+              "sourceConceptId": "FMA68712",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2993",
+              "name": "Lateral branch of right superior segmental artery",
+              "sourceConceptId": "FMA68712",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2994",
+              "name": "Medial branch of right superior segmental artery",
+              "sourceConceptId": "FMA68706",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2995",
+              "name": "Medial branch of right superior segmental artery",
+              "sourceConceptId": "FMA68706",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2996",
+              "name": "Medial branch of right superior segmental artery",
+              "sourceConceptId": "FMA68706",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2997",
+              "name": "Superior branch of right superior segmental artery",
+              "sourceConceptId": "FMA68709",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2998",
+              "name": "Superior branch of right superior segmental artery",
+              "sourceConceptId": "FMA68709",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2999",
+              "name": "Superior branch of right superior segmental artery",
+              "sourceConceptId": "FMA68709",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3000",
+              "name": "Anterior part of right apical segmental artery",
+              "sourceConceptId": "FMA68665",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3001",
+              "name": "Lateral branch of right anterior basal segmental artery",
+              "sourceConceptId": "FMA68725",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3002",
+              "name": "Basal branch of right anterior basal segmental artery",
+              "sourceConceptId": "FMA68723",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3003",
+              "name": "Basal branch of right anterior basal segmental artery",
+              "sourceConceptId": "FMA68723",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3004",
+              "name": "Lateral branch of right lateral basal segmental artery",
+              "sourceConceptId": "FMA68728",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3005",
+              "name": "Lateral branch of right lateral basal segmental artery",
+              "sourceConceptId": "FMA68728",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3006",
+              "name": "Lateral branch of right lateral basal segmental artery",
+              "sourceConceptId": "FMA68728",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3007",
+              "name": "Lateral branch of right lateral basal segmental artery",
+              "sourceConceptId": "FMA68728",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3008",
+              "name": "Mediobasal branch of right posterior basal segmental artery",
+              "sourceConceptId": "FMA68741",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3009",
+              "name": "Accessory subsuperior branch of right posterior basal segmental artery",
+              "sourceConceptId": "FMA68735",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3010",
+              "name": "Accessory subsuperior branch of right posterior basal segmental artery",
+              "sourceConceptId": "FMA68735",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3011",
+              "name": "Anterior part of right apical segmental artery",
+              "sourceConceptId": "FMA68665",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3012",
+              "name": "Mediobasal branch of right posterior basal segmental artery",
+              "sourceConceptId": "FMA68741",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3013",
+              "name": "Laterobasal branch of right posterior basal segmental artery",
+              "sourceConceptId": "FMA68738",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3014",
+              "name": "Laterobasal branch of right posterior basal segmental artery",
+              "sourceConceptId": "FMA68738",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3015",
+              "name": "Apical part of right apical segmental artery",
+              "sourceConceptId": "FMA68662",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3016",
+              "name": "Apical part of right apical segmental artery",
+              "sourceConceptId": "FMA68662",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3017",
+              "name": "Apical part of right apical segmental artery",
+              "sourceConceptId": "FMA68662",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3018",
+              "name": "Apical part of right posterior segmental artery",
+              "sourceConceptId": "FMA68670",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3019",
+              "name": "Right pulmonary artery",
+              "sourceConceptId": "FMA50872",
+              "system": "arterial",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002497",
+          "label": "Pulmonary veins",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "FMA66643",
+          "candidateId": "pulmonary-vessels",
+          "representationCount": 84,
+          "parts": [
+            {
+              "id": "FJ2926",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2927",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2928",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2929",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2930",
+              "name": "Left anterior segmental vein",
+              "sourceConceptId": "FMA8667",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2931",
+              "name": "Left anterior segmental vein",
+              "sourceConceptId": "FMA8667",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2932",
+              "name": "Left anterior segmental vein",
+              "sourceConceptId": "FMA8667",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2934",
+              "name": "Inferior lingular vein",
+              "sourceConceptId": "FMA8669",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2935",
+              "name": "Inferior lingular vein",
+              "sourceConceptId": "FMA8669",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2936",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2937",
+              "name": "Superior lingular vein",
+              "sourceConceptId": "FMA8668",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2938",
+              "name": "Superior lingular vein",
+              "sourceConceptId": "FMA8668",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2939",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2940",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2941",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2942",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2943",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2945",
+              "name": "Left posterior basal segmental vein",
+              "sourceConceptId": "FMA9451",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2946",
+              "name": "Left posterior basal segmental vein",
+              "sourceConceptId": "FMA9451",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2947",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2948",
+              "name": "Left posterior basal segmental vein",
+              "sourceConceptId": "FMA9451",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2949",
+              "name": "Left posterior basal segmental vein",
+              "sourceConceptId": "FMA9451",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2951",
+              "name": "Left lateral basal segmental vein",
+              "sourceConceptId": "FMA9450",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2952",
+              "name": "Left lateral basal segmental vein",
+              "sourceConceptId": "FMA9450",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2953",
+              "name": "Left lateral basal segmental vein",
+              "sourceConceptId": "FMA9450",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2954",
+              "name": "Left lateral basal segmental vein",
+              "sourceConceptId": "FMA9450",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2956",
+              "name": "Left anterior basal segmental vein",
+              "sourceConceptId": "FMA8678",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2957",
+              "name": "Left anterior basal segmental vein",
+              "sourceConceptId": "FMA8678",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2958",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2959",
+              "name": "Left anterior basal segmental vein",
+              "sourceConceptId": "FMA8678",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2960",
+              "name": "Left anterior basal segmental vein",
+              "sourceConceptId": "FMA8678",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2961",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2962",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2963",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2964",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2965",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3021",
+              "name": "Inferior part of right anterior segmental vein",
+              "sourceConceptId": "FMA68928",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3022",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3023",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3024",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3025",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3026",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3027",
+              "name": "Superior part of right anterior segmental vein",
+              "sourceConceptId": "FMA68926",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3028",
+              "name": "Right anterior segmental vein",
+              "sourceConceptId": "FMA8662",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3029",
+              "name": "Right anterior segmental vein",
+              "sourceConceptId": "FMA8662",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3030",
+              "name": "Superior part of medial segmental vein",
+              "sourceConceptId": "FMA68982",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3032",
+              "name": "Inferior part of medial segmental vein",
+              "sourceConceptId": "FMA68983",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3033",
+              "name": "Inferior part of medial segmental vein",
+              "sourceConceptId": "FMA68983",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3034",
+              "name": "Anterior part of lateral segmental vein",
+              "sourceConceptId": "FMA68945",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3035",
+              "name": "Anterior part of lateral segmental vein",
+              "sourceConceptId": "FMA68945",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3036",
+              "name": "Anterior part of lateral segmental vein",
+              "sourceConceptId": "FMA68945",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3037",
+              "name": "Posterior part of lateral segmental vein",
+              "sourceConceptId": "FMA68944",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3038",
+              "name": "Posterior part of lateral segmental vein",
+              "sourceConceptId": "FMA68944",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3039",
+              "name": "Posterior part of lateral segmental vein",
+              "sourceConceptId": "FMA68944",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3041",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3042",
+              "name": "Anterior part of right apical segmental vein",
+              "sourceConceptId": "FMA68921",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3043",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3044",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3045",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3046",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3047",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3048",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3049",
+              "name": "Right anterior basal segmental vein",
+              "sourceConceptId": "FMA8673",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3050",
+              "name": "Right superior segmental vein",
+              "sourceConceptId": "FMA8670",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3051",
+              "name": "Right superior segmental vein",
+              "sourceConceptId": "FMA8670",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3052",
+              "name": "Right superior segmental vein",
+              "sourceConceptId": "FMA8670",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3053",
+              "name": "Anterior part of right apical segmental vein",
+              "sourceConceptId": "FMA68921",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3054",
+              "name": "Right medial basal segmental vein",
+              "sourceConceptId": "FMA9422",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3055",
+              "name": "Right medial basal segmental vein",
+              "sourceConceptId": "FMA9422",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3056",
+              "name": "Right anterior basal segmental vein",
+              "sourceConceptId": "FMA8673",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3057",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3058",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3059",
+              "name": "Right lateral basal segmental vein",
+              "sourceConceptId": "FMA9425",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3060",
+              "name": "Right lateral basal segmental vein",
+              "sourceConceptId": "FMA9425",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3061",
+              "name": "Right lateral basal segmental vein",
+              "sourceConceptId": "FMA9425",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3062",
+              "name": "Right lateral basal segmental vein",
+              "sourceConceptId": "FMA9425",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3063",
+              "name": "Right superior segmental vein",
+              "sourceConceptId": "FMA8670",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3064",
+              "name": "Apical part of right apical segmental vein",
+              "sourceConceptId": "FMA8681",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3065",
+              "name": "Right superior segmental vein",
+              "sourceConceptId": "FMA8670",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3066",
+              "name": "Right superior segmental vein",
+              "sourceConceptId": "FMA8670",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3067",
+              "name": "Apical part of right apical segmental vein",
+              "sourceConceptId": "FMA8681",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3068",
+              "name": "Apical part of right apical segmental vein",
+              "sourceConceptId": "FMA8681",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3069",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3070",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:003007",
+          "label": "Rib cage and sternum",
+          "sectionId": "breathing-muscles",
+          "summary": "",
+          "sourceConceptId": "FMA7480",
+          "candidateId": "sternum-ribs",
+          "representationCount": 41,
+          "parts": [
+            {
+              "id": "FJ3153",
+              "name": "Xiphoid process",
+              "sourceConceptId": "FMA7488",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3178",
+              "name": "Body of sternum",
+              "sourceConceptId": "FMA7487",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3225",
+              "name": "Left tenth rib",
+              "sourceConceptId": "FMA8472",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3226",
+              "name": "Left eleventh rib",
+              "sourceConceptId": "FMA8532",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3227",
+              "name": "Left twelfth rib",
+              "sourceConceptId": "FMA8534",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3228",
+              "name": "Left first rib",
+              "sourceConceptId": "FMA7987",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3229",
+              "name": "Left second rib",
+              "sourceConceptId": "FMA8012",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3230",
+              "name": "Left third rib",
+              "sourceConceptId": "FMA8039",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3231",
+              "name": "Left fourth rib",
+              "sourceConceptId": "FMA8148",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3232",
+              "name": "Left fifth rib",
+              "sourceConceptId": "FMA8093",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3233",
+              "name": "Left sixth rib",
+              "sourceConceptId": "FMA8202",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3234",
+              "name": "Left seventh rib",
+              "sourceConceptId": "FMA8256",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3235",
+              "name": "Left eighth rib",
+              "sourceConceptId": "FMA8310",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3236",
+              "name": "Left ninth rib",
+              "sourceConceptId": "FMA8391",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3239",
+              "name": "Left first costal cartilage",
+              "sourceConceptId": "FMA8005",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3242",
+              "name": "Left second costal cartilage",
+              "sourceConceptId": "FMA8031",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3245",
+              "name": "Left third costal cartilage",
+              "sourceConceptId": "FMA8058",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3248",
+              "name": "Left fourth costal cartilage",
+              "sourceConceptId": "FMA8167",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3251",
+              "name": "Left fifth costal cartilage",
+              "sourceConceptId": "FMA8112",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3254",
+              "name": "Left sixth costal cartilage",
+              "sourceConceptId": "FMA8221",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3255",
+              "name": "Left seventh costal cartilage",
+              "sourceConceptId": "FMA8275",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3290",
+              "name": "Manubrium",
+              "sourceConceptId": "FMA7486",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3330",
+              "name": "Right tenth rib",
+              "sourceConceptId": "FMA8445",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3331",
+              "name": "Right eleventh rib",
+              "sourceConceptId": "FMA8531",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3332",
+              "name": "Right twelfth rib",
+              "sourceConceptId": "FMA8533",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3333",
+              "name": "Right first costal cartilage",
+              "sourceConceptId": "FMA7875",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3334",
+              "name": "Right first rib",
+              "sourceConceptId": "FMA7857",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3335",
+              "name": "Right second costal cartilage",
+              "sourceConceptId": "FMA7886",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3336",
+              "name": "Right second rib",
+              "sourceConceptId": "FMA7882",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3337",
+              "name": "Right third costal cartilage",
+              "sourceConceptId": "FMA7913",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3338",
+              "name": "Right third rib",
+              "sourceConceptId": "FMA7909",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3339",
+              "name": "Right fourth costal cartilage",
+              "sourceConceptId": "FMA7976",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3340",
+              "name": "Right fourth rib",
+              "sourceConceptId": "FMA7957",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3341",
+              "name": "Right fifth costal cartilage",
+              "sourceConceptId": "FMA8070",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3342",
+              "name": "Right fifth rib",
+              "sourceConceptId": "FMA8066",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3343",
+              "name": "Right sixth costal cartilage",
+              "sourceConceptId": "FMA8194",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3344",
+              "name": "Right sixth rib",
+              "sourceConceptId": "FMA8175",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3345",
+              "name": "Right seventh costal cartilage",
+              "sourceConceptId": "FMA8248",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3346",
+              "name": "Right seventh rib",
+              "sourceConceptId": "FMA8229",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3347",
+              "name": "Right eighth rib",
+              "sourceConceptId": "FMA8283",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3348",
+              "name": "Right ninth rib",
+              "sourceConceptId": "FMA8364",
+              "system": "skeletal",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002098",
+          "label": "Inferior nasal conchae (partial coverage)",
+          "sectionId": "nasal-cavity",
+          "summary": "",
+          "sourceConceptId": "FMA54736",
+          "candidateId": "nasal-conchae",
+          "representationCount": 2,
+          "parts": [
+            {
+              "id": "FJ3263",
+              "name": "Left inferior nasal concha",
+              "sourceConceptId": "FMA54738",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3369",
+              "name": "Right inferior nasal concha",
+              "sourceConceptId": "FMA54737",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelId": "female-study-v3",
+      "experimental": true,
+      "structureShortcuts": 12,
+      "primaryParts": 119,
+      "scopedParts": 349,
+      "coverage": [
+        {
+          "candidateId": "lungs",
+          "label": "Lungs (both together)",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "right-lung",
+          "label": "Right lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "left-lung",
+          "label": "Left lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "right-superior-lobe",
+          "label": "Superior lobe of right lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "right-middle-lobe",
+          "label": "Middle lobe of right lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "right-inferior-lobe",
+          "label": "Inferior lobe of right lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "left-superior-lobe",
+          "label": "Superior lobe of left lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "left-inferior-lobe",
+          "label": "Inferior lobe of left lung",
+          "status": "combined-or-coarser-anatomy",
+          "shortcuts": [],
+          "note": "Only bronchovascular assemblies exist; no lung tissue shortcut is published."
+        },
+        {
+          "candidateId": "trachea",
+          "label": "Trachea",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002991"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "larynx",
+          "label": "Larynx",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        },
+        {
+          "candidateId": "diaphragm",
+          "label": "Diaphragm",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:000078"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "right-main-bronchus",
+          "label": "Right main bronchus",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002992"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "left-main-bronchus",
+          "label": "Left main bronchus",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002993"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "nasal-cavity",
+          "label": "Nasal cavity",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        },
+        {
+          "candidateId": "pharynx",
+          "label": "Pharynx",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        },
+        {
+          "candidateId": "epiglottis",
+          "label": "Epiglottis",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002121"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "thyroid-cartilage",
+          "label": "Thyroid cartilage",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002109"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "cricoid-cartilage",
+          "label": "Cricoid cartilage",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:003389"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "arytenoid-cartilage",
+          "label": "Arytenoid cartilages",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002112"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "pleura",
+          "label": "Pleura",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        },
+        {
+          "candidateId": "pulmonary-vessels",
+          "label": "Pulmonary arteries and veins",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002484",
+            "atlas:concept:002497"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "sternum-ribs",
+          "label": "Rib cage / sternum",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:003007"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "nasal-conchae",
+          "label": "Nasal conchae",
+          "status": "partial-anatomy",
+          "shortcuts": [
+            "atlas:concept:002098"
+          ],
+          "note": "Only the explicitly labeled anatomical subset is offered."
+        }
+      ],
+      "verified": [
+        {
+          "conceptId": "atlas:concept:002991",
+          "label": "Trachea",
+          "sectionId": "trachea",
+          "summary": "",
+          "sourceConceptId": "FMA7394",
+          "candidateId": "trachea",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2541",
+              "name": "Trachea",
+              "sourceConceptId": "FMA7394",
+              "system": "respiratory",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:000078",
+          "label": "Diaphragm",
+          "sectionId": "breathing-muscles",
+          "summary": "",
+          "sourceConceptId": "FMA13295",
+          "candidateId": "diaphragm",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ3131",
+              "name": "Diaphragm",
+              "sourceConceptId": "FMA13295",
+              "system": "muscular",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002992",
+          "label": "Right main bronchus",
+          "sectionId": "bronchial-tree",
+          "summary": "",
+          "sourceConceptId": "FMA7395",
+          "candidateId": "right-main-bronchus",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2539",
+              "name": "Right main bronchus proper",
+              "sourceConceptId": "FMA68418",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002993",
+          "label": "Left main bronchus",
+          "sectionId": "bronchial-tree",
+          "summary": "",
+          "sourceConceptId": "FMA7396",
+          "candidateId": "left-main-bronchus",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2450",
+              "name": "Left main bronchus",
+              "sourceConceptId": "FMA7396",
+              "system": "respiratory",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002121",
+          "label": "Epiglottis",
+          "sectionId": "larynx-cartilages",
+          "summary": "",
+          "sourceConceptId": "FMA55130",
+          "candidateId": "epiglottis",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2770",
+              "name": "Epiglottis",
+              "sourceConceptId": "FMA55130",
+              "system": "respiratory",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002109",
+          "label": "Thyroid cartilage",
+          "sectionId": "larynx-cartilages",
+          "summary": "",
+          "sourceConceptId": "FMA55099",
+          "candidateId": "thyroid-cartilage",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2808",
+              "name": "Thyroid cartilage",
+              "sourceConceptId": "FMA55099",
+              "system": "skeletal",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:003389",
+          "label": "Cricoid cartilage",
+          "sectionId": "larynx-cartilages",
+          "summary": "",
+          "sourceConceptId": "FMA9615",
+          "candidateId": "cricoid-cartilage",
+          "representationCount": 2,
+          "parts": [
+            {
+              "id": "FJ2440",
+              "name": "Cricoid cartilage",
+              "sourceConceptId": "FMA9615",
+              "system": "skeletal",
+              "relation": "exact"
+            },
+            {
+              "id": "FJ2769",
+              "name": "Cricoid cartilage",
+              "sourceConceptId": "FMA9615",
+              "system": "skeletal",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002112",
+          "label": "Arytenoid cartilages",
+          "sectionId": "larynx-cartilages",
+          "summary": "",
+          "sourceConceptId": "FMA55109",
+          "candidateId": "arytenoid-cartilage",
+          "representationCount": 2,
+          "parts": [
+            {
+              "id": "FJ2775",
+              "name": "Left arytenoid cartilage",
+              "sourceConceptId": "FMA55114",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2792",
+              "name": "Right arytenoid cartilage",
+              "sourceConceptId": "FMA55113",
+              "system": "skeletal",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002484",
+          "label": "Pulmonary arteries",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "FMA66326",
+          "candidateId": "pulmonary-vessels",
+          "representationCount": 99,
+          "parts": [
+            {
+              "id": "FJ2041",
+              "name": "Right anterior segmental artery",
+              "sourceConceptId": "FMA8620",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2044",
+              "name": "Right anterior segmental artery",
+              "sourceConceptId": "FMA8620",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2881",
+              "name": "Left posterior basal segmental artery",
+              "sourceConceptId": "FMA8647",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2882",
+              "name": "Left lateral basal segmental artery",
+              "sourceConceptId": "FMA8646",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2883",
+              "name": "Left anterior basal segmental artery",
+              "sourceConceptId": "FMA8645",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2884",
+              "name": "Left medial basal segmental artery",
+              "sourceConceptId": "FMA8644",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2885",
+              "name": "Left medial basal segmental artery",
+              "sourceConceptId": "FMA8644",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2886",
+              "name": "Left anterior basal segmental artery",
+              "sourceConceptId": "FMA8645",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2887",
+              "name": "Left anterior basal segmental artery",
+              "sourceConceptId": "FMA8645",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2888",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2889",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2890",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2891",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2892",
+              "name": "Left posterior basal segmental artery",
+              "sourceConceptId": "FMA8647",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2893",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2894",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2895",
+              "name": "Left superior segmental artery",
+              "sourceConceptId": "FMA8642",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2896",
+              "name": "Inferior lingular artery",
+              "sourceConceptId": "FMA8640",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2897",
+              "name": "Inferior lingular artery",
+              "sourceConceptId": "FMA8640",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2898",
+              "name": "Superior lingular artery",
+              "sourceConceptId": "FMA8639",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2899",
+              "name": "Superior lingular artery",
+              "sourceConceptId": "FMA8639",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2900",
+              "name": "Superior lingular artery",
+              "sourceConceptId": "FMA8639",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2901",
+              "name": "Superior lingular artery",
+              "sourceConceptId": "FMA8639",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2902",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2903",
+              "name": "Left posterior basal segmental artery",
+              "sourceConceptId": "FMA8647",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2904",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2905",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2906",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2907",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2908",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2909",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2910",
+              "name": "Left anterior segmental artery",
+              "sourceConceptId": "FMA13279",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2911",
+              "name": "Left posterior segmental artery",
+              "sourceConceptId": "FMA8635",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2912",
+              "name": "Left posterior segmental artery",
+              "sourceConceptId": "FMA8635",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2913",
+              "name": "Left posterior segmental artery",
+              "sourceConceptId": "FMA8635",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2914",
+              "name": "Left posterior basal segmental artery",
+              "sourceConceptId": "FMA8647",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2915",
+              "name": "Left apical segmental artery",
+              "sourceConceptId": "FMA8634",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2916",
+              "name": "Left apical segmental artery",
+              "sourceConceptId": "FMA8634",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2917",
+              "name": "Left apical segmental artery",
+              "sourceConceptId": "FMA8634",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2918",
+              "name": "Left apical segmental artery",
+              "sourceConceptId": "FMA8634",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2919",
+              "name": "Left posterior basal segmental artery",
+              "sourceConceptId": "FMA8647",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2920",
+              "name": "Left posterior basal segmental artery",
+              "sourceConceptId": "FMA8647",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2921",
+              "name": "Left lateral basal segmental artery",
+              "sourceConceptId": "FMA8646",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2922",
+              "name": "Left lateral basal segmental artery",
+              "sourceConceptId": "FMA8646",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2923",
+              "name": "Left lateral basal segmental artery",
+              "sourceConceptId": "FMA8646",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2924",
+              "name": "Left pulmonary artery",
+              "sourceConceptId": "FMA50873",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2967",
+              "name": "Apical part of right apical segmental artery",
+              "sourceConceptId": "FMA68662",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2968",
+              "name": "Apical part of right posterior segmental artery",
+              "sourceConceptId": "FMA68670",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2969",
+              "name": "Apical part of right posterior segmental artery",
+              "sourceConceptId": "FMA68670",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2970",
+              "name": "Posterior part of right posterior segmental artery",
+              "sourceConceptId": "FMA68673",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2971",
+              "name": "Posterior part of right posterior segmental artery",
+              "sourceConceptId": "FMA68673",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2972",
+              "name": "Posterior part of right posterior segmental artery",
+              "sourceConceptId": "FMA68673",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2973",
+              "name": "Right upper lobar artery",
+              "sourceConceptId": "FMA68197",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2974",
+              "name": "Posterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68677",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2975",
+              "name": "Anterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68683",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2976",
+              "name": "Anterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68683",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2977",
+              "name": "Anterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68683",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2978",
+              "name": "Anterior part of right apical segmental artery",
+              "sourceConceptId": "FMA68665",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2979",
+              "name": "Anterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68683",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2980",
+              "name": "Posterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68677",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2981",
+              "name": "Posterior branch of right anterior segmental artery",
+              "sourceConceptId": "FMA68677",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2982",
+              "name": "Anterior branch of lateral segmental artery",
+              "sourceConceptId": "FMA68691",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2983",
+              "name": "Posterior branch of lateral segmental artery",
+              "sourceConceptId": "FMA68690",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2984",
+              "name": "Posterior branch of lateral segmental artery",
+              "sourceConceptId": "FMA68690",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2985",
+              "name": "Anterior branch of lateral segmental artery",
+              "sourceConceptId": "FMA68691",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2986",
+              "name": "Superior branch of medial segmental artery",
+              "sourceConceptId": "FMA68693",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2987",
+              "name": "Inferior branch of medial segmental artery",
+              "sourceConceptId": "FMA68694",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2988",
+              "name": "Inferior branch of medial segmental artery",
+              "sourceConceptId": "FMA68694",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2989",
+              "name": "Anterior part of right apical segmental artery",
+              "sourceConceptId": "FMA68665",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2990",
+              "name": "Superior branch of medial segmental artery",
+              "sourceConceptId": "FMA68693",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2991",
+              "name": "Lateral branch of right superior segmental artery",
+              "sourceConceptId": "FMA68712",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2992",
+              "name": "Lateral branch of right superior segmental artery",
+              "sourceConceptId": "FMA68712",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2993",
+              "name": "Lateral branch of right superior segmental artery",
+              "sourceConceptId": "FMA68712",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2994",
+              "name": "Medial branch of right superior segmental artery",
+              "sourceConceptId": "FMA68706",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2995",
+              "name": "Medial branch of right superior segmental artery",
+              "sourceConceptId": "FMA68706",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2996",
+              "name": "Medial branch of right superior segmental artery",
+              "sourceConceptId": "FMA68706",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2997",
+              "name": "Superior branch of right superior segmental artery",
+              "sourceConceptId": "FMA68709",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2998",
+              "name": "Superior branch of right superior segmental artery",
+              "sourceConceptId": "FMA68709",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2999",
+              "name": "Superior branch of right superior segmental artery",
+              "sourceConceptId": "FMA68709",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3000",
+              "name": "Anterior part of right apical segmental artery",
+              "sourceConceptId": "FMA68665",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3001",
+              "name": "Lateral branch of right anterior basal segmental artery",
+              "sourceConceptId": "FMA68725",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3002",
+              "name": "Basal branch of right anterior basal segmental artery",
+              "sourceConceptId": "FMA68723",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3003",
+              "name": "Basal branch of right anterior basal segmental artery",
+              "sourceConceptId": "FMA68723",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3004",
+              "name": "Lateral branch of right lateral basal segmental artery",
+              "sourceConceptId": "FMA68728",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3005",
+              "name": "Lateral branch of right lateral basal segmental artery",
+              "sourceConceptId": "FMA68728",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3006",
+              "name": "Lateral branch of right lateral basal segmental artery",
+              "sourceConceptId": "FMA68728",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3007",
+              "name": "Lateral branch of right lateral basal segmental artery",
+              "sourceConceptId": "FMA68728",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3008",
+              "name": "Mediobasal branch of right posterior basal segmental artery",
+              "sourceConceptId": "FMA68741",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3009",
+              "name": "Accessory subsuperior branch of right posterior basal segmental artery",
+              "sourceConceptId": "FMA68735",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3010",
+              "name": "Accessory subsuperior branch of right posterior basal segmental artery",
+              "sourceConceptId": "FMA68735",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3011",
+              "name": "Anterior part of right apical segmental artery",
+              "sourceConceptId": "FMA68665",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3012",
+              "name": "Mediobasal branch of right posterior basal segmental artery",
+              "sourceConceptId": "FMA68741",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3013",
+              "name": "Laterobasal branch of right posterior basal segmental artery",
+              "sourceConceptId": "FMA68738",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3014",
+              "name": "Laterobasal branch of right posterior basal segmental artery",
+              "sourceConceptId": "FMA68738",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3015",
+              "name": "Apical part of right apical segmental artery",
+              "sourceConceptId": "FMA68662",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3016",
+              "name": "Apical part of right apical segmental artery",
+              "sourceConceptId": "FMA68662",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3017",
+              "name": "Apical part of right apical segmental artery",
+              "sourceConceptId": "FMA68662",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3018",
+              "name": "Apical part of right posterior segmental artery",
+              "sourceConceptId": "FMA68670",
+              "system": "arterial",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3019",
+              "name": "Right pulmonary artery",
+              "sourceConceptId": "FMA50872",
+              "system": "arterial",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002497",
+          "label": "Pulmonary veins",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "FMA66643",
+          "candidateId": "pulmonary-vessels",
+          "representationCount": 84,
+          "parts": [
+            {
+              "id": "FJ2926",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2927",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2928",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2929",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2930",
+              "name": "Left anterior segmental vein",
+              "sourceConceptId": "FMA8667",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2931",
+              "name": "Left anterior segmental vein",
+              "sourceConceptId": "FMA8667",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2932",
+              "name": "Left anterior segmental vein",
+              "sourceConceptId": "FMA8667",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2934",
+              "name": "Inferior lingular vein",
+              "sourceConceptId": "FMA8669",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2935",
+              "name": "Inferior lingular vein",
+              "sourceConceptId": "FMA8669",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2936",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2937",
+              "name": "Superior lingular vein",
+              "sourceConceptId": "FMA8668",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2938",
+              "name": "Superior lingular vein",
+              "sourceConceptId": "FMA8668",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2939",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2940",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2941",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2942",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2943",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2945",
+              "name": "Left posterior basal segmental vein",
+              "sourceConceptId": "FMA9451",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2946",
+              "name": "Left posterior basal segmental vein",
+              "sourceConceptId": "FMA9451",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2947",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2948",
+              "name": "Left posterior basal segmental vein",
+              "sourceConceptId": "FMA9451",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2949",
+              "name": "Left posterior basal segmental vein",
+              "sourceConceptId": "FMA9451",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2951",
+              "name": "Left lateral basal segmental vein",
+              "sourceConceptId": "FMA9450",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2952",
+              "name": "Left lateral basal segmental vein",
+              "sourceConceptId": "FMA9450",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2953",
+              "name": "Left lateral basal segmental vein",
+              "sourceConceptId": "FMA9450",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2954",
+              "name": "Left lateral basal segmental vein",
+              "sourceConceptId": "FMA9450",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2956",
+              "name": "Left anterior basal segmental vein",
+              "sourceConceptId": "FMA8678",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2957",
+              "name": "Left anterior basal segmental vein",
+              "sourceConceptId": "FMA8678",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2958",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2959",
+              "name": "Left anterior basal segmental vein",
+              "sourceConceptId": "FMA8678",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2960",
+              "name": "Left anterior basal segmental vein",
+              "sourceConceptId": "FMA8678",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2961",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2962",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2963",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2964",
+              "name": "Left apical segmental vein",
+              "sourceConceptId": "FMA9437",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ2965",
+              "name": "Left posterior segmental vein",
+              "sourceConceptId": "FMA9438",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3021",
+              "name": "Inferior part of right anterior segmental vein",
+              "sourceConceptId": "FMA68928",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3022",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3023",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3024",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3025",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3026",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3027",
+              "name": "Superior part of right anterior segmental vein",
+              "sourceConceptId": "FMA68926",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3028",
+              "name": "Right anterior segmental vein",
+              "sourceConceptId": "FMA8662",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3029",
+              "name": "Right anterior segmental vein",
+              "sourceConceptId": "FMA8662",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3030",
+              "name": "Superior part of medial segmental vein",
+              "sourceConceptId": "FMA68982",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3032",
+              "name": "Inferior part of medial segmental vein",
+              "sourceConceptId": "FMA68983",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3033",
+              "name": "Inferior part of medial segmental vein",
+              "sourceConceptId": "FMA68983",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3034",
+              "name": "Anterior part of lateral segmental vein",
+              "sourceConceptId": "FMA68945",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3035",
+              "name": "Anterior part of lateral segmental vein",
+              "sourceConceptId": "FMA68945",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3036",
+              "name": "Anterior part of lateral segmental vein",
+              "sourceConceptId": "FMA68945",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3037",
+              "name": "Posterior part of lateral segmental vein",
+              "sourceConceptId": "FMA68944",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3038",
+              "name": "Posterior part of lateral segmental vein",
+              "sourceConceptId": "FMA68944",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3039",
+              "name": "Posterior part of lateral segmental vein",
+              "sourceConceptId": "FMA68944",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3041",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3042",
+              "name": "Anterior part of right apical segmental vein",
+              "sourceConceptId": "FMA68921",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3043",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3044",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3045",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3046",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3047",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3048",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3049",
+              "name": "Right anterior basal segmental vein",
+              "sourceConceptId": "FMA8673",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3050",
+              "name": "Right superior segmental vein",
+              "sourceConceptId": "FMA8670",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3051",
+              "name": "Right superior segmental vein",
+              "sourceConceptId": "FMA8670",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3052",
+              "name": "Right superior segmental vein",
+              "sourceConceptId": "FMA8670",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3053",
+              "name": "Anterior part of right apical segmental vein",
+              "sourceConceptId": "FMA68921",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3054",
+              "name": "Right medial basal segmental vein",
+              "sourceConceptId": "FMA9422",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3055",
+              "name": "Right medial basal segmental vein",
+              "sourceConceptId": "FMA9422",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3056",
+              "name": "Right anterior basal segmental vein",
+              "sourceConceptId": "FMA8673",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3057",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3058",
+              "name": "Right posterior basal segmental vein",
+              "sourceConceptId": "FMA9428",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3059",
+              "name": "Right lateral basal segmental vein",
+              "sourceConceptId": "FMA9425",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3060",
+              "name": "Right lateral basal segmental vein",
+              "sourceConceptId": "FMA9425",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3061",
+              "name": "Right lateral basal segmental vein",
+              "sourceConceptId": "FMA9425",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3062",
+              "name": "Right lateral basal segmental vein",
+              "sourceConceptId": "FMA9425",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3063",
+              "name": "Right superior segmental vein",
+              "sourceConceptId": "FMA8670",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3064",
+              "name": "Apical part of right apical segmental vein",
+              "sourceConceptId": "FMA8681",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3065",
+              "name": "Right superior segmental vein",
+              "sourceConceptId": "FMA8670",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3066",
+              "name": "Right superior segmental vein",
+              "sourceConceptId": "FMA8670",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3067",
+              "name": "Apical part of right apical segmental vein",
+              "sourceConceptId": "FMA8681",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3068",
+              "name": "Apical part of right apical segmental vein",
+              "sourceConceptId": "FMA8681",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3069",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3070",
+              "name": "Right posterior segmental vein",
+              "sourceConceptId": "FMA8663",
+              "system": "venous",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:003007",
+          "label": "Rib cage and sternum",
+          "sectionId": "breathing-muscles",
+          "summary": "",
+          "sourceConceptId": "FMA7480",
+          "candidateId": "sternum-ribs",
+          "representationCount": 41,
+          "parts": [
+            {
+              "id": "FJ3153",
+              "name": "Xiphoid process",
+              "sourceConceptId": "FMA7488",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3178",
+              "name": "Body of sternum",
+              "sourceConceptId": "FMA7487",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3225",
+              "name": "Left tenth rib",
+              "sourceConceptId": "FMA8472",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3226",
+              "name": "Left eleventh rib",
+              "sourceConceptId": "FMA8532",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3227",
+              "name": "Left twelfth rib",
+              "sourceConceptId": "FMA8534",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3228",
+              "name": "Left first rib",
+              "sourceConceptId": "FMA7987",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3229",
+              "name": "Left second rib",
+              "sourceConceptId": "FMA8012",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3230",
+              "name": "Left third rib",
+              "sourceConceptId": "FMA8039",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3231",
+              "name": "Left fourth rib",
+              "sourceConceptId": "FMA8148",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3232",
+              "name": "Left fifth rib",
+              "sourceConceptId": "FMA8093",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3233",
+              "name": "Left sixth rib",
+              "sourceConceptId": "FMA8202",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3234",
+              "name": "Left seventh rib",
+              "sourceConceptId": "FMA8256",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3235",
+              "name": "Left eighth rib",
+              "sourceConceptId": "FMA8310",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3236",
+              "name": "Left ninth rib",
+              "sourceConceptId": "FMA8391",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3239",
+              "name": "Left first costal cartilage",
+              "sourceConceptId": "FMA8005",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3242",
+              "name": "Left second costal cartilage",
+              "sourceConceptId": "FMA8031",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3245",
+              "name": "Left third costal cartilage",
+              "sourceConceptId": "FMA8058",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3248",
+              "name": "Left fourth costal cartilage",
+              "sourceConceptId": "FMA8167",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3251",
+              "name": "Left fifth costal cartilage",
+              "sourceConceptId": "FMA8112",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3254",
+              "name": "Left sixth costal cartilage",
+              "sourceConceptId": "FMA8221",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3255",
+              "name": "Left seventh costal cartilage",
+              "sourceConceptId": "FMA8275",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3290",
+              "name": "Manubrium",
+              "sourceConceptId": "FMA7486",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3330",
+              "name": "Right tenth rib",
+              "sourceConceptId": "FMA8445",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3331",
+              "name": "Right eleventh rib",
+              "sourceConceptId": "FMA8531",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3332",
+              "name": "Right twelfth rib",
+              "sourceConceptId": "FMA8533",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3333",
+              "name": "Right first costal cartilage",
+              "sourceConceptId": "FMA7875",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3334",
+              "name": "Right first rib",
+              "sourceConceptId": "FMA7857",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3335",
+              "name": "Right second costal cartilage",
+              "sourceConceptId": "FMA7886",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3336",
+              "name": "Right second rib",
+              "sourceConceptId": "FMA7882",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3337",
+              "name": "Right third costal cartilage",
+              "sourceConceptId": "FMA7913",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3338",
+              "name": "Right third rib",
+              "sourceConceptId": "FMA7909",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3339",
+              "name": "Right fourth costal cartilage",
+              "sourceConceptId": "FMA7976",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3340",
+              "name": "Right fourth rib",
+              "sourceConceptId": "FMA7957",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3341",
+              "name": "Right fifth costal cartilage",
+              "sourceConceptId": "FMA8070",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3342",
+              "name": "Right fifth rib",
+              "sourceConceptId": "FMA8066",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3343",
+              "name": "Right sixth costal cartilage",
+              "sourceConceptId": "FMA8194",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3344",
+              "name": "Right sixth rib",
+              "sourceConceptId": "FMA8175",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3345",
+              "name": "Right seventh costal cartilage",
+              "sourceConceptId": "FMA8248",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3346",
+              "name": "Right seventh rib",
+              "sourceConceptId": "FMA8229",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3347",
+              "name": "Right eighth rib",
+              "sourceConceptId": "FMA8283",
+              "system": "skeletal",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3348",
+              "name": "Right ninth rib",
+              "sourceConceptId": "FMA8364",
+              "system": "skeletal",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:002098",
+          "label": "Inferior nasal conchae (partial coverage)",
+          "sectionId": "nasal-cavity",
+          "summary": "",
+          "sourceConceptId": "FMA54736",
+          "candidateId": "nasal-conchae",
+          "representationCount": 2,
+          "parts": [
+            {
+              "id": "FJ3263",
+              "name": "Left inferior nasal concha",
+              "sourceConceptId": "FMA54738",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3369",
+              "name": "Right inferior nasal concha",
+              "sourceConceptId": "FMA54737",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelId": "hra-female-v1.5",
+      "experimental": false,
+      "structureShortcuts": 18,
+      "primaryParts": 70,
+      "scopedParts": 77,
+      "coverage": [
+        {
+          "candidateId": "lungs",
+          "label": "Lungs (both together)",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004084"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "right-lung",
+          "label": "Right lung",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004085"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "left-lung",
+          "label": "Left lung",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004028"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "right-superior-lobe",
+          "label": "Superior lobe of right lung",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004253"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "right-middle-lobe",
+          "label": "Middle lobe of right lung",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004252"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "right-inferior-lobe",
+          "label": "Inferior lobe of right lung",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004251"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "left-superior-lobe",
+          "label": "Superior lobe of left lung",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:003982"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "left-inferior-lobe",
+          "label": "Inferior lobe of left lung",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:003981"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "trachea",
+          "label": "Trachea",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004453"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "larynx",
+          "label": "Larynx",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:003984"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "diaphragm",
+          "label": "Diaphragm",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        },
+        {
+          "candidateId": "right-main-bronchus",
+          "label": "Right main bronchus",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004347"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "left-main-bronchus",
+          "label": "Left main bronchus",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004029"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "nasal-cavity",
+          "label": "Nasal cavity",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        },
+        {
+          "candidateId": "pharynx",
+          "label": "Pharynx",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        },
+        {
+          "candidateId": "epiglottis",
+          "label": "Epiglottis",
+          "status": "partial-anatomy",
+          "shortcuts": [
+            "atlas:concept:003869"
+          ],
+          "note": "Only the explicitly labeled anatomical subset is offered."
+        },
+        {
+          "candidateId": "thyroid-cartilage",
+          "label": "Thyroid cartilage",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004448"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "cricoid-cartilage",
+          "label": "Cricoid cartilage",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:003840"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "arytenoid-cartilage",
+          "label": "Arytenoid cartilages",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:003749"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "pleura",
+          "label": "Pleura",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        },
+        {
+          "candidateId": "pulmonary-vessels",
+          "label": "Pulmonary arteries and veins",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004238",
+            "atlas:concept:004243"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateId": "sternum-ribs",
+          "label": "Rib cage / sternum",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        },
+        {
+          "candidateId": "nasal-conchae",
+          "label": "Nasal conchae",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified complete target in this model; no replacement geometry is selected."
+        }
+      ],
+      "verified": [
+        {
+          "conceptId": "atlas:concept:004084",
+          "label": "Lungs (both together)",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_lungs",
+          "candidateId": "lungs",
+          "representationCount": 27,
+          "parts": [
+            {
+              "id": "VH_F_hilum_L",
+              "name": "left lung hilus",
+              "sourceConceptId": "UBERON:0004887",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_upper_L",
+              "name": "left lung hilus",
+              "sourceConceptId": "UBERON:0004887",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_lingula_superior_bronchopulmonary_segment",
+              "name": "Superior lingular bronchopulmonary segment",
+              "sourceConceptId": "FMA:7374",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_anterior_bronchopulmonary_segment",
+              "name": "Left Anterior Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7373",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_apical_bronchopulmonary_segment",
+              "name": "Left apical bronchopulmonary segment",
+              "sourceConceptId": "FMA:7385",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_posterior_bronchopulmonary_segment",
+              "name": "Left posterior bronchopulmonary segment",
+              "sourceConceptId": "FMA:7386",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_lingula_inferior_bronchopulmonary_segment",
+              "name": "Inferior lingular bronchopulmonary segment",
+              "sourceConceptId": "FMA:7375",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_superior_bronchopulmonary_segment",
+              "name": "Left superior bronchopulmonary segment",
+              "sourceConceptId": "FMA:7376",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_posterior_basal_bronchopulmonary_segment",
+              "name": "Left posterior basal bronchopulmonary segment",
+              "sourceConceptId": "FMA:7380",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_anterior_basal_bronchopulmonary_segment",
+              "name": "left anterior basal bronchopulmonary segment",
+              "sourceConceptId": "FMA:7378",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_lateral_basal_bronchopulmonary_segment",
+              "name": "left Lateral Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7379",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_medial_basal_bronchopulmonary_segment",
+              "name": "Left Medial Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7377",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_lower_L",
+              "name": "left lung hilus",
+              "sourceConceptId": "UBERON:0004887",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_R",
+              "name": "right lung hilus",
+              "sourceConceptId": "UBERON:0004888",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_medial_basal_bronchopulmonary_segment",
+              "name": "Right Medial Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7365",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_posterior_basal_bronchopulmonary_segment",
+              "name": "Right Posterior Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7362",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_anterior_basal_bronchopulmonary_segment",
+              "name": "Right anterior basal bronchopulmonary segment",
+              "sourceConceptId": "FMA:7364",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_lateral_basal_bronchopulmonary_segment",
+              "name": "Right Lateral Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7363",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_superior_bronchopulmonary_segment",
+              "name": "Right Superior Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7366",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_lower_R",
+              "name": "right lung hilus",
+              "sourceConceptId": "UBERON:0004888",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_medial_bronchopulmonary_segment",
+              "name": "Right Medial Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7360",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_lateral_bronchopulmonary_segmennt",
+              "name": "Right Lateral Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7361",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_middle_R",
+              "name": "right lung hilus",
+              "sourceConceptId": "UBERON:0004888",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_anterior_bronchopulmonary_segm",
+              "name": "Right Anterior Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7359",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_apical_bronchopulmonary_segment",
+              "name": "Right Apical Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7338",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_posterior_bronchopulmonary_segment",
+              "name": "Right Posterior Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7339",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_upper_R",
+              "name": "right lung hilus",
+              "sourceConceptId": "UBERON:0004888",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004028",
+          "label": "Left lung",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_left_lungs_L",
+          "candidateId": "left-lung",
+          "representationCount": 13,
+          "parts": [
+            {
+              "id": "VH_F_hilum_L",
+              "name": "left lung hilus",
+              "sourceConceptId": "UBERON:0004887",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_upper_L",
+              "name": "left lung hilus",
+              "sourceConceptId": "UBERON:0004887",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_lingula_superior_bronchopulmonary_segment",
+              "name": "Superior lingular bronchopulmonary segment",
+              "sourceConceptId": "FMA:7374",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_anterior_bronchopulmonary_segment",
+              "name": "Left Anterior Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7373",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_apical_bronchopulmonary_segment",
+              "name": "Left apical bronchopulmonary segment",
+              "sourceConceptId": "FMA:7385",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_posterior_bronchopulmonary_segment",
+              "name": "Left posterior bronchopulmonary segment",
+              "sourceConceptId": "FMA:7386",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_lingula_inferior_bronchopulmonary_segment",
+              "name": "Inferior lingular bronchopulmonary segment",
+              "sourceConceptId": "FMA:7375",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_superior_bronchopulmonary_segment",
+              "name": "Left superior bronchopulmonary segment",
+              "sourceConceptId": "FMA:7376",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_posterior_basal_bronchopulmonary_segment",
+              "name": "Left posterior basal bronchopulmonary segment",
+              "sourceConceptId": "FMA:7380",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_anterior_basal_bronchopulmonary_segment",
+              "name": "left anterior basal bronchopulmonary segment",
+              "sourceConceptId": "FMA:7378",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_lateral_basal_bronchopulmonary_segment",
+              "name": "left Lateral Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7379",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_medial_basal_bronchopulmonary_segment",
+              "name": "Left Medial Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7377",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_lower_L",
+              "name": "left lung hilus",
+              "sourceConceptId": "UBERON:0004887",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004085",
+          "label": "Right lung",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_lungs_R",
+          "candidateId": "right-lung",
+          "representationCount": 14,
+          "parts": [
+            {
+              "id": "VH_F_hilum_R",
+              "name": "right lung hilus",
+              "sourceConceptId": "UBERON:0004888",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_medial_basal_bronchopulmonary_segment",
+              "name": "Right Medial Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7365",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_posterior_basal_bronchopulmonary_segment",
+              "name": "Right Posterior Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7362",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_anterior_basal_bronchopulmonary_segment",
+              "name": "Right anterior basal bronchopulmonary segment",
+              "sourceConceptId": "FMA:7364",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_lateral_basal_bronchopulmonary_segment",
+              "name": "Right Lateral Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7363",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_superior_bronchopulmonary_segment",
+              "name": "Right Superior Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7366",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_lower_R",
+              "name": "right lung hilus",
+              "sourceConceptId": "UBERON:0004888",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_medial_bronchopulmonary_segment",
+              "name": "Right Medial Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7360",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_lateral_bronchopulmonary_segmennt",
+              "name": "Right Lateral Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7361",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_middle_R",
+              "name": "right lung hilus",
+              "sourceConceptId": "UBERON:0004888",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_anterior_bronchopulmonary_segm",
+              "name": "Right Anterior Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7359",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_apical_bronchopulmonary_segment",
+              "name": "Right Apical Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7338",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_posterior_bronchopulmonary_segment",
+              "name": "Right Posterior Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7339",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_upper_R",
+              "name": "right lung hilus",
+              "sourceConceptId": "UBERON:0004888",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004253",
+          "label": "Superior lobe of right lung",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_R_lung_upper_lobe",
+          "candidateId": "right-superior-lobe",
+          "representationCount": 4,
+          "parts": [
+            {
+              "id": "VH_F_right_anterior_bronchopulmonary_segm",
+              "name": "Right Anterior Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7359",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_apical_bronchopulmonary_segment",
+              "name": "Right Apical Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7338",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_posterior_bronchopulmonary_segment",
+              "name": "Right Posterior Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7339",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_upper_R",
+              "name": "right lung hilus",
+              "sourceConceptId": "UBERON:0004888",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004252",
+          "label": "Middle lobe of right lung",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_R_lung_middle_lobe",
+          "candidateId": "right-middle-lobe",
+          "representationCount": 3,
+          "parts": [
+            {
+              "id": "VH_F_right_medial_bronchopulmonary_segment",
+              "name": "Right Medial Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7360",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_lateral_bronchopulmonary_segmennt",
+              "name": "Right Lateral Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7361",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_middle_R",
+              "name": "right lung hilus",
+              "sourceConceptId": "UBERON:0004888",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004251",
+          "label": "Inferior lobe of right lung",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_R_lung_lower_lobe",
+          "candidateId": "right-inferior-lobe",
+          "representationCount": 6,
+          "parts": [
+            {
+              "id": "VH_F_right_medial_basal_bronchopulmonary_segment",
+              "name": "Right Medial Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7365",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_posterior_basal_bronchopulmonary_segment",
+              "name": "Right Posterior Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7362",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_anterior_basal_bronchopulmonary_segment",
+              "name": "Right anterior basal bronchopulmonary segment",
+              "sourceConceptId": "FMA:7364",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_lateral_basal_bronchopulmonary_segment",
+              "name": "Right Lateral Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7363",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_right_superior_bronchopulmonary_segment",
+              "name": "Right Superior Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7366",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_lower_R",
+              "name": "right lung hilus",
+              "sourceConceptId": "UBERON:0004888",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:003982",
+          "label": "Superior lobe of left lung",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_L_lung_upper_lobe",
+          "candidateId": "left-superior-lobe",
+          "representationCount": 6,
+          "parts": [
+            {
+              "id": "VH_F_hilum_upper_L",
+              "name": "left lung hilus",
+              "sourceConceptId": "UBERON:0004887",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_lingula_superior_bronchopulmonary_segment",
+              "name": "Superior lingular bronchopulmonary segment",
+              "sourceConceptId": "FMA:7374",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_anterior_bronchopulmonary_segment",
+              "name": "Left Anterior Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7373",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_apical_bronchopulmonary_segment",
+              "name": "Left apical bronchopulmonary segment",
+              "sourceConceptId": "FMA:7385",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_posterior_bronchopulmonary_segment",
+              "name": "Left posterior bronchopulmonary segment",
+              "sourceConceptId": "FMA:7386",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_lingula_inferior_bronchopulmonary_segment",
+              "name": "Inferior lingular bronchopulmonary segment",
+              "sourceConceptId": "FMA:7375",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:003981",
+          "label": "Inferior lobe of left lung",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_L_lung_lower_lobe",
+          "candidateId": "left-inferior-lobe",
+          "representationCount": 6,
+          "parts": [
+            {
+              "id": "VH_F_left_superior_bronchopulmonary_segment",
+              "name": "Left superior bronchopulmonary segment",
+              "sourceConceptId": "FMA:7376",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_posterior_basal_bronchopulmonary_segment",
+              "name": "Left posterior basal bronchopulmonary segment",
+              "sourceConceptId": "FMA:7380",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_anterior_basal_bronchopulmonary_segment",
+              "name": "left anterior basal bronchopulmonary segment",
+              "sourceConceptId": "FMA:7378",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_lateral_basal_bronchopulmonary_segment",
+              "name": "left Lateral Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7379",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_left_medial_basal_bronchopulmonary_segment",
+              "name": "Left Medial Basal Bronchopulmonary Segment",
+              "sourceConceptId": "FMA:7377",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_lower_L",
+              "name": "left lung hilus",
+              "sourceConceptId": "UBERON:0004887",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004453",
+          "label": "Trachea",
+          "sectionId": "trachea",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_trachea",
+          "candidateId": "trachea",
+          "representationCount": 3,
+          "parts": [
+            {
+              "id": "VH_F_trachea",
+              "name": "trachea",
+              "sourceConceptId": "UBERON:0003126",
+              "system": "respiratory",
+              "relation": "exact"
+            },
+            {
+              "id": "VH_F_tracheal_cartilage",
+              "name": "trachea cartilage",
+              "sourceConceptId": "UBERON:0003604",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_carina",
+              "name": "carina of trachea",
+              "sourceConceptId": "UBERON:0006679",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:003984",
+          "label": "Larynx",
+          "sectionId": "larynx-cartilages",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_larynx",
+          "candidateId": "larynx",
+          "representationCount": 7,
+          "parts": [
+            {
+              "id": "VH_F_arytenoid_cartilage_R",
+              "name": "Right arytenoid cartilage",
+              "sourceConceptId": "FMA:55113",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_arytenoid_cartilage_L",
+              "name": "Left arytenoid cartilage",
+              "sourceConceptId": "FMA:55114",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_epiglotic_cartilage",
+              "name": "epiglottic cartilage",
+              "sourceConceptId": "UBERON:0001742",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_cricoid_cartilage",
+              "name": "cricoid cartilage",
+              "sourceConceptId": "UBERON:0002375",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_thyroid_cartilage",
+              "name": "thyroid cartilage",
+              "sourceConceptId": "UBERON:0001738",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_corniculate_cartilage_L",
+              "name": "Left corniculate cartilage",
+              "sourceConceptId": "FMA:55116",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_corniculate_cartilage_R",
+              "name": "Right corniculate cartilage",
+              "sourceConceptId": "FMA:55115",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004347",
+          "label": "Right main bronchus",
+          "sectionId": "bronchial-tree",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_right_main_bronchus",
+          "candidateId": "right-main-bronchus",
+          "representationCount": 2,
+          "parts": [
+            {
+              "id": "VH_F_right_main_bronchus",
+              "name": "Right Main Bronchus",
+              "sourceConceptId": "UBERON:0002177",
+              "system": "respiratory",
+              "relation": "exact"
+            },
+            {
+              "id": "VH_F_cartilage_of_main_bronchus_R",
+              "name": "Cartilage of right main bronchus",
+              "sourceConceptId": "FMA:13143",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004029",
+          "label": "Left main bronchus",
+          "sectionId": "bronchial-tree",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_left_main_bronchus",
+          "candidateId": "left-main-bronchus",
+          "representationCount": 2,
+          "parts": [
+            {
+              "id": "VH_F_left_main_bronchus",
+              "name": "Left Main Bronchus",
+              "sourceConceptId": "UBERON:0002178",
+              "system": "respiratory",
+              "relation": "exact"
+            },
+            {
+              "id": "VH_F_cartilage_of_main_bronchus_L",
+              "name": "Cartilage of left main bronchus",
+              "sourceConceptId": "FMA:13144",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:003869",
+          "label": "Epiglottic cartilage (partial coverage)",
+          "sectionId": "larynx-cartilages",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_epiglotic_cartilage",
+          "candidateId": "epiglottis",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "VH_F_epiglotic_cartilage",
+              "name": "epiglottic cartilage",
+              "sourceConceptId": "UBERON:0001742",
+              "system": "respiratory",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004448",
+          "label": "Thyroid cartilage",
+          "sectionId": "larynx-cartilages",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_thyroid_cartilage",
+          "candidateId": "thyroid-cartilage",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "VH_F_thyroid_cartilage",
+              "name": "thyroid cartilage",
+              "sourceConceptId": "UBERON:0001738",
+              "system": "respiratory",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:003840",
+          "label": "Cricoid cartilage",
+          "sectionId": "larynx-cartilages",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_cricoid_cartilage",
+          "candidateId": "cricoid-cartilage",
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "VH_F_cricoid_cartilage",
+              "name": "cricoid cartilage",
+              "sourceConceptId": "UBERON:0002375",
+              "system": "respiratory",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:003749",
+          "label": "Arytenoid cartilages",
+          "sectionId": "larynx-cartilages",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_arytenoid_cartilage",
+          "candidateId": "arytenoid-cartilage",
+          "representationCount": 2,
+          "parts": [
+            {
+              "id": "VH_F_arytenoid_cartilage_R",
+              "name": "Right arytenoid cartilage",
+              "sourceConceptId": "FMA:55113",
+              "system": "respiratory",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_arytenoid_cartilage_L",
+              "name": "Left arytenoid cartilage",
+              "sourceConceptId": "FMA:55114",
+              "system": "respiratory",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004238",
+          "label": "Pulmonary arteries",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_pulmonary_artery",
+          "candidateId": "pulmonary-vessels",
+          "representationCount": 3,
+          "parts": [
+            {
+              "id": "VH_F_pulmonary_artery_L",
+              "name": "left pulmonary artery",
+              "sourceConceptId": "UBERON:0001652",
+              "system": "cardiac",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_pulmonary_trunk",
+              "name": "pulmonary trunk",
+              "sourceConceptId": "UBERON:0002333",
+              "system": "cardiac",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_pulmonary_artery_R",
+              "name": "right pulmonary artery",
+              "sourceConceptId": "UBERON:0001651",
+              "system": "cardiac",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004243",
+          "label": "Pulmonary veins",
+          "sectionId": "lungs-pleura",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_pulmonary_vein",
+          "candidateId": "pulmonary-vessels",
+          "representationCount": 4,
+          "parts": [
+            {
+              "id": "VH_F_pulmonary_vein_L_sup",
+              "name": "left superior pulmonary vein",
+              "sourceConceptId": "FMA:49916",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_pulmonary_vein_R_inf",
+              "name": "left inferior pulmonary vein",
+              "sourceConceptId": "FMA:49913",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_pulmonary_vein_R_sup",
+              "name": "right superior pulmonary vein",
+              "sourceConceptId": "FMA:49914",
+              "system": "venous",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_pulmonary_vein_L_inf",
+              "name": "right inferior pulmonary vein",
+              "sourceConceptId": "FMA:49911",
+              "system": "venous",
+              "relation": "part-of"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Female study geometry remains experimental.",
+    "Canonical identity and binary geometry validation do not constitute independent anatomical review.",
+    "HRA epiglottic cartilage is partial coverage of the epiglottis.",
+    "Inferior nasal conchae are partial coverage of nasal conchae.",
+    "Nasal cavity, complete pharynx and pleura have no verified shortcuts.",
+    "GPU interaction and visual review must be reported separately from this audit."
+  ]
+}

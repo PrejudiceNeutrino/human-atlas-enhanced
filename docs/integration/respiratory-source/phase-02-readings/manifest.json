@@ -1,0 +1,22 @@
+{
+  "project": "Human Atlas Respiratory System",
+  "phase": 2,
+  "status": "complete-draft-for-scientific-review",
+  "generated": "2026-11-09",
+  "articleSectionCounts": {
+    "generalOverview": 8,
+    "deepDive": 23
+  },
+  "wordCountsApprox": {
+    "generalOverview": 951,
+    "deepDive": 7918
+  },
+  "coverageItems": 30,
+  "contentSchema": "Digestive-compatible article objects: id, title, subject, subtitle, introMarkdown, sections[{id,title,markdown,slideReferences}],sourceFiles",
+  "sourceFiles": [
+    "23-Respiratory System.pptx",
+    "Respiratory - Copy.pptx",
+    "23-Study Guide.docx"
+  ],
+  "note": "No change to GitHub; remaining three reading articles are Phase 3."
+}

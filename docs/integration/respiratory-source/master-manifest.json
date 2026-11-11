@@ -1,0 +1,241 @@
+{
+  "project": "Human Atlas Respiratory System",
+  "version": "phase4",
+  "phasesIncluded": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "phasesRemaining": [
+    5
+  ],
+  "counts": {
+    "overviewSections": 8,
+    "deepDiveSections": 23,
+    "connectedNarrativeSections": 11,
+    "whoCaresStories": 3,
+    "examCramSections": 18,
+    "studyGuideObjectivesMapped": 30,
+    "glossaryConcepts": 192,
+    "multipleChoiceQuestions": 106,
+    "fillInBlankQuestions": 67,
+    "flashcards": 114,
+    "studyToolTopics": 14
+  },
+  "entries": {
+    "phase-01-curriculum/README.md": {
+      "bytes": 827,
+      "sha256": "ccd6a85af12fa3130fd41a5dd203025c029b2c887e939d9cfb517f5e1c80d5e4"
+    },
+    "phase-01-curriculum/respiratory-stage1-blueprint.json": {
+      "bytes": 81769,
+      "sha256": "0ea57b9e7e2639a540117f8bf2a82f04ec7fd9f7c3b8ceb36c70a91ce62e12f7"
+    },
+    "phase-01-curriculum/respiratory-stage1-outline.md": {
+      "bytes": 43170,
+      "sha256": "845869ca4066d45dcdc943368927ef5f688d90479be3f34272a00df68d10aad6"
+    },
+    "phase-01-curriculum/respiratory-stage1-preview.html": {
+      "bytes": 70791,
+      "sha256": "bb2fd634f04e401343735bbce536a80fc749943097556dc31970391946fb4705"
+    },
+    "phase-01-curriculum/scientific-review-queue.json": {
+      "bytes": 7885,
+      "sha256": "404b07eac35cfed5810df37a9401eb3c3a07c2a88b3fa78256e7f1e086a84784"
+    },
+    "phase-01-curriculum/slide-inventory.json": {
+      "bytes": 15787,
+      "sha256": "337a8fc995243bc881971310fbd80fe44e9d3070d100ba425b4d58dec83f7c18"
+    },
+    "phase-01-curriculum/study-guide-coverage.json": {
+      "bytes": 19217,
+      "sha256": "b6845d106847f5a2c6bbed43c971985c4f85bede7adc21f0e35d6f728e7b97aa"
+    },
+    "phase-02-readings/README.md": {
+      "bytes": 2070,
+      "sha256": "3b84a70b38cef529bfbf8973f8bb58953954fcc9c9fa9fbe1de94d793f6c1f6c"
+    },
+    "phase-02-readings/build_stage2.py": {
+      "bytes": 22999,
+      "sha256": "2d20acd9238ec57cebe45fbc8da19e573d47f41c598ad02e4b421caaf413177c"
+    },
+    "phase-02-readings/deep-dive-source.md": {
+      "bytes": 57265,
+      "sha256": "35442a517ce9c6cc7145f42481031089b88d354845d696c650ed7af95fccfe7b"
+    },
+    "phase-02-readings/manifest.json": {
+      "bytes": 682,
+      "sha256": "42339a8b6a3cf9c726270c1e55d58840418436a4b2d2679bc59b78be3a2251db"
+    },
+    "phase-02-readings/overview-source.md": {
+      "bytes": 6780,
+      "sha256": "c86805c63f818276e384a096e1418ea94da70a6e077951236943d273b207b41e"
+    },
+    "phase-02-readings/respiratory-stage2-preview.html": {
+      "bytes": 109031,
+      "sha256": "19bcb59b336179c3b3c9feacb9e09557c8fee31a0e1a9a5c28b7a3ddb1ca1b11"
+    },
+    "phase-02-readings/respiratory-system-deep-dive.json": {
+      "bytes": 63618,
+      "sha256": "7ef8d9483a0391536c9aa704ea0fbea74f0b90926b53aa5981925b223a2e4b22"
+    },
+    "phase-02-readings/respiratory-system-deep-dive.md": {
+      "bytes": 57265,
+      "sha256": "35442a517ce9c6cc7145f42481031089b88d354845d696c650ed7af95fccfe7b"
+    },
+    "phase-02-readings/respiratory-system-general-overview.json": {
+      "bytes": 9247,
+      "sha256": "8fa029a93e019152508bf5d4061560f75dfd5fa688b3303f29c9ddffe5a8800d"
+    },
+    "phase-02-readings/respiratory-system-general-overview.md": {
+      "bytes": 6780,
+      "sha256": "c86805c63f818276e384a096e1418ea94da70a6e077951236943d273b207b41e"
+    },
+    "phase-02-readings/scientific-review-notes.json": {
+      "bytes": 8491,
+      "sha256": "5195131c09881ba7741758452644b53dc452172a1e756fb01a061d11051a25d2"
+    },
+    "phase-02-readings/study-guide-stage2-coverage.json": {
+      "bytes": 16874,
+      "sha256": "1d39b610828bcb0e5fdde7979e6969260bfa590f3359e786b33bffe6932e687d"
+    },
+    "phase-03-readings/README.md": {
+      "bytes": 2419,
+      "sha256": "e632c74ca6da7540976dc572f29359e35134b29ba4a69103d9fc98d599d09d11"
+    },
+    "phase-03-readings/build_stage3.py": {
+      "bytes": 27361,
+      "sha256": "4f3f77ea68210e8cea87aa2a3bc1b2561508152ffce8c7007e4a3b5c8ec91ed0"
+    },
+    "phase-03-readings/checksums.sha256": {
+      "bytes": 1684,
+      "sha256": "6c8abc2d548c40b967835c25eb1069e7a59cbad7dfd781b6513052a9a6682235"
+    },
+    "phase-03-readings/exam-cram-source.md": {
+      "bytes": 22046,
+      "sha256": "1a0a1c64f358bbaa1b929ef3be0e86d1cb88a584b18214f5d5590c1cf83235b0"
+    },
+    "phase-03-readings/how-it-connects-source.md": {
+      "bytes": 16474,
+      "sha256": "f2145ab2da8acb5f5889f14b6abaec8e1c1ea0cd987326049647d8c043e4467c"
+    },
+    "phase-03-readings/manifest.json": {
+      "bytes": 844,
+      "sha256": "e6981b0cfa2221fcf04f9c37fb8e4a68e885dd0d8b64540db96e4d5c4c3724a8"
+    },
+    "phase-03-readings/respiratory-stage3-preview.html": {
+      "bytes": 152929,
+      "sha256": "760b499420cc0c91b6291bc16765f15ff3708f07b1a33369fe6741944e7ba1be"
+    },
+    "phase-03-readings/respiratory-system-exam-cram.json": {
+      "bytes": 26980,
+      "sha256": "52d56c96d1c0a519be1505094377b244a2bc00c2ebe26c830813221a82002d1f"
+    },
+    "phase-03-readings/respiratory-system-exam-cram.md": {
+      "bytes": 22046,
+      "sha256": "1a0a1c64f358bbaa1b929ef3be0e86d1cb88a584b18214f5d5590c1cf83235b0"
+    },
+    "phase-03-readings/respiratory-system-how-it-connects.json": {
+      "bytes": 19388,
+      "sha256": "cb1ffcec145d4e78697336323f0055bd4fe7ebac802110391039e25daa5aebdb"
+    },
+    "phase-03-readings/respiratory-system-how-it-connects.md": {
+      "bytes": 16474,
+      "sha256": "f2145ab2da8acb5f5889f14b6abaec8e1c1ea0cd987326049647d8c043e4467c"
+    },
+    "phase-03-readings/respiratory-system-why-is-this-cool.json": {
+      "bytes": 11340,
+      "sha256": "f4dee2933b778cb113f799f63995af1819cd9e1f585034fd3b67ad550483de69"
+    },
+    "phase-03-readings/respiratory-system-why-is-this-cool.md": {
+      "bytes": 9965,
+      "sha256": "9426953730e1b8b775efb83042c30b71bc6c3eccc6e970a41f5c05467f980150"
+    },
+    "phase-03-readings/scientific-review-notes.json": {
+      "bytes": 8476,
+      "sha256": "56498a0894e4d4a00b4b681d68b04d48780481ca266abab0cd857b96920d8433"
+    },
+    "phase-03-readings/study-guide-stage3-coverage.json": {
+      "bytes": 16430,
+      "sha256": "9c8d2805992c6640e14434aef23d9b9de2b1b5466b41196c9034290583917677"
+    },
+    "phase-03-readings/who-cares-source.md": {
+      "bytes": 9965,
+      "sha256": "9426953730e1b8b775efb83042c30b71bc6c3eccc6e970a41f5c05467f980150"
+    },
+    "phase-04-study-tools/README.md": {
+      "bytes": 2457,
+      "sha256": "be3e6b6c14d45b7e8d0bad721dfa72e6d166ccafd36d4cef12173c57987c8bdb"
+    },
+    "phase-04-study-tools/answer-key.md": {
+      "bytes": 42550,
+      "sha256": "e98860c666b46e0d61a465c59b68ee3dcf091ae2b061a1069ba074778b7f9505"
+    },
+    "phase-04-study-tools/chapter23-study-guide-alignment.json": {
+      "bytes": 28027,
+      "sha256": "54326c333ae78ed9f59b27e40946e8d80fbbd152228dbbc36db8312454ff3fd5"
+    },
+    "phase-04-study-tools/concepts.json": {
+      "bytes": 192904,
+      "sha256": "f6e671f6383d770634aab3359a1a1c7aac9825324ea28f86764ab5c99f6fc8a7"
+    },
+    "phase-04-study-tools/fill-in-the-blank.json": {
+      "bytes": 82013,
+      "sha256": "959cf6b058932512b3042c10017855a6ab1146fa7f308d02db2ef9dcb4d89bd9"
+    },
+    "phase-04-study-tools/flashcards.json": {
+      "bytes": 116398,
+      "sha256": "d1ab20e29929253ce1869e7f95eb7179d5accf67d99fe2cd523d1a24dbc99eba"
+    },
+    "phase-04-study-tools/manifest.json": {
+      "bytes": 3117,
+      "sha256": "f26be94d008074bd9a49b939db740e93e364159456ceb8635b3f60e5a9c1065a"
+    },
+    "phase-04-study-tools/multiple-choice.json": {
+      "bytes": 169513,
+      "sha256": "cb8560ababf65f490f898c195f98810fe1ce5b58ae3f8ebb4654bf591a2c07f0"
+    },
+    "phase-04-study-tools/respiratory-study-tools-preview.html": {
+      "bytes": 366734,
+      "sha256": "7aed81fee3ae922790831ea1b9d6a706fb39f3ff6a944005d5075f8bb5af7180"
+    },
+    "phase-04-study-tools/scientific-review-notes.md": {
+      "bytes": 3483,
+      "sha256": "4738cfdd902a0db8ff4940afe8c0858a4de805ffce9d6f77258a67740f536007"
+    },
+    "phase-04-study-tools/source-section-index.json": {
+      "bytes": 23169,
+      "sha256": "a4b5ba86130110c11f21be2b8c86f05f1810bd65349795dc23406534f8102e46"
+    },
+    "phase-04-study-tools/types.ts": {
+      "bytes": 1547,
+      "sha256": "488882e1dff673e46c08358f7f25e3bb2d743c6b96d31196e2a3c0e2fc0ca96d"
+    },
+    "phase-04-study-tools/validate.py": {
+      "bytes": 2478,
+      "sha256": "323cae39195ccba8201ffe22e521c34a1033ecaf5a10e22148b30e395e4c41b4"
+    },
+    "README.md": {
+      "bytes": 1389,
+      "sha256": "209a6b69f6f3f7198a23a32cbdff2fecdc45cb71bf006e8ab6f844587d31e34f"
+    }
+  },
+  "notes": [
+    "Earlier phase curriculum and reading assets are preserved byte-for-byte from the Phase 3 master.",
+    "Master README and manifest updated to describe Phase 4.",
+    "New scientific-content records require editorial review before publication."
+  ],
+  "latestPhase": 5,
+  "phase5": {
+    "galleryFigures": 29,
+    "fullResolutionWebp": 29,
+    "webpThumbnails": 29,
+    "candidate3dStructureTargets": 23,
+    "sourceDecks": [
+      "23-Respiratory System.pptx",
+      "Respiratory - Copy.pptx"
+    ],
+    "note": "Canonical mesh IDs require separate resolution and visual verification."
+  }
+}

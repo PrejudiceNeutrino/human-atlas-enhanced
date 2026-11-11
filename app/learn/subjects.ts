@@ -48,6 +48,7 @@ export interface LearnSubject {
   title: string;
   href: string;
   modelShortcut?: { label: string; tabId: string };
+  gallery?: { count: number; labelPractice?: boolean };
   tabs: LearnTab[];
 }
 
@@ -62,6 +63,7 @@ export const learnSubjects: LearnSubject[] = [
     title: 'Digestive System',
     href: '/learn/digestive',
     modelShortcut: { label: 'Digestive Model', tabId: 'digestive-system-visualize' },
+    gallery: { count: 30, labelPractice: true },
     tabs: [
       { id: 'digestive-system-general-overview', title: 'General Overview', kind: 'article', presentation: 'overview', description: 'Start with an accessible introduction to the subject, covering its fundamental concepts, major components, and essential functions. Ideal for building a foundation before exploring the details.' },
       { id: 'digestive-system-deep-dive', title: 'Deep Dive', kind: 'article', presentation: 'reference', description: 'Explore the subject in greater depth through detailed explanations, terminology, structures, mechanisms, and relationships. Designed for comprehensive understanding and reference.' },
@@ -74,6 +76,16 @@ export const learnSubjects: LearnSubject[] = [
     ],
   },
 ];
+
+// Subjects share the same tab contracts and section-guide descriptions.
+learnSubjects.push({
+  slug: 'respiratory', label: 'Respiratory', title: 'Respiratory System', href: '/learn/respiratory',
+  modelShortcut: { label: 'Respiratory Model', tabId: 'respiratory-system-visualize' },
+  gallery: { count: 29 },
+  tabs: learnSubjects[0].tabs.map(({ readingIntro: _digestiveIntro, ...tab }) => ({
+    ...tab, id: tab.id.replace('digestive-system-', 'respiratory-system-'),
+  })),
+});
 
 export function subjectForPath(pathname: string) {
   return learnSubjects.find(subject => subject.href === pathname);

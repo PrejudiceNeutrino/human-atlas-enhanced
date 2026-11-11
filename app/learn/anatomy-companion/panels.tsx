@@ -3,6 +3,7 @@ import { Switch } from '@/components/ui/switch';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { SYSTEMS, type Part, type SceneState, type SystemId } from '../../anatomy';
 import type { RepresentationId } from '../../identity-contracts';
+import { learnSubjects } from '../subjects';
 import type { AnatomyLesson } from './references';
 
 type HiddenItem = { id: RepresentationId; part: Part };
@@ -22,7 +23,7 @@ export function LearningVisibility({ id, parts, state, hidden, visibleCount, les
       <TabsList aria-label="Visibility tools"><TabsTrigger value="systems">Systems</TabsTrigger><TabsTrigger value="hidden">Hidden <span>{hidden.length}</span></TabsTrigger></TabsList>
       <TabsContent value="systems">
         <div className="learn-viewer-system-list">{systems.map(system => <div key={system.id} className="learn-viewer-system-row"><span className="system-dot" style={{ background: system.color }}/><span>{system.name}</span><small>{parts.filter(part => part.system === system.id).length}</small><Switch checked={state.visible.includes(system.id)} onCheckedChange={() => onToggleSystem(system.id)} aria-label={`Show ${system.name.toLowerCase()}`}/></div>)}</div>
-        <h4 className="learn-viewer-subheading">Digestive structures</h4><div className="learn-viewer-structure-list">{lesson.structures.map(item => <button type="button" className="learn-viewer-structure-card" key={item.conceptId} aria-pressed={activeConcept === item.conceptId} disabled={!countForConcept(item.conceptId)} onClick={() => onChoose(item.conceptId)}><span>{item.label}</span><small>{countForConcept(item.conceptId)}</small><ChevronRight size={14} aria-hidden="true"/></button>)}</div>
+        <h4 className="learn-viewer-subheading">{learnSubjects.find(item => item.slug === lesson.subjectId)?.label ?? lesson.subjectId} structures</h4><div className="learn-viewer-structure-list">{lesson.structures.map(item => <button type="button" className="learn-viewer-structure-card" key={item.conceptId} aria-pressed={activeConcept === item.conceptId} disabled={!countForConcept(item.conceptId)} onClick={() => onChoose(item.conceptId)}><span>{item.label}</span><small>{countForConcept(item.conceptId)}</small><ChevronRight size={14} aria-hidden="true"/></button>)}</div>
       </TabsContent>
       <TabsContent value="hidden"><div className="learn-viewer-hidden-list">{hidden.length ? <ul aria-label="Hidden structures, newest first">{hidden.map(item => <li key={item.id}><span>{item.part.name}<small>{item.part.provenance?.sourceId ?? item.part.id}</small></span><button type="button" aria-label={`Restore ${item.part.name}`} onClick={() => onRestore(item.id)}>Restore</button></li>)}</ul> : <p>No structures hidden. Select anatomy and press H to hide it.</p>}</div></TabsContent>
     </Tabs>
@@ -30,14 +31,14 @@ export function LearningVisibility({ id, parts, state, hidden, visibleCount, les
   </section>;
 }
 
-export function LearningInspector({ id, name, description, selected, members, isolated, unavailable, onHide, onIsolate, onExit, onClear, onMember, onClose }: {
-  id: string; name: string; description: string; selected: Part[]; members: Part[]; isolated: boolean; unavailable: boolean;
+export function LearningInspector({ subjectLabel = 'Digestive', id, name, description, selected, members, isolated, unavailable, onHide, onIsolate, onExit, onClear, onMember, onClose }: {
+  subjectLabel?: string; id: string; name: string; description: string; selected: Part[]; members: Part[]; isolated: boolean; unavailable: boolean;
   onHide: () => void; onIsolate: () => void; onExit: () => void; onClear: () => void; onMember: (id: string) => void; onClose: () => void;
 }) {
   return <section id={id} className="learn-viewer-panel learn-viewer-inspector" aria-label="Structure inspector">
     <header className="learn-viewer-panel-heading"><h3>Inspect</h3><button type="button" aria-label="Close structure inspector" onClick={onClose}><X size={16}/></button></header>
-    <div className="learn-viewer-inspector-copy" aria-live="polite"><span className="learn-viewer-subheading">{isolated ? 'Isolated anatomy' : 'Digestive anatomy'}</span><h4>{name}</h4><p>{unavailable ? 'This structure is not represented in this model. No substitute anatomy is highlighted.' : description}</p>{(selected.length > 0 || (isolated && members.length > 0)) && <small>{selected.length || members.length} {selected.length ? 'selected' : 'included'} {(selected.length || members.length) === 1 ? 'piece' : 'pieces'}</small>}</div>
+    <div className="learn-viewer-inspector-copy" aria-live="polite"><span className="learn-viewer-subheading">{isolated ? 'Isolated anatomy' : `${subjectLabel} anatomy`}</span><h4>{name}</h4><p>{unavailable ? 'This structure is not represented in this model. No substitute anatomy is highlighted.' : description}</p>{(selected.length > 0 || (isolated && members.length > 0)) && <small>{selected.length || members.length} {selected.length ? 'selected' : 'included'} {(selected.length || members.length) === 1 ? 'piece' : 'pieces'}</small>}</div>
     {members.length > 1 && <div className="learn-viewer-members"><h4 className="learn-viewer-subheading">Included structures</h4><div className="learn-viewer-structure-list">{members.map(part => <button key={part.id} className="learn-viewer-structure-card" type="button" aria-pressed={selected.some(item => item.id === part.id)} onClick={() => onMember(part.id)}><span>{part.name}</span>{selected.some(item => item.id === part.id) ? <Check size={14} aria-hidden="true"/> : <ChevronRight size={14} aria-hidden="true"/>}</button>)}</div></div>}
-    <div className="learn-viewer-inspector-actions"><button type="button" disabled={!selected.length} aria-keyshortcuts="H" onClick={onHide}><EyeOff size={15}/>Hide selected<kbd>H</kbd></button><button type="button" disabled={!selected.length} aria-keyshortcuts="I" onClick={onIsolate}><Focus size={15}/>Isolate selection<kbd>I</kbd></button>{isolated && <button type="button" onClick={onExit}>Show digestive anatomy</button>}<button type="button" disabled={!selected.length} onClick={onClear}>Clear selection</button></div>
+    <div className="learn-viewer-inspector-actions"><button type="button" disabled={!selected.length} aria-keyshortcuts="H" onClick={onHide}><EyeOff size={15}/>Hide selected<kbd>H</kbd></button><button type="button" disabled={!selected.length} aria-keyshortcuts="I" onClick={onIsolate}><Focus size={15}/>Isolate selection<kbd>I</kbd></button>{isolated && <button type="button" onClick={onExit}>Show {subjectLabel.toLowerCase()} anatomy</button>}<button type="button" disabled={!selected.length} onClick={onClear}>Clear selection</button></div>
   </section>;
 }

@@ -1,0 +1,590 @@
+{
+  "subject": "respiratory-system",
+  "studyGuide": "23-Study Guide.docx",
+  "coverageItemCount": 30,
+  "items": [
+    {
+      "id": "SG-00",
+      "kind": "terminology",
+      "prompt": "Terminology:  mucus escalator,  vestibular folds,   vocal folds,   phonation,   articulation,   alveolar ducts,   quiet breathing,   forced breathing,   vital capacity,   total lung capacity,   partial pressure,",
+      "keyConcept": "11 course terms: mucus escalator, vestibular folds, vocal folds, phonation, articulation, alveolar ducts, quiet breathing, forced breathing, vital capacity, total lung capacity, partial pressure",
+      "overviewSectionId": "airway-defense",
+      "deepDiveSectionId": "respiratory-mucosa",
+      "plannedExamCramSectionId": "mucociliary-defenses",
+      "sourceSlides": {
+        "physiology": [
+          5,
+          10,
+          11,
+          16,
+          27,
+          30,
+          31,
+          32
+        ],
+        "anatomy": [
+          10,
+          15
+        ]
+      },
+      "status": "terms-distributed-across-stage2"
+    },
+    {
+      "id": "SG-01",
+      "kind": "question",
+      "prompt": "What are the major respiratory functions?",
+      "keyConcept": "Respiratory functions and physiological roles",
+      "overviewSectionId": "functions-overview",
+      "deepDiveSectionId": "functions-organization",
+      "plannedExamCramSectionId": "functions-organization",
+      "sourceSlides": {
+        "physiology": [
+          2
+        ],
+        "anatomy": [
+          1
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-02",
+      "kind": "question",
+      "prompt": "What are the components of the upper and lower respiratory system?  What is the function of the upper respiratory system?",
+      "keyConcept": "Upper vs lower respiratory systems, and upper airway roles",
+      "overviewSectionId": "air-route",
+      "deepDiveSectionId": "nasal-cavity",
+      "plannedExamCramSectionId": "upper-lower-airway",
+      "sourceSlides": {
+        "physiology": [
+          3,
+          4,
+          7
+        ],
+        "anatomy": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-03",
+      "kind": "question",
+      "prompt": "What are the respiratory epithelium and lamina propria?",
+      "keyConcept": "Respiratory epithelium and lamina propria",
+      "overviewSectionId": "airway-defense",
+      "deepDiveSectionId": "respiratory-mucosa",
+      "plannedExamCramSectionId": "mucociliary-defenses",
+      "sourceSlides": {
+        "physiology": [
+          5
+        ],
+        "anatomy": [
+          4
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-04",
+      "kind": "question",
+      "prompt": "Understand the histological differences in the respiratory tract",
+      "keyConcept": "Histology of airway segments and alveoli",
+      "overviewSectionId": "airway-defense",
+      "deepDiveSectionId": "histology-tract",
+      "plannedExamCramSectionId": "tissue-linings",
+      "sourceSlides": {
+        "physiology": [
+          5,
+          6,
+          17,
+          19
+        ],
+        "anatomy": [
+          10,
+          15
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-05",
+      "kind": "question",
+      "prompt": "What are the benefits of nasal breathing?",
+      "keyConcept": "Benefits and functions of nasal breathing",
+      "overviewSectionId": "air-route",
+      "deepDiveSectionId": "nasal-cavity",
+      "plannedExamCramSectionId": "upper-lower-airway",
+      "sourceSlides": {
+        "physiology": [
+          7
+        ],
+        "anatomy": [
+          2,
+          3,
+          4
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-06",
+      "kind": "question",
+      "prompt": "What are the functions of the larynx?",
+      "keyConcept": "Laryngeal functions",
+      "overviewSectionId": "air-route",
+      "deepDiveSectionId": "larynx-cartilages",
+      "plannedExamCramSectionId": "larynx-voice",
+      "sourceSlides": {
+        "physiology": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "anatomy": [
+          6,
+          7,
+          10
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-07",
+      "kind": "question",
+      "prompt": "What factors affect the pitch of a sound from the vocal cords?",
+      "keyConcept": "Factors controlling vocal pitch",
+      "overviewSectionId": "air-route",
+      "deepDiveSectionId": "voice-and-cough",
+      "plannedExamCramSectionId": "larynx-voice",
+      "sourceSlides": {
+        "physiology": [
+          11,
+          12
+        ],
+        "anatomy": [
+          6,
+          7,
+          10
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-08",
+      "kind": "question",
+      "prompt": "Contrast intrinsic vs. extrinsic muscles of the larynx.",
+      "keyConcept": "Intrinsic versus extrinsic laryngeal muscles",
+      "overviewSectionId": "air-route",
+      "deepDiveSectionId": "larynx-cartilages",
+      "plannedExamCramSectionId": "larynx-voice",
+      "sourceSlides": {
+        "physiology": [
+          12
+        ],
+        "anatomy": [
+          6,
+          7
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-09",
+      "kind": "question",
+      "prompt": "Why is the epiglottis important?",
+      "keyConcept": "Epiglottis and swallowing-related airway protection",
+      "overviewSectionId": "air-route",
+      "deepDiveSectionId": "voice-and-cough",
+      "plannedExamCramSectionId": "larynx-voice",
+      "sourceSlides": {
+        "physiology": [
+          8,
+          12
+        ],
+        "anatomy": [
+          6,
+          7
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-10",
+      "kind": "question",
+      "prompt": "What occurs during the cough reflex?",
+      "keyConcept": "Cough reflex sequence",
+      "overviewSectionId": "airway-defense",
+      "deepDiveSectionId": "voice-and-cough",
+      "plannedExamCramSectionId": "cough-reflex",
+      "sourceSlides": {
+        "physiology": [
+          10
+        ],
+        "anatomy": [
+          10
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-11",
+      "kind": "question",
+      "prompt": "What does the trachealis muscle do and how does it respond to the autonomic nervous system?  What does the elastic ligament do?",
+      "keyConcept": "Trachealis muscle and elastic ligament; autonomic effects",
+      "overviewSectionId": "air-route",
+      "deepDiveSectionId": "trachea",
+      "plannedExamCramSectionId": "trachea-bronchi",
+      "sourceSlides": {
+        "physiology": [
+          13,
+          14
+        ],
+        "anatomy": [
+          11,
+          12
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-12",
+      "kind": "question",
+      "prompt": "How does the bronchial tree respond to sympathetic and parasympathetic activation?",
+      "keyConcept": "Bronchial sympathetic versus parasympathetic responses",
+      "overviewSectionId": "air-route",
+      "deepDiveSectionId": "bronchial-tree",
+      "plannedExamCramSectionId": "trachea-bronchi",
+      "sourceSlides": {
+        "physiology": [
+          15
+        ],
+        "anatomy": [
+          12,
+          13,
+          14
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-13",
+      "kind": "question",
+      "prompt": "What are the 3 types of cells in the lung and their functions?  What is surfactant?",
+      "keyConcept": "Three alveolar cell types and surfactant",
+      "overviewSectionId": "alveoli",
+      "deepDiveSectionId": "alveoli-and-cells",
+      "plannedExamCramSectionId": "alveoli-membrane",
+      "sourceSlides": {
+        "physiology": [
+          16,
+          17,
+          18
+        ],
+        "anatomy": [
+          15
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-14",
+      "kind": "question",
+      "prompt": "What type of epithelium lines the alveoli?  Why?",
+      "keyConcept": "Alveolar epithelial type and explanation",
+      "overviewSectionId": "alveoli",
+      "deepDiveSectionId": "alveoli-and-cells",
+      "plannedExamCramSectionId": "alveoli-membrane",
+      "sourceSlides": {
+        "physiology": [
+          6,
+          17,
+          19
+        ],
+        "anatomy": [
+          15
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-15",
+      "kind": "question",
+      "prompt": "What makes up the respiratory membrane and what occurs there?",
+      "keyConcept": "Respiratory membrane and its diffusion function",
+      "overviewSectionId": "alveoli",
+      "deepDiveSectionId": "respiratory-membrane",
+      "plannedExamCramSectionId": "alveoli-membrane",
+      "sourceSlides": {
+        "physiology": [
+          18,
+          19
+        ],
+        "anatomy": [
+          15
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-16",
+      "kind": "question",
+      "prompt": "How does internal respiration differ from external respiration?",
+      "keyConcept": "Internal versus external respiration",
+      "overviewSectionId": "gases-and-blood",
+      "deepDiveSectionId": "respiration-terms",
+      "plannedExamCramSectionId": "external-internal",
+      "sourceSlides": {
+        "physiology": [
+          20,
+          21
+        ],
+        "anatomy": [
+          1
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-17",
+      "kind": "question",
+      "prompt": "Describe the 3 steps in external respiration.",
+      "keyConcept": "Three course-defined stages of external respiration",
+      "overviewSectionId": "gases-and-blood",
+      "deepDiveSectionId": "respiration-terms",
+      "plannedExamCramSectionId": "external-internal",
+      "sourceSlides": {
+        "physiology": [
+          20,
+          21
+        ],
+        "anatomy": [
+          1
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-18",
+      "kind": "question",
+      "prompt": "What is Boyle’s Law and how does it relate to pulmonary ventilation (how does it make air rush in and out)?",
+      "keyConcept": "Boyle’s law and pulmonary ventilation",
+      "overviewSectionId": "pressure-breathing",
+      "deepDiveSectionId": "boyle-and-pressure",
+      "plannedExamCramSectionId": "boyle-law",
+      "sourceSlides": {
+        "physiology": [
+          22,
+          23,
+          26
+        ],
+        "anatomy": []
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-19",
+      "kind": "question",
+      "prompt": "What happens in the thoracic cavity during inhalation and exhalation (Diaphragm and Ribs)?",
+      "keyConcept": "Changes in diaphragm/ribs/thoracic pressure during inhalation and exhalation",
+      "overviewSectionId": "pressure-breathing",
+      "deepDiveSectionId": "inhalation-exhalation",
+      "plannedExamCramSectionId": "breathing-mechanics",
+      "sourceSlides": {
+        "physiology": [
+          24,
+          25,
+          26
+        ],
+        "anatomy": [
+          16
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-20",
+      "kind": "question",
+      "prompt": "What are the 2 most important muscles used during inhalation?",
+      "keyConcept": "Two principal inhalation muscles",
+      "overviewSectionId": "pressure-breathing",
+      "deepDiveSectionId": "breathing-muscles",
+      "plannedExamCramSectionId": "breathing-mechanics",
+      "sourceSlides": {
+        "physiology": [
+          24,
+          27,
+          28,
+          29
+        ],
+        "anatomy": [
+          18
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-21",
+      "kind": "question",
+      "prompt": "What are the 4 respiratory volumes?",
+      "keyConcept": "Four individual respiratory volumes",
+      "overviewSectionId": "pressure-breathing",
+      "deepDiveSectionId": "lung-volumes",
+      "plannedExamCramSectionId": "volumes-capacities",
+      "sourceSlides": {
+        "physiology": [
+          30,
+          31
+        ],
+        "anatomy": []
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-22",
+      "kind": "question",
+      "prompt": "Understand Henry’s Law and how it relates to gas exchange at the lungs and tissues (diffusion of oxygen and carbon dioxide)?",
+      "keyConcept": "Henry’s law, partial pressure, and lung/tissue gas diffusion",
+      "overviewSectionId": "gases-and-blood",
+      "deepDiveSectionId": "gas-diffusion-henry",
+      "plannedExamCramSectionId": "henry-diffusion",
+      "sourceSlides": {
+        "physiology": [
+          32,
+          33,
+          34
+        ],
+        "anatomy": [
+          15
+        ]
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-23",
+      "kind": "question",
+      "prompt": "What is hemoglobin called when bound to oxygen?  To carbon dioxide?  What causes the gases to bind?",
+      "keyConcept": "Hemoglobin oxygen/CO2 forms and binding conditions",
+      "overviewSectionId": "gases-and-blood",
+      "deepDiveSectionId": "hemoglobin-oxygen",
+      "plannedExamCramSectionId": "hemoglobin-transport",
+      "sourceSlides": {
+        "physiology": [
+          35,
+          36,
+          37
+        ],
+        "anatomy": []
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-24",
+      "kind": "question",
+      "prompt": "Understand the Oxygen-Hemoglobin Saturation Curve.",
+      "keyConcept": "Oxygen–hemoglobin saturation curve",
+      "overviewSectionId": "gases-and-blood",
+      "deepDiveSectionId": "hemoglobin-oxygen",
+      "plannedExamCramSectionId": "hemoglobin-transport",
+      "sourceSlides": {
+        "physiology": [
+          35
+        ],
+        "anatomy": []
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-25",
+      "kind": "question",
+      "prompt": "What are the 3 ways in which carbon dioxide can be transported?  What enzyme converts carbon dioxide to carbonic acid?",
+      "keyConcept": "Three forms of blood CO2 transport and carbonic anhydrase",
+      "overviewSectionId": "gases-and-blood",
+      "deepDiveSectionId": "co2-transport",
+      "plannedExamCramSectionId": "co2-and-ph",
+      "sourceSlides": {
+        "physiology": [
+          36,
+          37
+        ],
+        "anatomy": []
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-26",
+      "kind": "question",
+      "prompt": "How does it contribute to the pH of blood?",
+      "keyConcept": "CO2, bicarbonate, and blood pH regulation",
+      "overviewSectionId": "gases-and-blood",
+      "deepDiveSectionId": "co2-transport",
+      "plannedExamCramSectionId": "co2-and-ph",
+      "sourceSlides": {
+        "physiology": [
+          2,
+          36,
+          37,
+          40,
+          41
+        ],
+        "anatomy": []
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-27",
+      "kind": "question",
+      "prompt": "What and where is the respiratory rhythmicity center?",
+      "keyConcept": "Location and role of respiratory rhythmicity centers",
+      "overviewSectionId": "brain-controls",
+      "deepDiveSectionId": "brainstem-respiratory",
+      "plannedExamCramSectionId": "brainstem-control",
+      "sourceSlides": {
+        "physiology": [
+          38,
+          39
+        ],
+        "anatomy": []
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-28",
+      "kind": "question",
+      "prompt": "Contrast the Dorsal Respiratory Group vs. Ventral Respiratory Group.  What muscles do they innervate?",
+      "keyConcept": "Dorsal versus ventral respiratory groups and musculature",
+      "overviewSectionId": "brain-controls",
+      "deepDiveSectionId": "brainstem-respiratory",
+      "plannedExamCramSectionId": "brainstem-control",
+      "sourceSlides": {
+        "physiology": [
+          38,
+          39
+        ],
+        "anatomy": []
+      },
+      "status": "addressed-in-stage2"
+    },
+    {
+      "id": "SG-29",
+      "kind": "question",
+      "prompt": "Contrast the Apneustic and Pneumotaxic centers.   Where are they?  Which one would stimulate the DRG?",
+      "keyConcept": "Apneustic and pneumotaxic centers and medullary influence",
+      "overviewSectionId": "brain-controls",
+      "deepDiveSectionId": "pontine-and-reflex",
+      "plannedExamCramSectionId": "brainstem-control",
+      "sourceSlides": {
+        "physiology": [
+          38,
+          39
+        ],
+        "anatomy": []
+      },
+      "status": "addressed-in-stage2"
+    }
+  ]
+}

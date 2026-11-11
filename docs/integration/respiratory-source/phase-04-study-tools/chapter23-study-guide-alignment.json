@@ -1,0 +1,1272 @@
+{
+  "studyGuide": "23-Study Guide.docx",
+  "source": "Phase 3 curriculum coverage",
+  "objectives": [
+    {
+      "id": "SG-00",
+      "question": "Terminology:  mucus escalator,  vestibular folds,   vocal folds,   phonation,   articulation,   alveolar ducts,   quiet breathing,   forced breathing,   vital capacity,   total lung capacity,   partial pressure,",
+      "studyGuideSection": "mucociliary-defenses",
+      "topics": [
+        "mucosa",
+        "larynx",
+        "alveoli",
+        "ventilation",
+        "volumes",
+        "diffusion"
+      ],
+      "multipleChoiceIds": [
+        "mc-015",
+        "mc-016",
+        "mc-017",
+        "mc-018",
+        "mc-019",
+        "mc-020",
+        "mc-021",
+        "mc-022",
+        "mc-023",
+        "mc-024",
+        "mc-025",
+        "mc-026",
+        "mc-027",
+        "mc-028",
+        "mc-029",
+        "mc-045",
+        "mc-046",
+        "mc-047",
+        "mc-048",
+        "mc-049",
+        "mc-050",
+        "mc-051",
+        "mc-052",
+        "mc-053",
+        "mc-054",
+        "mc-055",
+        "mc-056",
+        "mc-057",
+        "mc-058",
+        "mc-059",
+        "mc-060",
+        "mc-061",
+        "mc-062",
+        "mc-063",
+        "mc-064",
+        "mc-065",
+        "mc-066",
+        "mc-067",
+        "mc-068",
+        "mc-069",
+        "mc-070",
+        "mc-071",
+        "mc-101",
+        "mc-102",
+        "mc-103"
+      ],
+      "fillBlankIds": [
+        "fib-010",
+        "fib-011",
+        "fib-012",
+        "fib-013",
+        "fib-014",
+        "fib-015",
+        "fib-016",
+        "fib-017",
+        "fib-018",
+        "fib-019",
+        "fib-030",
+        "fib-031",
+        "fib-032",
+        "fib-033",
+        "fib-034",
+        "fib-035",
+        "fib-036",
+        "fib-037",
+        "fib-038",
+        "fib-039",
+        "fib-040",
+        "fib-041",
+        "fib-042",
+        "fib-043",
+        "fib-044",
+        "fib-045",
+        "fib-046",
+        "fib-047",
+        "fib-048"
+      ],
+      "flashcardIds": [
+        "fc-013",
+        "fc-014",
+        "fc-015",
+        "fc-016",
+        "fc-017",
+        "fc-018",
+        "fc-019",
+        "fc-020",
+        "fc-021",
+        "fc-022",
+        "fc-023",
+        "fc-024",
+        "fc-037",
+        "fc-038",
+        "fc-039",
+        "fc-040",
+        "fc-041",
+        "fc-042",
+        "fc-043",
+        "fc-044",
+        "fc-045",
+        "fc-046",
+        "fc-047",
+        "fc-048",
+        "fc-049",
+        "fc-050",
+        "fc-051",
+        "fc-052",
+        "fc-053",
+        "fc-054",
+        "fc-055",
+        "fc-056",
+        "fc-057",
+        "fc-058",
+        "fc-059",
+        "fc-060",
+        "fc-090",
+        "fc-091",
+        "fc-092",
+        "fc-093",
+        "fc-094",
+        "fc-099",
+        "fc-100",
+        "fc-101",
+        "fc-104",
+        "fc-105",
+        "fc-106",
+        "fc-107"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-01",
+      "question": "What are the major respiratory functions?",
+      "studyGuideSection": "functions-organization",
+      "topics": [
+        "foundations"
+      ],
+      "multipleChoiceIds": [
+        "mc-001",
+        "mc-002",
+        "mc-003",
+        "mc-004",
+        "mc-005",
+        "mc-006",
+        "mc-007",
+        "mc-099"
+      ],
+      "fillBlankIds": [
+        "fib-001",
+        "fib-002",
+        "fib-003",
+        "fib-004"
+      ],
+      "flashcardIds": [
+        "fc-001",
+        "fc-002",
+        "fc-003",
+        "fc-004",
+        "fc-005",
+        "fc-006"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-02",
+      "question": "What are the components of the upper and lower respiratory system?  What is the function of the upper respiratory system?",
+      "studyGuideSection": "upper-lower-airway",
+      "topics": [
+        "nose",
+        "foundations"
+      ],
+      "multipleChoiceIds": [
+        "mc-001",
+        "mc-002",
+        "mc-003",
+        "mc-004",
+        "mc-005",
+        "mc-006",
+        "mc-007",
+        "mc-008",
+        "mc-009",
+        "mc-010",
+        "mc-011",
+        "mc-012",
+        "mc-013",
+        "mc-014",
+        "mc-099",
+        "mc-100"
+      ],
+      "fillBlankIds": [
+        "fib-001",
+        "fib-002",
+        "fib-003",
+        "fib-004",
+        "fib-005",
+        "fib-006",
+        "fib-007",
+        "fib-008",
+        "fib-009"
+      ],
+      "flashcardIds": [
+        "fc-001",
+        "fc-002",
+        "fc-003",
+        "fc-004",
+        "fc-005",
+        "fc-006",
+        "fc-007",
+        "fc-008",
+        "fc-009",
+        "fc-010",
+        "fc-011",
+        "fc-012",
+        "fc-085",
+        "fc-086",
+        "fc-087",
+        "fc-088",
+        "fc-089"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-03",
+      "question": "What are the respiratory epithelium and lamina propria?",
+      "studyGuideSection": "mucociliary-defenses",
+      "topics": [
+        "mucosa"
+      ],
+      "multipleChoiceIds": [
+        "mc-015",
+        "mc-016",
+        "mc-017",
+        "mc-018",
+        "mc-019",
+        "mc-020",
+        "mc-021"
+      ],
+      "fillBlankIds": [
+        "fib-010",
+        "fib-011",
+        "fib-012",
+        "fib-013",
+        "fib-014"
+      ],
+      "flashcardIds": [
+        "fc-013",
+        "fc-014",
+        "fc-015",
+        "fc-016",
+        "fc-017",
+        "fc-018"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-04",
+      "question": "Understand the histological differences in the respiratory tract",
+      "studyGuideSection": "tissue-linings",
+      "topics": [
+        "mucosa"
+      ],
+      "multipleChoiceIds": [
+        "mc-015",
+        "mc-016",
+        "mc-017",
+        "mc-018",
+        "mc-019",
+        "mc-020",
+        "mc-021"
+      ],
+      "fillBlankIds": [
+        "fib-010",
+        "fib-011",
+        "fib-012",
+        "fib-013",
+        "fib-014"
+      ],
+      "flashcardIds": [
+        "fc-013",
+        "fc-014",
+        "fc-015",
+        "fc-016",
+        "fc-017",
+        "fc-018"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-05",
+      "question": "What are the benefits of nasal breathing?",
+      "studyGuideSection": "upper-lower-airway",
+      "topics": [
+        "nose",
+        "foundations"
+      ],
+      "multipleChoiceIds": [
+        "mc-001",
+        "mc-002",
+        "mc-003",
+        "mc-004",
+        "mc-005",
+        "mc-006",
+        "mc-007",
+        "mc-008",
+        "mc-009",
+        "mc-010",
+        "mc-011",
+        "mc-012",
+        "mc-013",
+        "mc-014",
+        "mc-099",
+        "mc-100"
+      ],
+      "fillBlankIds": [
+        "fib-001",
+        "fib-002",
+        "fib-003",
+        "fib-004",
+        "fib-005",
+        "fib-006",
+        "fib-007",
+        "fib-008",
+        "fib-009"
+      ],
+      "flashcardIds": [
+        "fc-001",
+        "fc-002",
+        "fc-003",
+        "fc-004",
+        "fc-005",
+        "fc-006",
+        "fc-007",
+        "fc-008",
+        "fc-009",
+        "fc-010",
+        "fc-011",
+        "fc-012",
+        "fc-085",
+        "fc-086",
+        "fc-087",
+        "fc-088",
+        "fc-089"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-06",
+      "question": "What are the functions of the larynx?",
+      "studyGuideSection": "larynx-voice",
+      "topics": [
+        "larynx"
+      ],
+      "multipleChoiceIds": [
+        "mc-022",
+        "mc-023",
+        "mc-024",
+        "mc-025",
+        "mc-026",
+        "mc-027",
+        "mc-028",
+        "mc-029",
+        "mc-101"
+      ],
+      "fillBlankIds": [
+        "fib-015",
+        "fib-016",
+        "fib-017",
+        "fib-018",
+        "fib-019"
+      ],
+      "flashcardIds": [
+        "fc-019",
+        "fc-020",
+        "fc-021",
+        "fc-022",
+        "fc-023",
+        "fc-024",
+        "fc-090",
+        "fc-091",
+        "fc-092",
+        "fc-093",
+        "fc-094"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-07",
+      "question": "What factors affect the pitch of a sound from the vocal cords?",
+      "studyGuideSection": "larynx-voice",
+      "topics": [
+        "larynx"
+      ],
+      "multipleChoiceIds": [
+        "mc-022",
+        "mc-023",
+        "mc-024",
+        "mc-025",
+        "mc-026",
+        "mc-027",
+        "mc-028",
+        "mc-029",
+        "mc-101"
+      ],
+      "fillBlankIds": [
+        "fib-015",
+        "fib-016",
+        "fib-017",
+        "fib-018",
+        "fib-019"
+      ],
+      "flashcardIds": [
+        "fc-019",
+        "fc-020",
+        "fc-021",
+        "fc-022",
+        "fc-023",
+        "fc-024",
+        "fc-090",
+        "fc-091",
+        "fc-092",
+        "fc-093",
+        "fc-094"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-08",
+      "question": "Contrast intrinsic vs. extrinsic muscles of the larynx.",
+      "studyGuideSection": "larynx-voice",
+      "topics": [
+        "larynx"
+      ],
+      "multipleChoiceIds": [
+        "mc-022",
+        "mc-023",
+        "mc-024",
+        "mc-025",
+        "mc-026",
+        "mc-027",
+        "mc-028",
+        "mc-029",
+        "mc-101"
+      ],
+      "fillBlankIds": [
+        "fib-015",
+        "fib-016",
+        "fib-017",
+        "fib-018",
+        "fib-019"
+      ],
+      "flashcardIds": [
+        "fc-019",
+        "fc-020",
+        "fc-021",
+        "fc-022",
+        "fc-023",
+        "fc-024",
+        "fc-090",
+        "fc-091",
+        "fc-092",
+        "fc-093",
+        "fc-094"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-09",
+      "question": "Why is the epiglottis important?",
+      "studyGuideSection": "larynx-voice",
+      "topics": [
+        "larynx"
+      ],
+      "multipleChoiceIds": [
+        "mc-022",
+        "mc-023",
+        "mc-024",
+        "mc-025",
+        "mc-026",
+        "mc-027",
+        "mc-028",
+        "mc-029",
+        "mc-101"
+      ],
+      "fillBlankIds": [
+        "fib-015",
+        "fib-016",
+        "fib-017",
+        "fib-018",
+        "fib-019"
+      ],
+      "flashcardIds": [
+        "fc-019",
+        "fc-020",
+        "fc-021",
+        "fc-022",
+        "fc-023",
+        "fc-024",
+        "fc-090",
+        "fc-091",
+        "fc-092",
+        "fc-093",
+        "fc-094"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-10",
+      "question": "What occurs during the cough reflex?",
+      "studyGuideSection": "cough-reflex",
+      "topics": [
+        "larynx"
+      ],
+      "multipleChoiceIds": [
+        "mc-022",
+        "mc-023",
+        "mc-024",
+        "mc-025",
+        "mc-026",
+        "mc-027",
+        "mc-028",
+        "mc-029",
+        "mc-101"
+      ],
+      "fillBlankIds": [
+        "fib-015",
+        "fib-016",
+        "fib-017",
+        "fib-018",
+        "fib-019"
+      ],
+      "flashcardIds": [
+        "fc-019",
+        "fc-020",
+        "fc-021",
+        "fc-022",
+        "fc-023",
+        "fc-024",
+        "fc-090",
+        "fc-091",
+        "fc-092",
+        "fc-093",
+        "fc-094"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-11",
+      "question": "What does the trachealis muscle do and how does it respond to the autonomic nervous system?  What does the elastic ligament do?",
+      "studyGuideSection": "trachea-bronchi",
+      "topics": [
+        "trachea"
+      ],
+      "multipleChoiceIds": [
+        "mc-030",
+        "mc-031",
+        "mc-032",
+        "mc-033",
+        "mc-034",
+        "mc-035",
+        "mc-036",
+        "mc-037"
+      ],
+      "fillBlankIds": [
+        "fib-020",
+        "fib-021",
+        "fib-022",
+        "fib-023",
+        "fib-024"
+      ],
+      "flashcardIds": [
+        "fc-025",
+        "fc-026",
+        "fc-027",
+        "fc-028",
+        "fc-029",
+        "fc-030",
+        "fc-095",
+        "fc-096",
+        "fc-097",
+        "fc-098"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-12",
+      "question": "How does the bronchial tree respond to sympathetic and parasympathetic activation?",
+      "studyGuideSection": "trachea-bronchi",
+      "topics": [
+        "trachea"
+      ],
+      "multipleChoiceIds": [
+        "mc-030",
+        "mc-031",
+        "mc-032",
+        "mc-033",
+        "mc-034",
+        "mc-035",
+        "mc-036",
+        "mc-037"
+      ],
+      "fillBlankIds": [
+        "fib-020",
+        "fib-021",
+        "fib-022",
+        "fib-023",
+        "fib-024"
+      ],
+      "flashcardIds": [
+        "fc-025",
+        "fc-026",
+        "fc-027",
+        "fc-028",
+        "fc-029",
+        "fc-030",
+        "fc-095",
+        "fc-096",
+        "fc-097",
+        "fc-098"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-13",
+      "question": "What are the 3 types of cells in the lung and their functions?  What is surfactant?",
+      "studyGuideSection": "alveoli-membrane",
+      "topics": [
+        "alveoli"
+      ],
+      "multipleChoiceIds": [
+        "mc-045",
+        "mc-046",
+        "mc-047",
+        "mc-048",
+        "mc-049",
+        "mc-050",
+        "mc-051"
+      ],
+      "fillBlankIds": [
+        "fib-030",
+        "fib-031",
+        "fib-032",
+        "fib-033",
+        "fib-034"
+      ],
+      "flashcardIds": [
+        "fc-037",
+        "fc-038",
+        "fc-039",
+        "fc-040",
+        "fc-041",
+        "fc-042",
+        "fc-099",
+        "fc-100",
+        "fc-101"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-14",
+      "question": "What type of epithelium lines the alveoli?  Why?",
+      "studyGuideSection": "alveoli-membrane",
+      "topics": [
+        "alveoli"
+      ],
+      "multipleChoiceIds": [
+        "mc-045",
+        "mc-046",
+        "mc-047",
+        "mc-048",
+        "mc-049",
+        "mc-050",
+        "mc-051"
+      ],
+      "fillBlankIds": [
+        "fib-030",
+        "fib-031",
+        "fib-032",
+        "fib-033",
+        "fib-034"
+      ],
+      "flashcardIds": [
+        "fc-037",
+        "fc-038",
+        "fc-039",
+        "fc-040",
+        "fc-041",
+        "fc-042",
+        "fc-099",
+        "fc-100",
+        "fc-101"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-15",
+      "question": "What makes up the respiratory membrane and what occurs there?",
+      "studyGuideSection": "alveoli-membrane",
+      "topics": [
+        "alveoli"
+      ],
+      "multipleChoiceIds": [
+        "mc-045",
+        "mc-046",
+        "mc-047",
+        "mc-048",
+        "mc-049",
+        "mc-050",
+        "mc-051"
+      ],
+      "fillBlankIds": [
+        "fib-030",
+        "fib-031",
+        "fib-032",
+        "fib-033",
+        "fib-034"
+      ],
+      "flashcardIds": [
+        "fc-037",
+        "fc-038",
+        "fc-039",
+        "fc-040",
+        "fc-041",
+        "fc-042",
+        "fc-099",
+        "fc-100",
+        "fc-101"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-16",
+      "question": "How does internal respiration differ from external respiration?",
+      "studyGuideSection": "external-internal",
+      "topics": [
+        "foundations",
+        "diffusion"
+      ],
+      "multipleChoiceIds": [
+        "mc-001",
+        "mc-002",
+        "mc-003",
+        "mc-004",
+        "mc-005",
+        "mc-006",
+        "mc-007",
+        "mc-066",
+        "mc-067",
+        "mc-068",
+        "mc-069",
+        "mc-070",
+        "mc-071",
+        "mc-099"
+      ],
+      "fillBlankIds": [
+        "fib-001",
+        "fib-002",
+        "fib-003",
+        "fib-004",
+        "fib-045",
+        "fib-046",
+        "fib-047",
+        "fib-048"
+      ],
+      "flashcardIds": [
+        "fc-001",
+        "fc-002",
+        "fc-003",
+        "fc-004",
+        "fc-005",
+        "fc-006",
+        "fc-055",
+        "fc-056",
+        "fc-057",
+        "fc-058",
+        "fc-059",
+        "fc-060",
+        "fc-107"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-17",
+      "question": "Describe the 3 steps in external respiration.",
+      "studyGuideSection": "external-internal",
+      "topics": [
+        "foundations",
+        "diffusion"
+      ],
+      "multipleChoiceIds": [
+        "mc-001",
+        "mc-002",
+        "mc-003",
+        "mc-004",
+        "mc-005",
+        "mc-006",
+        "mc-007",
+        "mc-066",
+        "mc-067",
+        "mc-068",
+        "mc-069",
+        "mc-070",
+        "mc-071",
+        "mc-099"
+      ],
+      "fillBlankIds": [
+        "fib-001",
+        "fib-002",
+        "fib-003",
+        "fib-004",
+        "fib-045",
+        "fib-046",
+        "fib-047",
+        "fib-048"
+      ],
+      "flashcardIds": [
+        "fc-001",
+        "fc-002",
+        "fc-003",
+        "fc-004",
+        "fc-005",
+        "fc-006",
+        "fc-055",
+        "fc-056",
+        "fc-057",
+        "fc-058",
+        "fc-059",
+        "fc-060",
+        "fc-107"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-18",
+      "question": "What is Boyle’s Law and how does it relate to pulmonary ventilation (how does it make air rush in and out)?",
+      "studyGuideSection": "boyle-law",
+      "topics": [
+        "ventilation"
+      ],
+      "multipleChoiceIds": [
+        "mc-052",
+        "mc-053",
+        "mc-054",
+        "mc-055",
+        "mc-056",
+        "mc-057",
+        "mc-058",
+        "mc-102"
+      ],
+      "fillBlankIds": [
+        "fib-035",
+        "fib-036",
+        "fib-037",
+        "fib-038",
+        "fib-039"
+      ],
+      "flashcardIds": [
+        "fc-043",
+        "fc-044",
+        "fc-045",
+        "fc-046",
+        "fc-047",
+        "fc-048"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-19",
+      "question": "What happens in the thoracic cavity during inhalation and exhalation (Diaphragm and Ribs)?",
+      "studyGuideSection": "breathing-mechanics",
+      "topics": [
+        "ventilation"
+      ],
+      "multipleChoiceIds": [
+        "mc-052",
+        "mc-053",
+        "mc-054",
+        "mc-055",
+        "mc-056",
+        "mc-057",
+        "mc-058",
+        "mc-102"
+      ],
+      "fillBlankIds": [
+        "fib-035",
+        "fib-036",
+        "fib-037",
+        "fib-038",
+        "fib-039"
+      ],
+      "flashcardIds": [
+        "fc-043",
+        "fc-044",
+        "fc-045",
+        "fc-046",
+        "fc-047",
+        "fc-048"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-20",
+      "question": "What are the 2 most important muscles used during inhalation?",
+      "studyGuideSection": "breathing-mechanics",
+      "topics": [
+        "ventilation"
+      ],
+      "multipleChoiceIds": [
+        "mc-052",
+        "mc-053",
+        "mc-054",
+        "mc-055",
+        "mc-056",
+        "mc-057",
+        "mc-058",
+        "mc-102"
+      ],
+      "fillBlankIds": [
+        "fib-035",
+        "fib-036",
+        "fib-037",
+        "fib-038",
+        "fib-039"
+      ],
+      "flashcardIds": [
+        "fc-043",
+        "fc-044",
+        "fc-045",
+        "fc-046",
+        "fc-047",
+        "fc-048"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-21",
+      "question": "What are the 4 respiratory volumes?",
+      "studyGuideSection": "volumes-capacities",
+      "topics": [
+        "volumes"
+      ],
+      "multipleChoiceIds": [
+        "mc-059",
+        "mc-060",
+        "mc-061",
+        "mc-062",
+        "mc-063",
+        "mc-064",
+        "mc-065",
+        "mc-103"
+      ],
+      "fillBlankIds": [
+        "fib-040",
+        "fib-041",
+        "fib-042",
+        "fib-043",
+        "fib-044"
+      ],
+      "flashcardIds": [
+        "fc-049",
+        "fc-050",
+        "fc-051",
+        "fc-052",
+        "fc-053",
+        "fc-054",
+        "fc-104",
+        "fc-105",
+        "fc-106"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-22",
+      "question": "Understand Henry’s Law and how it relates to gas exchange at the lungs and tissues (diffusion of oxygen and carbon dioxide)?",
+      "studyGuideSection": "henry-diffusion",
+      "topics": [
+        "diffusion"
+      ],
+      "multipleChoiceIds": [
+        "mc-066",
+        "mc-067",
+        "mc-068",
+        "mc-069",
+        "mc-070",
+        "mc-071"
+      ],
+      "fillBlankIds": [
+        "fib-045",
+        "fib-046",
+        "fib-047",
+        "fib-048"
+      ],
+      "flashcardIds": [
+        "fc-055",
+        "fc-056",
+        "fc-057",
+        "fc-058",
+        "fc-059",
+        "fc-060",
+        "fc-107"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-23",
+      "question": "What is hemoglobin called when bound to oxygen?  To carbon dioxide?  What causes the gases to bind?",
+      "studyGuideSection": "hemoglobin-transport",
+      "topics": [
+        "oxygen"
+      ],
+      "multipleChoiceIds": [
+        "mc-072",
+        "mc-073",
+        "mc-074",
+        "mc-075",
+        "mc-076",
+        "mc-077",
+        "mc-104"
+      ],
+      "fillBlankIds": [
+        "fib-049",
+        "fib-050",
+        "fib-051",
+        "fib-052"
+      ],
+      "flashcardIds": [
+        "fc-061",
+        "fc-062",
+        "fc-063",
+        "fc-064",
+        "fc-065",
+        "fc-066"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-24",
+      "question": "Understand the Oxygen-Hemoglobin Saturation Curve.",
+      "studyGuideSection": "hemoglobin-transport",
+      "topics": [
+        "oxygen"
+      ],
+      "multipleChoiceIds": [
+        "mc-072",
+        "mc-073",
+        "mc-074",
+        "mc-075",
+        "mc-076",
+        "mc-077",
+        "mc-104"
+      ],
+      "fillBlankIds": [
+        "fib-049",
+        "fib-050",
+        "fib-051",
+        "fib-052"
+      ],
+      "flashcardIds": [
+        "fc-061",
+        "fc-062",
+        "fc-063",
+        "fc-064",
+        "fc-065",
+        "fc-066"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-25",
+      "question": "What are the 3 ways in which carbon dioxide can be transported?  What enzyme converts carbon dioxide to carbonic acid?",
+      "studyGuideSection": "co2-and-ph",
+      "topics": [
+        "carbon"
+      ],
+      "multipleChoiceIds": [
+        "mc-078",
+        "mc-079",
+        "mc-080",
+        "mc-081",
+        "mc-082",
+        "mc-083",
+        "mc-084",
+        "mc-105"
+      ],
+      "fillBlankIds": [
+        "fib-053",
+        "fib-054",
+        "fib-055",
+        "fib-056",
+        "fib-057"
+      ],
+      "flashcardIds": [
+        "fc-067",
+        "fc-068",
+        "fc-069",
+        "fc-070",
+        "fc-071",
+        "fc-072",
+        "fc-108",
+        "fc-109",
+        "fc-110"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-26",
+      "question": "How does it contribute to the pH of blood?",
+      "studyGuideSection": "co2-and-ph",
+      "topics": [
+        "carbon"
+      ],
+      "multipleChoiceIds": [
+        "mc-078",
+        "mc-079",
+        "mc-080",
+        "mc-081",
+        "mc-082",
+        "mc-083",
+        "mc-084",
+        "mc-105"
+      ],
+      "fillBlankIds": [
+        "fib-053",
+        "fib-054",
+        "fib-055",
+        "fib-056",
+        "fib-057"
+      ],
+      "flashcardIds": [
+        "fc-067",
+        "fc-068",
+        "fc-069",
+        "fc-070",
+        "fc-071",
+        "fc-072",
+        "fc-108",
+        "fc-109",
+        "fc-110"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-27",
+      "question": "What and where is the respiratory rhythmicity center?",
+      "studyGuideSection": "brainstem-control",
+      "topics": [
+        "control"
+      ],
+      "multipleChoiceIds": [
+        "mc-085",
+        "mc-086",
+        "mc-087",
+        "mc-088",
+        "mc-089",
+        "mc-090",
+        "mc-091",
+        "mc-092",
+        "mc-106"
+      ],
+      "fillBlankIds": [
+        "fib-058",
+        "fib-059",
+        "fib-060",
+        "fib-061",
+        "fib-062"
+      ],
+      "flashcardIds": [
+        "fc-073",
+        "fc-074",
+        "fc-075",
+        "fc-076",
+        "fc-077",
+        "fc-078",
+        "fc-111",
+        "fc-112",
+        "fc-113"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-28",
+      "question": "Contrast the Dorsal Respiratory Group vs. Ventral Respiratory Group.  What muscles do they innervate?",
+      "studyGuideSection": "brainstem-control",
+      "topics": [
+        "control"
+      ],
+      "multipleChoiceIds": [
+        "mc-085",
+        "mc-086",
+        "mc-087",
+        "mc-088",
+        "mc-089",
+        "mc-090",
+        "mc-091",
+        "mc-092",
+        "mc-106"
+      ],
+      "fillBlankIds": [
+        "fib-058",
+        "fib-059",
+        "fib-060",
+        "fib-061",
+        "fib-062"
+      ],
+      "flashcardIds": [
+        "fc-073",
+        "fc-074",
+        "fc-075",
+        "fc-076",
+        "fc-077",
+        "fc-078",
+        "fc-111",
+        "fc-112",
+        "fc-113"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    },
+    {
+      "id": "SG-29",
+      "question": "Contrast the Apneustic and Pneumotaxic centers.   Where are they?  Which one would stimulate the DRG?",
+      "studyGuideSection": "brainstem-control",
+      "topics": [
+        "control"
+      ],
+      "multipleChoiceIds": [
+        "mc-085",
+        "mc-086",
+        "mc-087",
+        "mc-088",
+        "mc-089",
+        "mc-090",
+        "mc-091",
+        "mc-092",
+        "mc-106"
+      ],
+      "fillBlankIds": [
+        "fib-058",
+        "fib-059",
+        "fib-060",
+        "fib-061",
+        "fib-062"
+      ],
+      "flashcardIds": [
+        "fc-073",
+        "fc-074",
+        "fc-075",
+        "fc-076",
+        "fc-077",
+        "fc-078",
+        "fc-111",
+        "fc-112",
+        "fc-113"
+      ],
+      "scope": "Topical coverage; not a claim that every listed question tests every part of this objective."
+    }
+  ]
+}

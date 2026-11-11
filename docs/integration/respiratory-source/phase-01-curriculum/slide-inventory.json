@@ -1,0 +1,332 @@
+{
+  "sources": {
+    "physiology": {
+      "file": "23-Respiratory System.pptx",
+      "slideCount": 42,
+      "role": "Chapter 23 physiology lecture: seven functions, histology, ventilation, gas exchange/transport, chemoreception, disorders"
+    },
+    "anatomy": {
+      "file": "Respiratory - Copy.pptx",
+      "slideCount": 19,
+      "role": "Anatomy-model lecture: nasal cavity, laryngeal structures, trachea/bronchi, lungs/pleura, labeled classroom models"
+    },
+    "studyGuide": {
+      "file": "23-Study Guide.docx",
+      "questionCount": 29,
+      "termCount": 11,
+      "coverageItemCount": 30,
+      "role": "Exam priority and terms; lecture topics outside guide remain eligible for test"
+    }
+  },
+  "slides": {
+    "physiology": [
+      {
+        "slide": 1,
+        "summary": "The Respiratory System / Chapter 23",
+        "hasPicture": true
+      },
+      {
+        "slide": 2,
+        "summary": "Respiratory System Functions / 1. Area for gaseous exchange / 2. Moves air to/from exchange of the lungs / 3. Protects respiratory surfaces from dehydration, temperature changes or other environmental variations / 4. Def",
+        "hasPicture": false
+      },
+      {
+        "slide": 3,
+        "summary": "Respiratory System Organization / Upper Respiratory System – nose, nasal cavity, paranasal sinuses, pharynx / Filter, warm, humidify incoming air / Cool, dehumidify outgoing air (reabsorbs heat, water) / Lower Respirator",
+        "hasPicture": false
+      },
+      {
+        "slide": 4,
+        "summary": "Anatomy of \u000bRespiratory System /",
+        "hasPicture": true
+      },
+      {
+        "slide": 5,
+        "summary": "Respiratory Mucosa / Respiratory epithelium – mucus membrane  / Lines conducting portion / Lamina propria – underlying layer of areolar tissue  / Supports respiratory epithelium  / Mucus escalator – beating of cilia that",
+        "hasPicture": true
+      },
+      {
+        "slide": 6,
+        "summary": "Histological Differences / Epithelial tissue different at each location in tract: / Nasal cavity – pseudostratified ciliated columnar / Pharynx – stratified squamous / Lower respiratory – pseudostratified ciliated column",
+        "hasPicture": true
+      },
+      {
+        "slide": 7,
+        "summary": "Nasal Cavity & Pharynx Regions / Benefits to nasal breathing / Incoming air is warmed & humidified / Easier diffusion / Slows air escape / More diffusion / Olfactory sensation / Vibrissae to filter air / Allows for mixin",
+        "hasPicture": true
+      },
+      {
+        "slide": 8,
+        "summary": "Larynx / Cartilaginous opening / Voice box /  /  / Functions  / Protects the glottis / Provides open air pathway / Produces vocal sounds",
+        "hasPicture": true
+      },
+      {
+        "slide": 9,
+        "summary": "Cartilages /  / Unpaired cartilages: / Epiglottis / Thyroid   / Cricoid / Paired Cartilages: / Arytenoid / Corniculate / Cuneiform /",
+        "hasPicture": true
+      },
+      {
+        "slide": 10,
+        "summary": "Glottis /  / Glottis – passageway for air / Vestibular folds – false vocal cords / Prevent foreign objects form entering glottis / Protect vocal folds /  /  /  / Cough Reflex / 1. Receptors detect material touching folds",
+        "hasPicture": true
+      },
+      {
+        "slide": 11,
+        "summary": "Larynx / Vocal Folds – true vocal cords / Elastic fibers / Vibrates as air passing through glottis / Phonation – sound production / Articulation – modification of sounds into speech / Requires teeth, tongue, lips / 3 thi",
+        "hasPicture": true
+      },
+      {
+        "slide": 12,
+        "summary": "Larynx / Intrinsic muscles – control tension on vocal folds /  Reposition Arytenoid & Corniculate / Function together to open/close glottis  / As distance ↑, folds tense, pitch ↑ / Extrinsic muscles – neck & pharynx / Po",
+        "hasPicture": false
+      },
+      {
+        "slide": 13,
+        "summary": "Trachea / Windpipe; Air passageway / Tracheal cartilages – “C”-shaped / Allows for bulging of the esophagus / Trachealis muscle – smooth muscle / Connects “C”-shaped cartilages / Controls diameter of trachea / Sympatheti",
+        "hasPicture": false
+      },
+      {
+        "slide": 14,
+        "summary": "Trachea /  /  /  /  /",
+        "hasPicture": true
+      },
+      {
+        "slide": 15,
+        "summary": "Bronchial Tree /  /  / Bronchi – branchings of trachea into lungs /   Contain cartilage /   Primary – R is larger and descends at a steeper angle /   Secondary – one to each lobe /   Tertiary /  /  /  /  /  /  / Bronchio",
+        "hasPicture": true
+      },
+      {
+        "slide": 16,
+        "summary": "Alveoli / Where gas exchange occurs / Surrounded by capillary network / Clustered in lobules / Alveolar duct – connects alveoli to respiratory bronchiole",
+        "hasPicture": true
+      },
+      {
+        "slide": 17,
+        "summary": "Alveolar Lung Cells / Pneumocytes type I – line alveoli / Simple squamous epithelium / Sites of gas diffusion / Septal cells (pneumocytes type II) – produce surfactant to keep lungs from sticking / Surfactant – oily secr",
+        "hasPicture": false
+      },
+      {
+        "slide": 18,
+        "summary": "Alveoli /  / Alveolar Lung Cells /  / A single capillary may be involved in gas exchange w/ several alveoli simultaneously.",
+        "hasPicture": true
+      },
+      {
+        "slide": 19,
+        "summary": "Respiratory Membrane /  / Respiratory Membrane /  / Pneumocyte Type I / Capillary endothelial cell / Their fused basal laminae (basement membranes) /  /   Diffusion of gases occurs",
+        "hasPicture": true
+      },
+      {
+        "slide": 20,
+        "summary": "Respiration / Refers to 2 integrated processes: /  / External respiration  / Pulmonary ventilation – Air in/out of lungs (breathing) / Gas diffusion – b/t cells and capillaries / Transport of O2 and CO2 – through bloodst",
+        "hasPicture": false
+      },
+      {
+        "slide": 21,
+        "summary": "External Respiration",
+        "hasPicture": true
+      },
+      {
+        "slide": 22,
+        "summary": "Pulmonary Ventilation / Process of moving air to/from gas exchange surfaces of lungs / Air into and out of alveoli / Involves pressure changes, muscle movements / Function is to maintain adequate alveolar ventilation / A",
+        "hasPicture": false
+      },
+      {
+        "slide": 23,
+        "summary": "Boyle’s Law /  / Each molecule travels same distance /  / Striking wall more frequently = ↑ pressure / Striking wall less frequently = ↓  pressure",
+        "hasPicture": true
+      },
+      {
+        "slide": 24,
+        "summary": "Pulmonary Ventilation\u000bInhalation / Inhalation  lung expands / External intercostals elevate rib cage  / Diaphragm contracts and depresses / This increases volume of thoracic cavity / P drops to 759mmHg  (-1mmHg) / Press",
+        "hasPicture": true
+      },
+      {
+        "slide": 25,
+        "summary": "Pulmonary Ventilation\u000bExhalation / Exhalation  lungs recoil / External intercostals relax and depress / Diaphragm relaxes and elevates\t\t / This decreased volume of thoracic cavity / P rises to 761mmHg  (+1mmHg) / Pressu",
+        "hasPicture": true
+      },
+      {
+        "slide": 26,
+        "summary": "Pressures /  / Atmospheric Pressure / 760 mmhg / Lung / 759 mmhg / 761 mmhg /  /  / Breath In / Breath Out / Intrapulmonary Pressure – pressure inside the respiratory tract at the alveoli / Outside body / Inside body / I",
+        "hasPicture": false
+      },
+      {
+        "slide": 27,
+        "summary": "Modes of Breathing / Quiet breathing – (eupnea) inhalation requires muscular contractions, but exhalation is a passive process (recoiling of lungs)  / Diaphragmatic breathing (deep breathing) – contraction of diaphragm (",
+        "hasPicture": true
+      },
+      {
+        "slide": 28,
+        "summary": "Muscles Used During Inhalation / Diaphragm, external intercostal muscles  / Most important / Accessory Respiratory Muscles – active when depth and frequency of respiration must be increased markedly / Internal intercosta",
+        "hasPicture": false
+      },
+      {
+        "slide": 29,
+        "summary": "Accessory Muscles",
+        "hasPicture": true
+      },
+      {
+        "slide": 30,
+        "summary": "Respiratory Volumes / Resting Tidal Volume (TV) – amount of air moving in & out of lungs under resting conditions / Expiratory Reserve Volume (ERV) – the extra air that can be expelled after a normal cycle / Residual Vol",
+        "hasPicture": false
+      },
+      {
+        "slide": 31,
+        "summary": "Lung Volumes /  / Pulmonary Volumes and Capacities / Red line indicates the volume of air w/in lung as respiratory movements are performed",
+        "hasPicture": true
+      },
+      {
+        "slide": 32,
+        "summary": "Gas Exchange\u000b(At alveoli & peripheral tissues) / Depends on the partial pressures of gases & the diffusion of molecules / Partial pressure – pressure contributed by a single gas in a mixture of gases / Henry’s Law – at a",
+        "hasPicture": false
+      },
+      {
+        "slide": 33,
+        "summary": "Henry’s Law /  /  /  / Henry’s Law",
+        "hasPicture": true
+      },
+      {
+        "slide": 34,
+        "summary": "Gas diffusion /  / Partial pressures and diffusion at the respiratory membrane / Partial pressures and diffusion in other tissues / Gases will move from an area of higher pressure to an area of lower pressure.",
+        "hasPicture": true
+      },
+      {
+        "slide": 35,
+        "summary": "Gas Transport / Hemoglobin – gas transporter in blood / An increase in P O2 causes oxygen to bind to hemoglobin / A decrease in P O2 or pH causes oxygen to be released by hemoglobin / Blood w/bound O2is red – oxyhemoglob",
+        "hasPicture": true
+      },
+      {
+        "slide": 36,
+        "summary": "CO2 Transport / Carbonic Acid (H2CO3) – 70%   / Converted by carbonic anhydrase / Bound to hemoglobin – 23%  / Dissolved in plasma – 7%",
+        "hasPicture": true
+      },
+      {
+        "slide": 37,
+        "summary": "Transport /",
+        "hasPicture": true
+      },
+      {
+        "slide": 38,
+        "summary": "Respiratory Centers in the Brain / Respiratory rhythmicity centers – sets pace for respiration / In the Medulla oblongata: / Dorsal Respiratory Group (DRG) – innervates external intercostal and diaphragm / Functions in e",
+        "hasPicture": false
+      },
+      {
+        "slide": 39,
+        "summary": "Reflex \u000bCenters /  /  /  /  /  /  /",
+        "hasPicture": true
+      },
+      {
+        "slide": 40,
+        "summary": "Respiratory Reflexes / Chemoreceptors – sensitive to pressures of O2 and CO2 or pH of blood or CSF / Baroreceptors – sensitive to changes in BP / Stretch receptors – respond to changes in volume of lungs / Irritating phy",
+        "hasPicture": false
+      },
+      {
+        "slide": 41,
+        "summary": "Respiratory Reflexes",
+        "hasPicture": true
+      },
+      {
+        "slide": 42,
+        "summary": "Conditions / Hypoxia – low O2 levels in tissue / Apoxia – O2 supply cut off to tissue / Laryngitis – infection & inflammation of larynx / Effects vibrational qualities of cords / Acute Epiglottitis – infection of epiglot",
+        "hasPicture": false
+      }
+    ],
+    "anatomy": [
+      {
+        "slide": 1,
+        "summary": "Respiratory System",
+        "hasPicture": true
+      },
+      {
+        "slide": 2,
+        "summary": "Nasal Cavity / Alae – sides of nostril / Nostrils - openings / Vibrissae – nose hairs that filter air / Vestibule – space w/in flexible tissues of nose / Nasal Conchae (Superior, Middle, Inferior)  / Mounds of tissue tha",
+        "hasPicture": false
+      },
+      {
+        "slide": 3,
+        "summary": "Nasal Cavity / Hard palate – separates nasal cavity from oral cavity / Composed of bone / Anterior portion / Soft palate – separates nasal cavity from oral cavity / Composed of soft tissue / Posterior portion / Uvula – d",
+        "hasPicture": false
+      },
+      {
+        "slide": 4,
+        "summary": "Vibrissae (hairs) / Nasal Meatus / Uvula",
+        "hasPicture": false
+      },
+      {
+        "slide": 5,
+        "summary": "Pharynx / Nasopharynx – superior portion / Internal nares  Soft palate / Pharyngotypmanic Tube – passage b/t pharynx and middle ear / Pharyngeal Tonsil – posterior wall / Oropharynx – middle portion / Soft palate  Base",
+        "hasPicture": false
+      },
+      {
+        "slide": 6,
+        "summary": "Larynx / Hyoid Bone   / Glottis – opening to larynx / Large unpaired cartilages: / Epiglottis – cartilaginous flap  / Covers glottis during swallowing / Thyroid Cartilage – anterior and lateral walls; hyaline cartilage /",
+        "hasPicture": false
+      },
+      {
+        "slide": 7,
+        "summary": "/ Found between C4 and C6 / Produces sound /  /  /  /  /  /  /  /  /  /  / Larynx",
+        "hasPicture": true
+      },
+      {
+        "slide": 8,
+        "summary": "Hyoid / Thyroid Cartilage / Superior Thyroid Notch / Laryngeal Prominence / Cricoid Cartilage / Anterior View",
+        "hasPicture": true
+      },
+      {
+        "slide": 9,
+        "summary": "Posterior View / Epiglottis / Corniculate Cartilage / Arytenoid Cartilage / Cricoid Cartilage",
+        "hasPicture": true
+      },
+      {
+        "slide": 10,
+        "summary": "/ Vestibular folds – false vocal cords /   Prevent foreign objects form entering glottis /   Protect vocal folds /   Vocal Folds – true vocal cords /   Consist of elastic fibers /   Produce sound",
+        "hasPicture": true
+      },
+      {
+        "slide": 11,
+        "summary": "/  /  / Trachea /  /   Windpipe (C6 to T5) /   Tracheal Cartilages – 15-20 /   Stiffen wall and airway /   “C” shaped /   Carina – internal ridge that separates L & R Primary Bronchi /  /",
+        "hasPicture": true
+      },
+      {
+        "slide": 12,
+        "summary": "Larynx / Trachea / Carina / Primary Bronchus / Secondary Bronchi / Tertiary Bronchi / Tracheal Cartilages",
+        "hasPicture": true
+      },
+      {
+        "slide": 13,
+        "summary": "Bronchial Tree / Primary Bronchi – branch into L & R lung / R Bronchi larger in diameter, descends at steeper angle / Secondary Bronchi – one to each lobe / Right has 3;   Left lung 2 / Tertiary Bronchi – branch from lob",
+        "hasPicture": false
+      },
+      {
+        "slide": 14,
+        "summary": "/",
+        "hasPicture": true
+      },
+      {
+        "slide": 15,
+        "summary": "Alveoli /",
+        "hasPicture": true
+      },
+      {
+        "slide": 16,
+        "summary": "/ Pleural Cavities – area between parietal & visceral pleura /   Pleura – serous membrane that lines the pleural cavity; 2 layers / 1.  Parietal Pleura – covers inner surface of thoracic wall / 2.  Visceral Pleura – sero",
+        "hasPicture": true
+      },
+      {
+        "slide": 17,
+        "summary": "Lungs / Right Lung / Lobes / Superior Lobe / Middle Lobe / Inferior Lobe / Fissures / Oblique Fissure – separates inferior lobe and other two / Horizontal Fissure – separates superior and middle lobe / Left Lung / Lobes ",
+        "hasPicture": false
+      },
+      {
+        "slide": 18,
+        "summary": "Left lung / Right lung / Inferior Lobe / Middle Lobe / Superior lobe / Cardiac Notch / Apex / Base / Horizontal Fissure / Oblique Fissure / Diaphragmatic Surface / Costal Surface",
+        "hasPicture": true
+      },
+      {
+        "slide": 19,
+        "summary": "Lungs /  /",
+        "hasPicture": true
+      }
+    ]
+  }
+}

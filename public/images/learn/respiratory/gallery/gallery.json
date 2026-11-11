@@ -1,0 +1,1138 @@
+{
+  "schemaVersion": 1,
+  "title": "Respiratory System — Curated Lecture Figures",
+  "description": "Selected Chapter 23 anatomy models, labeled respiratory structures, histology, ventilation mechanics, gas transport, and breathing-control figures from the instructor-provided presentations.",
+  "subjectId": "respiratory",
+  "selectionMethod": "Reviewed all 61 slides from both decks; selected 29 complementary, nonredundant figures. Images cropped from presentation slide renders to preserve slide-authored anatomical arrows and labels; two ventilation slides paired in one figure.",
+  "count": 29,
+  "gallerySections": [
+    {
+      "id": "anatomical-models",
+      "title": "Classroom anatomical models"
+    },
+    {
+      "id": "anatomical-diagrams",
+      "title": "Anatomical structures and relationships"
+    },
+    {
+      "id": "histology",
+      "title": "Histology and microscopic anatomy"
+    },
+    {
+      "id": "physiology-diagrams",
+      "title": "Respiratory mechanics, gas transport, and regulation"
+    }
+  ],
+  "items": [
+    {
+      "id": "a01",
+      "title": "Nasal cavity, conchae, and pharyngeal regions",
+      "category": "anatomical-diagrams",
+      "description": "Detailed sagittal anatomy identifying the superior, middle, and inferior nasal conchae and meatuses, choanae, palate, pharynx, epiglottis, and larynx.",
+      "tags": [
+        "nasal cavity",
+        "nasal conchae",
+        "nasal meatuses",
+        "choanae",
+        "pharynx",
+        "septum",
+        "nasopharynx"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Detailed sagittal anatomy identifying the superior, middle, and inferior nasal conchae and meatuses, choanae, palate, pharynx, epiglottis, and larynx.",
+      "image": "images/a01.webp",
+      "thumbnail": "thumbnails/a01.webp",
+      "width": 2600,
+      "height": 1432,
+      "sha256": "4ba6d50b7a676e6e3aebcae54c2e1a001d3e2c87ee169933c681e1eb0c04594b",
+      "source": {
+        "deck": "Respiratory - Copy.pptx",
+        "slides": [
+          4
+        ],
+        "cropNormalized": [
+          0.01,
+          0.06,
+          0.96,
+          0.99
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "nasal-cavity"
+      }
+    },
+    {
+      "id": "a02",
+      "title": "Larynx: paired and unpaired cartilages",
+      "category": "anatomical-diagrams",
+      "description": "Anterior, posterior, and sagittal diagrams locating the thyroid, cricoid, arytenoid, corniculate, and cuneiform cartilages, with the epiglottis and hyoid bone.",
+      "tags": [
+        "larynx",
+        "laryngeal cartilages",
+        "epiglottis",
+        "thyroid cartilage",
+        "cricoid cartilage",
+        "arytenoid"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Anterior, posterior, and sagittal diagrams locating the thyroid, cricoid, arytenoid, corniculate, and cuneiform cartilages, with the epiglottis and hyoid bone.",
+      "image": "images/a02.webp",
+      "thumbnail": "thumbnails/a02.webp",
+      "width": 2299,
+      "height": 1002,
+      "sha256": "419798649cffd104b303d3424b888f337ece7ef74cc215dc9446be34ffaf2c5c",
+      "source": {
+        "deck": "Respiratory - Copy.pptx",
+        "slides": [
+          7
+        ],
+        "cropNormalized": [
+          0.12,
+          0.25,
+          0.96,
+          0.9
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "larynx-cartilages"
+      }
+    },
+    {
+      "id": "a03",
+      "title": "Classroom larynx model: anterior view",
+      "category": "anatomical-models",
+      "description": "Instructor-labeled anterior classroom model showing the hyoid bone, superior thyroid notch, thyroid cartilage, laryngeal prominence, and cricoid cartilage.",
+      "tags": [
+        "larynx",
+        "model",
+        "hyoid",
+        "thyroid cartilage",
+        "cricoid cartilage",
+        "anterior"
+      ],
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Instructor-labeled anterior classroom model showing the hyoid bone, superior thyroid notch, thyroid cartilage, laryngeal prominence, and cricoid cartilage.",
+      "image": "images/a03.webp",
+      "thumbnail": "thumbnails/a03.webp",
+      "width": 2628,
+      "height": 1386,
+      "sha256": "b913a098f55e841f29235643ba7cbbec285f4e9a0c7c7a21a3f1e5a83b5251ed",
+      "source": {
+        "deck": "Respiratory - Copy.pptx",
+        "slides": [
+          8
+        ],
+        "cropNormalized": [
+          0.02,
+          0.08,
+          0.98,
+          0.98
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "larynx-cartilages"
+      }
+    },
+    {
+      "id": "a04",
+      "title": "Classroom larynx model: posterior view",
+      "category": "anatomical-models",
+      "description": "Complementary posterior model view identifying the epiglottis, arytenoid and corniculate cartilages, and cricoid cartilage.",
+      "tags": [
+        "larynx",
+        "model",
+        "posterior",
+        "epiglottis",
+        "arytenoid cartilage",
+        "corniculate cartilage"
+      ],
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Complementary posterior model view identifying the epiglottis, arytenoid and corniculate cartilages, and cricoid cartilage.",
+      "image": "images/a04.webp",
+      "thumbnail": "thumbnails/a04.webp",
+      "width": 2628,
+      "height": 1386,
+      "sha256": "e76450ecaea1e3f1b621788eabb23aac75a288cfcd1f3661818b887f96aea283",
+      "source": {
+        "deck": "Respiratory - Copy.pptx",
+        "slides": [
+          9
+        ],
+        "cropNormalized": [
+          0.02,
+          0.09,
+          0.98,
+          0.99
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "larynx-cartilages"
+      }
+    },
+    {
+      "id": "a05",
+      "title": "Glottis: open and closed vocal folds",
+      "category": "anatomical-diagrams",
+      "description": "Two superior views compare the open and closed glottis and distinguish true vocal folds, vestibular folds, and the epiglottis.",
+      "tags": [
+        "glottis",
+        "vocal folds",
+        "vestibular folds",
+        "voice",
+        "airflow"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Two superior views compare the open and closed glottis and distinguish true vocal folds, vestibular folds, and the epiglottis.",
+      "image": "images/a05.webp",
+      "thumbnail": "thumbnails/a05.webp",
+      "width": 1916,
+      "height": 1048,
+      "sha256": "aeb5ff687b9585a3d4c8674cd81f414b55aad1d22fc3dfaf6374d272c1b2039a",
+      "source": {
+        "deck": "Respiratory - Copy.pptx",
+        "slides": [
+          10
+        ],
+        "cropNormalized": [
+          0.26,
+          0.23,
+          0.96,
+          0.91
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "voice-and-cough"
+      }
+    },
+    {
+      "id": "a06",
+      "title": "Classroom model: trachea and branching bronchi",
+      "category": "anatomical-models",
+      "description": "Labeled classroom airway model showing tracheal cartilages, the carina, primary bronchi, secondary bronchi, and tertiary branches.",
+      "tags": [
+        "trachea",
+        "model",
+        "carina",
+        "primary bronchi",
+        "secondary bronchi",
+        "tertiary bronchi"
+      ],
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Labeled classroom airway model showing tracheal cartilages, the carina, primary bronchi, secondary bronchi, and tertiary branches.",
+      "image": "images/a06.webp",
+      "thumbnail": "thumbnails/a06.webp",
+      "width": 2135,
+      "height": 1417,
+      "sha256": "97689e85f76e084cb2b984562a1871532944b5b0df29b66dd858f55682b12fa2",
+      "source": {
+        "deck": "Respiratory - Copy.pptx",
+        "slides": [
+          12
+        ],
+        "cropNormalized": [
+          0.18,
+          0.06,
+          0.96,
+          0.98
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "bronchial-tree"
+      }
+    },
+    {
+      "id": "a07",
+      "title": "Pleural cavities and mediastinal relationships",
+      "category": "anatomical-diagrams",
+      "description": "Transverse thoracic section illustrating the visceral and parietal pleura, pleural cavities, lungs, ribs, mediastinum, and neighboring heart.",
+      "tags": [
+        "pleura",
+        "pleural cavity",
+        "mediastinum",
+        "thorax",
+        "visceral pleura",
+        "parietal pleura"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Transverse thoracic section illustrating the visceral and parietal pleura, pleural cavities, lungs, ribs, mediastinum, and neighboring heart.",
+      "image": "images/a07.webp",
+      "thumbnail": "thumbnails/a07.webp",
+      "width": 2326,
+      "height": 1109,
+      "sha256": "efe88476681b07f2abe654a6ba9578c36859693120a6e44d848aad2979847db4",
+      "source": {
+        "deck": "Respiratory - Copy.pptx",
+        "slides": [
+          16
+        ],
+        "cropNormalized": [
+          0.14,
+          0.24,
+          0.99,
+          0.96
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "lungs-pleura"
+      }
+    },
+    {
+      "id": "a08",
+      "title": "Classroom lung model: lobes and fissures",
+      "category": "anatomical-models",
+      "description": "Instructor-labeled frontal lung model showing right lung lobes and fissures, left lung lobes, cardiac notch, apex, base, and diaphragm.",
+      "tags": [
+        "lungs",
+        "model",
+        "lobes",
+        "fissures",
+        "cardiac notch",
+        "diaphragm"
+      ],
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Instructor-labeled frontal lung model showing right lung lobes and fissures, left lung lobes, cardiac notch, apex, base, and diaphragm.",
+      "image": "images/a08.webp",
+      "thumbnail": "thumbnails/a08.webp",
+      "width": 2682,
+      "height": 1494,
+      "sha256": "d11563596c0848e16fb3934e8ea4fd942bb200bec915e3c583af6931f3c7d3d7",
+      "source": {
+        "deck": "Respiratory - Copy.pptx",
+        "slides": [
+          18
+        ],
+        "cropNormalized": [
+          0.01,
+          0.02,
+          0.99,
+          0.99
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "lungs-pleura"
+      }
+    },
+    {
+      "id": "a09",
+      "title": "Right and left lung: lateral lobe anatomy",
+      "category": "anatomical-diagrams",
+      "description": "Side-by-side lateral views distinguish three right lung lobes and two left lung lobes, including horizontal and oblique fissures and the cardiac notch.",
+      "tags": [
+        "lungs",
+        "right lung",
+        "left lung",
+        "fissures",
+        "lobes",
+        "lateral"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Side-by-side lateral views distinguish three right lung lobes and two left lung lobes, including horizontal and oblique fissures and the cardiac notch.",
+      "image": "images/a09.webp",
+      "thumbnail": "thumbnails/a09.webp",
+      "width": 2436,
+      "height": 1263,
+      "sha256": "f8107ff38359a1aadf0b465e275c40d8624947c6d90f78baf4bf42a4989cb0f7",
+      "source": {
+        "deck": "Respiratory - Copy.pptx",
+        "slides": [
+          19
+        ],
+        "cropNormalized": [
+          0.07,
+          0.13,
+          0.96,
+          0.95
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "lungs-pleura"
+      }
+    },
+    {
+      "id": "p01",
+      "title": "Respiratory system: anatomical overview",
+      "category": "anatomical-diagrams",
+      "description": "Head-to-thorax map of the nasal cavity, pharynx, larynx, trachea, bronchi, lungs, bronchioles, and diaphragm in anatomical position.",
+      "tags": [
+        "anatomical overview",
+        "respiratory tract",
+        "air pathway",
+        "diaphragm"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Head-to-thorax map of the nasal cavity, pharynx, larynx, trachea, bronchi, lungs, bronchioles, and diaphragm in anatomical position.",
+      "image": "images/p01.webp",
+      "thumbnail": "thumbnails/p01.webp",
+      "width": 1498,
+      "height": 1448,
+      "sha256": "dc463c099b3aa46cdfe06f0ef733545e7d73f0f3402ab6ca8d4cabe56f3ee0ed",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          4
+        ],
+        "cropNormalized": [
+          0.0,
+          0.05,
+          0.73,
+          0.99
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "functions-organization"
+      }
+    },
+    {
+      "id": "p02",
+      "title": "Respiratory mucosa and the mucus escalator",
+      "category": "histology",
+      "description": "Respiratory lining with ciliated columnar epithelium, mucus-producing cells, lamina propria, and the movement of mucus toward the pharynx; includes a microscopic surface view.",
+      "tags": [
+        "respiratory mucosa",
+        "cilia",
+        "mucociliary escalator",
+        "goblet cells",
+        "microscopy"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Respiratory lining with ciliated columnar epithelium, mucus-producing cells, lamina propria, and the movement of mucus toward the pharynx; includes a microscopic surface view.",
+      "image": "images/p02.webp",
+      "thumbnail": "thumbnails/p02.webp",
+      "width": 780,
+      "height": 1417,
+      "sha256": "5f4a7be231708bf0e0710aa8a972598417271940b34db656f835d5dca736e472",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          5
+        ],
+        "cropNormalized": [
+          0.6,
+          0.06,
+          0.98,
+          0.98
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "respiratory-mucosa"
+      }
+    },
+    {
+      "id": "p03",
+      "title": "Pseudostratified ciliated respiratory epithelium",
+      "category": "histology",
+      "description": "Cellular detail showing pseudostratified ciliated columnar epithelium, mucus-secreting cells, basal cells, basement membrane, and supporting lamina propria.",
+      "tags": [
+        "pseudostratified",
+        "histology",
+        "goblet cells",
+        "cilia",
+        "basement membrane"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Cellular detail showing pseudostratified ciliated columnar epithelium, mucus-secreting cells, basal cells, basement membrane, and supporting lamina propria.",
+      "image": "images/p03.webp",
+      "thumbnail": "thumbnails/p03.webp",
+      "width": 801,
+      "height": 1156,
+      "sha256": "d3f6d83921e2a7baccd77949da33523974a1cb7e5596ada3e2379750dd96ee64",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          6
+        ],
+        "cropNormalized": [
+          0.6,
+          0.2,
+          0.99,
+          0.95
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "histology-tract"
+      }
+    },
+    {
+      "id": "p04",
+      "title": "Trachea: C-shaped cartilages and trachealis",
+      "category": "anatomical-diagrams",
+      "description": "Paired frontal and cross-sectional tracheal diagrams show cartilage rings, the posterior trachealis muscle, respiratory mucosa, and neighboring esophagus.",
+      "tags": [
+        "trachea",
+        "trachealis",
+        "cartilage",
+        "carina",
+        "cross section",
+        "esophagus"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Paired frontal and cross-sectional tracheal diagrams show cartilage rings, the posterior trachealis muscle, respiratory mucosa, and neighboring esophagus.",
+      "image": "images/p04.webp",
+      "thumbnail": "thumbnails/p04.webp",
+      "width": 1909,
+      "height": 1402,
+      "sha256": "e25f962a2c53d0a55731961b23f096cf1b310bfb04f8f1c3448be07956c5dbab",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          14
+        ],
+        "cropNormalized": [
+          0.04,
+          0.05,
+          0.97,
+          0.96
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "trachea"
+      }
+    },
+    {
+      "id": "p05",
+      "title": "Bronchial tree: progressive airway branching",
+      "category": "anatomical-diagrams",
+      "description": "Branching airway illustration tracing lobar and segmental bronchi through smaller bronchi, bronchioles, terminal and respiratory bronchioles to alveoli.",
+      "tags": [
+        "bronchial tree",
+        "bronchi",
+        "bronchioles",
+        "terminal bronchiole",
+        "respiratory bronchiole"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Branching airway illustration tracing lobar and segmental bronchi through smaller bronchi, bronchioles, terminal and respiratory bronchioles to alveoli.",
+      "image": "images/p05.webp",
+      "thumbnail": "thumbnails/p05.webp",
+      "width": 1417,
+      "height": 1325,
+      "sha256": "3a6a4d202c86c0f474d9db97084b11f1e5718e05cf4906a64dd456e2e1d0745f",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          15
+        ],
+        "cropNormalized": [
+          0.3,
+          0.12,
+          0.99,
+          0.98
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "bronchial-tree"
+      }
+    },
+    {
+      "id": "p06",
+      "title": "Alveolar sacs and surrounding capillaries",
+      "category": "histology",
+      "description": "Illustration of alveolar ducts, alveolar sacs and individual alveoli alongside a capillary network and surrounding elastic fibers.",
+      "tags": [
+        "alveoli",
+        "alveolar sacs",
+        "capillaries",
+        "elastic fibers",
+        "pulmonary lobule"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Illustration of alveolar ducts, alveolar sacs and individual alveoli alongside a capillary network and surrounding elastic fibers.",
+      "image": "images/p06.webp",
+      "thumbnail": "thumbnails/p06.webp",
+      "width": 1909,
+      "height": 802,
+      "sha256": "d735456811d3fd6fc383825ace1adc95a15f4a8891b395d47c89059210d01afe",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          16
+        ],
+        "cropNormalized": [
+          0.05,
+          0.46,
+          0.98,
+          0.98
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "alveoli-and-cells"
+      }
+    },
+    {
+      "id": "p07",
+      "title": "Alveolar microanatomy: septal cells and macrophages",
+      "category": "histology",
+      "description": "Enlarged alveolar section with type II septal cells, alveolar macrophages, elastic fibers, and capillary endothelial cells; identifies the structures involved in gas exchange and defense.",
+      "tags": [
+        "alveoli",
+        "pneumocyte",
+        "surfactant",
+        "macrophage",
+        "capillary",
+        "epithelial cells"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Enlarged alveolar section with type II septal cells, alveolar macrophages, elastic fibers, and capillary endothelial cells; identifies the structures involved in gas exchange and defense.",
+      "image": "images/p07.webp",
+      "thumbnail": "thumbnails/p07.webp",
+      "width": 1314,
+      "height": 1463,
+      "sha256": "9202f72e5dc00327194efbe127d071271fc0b0448e7fb4d17a8a3a796724a10f",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          18
+        ],
+        "cropNormalized": [
+          0.34,
+          0.03,
+          0.98,
+          0.98
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "alveoli-and-cells"
+      }
+    },
+    {
+      "id": "p08",
+      "title": "Respiratory membrane: the gas-exchange barrier",
+      "category": "histology",
+      "description": "Layered cutaway of the very thin air–blood barrier: surfactant, type I alveolar epithelium, fused basement membranes, and capillary endothelium.",
+      "tags": [
+        "respiratory membrane",
+        "type I pneumocyte",
+        "endothelium",
+        "fused basement membranes",
+        "gas diffusion"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Layered cutaway of the very thin air–blood barrier: surfactant, type I alveolar epithelium, fused basement membranes, and capillary endothelium.",
+      "image": "images/p08.webp",
+      "thumbnail": "thumbnails/p08.webp",
+      "width": 1273,
+      "height": 1463,
+      "sha256": "5bf694ccad878eeafc99c297960604f9cfa9782cc69e6eb819af7fb1c55c9248",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          19
+        ],
+        "cropNormalized": [
+          0.03,
+          0.04,
+          0.65,
+          0.99
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "respiratory-membrane"
+      }
+    },
+    {
+      "id": "p09",
+      "title": "External and internal respiration: integrated pathways",
+      "category": "physiology-diagrams",
+      "description": "Flow illustration links pulmonary ventilation, oxygen and carbon dioxide exchange in the lungs, bloodstream transport, and exchange with body tissues.",
+      "tags": [
+        "external respiration",
+        "internal respiration",
+        "oxygen transport",
+        "carbon dioxide transport"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Flow illustration links pulmonary ventilation, oxygen and carbon dioxide exchange in the lungs, bloodstream transport, and exchange with body tissues.",
+      "image": "images/p09.webp",
+      "thumbnail": "thumbnails/p09.webp",
+      "width": 1970,
+      "height": 1263,
+      "sha256": "72f83e6f214888500d0c751a9bb84c0ae152de4609cc42e074e10cf03f4ff5dd",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          21
+        ],
+        "cropNormalized": [
+          0.02,
+          0.09,
+          0.98,
+          0.91
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "respiration-terms"
+      }
+    },
+    {
+      "id": "p10",
+      "title": "Boyle’s law: gas pressure versus volume",
+      "category": "physiology-diagrams",
+      "description": "Particle model illustrates the inverse relationship between volume and pressure, the physical principle used to explain ventilation.",
+      "tags": [
+        "Boyle law",
+        "pressure",
+        "volume",
+        "breathing mechanics"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Particle model illustrates the inverse relationship between volume and pressure, the physical principle used to explain ventilation.",
+      "image": "images/p10.webp",
+      "thumbnail": "thumbnails/p10.webp",
+      "width": 2011,
+      "height": 1340,
+      "sha256": "22cf807abfa99f9ab74c84a6b175fc8a6ccfec227cf0c60067e84b683841fab4",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          23
+        ],
+        "cropNormalized": [
+          0.0,
+          0.07,
+          0.98,
+          0.94
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "boyle-and-pressure"
+      }
+    },
+    {
+      "id": "p11",
+      "title": "Inhalation versus exhalation: thoracic pressure",
+      "category": "physiology-diagrams",
+      "description": "Side-by-side lecture diagrams comparing diaphragm motion, rib-cage expansion or recoil, thoracic volume, and pressure during inhalation and quiet exhalation.",
+      "tags": [
+        "inhalation",
+        "exhalation",
+        "diaphragm",
+        "thoracic pressure",
+        "lung volume"
+      ],
+      "sourceType": "composite-from-two-lecture-slides",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Side-by-side lecture diagrams comparing diaphragm motion, rib-cage expansion or recoil, thoracic volume, and pressure during inhalation and quiet exhalation.",
+      "image": "images/p11.webp",
+      "thumbnail": "thumbnails/p11.webp",
+      "width": 3442,
+      "height": 1296,
+      "sha256": "abfdc20cad78c6a9d243f47d12085434f4e6571e59ae79ef8d923be0da7a51e5",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          24,
+          25
+        ],
+        "cropNormalized": null,
+        "extraction": "two-slide-labeled-comparison"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "inhalation-exhalation"
+      }
+    },
+    {
+      "id": "p12",
+      "title": "Primary and accessory muscles of breathing",
+      "category": "anatomical-diagrams",
+      "description": "Annotated anterior thorax showing diaphragm and external intercostals plus accessory inspiratory and active expiratory muscles.",
+      "tags": [
+        "diaphragm",
+        "external intercostals",
+        "sternocleidomastoid",
+        "scalene",
+        "expiratory muscles"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Annotated anterior thorax showing diaphragm and external intercostals plus accessory inspiratory and active expiratory muscles.",
+      "image": "images/p12.webp",
+      "thumbnail": "thumbnails/p12.webp",
+      "width": 1950,
+      "height": 1463,
+      "sha256": "6eb891ea1fb89631dac4345438a623d5bd00c904911732be39780420f02fc734",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          29
+        ],
+        "cropNormalized": [
+          0.03,
+          0.02,
+          0.98,
+          0.97
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "breathing-muscles"
+      }
+    },
+    {
+      "id": "p13",
+      "title": "Spirometry: lung volumes and capacities",
+      "category": "physiology-diagrams",
+      "description": "Lung-volume trace identifies tidal volume, inspiratory reserve, expiratory reserve, residual volume, vital capacity, total lung capacity, and other capacity relationships.",
+      "tags": [
+        "tidal volume",
+        "inspiratory reserve",
+        "expiratory reserve",
+        "residual volume",
+        "vital capacity",
+        "spirometry"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Lung-volume trace identifies tidal volume, inspiratory reserve, expiratory reserve, residual volume, vital capacity, total lung capacity, and other capacity relationships.",
+      "image": "images/p13.webp",
+      "thumbnail": "thumbnails/p13.webp",
+      "width": 1950,
+      "height": 1340,
+      "sha256": "54fcbe1ad1fa667a41545683e54fab93269f41d59b03f034e63c90704e7c472a",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          31
+        ],
+        "cropNormalized": [
+          0.03,
+          0.12,
+          0.98,
+          0.99
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "lung-volumes"
+      }
+    },
+    {
+      "id": "p14",
+      "title": "Henry’s law: pressure and gas dissolved in liquid",
+      "category": "physiology-diagrams",
+      "description": "Pressurized-liquid analogy illustrates why changing gas partial pressure changes the quantity that dissolves at equilibrium.",
+      "tags": [
+        "Henry law",
+        "partial pressure",
+        "gas solubility",
+        "diffusion"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Pressurized-liquid analogy illustrates why changing gas partial pressure changes the quantity that dissolves at equilibrium.",
+      "image": "images/p14.webp",
+      "thumbnail": "thumbnails/p14.webp",
+      "width": 1745,
+      "height": 1140,
+      "sha256": "25b1d3cec2b31d76ba374c65b4682a6e81d903fc1f8ea756384d9fd11314f409",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          33
+        ],
+        "cropNormalized": [
+          0.12,
+          0.2,
+          0.97,
+          0.94
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "gas-diffusion-henry"
+      }
+    },
+    {
+      "id": "p15",
+      "title": "Oxygen and carbon dioxide diffusion gradients",
+      "category": "physiology-diagrams",
+      "description": "Pulmonary versus peripheral-tissue diagrams with representative oxygen and carbon dioxide partial pressures and the directions of diffusion.",
+      "tags": [
+        "partial pressures",
+        "alveoli",
+        "gas exchange",
+        "oxygen",
+        "carbon dioxide",
+        "gradients"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Pulmonary versus peripheral-tissue diagrams with representative oxygen and carbon dioxide partial pressures and the directions of diffusion.",
+      "image": "images/p15.webp",
+      "thumbnail": "thumbnails/p15.webp",
+      "width": 1252,
+      "height": 1386,
+      "sha256": "38f687bd90834f065a4f5b2f1e098ebc9a6fef6e8a17198ee832c47fab7bb484",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          34
+        ],
+        "cropNormalized": [
+          0.0,
+          0.08,
+          0.61,
+          0.98
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "gas-diffusion-henry"
+      }
+    },
+    {
+      "id": "p16",
+      "title": "Oxygen–hemoglobin dissociation curve",
+      "category": "physiology-diagrams",
+      "description": "Sigmoidal oxygen saturation graph with representative partial-pressure values, useful for understanding hemoglobin loading and unloading.",
+      "tags": [
+        "hemoglobin",
+        "oxygen saturation",
+        "oxygen dissociation",
+        "PO2",
+        "curve"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Sigmoidal oxygen saturation graph with representative partial-pressure values, useful for understanding hemoglobin loading and unloading.",
+      "image": "images/p16.webp",
+      "thumbnail": "thumbnails/p16.webp",
+      "width": 1027,
+      "height": 1109,
+      "sha256": "43d77a0c3b3e8e5daf64ca571caec3db3bc57cfee622682d0b823aa5b5026f01",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          35
+        ],
+        "cropNormalized": [
+          0.49,
+          0.25,
+          0.99,
+          0.97
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "hemoglobin-oxygen"
+      }
+    },
+    {
+      "id": "p17",
+      "title": "Carbon dioxide transport: bicarbonate formation",
+      "category": "physiology-diagrams",
+      "description": "Red-blood-cell pathway showing carbonic anhydrase, bicarbonate formation, proton buffering, carbaminohemoglobin, dissolved CO₂, and the chloride shift.",
+      "tags": [
+        "carbon dioxide",
+        "bicarbonate",
+        "carbonic anhydrase",
+        "chloride shift",
+        "carbaminohemoglobin"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Red-blood-cell pathway showing carbonic anhydrase, bicarbonate formation, proton buffering, carbaminohemoglobin, dissolved CO₂, and the chloride shift.",
+      "image": "images/p17.webp",
+      "thumbnail": "thumbnails/p17.webp",
+      "width": 1068,
+      "height": 1417,
+      "sha256": "2e85b1cbd96cc0c22cccf86d620872d09fca6acca017051016121fa74e5e644f",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          36
+        ],
+        "cropNormalized": [
+          0.46,
+          0.06,
+          0.98,
+          0.98
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "co2-transport"
+      }
+    },
+    {
+      "id": "p18",
+      "title": "Gas loading and unloading: lungs versus tissues",
+      "category": "physiology-diagrams",
+      "description": "Companion panels compare O₂ pickup and delivery with CO₂ uptake and release, including the reversal of the bicarbonate/chloride exchange at the lungs.",
+      "tags": [
+        "oxygen loading",
+        "oxygen unloading",
+        "chloride shift",
+        "CO2 transport",
+        "lungs",
+        "tissues"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Companion panels compare O₂ pickup and delivery with CO₂ uptake and release, including the reversal of the bicarbonate/chloride exchange at the lungs.",
+      "image": "images/p18.webp",
+      "thumbnail": "thumbnails/p18.webp",
+      "width": 1970,
+      "height": 1479,
+      "sha256": "77358db06f9e275027df7ab6ce2629b881eaa8d053bb0a21ee8e0304e7f6c630",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          37
+        ],
+        "cropNormalized": [
+          0.02,
+          0.02,
+          0.98,
+          0.98
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "co2-transport"
+      }
+    },
+    {
+      "id": "p19",
+      "title": "Respiratory regulation: brainstem and chemoreceptors",
+      "category": "physiology-diagrams",
+      "description": "Brainstem and peripheral receptor pathways show the medulla, pons, respiratory groups, chemoreceptors, and motor output to breathing muscles; lecture uses older pontine-center names.",
+      "tags": [
+        "brainstem",
+        "medulla",
+        "pons",
+        "DRG",
+        "VRG",
+        "chemoreceptors",
+        "respiratory centers"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Brainstem and peripheral receptor pathways show the medulla, pons, respiratory groups, chemoreceptors, and motor output to breathing muscles; lecture uses older pontine-center names.",
+      "image": "images/p19.webp",
+      "thumbnail": "thumbnails/p19.webp",
+      "width": 1314,
+      "height": 1433,
+      "sha256": "3c6f57969352f3b5240f9f100795026f534ca0c62172662531bc98744e89c669",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          39
+        ],
+        "cropNormalized": [
+          0.06,
+          0.05,
+          0.7,
+          0.98
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "brainstem-respiratory"
+      }
+    },
+    {
+      "id": "p20",
+      "title": "Carbon dioxide feedback control of breathing",
+      "category": "physiology-diagrams",
+      "description": "Negative-feedback flowchart showing how changing arterial CO₂ changes chemoreceptor input, ventilatory effort, and restoration of blood gas balance.",
+      "tags": [
+        "CO2",
+        "ventilation",
+        "negative feedback",
+        "chemoreceptors",
+        "blood pH"
+      ],
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Negative-feedback flowchart showing how changing arterial CO₂ changes chemoreceptor input, ventilatory effort, and restoration of blood gas balance.",
+      "image": "images/p20.webp",
+      "thumbnail": "thumbnails/p20.webp",
+      "width": 1704,
+      "height": 1402,
+      "sha256": "2953d23a2e4118ad61a4f14bede6f26a7db30e517204352f45a848b4990bf1b2",
+      "source": {
+        "deck": "23-Respiratory System.pptx",
+        "slides": [
+          41
+        ],
+        "cropNormalized": [
+          0.13,
+          0.07,
+          0.96,
+          0.98
+        ],
+        "extraction": "rendered-slide-crop-preserving-lecture-annotations"
+      },
+      "learnReference": {
+        "articleId": "respiratory-system-deep-dive",
+        "sectionId": "pontine-and-reflex"
+      }
+    }
+  ]
+}

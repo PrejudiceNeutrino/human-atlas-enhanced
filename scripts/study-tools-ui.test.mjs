@@ -47,7 +47,7 @@ after(async()=>{flushSync(()=>root.unmount());await annotationStore.dispose();wi
 
 test('enabled Study Tools exposes all four counts and exact topics alongside Gallery without editorial UI or geometry',async()=>{
  await open();assert.equal(tab('Study Tools').getAttribute('aria-selected'),'true');assert.equal(tab('Quizzes'),undefined);assert.ok(tab('Gallery'));
- assert.equal(tools().querySelector('header p').textContent,'Digestive System · Chapter 24');
+ assert.match(tools().querySelector('header p').textContent,/Test your understanding with multiple-choice questions/);
  assert.deepEqual([...tools().querySelectorAll('.study-overview-count')].map(node=>node.textContent),['111 questions','55 questions','194 concepts','101 cards']);
  const topic=tools().querySelector('[aria-label="Study topic"]');assert.equal(topic.getAttribute('role'),'combobox');assert.equal(topic.querySelector('[data-slot=select-value]').textContent,'All Topics');
  const shell=document.querySelector('.learn-shell'),bodyStyle=document.body.getAttribute('style'),htmlStyle=document.documentElement.getAttribute('style');

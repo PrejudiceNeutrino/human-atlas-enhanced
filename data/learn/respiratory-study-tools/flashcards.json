@@ -1,0 +1,4487 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "respiratory",
+  "cards": [
+    {
+      "id": "fc-001",
+      "topicId": "foundations",
+      "front": "List the seven respiratory functions emphasized in the lecture.",
+      "back": "Exchange gases; move air; condition and protect respiratory surfaces; defend against pathogens/pollutants; produce sound; support smell; regulate pH.",
+      "conceptIds": [
+        "respiratory-system",
+        "acid-base-regulation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "functions-organization",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              3,
+              20
+            ],
+            "Respiratory - Copy.pptx": [
+              1
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "functions-organization",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              3
+            ],
+            "Respiratory - Copy.pptx": [
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-002",
+      "topicId": "foundations",
+      "front": "What are the instructor's upper- and lower-system boundaries?",
+      "back": "Upper: nose, nasal cavity, paranasal sinuses, pharynx. Lower: larynx, trachea, bronchi/bronchioles, lungs and alveoli.",
+      "conceptIds": [
+        "upper-respiratory-system",
+        "lower-respiratory-system"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "functions-organization",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              3,
+              20
+            ],
+            "Respiratory - Copy.pptx": [
+              1
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "functions-organization",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              3
+            ],
+            "Respiratory - Copy.pptx": [
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-003",
+      "topicId": "foundations",
+      "front": "Differentiate ventilation, pulmonary exchange, and cellular respiration.",
+      "back": "Ventilation moves air in and out; exchange diffuses O₂/CO₂ between alveoli and blood; cellular respiration captures energy in cells and often consumes O₂.",
+      "conceptIds": [
+        "pulmonary-ventilation",
+        "gas-exchange",
+        "cellular-respiration"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "functions-organization",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              3,
+              20
+            ],
+            "Respiratory - Copy.pptx": [
+              1
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "functions-organization",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              3
+            ],
+            "Respiratory - Copy.pptx": [
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-004",
+      "topicId": "foundations",
+      "front": "Why is the respiratory tract also a defensive barrier?",
+      "back": "It filters particles, adds moisture and heat, moves mucus outward, and supports immune surveillance before microbes reach fragile alveoli.",
+      "conceptIds": [
+        "airway-conditioning",
+        "respiratory-mucosa"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "functions-organization",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              3,
+              20
+            ],
+            "Respiratory - Copy.pptx": [
+              1
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "functions-organization",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              3
+            ],
+            "Respiratory - Copy.pptx": [
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-005",
+      "topicId": "foundations",
+      "front": "Which terminal airway still belongs to the conducting zone, and what follows it?",
+      "back": "Terminal bronchiole; then respiratory bronchioles with alveoli begin the respiratory zone.",
+      "conceptIds": [
+        "terminal-bronchiole",
+        "respiratory-bronchiole"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "functions-organization",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              3,
+              20
+            ],
+            "Respiratory - Copy.pptx": [
+              1
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "functions-organization",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              3
+            ],
+            "Respiratory - Copy.pptx": [
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-006",
+      "topicId": "foundations",
+      "front": "What is the physiological connection between breathing and blood pH?",
+      "back": "CO₂ removal shifts the reversible bicarbonate buffer reaction, changing H⁺ concentration: CO₂ retention tends toward acidosis, CO₂ loss toward alkalosis.",
+      "conceptIds": [
+        "acid-base-regulation",
+        "carbon-dioxide"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "functions-organization",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              3,
+              20
+            ],
+            "Respiratory - Copy.pptx": [
+              1
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "functions-organization",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              3
+            ],
+            "Respiratory - Copy.pptx": [
+              1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-007",
+      "topicId": "nose",
+      "front": "What happens to inspired air while passing over the conchae?",
+      "back": "It swirls over a large moist, vascular mucosal surface, improving warming, humidification, and particle removal.",
+      "conceptIds": [
+        "nasal-conchae",
+        "airway-conditioning"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "nasal-cavity",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "upper-lower-airway",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-008",
+      "topicId": "nose",
+      "front": "Contrast a concha and a meatus.",
+      "back": "Concha: projecting curved turbinate; meatus: passage beneath a concha.",
+      "conceptIds": [
+        "nasal-conchae",
+        "nasal-meatus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "nasal-cavity",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "upper-lower-airway",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-009",
+      "topicId": "nose",
+      "front": "Trace air from nostrils to the first pharyngeal subdivision.",
+      "back": "External nares → vestibule/nasal cavity → choanae → nasopharynx.",
+      "conceptIds": [
+        "external-nares",
+        "choanae",
+        "nasopharynx"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "nasal-cavity",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "upper-lower-airway",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-010",
+      "topicId": "nose",
+      "front": "How do hard and soft palate differ during breathing and swallowing?",
+      "back": "Hard palate is bony anterior separation; soft palate is movable posterior tissue that elevates to limit access to nasopharynx on swallowing.",
+      "conceptIds": [
+        "hard-palate",
+        "soft-palate"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "nasal-cavity",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "upper-lower-airway",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-011",
+      "topicId": "nose",
+      "front": "List the three pharyngeal regions from superior to inferior.",
+      "back": "Nasopharynx → oropharynx → laryngopharynx.",
+      "conceptIds": [
+        "nasopharynx",
+        "oropharynx",
+        "laryngopharynx"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "pharynx",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "upper-lower-airway",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-012",
+      "topicId": "nose",
+      "front": "Why is nasal breathing normally better at conditioning air than bypassing the nose?",
+      "back": "Nasal hairs, conchae, mucus, and blood-rich mucosa filter, warm, and humidify incoming air.",
+      "conceptIds": [
+        "vibrissae",
+        "nasal-cavity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "nasal-cavity",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "upper-lower-airway",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-013",
+      "topicId": "mucosa",
+      "front": "How does the mucociliary escalator remove contaminants?",
+      "back": "Mucus traps material and beating cilia move it toward the pharynx where it can be swallowed or expelled.",
+      "conceptIds": [
+        "mucociliary-escalator",
+        "cilia"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "respiratory-mucosa",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              5,
+              6
+            ],
+            "Respiratory - Copy.pptx": [
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "mucociliary-defenses",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              5,
+              6
+            ],
+            "Respiratory - Copy.pptx": [
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-014",
+      "topicId": "mucosa",
+      "front": "How would damaged respiratory cilia increase susceptibility to infection?",
+      "back": "Mucus and trapped pathogens are cleared less efficiently and may persist in conducting airways.",
+      "conceptIds": [
+        "cilia",
+        "respiratory-mucosa"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "respiratory-mucosa",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              5,
+              6
+            ],
+            "Respiratory - Copy.pptx": [
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "mucociliary-defenses",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              5,
+              6
+            ],
+            "Respiratory - Copy.pptx": [
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-015",
+      "topicId": "mucosa",
+      "front": "Which epithelial pattern is common in the trachea, and why?",
+      "back": "Pseudostratified ciliated columnar epithelium supports secretion and mucociliary clearance.",
+      "conceptIds": [
+        "pseudostratified-ciliated-columnar-epithelium"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "histology-tract",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              5,
+              6,
+              17
+            ],
+            "Respiratory - Copy.pptx": [
+              10,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "tissue-linings",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              6,
+              17
+            ],
+            "Respiratory - Copy.pptx": [
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-016",
+      "topicId": "mucosa",
+      "front": "Why does the lining differ between oropharynx and alveoli?",
+      "back": "Oropharynx needs abrasion-resistant stratified squamous epithelium; alveoli need extremely thin simple squamous cells for diffusion.",
+      "conceptIds": [
+        "stratified-squamous-epithelium",
+        "simple-squamous-epithelium"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "histology-tract",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              5,
+              6,
+              17
+            ],
+            "Respiratory - Copy.pptx": [
+              10,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "tissue-linings",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              6,
+              17
+            ],
+            "Respiratory - Copy.pptx": [
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-017",
+      "topicId": "mucosa",
+      "front": "Where is the lamina propria relative to the respiratory epithelium?",
+      "back": "Immediately underneath, as loose connective tissue supporting vessels, nerves, and immune cells.",
+      "conceptIds": [
+        "lamina-propria"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "respiratory-mucosa",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              5,
+              6
+            ],
+            "Respiratory - Copy.pptx": [
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "mucociliary-defenses",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              5,
+              6
+            ],
+            "Respiratory - Copy.pptx": [
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-018",
+      "topicId": "mucosa",
+      "front": "What shifts in airway tissue as you move from bronchi toward bronchioles?",
+      "back": "Cartilage disappears, smooth muscle becomes influential, and the lining becomes shorter/simple cuboidal in many bronchioles.",
+      "conceptIds": [
+        "bronchioles",
+        "simple-cuboidal-epithelium"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "respiratory-mucosa",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              5,
+              6
+            ],
+            "Respiratory - Copy.pptx": [
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "mucociliary-defenses",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              5,
+              6
+            ],
+            "Respiratory - Copy.pptx": [
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-019",
+      "topicId": "larynx",
+      "front": "Name the three unpaired and three paired laryngeal cartilages.",
+      "back": "Unpaired: epiglottis, thyroid, cricoid. Paired: arytenoid, corniculate, cuneiform.",
+      "conceptIds": [
+        "epiglottis",
+        "arytenoid-cartilage",
+        "cricoid-cartilage"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "voice-and-cough",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              10,
+              11,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              9,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "cough-reflex",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              10,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-020",
+      "topicId": "larynx",
+      "front": "Explain why the epiglottis alone is not the entire airway-protection mechanism.",
+      "back": "Laryngeal elevation, closure of vocal folds, and movement of surrounding tissues act with the epiglottis during swallowing.",
+      "conceptIds": [
+        "epiglottis",
+        "vocal-folds"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "voice-and-cough",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              10,
+              11,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              9,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "cough-reflex",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              10,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-021",
+      "topicId": "larynx",
+      "front": "Differentiate phonation and articulation.",
+      "back": "Phonation makes voiced sound using vibrating folds; articulation shapes speech using tongue, lips, palate, and other structures.",
+      "conceptIds": [
+        "phonation",
+        "articulation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "voice-and-cough",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              10,
+              11,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              9,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "larynx-voice",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-022",
+      "topicId": "larynx",
+      "front": "How do intrinsic and extrinsic laryngeal muscles differ?",
+      "back": "Intrinsic muscles control vocal-fold position, glottis and tension; extrinsic muscles move/stabilize the whole larynx.",
+      "conceptIds": [
+        "intrinsic-laryngeal-muscles",
+        "extrinsic-laryngeal-muscles"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "larynx-cartilages",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "larynx-voice",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-023",
+      "topicId": "larynx",
+      "front": "What physical changes generally make a deeper voice?",
+      "back": "Longer and/or more massive vibrating folds and lower tension, all else equal, tend to decrease fundamental frequency.",
+      "conceptIds": [
+        "pitch",
+        "vocal-folds"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "larynx-cartilages",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "larynx-voice",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-024",
+      "topicId": "larynx",
+      "front": "Trace the key mechanical events of a cough.",
+      "back": "Sensory stimulation → inhale/close glottis → chest/abdominal compression raises pressure → sudden opening expels a strong burst of air.",
+      "conceptIds": [
+        "cough-reflex",
+        "glottis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "voice-and-cough",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              10,
+              11,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              9,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "cough-reflex",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              10,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-025",
+      "topicId": "trachea",
+      "front": "Why are tracheal cartilages open posteriorly?",
+      "back": "Their C-shaped rings resist collapse while permitting posterior flexibility and esophageal expansion during swallowing.",
+      "conceptIds": [
+        "tracheal-cartilage",
+        "trachea"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "trachea",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "trachea-bronchi",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14,
+              15
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-026",
+      "topicId": "trachea",
+      "front": "What does the trachealis muscle do?",
+      "back": "Posterior smooth muscle adjusts tracheal lumen caliber and can participate in effective cough by changing airway dimensions.",
+      "conceptIds": [
+        "trachealis-muscle"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "trachea",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "trachea-bronchi",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14,
+              15
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-027",
+      "topicId": "trachea",
+      "front": "What does the carina indicate?",
+      "back": "A sensitive internal ridge where trachea bifurcates into right and left primary bronchi.",
+      "conceptIds": [
+        "carina"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "trachea",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "trachea-bronchi",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14,
+              15
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-028",
+      "topicId": "trachea",
+      "front": "Match bronchial branching levels to their territories.",
+      "back": "Primary/main: whole lung; secondary/lobar: lung lobe; tertiary/segmental: bronchopulmonary segment.",
+      "conceptIds": [
+        "primary-bronchus",
+        "secondary-bronchus",
+        "tertiary-bronchus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "bronchial-tree",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              15,
+              16
+            ],
+            "Respiratory - Copy.pptx": [
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "trachea-bronchi",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14,
+              15
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-029",
+      "topicId": "trachea",
+      "front": "Why are bronchioles highly responsive to the autonomic nervous system?",
+      "back": "Their muscular walls lack cartilaginous rings and can narrow or widen airflow channels.",
+      "conceptIds": [
+        "bronchioles",
+        "bronchoconstriction"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "bronchial-tree",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              15,
+              16
+            ],
+            "Respiratory - Copy.pptx": [
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "trachea-bronchi",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14,
+              15
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-030",
+      "topicId": "trachea",
+      "front": "What happens to bronchiolar resistance during sympathetic versus parasympathetic input?",
+      "back": "β₂-mediated adrenergic activity favors dilation; vagal cholinergic activity commonly favors constriction, increasing resistance.",
+      "conceptIds": [
+        "bronchodilation",
+        "parasympathetic-airway-response"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "bronchial-tree",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              15,
+              16
+            ],
+            "Respiratory - Copy.pptx": [
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "trachea-bronchi",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14,
+              15
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-031",
+      "topicId": "lungs",
+      "front": "How do right- and left-lung lobes and fissures differ?",
+      "back": "Right has 3 lobes, oblique and horizontal fissures; left has 2 lobes, one oblique fissure, and a cardiac notch.",
+      "conceptIds": [
+        "right-lung",
+        "left-lung",
+        "cardiac-notch"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lungs-pleura",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              14,
+              15,
+              24,
+              25
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "lung-anatomy",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              15,
+              24
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-032",
+      "topicId": "lungs",
+      "front": "Distinguish the lung's apex, base, and hilum.",
+      "back": "Apex: superior tip; base: broad inferior diaphragmatic surface; hilum: medial passage for bronchi, vessels, nerves and lymphatics.",
+      "conceptIds": [
+        "lung-apex",
+        "lung-base",
+        "lung-hilum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lungs-pleura",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              14,
+              15,
+              24,
+              25
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "lung-anatomy",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              15,
+              24
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-033",
+      "topicId": "lungs",
+      "front": "Distinguish visceral and parietal pleura.",
+      "back": "Visceral pleura lies on the lung; parietal pleura lines the inner thoracic wall/diaphragm/mediastinum.",
+      "conceptIds": [
+        "visceral-pleura",
+        "parietal-pleura"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lungs-pleura",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              14,
+              15,
+              24,
+              25
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "lung-anatomy",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              15,
+              24
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-034",
+      "topicId": "lungs",
+      "front": "What normally occupies the pleural cavity?",
+      "back": "A very thin layer of serous fluid between pleural membranes, helping movement and mechanical coupling.",
+      "conceptIds": [
+        "pleural-cavity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lungs-pleura",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              14,
+              15,
+              24,
+              25
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "lung-anatomy",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              15,
+              24
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-035",
+      "topicId": "lungs",
+      "front": "What is the teaching relevance of the left cardiac notch?",
+      "back": "It creates the indentation needed to accommodate the heart on the left side.",
+      "conceptIds": [
+        "cardiac-notch"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lungs-pleura",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              14,
+              15,
+              24,
+              25
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "lung-anatomy",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              15,
+              24
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-036",
+      "topicId": "lungs",
+      "front": "How do bronchopulmonary segments relate to tertiary bronchi?",
+      "back": "A segmental/tertiary bronchus supplies a bronchopulmonary segment, a subdivision of a lung lobe.",
+      "conceptIds": [
+        "bronchopulmonary-segment",
+        "tertiary-bronchus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lungs-pleura",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              14,
+              15,
+              24,
+              25
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "lung-anatomy",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              15,
+              24
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-037",
+      "topicId": "alveoli",
+      "front": "Which three major alveolar cell types does Chapter 23 emphasize?",
+      "back": "Type I pneumocytes: thin diffusion surface; Type II: surfactant; alveolar macrophages: phagocytic defense.",
+      "conceptIds": [
+        "type-i-pneumocyte",
+        "type-ii-pneumocyte",
+        "alveolar-macrophage"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "alveoli-and-cells",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18
+            ],
+            "Respiratory - Copy.pptx": [
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "alveoli-membrane",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "Respiratory - Copy.pptx": [
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-038",
+      "topicId": "alveoli",
+      "front": "Explain how surfactant stabilizes very small alveoli.",
+      "back": "By lowering surface tension of the lining fluid, it reduces collapse tendency and the pressure needed to inflate alveoli.",
+      "conceptIds": [
+        "pulmonary-surfactant",
+        "surface-tension"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "alveoli-and-cells",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18
+            ],
+            "Respiratory - Copy.pptx": [
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "alveoli-membrane",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "Respiratory - Copy.pptx": [
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-039",
+      "topicId": "alveoli",
+      "front": "What passes between alveolar gas and an RBC during gas exchange?",
+      "back": "Thin type I alveolar epithelium, basal laminae, capillary endothelium, then plasma/RBC environment.",
+      "conceptIds": [
+        "respiratory-membrane"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "respiratory-membrane",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              18,
+              19,
+              32,
+              34
+            ],
+            "Respiratory - Copy.pptx": [
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "alveoli-membrane",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "Respiratory - Copy.pptx": [
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-040",
+      "topicId": "alveoli",
+      "front": "Why are type I pneumocytes thin rather than thick and layered?",
+      "back": "Thin simple squamous cells shorten the gas diffusion path.",
+      "conceptIds": [
+        "type-i-pneumocyte"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "alveoli-and-cells",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18
+            ],
+            "Respiratory - Copy.pptx": [
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "alveoli-membrane",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "Respiratory - Copy.pptx": [
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-041",
+      "topicId": "alveoli",
+      "front": "Why are alveolar macrophages needed beyond mucus clearance?",
+      "back": "Alveoli have minimal mucociliary protection, so macrophages help remove particles and pathogens reaching gas-exchange regions.",
+      "conceptIds": [
+        "alveolar-macrophage"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "alveoli-and-cells",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18
+            ],
+            "Respiratory - Copy.pptx": [
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "alveoli-membrane",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "Respiratory - Copy.pptx": [
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-042",
+      "topicId": "alveoli",
+      "front": "What happens when alveolar surfaces lose surfactant?",
+      "back": "Surface tension rises, making expansion harder and promoting collapse, especially of small alveoli.",
+      "conceptIds": [
+        "pulmonary-surfactant"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "alveoli-and-cells",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18
+            ],
+            "Respiratory - Copy.pptx": [
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "alveoli-membrane",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "Respiratory - Copy.pptx": [
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-043",
+      "topicId": "ventilation",
+      "front": "State Boyle's law mathematically and apply it to inhalation.",
+      "back": "P₁V₁ = P₂V₂ for fixed gas at constant T; expanded thoracic/lung volume lowers alveolar pressure, drawing air inward.",
+      "conceptIds": [
+        "boyle-s-law",
+        "inspiration"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "boyle-and-pressure",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "Respiratory - Copy.pptx": [
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "breathing-mechanics",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              24,
+              25,
+              27,
+              28,
+              29
+            ],
+            "Respiratory - Copy.pptx": [
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-044",
+      "topicId": "ventilation",
+      "front": "Walk through one quiet inspiration.",
+      "back": "Diaphragm contracts downward; external intercostals lift ribs; thoracic volume expands; alveolar pressure falls just below atmospheric; air enters.",
+      "conceptIds": [
+        "diaphragm",
+        "external-intercostals"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "breathing-muscles",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              27,
+              28,
+              29
+            ],
+            "Respiratory - Copy.pptx": [
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "breathing-mechanics",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              24,
+              25,
+              27,
+              28,
+              29
+            ],
+            "Respiratory - Copy.pptx": [
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-045",
+      "topicId": "ventilation",
+      "front": "Walk through quiet expiration.",
+      "back": "Inspiratory muscles relax; lung recoil reduces volume; alveolar pressure rises a little above atmospheric; air leaves.",
+      "conceptIds": [
+        "expiration",
+        "elastic-recoil"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "boyle-and-pressure",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "Respiratory - Copy.pptx": [
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "breathing-mechanics",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              24,
+              25,
+              27,
+              28,
+              29
+            ],
+            "Respiratory - Copy.pptx": [
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-046",
+      "topicId": "ventilation",
+      "front": "Why do lungs expand when the chest wall expands, although air is not being pumped by a muscle inside the alveolus?",
+      "back": "Pleural coupling and subatmospheric intrapleural pressure transmit chest expansion, changing lung volume and alveolar pressure.",
+      "conceptIds": [
+        "pleura",
+        "intrapleural-pressure"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "boyle-and-pressure",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "Respiratory - Copy.pptx": [
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "breathing-mechanics",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              24,
+              25,
+              27,
+              28,
+              29
+            ],
+            "Respiratory - Copy.pptx": [
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-047",
+      "topicId": "ventilation",
+      "front": "Why is forced expiration energetically different from quiet expiration?",
+      "back": "It recruits muscles (including abdominals/internal intercostals) to push air out more forcefully rather than relying only on recoil.",
+      "conceptIds": [
+        "forced-breathing",
+        "internal-intercostals"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "inhalation-exhalation",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "breathing-mechanics",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              24,
+              25,
+              27,
+              28,
+              29
+            ],
+            "Respiratory - Copy.pptx": [
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-048",
+      "topicId": "ventilation",
+      "front": "What does 759 mmHg inside the lung versus 760 mmHg outside imply?",
+      "back": "Air enters until the pressure difference decreases; it moves from higher atmospheric to lower alveolar pressure.",
+      "conceptIds": [
+        "intrapulmonary-pressure",
+        "atmospheric-pressure"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "boyle-and-pressure",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "Respiratory - Copy.pptx": [
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "breathing-mechanics",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              24,
+              25,
+              27,
+              28,
+              29
+            ],
+            "Respiratory - Copy.pptx": [
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-049",
+      "topicId": "volumes",
+      "front": "List the four principal respiratory volumes with their meanings.",
+      "back": "Tidal: ordinary breath; IRV: extra inspiration; ERV: extra expiration; RV: air remaining after maximal expiration.",
+      "conceptIds": [
+        "tidal-volume",
+        "inspiratory-reserve-volume",
+        "expiratory-reserve-volume",
+        "residual-volume"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lung-volumes",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "volumes-capacities",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-050",
+      "topicId": "volumes",
+      "front": "How do you calculate vital capacity?",
+      "back": "TV + IRV + ERV, the maximum volume that can be breathed out after full inhalation.",
+      "conceptIds": [
+        "vital-capacity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lung-volumes",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "volumes-capacities",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-051",
+      "topicId": "volumes",
+      "front": "How do you calculate total lung capacity?",
+      "back": "TLC = VC + RV, all the air in lungs at maximal inflation.",
+      "conceptIds": [
+        "total-lung-capacity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lung-volumes",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "volumes-capacities",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-052",
+      "topicId": "volumes",
+      "front": "How does residual volume differ from expiratory reserve volume?",
+      "back": "ERV can be actively exhaled after a normal expiration; RV remains even after maximum exhalation.",
+      "conceptIds": [
+        "residual-volume",
+        "expiratory-reserve-volume"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lung-volumes",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "volumes-capacities",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-053",
+      "topicId": "volumes",
+      "front": "How do you calculate functional residual capacity?",
+      "back": "FRC = ERV + RV, the air remaining after a passive ordinary expiration.",
+      "conceptIds": [
+        "functional-residual-capacity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lung-volumes",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "volumes-capacities",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-054",
+      "topicId": "volumes",
+      "front": "Why can't ordinary spirometry measure RV directly?",
+      "back": "The spirometer registers air that enters/leaves; residual air stays in the lungs during the maneuver.",
+      "conceptIds": [
+        "spirometry",
+        "residual-volume"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lung-volumes",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "volumes-capacities",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-055",
+      "topicId": "diffusion",
+      "front": "Which physical property drives oxygen diffusion across the respiratory membrane?",
+      "back": "The oxygen partial-pressure difference: high alveolar PO₂ versus lower incoming pulmonary capillary PO₂.",
+      "conceptIds": [
+        "po2",
+        "pulmonary-gas-exchange"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "gas-diffusion-henry",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "henry-diffusion",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-056",
+      "topicId": "diffusion",
+      "front": "Compare the directions of O₂ and CO₂ exchange at the alveoli.",
+      "back": "O₂ moves into pulmonary blood; CO₂ moves from pulmonary blood into alveolar air.",
+      "conceptIds": [
+        "pulmonary-gas-exchange"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "gas-diffusion-henry",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "henry-diffusion",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-057",
+      "topicId": "diffusion",
+      "front": "Compare the directions of O₂ and CO₂ exchange at systemic tissues.",
+      "back": "O₂ moves from blood to cells; CO₂ moves from cells to blood.",
+      "conceptIds": [
+        "systemic-gas-exchange"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "gas-diffusion-henry",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "henry-diffusion",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-058",
+      "topicId": "diffusion",
+      "front": "State Henry's law in a physiologically useful way.",
+      "back": "At fixed temperature, dissolved gas concentration depends on the gas's partial pressure and its solubility in liquid.",
+      "conceptIds": [
+        "henry-s-law"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "gas-diffusion-henry",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "henry-diffusion",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-059",
+      "topicId": "diffusion",
+      "front": "Why can two gases at similar pressures dissolve to different concentrations in blood?",
+      "back": "Different gases have different solubilities; CO₂ is more soluble than O₂.",
+      "conceptIds": [
+        "gas-solubility",
+        "henry-s-law"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "gas-diffusion-henry",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "henry-diffusion",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-060",
+      "topicId": "diffusion",
+      "front": "What happens to diffusion efficiency if the respiratory membrane thickens?",
+      "back": "It decreases if other conditions are equal, because molecules travel across a longer barrier.",
+      "conceptIds": [
+        "diffusion-distance"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "gas-diffusion-henry",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "henry-diffusion",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-061",
+      "topicId": "oxygen",
+      "front": "What are the two broad ways oxygen is carried in blood, and which predominates?",
+      "back": "Most is reversibly bound to hemoglobin; a small amount is dissolved in plasma and determines PO₂.",
+      "conceptIds": [
+        "hemoglobin",
+        "dissolved-oxygen"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "hemoglobin-oxygen",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              35,
+              37
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "hemoglobin-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              35,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-062",
+      "topicId": "oxygen",
+      "front": "Why is the oxyhemoglobin dissociation curve S-shaped?",
+      "back": "Cooperative binding means the affinity of remaining heme sites changes as O₂ molecules bind or dissociate.",
+      "conceptIds": [
+        "oxygen-hemoglobin-dissociation-curve",
+        "cooperative-binding"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "hemoglobin-oxygen",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              35,
+              37
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "hemoglobin-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              35,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-063",
+      "topicId": "oxygen",
+      "front": "Explain the Bohr effect without naming a graph shift.",
+      "back": "In CO₂-rich or H⁺-rich tissue environments, hemoglobin binds oxygen less tightly, promoting unloading.",
+      "conceptIds": [
+        "bohr-effect"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "hemoglobin-oxygen",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              35,
+              37
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "hemoglobin-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              35,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-064",
+      "topicId": "oxygen",
+      "front": "Why is a plateau at high PO₂ physiologically useful?",
+      "back": "Hemoglobin remains highly saturated despite moderate changes in alveolar PO₂, supporting oxygen loading.",
+      "conceptIds": [
+        "oxygen-hemoglobin-dissociation-curve"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "hemoglobin-oxygen",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              35,
+              37
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "hemoglobin-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              35,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-065",
+      "topicId": "oxygen",
+      "front": "Why is the steeper section of the Hb curve useful to tissues?",
+      "back": "Small drops in local PO₂ permit a relatively large amount of oxygen to unload.",
+      "conceptIds": [
+        "oxygen-unloading"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "hemoglobin-oxygen",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              35,
+              37
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "hemoglobin-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              35,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-066",
+      "topicId": "oxygen",
+      "front": "Does dark venous blood actually turn blue because of CO₂?",
+      "back": "No. Venous blood is dark red; blue blood in diagrams is a visual convention, not carbaminohemoglobin color.",
+      "conceptIds": [
+        "carbaminohemoglobin",
+        "deoxyhemoglobin"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "hemoglobin-oxygen",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              35,
+              37
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "hemoglobin-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              35,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-067",
+      "topicId": "carbon",
+      "front": "Name the three forms of CO₂ transport and approximate fractions taught in the lecture.",
+      "back": "About 70% bicarbonate pathway, 23% carbamino compounds, 7% dissolved in plasma (approximate textbook proportions).",
+      "conceptIds": [
+        "bicarbonate",
+        "carbaminohemoglobin",
+        "carbon-dioxide"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "co2-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "co2-and-ph",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-068",
+      "topicId": "carbon",
+      "front": "Trace the major chemical route of CO₂ in systemic tissues.",
+      "back": "CO₂ enters RBC → carbonic anhydrase speeds hydration → H₂CO₃ equilibrium yields H⁺ and HCO₃⁻ → bicarbonate moves into plasma.",
+      "conceptIds": [
+        "carbonic-anhydrase",
+        "bicarbonate"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "co2-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "co2-and-ph",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-069",
+      "topicId": "carbon",
+      "front": "Explain the chloride shift in systemic capillaries.",
+      "back": "As HCO₃⁻ leaves an RBC, Cl⁻ enters to preserve electrical balance; the exchange reverses in lungs.",
+      "conceptIds": [
+        "chloride-shift"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "co2-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "co2-and-ph",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-070",
+      "topicId": "carbon",
+      "front": "How is CO₂ transported in carbaminohemoglobin?",
+      "back": "CO₂ attaches to globin amino groups, distinct from the heme site that carries O₂.",
+      "conceptIds": [
+        "carbaminohemoglobin"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "co2-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "co2-and-ph",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-071",
+      "topicId": "carbon",
+      "front": "How does ventilation change the bicarbonate/H⁺ equilibrium?",
+      "back": "Retained CO₂ increases acid load and can lower pH; excessive CO₂ exhalation reduces acid load and can raise pH.",
+      "conceptIds": [
+        "bicarbonate-buffer-system",
+        "respiratory-acidosis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "co2-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "co2-and-ph",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-072",
+      "topicId": "carbon",
+      "front": "Why is saying '70% of CO₂ travels as carbonic acid' imprecise?",
+      "back": "Carbonic acid is short-lived; most of the carbon transported by that route is actually bicarbonate (HCO₃⁻).",
+      "conceptIds": [
+        "carbonic-acid",
+        "bicarbonate"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "co2-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "co2-and-ph",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-073",
+      "topicId": "control",
+      "front": "What is the difference between medullary respiratory groups and pontine centers?",
+      "back": "Medullary circuits help generate and execute rhythm; pontine circuits modify inspiratory/expiratory timing and pattern.",
+      "conceptIds": [
+        "medulla-oblongata",
+        "pons"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "brainstem-respiratory",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "brainstem-control",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-074",
+      "topicId": "control",
+      "front": "State the lecture's simplified DRG/VRG functions, with a caution.",
+      "back": "DRG emphasizes inspiratory/sensory integration; VRG is recruited for broader inspiratory/expiratory demands; in reality they are interacting networks.",
+      "conceptIds": [
+        "dorsal-respiratory-group",
+        "ventral-respiratory-group"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "brainstem-respiratory",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "brainstem-control",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-075",
+      "topicId": "control",
+      "front": "Contrast the historical apneustic and pneumotaxic centers.",
+      "back": "Apneustic label facilitates sustained inspiration; pneumotaxic label shapes/limits inspiration. Both are older pontine terminology.",
+      "conceptIds": [
+        "apneustic-center",
+        "pneumotaxic-center"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "pontine-and-reflex",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "brainstem-control",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-076",
+      "topicId": "control",
+      "front": "How can arterial CO₂ change ventilation through central chemoreception?",
+      "back": "CO₂ changes local brain/CSF pH, altering brainstem chemosensitive drive to breathe.",
+      "conceptIds": [
+        "central-chemoreceptors",
+        "carbon-dioxide"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "pontine-and-reflex",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "brainstem-control",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-077",
+      "topicId": "control",
+      "front": "Which receptors provide a strong ventilatory response to low arterial oxygen?",
+      "back": "Peripheral chemoreceptors, especially the carotid bodies.",
+      "conceptIds": [
+        "peripheral-chemoreceptors",
+        "carotid-body"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "pontine-and-reflex",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "brainstem-control",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-078",
+      "topicId": "control",
+      "front": "Where does the phrenic nerve originate and what does it move?",
+      "back": "Primarily C3–C5 spinal segments; its motor axons activate the diaphragm for inhalation.",
+      "conceptIds": [
+        "phrenic-nerve",
+        "diaphragm"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "brainstem-respiratory",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "brainstem-control",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-079",
+      "topicId": "conditions",
+      "front": "Why can pneumonia reduce oxygenation?",
+      "back": "Infected/inflamed alveolar units may fill with fluid, impairing ventilation and diffusion.",
+      "conceptIds": [
+        "pneumonia"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "disorders",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "conditions-and-recall",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ],
+            "Respiratory - Copy.pptx": [
+              8,
+              9,
+              12,
+              18
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-080",
+      "topicId": "conditions",
+      "front": "What makes epiglottitis more acutely dangerous than ordinary hoarseness?",
+      "back": "Swelling near the laryngeal inlet can rapidly obstruct the airway, not merely change voice quality.",
+      "conceptIds": [
+        "epiglottitis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "disorders",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "conditions-and-recall",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ],
+            "Respiratory - Copy.pptx": [
+              8,
+              9,
+              12,
+              18
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-081",
+      "topicId": "conditions",
+      "front": "What changes airflow resistance during an asthma flare?",
+      "back": "Bronchial smooth-muscle contraction, mucus, and inflammation reduce airway caliber.",
+      "conceptIds": [
+        "asthma",
+        "bronchoconstriction"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "disorders",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "conditions-and-recall",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ],
+            "Respiratory - Copy.pptx": [
+              8,
+              9,
+              12,
+              18
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-082",
+      "topicId": "conditions",
+      "front": "Why does CFTR dysfunction raise infection risk in cystic fibrosis lungs?",
+      "back": "Dehydrated thick mucus and impaired mucociliary clearance allow secretion retention and microbial colonization.",
+      "conceptIds": [
+        "cystic-fibrosis",
+        "mucociliary-escalator"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "disorders",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "conditions-and-recall",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ],
+            "Respiratory - Copy.pptx": [
+              8,
+              9,
+              12,
+              18
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-083",
+      "topicId": "conditions",
+      "front": "Contrast hypoxia and hypercapnia.",
+      "back": "Hypoxia is inadequate tissue oxygen availability; hypercapnia is elevated arterial CO₂.",
+      "conceptIds": [
+        "hypoxia",
+        "hypercapnia"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "disorders",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "conditions-and-recall",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ],
+            "Respiratory - Copy.pptx": [
+              8,
+              9,
+              12,
+              18
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-084",
+      "topicId": "conditions",
+      "front": "Name the main respiratory disorders explicitly listed in the Chapter 23 lecture.",
+      "back": "Laryngitis, acute epiglottitis, pneumonia, cystic fibrosis, and asthma (plus hypoxia/anoxia as oxygen-deficiency terms).",
+      "conceptIds": [
+        "laryngitis",
+        "epiglottitis",
+        "pneumonia",
+        "cystic-fibrosis",
+        "asthma"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "disorders",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "conditions-and-recall",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ],
+            "Respiratory - Copy.pptx": [
+              8,
+              9,
+              12,
+              18
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-085",
+      "topicId": "nose",
+      "front": "Define Nasal vestibule.",
+      "back": "Entrance region of the nasal cavity containing coarse hairs and skin-like lining.",
+      "conceptIds": [
+        "nasal-vestibule"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "nasal-cavity",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "upper-lower-airway",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-086",
+      "topicId": "nose",
+      "front": "Define Choanae.",
+      "back": "Paired posterior openings connecting the nasal cavity to the nasopharynx.",
+      "conceptIds": [
+        "choanae"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "nasal-cavity",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "upper-lower-airway",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-087",
+      "topicId": "nose",
+      "front": "Define Nasal meatus.",
+      "back": "Air passage beneath a concha within the nasal cavity.",
+      "conceptIds": [
+        "nasal-meatus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "nasal-cavity",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "upper-lower-airway",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-088",
+      "topicId": "nose",
+      "front": "Define Uvula.",
+      "back": "Midline projection of the soft palate that contributes to closure and sound articulation.",
+      "conceptIds": [
+        "uvula"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "nasal-cavity",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "upper-lower-airway",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-089",
+      "topicId": "nose",
+      "front": "Define Pharyngotympanic tube.",
+      "back": "Tube connecting the nasopharynx to the middle ear to help equalize pressure.",
+      "conceptIds": [
+        "pharyngotympanic-tube"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "pharynx",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "upper-lower-airway",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              7
+            ],
+            "Respiratory - Copy.pptx": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-090",
+      "topicId": "larynx",
+      "front": "Define Cuneiform cartilage.",
+      "back": "Small paired cartilage within the aryepiglottic folds that helps support the laryngeal inlet.",
+      "conceptIds": [
+        "cuneiform-cartilage"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "larynx-cartilages",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "larynx-voice",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-091",
+      "topicId": "larynx",
+      "front": "Define Corniculate cartilage.",
+      "back": "Small paired cartilage perched on the apex of an arytenoid cartilage.",
+      "conceptIds": [
+        "corniculate-cartilage"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "larynx-cartilages",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "larynx-voice",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-092",
+      "topicId": "larynx",
+      "front": "Define Laryngeal prominence.",
+      "back": "Anterior projection of the thyroid cartilage, commonly called the Adam's apple.",
+      "conceptIds": [
+        "laryngeal-prominence"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "larynx-cartilages",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "larynx-voice",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-093",
+      "topicId": "larynx",
+      "front": "Define Thyroid cartilage.",
+      "back": "Large unpaired laryngeal cartilage forming much of the anterior and lateral laryngeal wall.",
+      "conceptIds": [
+        "thyroid-cartilage"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "larynx-cartilages",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "larynx-voice",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-094",
+      "topicId": "larynx",
+      "front": "Define Hyoid bone.",
+      "back": "Suspended neck bone providing attachment for muscles of tongue, pharynx, and larynx.",
+      "conceptIds": [
+        "hyoid-bone"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "larynx-cartilages",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "larynx-voice",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Respiratory - Copy.pptx": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-095",
+      "topicId": "trachea",
+      "front": "Define Tracheal elastic fibers.",
+      "back": "Elastic elements in the tracheal wall that permit lengthening and elastic recoil.",
+      "conceptIds": [
+        "tracheal-elastic-fibers"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "trachea",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "trachea-bronchi",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14,
+              15
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-096",
+      "topicId": "trachea",
+      "front": "Define Primary bronchus.",
+      "back": "Main bronchus carrying air from the trachea into one lung.",
+      "conceptIds": [
+        "primary-bronchus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "bronchial-tree",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              15,
+              16
+            ],
+            "Respiratory - Copy.pptx": [
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "trachea-bronchi",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14,
+              15
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-097",
+      "topicId": "trachea",
+      "front": "Define Secondary bronchus.",
+      "back": "Lobar bronchus supplying one lung lobe.",
+      "conceptIds": [
+        "secondary-bronchus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "bronchial-tree",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              15,
+              16
+            ],
+            "Respiratory - Copy.pptx": [
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "trachea-bronchi",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14,
+              15
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-098",
+      "topicId": "trachea",
+      "front": "Define Tertiary bronchus.",
+      "back": "Segmental bronchus supplying a bronchopulmonary segment.",
+      "conceptIds": [
+        "tertiary-bronchus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "bronchial-tree",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              15,
+              16
+            ],
+            "Respiratory - Copy.pptx": [
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "trachea-bronchi",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              13,
+              14,
+              15
+            ],
+            "Respiratory - Copy.pptx": [
+              11,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-099",
+      "topicId": "alveoli",
+      "front": "Define Alveolar sac.",
+      "back": "Cluster of alveoli opening into a common chamber.",
+      "conceptIds": [
+        "alveolar-sac"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "alveoli-and-cells",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18
+            ],
+            "Respiratory - Copy.pptx": [
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "alveoli-membrane",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "Respiratory - Copy.pptx": [
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-100",
+      "topicId": "alveoli",
+      "front": "Define Fused basement membranes.",
+      "back": "Closely associated basal laminae of alveolar epithelium and capillary endothelium that keep diffusion distance small.",
+      "conceptIds": [
+        "fused-basement-membranes"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "respiratory-membrane",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              18,
+              19,
+              32,
+              34
+            ],
+            "Respiratory - Copy.pptx": [
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "alveoli-membrane",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "Respiratory - Copy.pptx": [
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-101",
+      "topicId": "alveoli",
+      "front": "Define Alveolar ventilation.",
+      "back": "Volume of fresh air reaching gas-exchanging alveoli each minute, excluding dead-space ventilation.",
+      "conceptIds": [
+        "alveolar-ventilation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "alveoli-and-cells",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18
+            ],
+            "Respiratory - Copy.pptx": [
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "alveoli-membrane",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "Respiratory - Copy.pptx": [
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-102",
+      "topicId": "lungs",
+      "front": "Define Pleural cavity.",
+      "back": "Thin potential space between visceral and parietal pleura containing lubricating fluid.",
+      "conceptIds": [
+        "pleural-cavity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lungs-pleura",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              14,
+              15,
+              24,
+              25
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "lung-anatomy",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              15,
+              24
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-103",
+      "topicId": "lungs",
+      "front": "Define Bronchopulmonary segment.",
+      "back": "Functionally discrete lung region ventilated by a segmental bronchus.",
+      "conceptIds": [
+        "bronchopulmonary-segment"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lungs-pleura",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              14,
+              15,
+              24,
+              25
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "lung-anatomy",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              4,
+              15,
+              24
+            ],
+            "Respiratory - Copy.pptx": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-104",
+      "topicId": "volumes",
+      "front": "Define Dead space.",
+      "back": "Ventilated volume that does not participate in gas exchange during a given breath.",
+      "conceptIds": [
+        "dead-space"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lung-volumes",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "volumes-capacities",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-105",
+      "topicId": "volumes",
+      "front": "Define Inspiratory capacity.",
+      "back": "Largest amount inhalable after normal expiration; TV + IRV.",
+      "conceptIds": [
+        "inspiratory-capacity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lung-volumes",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "volumes-capacities",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-106",
+      "topicId": "volumes",
+      "front": "Define Functional residual capacity.",
+      "back": "Volume remaining after an ordinary passive expiration; ERV + RV.",
+      "conceptIds": [
+        "functional-residual-capacity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "lung-volumes",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "volumes-capacities",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-107",
+      "topicId": "diffusion",
+      "front": "Define PCO₂.",
+      "back": "Partial pressure of carbon dioxide, influencing diffusion and acid–base regulation.",
+      "conceptIds": [
+        "pco2"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "gas-diffusion-henry",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "henry-diffusion",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              32,
+              33,
+              34
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-108",
+      "topicId": "carbon",
+      "front": "Define Respiratory alkalosis.",
+      "back": "Rise in blood pH associated with excessive CO₂ loss during excessive ventilation.",
+      "conceptIds": [
+        "respiratory-alkalosis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "co2-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "co2-and-ph",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-109",
+      "topicId": "carbon",
+      "front": "Define Hypercapnia.",
+      "back": "Elevated arterial PCO₂.",
+      "conceptIds": [
+        "hypercapnia"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "co2-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "co2-and-ph",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-110",
+      "topicId": "carbon",
+      "front": "Define Hypocapnia.",
+      "back": "Decreased arterial PCO₂.",
+      "conceptIds": [
+        "hypocapnia"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "co2-transport",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "co2-and-ph",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              2,
+              36,
+              37
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-111",
+      "topicId": "control",
+      "front": "Define Carotid body.",
+      "back": "Peripheral chemoreceptor organ near the carotid bifurcation particularly sensitive to arterial oxygen decreases.",
+      "conceptIds": [
+        "carotid-body"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "pontine-and-reflex",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "brainstem-control",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-112",
+      "topicId": "control",
+      "front": "Define Aortic body.",
+      "back": "Chemoreceptor tissue associated with the aortic arch sensing arterial blood gases.",
+      "conceptIds": [
+        "aortic-body"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "pontine-and-reflex",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "brainstem-control",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-113",
+      "topicId": "control",
+      "front": "Define Irritant receptor.",
+      "back": "Airway sensory ending that triggers protective reflexes such as cough upon stimulation.",
+      "conceptIds": [
+        "irritant-receptor"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "pontine-and-reflex",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "brainstem-control",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              38,
+              39,
+              40,
+              41
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-114",
+      "topicId": "conditions",
+      "front": "Define Anoxia.",
+      "back": "Extreme or near-complete lack of usable oxygen in tissues.",
+      "conceptIds": [
+        "anoxia"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "respiratory-system-deep-dive",
+          "sectionId": "disorders",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ]
+          }
+        },
+        {
+          "articleId": "respiratory-system-exam-cram",
+          "sectionId": "conditions-and-recall",
+          "slideReferences": {
+            "23-Respiratory System.pptx": [
+              42
+            ],
+            "Respiratory - Copy.pptx": [
+              8,
+              9,
+              12,
+              18
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "subjectId": "respiratory",
+  "visualizeTabId": "respiratory-system-visualize",
+  "referenceArticleId": "respiratory-system-deep-dive",
+  "primarySystems": [
+    "respiratory"
+  ],
+  "contextRegionIds": [
+    "atlas:region:cervical",
+    "atlas:region:thoracic"
+  ],
+  "contextSystems": [
+    "skeletal",
+    "muscular",
+    "cardiac",
+    "arterial",
+    "venous"
+  ],
+  "modelIds": [
+    "bp3d-male-4",
+    "female-study-v3",
+    "hra-female-v1.5"
+  ],
+  "structures": [
+    {
+      "conceptId": "atlas:concept:002991",
+      "label": "Trachea",
+      "sectionId": "trachea",
+      "summary": "",
+      "sourceConceptId": "FMA7394",
+      "candidateId": "trachea"
+    },
+    {
+      "conceptId": "atlas:concept:000078",
+      "label": "Diaphragm",
+      "sectionId": "breathing-muscles",
+      "summary": "",
+      "sourceConceptId": "FMA13295",
+      "candidateId": "diaphragm"
+    },
+    {
+      "conceptId": "atlas:concept:002992",
+      "label": "Right main bronchus",
+      "sectionId": "bronchial-tree",
+      "summary": "",
+      "sourceConceptId": "FMA7395",
+      "candidateId": "right-main-bronchus"
+    },
+    {
+      "conceptId": "atlas:concept:002993",
+      "label": "Left main bronchus",
+      "sectionId": "bronchial-tree",
+      "summary": "",
+      "sourceConceptId": "FMA7396",
+      "candidateId": "left-main-bronchus"
+    },
+    {
+      "conceptId": "atlas:concept:002121",
+      "label": "Epiglottis",
+      "sectionId": "larynx-cartilages",
+      "summary": "",
+      "sourceConceptId": "FMA55130",
+      "candidateId": "epiglottis"
+    },
+    {
+      "conceptId": "atlas:concept:002109",
+      "label": "Thyroid cartilage",
+      "sectionId": "larynx-cartilages",
+      "summary": "",
+      "sourceConceptId": "FMA55099",
+      "candidateId": "thyroid-cartilage"
+    },
+    {
+      "conceptId": "atlas:concept:003389",
+      "label": "Cricoid cartilage",
+      "sectionId": "larynx-cartilages",
+      "summary": "",
+      "sourceConceptId": "FMA9615",
+      "candidateId": "cricoid-cartilage"
+    },
+    {
+      "conceptId": "atlas:concept:002112",
+      "label": "Arytenoid cartilages",
+      "sectionId": "larynx-cartilages",
+      "summary": "",
+      "sourceConceptId": "FMA55109",
+      "candidateId": "arytenoid-cartilage"
+    },
+    {
+      "conceptId": "atlas:concept:002484",
+      "label": "Pulmonary arteries",
+      "sectionId": "lungs-pleura",
+      "summary": "",
+      "sourceConceptId": "FMA66326",
+      "candidateId": "pulmonary-vessels"
+    },
+    {
+      "conceptId": "atlas:concept:002497",
+      "label": "Pulmonary veins",
+      "sectionId": "lungs-pleura",
+      "summary": "",
+      "sourceConceptId": "FMA66643",
+      "candidateId": "pulmonary-vessels"
+    },
+    {
+      "conceptId": "atlas:concept:003007",
+      "label": "Rib cage and sternum",
+      "sectionId": "breathing-muscles",
+      "summary": "",
+      "sourceConceptId": "FMA7480",
+      "candidateId": "sternum-ribs"
+    },
+    {
+      "conceptId": "atlas:concept:002098",
+      "label": "Inferior nasal conchae (partial coverage)",
+      "sectionId": "nasal-cavity",
+      "summary": "",
+      "sourceConceptId": "FMA54736",
+      "candidateId": "nasal-conchae"
+    }
+  ],
+  "modelStructures": {
+    "hra-female-v1.5": [
+      {
+        "conceptId": "atlas:concept:004084",
+        "label": "Lungs (both together)",
+        "sectionId": "lungs-pleura",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_lungs",
+        "candidateId": "lungs"
+      },
+      {
+        "conceptId": "atlas:concept:004028",
+        "label": "Left lung",
+        "sectionId": "lungs-pleura",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_left_lungs_L",
+        "candidateId": "left-lung"
+      },
+      {
+        "conceptId": "atlas:concept:004085",
+        "label": "Right lung",
+        "sectionId": "lungs-pleura",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_lungs_R",
+        "candidateId": "right-lung"
+      },
+      {
+        "conceptId": "atlas:concept:004253",
+        "label": "Superior lobe of right lung",
+        "sectionId": "lungs-pleura",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_R_lung_upper_lobe",
+        "candidateId": "right-superior-lobe"
+      },
+      {
+        "conceptId": "atlas:concept:004252",
+        "label": "Middle lobe of right lung",
+        "sectionId": "lungs-pleura",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_R_lung_middle_lobe",
+        "candidateId": "right-middle-lobe"
+      },
+      {
+        "conceptId": "atlas:concept:004251",
+        "label": "Inferior lobe of right lung",
+        "sectionId": "lungs-pleura",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_R_lung_lower_lobe",
+        "candidateId": "right-inferior-lobe"
+      },
+      {
+        "conceptId": "atlas:concept:003982",
+        "label": "Superior lobe of left lung",
+        "sectionId": "lungs-pleura",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_L_lung_upper_lobe",
+        "candidateId": "left-superior-lobe"
+      },
+      {
+        "conceptId": "atlas:concept:003981",
+        "label": "Inferior lobe of left lung",
+        "sectionId": "lungs-pleura",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_L_lung_lower_lobe",
+        "candidateId": "left-inferior-lobe"
+      },
+      {
+        "conceptId": "atlas:concept:004453",
+        "label": "Trachea",
+        "sectionId": "trachea",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_trachea",
+        "candidateId": "trachea"
+      },
+      {
+        "conceptId": "atlas:concept:003984",
+        "label": "Larynx",
+        "sectionId": "larynx-cartilages",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_larynx",
+        "candidateId": "larynx"
+      },
+      {
+        "conceptId": "atlas:concept:004347",
+        "label": "Right main bronchus",
+        "sectionId": "bronchial-tree",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_right_main_bronchus",
+        "candidateId": "right-main-bronchus"
+      },
+      {
+        "conceptId": "atlas:concept:004029",
+        "label": "Left main bronchus",
+        "sectionId": "bronchial-tree",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_left_main_bronchus",
+        "candidateId": "left-main-bronchus"
+      },
+      {
+        "conceptId": "atlas:concept:003869",
+        "label": "Epiglottic cartilage (partial coverage)",
+        "sectionId": "larynx-cartilages",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_epiglotic_cartilage",
+        "candidateId": "epiglottis"
+      },
+      {
+        "conceptId": "atlas:concept:004448",
+        "label": "Thyroid cartilage",
+        "sectionId": "larynx-cartilages",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_thyroid_cartilage",
+        "candidateId": "thyroid-cartilage"
+      },
+      {
+        "conceptId": "atlas:concept:003840",
+        "label": "Cricoid cartilage",
+        "sectionId": "larynx-cartilages",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_cricoid_cartilage",
+        "candidateId": "cricoid-cartilage"
+      },
+      {
+        "conceptId": "atlas:concept:003749",
+        "label": "Arytenoid cartilages",
+        "sectionId": "larynx-cartilages",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_arytenoid_cartilage",
+        "candidateId": "arytenoid-cartilage"
+      },
+      {
+        "conceptId": "atlas:concept:004238",
+        "label": "Pulmonary arteries",
+        "sectionId": "lungs-pleura",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_pulmonary_artery",
+        "candidateId": "pulmonary-vessels"
+      },
+      {
+        "conceptId": "atlas:concept:004243",
+        "label": "Pulmonary veins",
+        "sectionId": "lungs-pleura",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_pulmonary_vein",
+        "candidateId": "pulmonary-vessels"
+      }
+    ]
+  }
+}

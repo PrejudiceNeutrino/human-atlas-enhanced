@@ -1,0 +1,210 @@
+{
+  "basis": "Original course slides, Phase 1 planning notes, and authored Phase 3 readings; scientific nuances/extensions are distinct from quoted source content.",
+  "notes": [
+    {
+      "id": "R01",
+      "severity": "scientific-correction",
+      "topic": "CO2 is not carried predominantly as carbonic acid",
+      "source": {
+        "physiology": [
+          36,
+          37
+        ]
+      },
+      "issue": "Slide says “Carbonic Acid (H2CO3) – 70%”, but most CO2 is transported as bicarbonate (HCO3−) formed after H2CO3 dissociates. Preserve the lecturer’s ~70/23/7 proportions as approximate but label the chemistry correctly.",
+      "handling": "Explain carbonic anhydrase catalysis, H2CO3 as transient intermediate, HCO3− in plasma and chloride shift. Do not teach “70% carbonic acid” as literal final form."
+    },
+    {
+      "id": "R02",
+      "severity": "scientific-correction",
+      "topic": "Carbon-dioxide-rich blood is not blue",
+      "source": {
+        "physiology": [
+          35
+        ]
+      },
+      "issue": "Slide calls CO2-bound blood blue; actual venous blood remains red (usually darker). Blue in diagrams is a convention.",
+      "handling": "Retain oxyhemoglobin/carbaminohemoglobin vocabulary, but explicitly correct blue-blood misconception."
+    },
+    {
+      "id": "R03",
+      "severity": "scientific-nuance",
+      "topic": "The term external respiration is defined broadly in the lecture",
+      "source": {
+        "physiology": [
+          20,
+          21
+        ]
+      },
+      "issue": "Lecture labels ventilation, pulmonary gas exchange and transport together as “external respiration”, while many texts reserve external respiration for pulmonary capillary gas exchange.",
+      "handling": "Teach the three steps exactly as a course framework, then state textbook usage differs."
+    },
+    {
+      "id": "R04",
+      "severity": "scientific-nuance",
+      "topic": "Nasal nitric oxide and breathing benefits may be overstated",
+      "source": {
+        "physiology": [
+          7
+        ]
+      },
+      "issue": "Slides attribute better diffusion and oxygen uptake to nasal breathing/NO without conditions or quantitative support; not all are established as simple universal benefits.",
+      "handling": "Lead with grounded warming/humidification/filtration/olfaction; describe NO as possible physiological influence, not a guaranteed major boost to oxygen uptake."
+    },
+    {
+      "id": "R05",
+      "severity": "scientific-nuance",
+      "topic": "Airway histology varies within broad regions",
+      "source": {
+        "physiology": [
+          5,
+          6,
+          17
+        ],
+        "anatomy": [
+          2,
+          4,
+          10
+        ]
+      },
+      "issue": "The whole pharynx is not uniformly stratified squamous; nasopharynx commonly has respiratory mucosa, and nasal vestibule has squamous epithelium. Bronchioles transition in lining.",
+      "handling": "Keep lecture shortcut for memorization with a short anatomical exception note."
+    },
+    {
+      "id": "R06",
+      "severity": "scientific-nuance",
+      "topic": "Epiglottis does not provide the only airway protection",
+      "source": {
+        "physiology": [
+          10,
+          12
+        ],
+        "anatomy": [
+          6
+        ]
+      },
+      "issue": "Swallowing-related laryngeal elevation, aryepiglottic structures and true/false fold closure all participate; epiglottis is not a lone mechanical door.",
+      "handling": "Explain multiple coordinated protections without belaboring it in Exam Cram."
+    },
+    {
+      "id": "R07",
+      "severity": "scientific-nuance",
+      "topic": "A rise or fall of one mmHg is an illustrative example",
+      "source": {
+        "physiology": [
+          24,
+          25,
+          26
+        ]
+      },
+      "issue": "Atmospheric 760 and alveolar 759/761 mmHg depict an idealized near-sea-level situation, not fixed universal respiratory pressures.",
+      "handling": "State the pressure difference and direction matter; absolute atmospheric pressure varies with elevation."
+    },
+    {
+      "id": "R08",
+      "severity": "scientific-correction",
+      "topic": "Boyle law needs constant temperature and amount of gas assumptions",
+      "source": {
+        "physiology": [
+          22,
+          23
+        ]
+      },
+      "issue": "Slide presents P=1/V without proportionality constant or assumptions.",
+      "handling": "Use P∝1/V, or P1V1=P2V2 at constant gas amount and temperature; distinguish the lung’s open airflow from simplified closed gas model."
+    },
+    {
+      "id": "R09",
+      "severity": "scientific-nuance",
+      "topic": "Legacy pontine respiratory-center labels",
+      "source": {
+        "physiology": [
+          38,
+          39
+        ]
+      },
+      "issue": "Apneustic/pneumotaxic centers are useful exam labels but modern control circuitry is distributed; pre-Bötzinger and pontine respiratory groups matter.",
+      "handling": "Preserve DRG/VRG, apneustic, pneumotaxic exam associations; label modern framework as further scientific context."
+    },
+    {
+      "id": "R10",
+      "severity": "scientific-nuance",
+      "topic": "Quiet and forced breathing classifications are simplified",
+      "source": {
+        "physiology": [
+          27,
+          28,
+          29
+        ]
+      },
+      "issue": "Slides equate forced breathing with hyperpnea and VRG as active only in forced breathing. Hyperpnea is increased ventilation, which is not exactly the same as active expiration; VRG includes rhythm-generating networks.",
+      "handling": "Follow course language for exam while clarifying broader physiology in Deep Dive."
+    },
+    {
+      "id": "R11",
+      "severity": "scientific-nuance",
+      "topic": "Bronchoconstriction/bronchodilation is more complex than a single nerve pathway",
+      "source": {
+        "physiology": [
+          13,
+          15
+        ]
+      },
+      "issue": "Simplified sympathetic-versus-parasympathetic language is valid instructional shorthand; bronchial smooth muscle also responds to circulating epinephrine, local mediators and inflammation.",
+      "handling": "Retain receptor-level autonomic overview, clearly mark immune/local mediators as extension."
+    },
+    {
+      "id": "R12",
+      "severity": "scientific-nuance",
+      "topic": "Residual volume and direct spirometric measurement",
+      "source": {
+        "physiology": [
+          30,
+          31
+        ]
+      },
+      "issue": "RV remains after maximal expiration and ordinary spirometry cannot directly obtain it; VC and TLC should be expressed as combinations of basic volumes.",
+      "handling": "Make a concise table and equation set in the Deep Dive; course slides alone do not teach measurement methods in detail."
+    },
+    {
+      "id": "R13",
+      "severity": "scientific-nuance",
+      "topic": "Hemoglobin and carbon-dioxide binding terminology",
+      "source": {
+        "physiology": [
+          35,
+          36,
+          37
+        ]
+      },
+      "issue": "Carbaminohemoglobin describes CO2 binding to hemoglobin, but not the primary transport form of CO2. Oxygen unloads in tissues in response to pO2 and also pH/CO2-dependent affinity.",
+      "handling": "Avoid implying hemoglobin binds O2 and CO2 competitively at exactly the same group; include Bohr-effect caveat."
+    },
+    {
+      "id": "R14",
+      "severity": "scientific-nuance",
+      "topic": "Anoxia terminology and disease examples",
+      "source": {
+        "physiology": [
+          42
+        ]
+      },
+      "issue": "Slide uses “apoxia”; “anoxia” is more commonly used for severe/absent oxygen supply. Instructor may expect slide terminology.",
+      "handling": "Present the original term as used in lecture, note conventional anoxia terminology without silently changing source."
+    },
+    {
+      "id": "R15",
+      "severity": "scientific-nuance",
+      "topic": "Nasal vs lung exposure benefits and respiratory portion boundary",
+      "source": {
+        "physiology": [
+          3,
+          15,
+          16
+        ]
+      },
+      "issue": "Slides define respiratory portion as “smallest bronchioles & alveoli,” but the shift begins at respiratory bronchioles; terminal bronchioles conduct air.",
+      "handling": "Distinguish terminal bronchioles (conducting) from respiratory bronchioles (some exchange) and alveolar ducts/sacs."
+    }
+  ]
+}

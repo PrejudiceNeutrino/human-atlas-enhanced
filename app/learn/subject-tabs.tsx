@@ -134,7 +134,7 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
           ) : tab.kind === 'facts' ? (
             <EducationalFacts section={factSections[tab.id]} title={tab.title} readingIntro={tab.readingIntro} enabled={activeTab === tab.id} />
           ) : tab.kind === 'study-tools' ? (
-            <StudyToolsLoader subjectTitle={subject.title} route={subject.href} tabId={tab.id}/>
+            <StudyToolsLoader subjectId={subject.slug} subjectTitle={subject.title} route={subject.href} tabId={tab.id}/>
           ) : tab.kind === 'gallery' ? (
             <GalleryLoader tabId={tab.id} subjectSlug={subject.slug}/>
           ) : tab.kind === 'visualize' ? (

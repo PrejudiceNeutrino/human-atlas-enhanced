@@ -5,6 +5,7 @@ import { categoryLabel, figureSource, filterFigures, parseGallery, type GalleryC
 import { LabelPracticeFigure } from './label-practice-figure';
 import { usePracticeDataset } from './label-practice-loader';
 import { createGalleryPreferencesStore } from './preferences';
+import { learnSubjects } from '../subjects';
 import '../subject-menu.css';
 import './gallery.css';
 
@@ -13,7 +14,7 @@ function GalleryContent({ collection, assetBase, subjectSlug }: { collection: Ga
   const [selected, setSelected] = useState<string | null>(null);
   const [showDetails, setShowDetails] = useState(false);
   const [practiceEnabled, setPracticeEnabled] = useState(false);
-  const annotations = usePracticeDataset(assetBase, subjectSlug, collection, !!selected);
+  const annotations = usePracticeDataset(assetBase, subjectSlug, collection, !!selected && !!learnSubjects.find(subject => subject.slug === subjectSlug)?.gallery?.labelPractice);
   const detailsId = useId();
   const [thumbnailErrors, setThumbnailErrors] = useState<string[]>([]);
   const [preferencesStore] = useState(() => {
@@ -52,7 +53,7 @@ function GalleryContent({ collection, assetBase, subjectSlug }: { collection: Ga
     {preferencesError && <p className="learn-gallery-preferences-error" role="status">{preferencesError}</p>}
     {figures.length ? <ul className="learn-gallery-grid">{figures.map(item => <li key={item.id}>
       <button type="button" className="learn-gallery-card" aria-haspopup="dialog" aria-label={`Open figure: ${item.title}`} onClick={event => { opener.current = event.currentTarget; setSelected(item.id); }}>
-        <span className="learn-gallery-thumbnail">{thumbnailErrors.includes(item.id) ? <span className="learn-gallery-thumbnail-error">Preview unavailable · Open full-size figure</span> : <img src={`${assetBase}/${item.thumbnail}`} alt={item.alt} width={640} height={450} loading="lazy" decoding="async" onError={() => setThumbnailErrors(previous => previous.includes(item.id) ? previous : [...previous, item.id])}/>}</span>
+        <span className="learn-gallery-thumbnail">{thumbnailErrors.includes(item.id) ? <span className="learn-gallery-thumbnail-error">Preview unavailable · Open full-size figure</span> : <img src={`${assetBase}/${item.thumbnail}`} alt={item.alt} width={item.width} height={item.height} loading="lazy" decoding="async" onError={() => setThumbnailErrors(previous => previous.includes(item.id) ? previous : [...previous, item.id])}/>}</span>
         <span className="learn-gallery-card-copy"><span className="learn-gallery-category">{categoryLabel(item.category)}</span><strong>{item.title}</strong><span className="learn-gallery-caption">{item.description}</span><span className="learn-gallery-card-action">Inspect figure <span aria-hidden="true">↗</span></span></span>
       </button>
       <button type="button" className="learn-gallery-star learn-gallery-card-star" aria-label={`Star figure: ${item.title}`} aria-pressed={starred.has(item.id)} title={starred.has(item.id) ? 'Remove star' : 'Star this figure'} onClick={() => toggleStar(item.id)}><Star size={19} aria-hidden="true" fill={starred.has(item.id) ? 'currentColor' : 'none'}/></button>
@@ -80,6 +81,7 @@ export default function EducationalGallery({ tabId, subjectSlug }: { tabId: stri
   const [collection, setCollection] = useState<GalleryCollection | null>(null), [error, setError] = useState(''), [attempt, setAttempt] = useState(0);
   const heading = useRef<HTMLHeadingElement>(null);
   useLayoutEffect(() => { if (document.activeElement === document.body) heading.current?.focus({ preventScroll: true }); }, []);
+  const subject = learnSubjects.find(item => item.slug === subjectSlug);
   const assetBase = `/images/learn/${subjectSlug}/gallery`;
   useEffect(() => {
     const controller = new AbortController();
@@ -92,8 +94,8 @@ export default function EducationalGallery({ tabId, subjectSlug }: { tabId: stri
     return () => controller.abort();
   }, [assetBase, attempt]);
   return <section className="learn-gallery" data-annotation-excluded data-atlas-shortcuts="disabled" aria-labelledby={`${tabId}-heading`}>
-    <header className="learn-article-header"><h2 ref={heading} id={`${tabId}-heading`} tabIndex={-1}>Digestive System Gallery</h2><p className="learn-reading-intro">30 curated anatomical models, illustrations, and physiological diagrams from the course lectures.</p>
-      <p className="learn-gallery-practice-tip">For a quick self-test, look for <span className="learn-gallery-practice-preview"><Tags size={16} aria-hidden="true"/>Label Practice</span> when viewing a figure. Name each covered structure, then click or tap a cover to reveal the answer.</p>
+    <header className="learn-article-header"><h2 ref={heading} id={`${tabId}-heading`} tabIndex={-1}>{subject?.title ?? subjectSlug} Gallery</h2><p className="learn-reading-intro">{collection?.count ?? subject?.gallery?.count} curated anatomical models, illustrations, and physiological diagrams from the course lectures.</p>
+      {subject?.gallery?.labelPractice && <p className="learn-gallery-practice-tip">For a quick self-test, look for <span className="learn-gallery-practice-preview"><Tags size={16} aria-hidden="true"/>Label Practice</span> when viewing a figure. Name each covered structure, then click or tap a cover to reveal the answer.</p>}
     </header>
     {error ? <div className="learn-gallery-notice" role="alert"><h3>Gallery unavailable</h3><p>{error}</p><button type="button" onClick={() => setAttempt(value => value + 1)}>Try again</button></div> : collection ? <GalleryContent key={subjectSlug} collection={collection} assetBase={assetBase} subjectSlug={subjectSlug}/> : <p role="status">Loading gallery…</p>}
   </section>;

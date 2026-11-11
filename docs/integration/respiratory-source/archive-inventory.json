@@ -1,0 +1,595 @@
+{
+  "archive": "respiratory-system-master-phase5.zip",
+  "entries": [
+    {
+      "path": "master-manifest.json",
+      "bytes": 9180,
+      "sha256": "878b2623b38187de8926bb57a592acd9a0ad452cefba37072924ba7a496a99fc"
+    },
+    {
+      "path": "phase-01-curriculum/README.md",
+      "bytes": 827,
+      "sha256": "ccd6a85af12fa3130fd41a5dd203025c029b2c887e939d9cfb517f5e1c80d5e4"
+    },
+    {
+      "path": "phase-01-curriculum/respiratory-stage1-blueprint.json",
+      "bytes": 81769,
+      "sha256": "0ea57b9e7e2639a540117f8bf2a82f04ec7fd9f7c3b8ceb36c70a91ce62e12f7"
+    },
+    {
+      "path": "phase-01-curriculum/respiratory-stage1-outline.md",
+      "bytes": 43170,
+      "sha256": "845869ca4066d45dcdc943368927ef5f688d90479be3f34272a00df68d10aad6"
+    },
+    {
+      "path": "phase-01-curriculum/respiratory-stage1-preview.html",
+      "bytes": 70791,
+      "sha256": "bb2fd634f04e401343735bbce536a80fc749943097556dc31970391946fb4705"
+    },
+    {
+      "path": "phase-01-curriculum/scientific-review-queue.json",
+      "bytes": 7885,
+      "sha256": "404b07eac35cfed5810df37a9401eb3c3a07c2a88b3fa78256e7f1e086a84784"
+    },
+    {
+      "path": "phase-01-curriculum/slide-inventory.json",
+      "bytes": 15787,
+      "sha256": "337a8fc995243bc881971310fbd80fe44e9d3070d100ba425b4d58dec83f7c18"
+    },
+    {
+      "path": "phase-01-curriculum/study-guide-coverage.json",
+      "bytes": 19217,
+      "sha256": "b6845d106847f5a2c6bbed43c971985c4f85bede7adc21f0e35d6f728e7b97aa"
+    },
+    {
+      "path": "phase-02-readings/build_stage2.py",
+      "bytes": 22999,
+      "sha256": "2d20acd9238ec57cebe45fbc8da19e573d47f41c598ad02e4b421caaf413177c"
+    },
+    {
+      "path": "phase-02-readings/deep-dive-source.md",
+      "bytes": 57265,
+      "sha256": "35442a517ce9c6cc7145f42481031089b88d354845d696c650ed7af95fccfe7b"
+    },
+    {
+      "path": "phase-02-readings/manifest.json",
+      "bytes": 682,
+      "sha256": "42339a8b6a3cf9c726270c1e55d58840418436a4b2d2679bc59b78be3a2251db"
+    },
+    {
+      "path": "phase-02-readings/overview-source.md",
+      "bytes": 6780,
+      "sha256": "c86805c63f818276e384a096e1418ea94da70a6e077951236943d273b207b41e"
+    },
+    {
+      "path": "phase-02-readings/README.md",
+      "bytes": 2070,
+      "sha256": "3b84a70b38cef529bfbf8973f8bb58953954fcc9c9fa9fbe1de94d793f6c1f6c"
+    },
+    {
+      "path": "phase-02-readings/respiratory-stage2-preview.html",
+      "bytes": 109031,
+      "sha256": "19bcb59b336179c3b3c9feacb9e09557c8fee31a0e1a9a5c28b7a3ddb1ca1b11"
+    },
+    {
+      "path": "phase-02-readings/respiratory-system-deep-dive.json",
+      "bytes": 63618,
+      "sha256": "7ef8d9483a0391536c9aa704ea0fbea74f0b90926b53aa5981925b223a2e4b22"
+    },
+    {
+      "path": "phase-02-readings/respiratory-system-deep-dive.md",
+      "bytes": 57265,
+      "sha256": "35442a517ce9c6cc7145f42481031089b88d354845d696c650ed7af95fccfe7b"
+    },
+    {
+      "path": "phase-02-readings/respiratory-system-general-overview.json",
+      "bytes": 9247,
+      "sha256": "8fa029a93e019152508bf5d4061560f75dfd5fa688b3303f29c9ddffe5a8800d"
+    },
+    {
+      "path": "phase-02-readings/respiratory-system-general-overview.md",
+      "bytes": 6780,
+      "sha256": "c86805c63f818276e384a096e1418ea94da70a6e077951236943d273b207b41e"
+    },
+    {
+      "path": "phase-02-readings/scientific-review-notes.json",
+      "bytes": 8491,
+      "sha256": "5195131c09881ba7741758452644b53dc452172a1e756fb01a061d11051a25d2"
+    },
+    {
+      "path": "phase-02-readings/study-guide-stage2-coverage.json",
+      "bytes": 16874,
+      "sha256": "1d39b610828bcb0e5fdde7979e6969260bfa590f3359e786b33bffe6932e687d"
+    },
+    {
+      "path": "phase-03-readings/build_stage3.py",
+      "bytes": 27361,
+      "sha256": "4f3f77ea68210e8cea87aa2a3bc1b2561508152ffce8c7007e4a3b5c8ec91ed0"
+    },
+    {
+      "path": "phase-03-readings/checksums.sha256",
+      "bytes": 1684,
+      "sha256": "6c8abc2d548c40b967835c25eb1069e7a59cbad7dfd781b6513052a9a6682235"
+    },
+    {
+      "path": "phase-03-readings/exam-cram-source.md",
+      "bytes": 22046,
+      "sha256": "1a0a1c64f358bbaa1b929ef3be0e86d1cb88a584b18214f5d5590c1cf83235b0"
+    },
+    {
+      "path": "phase-03-readings/how-it-connects-source.md",
+      "bytes": 16474,
+      "sha256": "f2145ab2da8acb5f5889f14b6abaec8e1c1ea0cd987326049647d8c043e4467c"
+    },
+    {
+      "path": "phase-03-readings/manifest.json",
+      "bytes": 844,
+      "sha256": "e6981b0cfa2221fcf04f9c37fb8e4a68e885dd0d8b64540db96e4d5c4c3724a8"
+    },
+    {
+      "path": "phase-03-readings/README.md",
+      "bytes": 2419,
+      "sha256": "e632c74ca6da7540976dc572f29359e35134b29ba4a69103d9fc98d599d09d11"
+    },
+    {
+      "path": "phase-03-readings/respiratory-stage3-preview.html",
+      "bytes": 152929,
+      "sha256": "760b499420cc0c91b6291bc16765f15ff3708f07b1a33369fe6741944e7ba1be"
+    },
+    {
+      "path": "phase-03-readings/respiratory-system-exam-cram.json",
+      "bytes": 26980,
+      "sha256": "52d56c96d1c0a519be1505094377b244a2bc00c2ebe26c830813221a82002d1f"
+    },
+    {
+      "path": "phase-03-readings/respiratory-system-exam-cram.md",
+      "bytes": 22046,
+      "sha256": "1a0a1c64f358bbaa1b929ef3be0e86d1cb88a584b18214f5d5590c1cf83235b0"
+    },
+    {
+      "path": "phase-03-readings/respiratory-system-how-it-connects.json",
+      "bytes": 19388,
+      "sha256": "cb1ffcec145d4e78697336323f0055bd4fe7ebac802110391039e25daa5aebdb"
+    },
+    {
+      "path": "phase-03-readings/respiratory-system-how-it-connects.md",
+      "bytes": 16474,
+      "sha256": "f2145ab2da8acb5f5889f14b6abaec8e1c1ea0cd987326049647d8c043e4467c"
+    },
+    {
+      "path": "phase-03-readings/respiratory-system-why-is-this-cool.json",
+      "bytes": 11340,
+      "sha256": "f4dee2933b778cb113f799f63995af1819cd9e1f585034fd3b67ad550483de69"
+    },
+    {
+      "path": "phase-03-readings/respiratory-system-why-is-this-cool.md",
+      "bytes": 9965,
+      "sha256": "9426953730e1b8b775efb83042c30b71bc6c3eccc6e970a41f5c05467f980150"
+    },
+    {
+      "path": "phase-03-readings/scientific-review-notes.json",
+      "bytes": 8476,
+      "sha256": "56498a0894e4d4a00b4b681d68b04d48780481ca266abab0cd857b96920d8433"
+    },
+    {
+      "path": "phase-03-readings/study-guide-stage3-coverage.json",
+      "bytes": 16430,
+      "sha256": "9c8d2805992c6640e14434aef23d9b9de2b1b5466b41196c9034290583917677"
+    },
+    {
+      "path": "phase-03-readings/who-cares-source.md",
+      "bytes": 9965,
+      "sha256": "9426953730e1b8b775efb83042c30b71bc6c3eccc6e970a41f5c05467f980150"
+    },
+    {
+      "path": "phase-04-study-tools/answer-key.md",
+      "bytes": 42550,
+      "sha256": "e98860c666b46e0d61a465c59b68ee3dcf091ae2b061a1069ba074778b7f9505"
+    },
+    {
+      "path": "phase-04-study-tools/chapter23-study-guide-alignment.json",
+      "bytes": 28027,
+      "sha256": "54326c333ae78ed9f59b27e40946e8d80fbbd152228dbbc36db8312454ff3fd5"
+    },
+    {
+      "path": "phase-04-study-tools/concepts.json",
+      "bytes": 192904,
+      "sha256": "f6e671f6383d770634aab3359a1a1c7aac9825324ea28f86764ab5c99f6fc8a7"
+    },
+    {
+      "path": "phase-04-study-tools/fill-in-the-blank.json",
+      "bytes": 82013,
+      "sha256": "959cf6b058932512b3042c10017855a6ab1146fa7f308d02db2ef9dcb4d89bd9"
+    },
+    {
+      "path": "phase-04-study-tools/flashcards.json",
+      "bytes": 116398,
+      "sha256": "d1ab20e29929253ce1869e7f95eb7179d5accf67d99fe2cd523d1a24dbc99eba"
+    },
+    {
+      "path": "phase-04-study-tools/manifest.json",
+      "bytes": 3117,
+      "sha256": "f26be94d008074bd9a49b939db740e93e364159456ceb8635b3f60e5a9c1065a"
+    },
+    {
+      "path": "phase-04-study-tools/multiple-choice.json",
+      "bytes": 169513,
+      "sha256": "cb8560ababf65f490f898c195f98810fe1ce5b58ae3f8ebb4654bf591a2c07f0"
+    },
+    {
+      "path": "phase-04-study-tools/README.md",
+      "bytes": 2457,
+      "sha256": "be3e6b6c14d45b7e8d0bad721dfa72e6d166ccafd36d4cef12173c57987c8bdb"
+    },
+    {
+      "path": "phase-04-study-tools/respiratory-study-tools-preview.html",
+      "bytes": 366734,
+      "sha256": "7aed81fee3ae922790831ea1b9d6a706fb39f3ff6a944005d5075f8bb5af7180"
+    },
+    {
+      "path": "phase-04-study-tools/scientific-review-notes.md",
+      "bytes": 3483,
+      "sha256": "4738cfdd902a0db8ff4940afe8c0858a4de805ffce9d6f77258a67740f536007"
+    },
+    {
+      "path": "phase-04-study-tools/source-section-index.json",
+      "bytes": 23169,
+      "sha256": "a4b5ba86130110c11f21be2b8c86f05f1810bd65349795dc23406534f8102e46"
+    },
+    {
+      "path": "phase-04-study-tools/types.ts",
+      "bytes": 1547,
+      "sha256": "488882e1dff673e46c08358f7f25e3bb2d743c6b96d31196e2a3c0e2fc0ca96d"
+    },
+    {
+      "path": "phase-04-study-tools/validate.py",
+      "bytes": 2478,
+      "sha256": "323cae39195ccba8201ffe22e521c34a1033ecaf5a10e22148b30e395e4c41b4"
+    },
+    {
+      "path": "phase-05-visuals/anatomy-3d-audit.md",
+      "bytes": 5363,
+      "sha256": "74bf63bb08886cbc8cdc48666cf757410657555426a8d5899c2901329d1dc546"
+    },
+    {
+      "path": "phase-05-visuals/anatomy-3d-candidates.json",
+      "bytes": 9329,
+      "sha256": "766ffe6090bf21fd3fb7626ff705c72e6f97f91df3ee77b7ceb42c69018ceb19"
+    },
+    {
+      "path": "phase-05-visuals/contact-sheet-1.jpg",
+      "bytes": 398424,
+      "sha256": "898a2c295fadf68ca31b62d616507a3fc68e776bcecfb499b69ee9dc8c50a798"
+    },
+    {
+      "path": "phase-05-visuals/contact-sheet-2.jpg",
+      "bytes": 376115,
+      "sha256": "98e6295400267a16606d9bb9c31a8099a3b71716cab52dbbd9f83803810c3584"
+    },
+    {
+      "path": "phase-05-visuals/contact-sheet.jpg",
+      "bytes": 772836,
+      "sha256": "3e00b3aa6fa150e49c8030d7be3032ef458e88299a0a2b4a1e4f987ac63186c0"
+    },
+    {
+      "path": "phase-05-visuals/gallery-preview.html",
+      "bytes": 682515,
+      "sha256": "4c39a597d8c0d1524ef8a52efa3af401ed699f65fbe4db76a543e124f72d5599"
+    },
+    {
+      "path": "phase-05-visuals/gallery-validation.json",
+      "bytes": 676,
+      "sha256": "1073f8a8a6db71acf55ccae1f1ebd1fbaecf27c24b05e0ca7c9720b27acba5c5"
+    },
+    {
+      "path": "phase-05-visuals/gallery.json",
+      "bytes": 40329,
+      "sha256": "754267c8907d8ef77e90943d4d418d539efe1ac9b608bfccb0fa5b582a0dda24"
+    },
+    {
+      "path": "phase-05-visuals/images/a01.webp",
+      "bytes": 283490,
+      "sha256": "4ba6d50b7a676e6e3aebcae54c2e1a001d3e2c87ee169933c681e1eb0c04594b"
+    },
+    {
+      "path": "phase-05-visuals/images/a02.webp",
+      "bytes": 268446,
+      "sha256": "419798649cffd104b303d3424b888f337ece7ef74cc215dc9446be34ffaf2c5c"
+    },
+    {
+      "path": "phase-05-visuals/images/a03.webp",
+      "bytes": 94364,
+      "sha256": "b913a098f55e841f29235643ba7cbbec285f4e9a0c7c7a21a3f1e5a83b5251ed"
+    },
+    {
+      "path": "phase-05-visuals/images/a04.webp",
+      "bytes": 115600,
+      "sha256": "e76450ecaea1e3f1b621788eabb23aac75a288cfcd1f3661818b887f96aea283"
+    },
+    {
+      "path": "phase-05-visuals/images/a05.webp",
+      "bytes": 186718,
+      "sha256": "aeb5ff687b9585a3d4c8674cd81f414b55aad1d22fc3dfaf6374d272c1b2039a"
+    },
+    {
+      "path": "phase-05-visuals/images/a06.webp",
+      "bytes": 124080,
+      "sha256": "97689e85f76e084cb2b984562a1871532944b5b0df29b66dd858f55682b12fa2"
+    },
+    {
+      "path": "phase-05-visuals/images/a07.webp",
+      "bytes": 326438,
+      "sha256": "efe88476681b07f2abe654a6ba9578c36859693120a6e44d848aad2979847db4"
+    },
+    {
+      "path": "phase-05-visuals/images/a08.webp",
+      "bytes": 186594,
+      "sha256": "d11563596c0848e16fb3934e8ea4fd942bb200bec915e3c583af6931f3c7d3d7"
+    },
+    {
+      "path": "phase-05-visuals/images/a09.webp",
+      "bytes": 177792,
+      "sha256": "f8107ff38359a1aadf0b465e275c40d8624947c6d90f78baf4bf42a4989cb0f7"
+    },
+    {
+      "path": "phase-05-visuals/images/p01.webp",
+      "bytes": 271112,
+      "sha256": "dc463c099b3aa46cdfe06f0ef733545e7d73f0f3402ab6ca8d4cabe56f3ee0ed"
+    },
+    {
+      "path": "phase-05-visuals/images/p02.webp",
+      "bytes": 163452,
+      "sha256": "5f4a7be231708bf0e0710aa8a972598417271940b34db656f835d5dca736e472"
+    },
+    {
+      "path": "phase-05-visuals/images/p03.webp",
+      "bytes": 104558,
+      "sha256": "d3f6d83921e2a7baccd77949da33523974a1cb7e5596ada3e2379750dd96ee64"
+    },
+    {
+      "path": "phase-05-visuals/images/p04.webp",
+      "bytes": 235724,
+      "sha256": "e25f962a2c53d0a55731961b23f096cf1b310bfb04f8f1c3448be07956c5dbab"
+    },
+    {
+      "path": "phase-05-visuals/images/p05.webp",
+      "bytes": 160868,
+      "sha256": "3a6a4d202c86c0f474d9db97084b11f1e5718e05cf4906a64dd456e2e1d0745f"
+    },
+    {
+      "path": "phase-05-visuals/images/p06.webp",
+      "bytes": 218552,
+      "sha256": "d735456811d3fd6fc383825ace1adc95a15f4a8891b395d47c89059210d01afe"
+    },
+    {
+      "path": "phase-05-visuals/images/p07.webp",
+      "bytes": 386234,
+      "sha256": "9202f72e5dc00327194efbe127d071271fc0b0448e7fb4d17a8a3a796724a10f"
+    },
+    {
+      "path": "phase-05-visuals/images/p08.webp",
+      "bytes": 165422,
+      "sha256": "5bf694ccad878eeafc99c297960604f9cfa9782cc69e6eb819af7fb1c55c9248"
+    },
+    {
+      "path": "phase-05-visuals/images/p09.webp",
+      "bytes": 154028,
+      "sha256": "72f83e6f214888500d0c751a9bb84c0ae152de4609cc42e074e10cf03f4ff5dd"
+    },
+    {
+      "path": "phase-05-visuals/images/p10.webp",
+      "bytes": 129786,
+      "sha256": "22cf807abfa99f9ab74c84a6b175fc8a6ccfec227cf0c60067e84b683841fab4"
+    },
+    {
+      "path": "phase-05-visuals/images/p11.webp",
+      "bytes": 217498,
+      "sha256": "abfdc20cad78c6a9d243f47d12085434f4e6571e59ae79ef8d923be0da7a51e5"
+    },
+    {
+      "path": "phase-05-visuals/images/p12.webp",
+      "bytes": 258914,
+      "sha256": "6eb891ea1fb89631dac4345438a623d5bd00c904911732be39780420f02fc734"
+    },
+    {
+      "path": "phase-05-visuals/images/p13.webp",
+      "bytes": 164814,
+      "sha256": "54fcbe1ad1fa667a41545683e54fab93269f41d59b03f034e63c90704e7c472a"
+    },
+    {
+      "path": "phase-05-visuals/images/p14.webp",
+      "bytes": 100858,
+      "sha256": "25b1d3cec2b31d76ba374c65b4682a6e81d903fc1f8ea756384d9fd11314f409"
+    },
+    {
+      "path": "phase-05-visuals/images/p15.webp",
+      "bytes": 207286,
+      "sha256": "38f687bd90834f065a4f5b2f1e098ebc9a6fef6e8a17198ee832c47fab7bb484"
+    },
+    {
+      "path": "phase-05-visuals/images/p16.webp",
+      "bytes": 38008,
+      "sha256": "43d77a0c3b3e8e5daf64ca571caec3db3bc57cfee622682d0b823aa5b5026f01"
+    },
+    {
+      "path": "phase-05-visuals/images/p17.webp",
+      "bytes": 99738,
+      "sha256": "2e85b1cbd96cc0c22cccf86d620872d09fca6acca017051016121fa74e5e644f"
+    },
+    {
+      "path": "phase-05-visuals/images/p18.webp",
+      "bytes": 376124,
+      "sha256": "77358db06f9e275027df7ab6ce2629b881eaa8d053bb0a21ee8e0304e7f6c630"
+    },
+    {
+      "path": "phase-05-visuals/images/p19.webp",
+      "bytes": 246314,
+      "sha256": "3c6f57969352f3b5240f9f100795026f534ca0c62172662531bc98744e89c669"
+    },
+    {
+      "path": "phase-05-visuals/images/p20.webp",
+      "bytes": 140428,
+      "sha256": "2953d23a2e4118ad61a4f14bede6f26a7db30e517204352f45a848b4990bf1b2"
+    },
+    {
+      "path": "phase-05-visuals/README.md",
+      "bytes": 2510,
+      "sha256": "f6e7af07ab245dafb99844213fa70d963caebe182347d2472d135732682855f0"
+    },
+    {
+      "path": "phase-05-visuals/scientific-interpretation-notes.md",
+      "bytes": 2633,
+      "sha256": "b3b15d0012fe3bc274a57de43d7a8e8ed543816bc1b13e383be132067d4becb4"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/a01.webp",
+      "bytes": 19920,
+      "sha256": "ec8ac6185ffda29ce4d6b7b9c588b85e5e94fc202128f814eda66bec248096f9"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/a02.webp",
+      "bytes": 18418,
+      "sha256": "ad9d9e795d022b9f623899304f38c1e512c23f1594be134783db560d30926ce9"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/a03.webp",
+      "bytes": 7224,
+      "sha256": "07ea5ca1241dd9a2041226dfaa5bf5ca01194cdcca3b8eeafc9a22b74a490747"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/a04.webp",
+      "bytes": 8178,
+      "sha256": "1c528fc0a091d13377573f39359470fa78aebd77deb335ae6294f4465e3057ec"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/a05.webp",
+      "bytes": 13906,
+      "sha256": "a01b55587ca9cb61661b8540d052cfa195ce4875c3346f24a8cd8529d5815f59"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/a06.webp",
+      "bytes": 11226,
+      "sha256": "0d83233bb084f5f6df0b12c7d004615abb40378010b7d413eb436339642eeed0"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/a07.webp",
+      "bytes": 18104,
+      "sha256": "f74d4e08687a8c87afe9038f745db1b2f87270fd4f3091a7c0131a04cbc347bf"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/a08.webp",
+      "bytes": 11040,
+      "sha256": "899f7f66e24cb211f30d9fbafbf91d38f6538110ec298e24e5b8a9e55db97f2d"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/a09.webp",
+      "bytes": 11882,
+      "sha256": "6a317053983f29a939fea6c201707fb77d66f46b9bcbc4b7abd5a98b36a3360f"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p01.webp",
+      "bytes": 21038,
+      "sha256": "c05a848b8d37a189f8aebaf468954bddd5aa4a2163e7df614cff0890a5114f81"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p02.webp",
+      "bytes": 13232,
+      "sha256": "8fac6cbbf16517b2353805411a62a59e8117f59bce73ae08f85655772c128927"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p03.webp",
+      "bytes": 15906,
+      "sha256": "965b3f517957b54ded12da779270e04ccf1ec06af73bf2dd9fe9587823f58a0a"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p04.webp",
+      "bytes": 20952,
+      "sha256": "d45d2fafd267a133fb3547b3aeabd403666a15dad78439acf598e9993e50cf63"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p05.webp",
+      "bytes": 17140,
+      "sha256": "2b224f2b8f7bc12934a041513797241673b912fe1db288abb6290da64c079127"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p06.webp",
+      "bytes": 15592,
+      "sha256": "4be692c80c7b0a8c5587148ecbff9d5412473234f400207fa186e8e9509aba86"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p07.webp",
+      "bytes": 23272,
+      "sha256": "4f8b7a216330580267608597dc8d833b8815c2b335fe7a9dd72f8008cfd0f431"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p08.webp",
+      "bytes": 10490,
+      "sha256": "90b71c7f43918a06664c8789bf1a4455b606d73657274622d2f2404ba85df821"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p09.webp",
+      "bytes": 19426,
+      "sha256": "72d59c982670e59eeb8b86044e318e26136d0156143a5268ae2b68ab2905b2ab"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p10.webp",
+      "bytes": 13796,
+      "sha256": "08d1a8b82a70ce932a2b049aede82a309e1e3be51a68cc4267f50bbcac708774"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p11.webp",
+      "bytes": 17104,
+      "sha256": "17ad36f4bee9f0efa0a5d4f023e05d130d001f5d85840c579975e2bec4f9b7c8"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p12.webp",
+      "bytes": 31100,
+      "sha256": "d8023ec001d4ac15988aa135d5d7c71c664a63168ec0c17f4f7c50d6bfa85664"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p13.webp",
+      "bytes": 17146,
+      "sha256": "5f492e6ba51779ee98707481126e11205479c0d176a88dde08d7d88f3e2a1e0a"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p14.webp",
+      "bytes": 14376,
+      "sha256": "3df7a79530cb054a86a35ae78f1d067220fc9673ce20f8a157f6390d2c451801"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p15.webp",
+      "bytes": 17656,
+      "sha256": "335add9d8d8d07962c39d0c3585434c5faff3ef04badff92e1c28721fca0ce4b"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p16.webp",
+      "bytes": 8080,
+      "sha256": "55bf407a56864a1a6953987db5fd166b29d731e00f504a78f59b797de4515b69"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p17.webp",
+      "bytes": 13928,
+      "sha256": "be78492c540faaf02fbbe8d6bc5486423d97494245d7fca2d94477fd5a783bf5"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p18.webp",
+      "bytes": 30174,
+      "sha256": "7a887c7886a636f1b66f2a0efaf58501986124850704b8ffa9cca9f28e0db411"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p19.webp",
+      "bytes": 21940,
+      "sha256": "89b7322b267b314b2938f3e99392db79d5467ebd28cfeaca2d8230a0b66e8f04"
+    },
+    {
+      "path": "phase-05-visuals/thumbnails/p20.webp",
+      "bytes": 18710,
+      "sha256": "100026e511c22ca367c91675c8a16da928cf3d186dc0c0eb236d1201fa17b343"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2065,
+      "sha256": "3beeff66a9dc2216f6745fb21e01ac80de79c12309f69ae96f5c913282104ebb"
+    }
+  ]
+}

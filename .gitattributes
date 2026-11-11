@@ -7,3 +7,8 @@
 /data/learn/digestive-study-tools/*.json -text
 # Preserve the supplied gallery manifest and its original source provenance bytes.
 /public/images/learn/digestive/gallery/gallery.json -text
+# Preserve Respiratory package bytes in commits and fresh checkouts.
+/data/learn/respiratory-system-*.json -text
+/data/learn/respiratory-study-tools/*.json -text
+/public/images/learn/respiratory/gallery/gallery.json -text
+/docs/integration/respiratory-source/** -text

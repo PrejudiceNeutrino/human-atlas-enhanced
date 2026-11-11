@@ -1,0 +1,2742 @@
+{
+  "project": "Human Atlas — Respiratory System",
+  "stage": 1,
+  "status": "curriculum-and-coverage-plan-only",
+  "generated": "2026-11-09",
+  "subject": {
+    "slug": "respiratory",
+    "displayTitle": "Respiratory System",
+    "courseChapterTitle": "Chapter 23 — The Respiratory System",
+    "routeProposal": "/learn/respiratory"
+  },
+  "sources": {
+    "physiology": {
+      "file": "23-Respiratory System.pptx",
+      "slideCount": 42,
+      "role": "Chapter 23 physiology lecture: seven functions, histology, ventilation, gas exchange/transport, chemoreception, disorders"
+    },
+    "anatomy": {
+      "file": "Respiratory - Copy.pptx",
+      "slideCount": 19,
+      "role": "Anatomy-model lecture: nasal cavity, laryngeal structures, trachea/bronchi, lungs/pleura, labeled classroom models"
+    },
+    "studyGuide": {
+      "file": "23-Study Guide.docx",
+      "questionCount": 29,
+      "termCount": 11,
+      "coverageItemCount": 30,
+      "role": "Exam priority and terms; lecture topics outside guide remain eligible for test"
+    }
+  },
+  "overview": "Respiratory education should connect three scales: gross anatomy and airway protection; physical principles governing breathing; and cellular/molecular gas transport and blood pH. Preserve the instructor’s seven functions and exam vocabulary, while giving the reader a unified mechanism rather than an isolated list.",
+  "siteTabs": [
+    "General Overview",
+    "Deep Dive",
+    "How It Connects",
+    "Who Cares?",
+    "Visualize",
+    "Gallery",
+    "Exam Cram",
+    "Study Tools"
+  ],
+  "courseCoverage": [
+    {
+      "id": "SG-00",
+      "prompt": "Terminology:  mucus escalator,  vestibular folds,   vocal folds,   phonation,   articulation,   alveolar ducts,   quiet breathing,   forced breathing,   vital capacity,   total lung capacity,   partial pressure,",
+      "kind": "terminology",
+      "primarySections": {
+        "general-overview": "airway-defense",
+        "deep-dive": "respiratory-mucosa",
+        "exam-cram": "mucociliary-defenses"
+      },
+      "keyConcept": "11 course terms: mucus escalator, vestibular folds, vocal folds, phonation, articulation, alveolar ducts, quiet breathing, forced breathing, vital capacity, total lung capacity, partial pressure",
+      "terms": [
+        "mucus escalator",
+        "vestibular folds",
+        "vocal folds",
+        "phonation",
+        "articulation",
+        "alveolar ducts",
+        "quiet breathing",
+        "forced breathing",
+        "vital capacity",
+        "total lung capacity",
+        "partial pressure"
+      ],
+      "topics": [
+        "terminology"
+      ],
+      "slides": {
+        "physiology": [
+          5,
+          10,
+          11,
+          16,
+          27,
+          30,
+          31,
+          32
+        ],
+        "anatomy": [
+          10,
+          15
+        ]
+      },
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-01",
+      "prompt": "What are the major respiratory functions?",
+      "kind": "question",
+      "keyConcept": "Respiratory functions and physiological roles",
+      "topics": [
+        "functions"
+      ],
+      "slides": {
+        "physiology": [
+          2
+        ],
+        "anatomy": [
+          1
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "functions-overview",
+        "deep-dive": "functions-organization",
+        "exam-cram": "functions-organization"
+      }
+    },
+    {
+      "id": "SG-02",
+      "prompt": "What are the components of the upper and lower respiratory system?  What is the function of the upper respiratory system?",
+      "kind": "question",
+      "keyConcept": "Upper vs lower respiratory systems, and upper airway roles",
+      "topics": [
+        "anatomy",
+        "functions"
+      ],
+      "slides": {
+        "physiology": [
+          3,
+          4,
+          7
+        ],
+        "anatomy": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "air-route",
+        "deep-dive": "nasal-cavity",
+        "exam-cram": "upper-lower-airway"
+      }
+    },
+    {
+      "id": "SG-03",
+      "prompt": "What are the respiratory epithelium and lamina propria?",
+      "kind": "question",
+      "keyConcept": "Respiratory epithelium and lamina propria",
+      "topics": [
+        "histology",
+        "defense"
+      ],
+      "slides": {
+        "physiology": [
+          5
+        ],
+        "anatomy": [
+          4
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "airway-defense",
+        "deep-dive": "respiratory-mucosa",
+        "exam-cram": "mucociliary-defenses"
+      }
+    },
+    {
+      "id": "SG-04",
+      "prompt": "Understand the histological differences in the respiratory tract",
+      "kind": "question",
+      "keyConcept": "Histology of airway segments and alveoli",
+      "topics": [
+        "histology"
+      ],
+      "slides": {
+        "physiology": [
+          5,
+          6,
+          17,
+          19
+        ],
+        "anatomy": [
+          10,
+          15
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "airway-defense",
+        "deep-dive": "histology-tract",
+        "exam-cram": "tissue-linings"
+      }
+    },
+    {
+      "id": "SG-05",
+      "prompt": "What are the benefits of nasal breathing?",
+      "kind": "question",
+      "keyConcept": "Benefits and functions of nasal breathing",
+      "topics": [
+        "anatomy",
+        "functions"
+      ],
+      "slides": {
+        "physiology": [
+          7
+        ],
+        "anatomy": [
+          2,
+          3,
+          4
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "air-route",
+        "deep-dive": "nasal-cavity",
+        "exam-cram": "upper-lower-airway"
+      }
+    },
+    {
+      "id": "SG-06",
+      "prompt": "What are the functions of the larynx?",
+      "kind": "question",
+      "keyConcept": "Laryngeal functions",
+      "topics": [
+        "anatomy",
+        "voice"
+      ],
+      "slides": {
+        "physiology": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "anatomy": [
+          6,
+          7,
+          10
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "air-route",
+        "deep-dive": "larynx-cartilages",
+        "exam-cram": "larynx-voice"
+      }
+    },
+    {
+      "id": "SG-07",
+      "prompt": "What factors affect the pitch of a sound from the vocal cords?",
+      "kind": "question",
+      "keyConcept": "Factors controlling vocal pitch",
+      "topics": [
+        "voice"
+      ],
+      "slides": {
+        "physiology": [
+          11,
+          12
+        ],
+        "anatomy": [
+          6,
+          7,
+          10
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "air-route",
+        "deep-dive": "voice-and-cough",
+        "exam-cram": "larynx-voice"
+      }
+    },
+    {
+      "id": "SG-08",
+      "prompt": "Contrast intrinsic vs. extrinsic muscles of the larynx.",
+      "kind": "question",
+      "keyConcept": "Intrinsic versus extrinsic laryngeal muscles",
+      "topics": [
+        "voice",
+        "anatomy"
+      ],
+      "slides": {
+        "physiology": [
+          12
+        ],
+        "anatomy": [
+          6,
+          7
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "air-route",
+        "deep-dive": "larynx-cartilages",
+        "exam-cram": "larynx-voice"
+      }
+    },
+    {
+      "id": "SG-09",
+      "prompt": "Why is the epiglottis important?",
+      "kind": "question",
+      "keyConcept": "Epiglottis and swallowing-related airway protection",
+      "topics": [
+        "defense",
+        "anatomy"
+      ],
+      "slides": {
+        "physiology": [
+          8,
+          12
+        ],
+        "anatomy": [
+          6,
+          7
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "air-route",
+        "deep-dive": "voice-and-cough",
+        "exam-cram": "larynx-voice"
+      }
+    },
+    {
+      "id": "SG-10",
+      "prompt": "What occurs during the cough reflex?",
+      "kind": "question",
+      "keyConcept": "Cough reflex sequence",
+      "topics": [
+        "defense",
+        "control"
+      ],
+      "slides": {
+        "physiology": [
+          10
+        ],
+        "anatomy": [
+          10
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "airway-defense",
+        "deep-dive": "voice-and-cough",
+        "exam-cram": "cough-reflex"
+      }
+    },
+    {
+      "id": "SG-11",
+      "prompt": "What does the trachealis muscle do and how does it respond to the autonomic nervous system?  What does the elastic ligament do?",
+      "kind": "question",
+      "keyConcept": "Trachealis muscle and elastic ligament; autonomic effects",
+      "topics": [
+        "anatomy",
+        "control"
+      ],
+      "slides": {
+        "physiology": [
+          13,
+          14
+        ],
+        "anatomy": [
+          11,
+          12
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "air-route",
+        "deep-dive": "trachea",
+        "exam-cram": "trachea-bronchi"
+      }
+    },
+    {
+      "id": "SG-12",
+      "prompt": "How does the bronchial tree respond to sympathetic and parasympathetic activation?",
+      "kind": "question",
+      "keyConcept": "Bronchial sympathetic versus parasympathetic responses",
+      "topics": [
+        "control",
+        "anatomy"
+      ],
+      "slides": {
+        "physiology": [
+          15
+        ],
+        "anatomy": [
+          12,
+          13,
+          14
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "air-route",
+        "deep-dive": "bronchial-tree",
+        "exam-cram": "trachea-bronchi"
+      }
+    },
+    {
+      "id": "SG-13",
+      "prompt": "What are the 3 types of cells in the lung and their functions?  What is surfactant?",
+      "kind": "question",
+      "keyConcept": "Three alveolar cell types and surfactant",
+      "topics": [
+        "microanatomy",
+        "gas-exchange"
+      ],
+      "slides": {
+        "physiology": [
+          16,
+          17,
+          18
+        ],
+        "anatomy": [
+          15
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "alveoli",
+        "deep-dive": "alveoli-and-cells",
+        "exam-cram": "alveoli-membrane"
+      }
+    },
+    {
+      "id": "SG-14",
+      "prompt": "What type of epithelium lines the alveoli?  Why?",
+      "kind": "question",
+      "keyConcept": "Alveolar epithelial type and explanation",
+      "topics": [
+        "histology",
+        "gas-exchange"
+      ],
+      "slides": {
+        "physiology": [
+          6,
+          17,
+          19
+        ],
+        "anatomy": [
+          15
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "alveoli",
+        "deep-dive": "alveoli-and-cells",
+        "exam-cram": "alveoli-membrane"
+      }
+    },
+    {
+      "id": "SG-15",
+      "prompt": "What makes up the respiratory membrane and what occurs there?",
+      "kind": "question",
+      "keyConcept": "Respiratory membrane and its diffusion function",
+      "topics": [
+        "microanatomy",
+        "gas-exchange"
+      ],
+      "slides": {
+        "physiology": [
+          18,
+          19
+        ],
+        "anatomy": [
+          15
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "alveoli",
+        "deep-dive": "respiratory-membrane",
+        "exam-cram": "alveoli-membrane"
+      }
+    },
+    {
+      "id": "SG-16",
+      "prompt": "How does internal respiration differ from external respiration?",
+      "kind": "question",
+      "keyConcept": "Internal versus external respiration",
+      "topics": [
+        "gas-exchange"
+      ],
+      "slides": {
+        "physiology": [
+          20,
+          21
+        ],
+        "anatomy": [
+          1
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "gases-and-blood",
+        "deep-dive": "respiration-terms",
+        "exam-cram": "external-internal"
+      }
+    },
+    {
+      "id": "SG-17",
+      "prompt": "Describe the 3 steps in external respiration.",
+      "kind": "question",
+      "keyConcept": "Three course-defined stages of external respiration",
+      "topics": [
+        "gas-exchange"
+      ],
+      "slides": {
+        "physiology": [
+          20,
+          21
+        ],
+        "anatomy": [
+          1
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "gases-and-blood",
+        "deep-dive": "respiration-terms",
+        "exam-cram": "external-internal"
+      }
+    },
+    {
+      "id": "SG-18",
+      "prompt": "What is Boyle’s Law and how does it relate to pulmonary ventilation (how does it make air rush in and out)?",
+      "kind": "question",
+      "keyConcept": "Boyle’s law and pulmonary ventilation",
+      "topics": [
+        "mechanics"
+      ],
+      "slides": {
+        "physiology": [
+          22,
+          23,
+          26
+        ],
+        "anatomy": []
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "pressure-breathing",
+        "deep-dive": "boyle-and-pressure",
+        "exam-cram": "boyle-law"
+      }
+    },
+    {
+      "id": "SG-19",
+      "prompt": "What happens in the thoracic cavity during inhalation and exhalation (Diaphragm and Ribs)?",
+      "kind": "question",
+      "keyConcept": "Changes in diaphragm/ribs/thoracic pressure during inhalation and exhalation",
+      "topics": [
+        "mechanics"
+      ],
+      "slides": {
+        "physiology": [
+          24,
+          25,
+          26
+        ],
+        "anatomy": [
+          16
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "pressure-breathing",
+        "deep-dive": "inhalation-exhalation",
+        "exam-cram": "breathing-mechanics"
+      }
+    },
+    {
+      "id": "SG-20",
+      "prompt": "What are the 2 most important muscles used during inhalation?",
+      "kind": "question",
+      "keyConcept": "Two principal inhalation muscles",
+      "topics": [
+        "mechanics",
+        "anatomy"
+      ],
+      "slides": {
+        "physiology": [
+          24,
+          27,
+          28,
+          29
+        ],
+        "anatomy": [
+          18
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "pressure-breathing",
+        "deep-dive": "breathing-muscles",
+        "exam-cram": "breathing-mechanics"
+      }
+    },
+    {
+      "id": "SG-21",
+      "prompt": "What are the 4 respiratory volumes?",
+      "kind": "question",
+      "keyConcept": "Four individual respiratory volumes",
+      "topics": [
+        "mechanics",
+        "measurement"
+      ],
+      "slides": {
+        "physiology": [
+          30,
+          31
+        ],
+        "anatomy": []
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "pressure-breathing",
+        "deep-dive": "lung-volumes",
+        "exam-cram": "volumes-capacities"
+      }
+    },
+    {
+      "id": "SG-22",
+      "prompt": "Understand Henry’s Law and how it relates to gas exchange at the lungs and tissues (diffusion of oxygen and carbon dioxide)?",
+      "kind": "question",
+      "keyConcept": "Henry’s law, partial pressure, and lung/tissue gas diffusion",
+      "topics": [
+        "gas-exchange",
+        "chemistry"
+      ],
+      "slides": {
+        "physiology": [
+          32,
+          33,
+          34
+        ],
+        "anatomy": [
+          15
+        ]
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "gases-and-blood",
+        "deep-dive": "gas-diffusion-henry",
+        "exam-cram": "henry-diffusion"
+      }
+    },
+    {
+      "id": "SG-23",
+      "prompt": "What is hemoglobin called when bound to oxygen?  To carbon dioxide?  What causes the gases to bind?",
+      "kind": "question",
+      "keyConcept": "Hemoglobin oxygen/CO2 forms and binding conditions",
+      "topics": [
+        "transport"
+      ],
+      "slides": {
+        "physiology": [
+          35,
+          36,
+          37
+        ],
+        "anatomy": []
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "gases-and-blood",
+        "deep-dive": "hemoglobin-oxygen",
+        "exam-cram": "hemoglobin-transport"
+      }
+    },
+    {
+      "id": "SG-24",
+      "prompt": "Understand the Oxygen-Hemoglobin Saturation Curve.",
+      "kind": "question",
+      "keyConcept": "Oxygen–hemoglobin saturation curve",
+      "topics": [
+        "transport"
+      ],
+      "slides": {
+        "physiology": [
+          35
+        ],
+        "anatomy": []
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "gases-and-blood",
+        "deep-dive": "hemoglobin-oxygen",
+        "exam-cram": "hemoglobin-transport"
+      }
+    },
+    {
+      "id": "SG-25",
+      "prompt": "What are the 3 ways in which carbon dioxide can be transported?  What enzyme converts carbon dioxide to carbonic acid?",
+      "kind": "question",
+      "keyConcept": "Three forms of blood CO2 transport and carbonic anhydrase",
+      "topics": [
+        "transport",
+        "chemistry"
+      ],
+      "slides": {
+        "physiology": [
+          36,
+          37
+        ],
+        "anatomy": []
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "gases-and-blood",
+        "deep-dive": "co2-transport",
+        "exam-cram": "co2-and-ph"
+      }
+    },
+    {
+      "id": "SG-26",
+      "prompt": "How does it contribute to the pH of blood?",
+      "kind": "question",
+      "keyConcept": "CO2, bicarbonate, and blood pH regulation",
+      "topics": [
+        "chemistry",
+        "homeostasis"
+      ],
+      "slides": {
+        "physiology": [
+          2,
+          36,
+          37,
+          40,
+          41
+        ],
+        "anatomy": []
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "gases-and-blood",
+        "deep-dive": "co2-transport",
+        "exam-cram": "co2-and-ph"
+      }
+    },
+    {
+      "id": "SG-27",
+      "prompt": "What and where is the respiratory rhythmicity center?",
+      "kind": "question",
+      "keyConcept": "Location and role of respiratory rhythmicity centers",
+      "topics": [
+        "control"
+      ],
+      "slides": {
+        "physiology": [
+          38,
+          39
+        ],
+        "anatomy": []
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "brain-controls",
+        "deep-dive": "brainstem-respiratory",
+        "exam-cram": "brainstem-control"
+      }
+    },
+    {
+      "id": "SG-28",
+      "prompt": "Contrast the Dorsal Respiratory Group vs. Ventral Respiratory Group.  What muscles do they innervate?",
+      "kind": "question",
+      "keyConcept": "Dorsal versus ventral respiratory groups and musculature",
+      "topics": [
+        "control"
+      ],
+      "slides": {
+        "physiology": [
+          38,
+          39
+        ],
+        "anatomy": []
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "brain-controls",
+        "deep-dive": "brainstem-respiratory",
+        "exam-cram": "brainstem-control"
+      }
+    },
+    {
+      "id": "SG-29",
+      "prompt": "Contrast the Apneustic and Pneumotaxic centers.   Where are they?  Which one would stimulate the DRG?",
+      "kind": "question",
+      "keyConcept": "Apneustic and pneumotaxic centers and medullary influence",
+      "topics": [
+        "control"
+      ],
+      "slides": {
+        "physiology": [
+          38,
+          39
+        ],
+        "anatomy": []
+      },
+      "status": "study-guide",
+      "primarySections": {
+        "general-overview": "brain-controls",
+        "deep-dive": "pontine-and-reflex",
+        "exam-cram": "brainstem-control"
+      }
+    }
+  ],
+  "slideOnlyButRelevant": [
+    {
+      "title": "Detailed nasal and pharyngeal labels: conchae, meatuses, choanae, hard/soft palate, uvula, fauces, auditory tube, tonsils",
+      "slides": {
+        "physiology": [
+          4,
+          7
+        ],
+        "anatomy": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "target": "Deep Dive, Gallery, Exam Cram anatomy checklist"
+    },
+    {
+      "title": "Six laryngeal cartilages and model views of anterior/posterior larynx",
+      "slides": {
+        "physiology": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "anatomy": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "target": "Deep Dive, Gallery, interactive 3D where model has mesh"
+    },
+    {
+      "title": "Carina and right versus left primary bronchus; model photographs",
+      "slides": {
+        "physiology": [
+          13,
+          14,
+          15
+        ],
+        "anatomy": [
+          11,
+          12,
+          13
+        ]
+      },
+      "target": "Deep Dive, Gallery, model identification"
+    },
+    {
+      "title": "Right versus left lung lobes, horizontal/oblique fissures, cardiac notch, pleural boundaries",
+      "slides": {
+        "physiology": [
+          4,
+          15
+        ],
+        "anatomy": [
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "target": "Deep Dive, Exam Cram, Gallery, Visualize"
+    },
+    {
+      "title": "Types of bronchioles and terminal transition to alveoli",
+      "slides": {
+        "physiology": [
+          15,
+          16
+        ],
+        "anatomy": [
+          13,
+          14,
+          15
+        ]
+      },
+      "target": "Deep Dive, Gallery"
+    },
+    {
+      "title": "Accessory inhalation and forced expiration muscles; figure and anatomy labeling",
+      "slides": {
+        "physiology": [
+          27,
+          28,
+          29
+        ],
+        "anatomy": []
+      },
+      "target": "Deep Dive, Exam Cram, Gallery"
+    },
+    {
+      "title": "Vital and total lung capacities shown in plotted spirometry figure, beyond the four base volumes",
+      "slides": {
+        "physiology": [
+          30,
+          31
+        ],
+        "anatomy": []
+      },
+      "target": "Deep Dive, Exam Cram, Gallery"
+    },
+    {
+      "title": "Respiratory reflex feedback, chemoreceptors, baroreceptors, stretch and irritant receptors",
+      "slides": {
+        "physiology": [
+          38,
+          39,
+          40,
+          41
+        ],
+        "anatomy": []
+      },
+      "target": "Deep Dive, narrative, Gallery"
+    },
+    {
+      "title": "Instructor-listed disorders: hypoxia, apoxia, laryngitis, acute epiglottitis, pneumonia, cystic fibrosis, asthma",
+      "slides": {
+        "physiology": [
+          42
+        ],
+        "anatomy": []
+      },
+      "target": "Deep Dive, Exam Cram"
+    }
+  ],
+  "readings": {
+    "general-overview": {
+      "label": "General Overview",
+      "expectedSections": 8,
+      "targetWords": "750–1,100",
+      "style": "Accessible and genuinely short, same register as Digestive: short introduction, eight concept-focused sections, bold terms only where useful, no exhaustive anatomy lists unless central.",
+      "introConcept": "Breathing is not simply moving air: it is the first part of a coordinated exchange between the environment, airways, lungs, blood, brain, and metabolically active tissues.",
+      "sections": [
+        {
+          "id": "why-respiration",
+          "title": "Why Breathing Matters",
+          "purpose": "Begin with cellular demand for O2 and the need to eliminate metabolic CO2; distinguish breathing from cellular respiration; why the system also matters for pH.",
+          "guideQuestions": [
+            "SG-01",
+            "SG-16"
+          ],
+          "slides": {
+            "physiology": [
+              2,
+              20,
+              21
+            ],
+            "anatomy": [
+              1
+            ]
+          }
+        },
+        {
+          "id": "functions-overview",
+          "title": "Seven Functions of the Respiratory System",
+          "purpose": "Give the instructor’s exact seven-function list with one-sentence explanations, not a random generic list.",
+          "guideQuestions": [
+            "SG-01"
+          ],
+          "slides": {
+            "physiology": [
+              2
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "air-route",
+          "title": "The Route Air Takes",
+          "purpose": "Narrate nostrils/nasal cavity -> pharynx -> larynx -> trachea -> bronchi -> bronchioles -> alveoli; make conducting versus respiratory zones intuitive.",
+          "guideQuestions": [
+            "SG-02",
+            "SG-05"
+          ],
+          "slides": {
+            "physiology": [
+              3,
+              4,
+              15,
+              16
+            ],
+            "anatomy": [
+              1,
+              4,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "id": "airway-defense",
+          "title": "Airways Condition and Protect Incoming Air",
+          "purpose": "Nasal warming/humidifying, mucus/cilia, respiratory mucosa, coughing, the changing histology that supports the job.",
+          "guideQuestions": [
+            "SG-03",
+            "SG-04",
+            "SG-05",
+            "SG-10"
+          ],
+          "slides": {
+            "physiology": [
+              5,
+              6,
+              7,
+              10
+            ],
+            "anatomy": [
+              2,
+              4,
+              10
+            ]
+          }
+        },
+        {
+          "id": "alveoli",
+          "title": "Alveoli: Where Blood Meets Air",
+          "purpose": "Branching small airways, extremely thin diffusion surfaces, pulmonary capillaries, Type I/II cells, macrophages and surfactant.",
+          "guideQuestions": [
+            "SG-13",
+            "SG-14",
+            "SG-15"
+          ],
+          "slides": {
+            "physiology": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "anatomy": [
+              15
+            ]
+          }
+        },
+        {
+          "id": "pressure-breathing",
+          "title": "How the Chest Moves Air",
+          "purpose": "Boyle law intuition: muscles increase thoracic volume; pressure falls; air enters; recoil exhalation reverses; introduce volumes.",
+          "guideQuestions": [
+            "SG-18",
+            "SG-19",
+            "SG-20",
+            "SG-21"
+          ],
+          "slides": {
+            "physiology": [
+              22,
+              23,
+              24,
+              25,
+              27,
+              30
+            ],
+            "anatomy": [
+              16,
+              18
+            ]
+          }
+        },
+        {
+          "id": "gases-and-blood",
+          "title": "How Oxygen and Carbon Dioxide Travel",
+          "purpose": "Partial-pressure gradients, dissolved gas, hemoglobin, bicarbonate route for CO2, links to tissue energy and pH.",
+          "guideQuestions": [
+            "SG-16",
+            "SG-22",
+            "SG-23",
+            "SG-24",
+            "SG-25",
+            "SG-26"
+          ],
+          "slides": {
+            "physiology": [
+              20,
+              21,
+              32,
+              34,
+              35,
+              36,
+              37
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "brain-controls",
+          "title": "How Breathing Is Regulated",
+          "purpose": "Brainstem rhythm, chemoreceptor feedback, changes during exercise, conscious speech, and pathologies as brief context.",
+          "guideQuestions": [
+            "SG-27",
+            "SG-28",
+            "SG-29"
+          ],
+          "slides": {
+            "physiology": [
+              38,
+              39,
+              40,
+              41,
+              42
+            ],
+            "anatomy": []
+          }
+        }
+      ]
+    },
+    "deep-dive": {
+      "label": "Deep Dive",
+      "expectedSections": 23,
+      "targetWords": "7,000–9,000",
+      "style": "Mechanism-rich, comprehensive, scientifically careful, explicitly differentiated instructor terms and further clarification. Like Digestive Deep Dive, dense enough as serious reference but with clear subheadings and logical teaching sequence.",
+      "introConcept": "Cover the Chapter 23 study guide completely while adding identification targets from the respiratory anatomy slide deck and carefully distinguishing simplified lecture diagrams from physiological mechanisms.",
+      "sections": [
+        {
+          "id": "functions-organization",
+          "title": "Seven Respiratory Functions and System Organization",
+          "purpose": "Exactly seven lecture-listed functions; anatomical upper/lower divisions; conducting/respiratory regions; ventilation vs external/internal/cellular respiration.",
+          "guideQuestions": [
+            "SG-01",
+            "SG-02",
+            "SG-16",
+            "SG-17"
+          ],
+          "slides": {
+            "physiology": [
+              2,
+              3,
+              20
+            ],
+            "anatomy": [
+              1
+            ]
+          }
+        },
+        {
+          "id": "nasal-cavity",
+          "title": "External Nose, Nasal Cavity, Conchae, and Sinuses",
+          "purpose": "Nasal vestibule and vibrissae, choanae, conchae/meatuses, hard and soft palate, uvula, paranasal sinuses, nasal air-conditioning, smell, lecture nitric-oxide claim as carefully distinguished.",
+          "guideQuestions": [
+            "SG-02",
+            "SG-05"
+          ],
+          "slides": {
+            "physiology": [
+              4,
+              7
+            ],
+            "anatomy": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "id": "pharynx",
+          "title": "Pharynx and Shared Air–Food Passage",
+          "purpose": "Nasopharynx, oropharynx, laryngopharynx, auditory tube openings, tonsils, fauces, hyoid; breathing vs swallowing traffic.",
+          "guideQuestions": [
+            "SG-02",
+            "SG-05",
+            "SG-09"
+          ],
+          "slides": {
+            "physiology": [
+              4,
+              7,
+              12
+            ],
+            "anatomy": [
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "id": "respiratory-mucosa",
+          "title": "Respiratory Mucosa and Mucociliary Escalator",
+          "purpose": "Epithelium, goblet cells, cilia, lamina propria, mucus trapping and disposal; defenses and consequences of ciliary dysfunction.",
+          "guideQuestions": [
+            "SG-00",
+            "SG-03",
+            "SG-04"
+          ],
+          "slides": {
+            "physiology": [
+              5,
+              6
+            ],
+            "anatomy": [
+              10
+            ]
+          }
+        },
+        {
+          "id": "histology-tract",
+          "title": "The Changing Epithelium Along the Respiratory Tract",
+          "purpose": "Different epithelium at nasal vestibule/conducting airways/oropharynx, bronchioles and alveoli; transition and how form supports exposure and diffusion.",
+          "guideQuestions": [
+            "SG-04",
+            "SG-14"
+          ],
+          "slides": {
+            "physiology": [
+              5,
+              6,
+              17
+            ],
+            "anatomy": [
+              10,
+              15
+            ]
+          }
+        },
+        {
+          "id": "larynx-cartilages",
+          "title": "Larynx, Cartilages, and Anatomical Landmarks",
+          "purpose": "All three unpaired and three paired cartilages, thyroid and cricoid landmarks, epiglottis, arytenoids and vocal fold attachments, model identification.",
+          "guideQuestions": [
+            "SG-06",
+            "SG-08",
+            "SG-09"
+          ],
+          "slides": {
+            "physiology": [
+              8,
+              9,
+              12
+            ],
+            "anatomy": [
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "id": "voice-and-cough",
+          "title": "Vocal Folds, Phonation, Swallowing, and Cough",
+          "purpose": "True vs false folds, glottis, phonation vs articulation, pitch determinants, intrinsic vs extrinsic muscles, airway-protective movements and cough sequence.",
+          "guideQuestions": [
+            "SG-06",
+            "SG-07",
+            "SG-08",
+            "SG-09",
+            "SG-10"
+          ],
+          "slides": {
+            "physiology": [
+              10,
+              11,
+              12
+            ],
+            "anatomy": [
+              6,
+              9,
+              10
+            ]
+          }
+        },
+        {
+          "id": "trachea",
+          "title": "Trachea, Trachealis, Elastic Fibers, and Carina",
+          "purpose": "Posterior C-shaped cartilage, trachealis and esophageal expansion, recoil, autonomic tone as taught; carina and primary bronchus differences.",
+          "guideQuestions": [
+            "SG-11"
+          ],
+          "slides": {
+            "physiology": [
+              13,
+              14
+            ],
+            "anatomy": [
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "id": "bronchial-tree",
+          "title": "The Bronchial Tree and Airway Resistance",
+          "purpose": "Primary/secondary/tertiary bronchi, lobar/segmental anatomy, terminal vs respiratory bronchioles, cartilage disappearance, smooth muscle and autonomic bronchodilation/bronchoconstriction.",
+          "guideQuestions": [
+            "SG-12"
+          ],
+          "slides": {
+            "physiology": [
+              15,
+              16
+            ],
+            "anatomy": [
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "id": "lungs-pleura",
+          "title": "Lung Lobes, Fissures, Hilum, and Pleura",
+          "purpose": "Right 3 vs left 2 lobes; horizontal and oblique fissures, cardiac notch, apex/base, costal/mediastinal/diaphragmatic surfaces; visceral/parietal pleura and pressure.",
+          "guideQuestions": [
+            "SG-19"
+          ],
+          "slides": {
+            "physiology": [
+              4,
+              14,
+              15,
+              24,
+              25
+            ],
+            "anatomy": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "id": "alveoli-and-cells",
+          "title": "Alveoli, Pneumocytes, Macrophages, and Surfactant",
+          "purpose": "Alveolar ducts/sacs, Type I vs Type II pneumocytes, macrophages, mechanics of surface tension and surfactant; distinguish microscopic from 3D gross anatomy.",
+          "guideQuestions": [
+            "SG-13",
+            "SG-14"
+          ],
+          "slides": {
+            "physiology": [
+              16,
+              17,
+              18
+            ],
+            "anatomy": [
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "id": "respiratory-membrane",
+          "title": "The Respiratory Membrane and Exchange Surface",
+          "purpose": "Type I alveolar epithelium, basement-membrane region and pulmonary capillary endothelium, diffusion distances, surface-area effects; classic histological picture.",
+          "guideQuestions": [
+            "SG-15",
+            "SG-22"
+          ],
+          "slides": {
+            "physiology": [
+              18,
+              19,
+              32,
+              34
+            ],
+            "anatomy": [
+              15
+            ]
+          }
+        },
+        {
+          "id": "respiration-terms",
+          "title": "Ventilation, External Respiration, Internal Respiration, Cellular Respiration",
+          "purpose": "The lecture’s broad three-step external respiration framework alongside standard narrower pulmonary gas-exchange terminology; systemic exchange, mitochondria and ATP.",
+          "guideQuestions": [
+            "SG-16",
+            "SG-17"
+          ],
+          "slides": {
+            "physiology": [
+              20,
+              21,
+              34
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "boyle-and-pressure",
+          "title": "Boyle’s Law, Thoracic Volume, and Pressure Gradients",
+          "purpose": "P×V approximately constant under idealized conditions; diaphragm and thoracic wall mechanics; atmosphere vs alveolar pressure; values 759/760/761 as illustrative, not fixed.",
+          "guideQuestions": [
+            "SG-18",
+            "SG-19"
+          ],
+          "slides": {
+            "physiology": [
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "anatomy": [
+              16
+            ]
+          }
+        },
+        {
+          "id": "inhalation-exhalation",
+          "title": "Inspiration, Quiet Expiration, Forced Ventilation",
+          "purpose": "External intercostals and diaphragm; elastic recoil, pleural linkage, forced respiratory recruitment; breathing modes and their terminology.",
+          "guideQuestions": [
+            "SG-19",
+            "SG-20"
+          ],
+          "slides": {
+            "physiology": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ],
+            "anatomy": [
+              16,
+              18
+            ]
+          }
+        },
+        {
+          "id": "breathing-muscles",
+          "title": "Respiratory Muscles and Accessory Recruitment",
+          "purpose": "Primary inspiration vs forced inspiration and expiration; accessory muscles from slide 29, distinguish internal intercostals and abdominal muscle roles.",
+          "guideQuestions": [
+            "SG-20"
+          ],
+          "slides": {
+            "physiology": [
+              27,
+              28,
+              29
+            ],
+            "anatomy": [
+              18
+            ]
+          }
+        },
+        {
+          "id": "lung-volumes",
+          "title": "Pulmonary Volumes, Capacities, and Spirometry",
+          "purpose": "TV, IRV, ERV, RV; VC, TLC; derive capacity equations; why simple spirometry does not measure RV directly; slide 31 plotted model.",
+          "guideQuestions": [
+            "SG-21"
+          ],
+          "slides": {
+            "physiology": [
+              30,
+              31
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "gas-diffusion-henry",
+          "title": "Partial Pressures, Henry’s Law, and Gas Diffusion",
+          "purpose": "O2 and CO2 concentration/partial-pressure gradients in alveoli and tissues; solubility, differences between Henry and Boyle laws; labels and approximate curves.",
+          "guideQuestions": [
+            "SG-22"
+          ],
+          "slides": {
+            "physiology": [
+              32,
+              33,
+              34
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "hemoglobin-oxygen",
+          "title": "Oxygen Transport, Oxyhemoglobin, and the Saturation Curve",
+          "purpose": "Reversible Hb binding, sigmoidal cooperative saturation, Bohr effect, CO2/H+/temperature context; hemoglobin carries most O2, not literally blue for CO2.",
+          "guideQuestions": [
+            "SG-23",
+            "SG-24"
+          ],
+          "slides": {
+            "physiology": [
+              35,
+              37
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "co2-transport",
+          "title": "Carbon Dioxide Carriage, Carbonic Anhydrase, and Blood pH",
+          "purpose": "Dissolved/hemoglobin-bound/bicarbonate forms (7/23/70 teaching approximations), erythrocyte carbonic anhydrase, chloride shift, acid-base equation and respiratory compensation.",
+          "guideQuestions": [
+            "SG-25",
+            "SG-26"
+          ],
+          "slides": {
+            "physiology": [
+              2,
+              36,
+              37,
+              41
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "brainstem-respiratory",
+          "title": "Medulla, Dorsal/Ventral Groups, and Rhythm",
+          "purpose": "Dorsal and ventral regions; motor outputs through phrenic and intercostal nerves, quiet vs forced role as instructor framing; modern respiratory network complexity.",
+          "guideQuestions": [
+            "SG-27",
+            "SG-28"
+          ],
+          "slides": {
+            "physiology": [
+              38,
+              39
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "pontine-and-reflex",
+          "title": "Pontine Control, Chemoreceptors, and Respiratory Reflexes",
+          "purpose": "Pneumotaxic/apneustic legacy labels, medullary integration, central/peripheral chemoreceptors, CO2/pH feedback, irritant, stretch reflexes.",
+          "guideQuestions": [
+            "SG-29"
+          ],
+          "slides": {
+            "physiology": [
+              38,
+              39,
+              40,
+              41
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "disorders",
+          "title": "High-Yield Respiratory Conditions and Clinical Mechanisms",
+          "purpose": "Lecture cases: hypoxia, apoxia/anoxia naming, laryngitis, epiglottitis, pneumonia, cystic fibrosis, asthma; how altered structure affects airflow or gas exchange.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              42
+            ],
+            "anatomy": []
+          }
+        }
+      ]
+    },
+    "how-it-connects": {
+      "label": "How It Connects",
+      "expectedSections": 11,
+      "targetWords": "2,000–2,700",
+      "style": "Narrative first principles from atmospheric oxygen demand to cellular respiration and removal of CO2; one continuous physiologic story, not encyclopedia fragments. Same register as Digestive “Journey of Digestion”.",
+      "workingTitle": "From a Breath to a Working Cell — and Back Again",
+      "introConcept": "Follow one ordinary breath, including airway conditioning, mechanical inhalation, alveolar diffusion, hemoglobin, tissues, bicarbonate and the brain feedback that drives the next breath.",
+      "sections": [
+        {
+          "id": "1-the-real-problem",
+          "title": "1. The Real Problem: Your Cells Need a Continuous Exchange",
+          "purpose": "Oxygen demand for ATP, CO2 waste and the need to move gases across incompatible environments.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              20,
+              21
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "2-air-preparation",
+          "title": "2. The Nose: Preparing the Outside World for Delicate Tissue",
+          "purpose": "Nasal geometry, heating/humidifying, filtering, mucus escalator.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              3,
+              5,
+              7
+            ],
+            "anatomy": [
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "id": "3-passage-and-protection",
+          "title": "3. The Shared Passage: Breathing Without Swallowing Food",
+          "purpose": "Pharynx, larynx, protection during swallowing and coughing.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              8,
+              10,
+              12
+            ],
+            "anatomy": [
+              5,
+              6,
+              10
+            ]
+          }
+        },
+        {
+          "id": "4-branching",
+          "title": "4. A Branching Delivery Network",
+          "purpose": "Trachea→bronchi→bronchioles→alveoli, tissue changes along the path.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              13,
+              15,
+              16
+            ],
+            "anatomy": [
+              11,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "id": "5-create-pressure",
+          "title": "5. How a Muscle Pulls Air Into Your Lungs",
+          "purpose": "Diaphragm, ribs, thorax and Boyle law, negative pressure compared to outside.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "anatomy": [
+              16
+            ]
+          }
+        },
+        {
+          "id": "6-alveolar-membrane",
+          "title": "6. The Alveolus: Two Fluids Separated by Almost Nothing",
+          "purpose": "Surfactant, Type I cells, capillary endothelial barrier; pulmonary exchange.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              16,
+              17,
+              19,
+              34
+            ],
+            "anatomy": [
+              15
+            ]
+          }
+        },
+        {
+          "id": "7-oxygen-blood",
+          "title": "7. Hemoglobin: Why Dissolved Oxygen Alone Is Not Enough",
+          "purpose": "Partial pressures, reversible binding, transport in erythrocytes.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              34,
+              35,
+              37
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "8-release-to-tissue",
+          "title": "8. The Working Tissue: Releasing What Was Collected",
+          "purpose": "Low tissue pO2, increased CO2/acidity, favorable oxygen unloading.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              34,
+              35
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "9-carbon-dioxide",
+          "title": "9. Taking Carbon Dioxide Home by a Different Route",
+          "purpose": "Hydration to bicarbonate in RBC, blood buffering and return to alveoli.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              36,
+              37
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "10-brain-feedback",
+          "title": "10. The Brain Measures the Consequences",
+          "purpose": "Medullary rhythm, CO2/pH sensing, adjustable ventilation, no conscious effort needed.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              38,
+              39,
+              40,
+              41
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "11-bigger-picture",
+          "title": "11. One Breath, Many Coordinated Systems",
+          "purpose": "Close loop: respiratory, cardiovascular, neural and biochemical homeostasis.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              2,
+              20,
+              41
+            ],
+            "anatomy": []
+          }
+        }
+      ]
+    },
+    "who-cares": {
+      "label": "Who Cares?",
+      "expectedSections": 3,
+      "targetWords": "Three compelling hooks (60–110 words each) with a roughly 350–550-word expandable “More Info” explanation each.",
+      "style": "Digestive/Lymphoid-style surprising title, concrete hook, precise physiological mechanism, strong distinctions and limitations; no sensational health claims.",
+      "stories": [
+        {
+          "id": "surfactant-and-collapse",
+          "title": "Your lungs need a molecular anti-collapse coating every time you breathe.",
+          "hook": "Each alveolus is lined with a thin liquid layer whose surface tension tends to pull the air space inward. Type II pneumocytes release surfactant, reducing that tendency and making inflation far easier. It is why a liquid-lined microscopic sac can reliably reopen breath after breath.",
+          "moreInfoConcepts": [
+            "Air–liquid interface and surface tension",
+            "Pulmonary surfactant as lipid/protein mixture (primarily phospholipids)",
+            "Type II pneumocytes, mechanics of compliance, lower work of breathing",
+            "Premature neonatal respiratory distress as a carefully labeled scientific extension"
+          ],
+          "slides": {
+            "physiology": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "anatomy": [
+              15
+            ]
+          },
+          "sourceStatus": "Surfactant and alveolar structure directly grounded in lecture; neonatal clinical extension is outside the slides."
+        },
+        {
+          "id": "co2-breathing-trigger",
+          "title": "Your brain often cares more about carbon dioxide than oxygen when deciding to breathe.",
+          "hook": "At ordinary sea-level conditions, much of the moment-to-moment adjustment of breathing is driven by CO2-linked changes in acidity, not by waiting for oxygen to become dangerously low. The brain monitors the chemistry of the blood and cerebrospinal fluid to adjust how quickly CO2 leaves the lungs.",
+          "moreInfoConcepts": [
+            "Central chemoreceptors and cerebrospinal-fluid pH",
+            "CO2→carbonic acid→H+ and bicarbonate",
+            "Medullary/pontine regulation and ventilation feedback",
+            "Peripheral chemoreceptor response to severe hypoxemia and its limits"
+          ],
+          "slides": {
+            "physiology": [
+              36,
+              38,
+              39,
+              40,
+              41
+            ],
+            "anatomy": []
+          },
+          "sourceStatus": "CO2/pH feedback is taught in lecture; modern physiology and relative sensitivity require explicit contextual explanation."
+        },
+        {
+          "id": "hemoglobin-responsive-delivery",
+          "title": "Your blood can release more oxygen precisely where tissue chemistry changes.",
+          "hook": "Hemoglobin does not merely carry oxygen like cargo in a sealed container. Its tendency to hold oxygen changes with surrounding conditions. In actively metabolizing tissues, rising CO2 and acidity can favor oxygen release—a chemical relationship often called the Bohr effect.",
+          "moreInfoConcepts": [
+            "Cooperative oxygen binding and the saturation curve",
+            "Higher pO2 promotes loading in lungs",
+            "Local H+/CO2 changes favor unloading, tissue context",
+            "A conceptual comparison with a dynamically adjusted delivery system, carefully avoiding intentional anthropomorphism"
+          ],
+          "slides": {
+            "physiology": [
+              34,
+              35,
+              37
+            ],
+            "anatomy": []
+          },
+          "sourceStatus": "Curve and pH-related unloading grounded in slides; Bohr-effect name adds explanatory scientific context."
+        }
+      ]
+    },
+    "exam-cram": {
+      "label": "Exam Cram",
+      "expectedSections": 18,
+      "targetWords": "2,000–3,000",
+      "style": "Study-guide-first, concise bold terms, instructor’s exact lists, short contrasts, equations and rapid-recall associations. All 29 numbered prompts plus the terminology list must map to a specific direct answer.",
+      "introConcept": "Condense every Chapter 23 objective into memorisable facts and exam relationships, supplementing anatomy-model slides without becoming a second Deep Dive.",
+      "sections": [
+        {
+          "id": "functions-organization",
+          "title": "Seven Functions and Upper/Lower Divisions",
+          "purpose": "Exact seven course functions; upper versus lower and conducting versus respiratory zones.",
+          "guideQuestions": [
+            "SG-01",
+            "SG-02"
+          ],
+          "slides": {
+            "physiology": [
+              2,
+              3
+            ],
+            "anatomy": [
+              1
+            ]
+          }
+        },
+        {
+          "id": "upper-lower-airway",
+          "title": "Nose, Pharynx, and Airflow Route",
+          "purpose": "Nasal anatomy and benefits, nasal conchae/meatuses/choanae, pharyngeal regions; anatomy-model labels.",
+          "guideQuestions": [
+            "SG-02",
+            "SG-05"
+          ],
+          "slides": {
+            "physiology": [
+              4,
+              7
+            ],
+            "anatomy": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "id": "mucociliary-defenses",
+          "title": "Respiratory Mucosa, Lamina Propria, and Mucus Escalator",
+          "purpose": "Definitions and mucosal defense; cilia move material to pharynx.",
+          "guideQuestions": [
+            "SG-00",
+            "SG-03"
+          ],
+          "slides": {
+            "physiology": [
+              5,
+              6
+            ],
+            "anatomy": [
+              10
+            ]
+          }
+        },
+        {
+          "id": "tissue-linings",
+          "title": "Regional Histology Identification",
+          "purpose": "Histology comparison table from upper respiratory to alveolar simple squamous; cautious regional exceptions.",
+          "guideQuestions": [
+            "SG-04",
+            "SG-14"
+          ],
+          "slides": {
+            "physiology": [
+              6,
+              17
+            ],
+            "anatomy": [
+              15
+            ]
+          }
+        },
+        {
+          "id": "larynx-voice",
+          "title": "Laryngeal Cartilages, Folds, and Voice",
+          "purpose": "3 unpaired/3 paired, glottis, vestibular vs vocal, phonation vs articulation, pitch factors, intrinsic/extrinsic.",
+          "guideQuestions": [
+            "SG-06",
+            "SG-07",
+            "SG-08",
+            "SG-09"
+          ],
+          "slides": {
+            "physiology": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "anatomy": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        },
+        {
+          "id": "cough-reflex",
+          "title": "Epiglottis and Cough Reflex Sequence",
+          "purpose": "Airway protection and instructor-listed five cough steps.",
+          "guideQuestions": [
+            "SG-09",
+            "SG-10"
+          ],
+          "slides": {
+            "physiology": [
+              10,
+              12
+            ],
+            "anatomy": [
+              6,
+              10
+            ]
+          }
+        },
+        {
+          "id": "trachea-bronchi",
+          "title": "Trachea, Carina, Bronchi and Autonomic Effects",
+          "purpose": "C cartilage, trachealis, elastic fibers; primary/lobar/segmental, bronchiolar smooth muscle, sympathetic vs parasympathetic.",
+          "guideQuestions": [
+            "SG-11",
+            "SG-12"
+          ],
+          "slides": {
+            "physiology": [
+              13,
+              14,
+              15
+            ],
+            "anatomy": [
+              11,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "id": "lung-anatomy",
+          "title": "Lung Lobes, Fissures, and Pleura",
+          "purpose": "Right 3/left 2, cardiac notch, surfaces, hilum, visceral/parietal pleura and model IDs.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              4,
+              15,
+              24
+            ],
+            "anatomy": [
+              16,
+              17,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "id": "alveoli-membrane",
+          "title": "Alveolar Cell Types and Respiratory Membrane",
+          "purpose": "Type I, Type II, macrophages; surfactant; diffusion barrier components.",
+          "guideQuestions": [
+            "SG-13",
+            "SG-14",
+            "SG-15"
+          ],
+          "slides": {
+            "physiology": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "anatomy": [
+              15
+            ]
+          }
+        },
+        {
+          "id": "external-internal",
+          "title": "External, Internal, and Cellular Respiration",
+          "purpose": "Three lecture-defined external steps; tissue exchange vs mitochondria.",
+          "guideQuestions": [
+            "SG-16",
+            "SG-17"
+          ],
+          "slides": {
+            "physiology": [
+              20,
+              21,
+              34
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "boyle-law",
+          "title": "Boyle’s Law and Pressure Direction",
+          "purpose": "P∝1/V, pAlveolar vs atmosphere, why air moves, indicative 759/760/761.",
+          "guideQuestions": [
+            "SG-18"
+          ],
+          "slides": {
+            "physiology": [
+              22,
+              23,
+              26
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "breathing-mechanics",
+          "title": "Inspiration, Expiration, Primary Muscles",
+          "purpose": "Diaphragm and external intercostals, volume/pressure direction, elastic recoil and forced recruitment.",
+          "guideQuestions": [
+            "SG-19",
+            "SG-20"
+          ],
+          "slides": {
+            "physiology": [
+              24,
+              25,
+              27,
+              28,
+              29
+            ],
+            "anatomy": [
+              16
+            ]
+          }
+        },
+        {
+          "id": "volumes-capacities",
+          "title": "Four Volumes, Vital Capacity, and Total Lung Capacity",
+          "purpose": "TV, IRV, ERV, RV; vital capacity and TLC relationships, recognition of spirometry diagram.",
+          "guideQuestions": [
+            "SG-21"
+          ],
+          "slides": {
+            "physiology": [
+              30,
+              31
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "henry-diffusion",
+          "title": "Henry’s Law, Gas Gradients, and Exchange",
+          "purpose": "Partial pressure meaning, gas solubility, O2/CO2 diffusion directions in lung vs tissue.",
+          "guideQuestions": [
+            "SG-22"
+          ],
+          "slides": {
+            "physiology": [
+              32,
+              33,
+              34
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "hemoglobin-transport",
+          "title": "Oxyhemoglobin, Carbaminohemoglobin, and Saturation",
+          "purpose": "Hb/O2 loading and unloading, curve and effect of low pH, correct misconceptions about blue blood.",
+          "guideQuestions": [
+            "SG-23",
+            "SG-24"
+          ],
+          "slides": {
+            "physiology": [
+              35,
+              37
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "co2-and-ph",
+          "title": "Three CO2 Routes, Carbonic Anhydrase, and pH",
+          "purpose": "Bicarbonate major form; ~70/23/7 approximate categories, carbonic acid intermediate, respiratory pH feedback.",
+          "guideQuestions": [
+            "SG-25",
+            "SG-26"
+          ],
+          "slides": {
+            "physiology": [
+              2,
+              36,
+              37
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "brainstem-control",
+          "title": "Medullary DRG/VRG and Pontine Centers",
+          "purpose": "Instructor terminology for medulla and pons, DRG vs VRG functions and apneustic/pneumotaxic influence.",
+          "guideQuestions": [
+            "SG-27",
+            "SG-28",
+            "SG-29"
+          ],
+          "slides": {
+            "physiology": [
+              38,
+              39,
+              40,
+              41
+            ],
+            "anatomy": []
+          }
+        },
+        {
+          "id": "conditions-and-recall",
+          "title": "Named Conditions and Rapid Anatomy Recall",
+          "purpose": "Hypoxia, apoxia, laryngitis, epiglottitis, pneumonia, CF, asthma; labels from both anatomy/model slides.",
+          "guideQuestions": [],
+          "slides": {
+            "physiology": [
+              42
+            ],
+            "anatomy": [
+              8,
+              9,
+              12,
+              18
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "scientificReviewQueue": [
+    {
+      "id": "R01",
+      "severity": "scientific-correction",
+      "topic": "CO2 is not carried predominantly as carbonic acid",
+      "source": {
+        "physiology": [
+          36,
+          37
+        ]
+      },
+      "issue": "Slide says “Carbonic Acid (H2CO3) – 70%”, but most CO2 is transported as bicarbonate (HCO3−) formed after H2CO3 dissociates. Preserve the lecturer’s ~70/23/7 proportions as approximate but label the chemistry correctly.",
+      "handling": "Explain carbonic anhydrase catalysis, H2CO3 as transient intermediate, HCO3− in plasma and chloride shift. Do not teach “70% carbonic acid” as literal final form."
+    },
+    {
+      "id": "R02",
+      "severity": "scientific-correction",
+      "topic": "Carbon-dioxide-rich blood is not blue",
+      "source": {
+        "physiology": [
+          35
+        ]
+      },
+      "issue": "Slide calls CO2-bound blood blue; actual venous blood remains red (usually darker). Blue in diagrams is a convention.",
+      "handling": "Retain oxyhemoglobin/carbaminohemoglobin vocabulary, but explicitly correct blue-blood misconception."
+    },
+    {
+      "id": "R03",
+      "severity": "scientific-nuance",
+      "topic": "The term external respiration is defined broadly in the lecture",
+      "source": {
+        "physiology": [
+          20,
+          21
+        ]
+      },
+      "issue": "Lecture labels ventilation, pulmonary gas exchange and transport together as “external respiration”, while many texts reserve external respiration for pulmonary capillary gas exchange.",
+      "handling": "Teach the three steps exactly as a course framework, then state textbook usage differs."
+    },
+    {
+      "id": "R04",
+      "severity": "scientific-nuance",
+      "topic": "Nasal nitric oxide and breathing benefits may be overstated",
+      "source": {
+        "physiology": [
+          7
+        ]
+      },
+      "issue": "Slides attribute better diffusion and oxygen uptake to nasal breathing/NO without conditions or quantitative support; not all are established as simple universal benefits.",
+      "handling": "Lead with grounded warming/humidification/filtration/olfaction; describe NO as possible physiological influence, not a guaranteed major boost to oxygen uptake."
+    },
+    {
+      "id": "R05",
+      "severity": "scientific-nuance",
+      "topic": "Airway histology varies within broad regions",
+      "source": {
+        "physiology": [
+          5,
+          6,
+          17
+        ],
+        "anatomy": [
+          2,
+          4,
+          10
+        ]
+      },
+      "issue": "The whole pharynx is not uniformly stratified squamous; nasopharynx commonly has respiratory mucosa, and nasal vestibule has squamous epithelium. Bronchioles transition in lining.",
+      "handling": "Keep lecture shortcut for memorization with a short anatomical exception note."
+    },
+    {
+      "id": "R06",
+      "severity": "scientific-nuance",
+      "topic": "Epiglottis does not provide the only airway protection",
+      "source": {
+        "physiology": [
+          10,
+          12
+        ],
+        "anatomy": [
+          6
+        ]
+      },
+      "issue": "Swallowing-related laryngeal elevation, aryepiglottic structures and true/false fold closure all participate; epiglottis is not a lone mechanical door.",
+      "handling": "Explain multiple coordinated protections without belaboring it in Exam Cram."
+    },
+    {
+      "id": "R07",
+      "severity": "scientific-nuance",
+      "topic": "A rise or fall of one mmHg is an illustrative example",
+      "source": {
+        "physiology": [
+          24,
+          25,
+          26
+        ]
+      },
+      "issue": "Atmospheric 760 and alveolar 759/761 mmHg depict an idealized near-sea-level situation, not fixed universal respiratory pressures.",
+      "handling": "State the pressure difference and direction matter; absolute atmospheric pressure varies with elevation."
+    },
+    {
+      "id": "R08",
+      "severity": "scientific-correction",
+      "topic": "Boyle law needs constant temperature and amount of gas assumptions",
+      "source": {
+        "physiology": [
+          22,
+          23
+        ]
+      },
+      "issue": "Slide presents P=1/V without proportionality constant or assumptions.",
+      "handling": "Use P∝1/V, or P1V1=P2V2 at constant gas amount and temperature; distinguish the lung’s open airflow from simplified closed gas model."
+    },
+    {
+      "id": "R09",
+      "severity": "scientific-nuance",
+      "topic": "Legacy pontine respiratory-center labels",
+      "source": {
+        "physiology": [
+          38,
+          39
+        ]
+      },
+      "issue": "Apneustic/pneumotaxic centers are useful exam labels but modern control circuitry is distributed; pre-Bötzinger and pontine respiratory groups matter.",
+      "handling": "Preserve DRG/VRG, apneustic, pneumotaxic exam associations; label modern framework as further scientific context."
+    },
+    {
+      "id": "R10",
+      "severity": "scientific-nuance",
+      "topic": "Quiet and forced breathing classifications are simplified",
+      "source": {
+        "physiology": [
+          27,
+          28,
+          29
+        ]
+      },
+      "issue": "Slides equate forced breathing with hyperpnea and VRG as active only in forced breathing. Hyperpnea is increased ventilation, which is not exactly the same as active expiration; VRG includes rhythm-generating networks.",
+      "handling": "Follow course language for exam while clarifying broader physiology in Deep Dive."
+    },
+    {
+      "id": "R11",
+      "severity": "scientific-nuance",
+      "topic": "Bronchoconstriction/bronchodilation is more complex than a single nerve pathway",
+      "source": {
+        "physiology": [
+          13,
+          15
+        ]
+      },
+      "issue": "Simplified sympathetic-versus-parasympathetic language is valid instructional shorthand; bronchial smooth muscle also responds to circulating epinephrine, local mediators and inflammation.",
+      "handling": "Retain receptor-level autonomic overview, clearly mark immune/local mediators as extension."
+    },
+    {
+      "id": "R12",
+      "severity": "scientific-nuance",
+      "topic": "Residual volume and direct spirometric measurement",
+      "source": {
+        "physiology": [
+          30,
+          31
+        ]
+      },
+      "issue": "RV remains after maximal expiration and ordinary spirometry cannot directly obtain it; VC and TLC should be expressed as combinations of basic volumes.",
+      "handling": "Make a concise table and equation set in the Deep Dive; course slides alone do not teach measurement methods in detail."
+    },
+    {
+      "id": "R13",
+      "severity": "scientific-nuance",
+      "topic": "Hemoglobin and carbon-dioxide binding terminology",
+      "source": {
+        "physiology": [
+          35,
+          36,
+          37
+        ]
+      },
+      "issue": "Carbaminohemoglobin describes CO2 binding to hemoglobin, but not the primary transport form of CO2. Oxygen unloads in tissues in response to pO2 and also pH/CO2-dependent affinity.",
+      "handling": "Avoid implying hemoglobin binds O2 and CO2 competitively at exactly the same group; include Bohr-effect caveat."
+    },
+    {
+      "id": "R14",
+      "severity": "scientific-nuance",
+      "topic": "Anoxia terminology and disease examples",
+      "source": {
+        "physiology": [
+          42
+        ]
+      },
+      "issue": "Slide uses “apoxia”; “anoxia” is more commonly used for severe/absent oxygen supply. Instructor may expect slide terminology.",
+      "handling": "Present the original term as used in lecture, note conventional anoxia terminology without silently changing source."
+    },
+    {
+      "id": "R15",
+      "severity": "scientific-nuance",
+      "topic": "Nasal vs lung exposure benefits and respiratory portion boundary",
+      "source": {
+        "physiology": [
+          3,
+          15,
+          16
+        ]
+      },
+      "issue": "Slides define respiratory portion as “smallest bronchioles & alveoli,” but the shift begins at respiratory bronchioles; terminal bronchioles conduct air.",
+      "handling": "Distinguish terminal bronchioles (conducting) from respiratory bronchioles (some exchange) and alveolar ducts/sacs."
+    }
+  ],
+  "visualPlanning": {
+    "imageCuration": "Stage 5 only: inspect all 61 slides at the image level, remove near duplicates across physiology and anatomy decks, crop meaningful diagrams (not entire slide bullets), preserve classroom model photos and label readability; export all selected assets and thumbnails to WebP with slide provenance and any embedded third-party credits.",
+    "imageCandidates": [
+      {
+        "theme": "Whole respiratory tract and nasal/pharyngeal anatomy",
+        "slides": {
+          "physiology": [
+            4,
+            7
+          ],
+          "anatomy": [
+            1,
+            4
+          ]
+        }
+      },
+      {
+        "theme": "Laryngeal cartilage and model photographs (anterior/posterior)",
+        "slides": {
+          "physiology": [
+            9,
+            10
+          ],
+          "anatomy": [
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      },
+      {
+        "theme": "Tracheal structure and branching / actual classroom bronchial model",
+        "slides": {
+          "physiology": [
+            14,
+            15
+          ],
+          "anatomy": [
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      },
+      {
+        "theme": "Lung lobes, fissures, pleural layers / classroom model",
+        "slides": {
+          "physiology": [
+            4
+          ],
+          "anatomy": [
+            16,
+            17,
+            18,
+            19
+          ]
+        }
+      },
+      {
+        "theme": "Alveoli, surfactant-producing cells, respiratory membrane",
+        "slides": {
+          "physiology": [
+            16,
+            18,
+            19
+          ],
+          "anatomy": [
+            15
+          ]
+        }
+      },
+      {
+        "theme": "Inspiration vs expiration diagrams / accessory muscles",
+        "slides": {
+          "physiology": [
+            24,
+            25,
+            29
+          ],
+          "anatomy": []
+        }
+      },
+      {
+        "theme": "Spirometry lung volumes and capacities chart",
+        "slides": {
+          "physiology": [
+            31
+          ],
+          "anatomy": []
+        }
+      },
+      {
+        "theme": "Gas diffusion and oxygen saturation curve",
+        "slides": {
+          "physiology": [
+            34,
+            35
+          ],
+          "anatomy": []
+        }
+      },
+      {
+        "theme": "CO2 transport as bicarbonate, chloride shift",
+        "slides": {
+          "physiology": [
+            36,
+            37
+          ],
+          "anatomy": []
+        }
+      },
+      {
+        "theme": "Respiratory neural control and chemoreceptor feedback",
+        "slides": {
+          "physiology": [
+            39,
+            41
+          ],
+          "anatomy": []
+        }
+      }
+    ],
+    "modelCandidates": [
+      {
+        "label": "Lungs",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "core"
+      },
+      {
+        "label": "Right lung",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "core"
+      },
+      {
+        "label": "Left lung",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "core"
+      },
+      {
+        "label": "Lung lobes",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "core"
+      },
+      {
+        "label": "Trachea",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "core"
+      },
+      {
+        "label": "Right/left main bronchi",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "core"
+      },
+      {
+        "label": "Larynx",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "core"
+      },
+      {
+        "label": "Pharynx",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "important"
+      },
+      {
+        "label": "Nasal cavity",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "important"
+      },
+      {
+        "label": "Diaphragm",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "core"
+      },
+      {
+        "label": "Epiglottis",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "important"
+      },
+      {
+        "label": "Thyroid cartilage",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "important"
+      },
+      {
+        "label": "Cricoid cartilage",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "important"
+      },
+      {
+        "label": "Pleura",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "important"
+      },
+      {
+        "label": "Heart/pulmonary vessels context",
+        "status": "Requires canonical concept and per-model mesh verification; no IDs invented",
+        "priority": "important"
+      }
+    ],
+    "microscopicExclusions": [
+      "Alveolar Type I/II cells",
+      "Alveolar macrophages",
+      "Surfactant molecules",
+      "Respiratory membrane layers",
+      "Gas molecular diffusion",
+      "Hemoglobin oxygen dissociation curve"
+    ],
+    "note": "Do not confuse a named anatomical concept with guaranteed separate geometry. Validate canonical IDs and male/female representations against the actual Human Atlas identity index in Stage 5 or Codex integration."
+  },
+  "studyToolPlanning": {
+    "note": "Stage 4 only. No actual glossary, quiz, fill-in or flashcard records are authored in Stage 1. Questions should be sourced from completed Chapter 23 readings, not generated by Codex.",
+    "topicIds": [
+      [
+        "respiratory-functions",
+        "Functions and Organization"
+      ],
+      [
+        "upper-airway",
+        "Nose, Sinuses, and Pharynx"
+      ],
+      [
+        "larynx-voice",
+        "Larynx, Vocal Folds, and Cough"
+      ],
+      [
+        "trachea-bronchi",
+        "Trachea and Bronchial Tree"
+      ],
+      [
+        "lung-pleura",
+        "Lungs, Lobes, and Pleura"
+      ],
+      [
+        "histology-alveoli",
+        "Respiratory Histology and Alveoli"
+      ],
+      [
+        "ventilation-mechanics",
+        "Ventilation Mechanics and Muscles"
+      ],
+      [
+        "lung-volumes",
+        "Pulmonary Volumes and Capacities"
+      ],
+      [
+        "diffusion",
+        "Partial Pressures and Gas Exchange"
+      ],
+      [
+        "oxygen-transport",
+        "Hemoglobin and Oxygen Transport"
+      ],
+      [
+        "co2-acid-base",
+        "CO2, Bicarbonate, and pH"
+      ],
+      [
+        "neural-control",
+        "Brainstem Respiratory Regulation"
+      ],
+      [
+        "conditions",
+        "Respiratory Disorders"
+      ]
+    ],
+    "plannedApproach": "Shared concept bank + reviewed practice bank; use stable IDs and link to deep dive/exam cram sections, with explanations of mechanism and realistic distractors."
+  },
+  "authoringRules": [
+    "Match existing Digestive structure, tone and JSON conventions: brief overview, exhaustive Deep Dive, continuous How It Connects, three rich Who Cares? entries, instructor-aligned Exam Cram.",
+    "Every study guide question SG-01–SG-29 and terminology list SG-00 must have a direct answer in Exam Cram at Stage 3, not merely an indirect mention.",
+    "Preserve slide-language for examination while marking known lecture simplifications in Deep Dive and scientific-review notes; never silently turn misleading shorthand into an authoritative claim.",
+    "Use physiology slide references for mechanisms and anatomy slide references for identification targets; no invented citations or model IDs.",
+    "Give the General Overview a genuinely introductory reading level, not a miniature Deep Dive; avoid heavy tables in the introduction.",
+    "Do not make How It Connects a glossary in prose; follow a real breath and its CO2 return as one chronological physiological process.",
+    "“Who Cares?” must remain mechanism-first and precise; short hooks followed by expandable More Info, with distinctions between lecture facts and contextual extensions.",
+    "Study Tools are derived from finished educational content and scientific validation, not from mechanically extracting each bold term.",
+    "The gallery should select complementary visual figures and preserve source-slide and image-credit metadata; avoid repeated illustration variants.",
+    "Do not change the user-provided PowerPoints or study guide, and do not include full proprietary slides in the curriculum blueprint archive."
+  ],
+  "externalScientificVerification": "Not included in Stage 1. Review flags are editorial analysis based on textbook physiology and lecture comparisons; any external research in later stages should be separately cited and labelled.",
+  "termCoverage": [
+    {
+      "term": "mucus escalator",
+      "source": "23-Study Guide.docx — terminology paragraph",
+      "readings": {
+        "deep-dive": "respiratory-mucosa",
+        "exam-cram": "mucociliary-defenses"
+      }
+    },
+    {
+      "term": "vestibular folds",
+      "source": "23-Study Guide.docx — terminology paragraph",
+      "readings": {
+        "deep-dive": "voice-and-cough",
+        "exam-cram": "larynx-voice"
+      }
+    },
+    {
+      "term": "vocal folds",
+      "source": "23-Study Guide.docx — terminology paragraph",
+      "readings": {
+        "deep-dive": "voice-and-cough",
+        "exam-cram": "larynx-voice"
+      }
+    },
+    {
+      "term": "phonation",
+      "source": "23-Study Guide.docx — terminology paragraph",
+      "readings": {
+        "deep-dive": "voice-and-cough",
+        "exam-cram": "larynx-voice"
+      }
+    },
+    {
+      "term": "articulation",
+      "source": "23-Study Guide.docx — terminology paragraph",
+      "readings": {
+        "deep-dive": "voice-and-cough",
+        "exam-cram": "larynx-voice"
+      }
+    },
+    {
+      "term": "alveolar ducts",
+      "source": "23-Study Guide.docx — terminology paragraph",
+      "readings": {
+        "deep-dive": "alveoli-and-cells",
+        "exam-cram": "alveoli-membrane"
+      }
+    },
+    {
+      "term": "quiet breathing",
+      "source": "23-Study Guide.docx — terminology paragraph",
+      "readings": {
+        "deep-dive": "inhalation-exhalation",
+        "exam-cram": "breathing-mechanics"
+      }
+    },
+    {
+      "term": "forced breathing",
+      "source": "23-Study Guide.docx — terminology paragraph",
+      "readings": {
+        "deep-dive": "inhalation-exhalation",
+        "exam-cram": "breathing-mechanics"
+      }
+    },
+    {
+      "term": "vital capacity",
+      "source": "23-Study Guide.docx — terminology paragraph",
+      "readings": {
+        "deep-dive": "lung-volumes",
+        "exam-cram": "volumes-capacities"
+      }
+    },
+    {
+      "term": "total lung capacity",
+      "source": "23-Study Guide.docx — terminology paragraph",
+      "readings": {
+        "deep-dive": "lung-volumes",
+        "exam-cram": "volumes-capacities"
+      }
+    },
+    {
+      "term": "partial pressure",
+      "source": "23-Study Guide.docx — terminology paragraph",
+      "readings": {
+        "deep-dive": "gas-diffusion-henry",
+        "exam-cram": "henry-diffusion"
+      }
+    }
+  ]
+}

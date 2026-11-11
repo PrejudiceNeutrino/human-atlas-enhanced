@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "respiratory",
+  "visualizeTabId": "respiratory-system-visualize",
+  "referenceArticleId": "respiratory-system-deep-dive",
+  "confirmedPrimarySystemId": "respiratory",
+  "systemVerification": "The system ID respiratory is listed for male and female models in app/model-registry.ts on the checked GitHub main branch. This establishes category availability only, not presence or anatomical fidelity of each specific structure.",
+  "candidateCount": 23,
+  "modelIdsToAudit": [
+    "bp3d-male-4",
+    "female-study-v3",
+    "hra-female-v1.5"
+  ],
+  "targetNote": "No canonical conceptId is asserted for any individual structure. Resolve using the running identity index and each actual source model. Do not use display-name matching as final mapping.",
+  "candidates": [
+    {
+      "id": "lungs",
+      "label": "Lungs (both together)",
+      "deepDiveSectionId": "lungs-pleura",
+      "priority": "high",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Gross respiratory organs; primary scene target",
+      "conceptId": null
+    },
+    {
+      "id": "right-lung",
+      "label": "Right lung",
+      "deepDiveSectionId": "lungs-pleura",
+      "priority": "high",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Useful to distinguish right-sided lobes",
+      "conceptId": null
+    },
+    {
+      "id": "left-lung",
+      "label": "Left lung",
+      "deepDiveSectionId": "lungs-pleura",
+      "priority": "high",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Useful to distinguish cardiac notch and two lobes",
+      "conceptId": null
+    },
+    {
+      "id": "right-superior-lobe",
+      "label": "Superior lobe of right lung",
+      "deepDiveSectionId": "lungs-pleura",
+      "priority": "medium",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Check separate lobar segmentation",
+      "conceptId": null
+    },
+    {
+      "id": "right-middle-lobe",
+      "label": "Middle lobe of right lung",
+      "deepDiveSectionId": "lungs-pleura",
+      "priority": "medium",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Check separate lobar segmentation",
+      "conceptId": null
+    },
+    {
+      "id": "right-inferior-lobe",
+      "label": "Inferior lobe of right lung",
+      "deepDiveSectionId": "lungs-pleura",
+      "priority": "medium",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Check separate lobar segmentation",
+      "conceptId": null
+    },
+    {
+      "id": "left-superior-lobe",
+      "label": "Superior lobe of left lung",
+      "deepDiveSectionId": "lungs-pleura",
+      "priority": "medium",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Check separate lobar segmentation",
+      "conceptId": null
+    },
+    {
+      "id": "left-inferior-lobe",
+      "label": "Inferior lobe of left lung",
+      "deepDiveSectionId": "lungs-pleura",
+      "priority": "medium",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Check separate lobar segmentation",
+      "conceptId": null
+    },
+    {
+      "id": "trachea",
+      "label": "Trachea",
+      "deepDiveSectionId": "trachea",
+      "priority": "high",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Central conducting airway; useful focus and selection",
+      "conceptId": null
+    },
+    {
+      "id": "larynx",
+      "label": "Larynx",
+      "deepDiveSectionId": "larynx-cartilages",
+      "priority": "high",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Larynx gross geometry and relation to trachea",
+      "conceptId": null
+    },
+    {
+      "id": "diaphragm",
+      "label": "Diaphragm",
+      "deepDiveSectionId": "breathing-muscles",
+      "priority": "high",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Breathing muscle position; no dynamic motion assumed",
+      "conceptId": null
+    },
+    {
+      "id": "right-main-bronchus",
+      "label": "Right main bronchus",
+      "deepDiveSectionId": "bronchial-tree",
+      "priority": "high",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Check identity and segmentation of bronchial geometry",
+      "conceptId": null
+    },
+    {
+      "id": "left-main-bronchus",
+      "label": "Left main bronchus",
+      "deepDiveSectionId": "bronchial-tree",
+      "priority": "high",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Check identity and segmentation of bronchial geometry",
+      "conceptId": null
+    },
+    {
+      "id": "nasal-cavity",
+      "label": "Nasal cavity",
+      "deepDiveSectionId": "nasal-cavity",
+      "priority": "medium",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "May be represented as cavity space or lining, not guaranteed",
+      "conceptId": null
+    },
+    {
+      "id": "pharynx",
+      "label": "Pharynx",
+      "deepDiveSectionId": "pharynx",
+      "priority": "medium",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Shared upper airway; check which subdivision meshes exist",
+      "conceptId": null
+    },
+    {
+      "id": "epiglottis",
+      "label": "Epiglottis",
+      "deepDiveSectionId": "larynx-cartilages",
+      "priority": "medium",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Check for individually selectable flap",
+      "conceptId": null
+    },
+    {
+      "id": "thyroid-cartilage",
+      "label": "Thyroid cartilage",
+      "deepDiveSectionId": "larynx-cartilages",
+      "priority": "medium",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Check individual cartilage segmentation",
+      "conceptId": null
+    },
+    {
+      "id": "cricoid-cartilage",
+      "label": "Cricoid cartilage",
+      "deepDiveSectionId": "larynx-cartilages",
+      "priority": "medium",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Check individual cartilage segmentation",
+      "conceptId": null
+    },
+    {
+      "id": "arytenoid-cartilage",
+      "label": "Arytenoid cartilages",
+      "deepDiveSectionId": "larynx-cartilages",
+      "priority": "medium",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Small paired cartilages; likely model limitation",
+      "conceptId": null
+    },
+    {
+      "id": "pleura",
+      "label": "Pleura",
+      "deepDiveSectionId": "lungs-pleura",
+      "priority": "medium",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Check visceral/parietal distinction and whether a separate membrane mesh exists",
+      "conceptId": null
+    },
+    {
+      "id": "pulmonary-vessels",
+      "label": "Pulmonary arteries and veins",
+      "deepDiveSectionId": "lungs-pleura",
+      "priority": "medium",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Anatomical context only; must not recolor or reinterpret vascular identities",
+      "conceptId": null
+    },
+    {
+      "id": "sternum-ribs",
+      "label": "Rib cage / sternum",
+      "deepDiveSectionId": "breathing-muscles",
+      "priority": "low",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Skeletal context around lungs, not part of the respiratory system",
+      "conceptId": null
+    },
+    {
+      "id": "nasal-conchae",
+      "label": "Nasal conchae",
+      "deepDiveSectionId": "nasal-cavity",
+      "priority": "low",
+      "status": "requires-canonical-id-and-mesh-verification",
+      "guidance": "Potentially individual bones but mucosal surface may not be represented",
+      "conceptId": null
+    }
+  ],
+  "non3dConcepts": [
+    {
+      "label": "Type I pneumocytes",
+      "recommendedMedia": "lecture-illustration",
+      "reason": "Microscopic cells; not reasonably represented in gross whole-body mesh data"
+    },
+    {
+      "label": "Type II pneumocytes and surfactant",
+      "recommendedMedia": "lecture-illustration",
+      "reason": "Microscopic and molecular mechanism"
+    },
+    {
+      "label": "Alveolar macrophages",
+      "recommendedMedia": "lecture-illustration",
+      "reason": "Microscopic immune cells"
+    },
+    {
+      "label": "Respiratory membrane",
+      "recommendedMedia": "lecture-illustration",
+      "reason": "Submicron/microscopic gas exchange barrier"
+    },
+    {
+      "label": "Alveolar sacs and alveoli",
+      "recommendedMedia": "lecture-illustration",
+      "reason": "Potentially visually absent or too small for separately identifiable whole-body meshes"
+    },
+    {
+      "label": "Oxygen/hemoglobin binding",
+      "recommendedMedia": "lecture-illustration",
+      "reason": "Molecular mechanism rather than gross anatomy"
+    },
+    {
+      "label": "Carbon dioxide-bicarbonate transport",
+      "recommendedMedia": "lecture-illustration",
+      "reason": "Blood chemistry and erythrocyte process"
+    },
+    {
+      "label": "Nervous rhythmicity centers",
+      "recommendedMedia": "lecture-illustration",
+      "reason": "Brainstem functional circuits cannot be inferred from gross brain geometry"
+    }
+  ]
+}

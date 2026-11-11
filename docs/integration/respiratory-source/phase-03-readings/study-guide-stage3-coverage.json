@@ -1,0 +1,552 @@
+{
+  "scope": "Respiratory Chapter 23",
+  "studyGuide": "23-Study Guide.docx",
+  "count": 30,
+  "directAnswerArticle": "respiratory-system-exam-cram",
+  "objectives": [
+    {
+      "id": "SG-00",
+      "kind": "terminology",
+      "question": "Terminology:  mucus escalator,  vestibular folds,   vocal folds,   phonation,   articulation,   alveolar ducts,   quiet breathing,   forced breathing,   vital capacity,   total lung capacity,   partial pressure,",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "mucociliary-defenses",
+      "targetSectionTitle": "Respiratory Mucosa, Lamina Propria, and Mucus Escalator",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          5,
+          10,
+          11,
+          16,
+          27,
+          30,
+          31,
+          32
+        ],
+        "Respiratory - Copy.pptx": [
+          10,
+          15
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-01",
+      "kind": "question",
+      "question": "What are the major respiratory functions?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "functions-organization",
+      "targetSectionTitle": "Seven Functions and Upper/Lower Divisions",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          2
+        ],
+        "Respiratory - Copy.pptx": [
+          1
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-02",
+      "kind": "question",
+      "question": "What are the components of the upper and lower respiratory system?  What is the function of the upper respiratory system?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "upper-lower-airway",
+      "targetSectionTitle": "Nose, Pharynx, and Airflow Route",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          3,
+          4,
+          7
+        ],
+        "Respiratory - Copy.pptx": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-03",
+      "kind": "question",
+      "question": "What are the respiratory epithelium and lamina propria?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "mucociliary-defenses",
+      "targetSectionTitle": "Respiratory Mucosa, Lamina Propria, and Mucus Escalator",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          5
+        ],
+        "Respiratory - Copy.pptx": [
+          4
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-04",
+      "kind": "question",
+      "question": "Understand the histological differences in the respiratory tract",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "tissue-linings",
+      "targetSectionTitle": "Regional Histology Identification",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          5,
+          6,
+          17,
+          19
+        ],
+        "Respiratory - Copy.pptx": [
+          10,
+          15
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-05",
+      "kind": "question",
+      "question": "What are the benefits of nasal breathing?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "upper-lower-airway",
+      "targetSectionTitle": "Nose, Pharynx, and Airflow Route",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          7
+        ],
+        "Respiratory - Copy.pptx": [
+          2,
+          3,
+          4
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-06",
+      "kind": "question",
+      "question": "What are the functions of the larynx?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "larynx-voice",
+      "targetSectionTitle": "Laryngeal Cartilages, Folds, and Voice",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "Respiratory - Copy.pptx": [
+          6,
+          7,
+          10
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-07",
+      "kind": "question",
+      "question": "What factors affect the pitch of a sound from the vocal cords?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "larynx-voice",
+      "targetSectionTitle": "Laryngeal Cartilages, Folds, and Voice",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          11,
+          12
+        ],
+        "Respiratory - Copy.pptx": [
+          6,
+          7,
+          10
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-08",
+      "kind": "question",
+      "question": "Contrast intrinsic vs. extrinsic muscles of the larynx.",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "larynx-voice",
+      "targetSectionTitle": "Laryngeal Cartilages, Folds, and Voice",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          12
+        ],
+        "Respiratory - Copy.pptx": [
+          6,
+          7
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-09",
+      "kind": "question",
+      "question": "Why is the epiglottis important?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "larynx-voice",
+      "targetSectionTitle": "Laryngeal Cartilages, Folds, and Voice",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          8,
+          12
+        ],
+        "Respiratory - Copy.pptx": [
+          6,
+          7
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-10",
+      "kind": "question",
+      "question": "What occurs during the cough reflex?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "cough-reflex",
+      "targetSectionTitle": "Epiglottis and Cough Reflex Sequence",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          10
+        ],
+        "Respiratory - Copy.pptx": [
+          10
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-11",
+      "kind": "question",
+      "question": "What does the trachealis muscle do and how does it respond to the autonomic nervous system?  What does the elastic ligament do?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "trachea-bronchi",
+      "targetSectionTitle": "Trachea, Carina, Bronchi and Autonomic Effects",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          13,
+          14
+        ],
+        "Respiratory - Copy.pptx": [
+          11,
+          12
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-12",
+      "kind": "question",
+      "question": "How does the bronchial tree respond to sympathetic and parasympathetic activation?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "trachea-bronchi",
+      "targetSectionTitle": "Trachea, Carina, Bronchi and Autonomic Effects",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          15
+        ],
+        "Respiratory - Copy.pptx": [
+          12,
+          13,
+          14
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-13",
+      "kind": "question",
+      "question": "What are the 3 types of cells in the lung and their functions?  What is surfactant?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "alveoli-membrane",
+      "targetSectionTitle": "Alveolar Cell Types and Respiratory Membrane",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          16,
+          17,
+          18
+        ],
+        "Respiratory - Copy.pptx": [
+          15
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-14",
+      "kind": "question",
+      "question": "What type of epithelium lines the alveoli?  Why?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "alveoli-membrane",
+      "targetSectionTitle": "Alveolar Cell Types and Respiratory Membrane",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          6,
+          17,
+          19
+        ],
+        "Respiratory - Copy.pptx": [
+          15
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-15",
+      "kind": "question",
+      "question": "What makes up the respiratory membrane and what occurs there?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "alveoli-membrane",
+      "targetSectionTitle": "Alveolar Cell Types and Respiratory Membrane",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          18,
+          19
+        ],
+        "Respiratory - Copy.pptx": [
+          15
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-16",
+      "kind": "question",
+      "question": "How does internal respiration differ from external respiration?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "external-internal",
+      "targetSectionTitle": "External, Internal, and Cellular Respiration",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          20,
+          21
+        ],
+        "Respiratory - Copy.pptx": [
+          1
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-17",
+      "kind": "question",
+      "question": "Describe the 3 steps in external respiration.",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "external-internal",
+      "targetSectionTitle": "External, Internal, and Cellular Respiration",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          20,
+          21
+        ],
+        "Respiratory - Copy.pptx": [
+          1
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-18",
+      "kind": "question",
+      "question": "What is Boyle’s Law and how does it relate to pulmonary ventilation (how does it make air rush in and out)?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "boyle-law",
+      "targetSectionTitle": "Boyle’s Law and Pressure Direction",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          22,
+          23,
+          26
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-19",
+      "kind": "question",
+      "question": "What happens in the thoracic cavity during inhalation and exhalation (Diaphragm and Ribs)?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "breathing-mechanics",
+      "targetSectionTitle": "Inspiration, Expiration, Primary Muscles",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          24,
+          25,
+          26
+        ],
+        "Respiratory - Copy.pptx": [
+          16
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-20",
+      "kind": "question",
+      "question": "What are the 2 most important muscles used during inhalation?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "breathing-mechanics",
+      "targetSectionTitle": "Inspiration, Expiration, Primary Muscles",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          24,
+          27,
+          28,
+          29
+        ],
+        "Respiratory - Copy.pptx": [
+          18
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-21",
+      "kind": "question",
+      "question": "What are the 4 respiratory volumes?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "volumes-capacities",
+      "targetSectionTitle": "Four Volumes, Vital Capacity, and Total Lung Capacity",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          30,
+          31
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-22",
+      "kind": "question",
+      "question": "Understand Henry’s Law and how it relates to gas exchange at the lungs and tissues (diffusion of oxygen and carbon dioxide)?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "henry-diffusion",
+      "targetSectionTitle": "Henry’s Law, Gas Gradients, and Exchange",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          32,
+          33,
+          34
+        ],
+        "Respiratory - Copy.pptx": [
+          15
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-23",
+      "kind": "question",
+      "question": "What is hemoglobin called when bound to oxygen?  To carbon dioxide?  What causes the gases to bind?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "hemoglobin-transport",
+      "targetSectionTitle": "Oxyhemoglobin, Carbaminohemoglobin, and Saturation",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          35,
+          36,
+          37
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-24",
+      "kind": "question",
+      "question": "Understand the Oxygen-Hemoglobin Saturation Curve.",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "hemoglobin-transport",
+      "targetSectionTitle": "Oxyhemoglobin, Carbaminohemoglobin, and Saturation",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          35
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-25",
+      "kind": "question",
+      "question": "What are the 3 ways in which carbon dioxide can be transported?  What enzyme converts carbon dioxide to carbonic acid?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "co2-and-ph",
+      "targetSectionTitle": "Three CO2 Routes, Carbonic Anhydrase, and pH",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          36,
+          37
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-26",
+      "kind": "question",
+      "question": "How does it contribute to the pH of blood?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "co2-and-ph",
+      "targetSectionTitle": "Three CO2 Routes, Carbonic Anhydrase, and pH",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          2,
+          36,
+          37,
+          40,
+          41
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-27",
+      "kind": "question",
+      "question": "What and where is the respiratory rhythmicity center?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "brainstem-control",
+      "targetSectionTitle": "Medullary DRG/VRG and Pontine Centers",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          38,
+          39
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-28",
+      "kind": "question",
+      "question": "Contrast the Dorsal Respiratory Group vs. Ventral Respiratory Group.  What muscles do they innervate?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "brainstem-control",
+      "targetSectionTitle": "Medullary DRG/VRG and Pontine Centers",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          38,
+          39
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    },
+    {
+      "id": "SG-29",
+      "kind": "question",
+      "question": "Contrast the Apneustic and Pneumotaxic centers.   Where are they?  Which one would stimulate the DRG?",
+      "targetArticleId": "respiratory-system-exam-cram",
+      "targetSectionId": "brainstem-control",
+      "targetSectionTitle": "Medullary DRG/VRG and Pontine Centers",
+      "sourceSlides": {
+        "23-Respiratory System.pptx": [
+          38,
+          39
+        ]
+      },
+      "guideSource": "23-Study Guide.docx"
+    }
+  ]
+}

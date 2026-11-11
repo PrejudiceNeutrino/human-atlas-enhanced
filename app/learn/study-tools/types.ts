@@ -5,7 +5,7 @@ export interface StudyConcept extends StudyRecord { term:string; definition:stri
 export interface StudyChoice { id:string; text:string }
 export interface MultipleChoiceQuestion extends StudyRecord {
   type:'multiple-choice'; stem:string; choices:StudyChoice[]; correctChoiceId:string;
-  explanation:string; conceptIds:string[]; cognitiveLevel:'application'|'recall';
+  explanation:string; conceptIds:string[]; cognitiveLevel:'application'|'recall'|'knowledge';
 }
 export interface FillQuestion extends StudyRecord {
   type:'fill-in-blank'; prompt:string; answer:string; acceptedAnswers:string[]; hint:string;
@@ -14,6 +14,7 @@ export interface FillQuestion extends StudyRecord {
 export interface Flashcard extends StudyRecord { front:string; back:string; conceptIds:string[] }
 export interface StudyManifest {
   kind:'human-atlas-study-tools'; schemaVersion:1; subjectId:string; title:string; curriculum:string;
+  sources:{id:string;kind:string;file:string;slideCount?:number}[];
   topics:{id:string;label:string;sortOrder:number}[];
   counts:{concepts:number;multipleChoice:number;fillInTheBlank:number;flashcards:number};
 }
