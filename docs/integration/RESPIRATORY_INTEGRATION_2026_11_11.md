@@ -112,7 +112,9 @@ Desktop/mobile browser smoke tests are **unavailable**: browser inventory was em
 
 ## Delivery and remaining external step
 
-Implementation and original assets belong on `feature/respiratory-integration`; the complete changed-file inventory is [`RESPIRATORY_FILES.txt`](RESPIRATORY_FILES.txt). No merge into main was performed.
+Implementation and original assets are committed locally on `feature/respiratory-integration`; the complete changed-file inventory is [`RESPIRATORY_FILES.txt`](RESPIRATORY_FILES.txt). No merge into main was performed. The worktree is clean.
+
+A push to `https://github.com/PrejudiceNeutrino/human-atlas-enhanced.git` was attempted, but automatic approval review rejected the source/asset export because explicit approval of that exact GitHub destination was required. Nothing was pushed, and the rejection was not bypassed. The user must approve that specific push before remote delivery can continue.
 
 **Live production deployment is not verified.** The connected Vercel API returned HTTP 403 for scope `neutrino2`, requiring the user to authorize this connection for its existing team access. Project discovery and deployment could not proceed. The production build and all public image responses are verified locally; a deployed-page or live-public-Gallery claim would be inaccurate until team access is restored and that exact commit is deployed.
 
