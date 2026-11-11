@@ -100,9 +100,11 @@ The machine-readable [`RESPIRATORY_ANATOMY_AUDIT.json`](RESPIRATORY_ANATOMY_AUDI
 | `npm.cmd run test:respiratory` | 9 passed |
 | `node scripts/respiratory-anatomy-audit.mjs --write` | Passed for all three actual model inventories and referenced binary geometry |
 | `npm.cmd run test:respiratory-build` | Passed: route/manifest plus all 58 image responses, original byte hashes |
-| `git diff --check` | Passed |
+| `git diff --check 82e5f4a -- . ':(exclude)docs/integration/respiratory-source/phase-*'` | Passed for application/runtime content and generated metadata; original editorial files excluded |
 
 The 118 automated regression checks include full rendered Markdown comparisons, disclosures, source anchors, topic coverage, shuffle/answer-ID evaluation, all accepted fill alternatives, subject-isolated persistence, Gallery interactions, Notes save/restore, context-menu navigation, model switching, verified selection and zoom/reset props. CPU anatomy UI tests replace the GPU renderer; they do not certify actual orbit/pinch/WebGL rendering.
+
+The original Phase 4 `answer-key.md` retains its supplied extra blank line at EOF; a full source-inclusive Git whitespace check reports that preserved source formatting. Generated archive inventory line endings were normalized to LF without changing any supplied file.
 
 Initial runs exposed legacy assertions assuming only Digestive or older Study Tools copy; those tests now assert the current behavior and scope annotation checks to the rendered subject. The first restricted-shell esbuild run could not resolve the checkout; rerunning with ordinary filesystem access resolved that environment failure. New test-fixture selector/timing issues and a preview-port conflict were corrected before the accepted final runs. The preview verifier now allocates an available port.
 
