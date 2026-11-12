@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import { createHash } from 'node:crypto';
 import { test } from 'node:test';
 import { parseGallery } from '../app/learn/gallery/model.ts';
 import { parsePracticeDataset, practiceForFigure, answerMatches, regionBounds } from '../app/learn/gallery/label-practice-model.ts';
@@ -63,3 +64,40 @@ test('typed identification accepts curated names and whitespace, never partial t
   assert.equal(answerMatches(answer, 'superior labium'), true);
   for (const value of ['', 'lip', 'upper lips', 'Upper lip and tongue', 'inferior labium']) assert.equal(answerMatches(answer, value), false);
 });
+
+for (const [subjectId, figures, playable, answers, regions] of [
+  ['respiratory', 29, 24, 230, 262], ['lymphoid', 35, 31, 263, 331],
+]) {
+  const root = `public/images/learn/${subjectId}/gallery`;
+  const gallery = parseGallery(JSON.parse(fs.readFileSync(`${root}/gallery.json`, 'utf8')));
+  const annotations = JSON.parse(fs.readFileSync(`${root}/label-practice.json`, 'utf8'));
+  test(`${subjectId}: every figure has a source-bound review and playable masks pass the shared schema`, () => {
+    const data = parsePracticeDataset(annotations, subjectId, gallery);
+    assert.equal(data.figures.length, figures);
+    assert.equal(data.figures.filter(figure => figure.reviewStatus === 'verified').length, playable);
+    assert.equal(data.figures.flatMap(figure => figure.labels).length, answers);
+    assert.equal(data.figures.flatMap(figure => figure.labels.flatMap(label => label.regions)).length, regions);
+    for (const figure of gallery.items) {
+      const { entry, stale, labels } = practiceForFigure(data, figure);
+      assert.ok(entry && !stale, figure.id);
+      assert.equal(createHash('sha256').update(fs.readFileSync(`${root}/${figure.image}`)).digest('hex'), entry.sourceImageSha256, figure.id);
+      assert.ok(entry.reviewNotes.trim(), figure.id);
+      assert.equal(new Set(labels.map(label => label.label.toLowerCase())).size, labels.length, 'repeated callouts share one answer');
+      for (const label of labels) {
+        assert.equal(label.reviewStatus, 'verified');
+        assert.equal(label.issue, undefined);
+        for (const answer of [label.label, ...label.acceptedAnswers]) assert.ok(answerMatches(label, `  ${answer.toUpperCase()}  `));
+      }
+      if (entry.reviewStatus === 'not-applicable') assert.equal(labels.length, 0);
+    }
+  });
+  test(`${subjectId}: missing individual annotations and changed sources cannot break other practice figures`, () => {
+    const copy = structuredClone(annotations);
+    copy.figures = copy.figures.filter(figure => figure.figureId !== 'a01');
+    const data = parsePracticeDataset(copy, subjectId, gallery);
+    assert.equal(practiceForFigure(data, gallery.items[0]).labels.length, 0);
+    assert.ok(practiceForFigure(data, gallery.items[1]).labels.length > 0);
+    assert.equal(practiceForFigure(data, { ...gallery.items[1], sha256: '0'.repeat(64) }).labels.length, 0);
+    assert.throws(() => parsePracticeDataset(annotations, subjectId === 'respiratory' ? 'lymphoid' : 'respiratory', gallery));
+  });
+}

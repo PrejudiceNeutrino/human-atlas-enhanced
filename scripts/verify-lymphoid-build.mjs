@@ -32,6 +32,13 @@ try{
   const response=await fetch(base+'/images/learn/lymphoid/gallery/gallery.json');
   assert.equal(response.status,200);const gallery=await response.json();assert.equal(gallery.count,35);assert.equal(gallery.items.length,35);
   const inventory=JSON.parse(fs.readFileSync('docs/integration/lymphoid-source/archive-inventory.json','utf8')).entries;
+  const annotationResponse=await fetch(base+'/images/learn/lymphoid/gallery/label-practice.json');
+  assert.equal(annotationResponse.status,200,'public Label Practice sidecar');
+  const annotationBytes=Buffer.from(await annotationResponse.arrayBuffer());
+  assert.deepEqual(annotationBytes,fs.readFileSync('public/images/learn/lymphoid/gallery/label-practice.json'),'built sidecar preserves curated metadata');
+  const annotations=JSON.parse(annotationBytes.toString('utf8'));
+  assert.equal(annotations.subjectId,'lymphoid');assert.equal(annotations.figures.length,35);
+  for(const figure of gallery.items)assert.equal(annotations.figures.find(entry=>entry.figureId===figure.id)?.sourceImageSha256,figure.sha256,figure.id);
   let checked=0;
   for(const figure of gallery.items)for(const field of ['image','thumbnail']){
     const url=`/images/learn/lymphoid/gallery/${figure[field]}`;
@@ -40,5 +47,5 @@ try{
     const expected=inventory.find(entry=>entry.path===`phase-5-gallery/${figure[field]}`);
     assert.equal(createHash('sha256').update(bytes).digest('hex'),expected.sha256,url);checked++;
   }
-  console.log(JSON.stringify({base,route:'/learn/lymphoid',figures:35,fullResolution:35,thumbnails:35,verifiedWebpResponses:checked,originalByteHashes:'all match',browserRendering:'not covered by HTTP check'},null,2));
+  console.log(JSON.stringify({base,route:'/learn/lymphoid',figures:35,fullResolution:35,thumbnails:35,verifiedWebpResponses:checked,originalByteHashes:'all match',publicLabelPractice:'sidecar and source hashes verified',browserRendering:'not covered by HTTP check'},null,2));
 }finally{server?.kill();}

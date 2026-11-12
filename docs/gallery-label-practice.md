@@ -2,7 +2,7 @@
 
 The Gallery introduction includes a compact self-test tip and a noninteractive preview of the Label Practice control, using its matching tag icon and themed styling. The [discovery polish handoff](integration/LEARN_DISCOVERY_POLISH_2026_11_06.md) records this follow-up and its verification.
 
-Open **Learn → Digestive → Gallery**, open a labeled figure, then enable **Label Practice** (the tag icon on narrow screens). Ordinary image inspection is the default. Hide All, Reveal All, Reset Practice, a revealed counter, optional cover numbers, and a numbered label list sit in a secondary strip. The existing viewer still owns navigation, zoom, pan, pinch, Fit, 1:1, Details, stars, dismissal, and focus return.
+Open **Learn → Digestive, Respiratory, or Lymphoid → Gallery**, open a labeled figure, then enable **Label Practice** (the tag icon on narrow screens). Ordinary image inspection is the default. Hide All, Reveal All, Reset Practice, a revealed counter, optional cover numbers, and a numbered label list sit in a secondary strip. The existing viewer still owns navigation, zoom, pan, pinch, Fit, 1:1, Details, stars, dismissal, and focus return.
 
 Click or tap a cover to reveal the original printed pixels; click again to hide them. A drag beyond six CSS pixels pans without revealing. A pinch never counts as a reveal. Covers also accept Enter and Space, and the label list provides larger alternative targets. Hidden accessible names contain only label numbers. The image gets a generic practice alt description; revealing a cover exposes its curated answer to assistive technology.
 
@@ -53,19 +53,32 @@ The image and SVG overlay are siblings inside the same transformed image-space w
 4. Add accepted answers one per line, select a cover color, and record mask concerns. Use Delete region or Delete answer to remove mistakes. Cover every repeated occurrence of the answer. Keep leader lines and useful anatomy visible. If that cannot be done honestly, leave the answer flagged and unreviewed, or obtain a reviewed alternative asset rather than publishing misleading coverage.
 5. Use **Preview masks** at fit, 1:1, and enlarged views. Reveal/ordinary inspection remains available after leaving the editor. Confirm the transcription against the actual source. Mark individual answers reviewed, choose the honest coverage level, add review notes, then mark the figure reviewed. Edits to geometry or answer text invalidate review automatically.
 6. **Export JSON** downloads a complete durable sidecar, preserving the other figures. Replace `public/images/learn/<subjectSlug>/gallery/label-practice.json` with the reviewed export and inspect its Git diff. Import JSON can load a prior export back into the editor; it validates the schema, subject, figure IDs, and current figure hash. A file for a different image version is rejected. Keep unfinished drafts outside the published sidecar if desired.
-7. Reload Gallery after replacing the file. Run the checks below and visually inspect the published covers. Commit the metadata with its coverage report. No application change is needed for each additional annotated image or subject collection.
+7. Reload Gallery after replacing the file. Run the checks below and visually inspect the published covers. Commit the metadata with its coverage report. New subjects also need `gallery.labelPractice: true` in `app/learn/subjects.ts`; additional annotated images within an enabled subject need no viewer changes. Remove a figure's matching sidecar entry when removing it from the Gallery manifest. Removing only an annotation leaves that image available for ordinary inspection.
 
 The editor has no server writes, backend, or authentication. Browser drafts are not autosaved: export before closing, navigating to another figure, or reloading. Import/export requires the full collection when preserving other figures; exporting a deliberately partial imported collection exports that collection. Production builds remove the editor import and its write-capable controls entirely.
 
 ## Coverage and verification
 
-The [current coverage report](gallery-label-practice-coverage.md) lists all 30 figures: 28 eligible, 24 playable, 23 complete, one partial, four remaining candidates, and two without useful printed labels. There are 272 visually reviewed answers across 294 mask regions. "Complete" refers to identifiable eligible callouts, not all explanatory text on the page. The requested edge-clipped terms on a05, a12, and a13 are included with covers reaching the source boundaries; unreadable terms remain excluded.
+The [Digestive coverage report](gallery-label-practice-coverage.md) lists all 30 figures: 28 eligible, 24 playable, 23 complete, one partial, four remaining candidates, and two without useful printed labels. There are 272 visually reviewed answers across 294 mask regions. "Complete" refers to identifiable eligible callouts, not all explanatory text on the page. The requested edge-clipped terms on a05, a12, and a13 are included with covers reaching the source boundaries; unreadable terms remain excluded.
+
+The November 11 expansion uses the same viewer and schema:
+
+| Subject | Source figures | Playable | Complete | Partial | Not applicable | Answers | Regions |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| [Respiratory](respiratory-gallery-label-practice-coverage.md) | 29 | 24 | 11 | 13 | 5 | 230 | 262 |
+| [Lymphoid](lymphoid-gallery-label-practice-coverage.md) | 35 | 31 | 18 | 13 | 4 | 263 | 331 |
+
+Both annotation sidecars live alongside the public Gallery assets and are included in the normal production build. All source images, thumbnails, descriptions, scientific qualifications and attribution metadata remain unchanged. The per-figure reports explain selected-label coverage, unreadable crops and narrative figures excluded from practice. The [expansion handoff](integration/RESPIRATORY_LYMPHOID_LABEL_PRACTICE_2026_11_11.md) records validation and its limits.
 
 ```powershell
 npm.cmd run check
 npm.cmd run test:label-practice
 npm.cmd run audit:label-practice
+npm.cmd run test:respiratory
+npm.cmd run test:lymphoid
 npm.cmd run build
+npm.cmd run test:respiratory-build
+npm.cmd run test:lymphoid-build
 ```
 
 After changing annotations, regenerate the coverage report with `npm.cmd run audit:label-practice -- --write`. The audit checks every source hash as well as annotation validity and report freshness; it does not verify geometry visually.
