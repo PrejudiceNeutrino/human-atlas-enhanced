@@ -1,0 +1,6429 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "lymphoid",
+  "questions": [
+    {
+      "id": "mc-001",
+      "type": "multiple-choice",
+      "topicId": "fluid",
+      "stem": "What are the three principal functions of the lymphatic system emphasized in Chapter 22?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Return tissue fluid to blood, support immune defense, and transport absorbed intestinal fats"
+        },
+        {
+          "id": "c2",
+          "text": "Make red cells, pump blood, and secrete bile"
+        },
+        {
+          "id": "c3",
+          "text": "Produce digestive enzymes, store calcium, and release hormones"
+        },
+        {
+          "id": "c4",
+          "text": "Carry oxygen to tissue, synthesize glucose, and excrete urea"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The anatomy lecture names fluid recovery, immune response, and fat absorption as the three major functions.",
+      "conceptIds": [
+        "lymphatic-system"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-002",
+      "type": "multiple-choice",
+      "topicId": "fluid",
+      "stem": "A patient develops swelling after lymph vessels are surgically damaged. Which mechanism best explains the swelling?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Interstitial fluid is not being returned to the blood efficiently"
+        },
+        {
+          "id": "c2",
+          "text": "Capillary filtration has stopped completely"
+        },
+        {
+          "id": "c3",
+          "text": "The spleen produces an excess of red blood cells"
+        },
+        {
+          "id": "c4",
+          "text": "The kidneys no longer make antibodies"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Blocked lymphatic return can accumulate fluid in tissues, producing lymphedema.",
+      "conceptIds": [
+        "lymphedema"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-003",
+      "type": "multiple-choice",
+      "topicId": "fluid",
+      "stem": "A fluid sample is taken from between muscle cells and then from an adjacent lymphatic vessel. What changes in its name?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "It is called interstitial fluid in tissue and lymph inside the lymphatic vessel"
+        },
+        {
+          "id": "c2",
+          "text": "It is called serum in tissue and bile in the vessel"
+        },
+        {
+          "id": "c3",
+          "text": "It is plasma in tissue and cerebrospinal fluid in the vessel"
+        },
+        {
+          "id": "c4",
+          "text": "It is always called whole blood regardless of location"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The names describe the fluid's compartment; entry to a lymphatic vessel makes it lymph.",
+      "conceptIds": [
+        "interstitial-fluid",
+        "lymph"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-004",
+      "type": "multiple-choice",
+      "topicId": "fluid",
+      "stem": "Why is the lymphatic system important to maintaining blood volume?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "It returns part of the fluid filtered out of blood capillaries to the venous circulation"
+        },
+        {
+          "id": "c2",
+          "text": "It supplies most of the force that pushes blood through arteries"
+        },
+        {
+          "id": "c3",
+          "text": "It prevents all fluid from leaving blood capillaries"
+        },
+        {
+          "id": "c4",
+          "text": "It synthesizes plasma albumin in lymph nodes"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Lymphatic fluid recovery supports normal circulation by returning interstitial fluid.",
+      "conceptIds": [
+        "fluid-balance"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-005",
+      "type": "multiple-choice",
+      "topicId": "fluid",
+      "stem": "Which situation would most directly increase interstitial edema despite normal heart pumping?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Obstruction of local collecting lymphatics"
+        },
+        {
+          "id": "c2",
+          "text": "Increased lymphatic outflow from that tissue"
+        },
+        {
+          "id": "c3",
+          "text": "Faster removal of interstitial protein and water"
+        },
+        {
+          "id": "c4",
+          "text": "Reduced capillary filtration coupled with normal drainage"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Edema can arise when local fluid entry exceeds lymphatic removal.",
+      "conceptIds": [
+        "edema"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-006",
+      "type": "multiple-choice",
+      "topicId": "fluid",
+      "stem": "After a meal rich in long-chain triglycerides, which fluid may have a milky appearance?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Chyle in intestinal lymphatics"
+        },
+        {
+          "id": "c2",
+          "text": "Cerebrospinal fluid"
+        },
+        {
+          "id": "c3",
+          "text": "A typical arterial plasma sample before fat absorption"
+        },
+        {
+          "id": "c4",
+          "text": "Urine in the renal pelvis"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Chyle is lymph enriched in chylomicrons, which can make it appear milky.",
+      "conceptIds": [
+        "chyle"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-007",
+      "type": "multiple-choice",
+      "topicId": "fluid",
+      "stem": "Which pressure generally promotes movement of water outward across blood capillaries?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Capillary hydrostatic pressure"
+        },
+        {
+          "id": "c2",
+          "text": "Erythrocyte oxygen affinity"
+        },
+        {
+          "id": "c3",
+          "text": "Intracellular nuclear pressure"
+        },
+        {
+          "id": "c4",
+          "text": "Pressure generated by thymic T-cell development"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Hydrostatic pressure helps drive filtration toward surrounding tissues.",
+      "conceptIds": [
+        "hydrostatic-pressure"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-008",
+      "type": "multiple-choice",
+      "topicId": "fluid",
+      "stem": "Which statement best connects lymphatic and circulatory anatomy?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Lymph ultimately returns to venous blood near the junctions of jugular and subclavian veins"
+        },
+        {
+          "id": "c2",
+          "text": "Every lymphatic empties into an artery near the tissue it drains"
+        },
+        {
+          "id": "c3",
+          "text": "Lymphatic capillaries drain directly into the aorta"
+        },
+        {
+          "id": "c4",
+          "text": "Lymph is permanently isolated from the blood circulation"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Lymphatic drainage completes a fluid-return loop into venous circulation.",
+      "conceptIds": [
+        "venous-circulation",
+        "lymph"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-009",
+      "type": "multiple-choice",
+      "topicId": "capillaries",
+      "stem": "Which structural difference helps initial lymphatic capillaries take up interstitial fluid?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Their overlapping endothelial cells form pressure-sensitive entry flaps"
+        },
+        {
+          "id": "c2",
+          "text": "They have a thicker continuous basement membrane than blood capillaries"
+        },
+        {
+          "id": "c3",
+          "text": "They are sealed by valves that prevent inward fluid movement"
+        },
+        {
+          "id": "c4",
+          "text": "They contain red blood cells that generate pressure"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Overlapping endothelial edges favor inward entry from tissue.",
+      "conceptIds": [
+        "lymphatic-endothelial-flap"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-010",
+      "type": "multiple-choice",
+      "topicId": "capillaries",
+      "stem": "Why are initial lymphatic capillaries described as blind-ended?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "They begin as closed-end pockets in tissues rather than forming blood-capillary loops"
+        },
+        {
+          "id": "c2",
+          "text": "They connect artery to vein without branches"
+        },
+        {
+          "id": "c3",
+          "text": "They carry no fluid unless a heart is attached"
+        },
+        {
+          "id": "c4",
+          "text": "They terminate in the liver's bile ducts"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Initial lymphatics start as blind-ended uptake structures.",
+      "conceptIds": [
+        "blind-ended-vessel"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-011",
+      "type": "multiple-choice",
+      "topicId": "capillaries",
+      "stem": "What happens when tissue pressure rises outside a lymphatic capillary?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Entry flaps can open to admit fluid and anchoring filaments can help prevent collapse"
+        },
+        {
+          "id": "c2",
+          "text": "All initial capillaries seal permanently"
+        },
+        {
+          "id": "c3",
+          "text": "Lymph is actively pumped outward into tissues"
+        },
+        {
+          "id": "c4",
+          "text": "The thoracic duct closes its connection to veins"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Tissue pressure can favor inward uptake; anchoring filaments support capillary patency.",
+      "conceptIds": [
+        "anchoring-filament",
+        "lymphatic-endothelial-flap"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-012",
+      "type": "multiple-choice",
+      "topicId": "capillaries",
+      "stem": "Why do collecting lymphatic vessels contain many valves?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Their low-pressure flow requires protection against backflow"
+        },
+        {
+          "id": "c2",
+          "text": "They must reverse direction after each heartbeat"
+        },
+        {
+          "id": "c3",
+          "text": "Valves produce antibody proteins"
+        },
+        {
+          "id": "c4",
+          "text": "Lymph must remain trapped in the limbs"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Valves maintain net one-way transport despite intermittent compression and low pressure.",
+      "conceptIds": [
+        "lymphatic-valve"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-013",
+      "type": "multiple-choice",
+      "topicId": "capillaries",
+      "stem": "A person walks after sitting immobile for hours. Why might lymph return from the legs improve?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Muscle contractions compress collecting vessels and valves direct the fluid centrally"
+        },
+        {
+          "id": "c2",
+          "text": "Arteries convert into lymphatic capillaries during exercise"
+        },
+        {
+          "id": "c3",
+          "text": "The spleen begins pumping leg lymph directly"
+        },
+        {
+          "id": "c4",
+          "text": "Lymphocytes create hydrostatic pressure by dividing"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The skeletal-muscle pump assists movement past one-way valves.",
+      "conceptIds": [
+        "skeletal-muscle-pump"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-014",
+      "type": "multiple-choice",
+      "topicId": "capillaries",
+      "stem": "How does breathing support lymph drainage?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Changes in thoracic and abdominal pressure help draw and propel lymph centrally"
+        },
+        {
+          "id": "c2",
+          "text": "Every inhalation opens blood vessels directly into the pleural cavity"
+        },
+        {
+          "id": "c3",
+          "text": "The diaphragm secretes chylomicrons during inspiration"
+        },
+        {
+          "id": "c4",
+          "text": "Breathing prevents all liquid from entering initial lymphatics"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Pressure gradients generated by respiration supplement collecting-vessel contraction.",
+      "conceptIds": [
+        "respiratory-pump"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-015",
+      "type": "multiple-choice",
+      "topicId": "capillaries",
+      "stem": "Where would chylomicrons first enter the lymphatic network after leaving intestinal epithelial cells?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Lacteals within small-intestinal villi"
+        },
+        {
+          "id": "c2",
+          "text": "Renal glomeruli"
+        },
+        {
+          "id": "c3",
+          "text": "Thymic medullary sinuses"
+        },
+        {
+          "id": "c4",
+          "text": "The splenic artery"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Lacteals specialize in receiving intestinal lipid particles.",
+      "conceptIds": [
+        "lacteal",
+        "chylomicron"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-016",
+      "type": "multiple-choice",
+      "topicId": "capillaries",
+      "stem": "Which statement about lymphatic pumping is most accurate?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Flow uses valves, body movement, breathing, and rhythmic collecting-vessel contraction without a single heart-like pump"
+        },
+        {
+          "id": "c2",
+          "text": "Only the heartbeat moves lymph through lymphatic vessels"
+        },
+        {
+          "id": "c3",
+          "text": "Lymph flow occurs solely by diffusion from foot to neck"
+        },
+        {
+          "id": "c4",
+          "text": "Lymphatic capillaries generate blood pressure equal to the aorta"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Multiple distributed mechanisms drive low-pressure lymph return.",
+      "conceptIds": [
+        "intrinsic-lymphatic-contraction"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-017",
+      "type": "multiple-choice",
+      "topicId": "drainage",
+      "stem": "Which territory usually drains toward the right lymphatic duct?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Right head and neck, right upper limb, and right thorax"
+        },
+        {
+          "id": "c2",
+          "text": "Entire left lower limb and pelvis"
+        },
+        {
+          "id": "c3",
+          "text": "Both lower limbs and all abdominal organs"
+        },
+        {
+          "id": "c4",
+          "text": "Left head and neck, left arm, and left thorax"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The right upper quadrant is the usual right lymphatic duct territory.",
+      "conceptIds": [
+        "right-lymphatic-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-018",
+      "type": "multiple-choice",
+      "topicId": "drainage",
+      "stem": "Which duct returns lymph from most of the body?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Thoracic duct"
+        },
+        {
+          "id": "c2",
+          "text": "Right lymphatic duct"
+        },
+        {
+          "id": "c3",
+          "text": "Common bile duct"
+        },
+        {
+          "id": "c4",
+          "text": "Pancreatic duct"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The thoracic duct drains both lower quadrants and the left upper quadrant.",
+      "conceptIds": [
+        "thoracic-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-019",
+      "type": "multiple-choice",
+      "topicId": "drainage",
+      "stem": "Which three named trunks are the key inputs for the right lymphatic duct in the lecture?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Right jugular, right subclavian, right bronchomediastinal"
+        },
+        {
+          "id": "c2",
+          "text": "Right lumbar, left lumbar, intestinal"
+        },
+        {
+          "id": "c3",
+          "text": "Left jugular, left subclavian, left bronchomediastinal"
+        },
+        {
+          "id": "c4",
+          "text": "Right hepatic, cystic, pancreatic"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The right upper quadrant uses the right-sided jugular, subclavian, and bronchomediastinal trunks.",
+      "conceptIds": [
+        "right-lymphatic-duct",
+        "jugular-trunk"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-020",
+      "type": "multiple-choice",
+      "topicId": "drainage",
+      "stem": "Which three trunks commonly converge near the cisterna chyli in the class diagram?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Right lumbar, left lumbar, and intestinal trunks"
+        },
+        {
+          "id": "c2",
+          "text": "Both jugular trunks and the right subclavian trunk"
+        },
+        {
+          "id": "c3",
+          "text": "Both bronchomediastinal trunks and the left jugular trunk"
+        },
+        {
+          "id": "c4",
+          "text": "Both pulmonary veins and the portal vein"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Lumbar and intestinal trunks collect inferior-body and intestinal lymph.",
+      "conceptIds": [
+        "cisterna-chyli",
+        "lumbar-trunk",
+        "intestinal-trunk"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-021",
+      "type": "multiple-choice",
+      "topicId": "drainage",
+      "stem": "A lymphatic tracer enters the LEFT foot. Which route is appropriate?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Left lumbar drainage toward cisterna chyli, thoracic duct, then left venous angle"
+        },
+        {
+          "id": "c2",
+          "text": "Right jugular trunk directly into right venous angle"
+        },
+        {
+          "id": "c3",
+          "text": "Right subclavian trunk into right lymphatic duct"
+        },
+        {
+          "id": "c4",
+          "text": "Splenic artery into the lung"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The thoracic duct returns lymph from both lower limbs.",
+      "conceptIds": [
+        "thoracic-duct",
+        "lumbar-trunk"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-022",
+      "type": "multiple-choice",
+      "topicId": "drainage",
+      "stem": "Where does the thoracic duct usually terminate?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Near the junction of the left internal jugular and left subclavian veins"
+        },
+        {
+          "id": "c2",
+          "text": "Right ventricle of the heart"
+        },
+        {
+          "id": "c3",
+          "text": "Abdominal aorta"
+        },
+        {
+          "id": "c4",
+          "text": "Main pancreatic duct"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The usual terminal site is the left venous angle.",
+      "conceptIds": [
+        "left-venous-angle"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-023",
+      "type": "multiple-choice",
+      "topicId": "drainage",
+      "stem": "Which structure is an expanded chamber near the inferior start of the thoracic duct?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Cisterna chyli"
+        },
+        {
+          "id": "c2",
+          "text": "Lymph node paracortex"
+        },
+        {
+          "id": "c3",
+          "text": "Hassall corpuscle"
+        },
+        {
+          "id": "c4",
+          "text": "Medullary cord"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The cisterna chyli receives lymph from lumbar and intestinal territories.",
+      "conceptIds": [
+        "cisterna-chyli"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-024",
+      "type": "multiple-choice",
+      "topicId": "drainage",
+      "stem": "Which trunk normally collects lymph from an upper limb?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Subclavian trunk on that side"
+        },
+        {
+          "id": "c2",
+          "text": "Intestinal trunk"
+        },
+        {
+          "id": "c3",
+          "text": "Lumbar trunk exclusively"
+        },
+        {
+          "id": "c4",
+          "text": "Cystic duct"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The right and left subclavian trunks drain their respective upper limbs.",
+      "conceptIds": [
+        "subclavian-trunk"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-025",
+      "type": "multiple-choice",
+      "topicId": "nodes",
+      "stem": "Which lymphatic vessels convey lymph INTO a lymph node?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Afferent lymphatic vessels"
+        },
+        {
+          "id": "c2",
+          "text": "Efferent lymphatic vessels"
+        },
+        {
+          "id": "c3",
+          "text": "Splenic veins"
+        },
+        {
+          "id": "c4",
+          "text": "Hepatic portal veins"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Afferent means arriving at a node; efferent means leaving.",
+      "conceptIds": [
+        "afferent-lymphatic-vessel"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-026",
+      "type": "multiple-choice",
+      "topicId": "nodes",
+      "stem": "Where does lymph first arrive inside a typical node after entering via afferent vessels?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Subcapsular sinus"
+        },
+        {
+          "id": "c2",
+          "text": "Germinal center only"
+        },
+        {
+          "id": "c3",
+          "text": "Thymic medulla"
+        },
+        {
+          "id": "c4",
+          "text": "Splenic red pulp"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The subcapsular sinus receives incoming lymph beneath the capsule.",
+      "conceptIds": [
+        "subcapsular-sinus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-027",
+      "type": "multiple-choice",
+      "topicId": "nodes",
+      "stem": "Which region of a lymph node is particularly enriched in B-cell follicles?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Outer cortex"
+        },
+        {
+          "id": "c2",
+          "text": "Paracortex exclusively"
+        },
+        {
+          "id": "c3",
+          "text": "Hilum"
+        },
+        {
+          "id": "c4",
+          "text": "Medullary sinus exclusively"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Follicles are characteristic of the outer cortex.",
+      "conceptIds": [
+        "lymph-node-outer-cortex"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-028",
+      "type": "multiple-choice",
+      "topicId": "nodes",
+      "stem": "Where are many T lymphocytes concentrated in a lymph node?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Paracortex (deep cortex)"
+        },
+        {
+          "id": "c2",
+          "text": "Capsular connective tissue"
+        },
+        {
+          "id": "c3",
+          "text": "Afferent lymphatic lumen"
+        },
+        {
+          "id": "c4",
+          "text": "Splenic red pulp"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The paracortex is a T-cell-rich zone.",
+      "conceptIds": [
+        "lymph-node-paracortex"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-029",
+      "type": "multiple-choice",
+      "topicId": "nodes",
+      "stem": "What is the principal activity of a germinal center during a response?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Activated B-cell proliferation and affinity-related selection"
+        },
+        {
+          "id": "c2",
+          "text": "Erythrocyte synthesis"
+        },
+        {
+          "id": "c3",
+          "text": "Synthesis of digestive enzymes"
+        },
+        {
+          "id": "c4",
+          "text": "Production of chylomicrons"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Germinal centers support B-cell proliferation and maturation after activation.",
+      "conceptIds": [
+        "germinal-center"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-030",
+      "type": "multiple-choice",
+      "topicId": "nodes",
+      "stem": "Which sequence is closest to the physical pathway of LYMPH through a node?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Afferent vessel → subcapsular sinus → cortical/medullary sinuses → efferent vessel"
+        },
+        {
+          "id": "c2",
+          "text": "Afferent vessel → thymic medulla → spleen → artery"
+        },
+        {
+          "id": "c3",
+          "text": "Efferent vessel → germinal center → afferent vessel → capillary"
+        },
+        {
+          "id": "c4",
+          "text": "Splenic artery → medullary cord → jugular trunk"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Fluid travels through sinus spaces; the B-cell and T-cell regions are nearby immune compartments.",
+      "conceptIds": [
+        "lymph-node-sinus-pathway"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-031",
+      "type": "multiple-choice",
+      "topicId": "nodes",
+      "stem": "What is the functional advantage of bringing antigen and lymphocytes into lymph nodes?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "It facilitates antigen sampling and encounters among antigen-presenting cells and lymphocytes"
+        },
+        {
+          "id": "c2",
+          "text": "It prevents any fluid from entering the bloodstream ever again"
+        },
+        {
+          "id": "c3",
+          "text": "It forces all lymphocytes to become macrophages"
+        },
+        {
+          "id": "c4",
+          "text": "It replaces the need for innate defenses"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Nodes both filter lymph and coordinate adaptive activation.",
+      "conceptIds": [
+        "lymph-node",
+        "antigen-presenting-dendritic-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-032",
+      "type": "multiple-choice",
+      "topicId": "nodes",
+      "stem": "How can circulating naive lymphocytes enter a lymph node without arriving in afferent lymph?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Through specialized high endothelial venules"
+        },
+        {
+          "id": "c2",
+          "text": "By swimming upstream through the thoracic duct"
+        },
+        {
+          "id": "c3",
+          "text": "By crossing from the common bile duct"
+        },
+        {
+          "id": "c4",
+          "text": "Through red pulp sinusoids of the spleen"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "High endothelial venules allow lymphocyte entry from the blood.",
+      "conceptIds": [
+        "high-endothelial-venule"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-033",
+      "type": "multiple-choice",
+      "topicId": "lymphocytes",
+      "stem": "Where do human B lymphocytes normally develop and mature?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Bone marrow"
+        },
+        {
+          "id": "c2",
+          "text": "Thymic medulla"
+        },
+        {
+          "id": "c3",
+          "text": "Splenic red pulp exclusively"
+        },
+        {
+          "id": "c4",
+          "text": "Thoracic duct"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "B cells are bone-marrow-derived; their later activation may occur in secondary lymphoid tissues.",
+      "conceptIds": [
+        "b-lymphocyte",
+        "red-bone-marrow"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphopoiesis",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymphocyte-classes-and-development",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              21
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              17
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-034",
+      "type": "multiple-choice",
+      "topicId": "lymphocytes",
+      "stem": "Where do T lymphocytes mature and undergo selection?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Thymus"
+        },
+        {
+          "id": "c2",
+          "text": "Bone marrow exclusively"
+        },
+        {
+          "id": "c3",
+          "text": "Liver bile ducts"
+        },
+        {
+          "id": "c4",
+          "text": "Lacteals"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "T-cell precursors originate from marrow but mature in the thymus.",
+      "conceptIds": [
+        "t-lymphocyte",
+        "thymus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphopoiesis",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymphocyte-classes-and-development",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              21
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-035",
+      "type": "multiple-choice",
+      "topicId": "lymphocytes",
+      "stem": "Which lymphocyte class belongs primarily to innate defense?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Natural killer cells"
+        },
+        {
+          "id": "c2",
+          "text": "Antigen-specific memory B cells"
+        },
+        {
+          "id": "c3",
+          "text": "Naive CD4 helper T cells"
+        },
+        {
+          "id": "c4",
+          "text": "Plasma cells"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "NK cells act through innate surveillance and killing.",
+      "conceptIds": [
+        "natural-killer-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphopoiesis",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymphocyte-classes-and-development",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              21
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              17
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-036",
+      "type": "multiple-choice",
+      "topicId": "lymphocytes",
+      "stem": "Which pair are the principal antigen-specific adaptive lymphocyte classes?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "B cells and T cells"
+        },
+        {
+          "id": "c2",
+          "text": "Erythrocytes and platelets"
+        },
+        {
+          "id": "c3",
+          "text": "Neutrophils and eosinophils"
+        },
+        {
+          "id": "c4",
+          "text": "Macrophages and mast cells exclusively"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "B and T lymphocytes use clonally generated antigen receptors and can form memory.",
+      "conceptIds": [
+        "b-lymphocyte",
+        "t-lymphocyte"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphopoiesis",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymphocyte-classes-and-development",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              21
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              17
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-037",
+      "type": "multiple-choice",
+      "topicId": "lymphocytes",
+      "stem": "What is the central purpose of the blood–thymus barrier, particularly in the cortex?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Limit premature exposure of developing thymocytes to circulating antigens"
+        },
+        {
+          "id": "c2",
+          "text": "Force all B cells into the thymus"
+        },
+        {
+          "id": "c3",
+          "text": "Drain intestinal fats through the thymus"
+        },
+        {
+          "id": "c4",
+          "text": "Keep mature memory T cells from entering blood permanently"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The barrier supports the developing thymocyte environment.",
+      "conceptIds": [
+        "blood-thymus-barrier"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-038",
+      "type": "multiple-choice",
+      "topicId": "lymphocytes",
+      "stem": "Why does thymic negative selection matter?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "It helps remove or control developing T cells that strongly recognize self-antigens"
+        },
+        {
+          "id": "c2",
+          "text": "It converts T cells into red blood cells"
+        },
+        {
+          "id": "c3",
+          "text": "It trains B cells to secrete digestive enzymes"
+        },
+        {
+          "id": "c4",
+          "text": "It removes every T cell that recognizes any self-MHC at all"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Strong self-reactivity is a danger for autoimmune responses.",
+      "conceptIds": [
+        "negative-selection"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-039",
+      "type": "multiple-choice",
+      "topicId": "lymphocytes",
+      "stem": "Which process favors survival of thymocytes capable of recognizing self-MHC sufficiently?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Positive selection"
+        },
+        {
+          "id": "c2",
+          "text": "Opsonization"
+        },
+        {
+          "id": "c3",
+          "text": "Complement lysis"
+        },
+        {
+          "id": "c4",
+          "text": "Chylomicron formation"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Positive selection establishes functional MHC recognition; negative selection addresses excessive self-reactivity.",
+      "conceptIds": [
+        "positive-selection"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-040",
+      "type": "multiple-choice",
+      "topicId": "lymphocytes",
+      "stem": "What is thymic involution?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Age-related reduction of thymic lymphoid tissue with replacement by fatty/connective tissue"
+        },
+        {
+          "id": "c2",
+          "text": "Sudden conversion of the spleen into a thymus"
+        },
+        {
+          "id": "c3",
+          "text": "Lifelong enlargement of the thymus in every adult"
+        },
+        {
+          "id": "c4",
+          "text": "Flow of lymph from intestine directly through thymic cortex"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Involution reduces thymic volume over time but does not imply that all immune defenses disappear.",
+      "conceptIds": [
+        "thymic-involution"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-041",
+      "type": "multiple-choice",
+      "topicId": "spleen",
+      "stem": "How does splenic immune surveillance differ fundamentally from lymph-node surveillance?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Spleen primarily filters blood, whereas lymph nodes primarily filter lymph"
+        },
+        {
+          "id": "c2",
+          "text": "Spleen filters air while lymph nodes filter urine"
+        },
+        {
+          "id": "c3",
+          "text": "Both filter only bile and never encounter antigens"
+        },
+        {
+          "id": "c4",
+          "text": "Spleen filters lymph but lymph nodes filter blood exclusively"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The spleen responds to blood-borne antigens and removes abnormal blood cells.",
+      "conceptIds": [
+        "spleen",
+        "lymph-node"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-042",
+      "type": "multiple-choice",
+      "topicId": "spleen",
+      "stem": "Which splenic compartment is enriched in lymphocytes and immune responses to blood antigens?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "White pulp"
+        },
+        {
+          "id": "c2",
+          "text": "Red pulp exclusively"
+        },
+        {
+          "id": "c3",
+          "text": "Hilum"
+        },
+        {
+          "id": "c4",
+          "text": "Splenic capsule alone"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "White pulp is lymphocyte-rich.",
+      "conceptIds": [
+        "splenic-white-pulp"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-043",
+      "type": "multiple-choice",
+      "topicId": "spleen",
+      "stem": "Which splenic compartment is associated with removal of damaged or senescent red blood cells?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Red pulp"
+        },
+        {
+          "id": "c2",
+          "text": "White pulp exclusively"
+        },
+        {
+          "id": "c3",
+          "text": "Afferent lymphatic sinus"
+        },
+        {
+          "id": "c4",
+          "text": "Peyer's patch"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Red pulp is blood-rich and contains macrophages that clear old or abnormal RBCs.",
+      "conceptIds": [
+        "splenic-red-pulp"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-044",
+      "type": "multiple-choice",
+      "topicId": "spleen",
+      "stem": "What enters and leaves the spleen at its hilum?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Splenic artery and vein"
+        },
+        {
+          "id": "c2",
+          "text": "Afferent lymphatic vessels in large numbers"
+        },
+        {
+          "id": "c3",
+          "text": "Pancreatic secretions and bile"
+        },
+        {
+          "id": "c4",
+          "text": "Pulmonary artery and vein"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The hilum is the major vascular gateway of the spleen.",
+      "conceptIds": [
+        "splenic-hilum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-045",
+      "type": "multiple-choice",
+      "topicId": "spleen",
+      "stem": "What happens to iron from many aged red blood cells removed by splenic macrophages?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "It can be recovered and recycled for future hemoglobin synthesis"
+        },
+        {
+          "id": "c2",
+          "text": "It is always excreted unchanged through bile within minutes"
+        },
+        {
+          "id": "c3",
+          "text": "It becomes a lymphatic valve"
+        },
+        {
+          "id": "c4",
+          "text": "It is destroyed along with the heme ring"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Macrophages help recover iron from hemoglobin.",
+      "conceptIds": [
+        "iron-recycling"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-046",
+      "type": "multiple-choice",
+      "topicId": "spleen",
+      "stem": "Which surface of the spleen conforms to the diaphragm?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Diaphragmatic surface"
+        },
+        {
+          "id": "c2",
+          "text": "Visceral surface with gastric impressions"
+        },
+        {
+          "id": "c3",
+          "text": "Thymic cortex"
+        },
+        {
+          "id": "c4",
+          "text": "Medullary sinus"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The smooth outer diaphragmatic surface is a gross anatomical landmark.",
+      "conceptIds": [
+        "diaphragmatic-surface"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-047",
+      "type": "multiple-choice",
+      "topicId": "spleen",
+      "stem": "Which consequence is clinically important after removal of the spleen?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Increased susceptibility to severe infections by some encapsulated bacteria"
+        },
+        {
+          "id": "c2",
+          "text": "Complete loss of all T-cell production at every age"
+        },
+        {
+          "id": "c3",
+          "text": "Permanent inability to absorb glucose"
+        },
+        {
+          "id": "c4",
+          "text": "Inability to pump venous blood toward the heart"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Splenic clearance of certain blood-borne encapsulated microbes is especially valuable.",
+      "conceptIds": [
+        "splenectomy",
+        "encapsulated-bacteria"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-048",
+      "type": "multiple-choice",
+      "topicId": "spleen",
+      "stem": "Why can trauma to the spleen be medically dangerous?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Its highly vascular tissue can bleed extensively into the abdomen"
+        },
+        {
+          "id": "c2",
+          "text": "It contains digestive acid that dissolves abdominal organs"
+        },
+        {
+          "id": "c3",
+          "text": "A splenic rupture blocks breathing by closing the trachea"
+        },
+        {
+          "id": "c4",
+          "text": "It is the only organ producing all antibodies"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Splenic injury can cause major internal hemorrhage and shock.",
+      "conceptIds": [
+        "spleen"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-049",
+      "type": "multiple-choice",
+      "topicId": "malt",
+      "stem": "Which characteristic distinguishes the three encapsulated lymphoid organs named in the instructor's comparison?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "They have a recognizable connective-tissue capsule"
+        },
+        {
+          "id": "c2",
+          "text": "They have no contact with immune cells"
+        },
+        {
+          "id": "c3",
+          "text": "They all produce red cells throughout life"
+        },
+        {
+          "id": "c4",
+          "text": "They only exist in the intestinal wall"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The course lists nodes, thymus, and spleen as encapsulated organs.",
+      "conceptIds": [
+        "lymphoid-organ"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "organs-vs-tissues",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              11,
+              12,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "organs-versus-tissues",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              18
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-050",
+      "type": "multiple-choice",
+      "topicId": "malt",
+      "stem": "Which pair is usually classified as PRIMARY lymphoid sites for lymphocyte development?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Bone marrow and thymus"
+        },
+        {
+          "id": "c2",
+          "text": "Lymph node and spleen"
+        },
+        {
+          "id": "c3",
+          "text": "Palatine tonsil and Peyer's patch"
+        },
+        {
+          "id": "c4",
+          "text": "Appendix and thoracic duct"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The distinction concerns lymphocyte maturation, not merely the presence of a capsule.",
+      "conceptIds": [
+        "primary-lymphoid-organ"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "organs-vs-tissues",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              11,
+              12,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "organs-versus-tissues",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              18
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-051",
+      "type": "multiple-choice",
+      "topicId": "malt",
+      "stem": "What is the principal location of Peyer's patches?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Small intestine, especially the ileum"
+        },
+        {
+          "id": "c2",
+          "text": "Thymic medulla"
+        },
+        {
+          "id": "c3",
+          "text": "Left atrium of the heart"
+        },
+        {
+          "id": "c4",
+          "text": "Renal cortex"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Peyer's patches are aggregated intestinal lymphoid follicles.",
+      "conceptIds": [
+        "peyer-s-patch"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "tonsils-and-malt",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "malt-and-tonsils",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-052",
+      "type": "multiple-choice",
+      "topicId": "malt",
+      "stem": "Where is the pharyngeal tonsil located?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Roof/posterior wall of the nasopharynx"
+        },
+        {
+          "id": "c2",
+          "text": "Lower abdomen near appendix"
+        },
+        {
+          "id": "c3",
+          "text": "Splenic hilum"
+        },
+        {
+          "id": "c4",
+          "text": "Pancreatic head"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The pharyngeal tonsil is the adenoid region.",
+      "conceptIds": [
+        "pharyngeal-tonsil"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "tonsils-and-malt",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "malt-and-tonsils",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-053",
+      "type": "multiple-choice",
+      "topicId": "malt",
+      "stem": "Which tissue grouping helps protect mucosal surfaces such as gut and airways?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Mucosa-associated lymphoid tissue (MALT)"
+        },
+        {
+          "id": "c2",
+          "text": "Splenic red pulp only"
+        },
+        {
+          "id": "c3",
+          "text": "Bone marrow hematopoietic stem cells only"
+        },
+        {
+          "id": "c4",
+          "text": "The lymphangion wall"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "MALT positions immune cells near surfaces exposed to external material.",
+      "conceptIds": [
+        "mucosa-associated-lymphoid-tissue"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "tonsils-and-malt",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "malt-and-tonsils",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-054",
+      "type": "multiple-choice",
+      "topicId": "malt",
+      "stem": "What does GALT stand for?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Gut-associated lymphoid tissue"
+        },
+        {
+          "id": "c2",
+          "text": "Germinal artery lymph transport"
+        },
+        {
+          "id": "c3",
+          "text": "Glomerular antigen liver tissue"
+        },
+        {
+          "id": "c4",
+          "text": "Gastric acid luminal transport"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "GALT is the intestinal/mucosal component of the lymphoid system.",
+      "conceptIds": [
+        "gut-associated-lymphoid-tissue"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "tonsils-and-malt",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "malt-and-tonsils",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-055",
+      "type": "multiple-choice",
+      "topicId": "malt",
+      "stem": "Which collection of tissue surrounds the opening of the pharynx?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Waldeyer's ring of tonsillar lymphoid tissue"
+        },
+        {
+          "id": "c2",
+          "text": "Thoracic duct and lumbar trunks"
+        },
+        {
+          "id": "c3",
+          "text": "Splenic red pulp cords"
+        },
+        {
+          "id": "c4",
+          "text": "Pancreatic islets"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Waldeyer's ring includes palatine, pharyngeal, and lingual tonsillar tissues.",
+      "conceptIds": [
+        "waldeyer-s-ring"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "tonsils-and-malt",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "malt-and-tonsils",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-056",
+      "type": "multiple-choice",
+      "topicId": "malt",
+      "stem": "What is the immunological role of specialized intestinal M cells?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Transport antigens from the intestinal lumen toward underlying mucosal immune tissue"
+        },
+        {
+          "id": "c2",
+          "text": "Create erythrocytes in the intestinal epithelium"
+        },
+        {
+          "id": "c3",
+          "text": "Secrete hydrochloric acid into the stomach"
+        },
+        {
+          "id": "c4",
+          "text": "Produce all circulating IgG"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "M cells help sample luminal antigen near intestinal immune follicles.",
+      "conceptIds": [
+        "microfold-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "tonsils-and-malt",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "malt-and-tonsils",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-057",
+      "type": "multiple-choice",
+      "topicId": "innate",
+      "stem": "Which is the instructor's exact group of seven nonspecific defense categories?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Physical barriers, phagocytic cells, immunological surveillance, interferons, complement, inflammation, fever"
+        },
+        {
+          "id": "c2",
+          "text": "B cells, plasma cells, helper T cells, cytotoxic T cells, antibodies, memory, tolerance"
+        },
+        {
+          "id": "c3",
+          "text": "Lymph, chyle, blood, marrow, thymus, spleen, tonsils"
+        },
+        {
+          "id": "c4",
+          "text": "Mastication, absorption, secretion, compaction, defecation, filtration, digestion"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "These seven named categories are explicitly listed in the Chapter 22 immunity lecture.",
+      "conceptIds": [
+        "innate-immunity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "innate-defense-framework",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30,
+              36,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "seven-nonspecific-defenses",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-058",
+      "type": "multiple-choice",
+      "topicId": "innate",
+      "stem": "A bacterium crosses broken skin. Which action represents an immediate cellular innate defense?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Neutrophils and macrophages engulf microbial material"
+        },
+        {
+          "id": "c2",
+          "text": "Naive B cells immediately secrete class-switched IgG without activation"
+        },
+        {
+          "id": "c3",
+          "text": "All T cells become antibodies"
+        },
+        {
+          "id": "c4",
+          "text": "The thoracic duct directly neutralizes the bacterium"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Phagocytes respond without requiring prior specific antigen exposure.",
+      "conceptIds": [
+        "phagocytosis",
+        "neutrophil"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "innate-defense-framework",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30,
+              36,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "seven-nonspecific-defenses",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-059",
+      "type": "multiple-choice",
+      "topicId": "innate",
+      "stem": "Which immune cell is specialized to capture antigen and help activate naive T cells?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Dendritic cell"
+        },
+        {
+          "id": "c2",
+          "text": "Erythrocyte"
+        },
+        {
+          "id": "c3",
+          "text": "Platelet"
+        },
+        {
+          "id": "c4",
+          "text": "Intestinal enterocyte"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Dendritic cells connect early antigen capture to adaptive antigen presentation.",
+      "conceptIds": [
+        "dendritic-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "innate-defense-framework",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30,
+              36,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "seven-nonspecific-defenses",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-060",
+      "type": "multiple-choice",
+      "topicId": "innate",
+      "stem": "Which description best fits an NK cell?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Innate lymphocyte able to kill some virus-infected or tumor-like abnormal cells"
+        },
+        {
+          "id": "c2",
+          "text": "Antibody-producing terminal B cell"
+        },
+        {
+          "id": "c3",
+          "text": "Cell whose defining role is making red blood cells"
+        },
+        {
+          "id": "c4",
+          "text": "Liver cell making bile"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "NK cells provide cytotoxic immunological surveillance.",
+      "conceptIds": [
+        "natural-killer-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphopoiesis",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymphocyte-classes-and-development",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              21
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              17
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-061",
+      "type": "multiple-choice",
+      "topicId": "innate",
+      "stem": "A target cell has reduced surface MHC class I expression. Which cell type may respond through missing-self recognition?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Natural killer cell"
+        },
+        {
+          "id": "c2",
+          "text": "Plasma cell producing IgA"
+        },
+        {
+          "id": "c3",
+          "text": "Mature red blood cell"
+        },
+        {
+          "id": "c4",
+          "text": "Chylomicron"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Some NK receptors use the absence of inhibitory self-MHC signals as part of target assessment.",
+      "conceptIds": [
+        "missing-self-recognition"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "innate-defense-framework",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30,
+              36,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "seven-nonspecific-defenses",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-062",
+      "type": "multiple-choice",
+      "topicId": "innate",
+      "stem": "How do perforin and granzymes collaborate in cytotoxic killing?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Perforin helps granzyme entry, and granzymes trigger cell-death pathways"
+        },
+        {
+          "id": "c2",
+          "text": "They neutralize stomach acid to protect the intestine"
+        },
+        {
+          "id": "c3",
+          "text": "They assemble immunoglobulin heavy chains"
+        },
+        {
+          "id": "c4",
+          "text": "They produce lymphatic valves around a target cell"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "NK cells and CD8 T cells use cytotoxic granule proteins to trigger apoptosis.",
+      "conceptIds": [
+        "perforin",
+        "granzyme"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "phagocytes-and-nk",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-063",
+      "type": "multiple-choice",
+      "topicId": "innate",
+      "stem": "What is a major difference between NK and CD8 cytotoxic T-cell recognition?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "NK cells use innate activating/inhibitory cues, while CD8 T cells recognize specific peptide–MHC I complexes"
+        },
+        {
+          "id": "c2",
+          "text": "NK cells alone require rearranged T-cell receptors"
+        },
+        {
+          "id": "c3",
+          "text": "CD8 T cells never kill infected cells"
+        },
+        {
+          "id": "c4",
+          "text": "Both depend on circulating antibody as their only recognition mechanism"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Their killing machinery can overlap, but antigen recognition differs.",
+      "conceptIds": [
+        "natural-killer-cell",
+        "cd8-t-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphopoiesis",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymphocyte-classes-and-development",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              21
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-064",
+      "type": "multiple-choice",
+      "topicId": "innate",
+      "stem": "Which statement is most precise about the word 'nonspecific' in innate immunity?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Innate pathways recognize conserved threat patterns but do not use the same highly diversified receptors as adaptive lymphocytes"
+        },
+        {
+          "id": "c2",
+          "text": "Innate cells cannot distinguish any molecules at all"
+        },
+        {
+          "id": "c3",
+          "text": "Innate defenses only work after vaccination"
+        },
+        {
+          "id": "c4",
+          "text": "Innate immunity excludes inflammatory signaling"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "'Nonspecific' is the classroom category; recognition is still biologically selective.",
+      "conceptIds": [
+        "innate-immunity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "innate-defense-framework",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30,
+              36,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "seven-nonspecific-defenses",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-065",
+      "type": "multiple-choice",
+      "topicId": "inflammation",
+      "stem": "Which classical sign of inflammation means redness?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Rubor"
+        },
+        {
+          "id": "c2",
+          "text": "Calor"
+        },
+        {
+          "id": "c3",
+          "text": "Tumor"
+        },
+        {
+          "id": "c4",
+          "text": "Dolor"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Rubor is redness, commonly from increased local perfusion.",
+      "conceptIds": [
+        "rubor"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-066",
+      "type": "multiple-choice",
+      "topicId": "inflammation",
+      "stem": "Which classical sign of inflammation means swelling?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Tumor"
+        },
+        {
+          "id": "c2",
+          "text": "Calor"
+        },
+        {
+          "id": "c3",
+          "text": "Dolor"
+        },
+        {
+          "id": "c4",
+          "text": "Rubor"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Tumor is swelling in the Latin list of inflammatory signs, not automatically a neoplasm.",
+      "conceptIds": [
+        "tumor-inflammation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-067",
+      "type": "multiple-choice",
+      "topicId": "inflammation",
+      "stem": "Which classical sign of inflammation means heat?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Calor"
+        },
+        {
+          "id": "c2",
+          "text": "Rubor"
+        },
+        {
+          "id": "c3",
+          "text": "Dolor"
+        },
+        {
+          "id": "c4",
+          "text": "Tumor"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Calor corresponds to warmth at the inflamed site.",
+      "conceptIds": [
+        "calor"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-068",
+      "type": "multiple-choice",
+      "topicId": "inflammation",
+      "stem": "Which classical sign of inflammation means pain?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Dolor"
+        },
+        {
+          "id": "c2",
+          "text": "Calor"
+        },
+        {
+          "id": "c3",
+          "text": "Tumor"
+        },
+        {
+          "id": "c4",
+          "text": "Rubor"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Dolor is pain associated with tissue injury and inflammatory mediators.",
+      "conceptIds": [
+        "dolor"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-069",
+      "type": "multiple-choice",
+      "topicId": "inflammation",
+      "stem": "Why does histamine often promote visible local swelling?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "It can increase vascular permeability so more fluid enters tissues"
+        },
+        {
+          "id": "c2",
+          "text": "It seals all capillaries against fluid movement"
+        },
+        {
+          "id": "c3",
+          "text": "It converts interstitial fluid into red cells"
+        },
+        {
+          "id": "c4",
+          "text": "It inhibits all local blood flow"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Mast-cell mediators alter microvascular permeability and perfusion.",
+      "conceptIds": [
+        "histamine",
+        "vascular-permeability"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-070",
+      "type": "multiple-choice",
+      "topicId": "inflammation",
+      "stem": "How do neutrophils reach inflamed tissues from nearby blood vessels?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Through regulated adhesion, extravasation, and chemotactic migration"
+        },
+        {
+          "id": "c2",
+          "text": "By converting into platelets and entering lymph ducts"
+        },
+        {
+          "id": "c3",
+          "text": "By traveling only inside neurons"
+        },
+        {
+          "id": "c4",
+          "text": "By passing backward through pancreatic ducts"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Leukocytes leave blood vessels and follow inflammatory chemical gradients.",
+      "conceptIds": [
+        "diapedesis",
+        "chemotaxis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-071",
+      "type": "multiple-choice",
+      "topicId": "inflammation",
+      "stem": "What is a pyrogen's relationship to fever?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "It helps raise the regulated temperature set point through inflammatory signaling"
+        },
+        {
+          "id": "c2",
+          "text": "It directly lowers all tissue temperature below normal"
+        },
+        {
+          "id": "c3",
+          "text": "It supplies oxygen to lymph nodes"
+        },
+        {
+          "id": "c4",
+          "text": "It converts antibodies into cytokines"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Pyrogenic signaling involves the hypothalamus and prostaglandin pathways.",
+      "conceptIds": [
+        "pyrogen",
+        "fever"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-072",
+      "type": "multiple-choice",
+      "topicId": "inflammation",
+      "stem": "Why can a person feel cold and shiver while developing a fever?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "The body's thermoregulatory set point has risen above current temperature"
+        },
+        {
+          "id": "c2",
+          "text": "All blood vessels have become permanently paralyzed"
+        },
+        {
+          "id": "c3",
+          "text": "Their thymus is producing excessive chyle"
+        },
+        {
+          "id": "c4",
+          "text": "Antibodies have stopped working in all tissues"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Raising the set point can trigger heat-conserving and heat-generating responses.",
+      "conceptIds": [
+        "hypothalamus",
+        "fever"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-073",
+      "type": "multiple-choice",
+      "topicId": "complement",
+      "stem": "Which complement fragment is a major opsonin?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "C3b"
+        },
+        {
+          "id": "c2",
+          "text": "IgD"
+        },
+        {
+          "id": "c3",
+          "text": "Perforin"
+        },
+        {
+          "id": "c4",
+          "text": "Thymosin"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "C3b coats targets, improving phagocytic uptake.",
+      "conceptIds": [
+        "c3b",
+        "opsonization"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-074",
+      "type": "multiple-choice",
+      "topicId": "complement",
+      "stem": "What is the main function of the membrane attack complex?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Form pores that can damage certain target-cell membranes"
+        },
+        {
+          "id": "c2",
+          "text": "Transport fatty acids from intestine to lymph"
+        },
+        {
+          "id": "c3",
+          "text": "Mature developing T cells in the thymus"
+        },
+        {
+          "id": "c4",
+          "text": "Attach lymph nodes to the diaphragm"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The MAC, assembled from terminal complement proteins, can perforate susceptible membranes.",
+      "conceptIds": [
+        "membrane-attack-complex"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-075",
+      "type": "multiple-choice",
+      "topicId": "complement",
+      "stem": "Which complement route can be triggered by antibodies bound to antigen?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Classical pathway"
+        },
+        {
+          "id": "c2",
+          "text": "Intestinal absorption pathway"
+        },
+        {
+          "id": "c3",
+          "text": "Thymic positive selection"
+        },
+        {
+          "id": "c4",
+          "text": "Intrinsic lymphatic pump"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The classical complement pathway often follows antigen–antibody complex formation.",
+      "conceptIds": [
+        "classical-complement-pathway"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-076",
+      "type": "multiple-choice",
+      "topicId": "complement",
+      "stem": "Which complement pathway responds to microbial carbohydrate signatures?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Lectin pathway"
+        },
+        {
+          "id": "c2",
+          "text": "T-cell receptor rearrangement"
+        },
+        {
+          "id": "c3",
+          "text": "Secretory IgD pathway"
+        },
+        {
+          "id": "c4",
+          "text": "Portal vein pathway"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Lectin-mediated recognition can initiate complement without preexisting specific antibody.",
+      "conceptIds": [
+        "lectin-complement-pathway"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-077",
+      "type": "multiple-choice",
+      "topicId": "complement",
+      "stem": "What is opsonization?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Coating a pathogen so phagocytes recognize and ingest it more efficiently"
+        },
+        {
+          "id": "c2",
+          "text": "Direct formation of lymph in the spleen"
+        },
+        {
+          "id": "c3",
+          "text": "The elimination of all self-reactive thymocytes"
+        },
+        {
+          "id": "c4",
+          "text": "The transfer of chylomicrons through milk"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "IgG and C3b are common opsonins.",
+      "conceptIds": [
+        "opsonization"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-078",
+      "type": "multiple-choice",
+      "topicId": "complement",
+      "stem": "Which complement fragment is a potent signal for inflammatory-cell recruitment?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "C5a"
+        },
+        {
+          "id": "c2",
+          "text": "Hemoglobin"
+        },
+        {
+          "id": "c3",
+          "text": "Thymosin"
+        },
+        {
+          "id": "c4",
+          "text": "Antibody light chain"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "C5a is a strong anaphylatoxin/chemoattractant in complement activation.",
+      "conceptIds": [
+        "c5a"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-079",
+      "type": "multiple-choice",
+      "topicId": "complement",
+      "stem": "How do type I interferons help defend neighboring cells from viruses?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "They induce cellular antiviral programs that can inhibit viral replication"
+        },
+        {
+          "id": "c2",
+          "text": "They physically carry viruses to the kidney for filtration"
+        },
+        {
+          "id": "c3",
+          "text": "They become IgM molecules in plasma"
+        },
+        {
+          "id": "c4",
+          "text": "They replace all lymphocyte antigen receptors"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Infection-induced interferon signaling can make cells less permissive to replication.",
+      "conceptIds": [
+        "type-i-interferon"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-080",
+      "type": "multiple-choice",
+      "topicId": "complement",
+      "stem": "Which statement correctly contrasts neutralization and opsonization?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Neutralization blocks harmful interactions; opsonization tags a target for engulfment"
+        },
+        {
+          "id": "c2",
+          "text": "Both are names for lymph duct drainage"
+        },
+        {
+          "id": "c3",
+          "text": "Neutralization means T-cell apoptosis; opsonization means fever"
+        },
+        {
+          "id": "c4",
+          "text": "Opsonization prevents receptor binding while neutralization always creates pores"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Antibodies can act by different effector mechanisms, including both blocking and tagging.",
+      "conceptIds": [
+        "neutralization",
+        "opsonization"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-081",
+      "type": "multiple-choice",
+      "topicId": "t-cell",
+      "stem": "Which MHC class is normally expressed by nearly all nucleated cells?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "MHC class I"
+        },
+        {
+          "id": "c2",
+          "text": "MHC class II only"
+        },
+        {
+          "id": "c3",
+          "text": "Immunoglobulin E"
+        },
+        {
+          "id": "c4",
+          "text": "C3b"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Class I MHC broadly displays intracellularly derived peptides.",
+      "conceptIds": [
+        "mhc-class-i"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-082",
+      "type": "multiple-choice",
+      "topicId": "t-cell",
+      "stem": "Which pairing is the standard exam association?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "MHC I with CD8 cytotoxic T cells"
+        },
+        {
+          "id": "c2",
+          "text": "MHC I with secreted IgA"
+        },
+        {
+          "id": "c3",
+          "text": "MHC II with CD8 cytotoxic T cells exclusively"
+        },
+        {
+          "id": "c4",
+          "text": "MHC II with red blood cells as professional presenters"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "CD8 recognizes class I; CD4 helper T cells recognize class II.",
+      "conceptIds": [
+        "mhc-class-i",
+        "cd8-t-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-083",
+      "type": "multiple-choice",
+      "topicId": "t-cell",
+      "stem": "Which pairing is the standard exam association for helper T cells?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "MHC II with CD4 helper T cells"
+        },
+        {
+          "id": "c2",
+          "text": "MHC II with CD8 cytotoxic T cells exclusively"
+        },
+        {
+          "id": "c3",
+          "text": "IgG with neutrophil MHC IV"
+        },
+        {
+          "id": "c4",
+          "text": "MHC I with platelet-derived antibodies"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "CD4 helper cells respond to peptides presented on MHC II.",
+      "conceptIds": [
+        "mhc-class-ii",
+        "cd4-helper-t-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-ii",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              42,
+              43
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-084",
+      "type": "multiple-choice",
+      "topicId": "t-cell",
+      "stem": "Which cell is normally a professional MHC II antigen-presenting cell?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Dendritic cell"
+        },
+        {
+          "id": "c2",
+          "text": "Mature erythrocyte"
+        },
+        {
+          "id": "c3",
+          "text": "Intestinal chylomicron"
+        },
+        {
+          "id": "c4",
+          "text": "Smooth muscle fiber"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Dendritic cells, macrophages, and B cells can display antigen on MHC II.",
+      "conceptIds": [
+        "antigen-presenting-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-085",
+      "type": "multiple-choice",
+      "topicId": "t-cell",
+      "stem": "What must a naive T cell often receive in addition to antigen recognition for appropriate activation?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Costimulatory signals"
+        },
+        {
+          "id": "c2",
+          "text": "A chylomicron"
+        },
+        {
+          "id": "c3",
+          "text": "A blood-thymus barrier around each node"
+        },
+        {
+          "id": "c4",
+          "text": "A lymphatic valve opening outward"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "A second activation signal helps avoid inappropriate responses.",
+      "conceptIds": [
+        "costimulation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-086",
+      "type": "multiple-choice",
+      "topicId": "t-cell",
+      "stem": "What is the chief result of activating an appropriate CD8 cytotoxic T cell?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Expansion of cells able to recognize and eliminate target cells bearing its peptide–MHC I antigen"
+        },
+        {
+          "id": "c2",
+          "text": "Immediate conversion of the T cell into a plasma cell"
+        },
+        {
+          "id": "c3",
+          "text": "Direct release of all antibodies from the thymus"
+        },
+        {
+          "id": "c4",
+          "text": "Permanent closure of lymphatic capillaries"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Antigen-specific CTLs can kill infected or abnormal target cells and form memory.",
+      "conceptIds": [
+        "cd8-t-cell",
+        "clonal-expansion"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-087",
+      "type": "multiple-choice",
+      "topicId": "t-cell",
+      "stem": "What is a key role of CD4 helper T cells in antibody-mediated defense?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Provide activation signals and cytokine support to appropriate B cells"
+        },
+        {
+          "id": "c2",
+          "text": "Become the heavy chains of secreted antibodies"
+        },
+        {
+          "id": "c3",
+          "text": "Pump lymph directly through the thoracic duct"
+        },
+        {
+          "id": "c4",
+          "text": "Remove old red cells from splenic red pulp"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Helper cells coordinate B-cell differentiation and antibody responses.",
+      "conceptIds": [
+        "cd4-helper-t-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-ii",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              42,
+              43
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-088",
+      "type": "multiple-choice",
+      "topicId": "t-cell",
+      "stem": "Why is it misleading to say MHC I means 'this cell is infected'?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Normal nucleated cells express MHC I; T cells evaluate the particular peptide displayed and activation context"
+        },
+        {
+          "id": "c2",
+          "text": "MHC I occurs only on bacteria"
+        },
+        {
+          "id": "c3",
+          "text": "MHC I is expressed exclusively by cells already dying"
+        },
+        {
+          "id": "c4",
+          "text": "CD8 T cells bind every MHC I molecule and kill any such cell"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Class I MHC is normal self-identification and antigen presentation; recognition of disease-associated peptide matters.",
+      "conceptIds": [
+        "mhc-class-i"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-089",
+      "type": "multiple-choice",
+      "topicId": "antibody",
+      "stem": "Which cell directly secretes most antibodies during an active humoral response?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Plasma cell"
+        },
+        {
+          "id": "c2",
+          "text": "Naive CD8 T cell"
+        },
+        {
+          "id": "c3",
+          "text": "Neutrophil"
+        },
+        {
+          "id": "c4",
+          "text": "Red blood cell"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Plasma cells are specialized descendants of activated B cells.",
+      "conceptIds": [
+        "plasma-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-ii",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              42,
+              43
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-090",
+      "type": "multiple-choice",
+      "topicId": "antibody",
+      "stem": "How does a B-cell receptor initially recognize antigen compared with a T-cell receptor?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "It can bind native antigen, whereas a conventional TCR recognizes peptide presented by MHC"
+        },
+        {
+          "id": "c2",
+          "text": "It recognizes MHC only, whereas TCR binds circulating chylomicrons"
+        },
+        {
+          "id": "c3",
+          "text": "It never binds antigen until a plasma cell is formed"
+        },
+        {
+          "id": "c4",
+          "text": "It recognizes only RNA inside the thymus"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "BCR and TCR use distinct forms of antigen recognition.",
+      "conceptIds": [
+        "b-cell-receptor",
+        "t-cell-receptor"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-ii",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              42,
+              43
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-091",
+      "type": "multiple-choice",
+      "topicId": "antibody",
+      "stem": "Which immunoglobulin class is commonly dominant in serum and important for secondary systemic responses?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "IgG"
+        },
+        {
+          "id": "c2",
+          "text": "IgE"
+        },
+        {
+          "id": "c3",
+          "text": "IgD"
+        },
+        {
+          "id": "c4",
+          "text": "IgA only"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "IgG is a major circulating antibody class involved in diverse effector functions.",
+      "conceptIds": [
+        "igg"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-092",
+      "type": "multiple-choice",
+      "topicId": "antibody",
+      "stem": "Which immunoglobulin class is commonly secreted early in a primary humoral response?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "IgM"
+        },
+        {
+          "id": "c2",
+          "text": "IgD"
+        },
+        {
+          "id": "c3",
+          "text": "IgE"
+        },
+        {
+          "id": "c4",
+          "text": "IgA only"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "IgM is usually an early secreted isotype in primary immune responses.",
+      "conceptIds": [
+        "igm"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-093",
+      "type": "multiple-choice",
+      "topicId": "antibody",
+      "stem": "Which immunoglobulin is especially important in mucus, saliva, and tears?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "IgA"
+        },
+        {
+          "id": "c2",
+          "text": "IgM only"
+        },
+        {
+          "id": "c3",
+          "text": "IgE only"
+        },
+        {
+          "id": "c4",
+          "text": "IgD only"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Secretory IgA helps protect mucosal surfaces.",
+      "conceptIds": [
+        "iga"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-094",
+      "type": "multiple-choice",
+      "topicId": "antibody",
+      "stem": "Which immunoglobulin participates prominently in immediate allergic responses?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "IgE"
+        },
+        {
+          "id": "c2",
+          "text": "IgD"
+        },
+        {
+          "id": "c3",
+          "text": "IgA"
+        },
+        {
+          "id": "c4",
+          "text": "IgG exclusively"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Antigen-specific IgE on mast cells and basophils can trigger degranulation.",
+      "conceptIds": [
+        "ige"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-095",
+      "type": "multiple-choice",
+      "topicId": "antibody",
+      "stem": "Which class commonly functions as an antigen receptor on mature naive B cells?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "IgD"
+        },
+        {
+          "id": "c2",
+          "text": "IgE only"
+        },
+        {
+          "id": "c3",
+          "text": "IgA only"
+        },
+        {
+          "id": "c4",
+          "text": "Complement C3"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "IgD is associated with the surface of naive mature B cells, often alongside IgM.",
+      "conceptIds": [
+        "igd"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-096",
+      "type": "multiple-choice",
+      "topicId": "antibody",
+      "stem": "What is an epitope?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "A particular molecular site of an antigen recognized by an antibody or receptor"
+        },
+        {
+          "id": "c2",
+          "text": "The entire thoracic duct"
+        },
+        {
+          "id": "c3",
+          "text": "A germinal center made from red blood cells"
+        },
+        {
+          "id": "c4",
+          "text": "A valve between two lymphangions"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The term antigenic determinant refers to the recognized site, not necessarily the whole pathogen.",
+      "conceptIds": [
+        "epitope"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-097",
+      "type": "multiple-choice",
+      "topicId": "memory",
+      "stem": "Which type of immunity develops following vaccination?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Artificial active immunity"
+        },
+        {
+          "id": "c2",
+          "text": "Natural passive immunity"
+        },
+        {
+          "id": "c3",
+          "text": "Artificial passive immunity"
+        },
+        {
+          "id": "c4",
+          "text": "Nonspecific mechanical filtration only"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Vaccination elicits the recipient's own adaptive response and memory.",
+      "conceptIds": [
+        "artificial-active-immunity",
+        "vaccination"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-098",
+      "type": "multiple-choice",
+      "topicId": "memory",
+      "stem": "Which is an example of natural passive immunity?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Maternal antibody transfer to an infant"
+        },
+        {
+          "id": "c2",
+          "text": "Producing memory B cells after recovering from infection"
+        },
+        {
+          "id": "c3",
+          "text": "Developing immunity after vaccination"
+        },
+        {
+          "id": "c4",
+          "text": "Cytotoxic T-cell killing after antigen presentation"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Passive immunity transfers protective antibody from another individual.",
+      "conceptIds": [
+        "natural-passive-immunity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-099",
+      "type": "multiple-choice",
+      "topicId": "memory",
+      "stem": "Which is an example of artificial passive immunity?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Administration of preformed antibodies to provide immediate protection"
+        },
+        {
+          "id": "c2",
+          "text": "Standard vaccination using antigen to induce memory"
+        },
+        {
+          "id": "c3",
+          "text": "Natural recovery from a viral infection"
+        },
+        {
+          "id": "c4",
+          "text": "Creation of thymocytes in fetal bone marrow"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Passive immunization supplies antibodies rather than requiring an initial endogenous response.",
+      "conceptIds": [
+        "artificial-passive-immunity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-100",
+      "type": "multiple-choice",
+      "topicId": "memory",
+      "stem": "Why is a secondary adaptive response often faster than a primary response?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Previously formed memory lymphocytes and long-lived antibody responses can respond rapidly"
+        },
+        {
+          "id": "c2",
+          "text": "Blood capillaries permanently become lymphatic vessels"
+        },
+        {
+          "id": "c3",
+          "text": "The thymus directly secretes all antibody isotypes within seconds"
+        },
+        {
+          "id": "c4",
+          "text": "It contains no antigen recognition steps"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Memory changes the starting state of a subsequent encounter.",
+      "conceptIds": [
+        "secondary-immune-response",
+        "immune-memory"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-101",
+      "type": "multiple-choice",
+      "topicId": "memory",
+      "stem": "What is measured by an antibody titer?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Amount or functional activity of specific antibody in a specimen, often via serial dilution"
+        },
+        {
+          "id": "c2",
+          "text": "Total number of lymph nodes in the body"
+        },
+        {
+          "id": "c3",
+          "text": "Percentage of blood that is plasma"
+        },
+        {
+          "id": "c4",
+          "text": "Width of a lymphatic valve"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Titer is an assay-dependent measurement of antibody.",
+      "conceptIds": [
+        "antibody-titer"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-102",
+      "type": "multiple-choice",
+      "topicId": "memory",
+      "stem": "Which statement best distinguishes innate from adaptive immunity?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Adaptive B/T responses are highly antigen-specific and can form memory; innate mechanisms respond rapidly via conserved pathways"
+        },
+        {
+          "id": "c2",
+          "text": "Innate defenses are absent from vaccinated individuals"
+        },
+        {
+          "id": "c3",
+          "text": "Adaptive immunity consists only of fever"
+        },
+        {
+          "id": "c4",
+          "text": "Innate mechanisms always require a prior infection"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The difference concerns recognition, timing, and memory, not whether the two systems cooperate.",
+      "conceptIds": [
+        "innate-immunity",
+        "adaptive-immunity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "innate-defense-framework",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30,
+              36,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "seven-nonspecific-defenses",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-103",
+      "type": "multiple-choice",
+      "topicId": "memory",
+      "stem": "Why does advanced HIV infection weaken many immune responses?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Loss/dysfunction of CD4 helper T cells disrupts coordination of adaptive immunity"
+        },
+        {
+          "id": "c2",
+          "text": "HIV exclusively infects red blood cells and prevents oxygen transport"
+        },
+        {
+          "id": "c3",
+          "text": "HIV removes lymphatic valves from the thoracic duct"
+        },
+        {
+          "id": "c4",
+          "text": "HIV converts all B cells into neutrophils"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "HIV targets CD4 T cells and causes progressive immune impairment without effective treatment.",
+      "conceptIds": [
+        "hiv",
+        "cd4-helper-t-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "conditions-and-rapid-recall",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              11,
+              13,
+              14,
+              15,
+              16,
+              17,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-ii",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              42,
+              43
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-104",
+      "type": "multiple-choice",
+      "topicId": "memory",
+      "stem": "What is autoimmunity?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Immune responses damaging the body's own tissues"
+        },
+        {
+          "id": "c2",
+          "text": "Normal removal of aged red blood cells by spleen"
+        },
+        {
+          "id": "c3",
+          "text": "Production of chylomicrons after a meal"
+        },
+        {
+          "id": "c4",
+          "text": "Migration of lymph through a node"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Autoimmune disorders result from failures in immune tolerance.",
+      "conceptIds": [
+        "autoimmune-disease",
+        "immunological-tolerance"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "conditions-and-rapid-recall",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              11,
+              13,
+              14,
+              15,
+              16,
+              17,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    }
+  ]
+}

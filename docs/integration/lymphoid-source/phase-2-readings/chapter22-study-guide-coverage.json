@@ -1,0 +1,771 @@
+{
+  "studyGuide": "22-Study Guide.docx",
+  "count": 28,
+  "objectives": [
+    {
+      "id": "SG-01",
+      "question": "What are the functions of the lymphatic system?",
+      "concept": "Three interconnected functions: fluid recovery, immune surveillance, dietary lipid transport",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "fundamental-jobs",
+          "heading": "Three Jobs, One System"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "functions-and-fluid",
+          "heading": "Functions, Fluid Compartments, and Basic Terminology"
+        }
+      ],
+      "immunitySlides": [
+        3,
+        4
+      ],
+      "anatomySlides": [
+        2,
+        3,
+        4,
+        20
+      ],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-02",
+      "question": "How do lymphatic capillaries differ from blood capillaries? Why does lymph only enter, but not exit lymph capillaries?",
+      "concept": "Blind-ended lymphatic capillaries vs blood capillaries; overlapping endothelial entry flaps",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "what-is-lymph",
+          "heading": "From Blood Plasma to Interstitial Fluid to Lymph"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "lymphatic-capillaries",
+          "heading": "Lymphatic Capillaries and One-Way Entry"
+        }
+      ],
+      "immunitySlides": [
+        4,
+        5,
+        6
+      ],
+      "anatomySlides": [
+        4,
+        12
+      ],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-03",
+      "question": "Why do lymphatic vessels have valves?",
+      "concept": "One-way valves and mechanisms propelling low-pressure lymph",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "one-way-transport",
+          "heading": "The One-Way Route Back to Blood"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "lymphatic-vessels",
+          "heading": "Collecting Vessels, Valves, and Lymph Propulsion"
+        }
+      ],
+      "immunitySlides": [
+        7,
+        8
+      ],
+      "anatomySlides": [
+        12
+      ],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-04",
+      "question": "What is lymph?",
+      "concept": "Define plasma, interstitial fluid and lymph by compartment",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "what-is-lymph",
+          "heading": "From Blood Plasma to Interstitial Fluid to Lymph"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "functions-and-fluid",
+          "heading": "Functions, Fluid Compartments, and Basic Terminology"
+        }
+      ],
+      "immunitySlides": [
+        3,
+        4
+      ],
+      "anatomySlides": [
+        4,
+        12
+      ],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-05",
+      "question": "What are the 3 lymphatic organs? What makes a lymphatic organ different from a lymphatic tissue?",
+      "concept": "Three encapsulated lymphoid organs in course classification vs nonencapsulated tissue",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "organs-and-tissues",
+          "heading": "Where Immune Cells Develop and Meet"
+        },
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "identification-roadmap",
+          "heading": "What You Should Be Able to Identify"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "organs-vs-tissues",
+          "heading": "Lymphoid Organs, Tissues, and Primary vs Secondary Sites"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "tonsils-and-malt",
+          "heading": "Tonsils, MALT, Peyer’s Patches, and Appendix"
+        }
+      ],
+      "immunitySlides": [
+        17
+      ],
+      "anatomySlides": [
+        12,
+        18
+      ],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-06",
+      "question": "What are the 2 major ducts and from where in the body do they collect lymph from?",
+      "concept": "Right lymphatic duct vs thoracic duct territories",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "one-way-transport",
+          "heading": "The One-Way Route Back to Blood"
+        },
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "identification-roadmap",
+          "heading": "What You Should Be Able to Identify"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "trunks-ducts",
+          "heading": "Lymphatic Trunks, Ducts, and Drainage Territories"
+        }
+      ],
+      "immunitySlides": [
+        9,
+        10,
+        11
+      ],
+      "anatomySlides": [
+        9
+      ],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-07",
+      "question": "What 3 trunks deliver lymph to the right lymphatic duct?  What 6 trunks deliver lymph to the thoracic duct (or cisterna chyli)?",
+      "concept": "Three trunks for right duct; six inputs listed for thoracic duct/cisterna chyli",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "one-way-transport",
+          "heading": "The One-Way Route Back to Blood"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "trunks-ducts",
+          "heading": "Lymphatic Trunks, Ducts, and Drainage Territories"
+        }
+      ],
+      "immunitySlides": [
+        9,
+        10,
+        11
+      ],
+      "anatomySlides": [
+        9
+      ],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-08",
+      "question": "Where do the thoracic and right lymphatic duct deliver lymph to the venous system (what veins)?",
+      "concept": "Venous returns at left and right jugulosubclavian venous angles",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "one-way-transport",
+          "heading": "The One-Way Route Back to Blood"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "trunks-ducts",
+          "heading": "Lymphatic Trunks, Ducts, and Drainage Territories"
+        }
+      ],
+      "immunitySlides": [
+        9,
+        10,
+        11
+      ],
+      "anatomySlides": [
+        9
+      ],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-09",
+      "question": "What are the 3 classes of lymphocytes? Which have specific defenses? What is their mode of defense? Which have nonspecific defense?",
+      "concept": "T, B and NK lymphocytes; adaptive versus innate mechanisms",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "immune-cells",
+          "heading": "Three Major Lymphocyte Classes"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "lymphopoiesis",
+          "heading": "Lymphopoiesis and the Three Lymphocyte Lineages"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "phagocytes-and-nk",
+          "heading": "Phagocytes, Natural Killer Cells, and Immunological Surveillance"
+        }
+      ],
+      "immunitySlides": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-10",
+      "question": "Discuss the derivation and distribution of lymphocytes (where lymphopoeisis takes place): Where do T-cells develop? What hormone (presence of) stimulates B-cell differentiation. What if it is not present?",
+      "concept": "Lymphopoiesis and T/B-cell developmental compartments; unresolved hormone wording",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "organs-and-tissues",
+          "heading": "Where Immune Cells Develop and Meet"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "lymphopoiesis",
+          "heading": "Lymphopoiesis and the Three Lymphocyte Lineages"
+        }
+      ],
+      "immunitySlides": [
+        16,
+        21,
+        22
+      ],
+      "anatomySlides": [
+        12,
+        17
+      ],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-11",
+      "question": "What happens in the germinal center?",
+      "concept": "Germinal centers and proliferating lymphocytes",
+      "sections": [
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "lymph-node",
+          "heading": "Lymph Node Microanatomy and Lymph Flow"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "tonsils-and-malt",
+          "heading": "Tonsils, MALT, Peyer’s Patches, and Appendix"
+        }
+      ],
+      "immunitySlides": [
+        19,
+        20
+      ],
+      "anatomySlides": [
+        8,
+        18
+      ],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-12",
+      "question": "What is the function of lymph nodes? Discuss the movement of lymph through them and how pathogens are attacked and destroyed.",
+      "concept": "Lymph-node filtration and spatial pathway through sinuses; B-cell cortex and T-cell paracortex",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "organs-and-tissues",
+          "heading": "Where Immune Cells Develop and Meet"
+        },
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "identification-roadmap",
+          "heading": "What You Should Be Able to Identify"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "lymph-node",
+          "heading": "Lymph Node Microanatomy and Lymph Flow"
+        }
+      ],
+      "immunitySlides": [
+        18,
+        19,
+        20
+      ],
+      "anatomySlides": [
+        6,
+        7,
+        8
+      ],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-13",
+      "question": "What is the function of the thymus? What cells help to maintain the blood-thymus barrier? What is function of blood-thymus barrier?  What is involution?",
+      "concept": "Thymus, blood-thymus barrier, reticular epithelial cells, involution",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "organs-and-tissues",
+          "heading": "Where Immune Cells Develop and Meet"
+        },
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "identification-roadmap",
+          "heading": "What You Should Be Able to Identify"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "thymus",
+          "heading": "Thymus: Architecture, T-Cell Maturation, and Involution"
+        }
+      ],
+      "immunitySlides": [
+        21,
+        22
+      ],
+      "anatomySlides": [
+        17
+      ],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-14",
+      "question": "What are the functions of the spleen?  Understand the pathway of blood flow through the spleen and how pathogens are attacked.",
+      "concept": "Spleen: red/white pulp, blood flow, immune function, RBC clearance",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "organs-and-tissues",
+          "heading": "Where Immune Cells Develop and Meet"
+        },
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "identification-roadmap",
+          "heading": "What You Should Be Able to Identify"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "spleen",
+          "heading": "Spleen: Blood Filtration and Red/White Pulp"
+        }
+      ],
+      "immunitySlides": [
+        23,
+        24,
+        25
+      ],
+      "anatomySlides": [
+        15,
+        16
+      ],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-15",
+      "question": "What are the 7 non-specific defenses and how do they work?",
+      "concept": "Exactly seven instructor-listed nonspecific defenses and their mechanisms",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "first-defense",
+          "heading": "The Immediate Defenses"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "innate-defense-framework",
+          "heading": "Seven Nonspecific Defenses and Their Functions"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "phagocytes-and-nk",
+          "heading": "Phagocytes, Natural Killer Cells, and Immunological Surveillance"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "interferons-complement",
+          "heading": "Interferons, Cytokines, Complement, and the MAC"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "inflammation-fever",
+          "heading": "Inflammation and Fever"
+        }
+      ],
+      "immunitySlides": [
+        26,
+        27,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-16",
+      "question": "How do NK cells kill an abnormal cell?",
+      "concept": "Natural killer recognition and perforin/granzyme-mediated cytotoxicity",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "first-defense",
+          "heading": "The Immediate Defenses"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "phagocytes-and-nk",
+          "heading": "Phagocytes, Natural Killer Cells, and Immunological Surveillance"
+        }
+      ],
+      "immunitySlides": [
+        15,
+        27,
+        28,
+        29
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-17",
+      "question": "What is inflammation and what are the cardinal signs and symptoms of inflammation?",
+      "concept": "Inflammation, classic four signs and fever",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "first-defense",
+          "heading": "The Immediate Defenses"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "inflammation-fever",
+          "heading": "Inflammation and Fever"
+        }
+      ],
+      "immunitySlides": [
+        30,
+        33,
+        34,
+        35
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-18",
+      "question": "What are the types of immunity?",
+      "concept": "Innate vs adaptive; active vs passive, natural vs induced acquired immunity",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "specific-and-memory",
+          "heading": "Specific Recognition and Immune Memory"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "innate-defense-framework",
+          "heading": "Seven Nonspecific Defenses and Their Functions"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "adaptive-immunity",
+          "heading": "Adaptive Immunity: Specificity, Memory, Tolerance, and Active/Passive Forms"
+        }
+      ],
+      "immunitySlides": [
+        36,
+        37,
+        38
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-19",
+      "question": "Contrast B-cell and T-cells. Compare antibody mediated immunity and cell mediated immunity (understand steps of antigen presentation and antibody production).",
+      "concept": "Cell-mediated vs humoral immunity, helper T-cell signaling and antibody production",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "immune-cells",
+          "heading": "Three Major Lymphocyte Classes"
+        },
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "specific-and-memory",
+          "heading": "Specific Recognition and Immune Memory"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "adaptive-immunity",
+          "heading": "Adaptive Immunity: Specificity, Memory, Tolerance, and Active/Passive Forms"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "mhc-class-ii",
+          "heading": "MHC Class II, Helper T Cells, and B-Cell Activation"
+        }
+      ],
+      "immunitySlides": [
+        13,
+        14,
+        38,
+        41,
+        43
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-20",
+      "question": "Understand the differences in Class I MHCs and Class II MHCS and what happens when those are recognized by other cells.",
+      "concept": "MHC class I vs class II: location, source of antigen, responding CD8/CD4 cells",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "specific-and-memory",
+          "heading": "Specific Recognition and Immune Memory"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "mhc-class-i",
+          "heading": "MHC Class I and Cytotoxic T-Cell Responses"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "mhc-class-ii",
+          "heading": "MHC Class II, Helper T Cells, and B-Cell Activation"
+        }
+      ],
+      "immunitySlides": [
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-21",
+      "question": "Which class of MHC tells the body that a cell is infected or abnormal? What is the fate of that cell?",
+      "concept": "MHC I peptide recognition by cytotoxic T cells and target-cell fate",
+      "sections": [
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "mhc-class-i",
+          "heading": "MHC Class I and Cytotoxic T-Cell Responses"
+        }
+      ],
+      "immunitySlides": [
+        39,
+        40,
+        41
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-22",
+      "question": "Which class of MHC tells the body that an antigen is dangerous and it needs to be destroyed? What is produced to destroy the antigen?",
+      "concept": "MHC II presentation to helper T cells and downstream immune activation",
+      "sections": [
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "mhc-class-ii",
+          "heading": "MHC Class II, Helper T Cells, and B-Cell Activation"
+        }
+      ],
+      "immunitySlides": [
+        39,
+        42,
+        43
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-23",
+      "question": "What type of cell activates B cells? What 2 types of cells are produced after activation and division? What do B-cells differentiate into before they can produce antibodies?",
+      "concept": "Activated helper T cells, B-cell proliferation, plasma cells and memory B cells",
+      "sections": [
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "mhc-class-ii",
+          "heading": "MHC Class II, Helper T Cells, and B-Cell Activation"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "antibodies",
+          "heading": "Antigens, Antibody Structure, Immunoglobulin Classes, and Effector Mechanisms"
+        }
+      ],
+      "immunitySlides": [
+        14,
+        43
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-24",
+      "question": "What is an antigen determinant site?",
+      "concept": "Antigenic determinant = epitope, binding of antibody variable regions",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "specific-and-memory",
+          "heading": "Specific Recognition and Immune Memory"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "antibodies",
+          "heading": "Antigens, Antibody Structure, Immunoglobulin Classes, and Effector Mechanisms"
+        }
+      ],
+      "immunitySlides": [
+        44
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-25",
+      "question": "What are the types of antibodies and their major function?",
+      "concept": "Immunoglobulin classes IgG, IgM, IgA, IgE, IgD and course functions",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "specific-and-memory",
+          "heading": "Specific Recognition and Immune Memory"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "antibodies",
+          "heading": "Antigens, Antibody Structure, Immunoglobulin Classes, and Effector Mechanisms"
+        }
+      ],
+      "immunitySlides": [
+        45,
+        46
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-26",
+      "question": "What is opsonization? What is neutralization?",
+      "concept": "Opsonization vs neutralization and other antibody effector actions",
+      "sections": [
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "interferons-complement",
+          "heading": "Interferons, Cytokines, Complement, and the MAC"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "antibodies",
+          "heading": "Antigens, Antibody Structure, Immunoglobulin Classes, and Effector Mechanisms"
+        }
+      ],
+      "immunitySlides": [
+        32,
+        47
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-27",
+      "question": "What is antibody titer? Contrast primary vs. secondary response",
+      "concept": "Antibody titer and primary vs secondary responses (time and magnitude)",
+      "sections": [
+        {
+          "article": "lymphoid-system-general-overview",
+          "section": "specific-and-memory",
+          "heading": "Specific Recognition and Immune Memory"
+        },
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "memory-and-conditions",
+          "heading": "Primary/Secondary Responses and Clinical Connections"
+        }
+      ],
+      "immunitySlides": [
+        37,
+        48,
+        49,
+        50
+      ],
+      "anatomySlides": [],
+      "status": "study-guide"
+    },
+    {
+      "id": "SG-28",
+      "question": "What is appendicitis? What is AIDS? What happens during an autoimmune disorder (disease)?",
+      "concept": "Appendicitis, HIV/AIDS, autoimmune disorders and given examples",
+      "sections": [
+        {
+          "article": "lymphoid-system-deep-dive",
+          "section": "memory-and-conditions",
+          "heading": "Primary/Secondary Responses and Clinical Connections"
+        }
+      ],
+      "immunitySlides": [
+        51
+      ],
+      "anatomySlides": [
+        19
+      ],
+      "status": "study-guide"
+    }
+  ]
+}

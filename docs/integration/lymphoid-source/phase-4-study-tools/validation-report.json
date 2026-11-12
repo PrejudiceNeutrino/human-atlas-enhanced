@@ -1,0 +1,99 @@
+{
+  "source": "Chapter 22 instructor slides, study guide and corresponding Stage 2/3 authored Learn readings",
+  "subjectId": "lymphoid",
+  "counts": {
+    "concepts": 206,
+    "multipleChoice": 104,
+    "fillInTheBlank": 66,
+    "flashcards": 117
+  },
+  "topics": 13,
+  "uniqueRecordIds": 493,
+  "questionTypeCounts": {
+    "mc": 104,
+    "fib": 66
+  },
+  "articleSectionReferences": 33,
+  "questionCountByTopic": {
+    "fluid": {
+      "mc": 8,
+      "fib": 5,
+      "cards": 9,
+      "terms": 14
+    },
+    "capillaries": {
+      "mc": 8,
+      "fib": 5,
+      "cards": 9,
+      "terms": 14
+    },
+    "drainage": {
+      "mc": 8,
+      "fib": 5,
+      "cards": 9,
+      "terms": 13
+    },
+    "nodes": {
+      "mc": 8,
+      "fib": 5,
+      "cards": 9,
+      "terms": 17
+    },
+    "lymphocytes": {
+      "mc": 8,
+      "fib": 5,
+      "cards": 9,
+      "terms": 18
+    },
+    "spleen": {
+      "mc": 8,
+      "fib": 5,
+      "cards": 9,
+      "terms": 15
+    },
+    "malt": {
+      "mc": 8,
+      "fib": 5,
+      "cards": 9,
+      "terms": 16
+    },
+    "innate": {
+      "mc": 8,
+      "fib": 5,
+      "cards": 9,
+      "terms": 15
+    },
+    "inflammation": {
+      "mc": 8,
+      "fib": 5,
+      "cards": 9,
+      "terms": 16
+    },
+    "complement": {
+      "mc": 8,
+      "fib": 5,
+      "cards": 9,
+      "terms": 15
+    },
+    "t-cell": {
+      "mc": 8,
+      "fib": 5,
+      "cards": 9,
+      "terms": 15
+    },
+    "antibody": {
+      "mc": 8,
+      "fib": 6,
+      "cards": 9,
+      "terms": 19
+    },
+    "memory": {
+      "mc": 8,
+      "fib": 5,
+      "cards": 9,
+      "terms": 19
+    }
+  },
+  "ambiguousInstructorPoint": "The study guide asks what hormone stimulates B-cell differentiation, but the provided slides do not identify a specific standard hormone. Do not auto-grade an invented answer.",
+  "sourceRefPolicy": "Related Learn sections and their slide references; not necessarily verbatim slide-level attribution."
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "lymphoid",
+  "visualizeTabId": "lymphoid-system-visualize",
+  "referenceArticleId": "lymphoid-system-deep-dive",
+  "auditStatus": "candidate-inventory-only",
+  "verifiedFromRepo": {
+    "source": "app/model-registry.ts",
+    "modelIds": [
+      "bp3d-male-4",
+      "female-study-v3",
+      "hra-female-v1.5"
+    ],
+    "systemId": "lymphatic",
+    "statement": "The registry lists lymphatic system support for these models. Individual concept IDs and mesh counts have NOT been verified from actual manifests."
+  },
+  "primarySystems": [
+    "lymphatic"
+  ],
+  "contextSystems": [
+    "arterial",
+    "venous",
+    "cardiac",
+    "skeletal"
+  ],
+  "candidates": [
+    {
+      "label": "Spleen",
+      "sectionId": "spleen",
+      "searchTerms": [
+        "spleen"
+      ],
+      "priority": "high",
+      "rationale": "Gross organ, strong 3D target",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Thymus",
+      "sectionId": "thymus",
+      "searchTerms": [
+        "thymus"
+      ],
+      "priority": "high",
+      "rationale": "Gross organ near mediastinum; may be absent in adult atlas",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Lymph nodes (cervical)",
+      "sectionId": "lymph-node",
+      "searchTerms": [
+        "cervical lymph nodes"
+      ],
+      "priority": "high",
+      "rationale": "Use only individually named nodes if actually represented",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Lymph nodes (axillary)",
+      "sectionId": "lymph-node",
+      "searchTerms": [
+        "axillary lymph nodes"
+      ],
+      "priority": "high",
+      "rationale": "Regional lymph node groups",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Lymph nodes (inguinal)",
+      "sectionId": "lymph-node",
+      "searchTerms": [
+        "inguinal lymph nodes"
+      ],
+      "priority": "high",
+      "rationale": "Regional lymph node groups",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Thoracic duct",
+      "sectionId": "trunks-ducts",
+      "searchTerms": [
+        "thoracic duct"
+      ],
+      "priority": "high",
+      "rationale": "Large collecting lymphatic duct",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Right lymphatic duct",
+      "sectionId": "trunks-ducts",
+      "searchTerms": [
+        "right lymphatic duct"
+      ],
+      "priority": "high",
+      "rationale": "Short right-sided terminal duct",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Cisterna chyli",
+      "sectionId": "trunks-ducts",
+      "searchTerms": [
+        "cisterna chyli"
+      ],
+      "priority": "medium",
+      "rationale": "Variable reservoir may be absent as an individual mesh",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Tonsils (palatine)",
+      "sectionId": "tonsils-and-malt",
+      "searchTerms": [
+        "palatine tonsil"
+      ],
+      "priority": "medium",
+      "rationale": "Grossly identifiable tissue near oropharynx",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Tonsil (pharyngeal)",
+      "sectionId": "tonsils-and-malt",
+      "searchTerms": [
+        "pharyngeal tonsil"
+      ],
+      "priority": "medium",
+      "rationale": "Nasopharyngeal tonsillar tissue",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Appendix",
+      "sectionId": "tonsils-and-malt",
+      "searchTerms": [
+        "vermiform appendix"
+      ],
+      "priority": "medium",
+      "rationale": "Gross organ useful for an immune-context view",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Red bone marrow",
+      "sectionId": "lymphopoiesis",
+      "searchTerms": [
+        "red bone marrow"
+      ],
+      "priority": "low",
+      "rationale": "Not usually modeled as a selectable compartment in gross-body scans",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Peyer’s patches",
+      "sectionId": "tonsils-and-malt",
+      "searchTerms": [
+        "Peyer patch"
+      ],
+      "priority": "low",
+      "rationale": "Microscopic aggregated nodules, use histology if no mesh",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Lymphatic capillaries",
+      "sectionId": "lymphatic-capillaries",
+      "searchTerms": [
+        "lymphatic capillary"
+      ],
+      "priority": "low",
+      "rationale": "Microscopic feature; likely not individually segmented",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Lymphatic vessels",
+      "sectionId": "lymphatic-vessels",
+      "searchTerms": [
+        "lymphatic vessel"
+      ],
+      "priority": "medium",
+      "rationale": "Atlas lymphatic system may contain major collectors only",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "B lymphocytes",
+      "sectionId": "lymphopoiesis",
+      "searchTerms": [
+        "B lymphocyte"
+      ],
+      "priority": "low",
+      "rationale": "Cells not represented in 3D gross anatomy atlas",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "T lymphocytes",
+      "sectionId": "lymphopoiesis",
+      "searchTerms": [
+        "T lymphocyte"
+      ],
+      "priority": "low",
+      "rationale": "Cells not represented in 3D gross anatomy atlas",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Natural killer cells",
+      "sectionId": "phagocytes-and-nk",
+      "searchTerms": [
+        "natural killer cell"
+      ],
+      "priority": "low",
+      "rationale": "Cells not represented in 3D gross anatomy atlas",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    },
+    {
+      "label": "Spleen red and white pulp",
+      "sectionId": "spleen",
+      "searchTerms": [
+        "white pulp"
+      ],
+      "priority": "low",
+      "rationale": "Microscopic tissue compartments; histology better",
+      "canonicalConceptId": null,
+      "representationStatus": "unverified-check-model-manifests"
+    }
+  ],
+  "implementationNotes": [
+    "Resolve candidates via the existing concept/representation index, not display-name guesses.",
+    "Do not claim a structure is selectable unless a validated canonical concept ID resolves to actual geometry for that model.",
+    "Do not borrow male anatomy as a fallback for female experimental geometry.",
+    "Microanatomy, cells, and soluble factors require histology/diagrams rather than a faux gross-anatomical 3D target.",
+    "Prioritize a default lymphatic-system scene and focusable gross structures, then add article View in 3D links only for verified targets."
+  ]
+}

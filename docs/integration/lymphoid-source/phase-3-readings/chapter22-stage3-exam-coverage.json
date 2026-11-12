@@ -1,0 +1,550 @@
+{
+  "studyGuide": "22-Study Guide.docx",
+  "scope": "Chapter 22 instructor objectives, source-supported editorial mapping; a mapping is not independent verification of every test answer",
+  "count": 28,
+  "articleId": "lymphoid-system-exam-cram",
+  "objectives": [
+    {
+      "id": "SG-01",
+      "question": "What are the functions of the lymphatic system?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "three-core-roles",
+          "title": "Three Core Roles"
+        }
+      ],
+      "lectureSlides": [
+        3,
+        4
+      ],
+      "anatomySlides": [
+        2,
+        3,
+        4,
+        20
+      ]
+    },
+    {
+      "id": "SG-02",
+      "question": "How do lymphatic capillaries differ from blood capillaries? Why does lymph only enter, but not exit lymph capillaries?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "fluid-and-capillaries",
+          "title": "Lymph, Interstitial Fluid, and Capillaries"
+        }
+      ],
+      "lectureSlides": [
+        4,
+        5,
+        6
+      ],
+      "anatomySlides": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": "SG-03",
+      "question": "Why do lymphatic vessels have valves?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "valves-and-lymph-propulsion",
+          "title": "Valves and Lymph Propulsion"
+        }
+      ],
+      "lectureSlides": [
+        7,
+        8
+      ],
+      "anatomySlides": [
+        12
+      ]
+    },
+    {
+      "id": "SG-04",
+      "question": "What is lymph?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "fluid-and-capillaries",
+          "title": "Lymph, Interstitial Fluid, and Capillaries"
+        }
+      ],
+      "lectureSlides": [
+        3,
+        4
+      ],
+      "anatomySlides": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": "SG-05",
+      "question": "What are the 3 lymphatic organs? What makes a lymphatic organ different from a lymphatic tissue?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "organs-versus-tissues",
+          "title": "Three Course-Defined Lymphoid Organs vs Tissues"
+        },
+        {
+          "id": "malt-and-tonsils",
+          "title": "Tonsils, Peyer's Patches, and MALT"
+        }
+      ],
+      "lectureSlides": [
+        17
+      ],
+      "anatomySlides": [
+        12,
+        18
+      ]
+    },
+    {
+      "id": "SG-06",
+      "question": "What are the 2 major ducts and from where in the body do they collect lymph from?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "ducts-trunks-and-drainage",
+          "title": "Right Duct, Thoracic Duct, and Trunks"
+        }
+      ],
+      "lectureSlides": [
+        9,
+        10,
+        11
+      ],
+      "anatomySlides": [
+        9
+      ]
+    },
+    {
+      "id": "SG-07",
+      "question": "What 3 trunks deliver lymph to the right lymphatic duct?  What 6 trunks deliver lymph to the thoracic duct (or cisterna chyli)?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "ducts-trunks-and-drainage",
+          "title": "Right Duct, Thoracic Duct, and Trunks"
+        }
+      ],
+      "lectureSlides": [
+        9,
+        10,
+        11
+      ],
+      "anatomySlides": [
+        9
+      ]
+    },
+    {
+      "id": "SG-08",
+      "question": "Where do the thoracic and right lymphatic duct deliver lymph to the venous system (what veins)?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "ducts-trunks-and-drainage",
+          "title": "Right Duct, Thoracic Duct, and Trunks"
+        }
+      ],
+      "lectureSlides": [
+        9,
+        10,
+        11
+      ],
+      "anatomySlides": [
+        9
+      ]
+    },
+    {
+      "id": "SG-09",
+      "question": "What are the 3 classes of lymphocytes? Which have specific defenses? What is their mode of defense? Which have nonspecific defense?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "lymphocyte-classes-and-development",
+          "title": "B Cells, T Cells, NK Cells, and Lymphopoiesis"
+        }
+      ],
+      "lectureSlides": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-10",
+      "question": "Discuss the derivation and distribution of lymphocytes (where lymphopoeisis takes place): Where do T-cells develop? What hormone (presence of) stimulates B-cell differentiation. What if it is not present?",
+      "reviewStatus": "requires-instructor-clarification",
+      "examCramSections": [
+        {
+          "id": "lymphocyte-classes-and-development",
+          "title": "B Cells, T Cells, NK Cells, and Lymphopoiesis"
+        },
+        {
+          "id": "thymus",
+          "title": "Thymus, Blood–Thymus Barrier, and Involution"
+        }
+      ],
+      "lectureSlides": [
+        16,
+        21,
+        22
+      ],
+      "anatomySlides": [
+        12,
+        17
+      ]
+    },
+    {
+      "id": "SG-11",
+      "question": "What happens in the germinal center?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "lymph-node-flow",
+          "title": "Lymph Node Flow and Identification"
+        },
+        {
+          "id": "malt-and-tonsils",
+          "title": "Tonsils, Peyer's Patches, and MALT"
+        }
+      ],
+      "lectureSlides": [
+        19,
+        20
+      ],
+      "anatomySlides": [
+        8,
+        18
+      ]
+    },
+    {
+      "id": "SG-12",
+      "question": "What is the function of lymph nodes? Discuss the movement of lymph through them and how pathogens are attacked and destroyed.",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "lymph-node-flow",
+          "title": "Lymph Node Flow and Identification"
+        }
+      ],
+      "lectureSlides": [
+        18,
+        19,
+        20
+      ],
+      "anatomySlides": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "SG-13",
+      "question": "What is the function of the thymus? What cells help to maintain the blood-thymus barrier? What is function of blood-thymus barrier?  What is involution?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "thymus",
+          "title": "Thymus, Blood–Thymus Barrier, and Involution"
+        }
+      ],
+      "lectureSlides": [
+        21,
+        22
+      ],
+      "anatomySlides": [
+        17
+      ]
+    },
+    {
+      "id": "SG-14",
+      "question": "What are the functions of the spleen?  Understand the pathway of blood flow through the spleen and how pathogens are attacked.",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "spleen",
+          "title": "Spleen: Red/White Pulp and Blood Path"
+        }
+      ],
+      "lectureSlides": [
+        23,
+        24,
+        25
+      ],
+      "anatomySlides": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "SG-15",
+      "question": "What are the 7 non-specific defenses and how do they work?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "seven-nonspecific-defenses",
+          "title": "Seven Nonspecific Defenses — Instructor's Exact List"
+        }
+      ],
+      "lectureSlides": [
+        26,
+        27,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-16",
+      "question": "How do NK cells kill an abnormal cell?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "nk-interferons-complement",
+          "title": "NK Cytotoxicity, Interferons, and Complement"
+        }
+      ],
+      "lectureSlides": [
+        15,
+        27,
+        28,
+        29
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-17",
+      "question": "What is inflammation and what are the cardinal signs and symptoms of inflammation?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "inflammation-and-fever",
+          "title": "Four Cardinal Signs, Inflammation, and Fever"
+        }
+      ],
+      "lectureSlides": [
+        30,
+        33,
+        34,
+        35
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-18",
+      "question": "What are the types of immunity?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "immunity-classifications",
+          "title": "Innate vs Adaptive; Active vs Passive Immunity"
+        }
+      ],
+      "lectureSlides": [
+        36,
+        37,
+        38
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-19",
+      "question": "Contrast B-cell and T-cells. Compare antibody mediated immunity and cell mediated immunity (understand steps of antigen presentation and antibody production).",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "lymphocyte-classes-and-development",
+          "title": "B Cells, T Cells, NK Cells, and Lymphopoiesis"
+        },
+        {
+          "id": "mhc-comparison",
+          "title": "MHC I/CD8 vs MHC II/CD4"
+        },
+        {
+          "id": "b-cells-and-immunoglobulins",
+          "title": "B-Cell Activation, Antibodies, and Five Ig Classes"
+        }
+      ],
+      "lectureSlides": [
+        13,
+        14,
+        38,
+        41,
+        43
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-20",
+      "question": "Understand the differences in Class I MHCs and Class II MHCS and what happens when those are recognized by other cells.",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "mhc-comparison",
+          "title": "MHC I/CD8 vs MHC II/CD4"
+        }
+      ],
+      "lectureSlides": [
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-21",
+      "question": "Which class of MHC tells the body that a cell is infected or abnormal? What is the fate of that cell?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "mhc-comparison",
+          "title": "MHC I/CD8 vs MHC II/CD4"
+        }
+      ],
+      "lectureSlides": [
+        39,
+        40,
+        41
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-22",
+      "question": "Which class of MHC tells the body that an antigen is dangerous and it needs to be destroyed? What is produced to destroy the antigen?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "mhc-comparison",
+          "title": "MHC I/CD8 vs MHC II/CD4"
+        },
+        {
+          "id": "b-cells-and-immunoglobulins",
+          "title": "B-Cell Activation, Antibodies, and Five Ig Classes"
+        }
+      ],
+      "lectureSlides": [
+        39,
+        42,
+        43
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-23",
+      "question": "What type of cell activates B cells? What 2 types of cells are produced after activation and division? What do B-cells differentiate into before they can produce antibodies?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "b-cells-and-immunoglobulins",
+          "title": "B-Cell Activation, Antibodies, and Five Ig Classes"
+        }
+      ],
+      "lectureSlides": [
+        14,
+        43
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-24",
+      "question": "What is an antigen determinant site?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "b-cells-and-immunoglobulins",
+          "title": "B-Cell Activation, Antibodies, and Five Ig Classes"
+        }
+      ],
+      "lectureSlides": [
+        44
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-25",
+      "question": "What are the types of antibodies and their major function?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "b-cells-and-immunoglobulins",
+          "title": "B-Cell Activation, Antibodies, and Five Ig Classes"
+        }
+      ],
+      "lectureSlides": [
+        45,
+        46
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-26",
+      "question": "What is opsonization? What is neutralization?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "nk-interferons-complement",
+          "title": "NK Cytotoxicity, Interferons, and Complement"
+        },
+        {
+          "id": "antibody-functions-and-memory",
+          "title": "Antibody Actions, Titer, and Secondary Response"
+        }
+      ],
+      "lectureSlides": [
+        32,
+        47
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-27",
+      "question": "What is antibody titer? Contrast primary vs. secondary response",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "antibody-functions-and-memory",
+          "title": "Antibody Actions, Titer, and Secondary Response"
+        }
+      ],
+      "lectureSlides": [
+        37,
+        48,
+        49,
+        50
+      ],
+      "anatomySlides": []
+    },
+    {
+      "id": "SG-28",
+      "question": "What is appendicitis? What is AIDS? What happens during an autoimmune disorder (disease)?",
+      "reviewStatus": "drafted-in-exam-cram",
+      "examCramSections": [
+        {
+          "id": "conditions-and-rapid-recall",
+          "title": "Diseases, Anatomy Checklist, and Rapid Recall"
+        }
+      ],
+      "lectureSlides": [
+        51
+      ],
+      "anatomySlides": [
+        19
+      ]
+    }
+  ]
+}

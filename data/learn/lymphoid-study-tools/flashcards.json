@@ -1,0 +1,4777 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "lymphoid",
+  "cards": [
+    {
+      "id": "fc-001",
+      "topicId": "fluid",
+      "front": "Why is the lymphatic system a circulatory partner rather than an independent closed blood loop?",
+      "back": "It collects filtered interstitial fluid and returns it to venous blood; unlike blood vessels, initial lymphatics begin blindly in tissues.",
+      "conceptIds": [
+        "lymphatic-system",
+        "lymph"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-002",
+      "topicId": "fluid",
+      "front": "Name the three major functions of lymphatic circulation.",
+      "back": "Fluid recovery; immune surveillance/response; transport of intestinal dietary fat.",
+      "conceptIds": [
+        "lymphatic-system"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-003",
+      "topicId": "fluid",
+      "front": "What is the difference between plasma, interstitial fluid, and lymph?",
+      "back": "They describe extracellular fluid in blood vessels, around tissue cells, and inside lymphatic vessels respectively.",
+      "conceptIds": [
+        "blood-plasma",
+        "interstitial-fluid",
+        "lymph"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-004",
+      "topicId": "fluid",
+      "front": "Why can obstruction of lymphatic drainage cause swelling?",
+      "back": "Fluid and macromolecules accumulate in the interstitium when lymphatic clearance is inadequate.",
+      "conceptIds": [
+        "lymphedema",
+        "edema"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-005",
+      "topicId": "fluid",
+      "front": "What is chyle and when does it occur?",
+      "back": "Chylomicron-rich intestinal lymph after absorption of dietary long-chain fats, often milky.",
+      "conceptIds": [
+        "chyle"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-006",
+      "topicId": "capillaries",
+      "front": "How can fluid enter initial lymphatics without freely leaking back out?",
+      "back": "Overlapping endothelial flaps favor one-way entry when interstitial pressure exceeds pressure inside the capillary.",
+      "conceptIds": [
+        "lymphatic-endothelial-flap"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-007",
+      "topicId": "capillaries",
+      "front": "What are anchoring filaments for?",
+      "back": "They tether initial lymphatic endothelium to tissue, helping prevent capillary collapse as interstitial pressure rises.",
+      "conceptIds": [
+        "anchoring-filament"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-008",
+      "topicId": "capillaries",
+      "front": "How do collecting vessels move lymph without a heart?",
+      "back": "One-way valves combine with skeletal-muscle compression, breathing, arterial movement, and intrinsic contractility.",
+      "conceptIds": [
+        "collecting-lymphatic-vessel",
+        "lymphatic-valve"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-009",
+      "topicId": "capillaries",
+      "front": "What is a lacteal and why was it relevant in Digestive?",
+      "back": "A villus lymphatic capillary taking up intestinal chylomicrons for delivery to venous blood.",
+      "conceptIds": [
+        "lacteal",
+        "chylomicron"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-010",
+      "topicId": "capillaries",
+      "front": "What is a lymphangion?",
+      "back": "A valve-bounded segment of a collecting lymphatic vessel whose smooth muscle can help propel lymph.",
+      "conceptIds": [
+        "lymphangion"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-011",
+      "topicId": "drainage",
+      "front": "Which body regions belong to the right lymphatic duct's usual drainage territory?",
+      "back": "Right head and neck, right upper limb, and right thorax.",
+      "conceptIds": [
+        "right-lymphatic-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-012",
+      "topicId": "drainage",
+      "front": "What drains into the thoracic duct?",
+      "back": "Lower body and abdomen/pelvis from both sides, plus left head/neck, left arm, and left thorax.",
+      "conceptIds": [
+        "thoracic-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-013",
+      "topicId": "drainage",
+      "front": "Name the six named trunks associated with thoracic duct/cisterna chyli in the lecture.",
+      "back": "Right and left lumbar; intestinal; left jugular; left subclavian; left bronchomediastinal.",
+      "conceptIds": [
+        "lumbar-trunk",
+        "intestinal-trunk",
+        "thoracic-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-014",
+      "topicId": "drainage",
+      "front": "Name the three right duct trunks.",
+      "back": "Right jugular, right subclavian, right bronchomediastinal.",
+      "conceptIds": [
+        "right-lymphatic-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-015",
+      "topicId": "drainage",
+      "front": "Where are the two major lymphatic ducts returned to blood?",
+      "back": "Near the right and left venous angles, respectively (junctions of internal jugular and subclavian veins).",
+      "conceptIds": [
+        "right-venous-angle",
+        "left-venous-angle"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-016",
+      "topicId": "nodes",
+      "front": "Trace the physical route of lymph through a lymph node.",
+      "back": "Afferent lymphatics → subcapsular sinus → cortical/trabecular and medullary sinuses → efferent lymphatic at the hilum.",
+      "conceptIds": [
+        "lymph-node-sinus-pathway"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-017",
+      "topicId": "nodes",
+      "front": "Why is it inaccurate to say fluid literally flows through B cells, then T cells?",
+      "back": "Those are regional immune-cell zones; lymph flows through sinus channels adjacent to them.",
+      "conceptIds": [
+        "lymph-node-paracortex",
+        "lymph-node-outer-cortex"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-018",
+      "topicId": "nodes",
+      "front": "What does a lymph node's germinal center do?",
+      "back": "Supports activated B-cell proliferation and processes such as affinity maturation and class switching.",
+      "conceptIds": [
+        "germinal-center"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-019",
+      "topicId": "nodes",
+      "front": "Where are B and T cells concentrated within a node?",
+      "back": "B-cell follicles in outer cortex; T-cell-rich paracortex (deep cortex).",
+      "conceptIds": [
+        "lymph-node-outer-cortex",
+        "lymph-node-paracortex"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-020",
+      "topicId": "nodes",
+      "front": "How can lymphocytes get into a lymph node without traveling in incoming lymph?",
+      "back": "Many enter from blood through high endothelial venules.",
+      "conceptIds": [
+        "high-endothelial-venule"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-021",
+      "topicId": "lymphocytes",
+      "front": "Where do B cells and T cells mature, respectively?",
+      "back": "B cells in bone marrow; T cells in thymus.",
+      "conceptIds": [
+        "b-lymphocyte",
+        "t-lymphocyte"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphopoiesis",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymphocyte-classes-and-development",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              21
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-022",
+      "topicId": "lymphocytes",
+      "front": "Which lymphocyte lineage is predominantly innate rather than antigen-specific adaptive?",
+      "back": "Natural killer (NK) cells.",
+      "conceptIds": [
+        "natural-killer-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphopoiesis",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymphocyte-classes-and-development",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              21
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-023",
+      "topicId": "lymphocytes",
+      "front": "Why do developing thymocytes undergo both positive and negative selection?",
+      "back": "Positive selection establishes useful self-MHC recognition; negative selection reduces dangerously strong self-reactivity.",
+      "conceptIds": [
+        "positive-selection",
+        "negative-selection"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-024",
+      "topicId": "lymphocytes",
+      "front": "What creates and supports the blood–thymus barrier?",
+      "back": "Cortical thymic epithelial cell networks and associated blood-vessel barrier structures help shield immature thymocytes.",
+      "conceptIds": [
+        "blood-thymus-barrier",
+        "thymic-epithelial-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-025",
+      "topicId": "lymphocytes",
+      "front": "Why should the study-guide B-cell hormone question be flagged?",
+      "back": "The lecture identifies thymosin-related signals for T-cell maturation, not a single standard required hormone for B-cell differentiation. B-cell maturation normally occurs in bone marrow.",
+      "conceptIds": [
+        "thymosin",
+        "b-lymphocyte"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphopoiesis",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymphocyte-classes-and-development",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              21
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-026",
+      "topicId": "spleen",
+      "front": "How do spleen and lymph nodes differ in what they filter?",
+      "back": "Spleen filters blood and monitors blood-borne antigen; lymph nodes filter lymph from tissues.",
+      "conceptIds": [
+        "spleen",
+        "lymph-node"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-027",
+      "topicId": "spleen",
+      "front": "Contrast splenic red pulp with white pulp.",
+      "back": "Red pulp filters RBCs and clears damaged cells; white pulp contains lymphocytes that respond to blood-borne antigens.",
+      "conceptIds": [
+        "splenic-red-pulp",
+        "splenic-white-pulp"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-028",
+      "topicId": "spleen",
+      "front": "Why is the spleen vulnerable in abdominal trauma?",
+      "back": "It is highly vascular, so rupture can produce serious internal bleeding and circulatory shock.",
+      "conceptIds": [
+        "spleen"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-029",
+      "topicId": "spleen",
+      "front": "Why is splenectomy linked to risk from encapsulated bacteria?",
+      "back": "The spleen is especially important for filtering and mounting responses to certain encapsulated blood-borne microbes.",
+      "conceptIds": [
+        "splenectomy",
+        "encapsulated-bacteria"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-030",
+      "topicId": "spleen",
+      "front": "Describe the lecture's simplified route of splenic blood flow.",
+      "back": "Splenic artery → branching/trabecular and central arteries → red pulp/sinusoids → venous drainage → splenic vein.",
+      "conceptIds": [
+        "splenic-artery",
+        "splenic-vein"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-031",
+      "topicId": "malt",
+      "front": "What distinguishes primary from secondary lymphoid organs?",
+      "back": "Primary sites produce/mature lymphocytes (marrow, thymus); secondary sites coordinate antigen encounters (nodes, spleen, mucosal tissues).",
+      "conceptIds": [
+        "primary-lymphoid-organ",
+        "secondary-lymphoid-organ"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "organs-vs-tissues",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              11,
+              12,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "organs-versus-tissues",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              18
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-032",
+      "topicId": "malt",
+      "front": "Name the professor's three encapsulated lymphoid organs.",
+      "back": "Lymph nodes, thymus, and spleen.",
+      "conceptIds": [
+        "lymphoid-organ"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "organs-vs-tissues",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              11,
+              12,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "organs-versus-tissues",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              18
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-033",
+      "topicId": "malt",
+      "front": "Where are the palatine, pharyngeal, and lingual tonsils?",
+      "back": "Palatine at oropharyngeal sides, pharyngeal in nasopharynx, lingual at base of tongue.",
+      "conceptIds": [
+        "palatine-tonsil",
+        "pharyngeal-tonsil",
+        "lingual-tonsil"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "tonsils-and-malt",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "malt-and-tonsils",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-034",
+      "topicId": "malt",
+      "front": "What is MALT?",
+      "back": "Mucosa-associated lymphoid tissue: organized immune tissue monitoring potential pathogens at mucosal surfaces.",
+      "conceptIds": [
+        "mucosa-associated-lymphoid-tissue"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "tonsils-and-malt",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "malt-and-tonsils",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-035",
+      "topicId": "malt",
+      "front": "What are Peyer's patches and what do M cells do nearby?",
+      "back": "Peyer's patches are ileal lymphoid aggregates; nearby M cells sample luminal antigens for mucosal immune tissue.",
+      "conceptIds": [
+        "peyer-s-patch",
+        "microfold-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "tonsils-and-malt",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "malt-and-tonsils",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-036",
+      "topicId": "innate",
+      "front": "List the exact seven nonspecific defense categories in the lecture.",
+      "back": "Physical barriers, phagocytes, immunological surveillance, interferons, complement, inflammation, fever.",
+      "conceptIds": [
+        "innate-immunity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "innate-defense-framework",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30,
+              36,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "seven-nonspecific-defenses",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-037",
+      "topicId": "innate",
+      "front": "How do NK cells differ from antigen-specific cytotoxic T cells?",
+      "back": "NK cells use innate activating/inhibitory cues; CD8 T cells recognize specific peptides presented by MHC I.",
+      "conceptIds": [
+        "natural-killer-cell",
+        "cd8-t-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphopoiesis",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymphocyte-classes-and-development",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              21
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-038",
+      "topicId": "innate",
+      "front": "What is the perforin/granzyme mechanism?",
+      "back": "Cytotoxic cells release perforin to aid granzyme access and granzymes trigger apoptosis.",
+      "conceptIds": [
+        "perforin",
+        "granzyme"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "phagocytes-and-nk",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-039",
+      "topicId": "innate",
+      "front": "Name three major phagocytic or antigen-capturing innate cells.",
+      "back": "Neutrophils, macrophages, dendritic cells (with related monocyte-derived cells).",
+      "conceptIds": [
+        "neutrophil",
+        "macrophage",
+        "dendritic-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "innate-defense-framework",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30,
+              36,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "seven-nonspecific-defenses",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-040",
+      "topicId": "innate",
+      "front": "What is missing-self recognition?",
+      "back": "Some NK cells respond when a target loses normal inhibitory MHC I signals, often alongside other stress cues.",
+      "conceptIds": [
+        "missing-self-recognition"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "innate-defense-framework",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30,
+              36,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "seven-nonspecific-defenses",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-041",
+      "topicId": "inflammation",
+      "front": "What are the instructor's four cardinal signs of inflammation in Latin and English?",
+      "back": "Rubor = redness; calor = heat; tumor = swelling; dolor = pain.",
+      "conceptIds": [
+        "rubor",
+        "calor",
+        "tumor-inflammation",
+        "dolor"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-042",
+      "topicId": "inflammation",
+      "front": "Why can inflammation cause both redness and swelling?",
+      "back": "Vasodilation increases local perfusion; increased vascular permeability lets more fluid enter tissue.",
+      "conceptIds": [
+        "vasodilation",
+        "vascular-permeability"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-043",
+      "topicId": "inflammation",
+      "front": "What is the role of mast-cell histamine?",
+      "back": "It can promote vasodilation and increased microvascular permeability during inflammation and allergy.",
+      "conceptIds": [
+        "mast-cell",
+        "histamine"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-044",
+      "topicId": "inflammation",
+      "front": "How do leukocytes travel from blood to inflamed tissue?",
+      "back": "Adhesion and extravasation/diapedesis followed by chemotaxis along chemical gradients.",
+      "conceptIds": [
+        "diapedesis",
+        "chemotaxis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-045",
+      "topicId": "inflammation",
+      "front": "How does fever differ from passive overheating?",
+      "back": "Fever involves a regulated increase in the hypothalamic set point mediated in part through pyrogens and prostaglandin E2.",
+      "conceptIds": [
+        "fever",
+        "pyrogen"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-046",
+      "topicId": "complement",
+      "front": "What are the three principal outcomes of complement activation?",
+      "back": "Opsonization (C3b), inflammation/recruitment (e.g., C3a/C5a), and membrane attack complex pore formation.",
+      "conceptIds": [
+        "complement-system"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-047",
+      "topicId": "complement",
+      "front": "What is the membrane attack complex made to do?",
+      "back": "Assemble terminal complement proteins into pores in susceptible membranes.",
+      "conceptIds": [
+        "membrane-attack-complex"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-048",
+      "topicId": "complement",
+      "front": "How does opsonization differ from neutralization?",
+      "back": "Opsonization tags targets for phagocytosis; neutralization blocks attachment or toxic action.",
+      "conceptIds": [
+        "opsonization",
+        "neutralization"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-049",
+      "topicId": "complement",
+      "front": "What do antiviral interferons do to neighboring cells?",
+      "back": "Induce expression of antiviral defense proteins and states that can inhibit viral replication.",
+      "conceptIds": [
+        "type-i-interferon"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-050",
+      "topicId": "complement",
+      "front": "How can antibody binding recruit complement?",
+      "back": "Antigen-bound antibodies can initiate the classical complement pathway.",
+      "conceptIds": [
+        "classical-complement-pathway"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-051",
+      "topicId": "t-cell",
+      "front": "The high-yield MHC/T-cell pairing?",
+      "back": "MHC I → CD8 cytotoxic T cells; MHC II → CD4 helper T cells.",
+      "conceptIds": [
+        "mhc-class-i",
+        "mhc-class-ii"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-ii",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              42,
+              43
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-052",
+      "topicId": "t-cell",
+      "front": "Why does normal expression of MHC I not mean a cell is infected?",
+      "back": "Nearly all nucleated cells display MHC I routinely; the peptide presented and T-cell response determine whether a target is recognized.",
+      "conceptIds": [
+        "mhc-class-i"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-053",
+      "topicId": "t-cell",
+      "front": "What is a professional antigen-presenting cell?",
+      "back": "A cell such as a dendritic cell, macrophage, or B cell capable of displaying peptide on MHC II to CD4 T cells.",
+      "conceptIds": [
+        "antigen-presenting-cell",
+        "mhc-class-ii"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-ii",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              42,
+              43
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-054",
+      "topicId": "t-cell",
+      "front": "Why is costimulation important for naive T-cell activation?",
+      "back": "Full activation often requires additional signals beyond TCR binding, reducing inappropriate responses.",
+      "conceptIds": [
+        "costimulation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-055",
+      "topicId": "t-cell",
+      "front": "How do helper and cytotoxic T cells differ?",
+      "back": "CD4 helpers orchestrate responses via signaling/contact; CD8 cytotoxic cells kill infected or abnormal targets.",
+      "conceptIds": [
+        "cd4-helper-t-cell",
+        "cd8-t-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-ii",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              42,
+              43
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-056",
+      "topicId": "antibody",
+      "front": "Compare what plasma and memory B cells do.",
+      "back": "Plasma cells secrete antibodies; memory B cells persist for future antigen encounters.",
+      "conceptIds": [
+        "plasma-cell",
+        "memory-b-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-ii",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              42,
+              43
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-057",
+      "topicId": "antibody",
+      "front": "What does an antibody's variable region do?",
+      "back": "Forms antigen-binding specificity; the constant Fc-associated regions help recruit effector functions.",
+      "conceptIds": [
+        "antibody-variable-region",
+        "fc-region"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-058",
+      "topicId": "antibody",
+      "front": "Give a one-line function for each antibody class.",
+      "back": "IgG: major serum/systemic; IgM: early response; IgA: secretions; IgE: allergy/parasites; IgD: B-cell surface receptor.",
+      "conceptIds": [
+        "igg",
+        "igm",
+        "iga",
+        "ige",
+        "igd"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-059",
+      "topicId": "antibody",
+      "front": "Why doesn't binding of antibody to antigen always immediately destroy it?",
+      "back": "Binding may neutralize or tag the target, while phagocytes, complement, or other effectors carry out clearance.",
+      "conceptIds": [
+        "antibody",
+        "opsonization"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-060",
+      "topicId": "antibody",
+      "front": "What are class switching and affinity maturation?",
+      "back": "Activated B cells can change isotype (constant region) and select variants with stronger antigen-binding affinity.",
+      "conceptIds": [
+        "class-switch-recombination",
+        "affinity-maturation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-061",
+      "topicId": "memory",
+      "front": "Explain active versus passive immunity.",
+      "back": "Active: recipient makes an adaptive response and can form memory; passive: antibodies are transferred for immediate but generally temporary protection.",
+      "conceptIds": [
+        "active-immunity",
+        "passive-immunity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-062",
+      "topicId": "memory",
+      "front": "What distinguishes a primary from a secondary antibody response?",
+      "back": "Initial response often has a delay; memory response to antigen can be faster and stronger.",
+      "conceptIds": [
+        "primary-immune-response",
+        "secondary-immune-response"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-063",
+      "topicId": "memory",
+      "front": "What is an antibody titer?",
+      "back": "A measure of antigen-specific antibody amount or activity, often determined with dilution assays.",
+      "conceptIds": [
+        "antibody-titer"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-064",
+      "topicId": "memory",
+      "front": "How does vaccination exploit adaptive immunity?",
+      "back": "It exposes the immune system to antigen or its expression so memory can form without requiring the corresponding natural disease.",
+      "conceptIds": [
+        "vaccination",
+        "immune-memory"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-065",
+      "topicId": "memory",
+      "front": "How does HIV affect adaptive defense?",
+      "back": "It infects CD4 T cells, and progressive CD4 depletion/dysfunction impairs coordination of immune responses.",
+      "conceptIds": [
+        "hiv",
+        "cd4-helper-t-cell"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "conditions-and-rapid-recall",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              11,
+              13,
+              14,
+              15,
+              16,
+              17,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-ii",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              42,
+              43
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-066",
+      "topicId": "fluid",
+      "front": "Define: Interstitial fluid",
+      "back": "Extracellular fluid occupying spaces between tissue cells before entering lymphatic vessels.",
+      "conceptIds": [
+        "interstitial-fluid"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-067",
+      "topicId": "fluid",
+      "front": "Define: Lymph",
+      "back": "Interstitial fluid after it has entered a lymphatic vessel, generally containing fewer plasma proteins than blood plasma.",
+      "conceptIds": [
+        "lymph"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-068",
+      "topicId": "fluid",
+      "front": "Define: Edema",
+      "back": "Excess fluid accumulation in interstitial tissues, producing swelling.",
+      "conceptIds": [
+        "edema"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-069",
+      "topicId": "fluid",
+      "front": "Define: Chyle",
+      "back": "Lipid-rich lymph originating in intestinal lacteals after absorption of a fatty meal.",
+      "conceptIds": [
+        "chyle"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "functions-and-fluid",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "three-core-roles",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4
+            ],
+            "Lymphoid - Copy.pptx": [
+              2,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-070",
+      "topicId": "capillaries",
+      "front": "Define: Initial lymphatic capillary",
+      "back": "Blind-ended, highly permeable small lymphatic vessel that takes in interstitial fluid and particulate material.",
+      "conceptIds": [
+        "initial-lymphatic-capillary"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-071",
+      "topicId": "capillaries",
+      "front": "Define: Anchoring filament",
+      "back": "Connective-tissue attachment that helps keep a lymphatic capillary open as neighboring tissue swells.",
+      "conceptIds": [
+        "anchoring-filament"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-072",
+      "topicId": "capillaries",
+      "front": "Define: Lymphangion",
+      "back": "Segment of a collecting lymphatic vessel between consecutive valves that can contract to propel lymph.",
+      "conceptIds": [
+        "lymphangion"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-073",
+      "topicId": "capillaries",
+      "front": "Define: Lacteal",
+      "back": "Specialized lymphatic capillary within an intestinal villus that takes up chylomicrons after dietary fat absorption.",
+      "conceptIds": [
+        "lacteal"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphatic-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "fluid-and-capillaries",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "Lymphoid - Copy.pptx": [
+              3,
+              4,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-074",
+      "topicId": "drainage",
+      "front": "Define: Jugular trunk",
+      "back": "Lymphatic trunk draining much of the head and neck on its respective side.",
+      "conceptIds": [
+        "jugular-trunk"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-075",
+      "topicId": "drainage",
+      "front": "Define: Bronchomediastinal trunk",
+      "back": "Lymphatic trunk draining portions of the thorax, including thoracic viscera and associated structures.",
+      "conceptIds": [
+        "bronchomediastinal-trunk"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-076",
+      "topicId": "drainage",
+      "front": "Define: Cisterna chyli",
+      "back": "Dilated lymphatic reservoir near the start of the thoracic duct, typically receiving lumbar and intestinal lymphatic trunks.",
+      "conceptIds": [
+        "cisterna-chyli"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-077",
+      "topicId": "drainage",
+      "front": "Define: Left venous angle",
+      "back": "Junction of left internal jugular and left subclavian veins, a usual termination of the thoracic duct.",
+      "conceptIds": [
+        "left-venous-angle"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "trunks-ducts",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "ducts-trunks-and-drainage",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              9,
+              10,
+              11
+            ],
+            "Lymphoid - Copy.pptx": [
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-078",
+      "topicId": "nodes",
+      "front": "Define: Subcapsular sinus",
+      "back": "Lymph-filled space immediately deep to the lymph node capsule; receives afferent lymph.",
+      "conceptIds": [
+        "subcapsular-sinus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-079",
+      "topicId": "nodes",
+      "front": "Define: Germinal center",
+      "back": "Activated B-cell region in a secondary follicle where proliferation and affinity maturation occur.",
+      "conceptIds": [
+        "germinal-center"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-080",
+      "topicId": "nodes",
+      "front": "Define: Lymph node paracortex",
+      "back": "Deep cortical area enriched in T lymphocytes and specialized venules.",
+      "conceptIds": [
+        "lymph-node-paracortex"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-081",
+      "topicId": "nodes",
+      "front": "Define: High endothelial venule",
+      "back": "Specialized blood vessel in lymphoid tissue allowing many circulating lymphocytes to enter a lymph node from blood.",
+      "conceptIds": [
+        "high-endothelial-venule"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymph-node",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8,
+              18
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymph-node-flow",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              18,
+              19,
+              20
+            ],
+            "Lymphoid - Copy.pptx": [
+              6,
+              7,
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-082",
+      "topicId": "lymphocytes",
+      "front": "Define: Lymphopoiesis",
+      "back": "Production and development of lymphocytes from hematopoietic precursor cells.",
+      "conceptIds": [
+        "lymphopoiesis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "lymphopoiesis",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "Lymphoid - Copy.pptx": [
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "lymphocyte-classes-and-development",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              21
+            ],
+            "Lymphoid - Copy.pptx": [
+              12,
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-083",
+      "topicId": "lymphocytes",
+      "front": "Define: Thymocyte",
+      "back": "Immature developing T lymphocyte inside the thymus.",
+      "conceptIds": [
+        "thymocyte"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-084",
+      "topicId": "lymphocytes",
+      "front": "Define: Hassall corpuscle",
+      "back": "Concentric whorl of thymic epithelial cells in the thymic medulla.",
+      "conceptIds": [
+        "hassall-corpuscle"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-085",
+      "topicId": "lymphocytes",
+      "front": "Define: Thymic involution",
+      "back": "Age-associated shrinkage and replacement of much thymic lymphoid tissue by fatty/connective tissue.",
+      "conceptIds": [
+        "thymic-involution"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "thymus",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              21,
+              22
+            ],
+            "Lymphoid - Copy.pptx": [
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-086",
+      "topicId": "spleen",
+      "front": "Define: Splenic white pulp",
+      "back": "Immune-cell-rich regions surrounding branches of splenic arteries, involved in recognition of blood-borne antigens.",
+      "conceptIds": [
+        "splenic-white-pulp"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-087",
+      "topicId": "spleen",
+      "front": "Define: Splenic red pulp",
+      "back": "Blood-rich splenic tissue that filters circulating blood and removes damaged erythrocytes.",
+      "conceptIds": [
+        "splenic-red-pulp"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-088",
+      "topicId": "spleen",
+      "front": "Define: Splenic hilum",
+      "back": "Visceral-surface indentation where the splenic artery and vein enter or leave.",
+      "conceptIds": [
+        "splenic-hilum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-089",
+      "topicId": "spleen",
+      "front": "Define: Splenectomy",
+      "back": "Surgical removal of the spleen, potentially increasing susceptibility to certain invasive infections.",
+      "conceptIds": [
+        "splenectomy"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "spleen",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              23,
+              24,
+              25
+            ],
+            "Lymphoid - Copy.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-090",
+      "topicId": "malt",
+      "front": "Define: Pharyngeal tonsil",
+      "back": "Tonsillar lymphoid tissue on the roof/posterior wall of the nasopharynx, often called the adenoid.",
+      "conceptIds": [
+        "pharyngeal-tonsil"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "tonsils-and-malt",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "malt-and-tonsils",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-091",
+      "topicId": "malt",
+      "front": "Define: Peyer's patch",
+      "back": "Aggregated lymphoid follicles, especially in the ileum, supporting intestinal immune surveillance.",
+      "conceptIds": [
+        "peyer-s-patch"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "tonsils-and-malt",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "malt-and-tonsils",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-092",
+      "topicId": "malt",
+      "front": "Define: Mucosa-associated lymphoid tissue",
+      "back": "Lymphoid tissue positioned at mucosal surfaces to monitor antigens arriving through the respiratory, gastrointestinal, or related tracts.",
+      "conceptIds": [
+        "mucosa-associated-lymphoid-tissue"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "tonsils-and-malt",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "malt-and-tonsils",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-093",
+      "topicId": "malt",
+      "front": "Define: Waldeyer's ring",
+      "back": "Ring of tonsillar lymphoid tissue surrounding entry to the pharynx.",
+      "conceptIds": [
+        "waldeyer-s-ring"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "tonsils-and-malt",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "malt-and-tonsils",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              17
+            ],
+            "Lymphoid - Copy.pptx": [
+              13,
+              14,
+              18,
+              19
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-094",
+      "topicId": "innate",
+      "front": "Define: Phagocytosis",
+      "back": "Engulfment and intracellular digestion of particles, pathogens, or cellular debris.",
+      "conceptIds": [
+        "phagocytosis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "innate-defense-framework",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30,
+              36,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "seven-nonspecific-defenses",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-095",
+      "topicId": "innate",
+      "front": "Define: Natural killer cytotoxicity",
+      "back": "Elimination of certain abnormal cells by NK-cell granule release and other killing pathways.",
+      "conceptIds": [
+        "natural-killer-cytotoxicity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "innate-defense-framework",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30,
+              36,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "seven-nonspecific-defenses",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-096",
+      "topicId": "innate",
+      "front": "Define: Perforin",
+      "back": "Cytotoxic-granule protein that helps granzymes reach a target cell to initiate death.",
+      "conceptIds": [
+        "perforin"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "phagocytes-and-nk",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-097",
+      "topicId": "innate",
+      "front": "Define: Apoptosis",
+      "back": "Controlled programmed cell death that can remove damaged, infected, or dangerous cells.",
+      "conceptIds": [
+        "apoptosis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "innate-defense-framework",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30,
+              36,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "seven-nonspecific-defenses",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              26,
+              27,
+              30
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-098",
+      "topicId": "inflammation",
+      "front": "Define: Rubor",
+      "back": "Redness, a classic cardinal sign of inflammation primarily associated with increased local blood flow.",
+      "conceptIds": [
+        "rubor"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-099",
+      "topicId": "inflammation",
+      "front": "Define: Calor",
+      "back": "Heat, a classic cardinal sign of inflammation associated with increased local blood flow.",
+      "conceptIds": [
+        "calor"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-100",
+      "topicId": "inflammation",
+      "front": "Define: Tumor (inflammation)",
+      "back": "Swelling, a classic sign of inflammation associated with increased vascular permeability and fluid movement into tissue.",
+      "conceptIds": [
+        "tumor-inflammation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-101",
+      "topicId": "inflammation",
+      "front": "Define: Dolor",
+      "back": "Pain, a classic cardinal sign of inflammation due to inflammatory mediators and tissue pressure/injury.",
+      "conceptIds": [
+        "dolor"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "inflammation-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              33,
+              34,
+              35
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "inflammation-and-fever",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              33,
+              34,
+              35
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-102",
+      "topicId": "complement",
+      "front": "Define: C3b",
+      "back": "Complement fragment that helps coat pathogens for phagocytosis, a form of opsonization.",
+      "conceptIds": [
+        "c3b"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-103",
+      "topicId": "complement",
+      "front": "Define: C5a",
+      "back": "Potent complement inflammatory and chemotactic mediator.",
+      "conceptIds": [
+        "c5a"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-104",
+      "topicId": "complement",
+      "front": "Define: Membrane attack complex",
+      "back": "Complement protein assembly that can form pores in susceptible target membranes.",
+      "conceptIds": [
+        "membrane-attack-complex"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-105",
+      "topicId": "complement",
+      "front": "Define: Opsonization",
+      "back": "Coating a target with molecules such as IgG or C3b to promote phagocytic recognition and uptake.",
+      "conceptIds": [
+        "opsonization"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              30,
+              31,
+              32,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "nk-interferons-complement",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              15,
+              28,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-106",
+      "topicId": "t-cell",
+      "front": "Define: MHC class I",
+      "back": "Peptide-presenting molecule expressed by nearly all nucleated cells and recognized by CD8 T cells.",
+      "conceptIds": [
+        "mhc-class-i"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-107",
+      "topicId": "t-cell",
+      "front": "Define: MHC class II",
+      "back": "Peptide-presenting molecule normally concentrated on professional antigen-presenting cells and recognized by CD4 T cells.",
+      "conceptIds": [
+        "mhc-class-ii"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-ii",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              42,
+              43
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-108",
+      "topicId": "t-cell",
+      "front": "Define: Costimulation",
+      "back": "Additional activating signal often required along with T-cell antigen recognition to initiate a full naive T-cell response.",
+      "conceptIds": [
+        "costimulation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-109",
+      "topicId": "t-cell",
+      "front": "Define: Antigen presentation",
+      "back": "Display of processed antigenic fragments by MHC molecules for T-cell recognition.",
+      "conceptIds": [
+        "antigen-presentation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "mhc-class-i",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "mhc-comparison",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-110",
+      "topicId": "antibody",
+      "front": "Define: Epitope",
+      "back": "Specific antigenic site recognized by an antibody or immune receptor; for antibodies often a surface molecular feature.",
+      "conceptIds": [
+        "epitope"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-111",
+      "topicId": "antibody",
+      "front": "Define: IgG",
+      "back": "Major serum antibody class that supports neutralization, opsonization, and several other protective functions.",
+      "conceptIds": [
+        "igg"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-112",
+      "topicId": "antibody",
+      "front": "Define: IgM",
+      "back": "Antibody class typically secreted early during a primary response; secreted IgM often forms pentamers.",
+      "conceptIds": [
+        "igm"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-113",
+      "topicId": "antibody",
+      "front": "Define: IgA",
+      "back": "Antibody class prominent in mucosal secretions such as saliva, tears, and intestinal mucus.",
+      "conceptIds": [
+        "iga"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "antibodies",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "b-cells-and-immunoglobulins",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              14,
+              43,
+              44,
+              45,
+              46
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-114",
+      "topicId": "memory",
+      "front": "Define: Active immunity",
+      "back": "Protection generated by an individual's own antigen-specific immune response.",
+      "conceptIds": [
+        "active-immunity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-115",
+      "topicId": "memory",
+      "front": "Define: Passive immunity",
+      "back": "Protection provided by transferred antibodies without the recipient initially generating that response.",
+      "conceptIds": [
+        "passive-immunity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-116",
+      "topicId": "memory",
+      "front": "Define: Primary immune response",
+      "back": "Initial adaptive response to an antigen, typically with a lag before substantial antibody production.",
+      "conceptIds": [
+        "primary-immune-response"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-117",
+      "topicId": "memory",
+      "front": "Define: Secondary immune response",
+      "back": "Memory-influenced response to previously encountered antigen, generally faster and often stronger.",
+      "conceptIds": [
+        "secondary-immune-response"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "lymphoid-system-deep-dive",
+          "sectionId": "memory-and-conditions",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              48,
+              49,
+              50,
+              51
+            ],
+            "Lymphoid - Copy.pptx": [
+              19
+            ]
+          }
+        },
+        {
+          "articleId": "lymphoid-system-exam-cram",
+          "sectionId": "antibody-functions-and-memory",
+          "slideReferences": {
+            "22-Lymphoid System-new.pptx": [
+              47,
+              48,
+              49,
+              50
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

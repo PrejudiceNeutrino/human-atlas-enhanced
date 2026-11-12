@@ -87,6 +87,15 @@ learnSubjects.push({
   })),
 });
 
+learnSubjects.push({
+  slug: 'lymphoid', label: 'Lymphoid', title: 'Lymphoid System and Immunity', href: '/learn/lymphoid',
+  modelShortcut: { label: 'Lymphoid Model', tabId: 'lymphoid-system-visualize' },
+  gallery: { count: 35 },
+  tabs: learnSubjects[0].tabs.map(({ readingIntro: _digestiveIntro, ...tab }) => ({
+    ...tab, id: tab.id.replace('digestive-system-', 'lymphoid-system-'),
+  })),
+});
+
 export function subjectForPath(pathname: string) {
   return learnSubjects.find(subject => subject.href === pathname);
 }

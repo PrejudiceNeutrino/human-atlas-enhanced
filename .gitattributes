@@ -12,3 +12,8 @@
 /data/learn/respiratory-study-tools/*.json -text
 /public/images/learn/respiratory/gallery/gallery.json -text
 /docs/integration/respiratory-source/** -text
+# Preserve the original Lymphoid educational and editorial package bytes.
+/data/learn/lymphoid-system-*.json -text
+/data/learn/lymphoid-study-tools/*.json -text
+/public/images/learn/lymphoid/gallery/gallery.json -text
+/docs/integration/lymphoid-source/** -text

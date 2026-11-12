@@ -1,0 +1,356 @@
+{
+  "subjectId": "lymphoid",
+  "studyGuide": "22-Study Guide.docx",
+  "count": 28,
+  "objectives": [
+    {
+      "id": "SG-01",
+      "studyGuideQuestion": "What are the functions of the lymphatic system?",
+      "relevantTopicIds": [
+        "fluid"
+      ],
+      "examCramSections": [
+        "three-core-roles"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-02",
+      "studyGuideQuestion": "How do lymphatic capillaries differ from blood capillaries? Why does lymph only enter, but not exit lymph capillaries?",
+      "relevantTopicIds": [
+        "capillaries"
+      ],
+      "examCramSections": [
+        "fluid-and-capillaries"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-03",
+      "studyGuideQuestion": "Why do lymphatic vessels have valves?",
+      "relevantTopicIds": [
+        "capillaries"
+      ],
+      "examCramSections": [
+        "valves-and-lymph-propulsion"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-04",
+      "studyGuideQuestion": "What is lymph?",
+      "relevantTopicIds": [
+        "capillaries"
+      ],
+      "examCramSections": [
+        "fluid-and-capillaries"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-05",
+      "studyGuideQuestion": "What are the 3 lymphatic organs? What makes a lymphatic organ different from a lymphatic tissue?",
+      "relevantTopicIds": [
+        "malt"
+      ],
+      "examCramSections": [
+        "organs-versus-tissues",
+        "malt-and-tonsils"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-06",
+      "studyGuideQuestion": "What are the 2 major ducts and from where in the body do they collect lymph from?",
+      "relevantTopicIds": [
+        "drainage"
+      ],
+      "examCramSections": [
+        "ducts-trunks-and-drainage"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-07",
+      "studyGuideQuestion": "What 3 trunks deliver lymph to the right lymphatic duct?  What 6 trunks deliver lymph to the thoracic duct (or cisterna chyli)?",
+      "relevantTopicIds": [
+        "drainage"
+      ],
+      "examCramSections": [
+        "ducts-trunks-and-drainage"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-08",
+      "studyGuideQuestion": "Where do the thoracic and right lymphatic duct deliver lymph to the venous system (what veins)?",
+      "relevantTopicIds": [
+        "drainage"
+      ],
+      "examCramSections": [
+        "ducts-trunks-and-drainage"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-09",
+      "studyGuideQuestion": "What are the 3 classes of lymphocytes? Which have specific defenses? What is their mode of defense? Which have nonspecific defense?",
+      "relevantTopicIds": [
+        "lymphocytes"
+      ],
+      "examCramSections": [
+        "lymphocyte-classes-and-development"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-10",
+      "studyGuideQuestion": "Discuss the derivation and distribution of lymphocytes (where lymphopoeisis takes place): Where do T-cells develop? What hormone (presence of) stimulates B-cell differentiation. What if it is not present?",
+      "relevantTopicIds": [
+        "lymphocytes"
+      ],
+      "examCramSections": [
+        "lymphocyte-classes-and-development",
+        "thymus"
+      ],
+      "reviewStatus": "requires-instructor-clarification",
+      "note": "Study guide asks for a hormone stimulating B-cell differentiation; supplied slides do not define a single validated answer. Do not auto-grade an invented hormone."
+    },
+    {
+      "id": "SG-11",
+      "studyGuideQuestion": "What happens in the germinal center?",
+      "relevantTopicIds": [
+        "malt",
+        "nodes"
+      ],
+      "examCramSections": [
+        "lymph-node-flow",
+        "malt-and-tonsils"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-12",
+      "studyGuideQuestion": "What is the function of lymph nodes? Discuss the movement of lymph through them and how pathogens are attacked and destroyed.",
+      "relevantTopicIds": [
+        "nodes"
+      ],
+      "examCramSections": [
+        "lymph-node-flow"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-13",
+      "studyGuideQuestion": "What is the function of the thymus? What cells help to maintain the blood-thymus barrier? What is function of blood-thymus barrier?  What is involution?",
+      "relevantTopicIds": [
+        "lymphocytes"
+      ],
+      "examCramSections": [
+        "thymus"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-14",
+      "studyGuideQuestion": "What are the functions of the spleen?  Understand the pathway of blood flow through the spleen and how pathogens are attacked.",
+      "relevantTopicIds": [
+        "spleen"
+      ],
+      "examCramSections": [
+        "spleen"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-15",
+      "studyGuideQuestion": "What are the 7 non-specific defenses and how do they work?",
+      "relevantTopicIds": [
+        "innate"
+      ],
+      "examCramSections": [
+        "seven-nonspecific-defenses"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-16",
+      "studyGuideQuestion": "How do NK cells kill an abnormal cell?",
+      "relevantTopicIds": [
+        "innate"
+      ],
+      "examCramSections": [
+        "nk-interferons-complement"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-17",
+      "studyGuideQuestion": "What is inflammation and what are the cardinal signs and symptoms of inflammation?",
+      "relevantTopicIds": [
+        "inflammation"
+      ],
+      "examCramSections": [
+        "inflammation-and-fever"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-18",
+      "studyGuideQuestion": "What are the types of immunity?",
+      "relevantTopicIds": [
+        "memory"
+      ],
+      "examCramSections": [
+        "immunity-classifications"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-19",
+      "studyGuideQuestion": "Contrast B-cell and T-cells. Compare antibody mediated immunity and cell mediated immunity (understand steps of antigen presentation and antibody production).",
+      "relevantTopicIds": [
+        "antibody",
+        "lymphocytes",
+        "t-cell"
+      ],
+      "examCramSections": [
+        "lymphocyte-classes-and-development",
+        "mhc-comparison",
+        "b-cells-and-immunoglobulins"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-20",
+      "studyGuideQuestion": "Understand the differences in Class I MHCs and Class II MHCS and what happens when those are recognized by other cells.",
+      "relevantTopicIds": [
+        "t-cell"
+      ],
+      "examCramSections": [
+        "mhc-comparison"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-21",
+      "studyGuideQuestion": "Which class of MHC tells the body that a cell is infected or abnormal? What is the fate of that cell?",
+      "relevantTopicIds": [
+        "t-cell"
+      ],
+      "examCramSections": [
+        "mhc-comparison"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-22",
+      "studyGuideQuestion": "Which class of MHC tells the body that an antigen is dangerous and it needs to be destroyed? What is produced to destroy the antigen?",
+      "relevantTopicIds": [
+        "antibody",
+        "t-cell"
+      ],
+      "examCramSections": [
+        "mhc-comparison",
+        "b-cells-and-immunoglobulins"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-23",
+      "studyGuideQuestion": "What type of cell activates B cells? What 2 types of cells are produced after activation and division? What do B-cells differentiate into before they can produce antibodies?",
+      "relevantTopicIds": [
+        "antibody"
+      ],
+      "examCramSections": [
+        "b-cells-and-immunoglobulins"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-24",
+      "studyGuideQuestion": "What is an antigen determinant site?",
+      "relevantTopicIds": [
+        "antibody"
+      ],
+      "examCramSections": [
+        "b-cells-and-immunoglobulins"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-25",
+      "studyGuideQuestion": "What are the types of antibodies and their major function?",
+      "relevantTopicIds": [
+        "antibody"
+      ],
+      "examCramSections": [
+        "b-cells-and-immunoglobulins"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-26",
+      "studyGuideQuestion": "What is opsonization? What is neutralization?",
+      "relevantTopicIds": [
+        "antibody",
+        "innate"
+      ],
+      "examCramSections": [
+        "nk-interferons-complement",
+        "antibody-functions-and-memory"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-27",
+      "studyGuideQuestion": "What is antibody titer? Contrast primary vs. secondary response",
+      "relevantTopicIds": [
+        "antibody"
+      ],
+      "examCramSections": [
+        "antibody-functions-and-memory"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    },
+    {
+      "id": "SG-28",
+      "studyGuideQuestion": "What is appendicitis? What is AIDS? What happens during an autoimmune disorder (disease)?",
+      "relevantTopicIds": [
+        "memory"
+      ],
+      "examCramSections": [
+        "conditions-and-rapid-recall"
+      ],
+      "reviewStatus": "covered-in-related-chapter-material",
+      "note": ""
+    }
+  ],
+  "note": "This alignment maps each guide objective to Chapter 22 topics/reading; it does not assert every objective is covered by a uniquely graded question."
+}

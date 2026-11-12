@@ -35,10 +35,14 @@ export function partBounds(parts: readonly Part[]): [number[], number[]] | null 
 export function learningScope(catalogue: LearningCatalogue, lesson: AnatomyLesson, context: boolean) {
   const digestive = new Set(catalogue.atlas.parts.filter(part => lesson.primarySystems.includes(part.system)).map(part => part.id));
   for (const reference of lesson.structures) for (const resolved of availableRepresentations(catalogue, reference.conceptId)) digestive.add(resolved.sourcePart.id);
+  // A lesson may omit unrelated sample geometry without changing source manifests.
+  const excluded = new Set(lesson.excludedPartIds ?? []);
+  for (const id of excluded) digestive.delete(id);
   const included = new Set(digestive);
   if (context) for (const region of lesson.contextRegionIds) for (const resolved of catalogue.regions.representationsForRegion(region, catalogue.model.id)) {
     if (lesson.contextSystems.includes(resolved.sourcePart.system)) included.add(resolved.sourcePart.id);
   }
+  for (const id of excluded) included.delete(id);
   const parts = catalogue.atlas.parts.filter(part => included.has(part.id));
   const chunkIds = [...new Set(parts.map(part => part.chunk))].sort((a, b) => a - b);
   // A runtime view of the existing manifest: original offsets, bytes, names, IDs and bounds stay unchanged.

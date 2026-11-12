@@ -1,0 +1,1252 @@
+{
+  "schemaVersion": 1,
+  "title": "Lymphoid System and Immunity — Curated Lecture Figures",
+  "description": "Manually selected anatomical-model photographs, labeled anatomical illustrations, histology, and physiological/immunological diagrams from the two Chapter 22 lecture decks.",
+  "subjectId": "lymphoid",
+  "selectionMethod": "Manual review of all 71 slides; image-based teaching value prioritized, repeated figures and text-only slides omitted. Some panels combined into a single study figure.",
+  "count": 35,
+  "gallerySections": [
+    {
+      "id": "anatomical-models",
+      "title": "Classroom anatomical models"
+    },
+    {
+      "id": "anatomical-diagrams",
+      "title": "Anatomical structures and relationships"
+    },
+    {
+      "id": "histology",
+      "title": "Cells and microscopic anatomy"
+    },
+    {
+      "id": "physiology-diagrams",
+      "title": "Physiological and immunological mechanisms"
+    }
+  ],
+  "items": [
+    {
+      "id": "a01",
+      "title": "Lymph node: labeled internal structure",
+      "category": "anatomical-diagrams",
+      "description": "Afferent and efferent lymphatic vessels, capsule, subcapsular sinus, cortex, paracortex, medullary cords, sinuses, blood vessels, and hilum.",
+      "tags": [
+        "lymph",
+        "node",
+        "cortex",
+        "paracortex",
+        "medulla",
+        "lymph",
+        "flow"
+      ],
+      "image": "images/a01.webp",
+      "thumbnail": "thumbnails/a01.webp",
+      "width": 1402,
+      "height": 947,
+      "sha256": "5557a120257c09fc6ad3f6b7a487393317bcd5b742713abbf64bd9719e9e803b",
+      "source": {
+        "deck": "Lymphoid - Copy.pptx",
+        "slides": [
+          7
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Afferent and efferent lymphatic vessels, capsule, subcapsular sinus, cortex, paracortex, medullary cords, sinuses, blood vessels, and hilum.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "lymph-node"
+      }
+    },
+    {
+      "id": "a02",
+      "title": "Tonsils: locations in the pharynx",
+      "category": "anatomical-diagrams",
+      "description": "Sagittal head illustration identifying pharyngeal, palatine, and lingual tonsillar tissue around the entrance to the upper aerodigestive tract.",
+      "tags": [
+        "tonsils",
+        "Waldeyer",
+        "ring",
+        "pharynx",
+        "lingual",
+        "palatine",
+        "adenoid"
+      ],
+      "image": "images/a02.webp",
+      "thumbnail": "thumbnails/a02.webp",
+      "width": 800,
+      "height": 600,
+      "sha256": "c6e0d88d04aa4a6bd1d775b9ea15b0ff5e50e7b61771e48025b399d5d1ffc543",
+      "source": {
+        "deck": "Lymphoid - Copy.pptx",
+        "slides": [
+          14
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Sagittal head illustration identifying pharyngeal, palatine, and lingual tonsillar tissue around the entrance to the upper aerodigestive tract.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "tonsils-and-malt"
+      }
+    },
+    {
+      "id": "a03",
+      "title": "Spleen: visceral surface and hilum",
+      "category": "anatomical-diagrams",
+      "description": "Surface anatomy of the spleen with the hilum, splenic artery and vein, and its relations to adjacent organs.",
+      "tags": [
+        "spleen",
+        "visceral",
+        "surface",
+        "diaphragmatic",
+        "hilum",
+        "splenic",
+        "artery",
+        "vein"
+      ],
+      "image": "images/a03.webp",
+      "thumbnail": "thumbnails/a03.webp",
+      "width": 800,
+      "height": 600,
+      "sha256": "56ce07b315d2a832d4a15a764b51be45613e4f61f206326054b5e77511034a90",
+      "source": {
+        "deck": "Lymphoid - Copy.pptx",
+        "slides": [
+          15
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Surface anatomy of the spleen with the hilum, splenic artery and vein, and its relations to adjacent organs.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "spleen"
+      }
+    },
+    {
+      "id": "a04",
+      "title": "Spleen on a classroom teaching model",
+      "category": "anatomical-models",
+      "description": "Photograph of an anatomical classroom model showing the spleen adjacent to the stomach and pancreas, with the splenic vessels and hilum labeled on the slide.",
+      "tags": [
+        "spleen",
+        "classroom",
+        "model",
+        "pancreas",
+        "splenic",
+        "artery",
+        "splenic",
+        "vein"
+      ],
+      "image": "images/a04.webp",
+      "thumbnail": "thumbnails/a04.webp",
+      "width": 2881,
+      "height": 1620,
+      "sha256": "db92ef08e4504fac7b838517540f16f1bdfba2d89fbba66e24cc95df438d2c10",
+      "source": {
+        "deck": "Lymphoid - Copy.pptx",
+        "slides": [
+          16
+        ],
+        "extraction": "rendered-slide-crop",
+        "cropNormalized": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "sourceType": "classroom-model-photo",
+      "rightsReview": "instructor-approval-reported",
+      "alt": "Photograph of an anatomical classroom model showing the spleen adjacent to the stomach and pancreas, with the splenic vessels and hilum labeled on the slide.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "spleen"
+      }
+    },
+    {
+      "id": "a05",
+      "title": "Thymus: gross anatomical landmarks",
+      "category": "anatomical-diagrams",
+      "description": "Bilateral thymic lobes, septa, and lobules labeled in a gross anatomical drawing.",
+      "tags": [
+        "thymus",
+        "lobes",
+        "septa",
+        "lobules"
+      ],
+      "image": "images/a05.webp",
+      "thumbnail": "thumbnails/a05.webp",
+      "width": 638,
+      "height": 746,
+      "sha256": "a7d1b6c2dd6eecaf795b09426f00cd6fb0b94d6642c80eefd9cb59f4fd43c894",
+      "source": {
+        "deck": "Lymphoid - Copy.pptx",
+        "slides": [
+          17
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Bilateral thymic lobes, septa, and lobules labeled in a gross anatomical drawing.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "thymus"
+      }
+    },
+    {
+      "id": "a06",
+      "title": "Peyer’s patches and mucosal lymphoid tissue",
+      "category": "histology",
+      "description": "Intestinal mucosa cross-section showing aggregated lymphoid nodules (Peyer’s patches) beneath the epithelial surface.",
+      "tags": [
+        "MALT",
+        "GALT",
+        "Peyer",
+        "patch",
+        "intestinal",
+        "immune",
+        "tissue"
+      ],
+      "image": "images/a06.webp",
+      "thumbnail": "thumbnails/a06.webp",
+      "width": 800,
+      "height": 600,
+      "sha256": "de1a1097e9c4ed8b2fc3f3e0767a236194846fe0b06f81ff1c4edb3b09163897",
+      "source": {
+        "deck": "Lymphoid - Copy.pptx",
+        "slides": [
+          19
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Intestinal mucosa cross-section showing aggregated lymphoid nodules (Peyer’s patches) beneath the epithelial surface.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "tonsils-and-malt"
+      }
+    },
+    {
+      "id": "a07",
+      "title": "Intestinal lipid absorption and lymph transport",
+      "category": "physiology-diagrams",
+      "description": "Lecture figure connecting absorbed lipids and chylomicrons to lymphatic transport and later lipoprotein metabolism.",
+      "tags": [
+        "lacteal",
+        "chylomicron",
+        "chyle",
+        "lipid",
+        "absorption",
+        "transport"
+      ],
+      "image": "images/a07.webp",
+      "thumbnail": "thumbnails/a07.webp",
+      "width": 1758,
+      "height": 1620,
+      "sha256": "9deeaf1b3a825dc94acc374fa8654c849f2d10a3390f2e9cb9edac55ca4dcfe8",
+      "source": {
+        "deck": "Lymphoid - Copy.pptx",
+        "slides": [
+          20
+        ],
+        "extraction": "rendered-slide-crop",
+        "cropNormalized": [
+          0.39,
+          0,
+          0.61,
+          1
+        ]
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Lecture figure connecting absorbed lipids and chylomicrons to lymphatic transport and later lipoprotein metabolism.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "functions-and-fluid"
+      },
+      "scienceReview": "The slide emphasizes lipoprotein metabolism; interpret it alongside the course explanation of lacteals and lymph transport."
+    },
+    {
+      "id": "p01",
+      "title": "Lymphoid system: whole-body anatomy",
+      "category": "anatomical-diagrams",
+      "description": "Overview of lymphatic vessels, nodes, tonsils, thymus, spleen, appendix, and mucosa-associated lymphoid tissues in anatomical position.",
+      "tags": [
+        "lymphatic",
+        "system",
+        "whole",
+        "body",
+        "lymph",
+        "nodes",
+        "thymus",
+        "spleen",
+        "tonsils"
+      ],
+      "image": "images/p01.webp",
+      "thumbnail": "thumbnails/p01.webp",
+      "width": 689,
+      "height": 1080,
+      "sha256": "0e1d78d73ff9b75e16687f7128c02d1aa5ab5754d1054c9556572ace97716812",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          2
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Overview of lymphatic vessels, nodes, tonsils, thymus, spleen, appendix, and mucosa-associated lymphoid tissues in anatomical position.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "organs-vs-tissues"
+      }
+    },
+    {
+      "id": "p02",
+      "title": "Blood capillaries versus lymphatic capillaries",
+      "category": "anatomical-diagrams",
+      "description": "A tissue-level illustration distinguishing the branching blood capillary network from blind-ended lymphatic capillaries and showing interstitial fluid movement.",
+      "tags": [
+        "blood",
+        "capillary",
+        "lymphatic",
+        "capillary",
+        "interstitial",
+        "fluid"
+      ],
+      "image": "images/p02.webp",
+      "thumbnail": "thumbnails/p02.webp",
+      "width": 802,
+      "height": 1080,
+      "sha256": "abbdb30e0fe2ce03bc09d4b5afd072f8e70d6c5f976d86d756f2c69708498604",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          5
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "A tissue-level illustration distinguishing the branching blood capillary network from blind-ended lymphatic capillaries and showing interstitial fluid movement.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "lymphatic-capillaries"
+      }
+    },
+    {
+      "id": "p03",
+      "title": "Lymphatic capillary: one-way fluid entry",
+      "category": "anatomical-diagrams",
+      "description": "Magnified depiction of blind-ended lymphatic channels, overlapping endothelial edges, and movement of interstitial fluid into lymph.",
+      "tags": [
+        "lymphatic",
+        "endothelial",
+        "flap",
+        "overlapping",
+        "endothelial",
+        "cells",
+        "one-way"
+      ],
+      "image": "images/p03.webp",
+      "thumbnail": "thumbnails/p03.webp",
+      "width": 1053,
+      "height": 1032,
+      "sha256": "8431236533cb8a358478ca23616387c9e90142f324b49b8eb1e298f5e778c548",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          6
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Magnified depiction of blind-ended lymphatic channels, overlapping endothelial edges, and movement of interstitial fluid into lymph.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "lymphatic-capillaries"
+      }
+    },
+    {
+      "id": "p04",
+      "title": "Collecting lymphatic vessels and neighboring blood vessels",
+      "category": "anatomical-diagrams",
+      "description": "Lymphatic collectors alongside an artery and vein, including valve placement and anatomical cross-sections.",
+      "tags": [
+        "collecting",
+        "lymphatics",
+        "artery",
+        "vein",
+        "valve"
+      ],
+      "image": "images/p04.webp",
+      "thumbnail": "thumbnails/p04.webp",
+      "width": 1402,
+      "height": 767,
+      "sha256": "51b6396b762b0a5a9c8f5631075809129ec82666774368aa257e9c6ab1d3ff1d",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          7
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Lymphatic collectors alongside an artery and vein, including valve placement and anatomical cross-sections.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "lymphatic-vessels"
+      }
+    },
+    {
+      "id": "p05",
+      "title": "Lymphatic valves: light microscopy",
+      "category": "histology",
+      "description": "Light-microscopy specimen showing valves in a lymphatic vessel; complements the vessel schematic.",
+      "tags": [
+        "lymphatic",
+        "valve",
+        "microscope",
+        "histology"
+      ],
+      "image": "images/p05.webp",
+      "thumbnail": "thumbnails/p05.webp",
+      "width": 1402,
+      "height": 892,
+      "sha256": "1e759fedca0f84b111bc3f460ccb28b66ca426861fabc44981ae3aa494983b9d",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          8
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Light-microscopy specimen showing valves in a lymphatic vessel; complements the vessel schematic.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "lymphatic-vessels"
+      }
+    },
+    {
+      "id": "p06",
+      "title": "Right lymphatic duct versus thoracic duct territories",
+      "category": "anatomical-diagrams",
+      "description": "Body-territory map distinguishing the upper right region typically drained by the right lymphatic duct from the much larger thoracic duct drainage region.",
+      "tags": [
+        "thoracic",
+        "duct",
+        "right",
+        "lymphatic",
+        "duct",
+        "drainage",
+        "territory"
+      ],
+      "image": "images/p06.webp",
+      "thumbnail": "thumbnails/p06.webp",
+      "width": 455,
+      "height": 600,
+      "sha256": "f389d158da9397426b9c666f96760d4aad92b8dbd0bc9f7e44ca1c8c525f8481",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          10
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Body-territory map distinguishing the upper right region typically drained by the right lymphatic duct from the much larger thoracic duct drainage region.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "trunks-ducts"
+      }
+    },
+    {
+      "id": "p07",
+      "title": "Major lymphatic trunks and thoracic duct",
+      "category": "anatomical-diagrams",
+      "description": "Detailed labeled thoracic illustration with jugular, subclavian, bronchomediastinal, lumbar and intestinal trunks, cisterna chyli, and venous junctions.",
+      "tags": [
+        "thoracic",
+        "duct",
+        "cisterna",
+        "chyli",
+        "lymphatic",
+        "trunks",
+        "venous",
+        "angle"
+      ],
+      "image": "images/p07.webp",
+      "thumbnail": "thumbnails/p07.webp",
+      "width": 801,
+      "height": 601,
+      "sha256": "5de2b8bf499112560db8309a38a23ea87dfb1b0163bddff3d97af55086b80f94",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          11
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Detailed labeled thoracic illustration with jugular, subclavian, bronchomediastinal, lumbar and intestinal trunks, cisterna chyli, and venous junctions.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "trunks-ducts"
+      }
+    },
+    {
+      "id": "p08",
+      "title": "Lymphocytes in a peripheral blood smear",
+      "category": "histology",
+      "description": "A blood-smear photograph illustrating the round dark nuclei and peripheral cytoplasm of circulating lymphocytes among erythrocytes.",
+      "tags": [
+        "lymphocyte",
+        "blood",
+        "smear",
+        "leukocyte"
+      ],
+      "image": "images/p08.webp",
+      "thumbnail": "thumbnails/p08.webp",
+      "width": 558,
+      "height": 640,
+      "sha256": "bd72a0911945f6ec698ccfd4d1eec64361b47bfbd8c06fb4f226b7139430bd00",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          12
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "A blood-smear photograph illustrating the round dark nuclei and peripheral cytoplasm of circulating lymphocytes among erythrocytes.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "lymphopoiesis"
+      }
+    },
+    {
+      "id": "p09",
+      "title": "Lymphopoiesis: B, T, and NK cell lineages",
+      "category": "physiology-diagrams",
+      "description": "Developmental scheme relating red bone marrow and the thymus to B-cell, T-cell, and natural killer cell lineages.",
+      "tags": [
+        "lymphopoiesis",
+        "bone",
+        "marrow",
+        "thymus",
+        "B",
+        "cell",
+        "T",
+        "cell",
+        "natural",
+        "killer",
+        "cell"
+      ],
+      "image": "images/p09.webp",
+      "thumbnail": "thumbnails/p09.webp",
+      "width": 800,
+      "height": 600,
+      "sha256": "e1ffac7ac4b8e74ab5bd5d521ee783dab9aeb416ef991dcbee0f864f4b48dd9a",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          16
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Developmental scheme relating red bone marrow and the thymus to B-cell, T-cell, and natural killer cell lineages.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "lymphopoiesis"
+      },
+      "scienceReview": "A simplified teaching lineage diagram; modern developmental pathways and maturation signals are more nuanced."
+    },
+    {
+      "id": "p10",
+      "title": "Thymus: lobules, cortex, and medulla",
+      "category": "histology",
+      "description": "Light-microscopy view identifying lobules, connective septa, blood vessels, darker thymic cortex, and paler medulla.",
+      "tags": [
+        "thymus",
+        "histology",
+        "cortex",
+        "medulla",
+        "septa"
+      ],
+      "image": "images/p10.webp",
+      "thumbnail": "thumbnails/p10.webp",
+      "width": 770,
+      "height": 502,
+      "sha256": "b563dd77195ee78873a204b4e8ee456b02be7fcdd57e888c1032e464b212a15f",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          22
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Light-microscopy view identifying lobules, connective septa, blood vessels, darker thymic cortex, and paler medulla.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "thymus"
+      }
+    },
+    {
+      "id": "p11",
+      "title": "Spleen: red pulp and white pulp histology",
+      "category": "histology",
+      "description": "Labeled splenic tissue showing red pulp, white-pulp nodules, capsule, trabecular vessels, and a central artery.",
+      "tags": [
+        "spleen",
+        "red",
+        "pulp",
+        "white",
+        "pulp",
+        "histology"
+      ],
+      "image": "images/p11.webp",
+      "thumbnail": "thumbnails/p11.webp",
+      "width": 800,
+      "height": 600,
+      "sha256": "626f640b5181d4f71b8bc82016c2ec7a32e5c2c9695814cadac44c39657668e5",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          24
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Labeled splenic tissue showing red pulp, white-pulp nodules, capsule, trabecular vessels, and a central artery.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "spleen"
+      }
+    },
+    {
+      "id": "p12",
+      "title": "Path of blood flow through the spleen",
+      "category": "physiology-diagrams",
+      "description": "Sequence from splenic and trabecular arterial branches through red-pulp filtration and venous return.",
+      "tags": [
+        "spleen",
+        "blood",
+        "flow",
+        "trabecular",
+        "artery",
+        "red",
+        "pulp",
+        "sinusoid"
+      ],
+      "image": "images/p12.webp",
+      "thumbnail": "thumbnails/p12.webp",
+      "width": 1402,
+      "height": 278,
+      "sha256": "f94b170ea3250c1c60b82bf98c081f57f4c6fd248ef00aa651768729bf9fc60c",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          25
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Sequence from splenic and trabecular arterial branches through red-pulp filtration and venous return.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "spleen"
+      }
+    },
+    {
+      "id": "p13",
+      "title": "Seven nonspecific defenses: visual overview",
+      "category": "physiology-diagrams",
+      "description": "All seven instructor-listed nonspecific defenses combined into one figure: physical barriers, phagocytes, NK surveillance, interferons, complement, inflammation, and fever.",
+      "tags": [
+        "innate",
+        "immunity",
+        "physical",
+        "barriers",
+        "phagocyte",
+        "natural",
+        "killer",
+        "interferon",
+        "complement",
+        "inflammation",
+        "fever"
+      ],
+      "image": "images/p13.webp",
+      "thumbnail": "thumbnails/p13.webp",
+      "width": 1390,
+      "height": 2264,
+      "sha256": "3e4663fdcdd87a3e22d01afdf071534ec2b058e98fd113430581e7251cfe14ff",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          27,
+          30
+        ],
+        "extraction": "composite-of-seven-embedded-panels"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "All seven instructor-listed nonspecific defenses combined into one figure: physical barriers, phagocytes, NK surveillance, interferons, complement, inflammation, and fever.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "innate-defense-framework"
+      }
+    },
+    {
+      "id": "p14",
+      "title": "Natural killer cell: recognition and cytolysis",
+      "category": "physiology-diagrams",
+      "description": "Sequence showing an NK cell contacting an abnormal cell, reorganizing its secretory apparatus, releasing cytotoxic molecules, and damaging the target.",
+      "tags": [
+        "NK",
+        "cell",
+        "perforin",
+        "granzyme",
+        "cytotoxicity",
+        "lysis"
+      ],
+      "image": "images/p14.webp",
+      "thumbnail": "thumbnails/p14.webp",
+      "width": 800,
+      "height": 600,
+      "sha256": "90ac702b321945d1801b967905d5330c522485bfddf02c825e5d1c6a47b1cec9",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          28
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Sequence showing an NK cell contacting an abnormal cell, reorganizing its secretory apparatus, releasing cytotoxic molecules, and damaging the target.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "phagocytes-and-nk"
+      },
+      "scienceReview": "The original figure emphasizes perforin; contemporary description also requires granzyme delivery and apoptosis."
+    },
+    {
+      "id": "p15",
+      "title": "Immunological escape in a growing tumor",
+      "category": "physiology-diagrams",
+      "description": "Schematic illustrating immune surveillance and selection of tumor-cell variants that escape recognition or resist destruction.",
+      "tags": [
+        "cancer",
+        "tumor",
+        "immunological",
+        "escape",
+        "NK",
+        "cell",
+        "immune",
+        "surveillance"
+      ],
+      "image": "images/p15.webp",
+      "thumbnail": "thumbnails/p15.webp",
+      "width": 1402,
+      "height": 632,
+      "sha256": "09370f66a3dfd197f7238d1343bbf8ab7c63659d8101439817d02e65ab7a70d2",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          29
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Schematic illustrating immune surveillance and selection of tumor-cell variants that escape recognition or resist destruction.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "phagocytes-and-nk"
+      },
+      "scienceReview": "Simplified lecture schematic; tumor immune escape involves multiple interacting pathways."
+    },
+    {
+      "id": "p16",
+      "title": "Complement cascade and membrane attack complex",
+      "category": "physiology-diagrams",
+      "description": "Classical complement pathway diagram highlighting antibody-dependent activation, C3b deposition, recruitment of phagocytes, and the C5b–C9 membrane attack complex.",
+      "tags": [
+        "complement",
+        "cascade",
+        "classical",
+        "pathway",
+        "opsonization",
+        "MAC"
+      ],
+      "image": "images/p16.webp",
+      "thumbnail": "thumbnails/p16.webp",
+      "width": 552,
+      "height": 583,
+      "sha256": "0e65d8df99f0501a58679a9ec782fa77d011829bdf4408268b5cd03b2c5c63c3",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          32
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Classical complement pathway diagram highlighting antibody-dependent activation, C3b deposition, recruitment of phagocytes, and the C5b–C9 membrane attack complex.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "interferons-complement"
+      }
+    },
+    {
+      "id": "p17",
+      "title": "Acute inflammation: coordinated local response",
+      "category": "physiology-diagrams",
+      "description": "Diagram relating tissue injury, mast-cell mediators, increased vessel permeability, phagocyte recruitment, clotting, and tissue repair.",
+      "tags": [
+        "inflammation",
+        "mast",
+        "cells",
+        "histamine",
+        "neutrophils",
+        "vasodilation",
+        "repair"
+      ],
+      "image": "images/p17.webp",
+      "thumbnail": "thumbnails/p17.webp",
+      "width": 776,
+      "height": 355,
+      "sha256": "bbd1a7844a7442e491d691edf5e20edae18fcf8f57c9181d3565308b597102cf",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          34
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Diagram relating tissue injury, mast-cell mediators, increased vessel permeability, phagocyte recruitment, clotting, and tissue repair.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "inflammation-fever"
+      },
+      "scienceReview": "A high-level sequence; not all inflammatory responses proceed in this fixed order."
+    },
+    {
+      "id": "p18",
+      "title": "Naturally versus artificially acquired immunity",
+      "category": "physiology-diagrams",
+      "description": "Lecture classification diagram contrasting active versus passive immunity and naturally versus artificially acquired protection.",
+      "tags": [
+        "active",
+        "immunity",
+        "passive",
+        "immunity",
+        "natural",
+        "acquired",
+        "vaccine",
+        "maternal",
+        "antibodies"
+      ],
+      "image": "images/p18.webp",
+      "thumbnail": "thumbnails/p18.webp",
+      "width": 758,
+      "height": 472,
+      "sha256": "4c35d490c354d967c00a672cfc6733ab9bbbbffcb4018372170809a8a25b7a34",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          36
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Lecture classification diagram contrasting active versus passive immunity and naturally versus artificially acquired protection.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "adaptive-immunity"
+      },
+      "scienceReview": "The slide places innate immunity under an umbrella labeled specific resistance, which is conceptually misleading. Use the article’s clearer innate/adaptive distinction."
+    },
+    {
+      "id": "p19",
+      "title": "Overview of cell-mediated and antibody-mediated immunity",
+      "category": "physiology-diagrams",
+      "description": "Summary diagram showing how specific immunity coordinates T-cell activity and B-cell antibody responses alongside nonspecific protection.",
+      "tags": [
+        "cell",
+        "mediated",
+        "humoral",
+        "innate",
+        "adaptive",
+        "B",
+        "cells",
+        "T",
+        "cells"
+      ],
+      "image": "images/p19.webp",
+      "thumbnail": "thumbnails/p19.webp",
+      "width": 801,
+      "height": 601,
+      "sha256": "4ccf46960bdc10572bccb9a24262882a5dddba6dda0dec2cda67cdd247fd7b6a",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          38
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Summary diagram showing how specific immunity coordinates T-cell activity and B-cell antibody responses alongside nonspecific protection.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "adaptive-immunity"
+      }
+    },
+    {
+      "id": "p20",
+      "title": "MHC class I: presenting intracellular peptides",
+      "category": "physiology-diagrams",
+      "description": "Diagram of intracellular peptides being loaded onto class I MHC molecules and transported to the cell surface for CD8 T-cell surveillance.",
+      "tags": [
+        "MHC",
+        "I",
+        "antigen",
+        "presentation",
+        "endogenous",
+        "peptide",
+        "CD8"
+      ],
+      "image": "images/p20.webp",
+      "thumbnail": "thumbnails/p20.webp",
+      "width": 585,
+      "height": 600,
+      "sha256": "fcc67e7944683573edcbcd1ec38ae666a1526a90493de09b5a5115a332a10fbb",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          40
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Diagram of intracellular peptides being loaded onto class I MHC molecules and transported to the cell surface for CD8 T-cell surveillance.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "mhc-class-i"
+      },
+      "scienceReview": "MHC class I presentation occurs on essentially all nucleated cells and is not itself an infection signal."
+    },
+    {
+      "id": "p21",
+      "title": "Cytotoxic T-cell activation and target-cell destruction",
+      "category": "physiology-diagrams",
+      "description": "CD8 T-cell antigen recognition and activation followed by cytotoxic effector responses; includes memory-cell development.",
+      "tags": [
+        "CD8",
+        "cytotoxic",
+        "T",
+        "cell",
+        "costimulation",
+        "perforin",
+        "apoptosis",
+        "MHC",
+        "I"
+      ],
+      "image": "images/p21.webp",
+      "thumbnail": "thumbnails/p21.webp",
+      "width": 801,
+      "height": 601,
+      "sha256": "b640352274eda7164fbe144a7f054f1078ccf07d12b1d713a46c663acfdbcf5d",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          41
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "CD8 T-cell antigen recognition and activation followed by cytotoxic effector responses; includes memory-cell development.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "mhc-class-i"
+      },
+      "scienceReview": "Naive CD8 T-cell priming commonly depends on professional antigen-presenting cells; the source diagram simplifies activation and costimulation."
+    },
+    {
+      "id": "p22",
+      "title": "MHC class II: processing extracellular antigens",
+      "category": "physiology-diagrams",
+      "description": "An antigen-presenting cell engulfing extracellular material, processing it in vesicles, and displaying peptide fragments with class II MHC.",
+      "tags": [
+        "MHC",
+        "II",
+        "APC",
+        "lysosome",
+        "exogenous",
+        "antigen",
+        "CD4"
+      ],
+      "image": "images/p22.webp",
+      "thumbnail": "thumbnails/p22.webp",
+      "width": 1363,
+      "height": 934,
+      "sha256": "1ba3b1cb687d2f8a791db8eb14829016f6681fcb04bd6bbdb7d22ed18a360a91",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          42
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "An antigen-presenting cell engulfing extracellular material, processing it in vesicles, and displaying peptide fragments with class II MHC.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "mhc-class-ii"
+      }
+    },
+    {
+      "id": "p23",
+      "title": "Helper T cells and B-cell antibody production",
+      "category": "physiology-diagrams",
+      "description": "Sequence illustrating B-cell antigen binding, helper T-cell signaling, expansion of B-cell clones, memory B cells, and antibody-secreting plasma cells.",
+      "tags": [
+        "CD4",
+        "helper",
+        "T",
+        "cell",
+        "B",
+        "cell",
+        "plasma",
+        "cell",
+        "antibody",
+        "cytokine"
+      ],
+      "image": "images/p23.webp",
+      "thumbnail": "thumbnails/p23.webp",
+      "width": 801,
+      "height": 601,
+      "sha256": "69347c76e7620a140a3cf3340da1b62f1afd9702d4adc7ce319dbd9313af7d6a",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          43
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Sequence illustrating B-cell antigen binding, helper T-cell signaling, expansion of B-cell clones, memory B cells, and antibody-secreting plasma cells.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "mhc-class-ii"
+      },
+      "scienceReview": "T-dependent B-cell activation also relies on direct co-stimulation, not cytokines alone."
+    },
+    {
+      "id": "p24",
+      "title": "Antibody molecular structure",
+      "category": "anatomical-diagrams",
+      "description": "Labeled immunoglobulin diagram identifying heavy and light chains, variable and constant regions, disulfide bonds, and antigen-binding sites.",
+      "tags": [
+        "antibody",
+        "immunoglobulin",
+        "Ig",
+        "heavy",
+        "chain",
+        "light",
+        "chain",
+        "variable",
+        "region"
+      ],
+      "image": "images/p24.webp",
+      "thumbnail": "thumbnails/p24.webp",
+      "width": 1269,
+      "height": 832,
+      "sha256": "9dea2f530a57f31aeca1f5a2007191a221975b0e9a80560f38d4395358561889",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          44
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Labeled immunoglobulin diagram identifying heavy and light chains, variable and constant regions, disulfide bonds, and antigen-binding sites.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "antibodies"
+      }
+    },
+    {
+      "id": "p25",
+      "title": "IgM pentamer and secretory IgA dimer",
+      "category": "physiology-diagrams",
+      "description": "Comparison of the multimeric structures used by the IgM and secretory IgA antibody classes.",
+      "tags": [
+        "IgM",
+        "pentamer",
+        "IgA",
+        "dimer",
+        "secretory",
+        "antibody"
+      ],
+      "image": "images/p25.webp",
+      "thumbnail": "thumbnails/p25.webp",
+      "width": 1120,
+      "height": 860,
+      "sha256": "03ac672f18545003cc7bc458e6f1745fd368cf4a5f30f5493c211f9b9c658e79",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          46
+        ],
+        "extraction": "composite-of-two-embedded-panels"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Comparison of the multimeric structures used by the IgM and secretory IgA antibody classes.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "antibodies"
+      }
+    },
+    {
+      "id": "p26",
+      "title": "What antibody binding actually does",
+      "category": "physiology-diagrams",
+      "description": "Instructor figure summarizing neutralization, agglutination, opsonization, complement activation, interference with adhesion, and inflammatory effects.",
+      "tags": [
+        "antibody",
+        "effector",
+        "neutralization",
+        "agglutination",
+        "opsonization",
+        "complement"
+      ],
+      "image": "images/p26.webp",
+      "thumbnail": "thumbnails/p26.webp",
+      "width": 1105,
+      "height": 1080,
+      "sha256": "edd65a8d5464e006643a7b15439abec636e3b50a47e7fb3ec38ebe0073c0f8a7",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          47
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Instructor figure summarizing neutralization, agglutination, opsonization, complement activation, interference with adhesion, and inflammatory effects.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "antibodies"
+      }
+    },
+    {
+      "id": "p27",
+      "title": "Primary versus secondary antibody responses",
+      "category": "physiology-diagrams",
+      "description": "Comparative graphs showing the relative time courses of IgM and IgG in primary and secondary immune responses.",
+      "tags": [
+        "immune",
+        "memory",
+        "primary",
+        "response",
+        "secondary",
+        "response",
+        "IgM",
+        "IgG",
+        "antibody",
+        "titer"
+      ],
+      "image": "images/p27.webp",
+      "thumbnail": "thumbnails/p27.webp",
+      "width": 1402,
+      "height": 806,
+      "sha256": "5c7bf936ddd9e95f43413daf967f3652aca1c819ea07c3730704cd5673039f7a",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          49
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Comparative graphs showing the relative time courses of IgM and IgG in primary and secondary immune responses.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "memory-and-conditions"
+      }
+    },
+    {
+      "id": "p28",
+      "title": "Immune defense timing after bacterial infection",
+      "category": "physiology-diagrams",
+      "description": "Relative timing of neutrophils, macrophages, NK cells, cytotoxic T cells, plasma cells, and serum antibodies during a schematic immune response.",
+      "tags": [
+        "bacterial",
+        "infection",
+        "immune",
+        "response",
+        "timing",
+        "neutrophils",
+        "macrophages",
+        "plasma",
+        "cells"
+      ],
+      "image": "images/p28.webp",
+      "thumbnail": "thumbnails/p28.webp",
+      "width": 1402,
+      "height": 994,
+      "sha256": "332d96282f2a55f8bfb750298f03fa51ab01997072b6ca7afaed9b77b59523a7",
+      "source": {
+        "deck": "22-Lymphoid System-new.pptx",
+        "slides": [
+          50
+        ],
+        "extraction": "embedded-slide-image"
+      },
+      "sourceType": "lecture-illustration-or-diagram",
+      "rightsReview": "third-party-credit-check-required",
+      "alt": "Relative timing of neutrophils, macrophages, NK cells, cytotoxic T cells, plasma cells, and serum antibodies during a schematic immune response.",
+      "learnReference": {
+        "articleId": "lymphoid-system-deep-dive",
+        "sectionId": "memory-and-conditions"
+      },
+      "scienceReview": "Illustrative generalized timeline, not a universal or clinically predictive timing chart."
+    }
+  ]
+}

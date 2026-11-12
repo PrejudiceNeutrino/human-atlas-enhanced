@@ -1,0 +1,17 @@
+{
+  "galleryCount": 35,
+  "categoryCounts": {
+    "anatomical-diagrams": 11,
+    "anatomical-models": 1,
+    "histology": 5,
+    "physiology-diagrams": 18
+  },
+  "slideSources": {
+    "Lymphoid - Copy.pptx": 7,
+    "22-Lymphoid System-new.pptx": 28
+  },
+  "totalOriginalSlides": 71,
+  "webpImageCount": 35,
+  "webpThumbnailCount": 35,
+  "warnings": []
+}

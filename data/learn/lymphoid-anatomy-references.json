@@ -1,0 +1,98 @@
+{
+  "subjectId": "lymphoid",
+  "visualizeTabId": "lymphoid-system-visualize",
+  "referenceArticleId": "lymphoid-system-deep-dive",
+  "primarySystems": [
+    "lymphatic"
+  ],
+  "contextRegionIds": [
+    "atlas:region:head-jaw",
+    "atlas:region:cervical",
+    "atlas:region:thoracic",
+    "atlas:region:lumbar",
+    "atlas:region:hip"
+  ],
+  "contextSystems": [
+    "arterial",
+    "venous",
+    "cardiac",
+    "skeletal"
+  ],
+  "modelIds": [
+    "bp3d-male-4",
+    "female-study-v3",
+    "hra-female-v1.5"
+  ],
+  "excludedPartIds": [
+    "Yao_afferent_lymphatic_vessel",
+    "Yao_capsule_of_lymph_node",
+    "Yao_follicles",
+    "Yao_efferent_lymph_node",
+    "Yao_medulla_of_lymph_node",
+    "Yao_paracortex",
+    "Yao_blood_vasculature"
+  ],
+  "coverageNote": "Spleen, thymus and appendix are available in the male and female study models. HRA female reference also includes palatine tonsils. Regional lymph nodes, drainage ducts and microscopic immune processes have no verified shortcuts. The unlocalized HRA sample lymph node is excluded from this whole-body lesson.",
+  "structures": [
+    {
+      "conceptId": "atlas:concept:002828",
+      "label": "Spleen",
+      "sectionId": "spleen",
+      "summary": "",
+      "sourceConceptId": "FMA7196",
+      "candidateIndex": 0
+    },
+    {
+      "conceptId": "atlas:concept:003385",
+      "label": "Thymus",
+      "sectionId": "thymus",
+      "summary": "",
+      "sourceConceptId": "FMA9607",
+      "candidateIndex": 1
+    },
+    {
+      "conceptId": "atlas:concept:000209",
+      "label": "Appendix",
+      "sectionId": "tonsils-and-malt",
+      "summary": "",
+      "sourceConceptId": "FMA14542",
+      "candidateIndex": 10
+    }
+  ],
+  "modelStructures": {
+    "hra-female-v1.5": [
+      {
+        "conceptId": "atlas:concept:004401",
+        "label": "Spleen",
+        "sectionId": "spleen",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_spleen",
+        "candidateIndex": 0
+      },
+      {
+        "conceptId": "atlas:concept:004445",
+        "label": "Thymus",
+        "sectionId": "thymus",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_thymus",
+        "candidateIndex": 1
+      },
+      {
+        "conceptId": "atlas:concept:004198",
+        "label": "Tonsils (palatine)",
+        "sectionId": "tonsils-and-malt",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_palatine_tonsil",
+        "candidateIndex": 8
+      },
+      {
+        "conceptId": "atlas:concept:004494",
+        "label": "Appendix",
+        "sectionId": "tonsils-and-malt",
+        "summary": "",
+        "sourceConceptId": "HRA:VH_F_vermiform_appendix",
+        "candidateIndex": 10
+      }
+    ]
+  }
+}

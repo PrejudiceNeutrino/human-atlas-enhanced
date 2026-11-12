@@ -1,0 +1,53 @@
+{
+  "lymphoid-system-deep-dive": {
+    "functions-and-fluid": "Functions, Fluid Compartments, and Basic Terminology",
+    "lymphatic-capillaries": "Lymphatic Capillaries and One-Way Entry",
+    "lymphatic-vessels": "Collecting Vessels, Valves, and Lymph Propulsion",
+    "trunks-ducts": "Lymphatic Trunks, Ducts, and Drainage Territories",
+    "organs-vs-tissues": "Lymphoid Organs, Tissues, and Primary vs Secondary Sites",
+    "lymph-node": "Lymph Node Microanatomy and Lymph Flow",
+    "lymphopoiesis": "Lymphopoiesis and the Three Lymphocyte Lineages",
+    "thymus": "Thymus: Architecture, T-Cell Maturation, and Involution",
+    "spleen": "Spleen: Blood Filtration and Red/White Pulp",
+    "tonsils-and-malt": "Tonsils, MALT, Peyer’s Patches, and Appendix",
+    "innate-defense-framework": "Seven Nonspecific Defenses and Their Functions",
+    "phagocytes-and-nk": "Phagocytes, Natural Killer Cells, and Immunological Surveillance",
+    "interferons-complement": "Interferons, Cytokines, Complement, and the MAC",
+    "inflammation-fever": "Inflammation and Fever",
+    "adaptive-immunity": "Adaptive Immunity: Specificity, Memory, Tolerance, and Active/Passive Forms",
+    "mhc-class-i": "MHC Class I and Cytotoxic T-Cell Responses",
+    "mhc-class-ii": "MHC Class II, Helper T Cells, and B-Cell Activation",
+    "antibodies": "Antigens, Antibody Structure, Immunoglobulin Classes, and Effector Mechanisms",
+    "memory-and-conditions": "Primary/Secondary Responses and Clinical Connections"
+  },
+  "lymphoid-system-exam-cram": {
+    "three-core-roles": "Three Core Roles",
+    "fluid-and-capillaries": "Lymph, Interstitial Fluid, and Capillaries",
+    "valves-and-lymph-propulsion": "Valves and Lymph Propulsion",
+    "ducts-trunks-and-drainage": "Right Duct, Thoracic Duct, and Trunks",
+    "organs-versus-tissues": "Three Course-Defined Lymphoid Organs vs Tissues",
+    "lymph-node-flow": "Lymph Node Flow and Identification",
+    "lymphocyte-classes-and-development": "B Cells, T Cells, NK Cells, and Lymphopoiesis",
+    "thymus": "Thymus, Blood–Thymus Barrier, and Involution",
+    "spleen": "Spleen: Red/White Pulp and Blood Path",
+    "malt-and-tonsils": "Tonsils, Peyer's Patches, and MALT",
+    "seven-nonspecific-defenses": "Seven Nonspecific Defenses — Instructor's Exact List",
+    "nk-interferons-complement": "NK Cytotoxicity, Interferons, and Complement",
+    "inflammation-and-fever": "Four Cardinal Signs, Inflammation, and Fever",
+    "immunity-classifications": "Innate vs Adaptive; Active vs Passive Immunity",
+    "mhc-comparison": "MHC I/CD8 vs MHC II/CD4",
+    "b-cells-and-immunoglobulins": "B-Cell Activation, Antibodies, and Five Ig Classes",
+    "antibody-functions-and-memory": "Antibody Actions, Titer, and Secondary Response",
+    "conditions-and-rapid-recall": "Diseases, Anatomy Checklist, and Rapid Recall"
+  },
+  "lymphoid-system-general-overview": {
+    "fundamental-jobs": "Three Jobs, One System",
+    "what-is-lymph": "From Blood Plasma to Interstitial Fluid to Lymph",
+    "one-way-transport": "The One-Way Route Back to Blood",
+    "immune-cells": "Three Major Lymphocyte Classes",
+    "organs-and-tissues": "Where Immune Cells Develop and Meet",
+    "first-defense": "The Immediate Defenses",
+    "specific-and-memory": "Specific Recognition and Immune Memory",
+    "identification-roadmap": "What You Should Be Able to Identify"
+  }
+}

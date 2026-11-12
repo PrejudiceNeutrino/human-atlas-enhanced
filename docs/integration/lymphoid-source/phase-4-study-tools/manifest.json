@@ -1,0 +1,123 @@
+{
+  "kind": "human-atlas-study-tools",
+  "schemaVersion": 1,
+  "subjectId": "lymphoid",
+  "title": "Lymphoid System and Immunity Study Tools",
+  "curriculum": "Chapter 22 · Lymphoid System and Immunity",
+  "sources": [
+    {
+      "id": "deep-dive",
+      "kind": "learn-article",
+      "file": "data/learn/lymphoid-system-deep-dive.json"
+    },
+    {
+      "id": "exam-cram",
+      "kind": "learn-article",
+      "file": "data/learn/lymphoid-system-exam-cram.json"
+    },
+    {
+      "id": "general-overview",
+      "kind": "learn-article",
+      "file": "data/learn/lymphoid-system-general-overview.json"
+    },
+    {
+      "id": "main-lecture",
+      "kind": "presentation",
+      "file": "22-Lymphoid System-new.pptx",
+      "slideCount": 51
+    },
+    {
+      "id": "anatomy-lecture",
+      "kind": "presentation",
+      "file": "Lymphoid - Copy.pptx",
+      "slideCount": 20
+    },
+    {
+      "id": "study-guide",
+      "kind": "study-guide",
+      "file": "22-Study Guide.docx",
+      "questionCount": 28
+    }
+  ],
+  "topics": [
+    {
+      "id": "fluid",
+      "label": "Functions, fluid balance & terminology",
+      "sortOrder": 1
+    },
+    {
+      "id": "capillaries",
+      "label": "Lymphatic capillaries, vessels & valves",
+      "sortOrder": 2
+    },
+    {
+      "id": "drainage",
+      "label": "Trunks, ducts & drainage territories",
+      "sortOrder": 3
+    },
+    {
+      "id": "nodes",
+      "label": "Lymph node anatomy & trafficking",
+      "sortOrder": 4
+    },
+    {
+      "id": "lymphocytes",
+      "label": "Lymphopoiesis, lymphocytes & thymus",
+      "sortOrder": 5
+    },
+    {
+      "id": "spleen",
+      "label": "Spleen & blood filtration",
+      "sortOrder": 6
+    },
+    {
+      "id": "malt",
+      "label": "Tonsils, MALT & mucosal defenses",
+      "sortOrder": 7
+    },
+    {
+      "id": "innate",
+      "label": "Innate defenses & cytotoxic surveillance",
+      "sortOrder": 8
+    },
+    {
+      "id": "inflammation",
+      "label": "Inflammation, fever & local responses",
+      "sortOrder": 9
+    },
+    {
+      "id": "complement",
+      "label": "Interferons, cytokines & complement",
+      "sortOrder": 10
+    },
+    {
+      "id": "t-cell",
+      "label": "MHC, T-cell activation & coordination",
+      "sortOrder": 11
+    },
+    {
+      "id": "antibody",
+      "label": "B cells, antibodies & effector actions",
+      "sortOrder": 12
+    },
+    {
+      "id": "memory",
+      "label": "Immunity types, memory & disorders",
+      "sortOrder": 13
+    }
+  ],
+  "files": {
+    "concepts": "concepts.json",
+    "multipleChoice": "multiple-choice.json",
+    "fillInTheBlank": "fill-in-the-blank.json",
+    "flashcards": "flashcards.json"
+  },
+  "editorialNote": "Source references identify relevant Stage 2/3 authored Learn sections and inherited Chapter 22 lecture-slide ranges. They are contextual pointers, not a claim that every detail or phrase appears verbatim on every cited slide. Mechanistic detail beyond the lectures is drawn from the authored Deep Dive. The ambiguous B-cell differentiation hormone question is not given an invented answer.",
+  "createdDate": "2026-11-09",
+  "counts": {
+    "concepts": 206,
+    "multipleChoice": 104,
+    "fillInTheBlank": 66,
+    "flashcards": 117
+  }
+}

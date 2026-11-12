@@ -34,6 +34,8 @@ Compared with the original viewer, this fork now includes:
 
 Respiratory System is available at `/learn/respiratory` with all eight Learn tabs, 192 glossary concepts, 106 multiple-choice questions, 67 fill-in-the-blank exercises, 114 flashcards and 29 public gallery figures. Study progress is isolated by subject. Its Visualize tab also offers the existing HRA female reference for lung tissue and lobes. See [the Respiratory integration report](docs/integration/RESPIRATORY_INTEGRATION_2026_11_11.md) for source fidelity, model coverage, validation and deployment status.
 
+Lymphoid System and Immunity is available at `/learn/lymphoid` with the same eight tabs, 206 glossary concepts, 104 multiple-choice questions, 66 fill-in-the-blank exercises, 117 flashcards and 35 public gallery figures. Visualize offers verified spleen, thymus and appendix mappings; the HRA female reference also includes palatine tonsils. See [the Lymphoid integration report](docs/integration/LYMPHOID_INTEGRATION_2026_11_11.md) for source fidelity, unresolved anatomy, scientific review notes and validation results.
+
 ### Male reference
 
 The male viewer uses **BodyParts3D 4.0**, an adult male reference anatomy containing:

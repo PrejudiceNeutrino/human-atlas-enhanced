@@ -13,6 +13,7 @@ export interface GalleryFigure {
   source: { deck: string; slides: number[]; cropNormalized?: number[] };
   sourceType: string;
   rightsReview: string;
+  scienceReview?: string;
 }
 
 export interface GalleryCollection {
@@ -43,6 +44,7 @@ export function parseGallery(input: unknown): GalleryCollection {
   for (const item of data.items) {
     if (!item || typeof item.id !== 'string' || !/^[a-z0-9-]+$/.test(item.id) || ids.has(item.id) ||
         !sections.has(item.category) || !['title', 'description', 'alt', 'sourceType', 'rightsReview'].every(key => typeof item[key as keyof GalleryFigure] === 'string') ||
+        (item.scienceReview !== undefined && typeof item.scienceReview !== 'string') ||
         !Array.isArray(item.tags) || !item.tags.every(tag => typeof tag === 'string') ||
         !/^[a-f0-9]{64}$/.test(item.sha256) ||
         !Number.isFinite(item.width) || !Number.isFinite(item.height) || item.width <= 0 || item.height <= 0 ||

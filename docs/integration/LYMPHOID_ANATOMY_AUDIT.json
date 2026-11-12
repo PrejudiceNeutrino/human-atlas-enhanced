@@ -1,0 +1,711 @@
+{
+  "subjectId": "lymphoid",
+  "candidateCount": 19,
+  "models": [
+    {
+      "modelId": "bp3d-male-4",
+      "experimental": false,
+      "structureShortcuts": 3,
+      "primaryParts": 3,
+      "scopedParts": 4,
+      "coverage": [
+        {
+          "candidateIndex": 0,
+          "label": "Spleen",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002828"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateIndex": 1,
+          "label": "Thymus",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:003385"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateIndex": 2,
+          "label": "Lymph nodes (cervical)",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 3,
+          "label": "Lymph nodes (axillary)",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 4,
+          "label": "Lymph nodes (inguinal)",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 5,
+          "label": "Thoracic duct",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 6,
+          "label": "Right lymphatic duct",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 7,
+          "label": "Cisterna chyli",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 8,
+          "label": "Tonsils (palatine)",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 9,
+          "label": "Tonsil (pharyngeal)",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 10,
+          "label": "Appendix",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:000209"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateIndex": 11,
+          "label": "Red bone marrow",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 12,
+          "label": "Peyer’s patches",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 13,
+          "label": "Lymphatic capillaries",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 14,
+          "label": "Lymphatic vessels",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 15,
+          "label": "B lymphocytes",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 16,
+          "label": "T lymphocytes",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 17,
+          "label": "Natural killer cells",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 18,
+          "label": "Spleen red and white pulp",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        }
+      ],
+      "verified": [
+        {
+          "conceptId": "atlas:concept:002828",
+          "label": "Spleen",
+          "sectionId": "spleen",
+          "summary": "",
+          "sourceConceptId": "FMA7196",
+          "candidateIndex": 0,
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2561",
+              "name": "Spleen",
+              "sourceConceptId": "FMA7196",
+              "system": "lymphatic",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:003385",
+          "label": "Thymus",
+          "sectionId": "thymus",
+          "summary": "",
+          "sourceConceptId": "FMA9607",
+          "candidateIndex": 1,
+          "representationCount": 2,
+          "parts": [
+            {
+              "id": "FJ3150",
+              "name": "Left lobe of thymus",
+              "sourceConceptId": "FMA71195",
+              "system": "lymphatic",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3151",
+              "name": "Right lobe of thymus",
+              "sourceConceptId": "FMA71194",
+              "system": "lymphatic",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:000209",
+          "label": "Appendix",
+          "sectionId": "tonsils-and-malt",
+          "summary": "",
+          "sourceConceptId": "FMA14542",
+          "candidateIndex": 10,
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2565",
+              "name": "Appendix",
+              "sourceConceptId": "FMA14542",
+              "system": "digestive",
+              "relation": "exact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelId": "female-study-v3",
+      "experimental": true,
+      "structureShortcuts": 3,
+      "primaryParts": 3,
+      "scopedParts": 4,
+      "coverage": [
+        {
+          "candidateIndex": 0,
+          "label": "Spleen",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:002828"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateIndex": 1,
+          "label": "Thymus",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:003385"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateIndex": 2,
+          "label": "Lymph nodes (cervical)",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 3,
+          "label": "Lymph nodes (axillary)",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 4,
+          "label": "Lymph nodes (inguinal)",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 5,
+          "label": "Thoracic duct",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 6,
+          "label": "Right lymphatic duct",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 7,
+          "label": "Cisterna chyli",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 8,
+          "label": "Tonsils (palatine)",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 9,
+          "label": "Tonsil (pharyngeal)",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 10,
+          "label": "Appendix",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:000209"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateIndex": 11,
+          "label": "Red bone marrow",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 12,
+          "label": "Peyer’s patches",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 13,
+          "label": "Lymphatic capillaries",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 14,
+          "label": "Lymphatic vessels",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 15,
+          "label": "B lymphocytes",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 16,
+          "label": "T lymphocytes",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 17,
+          "label": "Natural killer cells",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 18,
+          "label": "Spleen red and white pulp",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        }
+      ],
+      "verified": [
+        {
+          "conceptId": "atlas:concept:002828",
+          "label": "Spleen",
+          "sectionId": "spleen",
+          "summary": "",
+          "sourceConceptId": "FMA7196",
+          "candidateIndex": 0,
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2561",
+              "name": "Spleen",
+              "sourceConceptId": "FMA7196",
+              "system": "lymphatic",
+              "relation": "exact"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:003385",
+          "label": "Thymus",
+          "sectionId": "thymus",
+          "summary": "",
+          "sourceConceptId": "FMA9607",
+          "candidateIndex": 1,
+          "representationCount": 2,
+          "parts": [
+            {
+              "id": "FJ3150",
+              "name": "Left lobe of thymus",
+              "sourceConceptId": "FMA71195",
+              "system": "lymphatic",
+              "relation": "part-of"
+            },
+            {
+              "id": "FJ3151",
+              "name": "Right lobe of thymus",
+              "sourceConceptId": "FMA71194",
+              "system": "lymphatic",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:000209",
+          "label": "Appendix",
+          "sectionId": "tonsils-and-malt",
+          "summary": "",
+          "sourceConceptId": "FMA14542",
+          "candidateIndex": 10,
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "FJ2565",
+              "name": "Appendix",
+              "sourceConceptId": "FMA14542",
+              "system": "digestive",
+              "relation": "exact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelId": "hra-female-v1.5",
+      "experimental": false,
+      "structureShortcuts": 4,
+      "primaryParts": 14,
+      "scopedParts": 10,
+      "coverage": [
+        {
+          "candidateIndex": 0,
+          "label": "Spleen",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004401"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateIndex": 1,
+          "label": "Thymus",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004445"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateIndex": 2,
+          "label": "Lymph nodes (cervical)",
+          "status": "uncertain",
+          "shortcuts": [],
+          "note": "The HRA sample node has afferent/efferent vessel geometry but no verified regional identity or whole-body drainage mapping. It is excluded from this lesson."
+        },
+        {
+          "candidateIndex": 3,
+          "label": "Lymph nodes (axillary)",
+          "status": "uncertain",
+          "shortcuts": [],
+          "note": "The HRA sample node has afferent/efferent vessel geometry but no verified regional identity or whole-body drainage mapping. It is excluded from this lesson."
+        },
+        {
+          "candidateIndex": 4,
+          "label": "Lymph nodes (inguinal)",
+          "status": "uncertain",
+          "shortcuts": [],
+          "note": "The HRA sample node has afferent/efferent vessel geometry but no verified regional identity or whole-body drainage mapping. It is excluded from this lesson."
+        },
+        {
+          "candidateIndex": 5,
+          "label": "Thoracic duct",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 6,
+          "label": "Right lymphatic duct",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 7,
+          "label": "Cisterna chyli",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 8,
+          "label": "Tonsils (palatine)",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004198"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateIndex": 9,
+          "label": "Tonsil (pharyngeal)",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 10,
+          "label": "Appendix",
+          "status": "verified-and-integrated",
+          "shortcuts": [
+            "atlas:concept:004494"
+          ],
+          "note": "Resolved through canonical identity and actual indexed geometry."
+        },
+        {
+          "candidateIndex": 11,
+          "label": "Red bone marrow",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 12,
+          "label": "Peyer’s patches",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 13,
+          "label": "Lymphatic capillaries",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 14,
+          "label": "Lymphatic vessels",
+          "status": "partial-anatomy-not-integrated",
+          "shortcuts": [],
+          "note": "The HRA sample node has afferent/efferent vessel geometry but no verified regional identity or whole-body drainage mapping. It is excluded from this lesson."
+        },
+        {
+          "candidateIndex": 15,
+          "label": "B lymphocytes",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 16,
+          "label": "T lymphocytes",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 17,
+          "label": "Natural killer cells",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        },
+        {
+          "candidateIndex": 18,
+          "label": "Spleen red and white pulp",
+          "status": "not-represented",
+          "shortcuts": [],
+          "note": "No verified target in this model; no substitute anatomy is selected."
+        }
+      ],
+      "verified": [
+        {
+          "conceptId": "atlas:concept:004401",
+          "label": "Spleen",
+          "sectionId": "spleen",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_spleen",
+          "candidateIndex": 0,
+          "representationCount": 5,
+          "parts": [
+            {
+              "id": "VH_F_gastric_surface_of_spleen",
+              "name": "gastric surface of spleen",
+              "sourceConceptId": "FMA:15837",
+              "system": "lymphatic",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_diaphragmatic_surface_of_spleen",
+              "name": "diaphragmatic surface of spleen",
+              "sourceConceptId": "FMA:15828",
+              "system": "lymphatic",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_colic_surface_of_spleen",
+              "name": "colic surface of spleen",
+              "sourceConceptId": "FMA:15838",
+              "system": "lymphatic",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_hilum_of_spleen",
+              "name": "hilum of spleen",
+              "sourceConceptId": "UBERON:0001248",
+              "system": "lymphatic",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_renal_surface_of_spleen",
+              "name": "renal surface of spleen",
+              "sourceConceptId": "FMA:15839",
+              "system": "lymphatic",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004445",
+          "label": "Thymus",
+          "sectionId": "thymus",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_thymus",
+          "candidateIndex": 1,
+          "representationCount": 2,
+          "parts": [
+            {
+              "id": "VH_F_thymus_lobe_L",
+              "name": "left thymus lobe",
+              "sourceConceptId": "UBERON:0005457",
+              "system": "lymphatic",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_thymus_lobe_R",
+              "name": "right thymus lobe",
+              "sourceConceptId": "UBERON:0005469",
+              "system": "lymphatic",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004198",
+          "label": "Tonsils (palatine)",
+          "sectionId": "tonsils-and-malt",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_palatine_tonsil",
+          "candidateIndex": 8,
+          "representationCount": 2,
+          "parts": [
+            {
+              "id": "VH_F_palatine_tonsil_L",
+              "name": "left palatine tonsil",
+              "sourceConceptId": "FMA:54974",
+              "system": "digestive",
+              "relation": "part-of"
+            },
+            {
+              "id": "VH_F_palatine_tonsil_R",
+              "name": "right palatine tonsil",
+              "sourceConceptId": "FMA:54973",
+              "system": "digestive",
+              "relation": "part-of"
+            }
+          ]
+        },
+        {
+          "conceptId": "atlas:concept:004494",
+          "label": "Appendix",
+          "sectionId": "tonsils-and-malt",
+          "summary": "",
+          "sourceConceptId": "HRA:VH_F_vermiform_appendix",
+          "candidateIndex": 10,
+          "representationCount": 1,
+          "parts": [
+            {
+              "id": "VH_F_vermiform_appendix",
+              "name": "vermiform appendix",
+              "sourceConceptId": "UBERON:0001154",
+              "system": "digestive",
+              "relation": "exact"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "excludedSampleGeometry": [
+    "Yao_afferent_lymphatic_vessel",
+    "Yao_capsule_of_lymph_node",
+    "Yao_follicles",
+    "Yao_efferent_lymph_node",
+    "Yao_medulla_of_lymph_node",
+    "Yao_paracortex",
+    "Yao_blood_vasculature"
+  ],
+  "limitations": [
+    "Female study geometry remains experimental.",
+    "Canonical identity and binary geometry checks do not constitute independent anatomical peer review.",
+    "Regional node groups, thoracic/right lymphatic ducts, cisterna chyli, pharyngeal tonsil and red marrow have no verified shortcuts.",
+    "Peyer patches, lymphatic capillaries, individual immune cells and splenic pulp are not represented as whole-body selectable targets.",
+    "The HRA Yao sample node has no verified cervical, axillary or inguinal assignment; its sample geometry is excluded.",
+    "GPU interaction and visual review must be reported separately from this audit."
+  ]
+}

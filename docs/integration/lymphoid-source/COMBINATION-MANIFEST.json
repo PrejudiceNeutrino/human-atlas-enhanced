@@ -1,0 +1,37 @@
+{
+  "package": "Lymphoid System — complete stages 1–5",
+  "original_phase_packages": [
+    {
+      "stage": "phase-1-blueprint",
+      "original_zip": "lymphoid-system-stage1-blueprint.zip",
+      "original_zip_sha256": "25fd25b9dcb073721167d3562da66201bc26b34cfeb4a41294a607fec669f4a3",
+      "file_count": 4
+    },
+    {
+      "stage": "phase-2-readings",
+      "original_zip": "lymphoid-system-stage2-readings.zip",
+      "original_zip_sha256": "47073d2f6589ea5db26e6b8aebc8cc38fe2c6997e68f306e5935af2f788fe35b",
+      "file_count": 8
+    },
+    {
+      "stage": "phase-3-readings",
+      "original_zip": "lymphoid-system-stage3-readings.zip",
+      "original_zip_sha256": "cf29eceedd98c85fc57fcc29a5dab795eb9311ac990569b548019cba8eb55f5e",
+      "file_count": 11
+    },
+    {
+      "stage": "phase-4-study-tools",
+      "original_zip": "lymphoid-system-stage4-study-tools.zip",
+      "original_zip_sha256": "68ab9612edd12e7ebf07b75a7845f167d6262412f543c3304da22f94c34cdc18",
+      "file_count": 16
+    },
+    {
+      "stage": "phase-5-gallery",
+      "original_zip": "lymphoid-system-stage5-gallery.zip",
+      "original_zip_sha256": "c9edf37a17ceea141d42f95bb29024be1557dbdd0ab8560ce3f86dcbc7b266fb",
+      "file_count": 80
+    }
+  ],
+  "total_original_files": 119,
+  "notes": "Original files preserved unmodified and grouped by phase; original ZIPs not nested; input lecture materials not included."
+}

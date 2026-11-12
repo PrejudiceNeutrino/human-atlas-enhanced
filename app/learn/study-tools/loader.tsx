@@ -1,6 +1,7 @@
 import { Component, lazy, Suspense, type ReactNode } from 'react';
 type StudyToolsProps = {subjectId:string;subjectTitle:string;route:string;tabId:string};
 const bankLoaders = {
+  lymphoid: () => import('./lymphoid-data'),
   digestive: () => import('./data'),
   respiratory: () => import('./respiratory-data'),
 };
