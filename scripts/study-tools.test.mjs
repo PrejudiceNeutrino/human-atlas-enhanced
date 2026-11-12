@@ -15,8 +15,9 @@ const hashes={
  'flashcards.json':'1f1daf9f71015463e8873f4f411d042145d99a383a994458855971164ed8f022',
  'manifest.json':'092b4b41a574d031d2d6b92841978ae92d099b1e7af8aa7fc8f86ddb9b257039',
 };
-test('all five imported JSON files retain exact supplied bytes and all authored records/topics',()=>{
- for(const [file,hash] of Object.entries(hashes))assert.equal(createHash('sha256').update(fs.readFileSync(`data/learn/digestive-study-tools/${file}`)).digest('hex'),hash,file);
+test('all five JSON files retain the latest authored bytes and stable records/topics',()=>{
+ const editorialHashes=new Map(JSON.parse(fs.readFileSync('docs/integration/editorial-consistency-source/archive-inventory.json','utf8')).installedFiles.map(entry=>[entry.targetPath,entry.sha256]));
+ for(const [file,hash] of Object.entries(hashes)){const target=`data/learn/digestive-study-tools/${file}`;assert.equal(createHash('sha256').update(fs.readFileSync(target)).digest('hex'),editorialHashes.get(target)??hash,file);}
  assert.deepEqual([bank.concepts.length,bank.multipleChoice.length,bank.fillInTheBlank.length,bank.flashcards.length,bank.manifest.topics.length],[194,111,55,101,12]);
  const records=[...bank.concepts,...bank.multipleChoice,...bank.fillInTheBlank,...bank.flashcards];assert.equal(new Set(records.map(record=>record.id)).size,461);
  assert.deepEqual(unresolvedReferences,[]);const refs=new Set();for(const record of records)for(const ref of record.sourceRefs){const target=sourceTarget(ref,articles,'/learn/digestive');assert.ok(target);assert.equal(target.href,`/learn/digestive#${ref.articleId}-${ref.sectionId}`);refs.add(target.href);}assert.equal(refs.size,29);

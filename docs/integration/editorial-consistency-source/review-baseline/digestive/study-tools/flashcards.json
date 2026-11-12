@@ -1,0 +1,4658 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "digestive",
+  "cards": [
+    {
+      "id": "fc-001",
+      "topicId": "foundations",
+      "front": "Name the instructor's seven digestive functions.",
+      "back": "Ingestion, mechanical processing, chemical digestion, secretion, absorption, compaction, defecation.",
+      "conceptIds": [
+        "ingestion",
+        "compaction"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-002",
+      "topicId": "foundations",
+      "front": "How is mechanical processing different from chemical digestion?",
+      "back": "It breaks food into smaller pieces without breaking chemical bonds.",
+      "conceptIds": [
+        "mechanical-processing",
+        "chemical-digestion"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-003",
+      "topicId": "foundations",
+      "front": "What is the difference between a bolus and chyme?",
+      "back": "Bolus is chewed, saliva-coated food; chyme is stomach-mixed semifluid.",
+      "conceptIds": [
+        "bolus",
+        "chyme"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-004",
+      "topicId": "foundations",
+      "front": "What happens during absorption?",
+      "back": "Nutrients, water, or ions cross GI epithelium into blood or lymph.",
+      "conceptIds": [
+        "absorption"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-005",
+      "topicId": "foundations",
+      "front": "How do catabolism and anabolism differ?",
+      "back": "Catabolism breaks down molecules; anabolism builds larger molecules.",
+      "conceptIds": [
+        "catabolism",
+        "anabolism"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-006",
+      "topicId": "foundations",
+      "front": "Why is pancreas called an accessory digestive organ?",
+      "back": "It secretes into the gut, but food does not pass through it.",
+      "conceptIds": [
+        "accessory-digestive-organs"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-007",
+      "topicId": "foundations",
+      "front": "What is motility, and is it on this lecture's seven-function list?",
+      "back": "Mixing/propulsion of contents; no, the list names compaction instead.",
+      "conceptIds": [
+        "motility",
+        "compaction"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-008",
+      "topicId": "gut-wall",
+      "front": "List the four basic GI wall layers from lumen outward.",
+      "back": "Mucosa, submucosa, muscularis externa, serosa/adventitia.",
+      "conceptIds": [
+        "mucosa",
+        "submucosa",
+        "muscularis-externa",
+        "serosa"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-009",
+      "topicId": "gut-wall",
+      "front": "Where is the myenteric plexus, and what does it regulate?",
+      "back": "Between muscularis layers; mainly motility.",
+      "conceptIds": [
+        "myenteric-plexus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-010",
+      "topicId": "gut-wall",
+      "front": "What does the submucosal plexus regulate?",
+      "back": "Secretion and local blood flow.",
+      "conceptIds": [
+        "submucosal-plexus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-011",
+      "topicId": "gut-wall",
+      "front": "Peristalsis versus segmentation: what is the main difference?",
+      "back": "Peristalsis propels; segmentation mixes.",
+      "conceptIds": [
+        "peristalsis",
+        "segmentation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-012",
+      "topicId": "gut-wall",
+      "front": "What are mass movements?",
+      "back": "Strong, infrequent colon contractions moving fecal material toward rectum.",
+      "conceptIds": [
+        "mass-movements"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-013",
+      "topicId": "gut-wall",
+      "front": "What is a mesentery?",
+      "back": "Double peritoneal sheet supporting organs and carrying vessels/nerves.",
+      "conceptIds": [
+        "mesentery"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-014",
+      "topicId": "gut-wall",
+      "front": "Visceral versus parietal peritoneum?",
+      "back": "Visceral covers organs; parietal lines abdominal wall.",
+      "conceptIds": [
+        "visceral-peritoneum",
+        "parietal-peritoneum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-015",
+      "topicId": "gut-wall",
+      "front": "What does retroperitoneal mean?",
+      "back": "Located behind the parietal peritoneum; much of pancreas is an example.",
+      "conceptIds": [
+        "retroperitoneal"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-016",
+      "topicId": "oral",
+      "front": "Which salivary components lubricate and protect the mouth?",
+      "back": "Mucins lubricate; lysozyme and IgA contribute to defense.",
+      "conceptIds": [
+        "mucins",
+        "lysozyme",
+        "secretory-iga"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-017",
+      "topicId": "oral",
+      "front": "Which enzyme starts starch breakdown in saliva?",
+      "back": "Salivary amylase.",
+      "conceptIds": [
+        "salivary-amylase"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-018",
+      "topicId": "oral",
+      "front": "Which salivary gland uses Stensen's duct?",
+      "back": "Parotid gland.",
+      "conceptIds": [
+        "parotid-gland",
+        "stensen-s-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-019",
+      "topicId": "oral",
+      "front": "Which salivary gland uses Wharton's duct?",
+      "back": "Submandibular gland.",
+      "conceptIds": [
+        "submandibular-gland",
+        "wharton-s-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-020",
+      "topicId": "oral",
+      "front": "Where is the sublingual gland?",
+      "back": "Beneath the tongue, in the mouth floor.",
+      "conceptIds": [
+        "sublingual-gland"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-021",
+      "topicId": "oral",
+      "front": "What is the fauces?",
+      "back": "Opening from oral cavity to oropharynx.",
+      "conceptIds": [
+        "fauces"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-022",
+      "topicId": "oral",
+      "front": "Enamel versus cementum: what does each cover?",
+      "back": "Enamel covers crown; cementum covers root.",
+      "conceptIds": [
+        "enamel",
+        "cementum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-023",
+      "topicId": "oral",
+      "front": "What lies inside the tooth's pulp cavity?",
+      "back": "Blood vessels, nerves, and connective tissue.",
+      "conceptIds": [
+        "pulp-cavity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-024",
+      "topicId": "oral",
+      "front": "What is the apical foramen?",
+      "back": "Root-tip opening for vessels and nerves.",
+      "conceptIds": [
+        "apical-foramen"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-025",
+      "topicId": "oral",
+      "front": "How many deciduous and permanent teeth are typical?",
+      "back": "20 primary; up to 32 permanent.",
+      "conceptIds": [
+        "deciduous-teeth",
+        "permanent-teeth"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-026",
+      "topicId": "swallowing",
+      "front": "What are the three phases of deglutition?",
+      "back": "Buccal (voluntary), pharyngeal (involuntary), esophageal (involuntary).",
+      "conceptIds": [
+        "buccal-phase",
+        "pharyngeal-phase",
+        "esophageal-phase"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-027",
+      "topicId": "swallowing",
+      "front": "Which brainstem area helps coordinate swallowing?",
+      "back": "Medulla oblongata.",
+      "conceptIds": [
+        "medulla-oblongata"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-028",
+      "topicId": "swallowing",
+      "front": "What protects the airway during the pharyngeal phase?",
+      "back": "Laryngeal elevation/closure, with epiglottic assistance.",
+      "conceptIds": [
+        "pharyngeal-phase",
+        "epiglottis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-029",
+      "topicId": "swallowing",
+      "front": "How can food pass down the esophagus against gravity?",
+      "back": "Esophageal peristalsis.",
+      "conceptIds": [
+        "esophageal-phase",
+        "peristalsis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-030",
+      "topicId": "swallowing",
+      "front": "Which esophageal sphincter helps prevent acid reflux?",
+      "back": "Lower esophageal sphincter (LES).",
+      "conceptIds": [
+        "lower-esophageal-sphincter"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-031",
+      "topicId": "swallowing",
+      "front": "Which pharyngeal section is air-only?",
+      "back": "Nasopharynx.",
+      "conceptIds": [
+        "nasopharynx"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-032",
+      "topicId": "swallowing",
+      "front": "What is the esophageal hiatus?",
+      "back": "Diaphragm opening for the esophagus.",
+      "conceptIds": [
+        "esophageal-hiatus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-033",
+      "topicId": "stomach",
+      "front": "What are the four stomach regions?",
+      "back": "Cardia, fundus, body, pylorus.",
+      "conceptIds": [
+        "cardia",
+        "fundus",
+        "body-of-stomach",
+        "pylorus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-034",
+      "topicId": "stomach",
+      "front": "Parietal cells secrete which two substances?",
+      "back": "Hydrochloric acid and intrinsic factor.",
+      "conceptIds": [
+        "parietal-cells",
+        "intrinsic-factor"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-035",
+      "topicId": "stomach",
+      "front": "Chief cells secrete which digestive substances?",
+      "back": "Pepsinogen and gastric lipase.",
+      "conceptIds": [
+        "chief-cells",
+        "pepsinogen",
+        "gastric-lipase"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-036",
+      "topicId": "stomach",
+      "front": "What does hydrochloric acid do in the stomach?",
+      "back": "Supports denaturation, pepsin activation, and microbial killing.",
+      "conceptIds": [
+        "hydrochloric-acid",
+        "pepsin"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-037",
+      "topicId": "stomach",
+      "front": "Why is pepsinogen secreted in inactive form?",
+      "back": "It limits proteolytic damage to the producing tissue.",
+      "conceptIds": [
+        "pepsinogen"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-038",
+      "topicId": "stomach",
+      "front": "Why is intrinsic factor important?",
+      "back": "It is needed for efficient B12 absorption in terminal ileum.",
+      "conceptIds": [
+        "intrinsic-factor"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-039",
+      "topicId": "stomach",
+      "front": "How does stomach mucosa resist its own acid?",
+      "back": "Mucus, bicarbonate, epithelial integrity, and repair.",
+      "conceptIds": [
+        "gastric-mucosal-barrier"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-040",
+      "topicId": "stomach",
+      "front": "What are rugae?",
+      "back": "Expandable folds in the stomach lining.",
+      "conceptIds": [
+        "rugae"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-041",
+      "topicId": "stomach",
+      "front": "Which additional muscle layer aids gastric churning?",
+      "back": "Oblique smooth-muscle layer.",
+      "conceptIds": [
+        "oblique-muscle-layer"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-042",
+      "topicId": "stomach",
+      "front": "What does the pyloric sphincter regulate?",
+      "back": "Chyme passage from stomach into duodenum.",
+      "conceptIds": [
+        "pyloric-sphincter"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-043",
+      "topicId": "gastric-regulation",
+      "front": "What triggers the cephalic phase?",
+      "back": "Sight, smell, taste, or thought of food.",
+      "conceptIds": [
+        "cephalic-phase"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "three-phases-of-gastric-secretion",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gastric-phases",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-044",
+      "topicId": "gastric-regulation",
+      "front": "What triggers the gastric phase?",
+      "back": "Stomach stretching and food/peptides in its lumen.",
+      "conceptIds": [
+        "gastric-phase"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "three-phases-of-gastric-secretion",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gastric-phases",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-045",
+      "topicId": "gastric-regulation",
+      "front": "What is the main intestinal-phase feedback effect?",
+      "back": "Slower gastric secretion and emptying.",
+      "conceptIds": [
+        "intestinal-phase"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "three-phases-of-gastric-secretion",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gastric-phases",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-046",
+      "topicId": "gastric-regulation",
+      "front": "What nerve supports cephalic stimulation of the stomach?",
+      "back": "Vagus nerve.",
+      "conceptIds": [
+        "vagus-nerve"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "three-phases-of-gastric-secretion",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gastric-phases",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-047",
+      "topicId": "gastric-regulation",
+      "front": "What does the gastroileal reflex promote?",
+      "back": "Increased ileal movement toward the cecum with gastric activity.",
+      "conceptIds": [
+        "gastroileal-reflex"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "three-phases-of-gastric-secretion",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gastric-phases",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-048",
+      "topicId": "hormones",
+      "front": "Gastrin: source and main effect?",
+      "back": "Gastric G cells; stimulates gastric acid/activity.",
+      "conceptIds": [
+        "gastrin",
+        "g-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-049",
+      "topicId": "hormones",
+      "front": "Secretin: trigger and main effect?",
+      "back": "Duodenal acid; promotes pancreatic bicarbonate.",
+      "conceptIds": [
+        "secretin",
+        "s-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-050",
+      "topicId": "hormones",
+      "front": "CCK: trigger and main effects?",
+      "back": "Intestinal fats/proteins; pancreatic enzymes and gallbladder contraction.",
+      "conceptIds": [
+        "cholecystokinin",
+        "i-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-051",
+      "topicId": "hormones",
+      "front": "Somatostatin: source and principal gastric effect?",
+      "back": "D cells; suppresses gastrin and acid.",
+      "conceptIds": [
+        "somatostatin",
+        "d-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-052",
+      "topicId": "hormones",
+      "front": "GIP: source and key effect?",
+      "back": "Intestinal K cells; glucose-dependent insulin stimulation.",
+      "conceptIds": [
+        "gastric-inhibitory-polypeptide",
+        "k-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-053",
+      "topicId": "hormones",
+      "front": "VIP: an important intestinal action?",
+      "back": "Vasodilation, with secretion-regulating effects.",
+      "conceptIds": [
+        "vasoactive-intestinal-peptide"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-054",
+      "topicId": "hormones",
+      "front": "Which cells secrete CCK, secretin, and GIP?",
+      "back": "I cells, S cells, and K cells, respectively.",
+      "conceptIds": [
+        "i-cells",
+        "s-cells",
+        "k-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-055",
+      "topicId": "hormones",
+      "front": "Why do fat and acid tend to slow gastric emptying?",
+      "back": "Intestinal feedback limits delivery while the duodenum processes chyme.",
+      "conceptIds": [
+        "enterogastric-inhibition",
+        "secretin"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-056",
+      "topicId": "small-intestine",
+      "front": "Name the three small-intestinal sections in order.",
+      "back": "Duodenum, jejunum, ileum.",
+      "conceptIds": [
+        "duodenum",
+        "jejunum",
+        "ileum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-057",
+      "topicId": "small-intestine",
+      "front": "Which section receives bile and pancreatic secretions?",
+      "back": "Duodenum.",
+      "conceptIds": [
+        "duodenum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-058",
+      "topicId": "small-intestine",
+      "front": "Which section handles much of nutrient absorption?",
+      "back": "Jejunum.",
+      "conceptIds": [
+        "jejunum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-059",
+      "topicId": "small-intestine",
+      "front": "Which section reabsorbs bile salts and B12-intrinsic factor?",
+      "back": "Terminal ileum.",
+      "conceptIds": [
+        "ileum",
+        "vitamin-b12-absorption"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-060",
+      "topicId": "small-intestine",
+      "front": "Order intestinal surface structures from largest to smallest.",
+      "back": "Plicae circulares, villi, microvilli.",
+      "conceptIds": [
+        "plicae-circulares",
+        "villi",
+        "microvilli"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-061",
+      "topicId": "small-intestine",
+      "front": "Which structures receive chylomicrons?",
+      "back": "Intestinal lacteals.",
+      "conceptIds": [
+        "lacteals",
+        "chylomicrons"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-062",
+      "topicId": "small-intestine",
+      "front": "Where do glucose and amino acids usually go after absorption?",
+      "back": "Portal blood to the liver.",
+      "conceptIds": [
+        "hepatic-portal-vein"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-063",
+      "topicId": "small-intestine",
+      "front": "What is the chylomicron route out of enterocytes?",
+      "back": "Enterocyte → lacteal → lymph → systemic blood.",
+      "conceptIds": [
+        "chylomicrons",
+        "lacteals"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-064",
+      "topicId": "small-intestine",
+      "front": "What do Brunner's glands secrete?",
+      "back": "Alkaline mucus in the duodenum.",
+      "conceptIds": [
+        "brunner-s-glands"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-065",
+      "topicId": "small-intestine",
+      "front": "What do Paneth cells do?",
+      "back": "Release antimicrobial molecules in intestinal crypts.",
+      "conceptIds": [
+        "paneth-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-066",
+      "topicId": "small-intestine",
+      "front": "Where are Peyer's patches prominent?",
+      "back": "Ileum.",
+      "conceptIds": [
+        "peyer-s-patches"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-067",
+      "topicId": "small-intestine",
+      "front": "What is the intestinal brush border?",
+      "back": "Enzyme-bearing microvilli on enterocytes.",
+      "conceptIds": [
+        "brush-border",
+        "enterocytes"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-068",
+      "topicId": "pancreas",
+      "front": "Identify pancreas head, body, and tail positions.",
+      "back": "Head in duodenal C-loop; body crosses abdomen; tail toward spleen.",
+      "conceptIds": [
+        "pancreatic-head",
+        "pancreatic-body",
+        "pancreatic-tail"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-069",
+      "topicId": "pancreas",
+      "front": "Exocrine acini versus endocrine islets?",
+      "back": "Acini secrete digestive enzymes; islets release hormones into blood.",
+      "conceptIds": [
+        "pancreatic-acini",
+        "pancreatic-islets"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-070",
+      "topicId": "pancreas",
+      "front": "Which secretion neutralizes acidic chyme in the duodenum?",
+      "back": "Pancreatic bicarbonate-rich fluid.",
+      "conceptIds": [
+        "pancreatic-bicarbonate"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-071",
+      "topicId": "pancreas",
+      "front": "Which pancreatic enzyme attacks starch?",
+      "back": "Pancreatic amylase.",
+      "conceptIds": [
+        "pancreatic-amylase"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-072",
+      "topicId": "pancreas",
+      "front": "Which pancreatic enzyme attacks triglycerides?",
+      "back": "Pancreatic lipase.",
+      "conceptIds": [
+        "pancreatic-lipase"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-073",
+      "topicId": "pancreas",
+      "front": "Which pancreatic enzymes attack proteins?",
+      "back": "Proteases such as trypsin and chymotrypsin.",
+      "conceptIds": [
+        "pancreatic-proteases"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-074",
+      "topicId": "pancreas",
+      "front": "Why is trypsinogen an inactive precursor?",
+      "back": "Protects the pancreas before intestinal activation.",
+      "conceptIds": [
+        "trypsinogen"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-075",
+      "topicId": "pancreas",
+      "front": "What is the duct of Wirsung?",
+      "back": "Main pancreatic duct.",
+      "conceptIds": [
+        "main-pancreatic-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-076",
+      "topicId": "hepatobiliary",
+      "front": "What is the difference between hepatocytes and Kupffer cells?",
+      "back": "Hepatocytes metabolize/produce bile; Kupffer cells are macrophages.",
+      "conceptIds": [
+        "hepatocytes",
+        "kupffer-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-077",
+      "topicId": "hepatobiliary",
+      "front": "Which organ makes bile, and which stores it?",
+      "back": "Liver makes; gallbladder stores and concentrates.",
+      "conceptIds": [
+        "bile",
+        "gallbladder"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-078",
+      "topicId": "hepatobiliary",
+      "front": "Why is bile useful even though it has no digestive enzymes?",
+      "back": "It emulsifies lipids, aiding lipase access and absorption.",
+      "conceptIds": [
+        "bile",
+        "emulsification"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-079",
+      "topicId": "hepatobiliary",
+      "front": "How is the common hepatic duct formed?",
+      "back": "Right and left hepatic ducts unite.",
+      "conceptIds": [
+        "common-hepatic-duct",
+        "right-hepatic-duct",
+        "left-hepatic-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-080",
+      "topicId": "hepatobiliary",
+      "front": "How is the common bile duct formed?",
+      "back": "Common hepatic duct joins cystic duct.",
+      "conceptIds": [
+        "common-bile-duct",
+        "cystic-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-081",
+      "topicId": "hepatobiliary",
+      "front": "Route of bile leaving a contracting gallbladder?",
+      "back": "Cystic duct → common bile duct → duodenum.",
+      "conceptIds": [
+        "cystic-duct",
+        "common-bile-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-082",
+      "topicId": "hepatobiliary",
+      "front": "Where does the biliary-pancreatic outflow usually enter the gut?",
+      "back": "Major duodenal papilla in descending duodenum.",
+      "conceptIds": [
+        "major-duodenal-papilla"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-083",
+      "topicId": "hepatobiliary",
+      "front": "What does the sphincter of Oddi regulate?",
+      "back": "Entry of bile and pancreatic secretions into duodenum.",
+      "conceptIds": [
+        "sphincter-of-oddi"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-084",
+      "topicId": "hepatobiliary",
+      "front": "Explain enterohepatic circulation in one line.",
+      "back": "Bile salts reabsorbed in ileum return via portal blood to liver.",
+      "conceptIds": [
+        "enterohepatic-circulation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-085",
+      "topicId": "hepatobiliary",
+      "front": "Which liver lobe is near the gallbladder fossa?",
+      "back": "Quadrate lobe.",
+      "conceptIds": [
+        "quadrate-lobe"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-086",
+      "topicId": "hepatobiliary",
+      "front": "Which fetal vessel leaves the liver's round ligament?",
+      "back": "Umbilical vein.",
+      "conceptIds": [
+        "round-ligament-of-liver"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-087",
+      "topicId": "colon",
+      "front": "Name colon segments from cecum to rectum.",
+      "back": "Ascending, transverse, descending, sigmoid, then rectum.",
+      "conceptIds": [
+        "ascending-colon",
+        "transverse-colon",
+        "descending-colon",
+        "sigmoid-colon"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-088",
+      "topicId": "colon",
+      "front": "Hepatic versus splenic flexure: where are they?",
+      "back": "Hepatic on right near liver; splenic on left near spleen.",
+      "conceptIds": [
+        "right-colic-flexure",
+        "left-colic-flexure"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-089",
+      "topicId": "colon",
+      "front": "What are haustra and taeniae coli?",
+      "back": "Colon pouches and its longitudinal muscle bands.",
+      "conceptIds": [
+        "haustra",
+        "taeniae-coli"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-090",
+      "topicId": "colon",
+      "front": "What initiates the defecation reflex?",
+      "back": "Rectal stretch from accumulating feces.",
+      "conceptIds": [
+        "defecation-reflex"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-091",
+      "topicId": "colon",
+      "front": "Internal versus external anal sphincter: control?",
+      "back": "Internal involuntary smooth muscle; external voluntary skeletal muscle.",
+      "conceptIds": [
+        "internal-anal-sphincter",
+        "external-anal-sphincter"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-092",
+      "topicId": "colon",
+      "front": "Which colon process turns some fiber into absorbable fuel?",
+      "back": "Microbial fermentation to short-chain fatty acids.",
+      "conceptIds": [
+        "gut-microbiota",
+        "short-chain-fatty-acids"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-093",
+      "topicId": "colon",
+      "front": "Which two main tasks does the colon perform?",
+      "back": "Recover water/electrolytes and compact/store feces.",
+      "conceptIds": [
+        "compaction",
+        "rectum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-094",
+      "topicId": "colon",
+      "front": "What are epiploic appendages?",
+      "back": "Small fat-filled serosal tags on colon.",
+      "conceptIds": [
+        "epiploic-appendages"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-095",
+      "topicId": "conditions",
+      "front": "What is gastroesophageal reflux?",
+      "back": "Backflow of stomach contents into esophagus, often producing heartburn.",
+      "conceptIds": [
+        "gastroesophageal-reflux"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-096",
+      "topicId": "conditions",
+      "front": "Gastritis versus colitis?",
+      "back": "Stomach inflammation versus colon inflammation.",
+      "conceptIds": [
+        "gastritis",
+        "colitis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-097",
+      "topicId": "conditions",
+      "front": "What is pancreatitis?",
+      "back": "Inflammation of pancreas; sometimes linked to gallstone obstruction.",
+      "conceptIds": [
+        "pancreatitis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-098",
+      "topicId": "conditions",
+      "front": "What is cirrhosis?",
+      "back": "Advanced liver fibrosis and architectural distortion.",
+      "conceptIds": [
+        "cirrhosis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-099",
+      "topicId": "conditions",
+      "front": "What does jaundice indicate?",
+      "back": "Bilirubin-associated yellowing of skin or sclera.",
+      "conceptIds": [
+        "jaundice"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-100",
+      "topicId": "conditions",
+      "front": "What is cholera's characteristic digestive effect?",
+      "back": "Profuse watery diarrhea from excessive intestinal fluid secretion.",
+      "conceptIds": [
+        "cholera",
+        "diarrhea"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-101",
+      "topicId": "conditions",
+      "front": "What is gingivitis?",
+      "back": "Inflammation of the gums.",
+      "conceptIds": [
+        "gingivitis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

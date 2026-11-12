@@ -3,12 +3,12 @@
   "title": "General Overview",
   "subject": "respiratory-system",
   "subtitle": "Respiratory System | Start Here",
-  "introMarkdown": "Breathing is only the visible part of respiration. The respiratory system brings air into contact with blood, allowing oxygen to enter circulation while carbon dioxide leaves. Your cells require oxygen for most aerobic ATP production, and they continually produce carbon dioxide as they metabolize fuels. Keeping these gases moving requires coordinated airways, lung tissue, respiratory muscles, blood, and nervous-system feedback.\n\nThe same passages that carry air also filter particles, humidify the incoming air, protect sensitive exchange surfaces, support smell and speech, and help regulate blood acidity. The most useful way to understand the system is to follow the air inward, then follow the gases through the bloodstream.",
+  "introMarkdown": "Breathing brings outside air into the lungs so **oxygen** can enter the blood and **carbon dioxide** can leave it. Cells use oxygen during aerobic metabolism and generate carbon dioxide as they release energy from nutrients. The respiratory system supplies the exchange surface and moves air across it; blood carries the gases between the lungs and tissues.\n\nThe airways also filter and condition incoming air, protect the lungs, support smell and speech, and help regulate blood acidity. The easiest way to learn the system is to follow one breath inward and then trace where its gases go.",
   "sections": [
     {
       "id": "why-respiration",
       "title": "Why Breathing Matters",
-      "markdown": "Most cells use oxygen during aerobic metabolism, while carbon dioxide is produced as a consequence of processing fuel. The lungs do not generate the energy themselves: they maintain the exchange with the environment that makes sustained aerobic metabolism possible elsewhere in the body.\n\n**Ventilation** moves air. **Gas exchange** transfers oxygen and carbon dioxide across thin barriers. **Transport** moves those gases through blood. **Cellular respiration** is the chemical use of fuel and oxygen to support ATP production inside cells. Those are connected, but they are not synonyms. As carbon dioxide affects the body's bicarbonate buffer system, breathing also influences blood **pH**.",
+      "markdown": "**Pulmonary ventilation** moves air into and out of the lungs. **External respiration** exchanges oxygen and carbon dioxide between alveoli and pulmonary blood. **Internal respiration** exchanges those gases between systemic blood and body tissues. **Cellular respiration** uses oxygen in cellular metabolism to support ATP production.\n\nThese processes are connected but occur in different places. The respiratory and cardiovascular systems work together: lungs exchange gases with blood, and blood delivers oxygen to cells and returns carbon dioxide for elimination.",
       "slideReferences": {
         "23-Respiratory System.pptx": [
           2,
@@ -23,7 +23,7 @@
     {
       "id": "functions-overview",
       "title": "Seven Functions of the Respiratory System",
-      "markdown": "The Chapter 23 lecture lists **seven functions**:\n\n1. **Provides a surface for gas exchange:** Oxygen enters blood and carbon dioxide leaves blood at the lungs.\n2. **Moves air to and from the exchange surfaces:** Ventilation replaces alveolar air with fresh air.\n3. **Protects respiratory surfaces from environmental variation:** Incoming air is warmed and humidified, reducing drying and temperature stress.\n4. **Defends against pollutants and pathogens:** Mucus, cilia, cough responses, and immune defenses intercept material before it reaches alveoli.\n5. **Produces sounds:** Airflow through the larynx supports speech, singing, and other vocal communication.\n6. **Provides olfactory sensation:** Airborne chemicals reach sensory receptors involved in smell.\n7. **Helps maintain acid–base balance:** Breathing changes how quickly carbon dioxide is eliminated.\n\nThese are the instructor's categories; other textbooks may group them differently.",
+      "markdown": "The respiratory system has **seven major functions**:\n\n- **Gas exchange:** Oxygen enters blood; carbon dioxide leaves it.\n- **Air movement:** Ventilation brings air to and from exchange surfaces.\n- **Environmental protection:** Warms and moistens incoming air.\n- **Defense:** Mucus, cilia, cough, and immune cells help remove harmful material.\n- **Sound production:** Air passing the larynx produces the sounds used in speech.\n- **Olfaction:** Airborne chemicals reach smell receptors.\n- **Acid–base balance:** CO₂ removal helps regulate blood pH.\n\n**Key relationship:** Changing ventilation changes how quickly carbon dioxide is removed.",
       "slideReferences": {
         "23-Respiratory System.pptx": [
           2
@@ -33,7 +33,7 @@
     {
       "id": "air-route",
       "title": "The Route Air Takes",
-      "markdown": "Air usually enters through the **nose** and **nasal cavity**, then passes through the **pharynx**, **larynx**, and **trachea**. The trachea divides into **right and left primary bronchi**, which branch into progressively smaller bronchi and **bronchioles**. The smallest gas-exchanging spaces are the **alveoli**.\n\nThe upper respiratory system includes the nose, nasal cavity, sinuses, and pharynx; the lower system includes the larynx, trachea, bronchial tree, and lungs. The **conducting zone** principally transports and conditions air. The **respiratory zone** begins at respiratory bronchioles, which lead into alveolar ducts and alveoli where gas exchange occurs.",
+      "markdown": "- **Nose and nasal cavity:** Admit, filter, warm, and humidify air.\n- **Pharynx:** Conducts air toward the larynx.\n- **Larynx:** Maintains an airway, helps protect it during swallowing, and produces voice.\n- **Trachea:** Conducts air into the chest.\n- **Bronchi and bronchioles:** Distribute air through progressively smaller branches.\n- **Alveoli:** Tiny air spaces where gases cross into or out of the blood.\n\n**Route:** Nose → nasal cavity → pharynx → larynx → trachea → primary bronchi → smaller bronchi → bronchioles → alveoli.\n\nThe **conducting zone** moves and conditions air; the **respiratory zone** begins in the respiratory bronchioles and includes the alveolar exchange surfaces.",
       "slideReferences": {
         "23-Respiratory System.pptx": [
           3,
@@ -52,7 +52,7 @@
     {
       "id": "airway-defense",
       "title": "Airways Condition and Protect Incoming Air",
-      "markdown": "Nasal passages warm, humidify, and filter incoming air. Conchae create passageways and expose the air to a large moist mucosal surface. Much of the conducting airway is lined by **respiratory epithelium** containing mucus-producing cells and moving **cilia**. The underlying **lamina propria** supports that epithelium.\n\nCilia propel trapped particles and microorganisms in mucus toward the pharynx, where the material can be swallowed or expelled. This is the **mucociliary escalator** (called the *mucus escalator* in the lecture). Farther down, the **cough reflex** rapidly expels irritants. The shape of the epithelial cells changes along the tract: structures devoted to protection differ from the thin surfaces devoted to diffusion.",
+      "markdown": "**Nasal conchae** increase contact between incoming air and the moist lining of the nasal cavity. **Mucus** traps particles and microorganisms; moving **cilia** carry the mucus toward the pharynx. Together they form the **mucociliary escalator**.\n\nThe **cough reflex** forcefully expels irritating material. Larger conducting airways are lined with protective epithelium, whereas the tiny alveoli have exceptionally thin cells to permit diffusion. Different parts of the same airway therefore specialize in protection or exchange.",
       "slideReferences": {
         "23-Respiratory System.pptx": [
           5,
@@ -70,7 +70,7 @@
     {
       "id": "alveoli",
       "title": "Alveoli: Where Blood Meets Air",
-      "markdown": "Alveoli are tiny air spaces closely surrounded by pulmonary capillaries. Their thin walls minimize the distance gases must cross. **Type I pneumocytes** make most of the thin gas-exchange surface. **Type II pneumocytes** release **surfactant**, which reduces surface tension and helps keep alveoli open. **Alveolar macrophages** ingest particles and microorganisms that reach the distal lung.\n\nOxygen tends to diffuse from alveolar air into blood, while carbon dioxide diffuses in the opposite direction, because each gas moves down its own **partial-pressure gradient**. The lungs' enormous combined exchange area makes this possible at useful rates.",
+      "markdown": "**Alveoli** are tiny air spaces surrounded by pulmonary capillaries. Their thin **respiratory membrane** allows gases to diffuse across a short distance.\n\n- **Type I pneumocytes:** Form most of the thin gas-exchange surface.\n- **Type II pneumocytes:** Release **surfactant**, which lowers surface tension and helps stabilize alveoli.\n- **Alveolar macrophages:** Engulf particles and microorganisms reaching the deep lung.\n\n**O₂:** Alveolar air → pulmonary capillary blood. **CO₂:** Blood → alveolar air. Each gas moves down its own **partial-pressure gradient**.",
       "slideReferences": {
         "23-Respiratory System.pptx": [
           16,
@@ -86,7 +86,7 @@
     {
       "id": "pressure-breathing",
       "title": "How the Chest Moves Air",
-      "markdown": "The lungs do not pull air in by themselves. During quiet inhalation, the **diaphragm contracts and descends** while the **external intercostal muscles** help raise the ribs. Increasing thoracic volume lowers alveolar pressure slightly below the surrounding air pressure, so air flows inward.\n\nDuring quiet exhalation, those muscles relax and elastic recoil reduces lung volume. Alveolar pressure becomes slightly higher than atmospheric pressure, so air flows outward. This illustrates **Boyle's law**: under suitable conditions, gas pressure varies inversely with volume. Lung volumes such as **tidal volume**, **inspiratory reserve**, **expiratory reserve**, and **residual volume** describe how much air is moved or retained.",
+      "markdown": "**Inhalation:** The **diaphragm** contracts and descends; the **external intercostals** help expand the chest. Thoracic volume increases, alveolar pressure falls slightly below atmospheric pressure, and air enters.\n\n**Quiet exhalation:** Inspiratory muscles relax and the lungs recoil. Volume decreases, alveolar pressure rises slightly, and air leaves.\n\nThis illustrates **Boyle's law**: gas pressure and volume vary inversely under suitable conditions. **Tidal volume** is air moved in an ordinary breath; **reserve volumes** describe additional air that can be inhaled or exhaled, and **residual volume** remains after maximal exhalation.",
       "slideReferences": {
         "23-Respiratory System.pptx": [
           22,
@@ -105,7 +105,7 @@
     {
       "id": "gases-and-blood",
       "title": "How Oxygen and Carbon Dioxide Travel",
-      "markdown": "Dissolved oxygen crosses from alveoli into pulmonary blood and mostly binds **hemoglobin** inside red blood cells. In body tissues, lower oxygen partial pressure and local metabolic conditions favor oxygen unloading.\n\nCarbon dioxide travels back toward the lungs in three main forms: mostly as **bicarbonate (HCO₃⁻)** produced through reactions accelerated by **carbonic anhydrase**, some bound to proteins such as hemoglobin, and a smaller amount dissolved directly in plasma. The reversible carbon dioxide–bicarbonate chemistry helps explain why changing ventilation can change blood pH. **Henry's law** connects the amount of dissolved gas to its partial pressure under specified conditions.",
+      "markdown": "**Hemoglobin** inside red blood cells carries most oxygen, loading it in the lungs and releasing it to tissues where oxygen partial pressure is lower. Oxygen's movement between air, blood, and tissue depends on partial-pressure differences.\n\nMost carbon dioxide returns to the lungs as **bicarbonate (HCO₃⁻)** formed through reactions accelerated by **carbonic anhydrase**. Smaller amounts travel bound to blood proteins or dissolved in plasma.\n\n**CO₂ and pH are linked:** Retaining more CO₂ generally increases acidity; exhaling more tends to reduce it. **Henry's law** relates the amount of gas dissolved in a liquid to its partial pressure.",
       "slideReferences": {
         "23-Respiratory System.pptx": [
           20,
@@ -121,7 +121,7 @@
     {
       "id": "brain-controls",
       "title": "How Breathing Is Regulated",
-      "markdown": "Neural networks in the **medulla oblongata** and **pons** generate and shape the breathing pattern. They continually adjust output to respiratory muscles using information from **chemoreceptors** sensitive especially to carbon dioxide-related changes in pH, as well as signals influenced by oxygen levels, lung stretch, and other conditions.\n\nYou can voluntarily alter breathing to talk or sing, but automatic regulation resumes and adjusts to the body's needs. This is why breathing connects muscular action, blood chemistry, nervous-system signaling, and cellular metabolism into one coordinated process.",
+      "markdown": "The **medulla oblongata** contains networks essential for automatic breathing rhythm; the **pons** helps shape the pattern. **Chemoreceptors** respond especially to CO₂-related changes in pH, with oxygen also contributing to control.\n\nThe brainstem adjusts signals to the diaphragm and other breathing muscles to match the body's changing needs. You can voluntarily change breathing to speak or sing, but automatic control continues to regulate it.",
       "slideReferences": {
         "23-Respiratory System.pptx": [
           38,

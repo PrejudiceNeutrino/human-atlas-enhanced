@@ -5,7 +5,7 @@
     {
       "id": "fc-001",
       "topicId": "foundations",
-      "front": "Name the instructor's seven digestive functions.",
+      "front": "Name the seven major digestive functions.",
       "back": "Ingestion, mechanical processing, chemical digestion, secretion, absorption, compaction, defecation.",
       "conceptIds": [
         "ingestion",
@@ -231,8 +231,8 @@
     {
       "id": "fc-007",
       "topicId": "foundations",
-      "front": "What is motility, and is it on this lecture's seven-function list?",
-      "back": "Mixing/propulsion of contents; no, the list names compaction instead.",
+      "front": "How do motility and compaction differ?",
+      "back": "Motility mixes or propels contents; compaction removes water and concentrates feces.",
       "conceptIds": [
         "motility",
         "compaction"

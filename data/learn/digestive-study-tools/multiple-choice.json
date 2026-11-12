@@ -190,15 +190,15 @@
         },
         {
           "id": "c2",
-          "text": "Mouth, trachea, stomach, pancreas, colon"
+          "text": "Mouth, pharynx, stomach, esophagus, small intestine, large intestine"
         },
         {
           "id": "c3",
-          "text": "Mouth, esophagus, liver, stomach, large intestine"
+          "text": "Mouth, esophagus, stomach, large intestine, small intestine, anus"
         },
         {
           "id": "c4",
-          "text": "Mouth, pharynx, gallbladder, jejunum, stomach"
+          "text": "Mouth, pharynx, esophagus, stomach, ileum, duodenum, colon"
         }
       ],
       "correctChoiceId": "c1",
@@ -934,15 +934,15 @@
         },
         {
           "id": "c2",
-          "text": "They mechanically break down food in the mouth"
+          "text": "They repeatedly mix small-intestinal chyme in place without net propulsion"
         },
         {
           "id": "c3",
-          "text": "They are caused by ciliary beating in villi"
+          "text": "They are local mixing contractions of colonic haustra rather than long-range movement"
         },
         {
           "id": "c4",
-          "text": "They are identical to bile emulsification"
+          "text": "They primarily move material from jejunum to ileum in short alternating segments"
         }
       ],
       "correctChoiceId": "c1",
@@ -1066,15 +1066,15 @@
         },
         {
           "id": "c2",
-          "text": "Visceral lines body wall; parietal covers organs"
+          "text": "Visceral lines the body wall; parietal covers organs"
         },
         {
           "id": "c3",
-          "text": "Both are layers beneath the muscularis externa in mucosa"
+          "text": "Both line the abdominal body wall and neither covers an organ surface"
         },
         {
           "id": "c4",
-          "text": "Visceral surrounds only colon; parietal surrounds only stomach"
+          "text": "Visceral peritoneum lines the diaphragm only; parietal peritoneum covers the stomach"
         }
       ],
       "correctChoiceId": "c1",
@@ -1701,15 +1701,15 @@
         },
         {
           "id": "c2",
-          "text": "Lingual frenulum"
+          "text": "The enamel covering the root"
         },
         {
           "id": "c3",
-          "text": "Greater omentum"
+          "text": "The gingival epithelium that lines the tooth neck"
         },
         {
           "id": "c4",
-          "text": "Pyloric sphincter"
+          "text": "Cementum alone, without any connective-tissue attachment"
         }
       ],
       "correctChoiceId": "c1",
@@ -1774,15 +1774,15 @@
         },
         {
           "id": "c2",
-          "text": "Fauces"
+          "text": "Pulp chamber"
         },
         {
           "id": "c3",
-          "text": "Esophageal hiatus"
+          "text": "Root canal"
         },
         {
           "id": "c4",
-          "text": "Major duodenal papilla"
+          "text": "Gingival sulcus"
         }
       ],
       "correctChoiceId": "c1",
@@ -2116,15 +2116,15 @@
         },
         {
           "id": "c2",
-          "text": "The lower esophageal sphincter relaxes to prevent aspiration"
+          "text": "The soft palate closes the nasopharynx while the laryngeal inlet remains open"
         },
         {
           "id": "c3",
-          "text": "The tongue initiates voluntary mastication"
+          "text": "The true vocal folds abduct widely to allow the bolus to pass"
         },
         {
           "id": "c4",
-          "text": "The pyloric sphincter contracts to protect the airway"
+          "text": "The upper esophageal sphincter stays tightly contracted as the bolus enters"
         }
       ],
       "correctChoiceId": "c1",
@@ -2766,15 +2766,15 @@
         },
         {
           "id": "c2",
-          "text": "Provide villi for absorbing most dietary fats"
+          "text": "Provide villus-like folds for nutrient absorption in the stomach"
         },
         {
           "id": "c3",
-          "text": "Carry bile from the gallbladder"
+          "text": "Prevent the gastric wall from expanding during a meal"
         },
         {
           "id": "c4",
-          "text": "Convert pepsin to pepsinogen"
+          "text": "Act as a muscular valve at the pyloric outlet"
         }
       ],
       "correctChoiceId": "c1",
@@ -2902,15 +2902,15 @@
         },
         {
           "id": "c2",
-          "text": "Intestinal villi absorb all acid immediately"
+          "text": "Bicarbonate neutralizes all acid throughout the stomach lumen"
         },
         {
           "id": "c3",
-          "text": "The stomach epithelium is composed of enamel"
+          "text": "Pepsin remains completely inactive in the acidic stomach"
         },
         {
           "id": "c4",
-          "text": "Hydrochloric acid is harmless to all human cells"
+          "text": "The stomach lining relies on rapid absorption of acid into portal blood"
         }
       ],
       "correctChoiceId": "c1",
@@ -3176,15 +3176,15 @@
         },
         {
           "id": "c2",
-          "text": "The bile duct directly senses airborne odors"
+          "text": "A stomach stretch reflex is triggered before food reaches the stomach"
         },
         {
           "id": "c3",
-          "text": "Food has already entered the ileum"
+          "text": "Olfactory receptors release gastrin directly into the bloodstream"
         },
         {
           "id": "c4",
-          "text": "Colonic mass movements force acid production"
+          "text": "Duodenal CCK is released solely in response to the smell of food"
         }
       ],
       "correctChoiceId": "c1",
@@ -3358,15 +3358,15 @@
         },
         {
           "id": "c2",
-          "text": "Corneal reflex"
+          "text": "Gastrocolic reflex"
         },
         {
           "id": "c3",
-          "text": "Baroreceptor reflex"
+          "text": "Enterogastric reflex"
         },
         {
           "id": "c4",
-          "text": "Pupillary reflex"
+          "text": "Defecation reflex"
         }
       ],
       "correctChoiceId": "c1",
@@ -3901,15 +3901,15 @@
         },
         {
           "id": "c2",
-          "text": "Increase gastric acid release without limit"
+          "text": "Increase gastrin release while reducing pancreatic bicarbonate secretion"
         },
         {
           "id": "c3",
-          "text": "Switch off pancreatic ductal secretion"
+          "text": "Accelerate gastric emptying to deliver more acid to the duodenum"
         },
         {
           "id": "c4",
-          "text": "Absorb all acid into lacteals"
+          "text": "Increase pancreatic protease secretion while inhibiting ductal bicarbonate release"
         }
       ],
       "correctChoiceId": "c1",
@@ -4174,15 +4174,15 @@
         },
         {
           "id": "c2",
-          "text": "Microvilli, plicae circulares, villi"
+          "text": "Villi, plicae circulares, microvilli"
         },
         {
           "id": "c3",
-          "text": "Lacteals, serosa, pylorus"
+          "text": "Plicae circulares, microvilli, villi"
         },
         {
           "id": "c4",
-          "text": "Haustra, taeniae coli, pylorus"
+          "text": "Microvilli, villi, plicae circulares"
         }
       ],
       "correctChoiceId": "c1",
@@ -4249,15 +4249,15 @@
         },
         {
           "id": "c2",
-          "text": "Endocrine cell in a gastric gland"
+          "text": "Blood capillary inside an intestinal villus"
         },
         {
           "id": "c3",
-          "text": "Branch of the hepatic portal vein"
+          "text": "Lymphoid follicle within an intestinal Peyer patch"
         },
         {
           "id": "c4",
-          "text": "Muscular sphincter at the pylorus"
+          "text": "Venous channel that drains directly into the hepatic portal vein"
         }
       ],
       "correctChoiceId": "c1",
@@ -4691,15 +4691,15 @@
         },
         {
           "id": "c2",
-          "text": "Inner circular muscle of stomach"
+          "text": "Mucus-rich coating lying above the intestinal villi"
         },
         {
           "id": "c3",
-          "text": "Bile-producing lumen in liver"
+          "text": "Circular folds formed by the intestinal mucosa and submucosa"
         },
         {
           "id": "c4",
-          "text": "Macroscopic bands on colon"
+          "text": "The capillary network running through the center of each villus"
         }
       ],
       "correctChoiceId": "c1",
@@ -5086,15 +5086,15 @@
         },
         {
           "id": "c2",
-          "text": "To activate only after reaching the stomach fundus"
+          "text": "Delay their activation until they have entered the bloodstream"
         },
         {
           "id": "c3",
-          "text": "To permit direct uptake by intestinal lacteals"
+          "text": "Keep protein digestion restricted to the acidic stomach"
         },
         {
           "id": "c4",
-          "text": "To make them function as bile salts"
+          "text": "Prevent bicarbonate from reacting with pancreatic enzymes"
         }
       ],
       "correctChoiceId": "c1",
@@ -5357,15 +5357,15 @@
         },
         {
           "id": "c2",
-          "text": "Secretion of gastric acid"
+          "text": "Synthesis of bile acids by liver parenchymal cells"
         },
         {
           "id": "c3",
-          "text": "Formation of dental enamel"
+          "text": "Storage and concentration of bile before a meal"
         },
         {
           "id": "c4",
-          "text": "Production of pancreatic amylase"
+          "text": "Support and organization of hepatic plates and sinusoids"
         }
       ],
       "correctChoiceId": "c1",
@@ -5752,15 +5752,15 @@
         },
         {
           "id": "c2",
-          "text": "Pancreatic tail, hepatic portal vein, stomach"
+          "text": "Gallbladder, common hepatic duct, cystic duct, duodenum"
         },
         {
           "id": "c3",
-          "text": "Common hepatic duct, esophagus, jejunum"
+          "text": "Gallbladder, cystic duct, common hepatic duct, stomach"
         },
         {
           "id": "c4",
-          "text": "Cystic duct, left hepatic duct, stomach"
+          "text": "Gallbladder, cystic duct, portal vein, duodenum"
         }
       ],
       "correctChoiceId": "c1",

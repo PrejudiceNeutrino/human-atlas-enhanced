@@ -11,6 +11,7 @@
     "build:vercel": "vite build",
     "check": "tsc --noEmit",
     "test:exam-cram": "node --test scripts/exam-cram.test.mjs",
+    "test:editorial-content": "node --test scripts/editorial-content.test.mjs",
     "test:lymphoid": "node --test scripts/lymphoid.test.mjs",
     "audit:lymphoid-anatomy": "node scripts/lymphoid-anatomy-audit.mjs",
     "test:lymphoid-build": "node scripts/verify-lymphoid-build.mjs",

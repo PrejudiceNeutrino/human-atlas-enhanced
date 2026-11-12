@@ -198,15 +198,15 @@
         },
         {
           "id": "c2",
-          "text": "Ventilation is diffusion in alveoli; gas diffusion is movement of the diaphragm"
+          "text": "Ventilation and diffusion are both bulk flows driven by the same alveolar pressure gradient"
         },
         {
           "id": "c3",
-          "text": "Ventilation is movement of blood through lung capillaries; diffusion is movement of air in the trachea"
+          "text": "Ventilation transports O₂ only; diffusion transports CO₂ only"
         },
         {
           "id": "c4",
-          "text": "Ventilation and diffusion both require ATP-driven pumps through the respiratory membrane"
+          "text": "Ventilation occurs across capillary walls, while diffusion occurs in the trachea"
         }
       ],
       "correctChoiceId": "c1",
@@ -452,15 +452,15 @@
         },
         {
           "id": "c2",
-          "text": "They make the alveolar diffusion membrane much thinner"
+          "text": "They reduce the nasal mucosal surface exposed to moving air"
         },
         {
           "id": "c3",
-          "text": "They change the diameter of the glottis during inspiration"
+          "text": "They create a direct, unfiltered channel from the nostrils to the trachea"
         },
         {
           "id": "c4",
-          "text": "They provide skeletal muscle contraction to drive the incoming airflow"
+          "text": "They serve as moving respiratory muscles that generate the inspiratory pressure gradient"
         }
       ],
       "correctChoiceId": "c1",
@@ -835,15 +835,15 @@
         },
         {
           "id": "c2",
-          "text": "It bypasses the conducting airways so air reaches alveoli faster"
+          "text": "They increase the amount of O₂ carried by each hemoglobin molecule beyond four"
         },
         {
           "id": "c3",
-          "text": "It produces surfactant before air reaches the larynx"
+          "text": "They perform the alveolar exchange of O₂ and CO₂ before air reaches the lungs"
         },
         {
           "id": "c4",
-          "text": "It removes all inhaled particles, unlike mouth breathing"
+          "text": "They prevent all contact between inhaled air and respiratory mucus"
         }
       ],
       "correctChoiceId": "c1",
@@ -1017,15 +1017,15 @@
         },
         {
           "id": "c2",
-          "text": "Withstand the mechanical abrasion of swallowed food"
+          "text": "Provide a thicker barrier against food abrasion"
         },
         {
           "id": "c3",
-          "text": "Provide more sites for cartilage attachment"
+          "text": "Maximize mucus production at the principal exchange surface"
         },
         {
           "id": "c4",
-          "text": "Increase airway mucus storage capacity"
+          "text": "Provide room for cartilage to support individual alveoli"
         }
       ],
       "correctChoiceId": "c1",
@@ -1199,15 +1199,15 @@
         },
         {
           "id": "c2",
-          "text": "Maintaining the affinity of hemoglobin for O₂"
+          "text": "Reduced O₂ affinity of hemoglobin without any airway secretions changing"
         },
         {
           "id": "c3",
-          "text": "Keeping the alveolar basement membrane thin"
+          "text": "Loss of type II pneumocyte surfactant synthesis without epithelial injury"
         },
         {
           "id": "c4",
-          "text": "Producing type II cell surfactant"
+          "text": "Reduced ability of smooth muscle to dilate the bronchioles"
         }
       ],
       "correctChoiceId": "c1",
@@ -1522,15 +1522,15 @@
         },
         {
           "id": "c2",
-          "text": "It lowers pitch in every circumstance"
+          "text": "It lowers pitch by reducing the frequency of fold vibration"
         },
         {
           "id": "c3",
-          "text": "It eliminates the glottis"
+          "text": "It changes only sound amplitude without affecting vibration frequency"
         },
         {
           "id": "c4",
-          "text": "It changes only the loudness, never frequency"
+          "text": "It leaves the pitch unchanged if airflow continues"
         }
       ],
       "correctChoiceId": "c1",
@@ -1857,15 +1857,15 @@
         },
         {
           "id": "c2",
-          "text": "They allow the posterior tracheal wall to become a second gas-exchange membrane"
+          "text": "Their open side allows oxygen to diffuse through the tracheal wall"
         },
         {
           "id": "c3",
-          "text": "They permit the trachea to fully collapse during every quiet expiration"
+          "text": "Their posterior gap permits the trachea to collapse fully during every breath"
         },
         {
           "id": "c4",
-          "text": "They prevent the trachealis muscle from changing airway diameter"
+          "text": "Their open side prevents posterior trachealis muscle contraction"
         }
       ],
       "correctChoiceId": "c1",
@@ -2306,15 +2306,15 @@
         },
         {
           "id": "c2",
-          "text": "Terminal bronchioles contain scattered alveoli, but respiratory bronchioles have none"
+          "text": "Terminal bronchioles bear alveoli whereas respiratory bronchioles do not"
         },
         {
           "id": "c3",
-          "text": "Terminal bronchioles are supported by cartilage, but respiratory bronchioles are supported by bone"
+          "text": "Respiratory bronchioles contain cartilage rings while terminal bronchioles do not"
         },
         {
           "id": "c4",
-          "text": "Respiratory bronchioles precede terminal bronchioles along the airway tree"
+          "text": "Both types remain strictly conducting airways without alveoli"
         }
       ],
       "correctChoiceId": "c1",
@@ -2716,15 +2716,15 @@
         },
         {
           "id": "c2",
-          "text": "Only pulmonary arteries but not veins or airways"
+          "text": "Only the pulmonary artery enters; the bronchus and vein pass around the pleura"
         },
         {
           "id": "c3",
-          "text": "Only the main bronchus, with no vessels or nerves"
+          "text": "The bronchus and pulmonary vein pass through, but not lymphatics or nerves"
         },
         {
           "id": "c4",
-          "text": "Alveolar ducts and individual alveoli from every lobule"
+          "text": "Only alveolar ducts and individual exchange-capillaries enter the lung here"
         }
       ],
       "correctChoiceId": "c1",
@@ -2979,15 +2979,15 @@
         },
         {
           "id": "c2",
-          "text": "It raises alveolar surface tension to generate expiration"
+          "text": "It increases surface tension to make passive exhalation stronger"
         },
         {
           "id": "c3",
-          "text": "It replaces hemoglobin as the primary O₂ carrier"
+          "text": "It primarily clears mucus from the trachea using ciliary movement"
         },
         {
           "id": "c4",
-          "text": "It provides the ciliary drive for respiratory mucus clearance"
+          "text": "It forms the main thin cellular wall through which O₂ diffuses"
         }
       ],
       "correctChoiceId": "c1",
@@ -3357,15 +3357,15 @@
         },
         {
           "id": "c2",
-          "text": "Diaphragm relaxation raises thoracic volume and lowers lung pressure"
+          "text": "The diaphragm relaxes while thoracic volume increases and alveolar pressure falls"
         },
         {
           "id": "c3",
-          "text": "Alveolar pressure rises above atmosphere before air is drawn inward"
+          "text": "External intercostal contraction decreases thoracic volume to begin inspiration"
         },
         {
           "id": "c4",
-          "text": "External intercostal contraction compresses the thorax to initiate inspiration"
+          "text": "Alveolar pressure rises above atmospheric pressure before air begins to enter"
         }
       ],
       "correctChoiceId": "c1",
@@ -3613,15 +3613,15 @@
         },
         {
           "id": "c2",
-          "text": "It remains driven entirely by passive recoil, only faster"
+          "text": "It depends chiefly on diaphragm contraction that increases thoracic volume"
         },
         {
           "id": "c3",
-          "text": "It recruits only the diaphragm, which contracts downward during exhalation"
+          "text": "It occurs using passive recoil alone while expiratory muscles remain completely inactive"
         },
         {
           "id": "c4",
-          "text": "It is generated solely by opening the glottis without changes in thoracic pressure"
+          "text": "It lowers alveolar pressure below atmospheric pressure through abdominal contraction"
         }
       ],
       "correctChoiceId": "c1",
@@ -4166,15 +4166,15 @@
         },
         {
           "id": "c2",
-          "text": "That dissolved gas concentration is independent of its partial pressure"
+          "text": "The dissolved concentration depends on partial pressure but not gas solubility"
         },
         {
           "id": "c3",
-          "text": "That equal gas partial pressures imply equal dissolved concentrations for all gases"
+          "text": "Equal partial pressures cause identical dissolved concentrations for all gases"
         },
         {
           "id": "c4",
-          "text": "That gases enter blood by active transport rather than dissolution"
+          "text": "It describes bulk airflow caused by changes in chest volume"
         }
       ],
       "correctChoiceId": "c1",
@@ -4276,15 +4276,15 @@
         },
         {
           "id": "c2",
-          "text": "Alveolar PCO₂ is greater than arriving pulmonary capillary PCO₂"
+          "text": "Alveolar PCO₂ is normally greater than PCO₂ in arriving venous blood"
         },
         {
           "id": "c3",
-          "text": "CO₂ is actively pumped toward higher partial pressure in the alveolus"
+          "text": "Oxygen binding to hemoglobin directly forces CO₂ into alveolar air regardless of gradients"
         },
         {
           "id": "c4",
-          "text": "Hemoglobin carries CO₂ only as a dissolved gas and cannot release it in lungs"
+          "text": "CO₂ crosses the membrane only by active transport rather than diffusion"
         }
       ],
       "correctChoiceId": "c1",

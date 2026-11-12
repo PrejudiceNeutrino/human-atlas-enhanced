@@ -1008,8 +1008,8 @@
     {
       "id": "fc-025",
       "topicId": "lymphocytes",
-      "front": "Why should the study-guide B-cell hormone question be flagged?",
-      "back": "The lecture identifies thymosin-related signals for T-cell maturation, not a single standard required hormone for B-cell differentiation. B-cell maturation normally occurs in bone marrow.",
+      "front": "Where do B cells develop, and which cells mature in the thymus?",
+      "back": "B cells develop primarily in bone marrow; T cells mature and undergo selection in the thymus.",
       "conceptIds": [
         "thymosin",
         "b-lymphocyte"
@@ -1280,8 +1280,8 @@
     {
       "id": "fc-030",
       "topicId": "spleen",
-      "front": "Describe the lecture's simplified route of splenic blood flow.",
-      "back": "Splenic artery → branching/trabecular and central arteries → red pulp/sinusoids → venous drainage → splenic vein.",
+      "front": "Trace the main route of blood through the spleen.",
+      "back": "Splenic artery → branching and central arteries → red pulp and sinusoids → splenic vein.",
       "conceptIds": [
         "splenic-artery",
         "splenic-vein"

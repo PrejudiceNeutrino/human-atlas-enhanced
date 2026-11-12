@@ -1,0 +1,140 @@
+{
+  "subjects": {
+    "respiratory": {
+      "general-overview": {
+        "sections": 8,
+        "oldWords": 908,
+        "newWords": 735,
+        "oldEditorialReferences": 3,
+        "newEditorialReferences": 0,
+        "originalArticleId": "respiratory-system-general-overview"
+      },
+      "deep-dive": {
+        "sections": 23,
+        "oldWords": 7794,
+        "newWords": 7583,
+        "oldEditorialReferences": 75,
+        "newEditorialReferences": 0,
+        "originalArticleId": "respiratory-system-deep-dive"
+      },
+      "how-it-connects": {
+        "sections": 11,
+        "oldWords": 2304,
+        "newWords": 2299,
+        "oldEditorialReferences": 4,
+        "newEditorialReferences": 0,
+        "originalArticleId": "respiratory-system-how-it-connects"
+      },
+      "why-is-this-cool": {
+        "sections": 3,
+        "oldWords": 1133,
+        "newWords": 1083,
+        "oldEditorialReferences": 6,
+        "newEditorialReferences": 0,
+        "originalArticleId": "respiratory-system-why-is-this-cool"
+      },
+      "exam-cram": {
+        "sections": 18,
+        "oldWords": 2667,
+        "newWords": 2667,
+        "oldEditorialReferences": 30,
+        "newEditorialReferences": 30,
+        "originalArticleId": "respiratory-system-exam-cram"
+      },
+      "quick-scan": {
+        "sections": 18,
+        "id": "respiratory-system-exam-cram-quick-scan"
+      },
+      "study-tools": {
+        "multiple-choice": {
+          "records": 106,
+          "modified": 14
+        },
+        "flashcards": {
+          "records": 114,
+          "modified": 2
+        }
+      }
+    },
+    "lymphoid": {
+      "general-overview": {
+        "sections": 8,
+        "oldWords": 976,
+        "newWords": 696,
+        "oldEditorialReferences": 4,
+        "newEditorialReferences": 0,
+        "originalArticleId": "lymphoid-system-general-overview"
+      },
+      "deep-dive": {
+        "sections": 19,
+        "oldWords": 7651,
+        "newWords": 7411,
+        "oldEditorialReferences": 77,
+        "newEditorialReferences": 0,
+        "originalArticleId": "lymphoid-system-deep-dive"
+      },
+      "how-it-connects": {
+        "sections": 10,
+        "oldWords": 2216,
+        "newWords": 2214,
+        "oldEditorialReferences": 1,
+        "newEditorialReferences": 0,
+        "originalArticleId": "lymphoid-system-how-it-connects"
+      },
+      "why-is-this-cool": {
+        "sections": 3,
+        "oldWords": 1286,
+        "newWords": 1267,
+        "oldEditorialReferences": 6,
+        "newEditorialReferences": 0,
+        "originalArticleId": "lymphoid-system-why-is-this-cool"
+      },
+      "exam-cram": {
+        "sections": 18,
+        "oldWords": 2592,
+        "newWords": 2592,
+        "oldEditorialReferences": 32,
+        "newEditorialReferences": 32,
+        "originalArticleId": "lymphoid-system-exam-cram"
+      },
+      "quick-scan": {
+        "sections": 18,
+        "id": "lymphoid-system-exam-cram-quick-scan"
+      },
+      "study-tools": {
+        "multiple-choice": {
+          "records": 104,
+          "modified": 22
+        },
+        "flashcards": {
+          "records": 117,
+          "modified": 2
+        }
+      }
+    },
+    "digestive": {
+      "study-tools": {
+        "multiple-choice": {
+          "records": 111,
+          "modified": 17
+        },
+        "flashcards": {
+          "records": 101,
+          "modified": 2
+        }
+      }
+    }
+  },
+  "readingIdsPreserved": true,
+  "sectionIdsPreserved": true,
+  "slideReferencesPreserved": true,
+  "questionIdsPreserved": true,
+  "correctAnswersPreserved": true,
+  "sourceRefsPreserved": true,
+  "studentPreview": {
+    "readings": "PASS \u2014 Playwright set_content; subject/page/view and 18-section Quick Scan controls tested",
+    "studyTools": "PASS \u2014 Playwright set_content; subject/activity changes tested",
+    "javascriptSyntax": "PASS \u2014 Node --check"
+  },
+  "validation": "PASS"
+}

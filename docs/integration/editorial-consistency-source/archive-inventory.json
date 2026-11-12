@@ -1,0 +1,463 @@
+{
+  "archiveName": "human-atlas-editorial-consistency-and-study-tools.zip",
+  "archiveSha256": "421208669d93358bda21429d815d103d259c3e26b1a29405575b4c59c74d730e",
+  "baselineComparison": "All 16 packaged original readings/study files match local main at parsed JSON level; both Quick Scan files match existing bytes. No local editorial conflicts.",
+  "installedFiles": [
+    {
+      "sourcePath": "data/learn/digestive-study-tools/flashcards.json",
+      "targetPath": "data/learn/digestive-study-tools/flashcards.json",
+      "sha256": "89f325971a5cd18b0353049bd5bc9037c4af96be88765957509f3d3ad685257c",
+      "change": "revised"
+    },
+    {
+      "sourcePath": "data/learn/digestive-study-tools/multiple-choice.json",
+      "targetPath": "data/learn/digestive-study-tools/multiple-choice.json",
+      "sha256": "e805eab4bb594f7f0d556a61f5a2d5f218770aeea3aaf4eedc1c480bca97ec5c",
+      "change": "revised"
+    },
+    {
+      "sourcePath": "data/learn/lymphoid-study-tools/flashcards.json",
+      "targetPath": "data/learn/lymphoid-study-tools/flashcards.json",
+      "sha256": "772e0ff4ffe9f986399ae6e30da57b2648f6e4e6e776e4d5083e023dd99a7edf",
+      "change": "revised"
+    },
+    {
+      "sourcePath": "data/learn/lymphoid-study-tools/multiple-choice.json",
+      "targetPath": "data/learn/lymphoid-study-tools/multiple-choice.json",
+      "sha256": "fb3b84a40a0b2e97e367f18a7047c51cbd261013325c8e8203d44aa9f93761c4",
+      "change": "revised"
+    },
+    {
+      "sourcePath": "data/learn/lymphoid-system-deep-dive.json",
+      "targetPath": "data/learn/lymphoid-system-deep-dive.json",
+      "sha256": "d3570ae804f5b205fcb66c965decde4087b32c03fe0c9876866a16729eb7e5ed",
+      "change": "revised"
+    },
+    {
+      "sourcePath": "data/learn/lymphoid-system-exam-cram-quick-scan.json",
+      "targetPath": "data/learn/lymphoid-system-exam-cram-quick-scan.json",
+      "sha256": "63bdd882aa86c7556e3670886a089f94f7bc3f9aa88ba0509b5881e048ab03ad",
+      "change": "unchanged quick scan; filename aligned with package"
+    },
+    {
+      "sourcePath": "data/learn/lymphoid-system-general-overview.json",
+      "targetPath": "data/learn/lymphoid-system-general-overview.json",
+      "sha256": "c6368b2fa395e6a75735abc9b17e047a7f16a8cdf8f7dacacc34a78e37f50cf2",
+      "change": "revised"
+    },
+    {
+      "sourcePath": "data/learn/lymphoid-system-how-it-connects.json",
+      "targetPath": "data/learn/lymphoid-system-how-it-connects.json",
+      "sha256": "28b95d4bd621d6261a3cca800d263a42f929758c54b4b35e2cbc47a19308bf37",
+      "change": "revised"
+    },
+    {
+      "sourcePath": "data/learn/lymphoid-system-why-is-this-cool.json",
+      "targetPath": "data/learn/lymphoid-system-why-is-this-cool.json",
+      "sha256": "b92280d3d472188dd8dc1c19395eb33a9d79770503c7f3b2da2a98deaa85f7a7",
+      "change": "revised"
+    },
+    {
+      "sourcePath": "data/learn/respiratory-study-tools/flashcards.json",
+      "targetPath": "data/learn/respiratory-study-tools/flashcards.json",
+      "sha256": "61aa98fc0b7d6f902a6fecc04102d161b163a7a68f14d45921b5c2078e1f0701",
+      "change": "revised"
+    },
+    {
+      "sourcePath": "data/learn/respiratory-study-tools/multiple-choice.json",
+      "targetPath": "data/learn/respiratory-study-tools/multiple-choice.json",
+      "sha256": "0241a8e43722717fe20ec12b2da5b096913516396e63f201626f832155527453",
+      "change": "revised"
+    },
+    {
+      "sourcePath": "data/learn/respiratory-system-deep-dive.json",
+      "targetPath": "data/learn/respiratory-system-deep-dive.json",
+      "sha256": "38cbf962ba91919d21d6f727e2687f15325a9fec3f8dcd69691e354f8aba5859",
+      "change": "revised"
+    },
+    {
+      "sourcePath": "data/learn/respiratory-system-exam-cram-quick-scan.json",
+      "targetPath": "data/learn/respiratory-system-exam-cram-quick-scan.json",
+      "sha256": "2071415e62592b03ae3ea78722ef6039f6c2388550e4dd4cfa409c1f01574347",
+      "change": "unchanged quick scan; filename aligned with package"
+    },
+    {
+      "sourcePath": "data/learn/respiratory-system-general-overview.json",
+      "targetPath": "data/learn/respiratory-system-general-overview.json",
+      "sha256": "a27af28a9cbbed60124645784f22d6918153fdb7bb47982043148a35c052dea3",
+      "change": "revised"
+    },
+    {
+      "sourcePath": "data/learn/respiratory-system-how-it-connects.json",
+      "targetPath": "data/learn/respiratory-system-how-it-connects.json",
+      "sha256": "d78e86eff8a627966d3a7e7c281100e2011355ac433377b765d9cf2483df422b",
+      "change": "revised"
+    },
+    {
+      "sourcePath": "data/learn/respiratory-system-why-is-this-cool.json",
+      "targetPath": "data/learn/respiratory-system-why-is-this-cool.json",
+      "sha256": "803c82ca01533c2ec8516b25111589817fd52e2e80e0e0eeff110d13396dd2af",
+      "change": "revised"
+    }
+  ],
+  "entries": [
+    {
+      "path": "CODEX-INTEGRATION-PROMPT.txt",
+      "bytes": 5607,
+      "sha256": "8da610645e73490acf3986a52169d1c506691873999473257c3ebd68ca5d2c13"
+    },
+    {
+      "path": "data/learn/digestive-study-tools/flashcards.json",
+      "bytes": 108025,
+      "sha256": "89f325971a5cd18b0353049bd5bc9037c4af96be88765957509f3d3ad685257c"
+    },
+    {
+      "path": "data/learn/digestive-study-tools/multiple-choice.json",
+      "bytes": 179430,
+      "sha256": "e805eab4bb594f7f0d556a61f5a2d5f218770aeea3aaf4eedc1c480bca97ec5c"
+    },
+    {
+      "path": "data/learn/lymphoid-study-tools/flashcards.json",
+      "bytes": 121370,
+      "sha256": "772e0ff4ffe9f986399ae6e30da57b2648f6e4e6e776e4d5083e023dd99a7edf"
+    },
+    {
+      "path": "data/learn/lymphoid-study-tools/multiple-choice.json",
+      "bytes": 166304,
+      "sha256": "fb3b84a40a0b2e97e367f18a7047c51cbd261013325c8e8203d44aa9f93761c4"
+    },
+    {
+      "path": "data/learn/lymphoid-system-deep-dive.json",
+      "bytes": 62315,
+      "sha256": "d3570ae804f5b205fcb66c965decde4087b32c03fe0c9876866a16729eb7e5ed"
+    },
+    {
+      "path": "data/learn/lymphoid-system-exam-cram-quick-scan.json",
+      "bytes": 19175,
+      "sha256": "63bdd882aa86c7556e3670886a089f94f7bc3f9aa88ba0509b5881e048ab03ad"
+    },
+    {
+      "path": "data/learn/lymphoid-system-exam-cram.json",
+      "bytes": 27414,
+      "sha256": "3e54df843b72bf8f0098566781964c7c86d6ace6f59029444994afe42e79978b"
+    },
+    {
+      "path": "data/learn/lymphoid-system-general-overview.json",
+      "bytes": 8318,
+      "sha256": "c6368b2fa395e6a75735abc9b17e047a7f16a8cdf8f7dacacc34a78e37f50cf2"
+    },
+    {
+      "path": "data/learn/lymphoid-system-how-it-connects.json",
+      "bytes": 18417,
+      "sha256": "28b95d4bd621d6261a3cca800d263a42f929758c54b4b35e2cbc47a19308bf37"
+    },
+    {
+      "path": "data/learn/lymphoid-system-why-is-this-cool.json",
+      "bytes": 11033,
+      "sha256": "b92280d3d472188dd8dc1c19395eb33a9d79770503c7f3b2da2a98deaa85f7a7"
+    },
+    {
+      "path": "data/learn/respiratory-study-tools/flashcards.json",
+      "bytes": 116294,
+      "sha256": "61aa98fc0b7d6f902a6fecc04102d161b163a7a68f14d45921b5c2078e1f0701"
+    },
+    {
+      "path": "data/learn/respiratory-study-tools/multiple-choice.json",
+      "bytes": 169878,
+      "sha256": "0241a8e43722717fe20ec12b2da5b096913516396e63f201626f832155527453"
+    },
+    {
+      "path": "data/learn/respiratory-system-deep-dive.json",
+      "bytes": 62481,
+      "sha256": "38cbf962ba91919d21d6f727e2687f15325a9fec3f8dcd69691e354f8aba5859"
+    },
+    {
+      "path": "data/learn/respiratory-system-exam-cram-quick-scan.json",
+      "bytes": 19997,
+      "sha256": "2071415e62592b03ae3ea78722ef6039f6c2388550e4dd4cfa409c1f01574347"
+    },
+    {
+      "path": "data/learn/respiratory-system-exam-cram.json",
+      "bytes": 26980,
+      "sha256": "52d56c96d1c0a519be1505094377b244a2bc00c2ebe26c830813221a82002d1f"
+    },
+    {
+      "path": "data/learn/respiratory-system-general-overview.json",
+      "bytes": 8145,
+      "sha256": "a27af28a9cbbed60124645784f22d6918153fdb7bb47982043148a35c052dea3"
+    },
+    {
+      "path": "data/learn/respiratory-system-how-it-connects.json",
+      "bytes": 19238,
+      "sha256": "d78e86eff8a627966d3a7e7c281100e2011355ac433377b765d9cf2483df422b"
+    },
+    {
+      "path": "data/learn/respiratory-system-why-is-this-cool.json",
+      "bytes": 11047,
+      "sha256": "803c82ca01533c2ec8516b25111589817fd52e2e80e0e0eeff110d13396dd2af"
+    },
+    {
+      "path": "EDITORIAL-NOTES.md",
+      "bytes": 2941,
+      "sha256": "3547e8508ef73d41861636f854a0d17bade2ff0d5c146b650dc94c2dcaf122f2"
+    },
+    {
+      "path": "previews/reading-desktop-check.png",
+      "bytes": 176066,
+      "sha256": "88fad789ff77cb1481ed35d9f784b1474584f2d4fd6a2c643e2ced170c1728d3"
+    },
+    {
+      "path": "previews/readings-comparison.html",
+      "bytes": 682130,
+      "sha256": "888cb08275ef0efbee2e1ef0f02654f7e8657eb471996f2a7e75beaf62856be2"
+    },
+    {
+      "path": "previews/study-desktop-check.png",
+      "bytes": 103090,
+      "sha256": "43d2cfb4bec006f210f6a36d2f183b2c2ee6333689e901ad2a6b5de219b2b233"
+    },
+    {
+      "path": "previews/study-tools-comparison.html",
+      "bytes": 39344,
+      "sha256": "ef29b191d34fdd5dde02aa18cfadd1eaffa2c90b0b9c479880b2e6082f222f25"
+    },
+    {
+      "path": "readable/lymphoid/deep-dive.md",
+      "bytes": 56921,
+      "sha256": "ae223a63d49b4a5b99c0fa258dee3d34c9c79147a8450607f13479cee57ce516"
+    },
+    {
+      "path": "readable/lymphoid/exam-cram-quick-scan.md",
+      "bytes": 14000,
+      "sha256": "97615a1495b0675e4a8ee37e6ec93ef17f74c734d9a011bffc43c4255b1543f0"
+    },
+    {
+      "path": "readable/lymphoid/exam-cram.md",
+      "bytes": 22323,
+      "sha256": "e578256ca9f98f3c62c27fad7b9a8385016e5126eae147350c1e1861079c9903"
+    },
+    {
+      "path": "readable/lymphoid/general-overview.md",
+      "bytes": 5606,
+      "sha256": "4418955a1a3750b17522d9d3f625d8402780faa73059ff0377f64d0d0bf797e0"
+    },
+    {
+      "path": "readable/lymphoid/how-it-connects.md",
+      "bytes": 15325,
+      "sha256": "81cef480df2dce05d0b00e35e1d341ace9696bea65ccb405096e0f9750a70e27"
+    },
+    {
+      "path": "readable/lymphoid/why-is-this-cool.md",
+      "bytes": 10405,
+      "sha256": "220e7e27d0f67d0201f65cc90c6188b9dbf76db1825ccc37618a7640a4ad593c"
+    },
+    {
+      "path": "readable/respiratory/deep-dive.md",
+      "bytes": 56124,
+      "sha256": "a1c646326a8278938020e8aa627249b082db0e1e5343fb06bffb432df51d8cf1"
+    },
+    {
+      "path": "readable/respiratory/exam-cram-quick-scan.md",
+      "bytes": 14947,
+      "sha256": "5a10b3df434fbe90cd2dd53c1574f44f9d7033d81f7e10948ab74eb40a1ffd49"
+    },
+    {
+      "path": "readable/respiratory/exam-cram.md",
+      "bytes": 22042,
+      "sha256": "0033bafabb187326fbe5e677e0eed5e6bfefa45e2fe8128133f2d65213309836"
+    },
+    {
+      "path": "readable/respiratory/general-overview.md",
+      "bytes": 5672,
+      "sha256": "87ab7ea7fcf06afbf263d1650066491c7296ea30f3e4cb56b5345debfef79146"
+    },
+    {
+      "path": "readable/respiratory/how-it-connects.md",
+      "bytes": 16299,
+      "sha256": "bf42b2ffe6d9cd80a9501beb4c9ffcbc01af9a36abfbd2f7851d33566c0fec1b"
+    },
+    {
+      "path": "readable/respiratory/why-is-this-cool.md",
+      "bytes": 9592,
+      "sha256": "89670c0e1f081ea3309f3685117e9225e1505a40a8384e23c62b69f84a985228"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4157,
+      "sha256": "29566e6ced1bda534be0914c90cc8b2b861a8f9b8d28fc99a8c211d5ffc12ce2"
+    },
+    {
+      "path": "review-baseline/digestive/study-tools/flashcards.json",
+      "bytes": 108045,
+      "sha256": "1f1daf9f71015463e8873f4f411d042145d99a383a994458855971164ed8f022"
+    },
+    {
+      "path": "review-baseline/digestive/study-tools/multiple-choice.json",
+      "bytes": 178482,
+      "sha256": "2a957fd51429ab7373122f3dfa93852f47d688fa815a8778925340e8e4c49bd3"
+    },
+    {
+      "path": "review-baseline/lymphoid/deep-dive.json",
+      "bytes": 63644,
+      "sha256": "f191ea3f777a7c987a7336f3a3f102bc17b920077a03f7a02b3842044a66a55b"
+    },
+    {
+      "path": "review-baseline/lymphoid/exam-cram.json",
+      "bytes": 27413,
+      "sha256": "2e8fe9bf7f5ea08ff05882d74e630c800b02b58056bd8f8a186da9e10a5b7bc8"
+    },
+    {
+      "path": "review-baseline/lymphoid/general-overview.json",
+      "bytes": 10204,
+      "sha256": "c86ba12ecb877dc590689c2aeddc058b822399bbb3e7ac4ea3334ea3e2507c48"
+    },
+    {
+      "path": "review-baseline/lymphoid/how-it-connects.json",
+      "bytes": 18526,
+      "sha256": "1f1183ea041f24a14e84cfb6823be00b94c63e089c5c9599fb171d695fa15381"
+    },
+    {
+      "path": "review-baseline/lymphoid/study-tools/flashcards.json",
+      "bytes": 121503,
+      "sha256": "4548f56efeed309ef61b3648f29208711d370d66fc4035ad533e018dbefb8ccb"
+    },
+    {
+      "path": "review-baseline/lymphoid/study-tools/multiple-choice.json",
+      "bytes": 164621,
+      "sha256": "a753144327c942124c8e1820db4b80941b1a1517856aa6163c58fae939a09a8f"
+    },
+    {
+      "path": "review-baseline/lymphoid/why-is-this-cool.json",
+      "bytes": 11213,
+      "sha256": "d511b1f84f57d96094d2e1f9fc4a11450239481f1a3f72b583743503479a01c3"
+    },
+    {
+      "path": "review-baseline/respiratory/deep-dive.json",
+      "bytes": 63617,
+      "sha256": "60f907e4e1256ef427eec8177cb05eaede8cd9eede23280dec22911506e6eeb6"
+    },
+    {
+      "path": "review-baseline/respiratory/exam-cram.json",
+      "bytes": 26979,
+      "sha256": "defc7f5fdaf5dfd677d029d74c4be98581b3b75f353f66ef85541c3c8c36ccac"
+    },
+    {
+      "path": "review-baseline/respiratory/general-overview.json",
+      "bytes": 9246,
+      "sha256": "371b51ef2a182fc8ea03b2b5895ce7ed7d121447cf050f47ab0f17575537d960"
+    },
+    {
+      "path": "review-baseline/respiratory/how-it-connects.json",
+      "bytes": 19387,
+      "sha256": "fbb1782aa8a144b02cd9641a58965217caa74c2e388c251ebd14202080f43fb6"
+    },
+    {
+      "path": "review-baseline/respiratory/study-tools/flashcards.json",
+      "bytes": 116398,
+      "sha256": "d1ab20e29929253ce1869e7f95eb7179d5accf67d99fe2cd523d1a24dbc99eba"
+    },
+    {
+      "path": "review-baseline/respiratory/study-tools/multiple-choice.json",
+      "bytes": 169513,
+      "sha256": "cb8560ababf65f490f898c195f98810fe1ce5b58ae3f8ebb4654bf591a2c07f0"
+    },
+    {
+      "path": "review-baseline/respiratory/why-is-this-cool.json",
+      "bytes": 11339,
+      "sha256": "741ef4033470c07070f9f227ff9da86e35dd1d5332da7bfb06bb38fbb2ead65e"
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "bytes": 6013,
+      "sha256": "d2ba9f67d9136e4aac8a16321194d5014f2e61fffdffe6d6a3bc4722a534632d"
+    },
+    {
+      "path": "STUDY-TOOLS-CHANGELOG.json",
+      "bytes": 40152,
+      "sha256": "d4357c0330717e38edab23368997a3cb408f49de8501bb4c48b708fc57449607"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 3904,
+      "sha256": "abb0965764717fb8bc8d6621a0a3a0f4a965201c94240edd73f4879c9fe347e9"
+    }
+  ],
+  "protectedFiles": [
+    {
+      "path": "data/learn/digestive-anatomy-references.json",
+      "sha256": "67a7b161d513d2673a015adc2608f81bc2eed01737894edfc0f0f91d478fb925"
+    },
+    {
+      "path": "data/learn/digestive-study-tools/concepts.json",
+      "sha256": "33aa58eee5a30286fe2e481f69ad410875d17524eda542c8c3ba2cb0e5b70baf"
+    },
+    {
+      "path": "data/learn/digestive-study-tools/fill-in-the-blank.json",
+      "sha256": "1dfeecebe8dcfede51a507a196c95396ba2d04a516ab830c4615bcfd6b4871b5"
+    },
+    {
+      "path": "data/learn/digestive-study-tools/manifest.json",
+      "sha256": "092b4b41a574d031d2d6b92841978ae92d099b1e7af8aa7fc8f86ddb9b257039"
+    },
+    {
+      "path": "data/learn/digestive-system-deep-dive.json",
+      "sha256": "5b441393a464d77f312ba6ca499c2b3a3102e98990d301142927496fb293ac1a"
+    },
+    {
+      "path": "data/learn/digestive-system-exam-cram.json",
+      "sha256": "92f7389c434386137e0a853a8bbbb673a78b8bf76b6a1db7455c5bbe0c8a7370"
+    },
+    {
+      "path": "data/learn/digestive-system-general-overview.json",
+      "sha256": "f3b91ee4021398632cbccdf8a5833c5eec073f430c4d249a3d2495a446bbee8d"
+    },
+    {
+      "path": "data/learn/digestive-system-how-it-connects.json",
+      "sha256": "869c0ef0fd09be21c202e37d89f35079a410d4f3d01342824b4550294f248a71"
+    },
+    {
+      "path": "data/learn/digestive-system-why-is-this-cool.json",
+      "sha256": "03404d3524c3adefb2f6595e410076f9f439eb39f61ea895d7597bae511fd578"
+    },
+    {
+      "path": "data/learn/lymphoid-anatomy-references.json",
+      "sha256": "034145b98b0f494295c1d519a9e0e82fa8c041a19b27f135b6ed88176caa4b34"
+    },
+    {
+      "path": "data/learn/lymphoid-study-tools/concepts.json",
+      "sha256": "2d13d2cc6c7cb9bb4fa5f4d94c79aad5f08538a0a3b369c0f9668bb6b97846a9"
+    },
+    {
+      "path": "data/learn/lymphoid-study-tools/fill-in-the-blank.json",
+      "sha256": "48c99788f670f9c5b5fefd8600d9f690bcff83f884b9bb719851325f311e4cd1"
+    },
+    {
+      "path": "data/learn/lymphoid-study-tools/manifest.json",
+      "sha256": "eb69df9f4eca4d32e858fa69a1cfc71a3564b8bab916e0932b4d22d218afb927"
+    },
+    {
+      "path": "data/learn/lymphoid-system-exam-cram.json",
+      "sha256": "3e54df843b72bf8f0098566781964c7c86d6ace6f59029444994afe42e79978b"
+    },
+    {
+      "path": "data/learn/respiratory-anatomy-references.json",
+      "sha256": "b4f1bbfd8904298ffb5a895d44c3e7531ba5e0d2add1aa8861442e20e2cebcef"
+    },
+    {
+      "path": "data/learn/respiratory-study-tools/concepts.json",
+      "sha256": "f6e671f6383d770634aab3359a1a1c7aac9825324ea28f86764ab5c99f6fc8a7"
+    },
+    {
+      "path": "data/learn/respiratory-study-tools/fill-in-the-blank.json",
+      "sha256": "959cf6b058932512b3042c10017855a6ab1146fa7f308d02db2ef9dcb4d89bd9"
+    },
+    {
+      "path": "data/learn/respiratory-study-tools/manifest.json",
+      "sha256": "f26be94d008074bd9a49b939db740e93e364159456ceb8635b3f60e5a9c1065a"
+    },
+    {
+      "path": "data/learn/respiratory-system-exam-cram.json",
+      "sha256": "52d56c96d1c0a519be1505094377b244a2bc00c2ebe26c830813221a82002d1f"
+    }
+  ]
+}

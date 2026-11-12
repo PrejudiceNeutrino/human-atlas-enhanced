@@ -7,7 +7,7 @@ export function readExamCramMode(value: string | null): ExamCramMode {
     const data = JSON.parse(value ?? 'null');
     if (data?.version === 1 && (data.mode === 'quick-scan' || data.mode === 'detailed-review')) return data.mode;
   } catch { /* An invalid preference must never prevent reading. */ }
-  return 'detailed-review';
+  return 'quick-scan';
 }
 
 export function useExamCramMode(subjectId: string, articleId?: string) {
@@ -15,7 +15,7 @@ export function useExamCramMode(subjectId: string, articleId?: string) {
   const [mode, showMode] = useState<ExamCramMode>(() => {
     // Canonical bookmarks and Study Tools references always open the original text.
     if (!articleId || window.location.hash === `#${articleId}` || window.location.hash.startsWith(`#${articleId}-`)) return 'detailed-review';
-    try { return readExamCramMode(window.localStorage.getItem(key)); } catch { return 'detailed-review'; }
+    try { return readExamCramMode(window.localStorage.getItem(key)); } catch { return 'quick-scan'; }
   });
   const [savingError, setSavingError] = useState(false);
   const chooseMode = useCallback((next: ExamCramMode) => {

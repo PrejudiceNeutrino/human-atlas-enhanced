@@ -20,3 +20,5 @@
 # Preserve the supplied Exam Cram Quick Scan content and package provenance bytes.
 /data/learn/*-exam-cram-quick-scan.json -text
 /docs/integration/exam-cram-source/** -text
+# Preserve the authored editorial replacements and their comparison baselines.
+/docs/integration/editorial-consistency-source/** -text

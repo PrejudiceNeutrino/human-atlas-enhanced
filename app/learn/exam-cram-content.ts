@@ -1,5 +1,5 @@
-import respiratoryQuickScan from '../../data/learn/respiratory-exam-cram-quick-scan.json';
-import lymphoidQuickScan from '../../data/learn/lymphoid-exam-cram-quick-scan.json';
+import respiratoryQuickScan from '../../data/learn/respiratory-system-exam-cram-quick-scan.json';
+import lymphoidQuickScan from '../../data/learn/lymphoid-system-exam-cram-quick-scan.json';
 import type { EducationalArticleData } from './subjects';
 
 export type ExamCramMode = 'quick-scan' | 'detailed-review';

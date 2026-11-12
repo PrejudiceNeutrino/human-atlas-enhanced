@@ -2,7 +2,7 @@
   "id": "lymphoid-system-general-overview",
   "title": "General Overview",
   "subject": "Lymphoid System",
-  "introMarkdown": "The lymphoid system performs three jobs that initially seem unrelated: it recovers excess fluid from tissues, helps defend the body against infection, and carries much of the fat absorbed by the small intestine back toward the bloodstream. Together, its vessels, lymph nodes, lymphoid organs, and immune cells create a transport and surveillance network that reaches nearly every region of the body.\n\nThe **lymphatic system** refers especially to the vessels and fluid-transport network; **lymphoid tissues and organs** house and support immune cells. Immunity also involves blood, bone marrow, epithelial barriers, and cells outside lymphatic vessels. Chapter 22 studies these interconnected processes together.",
+  "introMarkdown": "The lymphatic system recovers fluid that escapes from blood vessels, helps defend the body against infection, and transports much of the fat absorbed by the small intestine. Its vessels, nodes, and lymphoid organs form a network linking fluid balance with immune surveillance.\n\n**Lymphatic vessels** move fluid from tissues back toward the bloodstream. **Lymphoid tissues and organs** support the immune cells that recognize threats and coordinate defenses. Together, these functions make the system both a transport network and an essential part of immunity.",
   "sourceFiles": [
     "22-Lymphoid System-new.pptx",
     "Lymphoid - Copy.pptx",
@@ -12,7 +12,7 @@
     {
       "id": "fundamental-jobs",
       "title": "Three Jobs, One System",
-      "markdown": "The three major functions are:\n\n- **Fluid recovery:** Return excess fluid and escaped proteins from the spaces between cells to the bloodstream, limiting tissue swelling (*edema*).\n- **Immune defense:** Transport material from tissues to lymph nodes, where immune cells can detect threats and coordinate responses. Lymphoid tissues also produce, mature, and maintain lymphocytes.\n- **Fat transport:** Carry much of the absorbed long-chain dietary fat from intestinal *lacteals* through lymphatic vessels into venous blood.\n\nThe same network can recover fluid from your ankle, deliver a potential pathogen to a nearby lymph node, and transport absorbed fat from your intestines. These functions overlap rather than operating as three separate systems.",
+      "markdown": "The system has **three core functions**:\n\n- **Fluid recovery:** Returns excess tissue fluid and proteins to the blood, helping prevent **edema** (swelling).\n- **Immune defense:** Carries material from tissues through lymph nodes, where immune cells can examine it and organize responses.\n- **Fat transport:** Moves chylomicron-rich fluid from intestinal **lacteals** toward the bloodstream.\n\nOne network can therefore recover fluid from your ankle, monitor material entering through your skin, and transport dietary fat from the intestine.",
       "slideReferences": {
         "22-Lymphoid System-new.pptx": [
           3,
@@ -27,7 +27,7 @@
     {
       "id": "what-is-lymph",
       "title": "From Blood Plasma to Interstitial Fluid to Lymph",
-      "markdown": "Blood capillaries exchange fluid with the surrounding tissues. When fluid leaves the capillary and enters the space between cells, it is called **interstitial fluid**. When some of that fluid enters a lymphatic capillary, it becomes **lymph**. The names describe **where the fluid is**, not three completely different substances.\n\nUnlike blood capillaries, initial lymphatic capillaries start as blind-ended vessels. Their overlapping endothelial cells can open inward when the surrounding tissue pressure rises, allowing fluid and some larger material to enter. The lymphatic network eventually returns that fluid to blood.\n\n**Basic route:** Blood plasma → interstitial fluid → lymphatic capillaries → larger lymphatic vessels → lymphatic ducts → veins.",
+      "markdown": "**Blood plasma** is the fluid portion of blood. When fluid filters into spaces between cells, it becomes **interstitial fluid**. Once it enters a lymphatic capillary, it is called **lymph**.\n\n**Initial lymphatic capillaries** begin as blind-ended vessels. Overlapping endothelial cells form flap-like openings that admit excess fluid when pressure in the surrounding tissue rises.\n\n**Route:** Blood plasma → interstitial fluid → lymphatic capillaries → collecting vessels → lymphatic trunks and ducts → veins.",
       "slideReferences": {
         "22-Lymphoid System-new.pptx": [
           3,
@@ -45,7 +45,7 @@
     {
       "id": "one-way-transport",
       "title": "The One-Way Route Back to Blood",
-      "markdown": "Once fluid becomes lymph, it moves through collecting vessels equipped with **one-way valves**. There is no single lymphatic heart. Skeletal-muscle movements, breathing-related pressure changes, nearby arterial pulsations, and contractions of lymphatic vessel walls help propel the fluid while valves discourage backflow.\n\nMost lymph returns through the **thoracic duct**, which drains the lower body and the upper-left portion of the body. The **right lymphatic duct** drains the upper-right region. Both ultimately empty near the junctions of the internal jugular and subclavian veins on their respective sides.\n\nThe **cisterna chyli** is an expanded collecting region commonly found near the beginning of the thoracic duct. It receives lymph from the lower body and intestinal region.",
+      "markdown": "There is **no central lymphatic pump** like the heart. **One-way valves**, skeletal-muscle movement, breathing-related pressure changes, and rhythmic contractions in lymphatic vessels help lymph move toward the chest.\n\n- **Thoracic duct:** Returns lymph from most of the body, including both lower limbs and the upper-left region.\n- **Right lymphatic duct:** Typically drains the upper-right region.\n- **Cisterna chyli:** Expanded collecting region near the beginning of the thoracic duct.\n\nBoth major terminal routes deliver lymph to venous blood near the **internal jugular–subclavian vein junctions**.",
       "slideReferences": {
         "22-Lymphoid System-new.pptx": [
           7,
@@ -62,7 +62,7 @@
     {
       "id": "immune-cells",
       "title": "Three Major Lymphocyte Classes",
-      "markdown": "**Lymphocytes** are immune cells that recognize, coordinate responses to, or destroy threats. Chapter 22 emphasizes three major classes:\n\n- **B cells:** Participate in *humoral* or antibody-mediated immunity. When appropriately activated, some become **plasma cells**, which secrete antibodies; others contribute to immune memory.\n- **T cells:** Participate in *cell-mediated* immunity. **Helper T cells** coordinate responses, while **cytotoxic T cells** can kill infected or abnormal cells. Other T-cell populations help regulate responses.\n- **Natural killer (NK) cells:** Provide rapid **innate**, relatively nonspecific surveillance for certain infected, stressed, or abnormal cells without requiring the same prior antigen-specific activation as a T cell.\n\nAll three arise from blood-forming stem cells. B cells develop primarily in **bone marrow**, while T-cell precursors mature in the **thymus**.",
+      "markdown": "**Lymphocytes** are white blood cells central to immune recognition and defense. Three major classes are:\n\n- **B cells:** Can develop into antibody-secreting **plasma cells** and contribute to immune memory.\n- **T cells:** **Helper T cells** coordinate defenses; **cytotoxic T cells** can kill infected or abnormal cells; regulatory populations restrain responses.\n- **Natural killer (NK) cells:** Rapidly respond to certain infected, stressed, or abnormal cells as part of **innate immunity**.\n\nB cells develop mainly in **bone marrow**, while immature T cells complete important stages of development in the **thymus**.",
       "slideReferences": {
         "22-Lymphoid System-new.pptx": [
           12,
@@ -78,7 +78,7 @@
     {
       "id": "organs-and-tissues",
       "title": "Where Immune Cells Develop and Meet",
-      "markdown": "The lecture's three principal **encapsulated lymphoid organs** are the **lymph nodes, thymus, and spleen**. These have different responsibilities:\n\n- **Lymph nodes** filter **lymph** and help initiate immune responses to material arriving from tissues.\n- **Thymus** provides the specialized environment where developing **T cells** mature.\n- **Spleen** monitors **blood**, supports immune responses to blood-borne antigens, and removes aged or abnormal red blood cells.\n\nThe body also contains less distinctly encapsulated lymphoid tissues, including **tonsils**, **Peyer's patches**, the **appendix**, and other **mucosa-associated lymphoid tissue (MALT)**. These sample and respond to material encountered near mucosal surfaces. Bone marrow is also an essential primary lymphoid organ in broader immunology terminology.",
+      "markdown": "- **Lymph nodes:** Filter **lymph** arriving from tissues and provide meeting places for immune cells.\n- **Thymus:** Supports T-cell development and selection.\n- **Spleen:** Monitors **blood**, responds to blood-borne antigens, and removes aged or abnormal red blood cells.\n- **Tonsils, Peyer's patches, and other MALT:** Help monitor material at mucosal surfaces, including the airways and digestive tract.\n\n**Primary lymphoid organs** support lymphocyte development, especially bone marrow and thymus. **Secondary lymphoid organs and tissues** are major sites where mature immune cells encounter antigens.",
       "slideReferences": {
         "22-Lymphoid System-new.pptx": [
           16,
@@ -104,7 +104,7 @@
     {
       "id": "first-defense",
       "title": "The Immediate Defenses",
-      "markdown": "Not every threat requires a highly specific antibody response. The body begins with **nonspecific (innate) defenses** that act quickly and provide the conditions for later targeted responses.\n\nThe instructor groups them into **seven categories**: physical barriers, phagocytic cells, immunological surveillance, interferons, complement, inflammation, and fever.\n\nFor example, damaged skin can trigger **inflammation**. Local blood vessels dilate and become more permeable; chemical signals recruit phagocytes; and the affected area may become red, warm, swollen, and painful. **Natural killer cells** can detect certain abnormal cells, while **complement proteins** can tag microbes for removal or help damage their membranes.",
+      "markdown": "**Innate defenses** act quickly without requiring a previous encounter with a particular pathogen. They include:\n\n- **Physical barriers:** Skin and protective mucous membranes.\n- **Phagocytes:** Cells that engulf microbes and debris.\n- **NK-cell surveillance:** Recognition of certain abnormal cells.\n- **Interferons:** Signals that help neighboring cells resist viral infection.\n- **Complement:** Proteins that mark targets, promote inflammation, or damage membranes.\n- **Inflammation:** Local response that recruits defensive cells.\n- **Fever:** Systemic temperature regulation during some immune responses.\n\n**Redness, heat, swelling, and pain** are the four classic signs of inflammation.",
       "slideReferences": {
         "22-Lymphoid System-new.pptx": [
           26,
@@ -120,7 +120,7 @@
     {
       "id": "specific-and-memory",
       "title": "Specific Recognition and Immune Memory",
-      "markdown": "**Adaptive immunity** is more selective. B and T lymphocytes recognize particular molecular targets called **antigens** or antigen-derived fragments. **Antigen-presenting cells** help activate appropriate T cells, which can coordinate other immune cells. Activated B cells can produce antibodies that bind specific targets and assist their removal.\n\nA first exposure generally takes time to build a strong adaptive response. Some activated cells persist as **memory cells**, allowing a faster or stronger response if the same antigen is encountered again. This is the central principle behind immune memory and many vaccines.\n\nThe immune system must also maintain **tolerance** to normal tissues. A strong response against the wrong target can be harmful, which is why the immune system needs mechanisms that both activate and restrain its cells.",
+      "markdown": "**Adaptive immunity** targets particular antigens and relies heavily on **B and T lymphocytes**. **Antigen-presenting cells** display processed material to appropriate T cells, helping coordinate an effective response. Activated B cells may release **antibodies** that bind targets and support their removal.\n\nAfter an initial infection or vaccination, some antigen-experienced cells persist as **memory cells**. A second encounter can therefore trigger a faster or stronger response. **Immune tolerance** helps prevent these powerful defenses from attacking the body's own healthy tissues.",
       "slideReferences": {
         "22-Lymphoid System-new.pptx": [
           36,
@@ -137,7 +137,7 @@
     {
       "id": "identification-roadmap",
       "title": "What You Should Be Able to Identify",
-      "markdown": "For anatomy and model identification, prioritize the **thoracic duct**, **right lymphatic duct**, **cisterna chyli**, **cervical, axillary, and inguinal lymph-node groups**, **thymus**, **spleen**, and **tonsils**. For tissue diagrams, distinguish the **lymph-node capsule, cortex, paracortex, medulla, afferent vessels, efferent vessel, and hilum**; the **red and white pulp of the spleen**; and the **cortex and medulla of the thymus**.\n\nFor physiology, be able to explain the route lymph takes back into the blood, distinguish **B cells, T cells, and NK cells**, and contrast **innate versus adaptive immunity** and **primary versus secondary immune responses**.\n\nThe **Deep Dive** develops these structures and mechanisms in detail. **Exam Cram** will organize the same Chapter 22 material around the instructor's study-guide questions.",
+      "markdown": "For anatomical identification, know the **thoracic duct**, **right lymphatic duct**, **cisterna chyli**, major **lymph-node groups**, **thymus**, **spleen**, and **tonsils**.\n\nFor tissue identification, distinguish the **lymph-node cortex, paracortex, medulla, and hilum**; the **white and red pulp** of the spleen; and the **cortex and medulla** of the thymus.\n\nThe **Deep Dive** explains these structures and immune mechanisms in detail. **Exam Cram** provides rapid review of the essential terms, pathways, and comparisons.",
       "slideReferences": {
         "22-Lymphoid System-new.pptx": [
           11,

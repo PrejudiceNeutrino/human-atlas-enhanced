@@ -1,0 +1,857 @@
+{
+  "digestive": {
+    "multiple-choice": [
+      {
+        "id": "mc-004",
+        "stem": "Which sequence correctly follows food through the alimentary canal?",
+        "correct": "Mouth, pharynx, esophagus, stomach, small intestine, large intestine",
+        "before": [
+          "Mouth, trachea, stomach, pancreas, colon",
+          "Mouth, esophagus, liver, stomach, large intestine",
+          "Mouth, pharynx, gallbladder, jejunum, stomach"
+        ],
+        "after": [
+          "Mouth, pharynx, stomach, esophagus, small intestine, large intestine",
+          "Mouth, esophagus, stomach, large intestine, small intestine, anus",
+          "Mouth, pharynx, esophagus, stomach, ileum, duodenum, colon"
+        ]
+      },
+      {
+        "id": "mc-016",
+        "stem": "How do mass movements differ from ordinary small-intestinal segmentation?",
+        "correct": "They move colonic contents long distances toward the rectum",
+        "before": [
+          "They mechanically break down food in the mouth",
+          "They are caused by ciliary beating in villi",
+          "They are identical to bile emulsification"
+        ],
+        "after": [
+          "They repeatedly mix small-intestinal chyme in place without net propulsion",
+          "They are local mixing contractions of colonic haustra rather than long-range movement",
+          "They primarily move material from jejunum to ileum in short alternating segments"
+        ]
+      },
+      {
+        "id": "mc-018",
+        "stem": "Which statement correctly distinguishes visceral from parietal peritoneum?",
+        "correct": "Visceral covers organs; parietal lines the body wall",
+        "before": [
+          "Visceral lines body wall; parietal covers organs",
+          "Both are layers beneath the muscularis externa in mucosa",
+          "Visceral surrounds only colon; parietal surrounds only stomach"
+        ],
+        "after": [
+          "Visceral lines the body wall; parietal covers organs",
+          "Both line the abdominal body wall and neither covers an organ surface",
+          "Visceral peritoneum lines the diaphragm only; parietal peritoneum covers the stomach"
+        ]
+      },
+      {
+        "id": "mc-027",
+        "stem": "What connects the tooth root to the surrounding alveolar bone?",
+        "correct": "Periodontal ligament",
+        "before": [
+          "Lingual frenulum",
+          "Greater omentum",
+          "Pyloric sphincter"
+        ],
+        "after": [
+          "The enamel covering the root",
+          "The gingival epithelium that lines the tooth neck",
+          "Cementum alone, without any connective-tissue attachment"
+        ]
+      },
+      {
+        "id": "mc-028",
+        "stem": "Through which root-tip opening do vessels and nerves enter a tooth?",
+        "correct": "Apical foramen",
+        "before": [
+          "Fauces",
+          "Esophageal hiatus",
+          "Major duodenal papilla"
+        ],
+        "after": [
+          "Pulp chamber",
+          "Root canal",
+          "Gingival sulcus"
+        ]
+      },
+      {
+        "id": "mc-033",
+        "stem": "What is a major protective event during the pharyngeal phase?",
+        "correct": "The larynx elevates and the airway closes",
+        "before": [
+          "The lower esophageal sphincter relaxes to prevent aspiration",
+          "The tongue initiates voluntary mastication",
+          "The pyloric sphincter contracts to protect the airway"
+        ],
+        "after": [
+          "The soft palate closes the nasopharynx while the laryngeal inlet remains open",
+          "The true vocal folds abduct widely to allow the bolus to pass",
+          "The upper esophageal sphincter stays tightly contracted as the bolus enters"
+        ]
+      },
+      {
+        "id": "mc-043",
+        "stem": "What is the main purpose of stomach rugae?",
+        "correct": "Allow the stomach lining to expand as it fills",
+        "before": [
+          "Provide villi for absorbing most dietary fats",
+          "Carry bile from the gallbladder",
+          "Convert pepsin to pepsinogen"
+        ],
+        "after": [
+          "Provide villus-like folds for nutrient absorption in the stomach",
+          "Prevent the gastric wall from expanding during a meal",
+          "Act as a muscular valve at the pyloric outlet"
+        ]
+      },
+      {
+        "id": "mc-045",
+        "stem": "Why does gastric acid not normally destroy the stomach epithelium?",
+        "correct": "A mucus-bicarbonate barrier and epithelial defenses limit acid injury",
+        "before": [
+          "Intestinal villi absorb all acid immediately",
+          "The stomach epithelium is composed of enamel",
+          "Hydrochloric acid is harmless to all human cells"
+        ],
+        "after": [
+          "Bicarbonate neutralizes all acid throughout the stomach lumen",
+          "Pepsin remains completely inactive in the acidic stomach",
+          "The stomach lining relies on rapid absorption of acid into portal blood"
+        ]
+      },
+      {
+        "id": "mc-049",
+        "stem": "Why can the thought or smell of food stimulate gastric secretion before a meal?",
+        "correct": "Cephalic-phase vagal signaling prepares the stomach",
+        "before": [
+          "The bile duct directly senses airborne odors",
+          "Food has already entered the ileum",
+          "Colonic mass movements force acid production"
+        ],
+        "after": [
+          "A stomach stretch reflex is triggered before food reaches the stomach",
+          "Olfactory receptors release gastrin directly into the bloodstream",
+          "Duodenal CCK is released solely in response to the smell of food"
+        ]
+      },
+      {
+        "id": "mc-052",
+        "stem": "Which reflex can promote movement from the terminal ileum toward the cecum when the stomach becomes active?",
+        "correct": "Gastroileal reflex",
+        "before": [
+          "Corneal reflex",
+          "Baroreceptor reflex",
+          "Pupillary reflex"
+        ],
+        "after": [
+          "Gastrocolic reflex",
+          "Enterogastric reflex",
+          "Defecation reflex"
+        ]
+      },
+      {
+        "id": "mc-062",
+        "stem": "What is the most appropriate immediate response to excess acid arriving in the duodenum?",
+        "correct": "Increase bicarbonate delivery while restraining gastric emptying",
+        "before": [
+          "Increase gastric acid release without limit",
+          "Switch off pancreatic ductal secretion",
+          "Absorb all acid into lacteals"
+        ],
+        "after": [
+          "Increase gastrin release while reducing pancreatic bicarbonate secretion",
+          "Accelerate gastric emptying to deliver more acid to the duodenum",
+          "Increase pancreatic protease secretion while inhibiting ductal bicarbonate release"
+        ]
+      },
+      {
+        "id": "mc-066",
+        "stem": "Which structural sequence goes from larger folds to smaller surface specializations?",
+        "correct": "Plicae circulares, villi, microvilli",
+        "before": [
+          "Microvilli, plicae circulares, villi",
+          "Lacteals, serosa, pylorus",
+          "Haustra, taeniae coli, pylorus"
+        ],
+        "after": [
+          "Villi, plicae circulares, microvilli",
+          "Plicae circulares, microvilli, villi",
+          "Microvilli, villi, plicae circulares"
+        ]
+      },
+      {
+        "id": "mc-067",
+        "stem": "What is a lacteal?",
+        "correct": "Lymphatic capillary within an intestinal villus",
+        "before": [
+          "Endocrine cell in a gastric gland",
+          "Branch of the hepatic portal vein",
+          "Muscular sphincter at the pylorus"
+        ],
+        "after": [
+          "Blood capillary inside an intestinal villus",
+          "Lymphoid follicle within an intestinal Peyer patch",
+          "Venous channel that drains directly into the hepatic portal vein"
+        ]
+      },
+      {
+        "id": "mc-073",
+        "stem": "What is the brush border?",
+        "correct": "Microvillus-rich surface of enterocytes bearing terminal digestive enzymes",
+        "before": [
+          "Inner circular muscle of stomach",
+          "Bile-producing lumen in liver",
+          "Macroscopic bands on colon"
+        ],
+        "after": [
+          "Mucus-rich coating lying above the intestinal villi",
+          "Circular folds formed by the intestinal mucosa and submucosa",
+          "The capillary network running through the center of each villus"
+        ]
+      },
+      {
+        "id": "mc-079",
+        "stem": "Why are many pancreatic proteases secreted as inactive precursors?",
+        "correct": "To limit self-digestion of pancreatic tissue",
+        "before": [
+          "To activate only after reaching the stomach fundus",
+          "To permit direct uptake by intestinal lacteals",
+          "To make them function as bile salts"
+        ],
+        "after": [
+          "Delay their activation until they have entered the bloodstream",
+          "Keep protein digestion restricted to the acidic stomach",
+          "Prevent bicarbonate from reacting with pancreatic enzymes"
+        ]
+      },
+      {
+        "id": "mc-083",
+        "stem": "What is the primary role of Kupffer cells?",
+        "correct": "Macrophage-based immune surveillance and particle removal",
+        "before": [
+          "Secretion of gastric acid",
+          "Formation of dental enamel",
+          "Production of pancreatic amylase"
+        ],
+        "after": [
+          "Synthesis of bile acids by liver parenchymal cells",
+          "Storage and concentration of bile before a meal",
+          "Support and organization of hepatic plates and sinusoids"
+        ]
+      },
+      {
+        "id": "mc-088",
+        "stem": "During gallbladder contraction, which route carries bile toward the intestine?",
+        "correct": "Cystic duct, common bile duct, duodenum",
+        "before": [
+          "Pancreatic tail, hepatic portal vein, stomach",
+          "Common hepatic duct, esophagus, jejunum",
+          "Cystic duct, left hepatic duct, stomach"
+        ],
+        "after": [
+          "Gallbladder, common hepatic duct, cystic duct, duodenum",
+          "Gallbladder, cystic duct, common hepatic duct, stomach",
+          "Gallbladder, cystic duct, portal vein, duodenum"
+        ]
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "fc-001",
+        "beforeFront": "Name the instructor's seven digestive functions.",
+        "afterFront": "Name the seven major digestive functions.",
+        "beforeBack": "Ingestion, mechanical processing, chemical digestion, secretion, absorption, compaction, defecation.",
+        "afterBack": "Ingestion, mechanical processing, chemical digestion, secretion, absorption, compaction, defecation."
+      },
+      {
+        "id": "fc-007",
+        "beforeFront": "What is motility, and is it on this lecture's seven-function list?",
+        "afterFront": "How do motility and compaction differ?",
+        "beforeBack": "Mixing/propulsion of contents; no, the list names compaction instead.",
+        "afterBack": "Motility mixes or propels contents; compaction removes water and concentrates feces."
+      }
+    ]
+  },
+  "respiratory": {
+    "multiple-choice": [
+      {
+        "id": "mc-004",
+        "stem": "How does pulmonary ventilation differ from gas diffusion?",
+        "correct": "Ventilation moves air in bulk; diffusion moves individual gas molecules down partial-pressure gradients",
+        "before": [
+          "Ventilation is diffusion in alveoli; gas diffusion is movement of the diaphragm",
+          "Ventilation is movement of blood through lung capillaries; diffusion is movement of air in the trachea",
+          "Ventilation and diffusion both require ATP-driven pumps through the respiratory membrane"
+        ],
+        "after": [
+          "Ventilation and diffusion are both bulk flows driven by the same alveolar pressure gradient",
+          "Ventilation transports O₂ only; diffusion transports CO₂ only",
+          "Ventilation occurs across capillary walls, while diffusion occurs in the trachea"
+        ]
+      },
+      {
+        "id": "mc-008",
+        "stem": "Why do nasal conchae help condition inspired air?",
+        "correct": "They increase mucosal contact and airflow mixing",
+        "before": [
+          "They make the alveolar diffusion membrane much thinner",
+          "They change the diameter of the glottis during inspiration",
+          "They provide skeletal muscle contraction to drive the incoming airflow"
+        ],
+        "after": [
+          "They reduce the nasal mucosal surface exposed to moving air",
+          "They create a direct, unfiltered channel from the nostrils to the trachea",
+          "They serve as moving respiratory muscles that generate the inspiratory pressure gradient"
+        ]
+      },
+      {
+        "id": "mc-014",
+        "stem": "Which observation is a defensible benefit of nasal compared with mouth breathing?",
+        "correct": "Incoming air is warmed, humidified, and filtered by the nasal passages",
+        "before": [
+          "It bypasses the conducting airways so air reaches alveoli faster",
+          "It produces surfactant before air reaches the larynx",
+          "It removes all inhaled particles, unlike mouth breathing"
+        ],
+        "after": [
+          "They increase the amount of O₂ carried by each hemoglobin molecule beyond four",
+          "They perform the alveolar exchange of O₂ and CO₂ before air reaches the lungs",
+          "They prevent all contact between inhaled air and respiratory mucus"
+        ]
+      },
+      {
+        "id": "mc-017",
+        "stem": "Why does the epithelial lining become very thin at the alveoli?",
+        "correct": "Minimize the diffusion distance for gas exchange",
+        "before": [
+          "Withstand the mechanical abrasion of swallowed food",
+          "Provide more sites for cartilage attachment",
+          "Increase airway mucus storage capacity"
+        ],
+        "after": [
+          "Provide a thicker barrier against food abrasion",
+          "Maximize mucus production at the principal exchange surface",
+          "Provide room for cartilage to support individual alveoli"
+        ]
+      },
+      {
+        "id": "mc-020",
+        "stem": "A person whose airway cilia are severely impaired would most directly struggle with what?",
+        "correct": "Removing mucus and trapped particles from conducting passages",
+        "before": [
+          "Maintaining the affinity of hemoglobin for O₂",
+          "Keeping the alveolar basement membrane thin",
+          "Producing type II cell surfactant"
+        ],
+        "after": [
+          "Reduced O₂ affinity of hemoglobin without any airway secretions changing",
+          "Loss of type II pneumocyte surfactant synthesis without epithelial injury",
+          "Reduced ability of smooth muscle to dilate the bronchioles"
+        ]
+      },
+      {
+        "id": "mc-025",
+        "stem": "How does increasing vocal-fold tension generally affect fundamental pitch, with other factors held constant?",
+        "correct": "It raises pitch",
+        "before": [
+          "It lowers pitch in every circumstance",
+          "It eliminates the glottis",
+          "It changes only the loudness, never frequency"
+        ],
+        "after": [
+          "It lowers pitch by reducing the frequency of fold vibration",
+          "It changes only sound amplitude without affecting vibration frequency",
+          "It leaves the pitch unchanged if airflow continues"
+        ]
+      },
+      {
+        "id": "mc-030",
+        "stem": "Why are tracheal cartilage rings C-shaped rather than fully circular?",
+        "correct": "They maintain patency while allowing the esophagus behind the trachea to expand",
+        "before": [
+          "They allow the posterior tracheal wall to become a second gas-exchange membrane",
+          "They permit the trachea to fully collapse during every quiet expiration",
+          "They prevent the trachealis muscle from changing airway diameter"
+        ],
+        "after": [
+          "Their open side allows oxygen to diffuse through the tracheal wall",
+          "Their posterior gap permits the trachea to collapse fully during every breath",
+          "Their open side prevents posterior trachealis muscle contraction"
+        ]
+      },
+      {
+        "id": "mc-037",
+        "stem": "Why do terminal bronchioles differ from respiratory bronchioles?",
+        "correct": "Terminal bronchioles conduct air without alveoli; respiratory bronchioles start bearing alveoli",
+        "before": [
+          "Terminal bronchioles contain scattered alveoli, but respiratory bronchioles have none",
+          "Terminal bronchioles are supported by cartilage, but respiratory bronchioles are supported by bone",
+          "Respiratory bronchioles precede terminal bronchioles along the airway tree"
+        ],
+        "after": [
+          "Terminal bronchioles bear alveoli whereas respiratory bronchioles do not",
+          "Respiratory bronchioles contain cartilage rings while terminal bronchioles do not",
+          "Both types remain strictly conducting airways without alveoli"
+        ]
+      },
+      {
+        "id": "mc-043",
+        "stem": "What crosses the lung hilum?",
+        "correct": "Bronchi, blood vessels, lymphatics, and nerves",
+        "before": [
+          "Only pulmonary arteries but not veins or airways",
+          "Only the main bronchus, with no vessels or nerves",
+          "Alveolar ducts and individual alveoli from every lobule"
+        ],
+        "after": [
+          "Only the pulmonary artery enters; the bronchus and vein pass around the pleura",
+          "The bronchus and pulmonary vein pass through, but not lymphatics or nerves",
+          "Only alveolar ducts and individual exchange-capillaries enter the lung here"
+        ]
+      },
+      {
+        "id": "mc-047",
+        "stem": "Why is pulmonary surfactant essential?",
+        "correct": "It reduces surface tension and limits alveolar collapse",
+        "before": [
+          "It raises alveolar surface tension to generate expiration",
+          "It replaces hemoglobin as the primary O₂ carrier",
+          "It provides the ciliary drive for respiratory mucus clearance"
+        ],
+        "after": [
+          "It increases surface tension to make passive exhalation stronger",
+          "It primarily clears mucus from the trachea using ciliary movement",
+          "It forms the main thin cellular wall through which O₂ diffuses"
+        ]
+      },
+      {
+        "id": "mc-053",
+        "stem": "What initiates normal inhalation?",
+        "correct": "Diaphragm and external intercostals contract, thoracic volume rises, alveolar pressure falls",
+        "before": [
+          "Diaphragm relaxation raises thoracic volume and lowers lung pressure",
+          "Alveolar pressure rises above atmosphere before air is drawn inward",
+          "External intercostal contraction compresses the thorax to initiate inspiration"
+        ],
+        "after": [
+          "The diaphragm relaxes while thoracic volume increases and alveolar pressure falls",
+          "External intercostal contraction decreases thoracic volume to begin inspiration",
+          "Alveolar pressure rises above atmospheric pressure before air begins to enter"
+        ]
+      },
+      {
+        "id": "mc-057",
+        "stem": "How does forced expiration differ from quiet expiration?",
+        "correct": "It actively recruits expiratory muscles such as abdominal muscles and internal intercostals",
+        "before": [
+          "It remains driven entirely by passive recoil, only faster",
+          "It recruits only the diaphragm, which contracts downward during exhalation",
+          "It is generated solely by opening the glottis without changes in thoracic pressure"
+        ],
+        "after": [
+          "It depends chiefly on diaphragm contraction that increases thoracic volume",
+          "It occurs using passive recoil alone while expiratory muscles remain completely inactive",
+          "It lowers alveolar pressure below atmospheric pressure through abdominal contraction"
+        ]
+      },
+      {
+        "id": "mc-067",
+        "stem": "What does Henry's law describe in respiratory physiology?",
+        "correct": "The dissolved concentration of a gas is proportional to its partial pressure and solubility at constant temperature",
+        "before": [
+          "That dissolved gas concentration is independent of its partial pressure",
+          "That equal gas partial pressures imply equal dissolved concentrations for all gases",
+          "That gases enter blood by active transport rather than dissolution"
+        ],
+        "after": [
+          "The dissolved concentration depends on partial pressure but not gas solubility",
+          "Equal partial pressures cause identical dissolved concentrations for all gases",
+          "It describes bulk airflow caused by changes in chest volume"
+        ]
+      },
+      {
+        "id": "mc-069",
+        "stem": "Why does CO₂ diffuse from pulmonary capillaries toward alveolar air?",
+        "correct": "Incoming blood PCO₂ exceeds alveolar PCO₂",
+        "before": [
+          "Alveolar PCO₂ is greater than arriving pulmonary capillary PCO₂",
+          "CO₂ is actively pumped toward higher partial pressure in the alveolus",
+          "Hemoglobin carries CO₂ only as a dissolved gas and cannot release it in lungs"
+        ],
+        "after": [
+          "Alveolar PCO₂ is normally greater than PCO₂ in arriving venous blood",
+          "Oxygen binding to hemoglobin directly forces CO₂ into alveolar air regardless of gradients",
+          "CO₂ crosses the membrane only by active transport rather than diffusion"
+        ]
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "fc-001",
+        "beforeFront": "List the seven respiratory functions emphasized in the lecture.",
+        "afterFront": "Name the seven major respiratory functions.",
+        "beforeBack": "Exchange gases; move air; condition and protect respiratory surfaces; defend against pathogens/pollutants; produce sound; support smell; regulate pH.",
+        "afterBack": "Gas exchange, air movement, environmental protection, defense, sound production, olfaction, acid–base regulation."
+      },
+      {
+        "id": "fc-074",
+        "beforeFront": "State the lecture's simplified DRG/VRG functions, with a caution.",
+        "afterFront": "How do the DRG and VRG contribute to breathing?",
+        "beforeBack": "DRG emphasizes inspiratory/sensory integration; VRG is recruited for broader inspiratory/expiratory demands; in reality they are interacting networks.",
+        "afterBack": "DRG supports inspiratory integration; VRG includes neurons for rhythm and stronger inspiratory or expiratory activity."
+      }
+    ]
+  },
+  "lymphoid": {
+    "multiple-choice": [
+      {
+        "id": "mc-001",
+        "stem": "What are the three principal functions of the lymphatic system emphasized in Chapter 22?",
+        "correct": "Return tissue fluid to blood, support immune defense, and transport absorbed intestinal fats",
+        "before": [
+          "Make red cells, pump blood, and secrete bile",
+          "Produce digestive enzymes, store calcium, and release hormones",
+          "Carry oxygen to tissue, synthesize glucose, and excrete urea"
+        ],
+        "after": [
+          "Return fluid directly to arteries, initiate immunity, and deliver lipids mainly through portal blood",
+          "Produce antibodies in lymphatic vessels, recirculate red blood cells, and move dietary fat into bile",
+          "Return interstitial fluid to capillaries, carry all dietary nutrients through lymph, and eliminate immune surveillance"
+        ]
+      },
+      {
+        "id": "mc-002",
+        "stem": "A patient develops swelling after lymph vessels are surgically damaged. Which mechanism best explains the swelling?",
+        "correct": "Interstitial fluid is not being returned to the blood efficiently",
+        "before": [
+          "Capillary filtration has stopped completely",
+          "The spleen produces an excess of red blood cells",
+          "The kidneys no longer make antibodies"
+        ],
+        "after": [
+          "Capillary filtration into the damaged tissue has ceased completely",
+          "Local venous return increases enough to remove all extracellular fluid",
+          "Protein-rich fluid is cleared more rapidly despite the lymphatic obstruction"
+        ]
+      },
+      {
+        "id": "mc-003",
+        "stem": "A fluid sample is taken from between muscle cells and then from an adjacent lymphatic vessel. What changes in its name?",
+        "correct": "It is called interstitial fluid in tissue and lymph inside the lymphatic vessel",
+        "before": [
+          "It is called serum in tissue and bile in the vessel",
+          "It is plasma in tissue and cerebrospinal fluid in the vessel",
+          "It is always called whole blood regardless of location"
+        ],
+        "after": [
+          "The fluid is lymph in tissue spaces and becomes interstitial fluid after entering a vessel",
+          "The fluid is called plasma in tissue spaces and lymph inside a blood venule",
+          "The names are interchangeable regardless of where the fluid is located"
+        ]
+      },
+      {
+        "id": "mc-004",
+        "stem": "Why is the lymphatic system important to maintaining blood volume?",
+        "correct": "It returns part of the fluid filtered out of blood capillaries to the venous circulation",
+        "before": [
+          "It supplies most of the force that pushes blood through arteries",
+          "It prevents all fluid from leaving blood capillaries",
+          "It synthesizes plasma albumin in lymph nodes"
+        ],
+        "after": [
+          "It provides the pressure that pumps blood from the heart through arteries",
+          "It prevents any filtration of plasma water out of blood capillaries",
+          "It replaces the venous circulation as the main return path for whole blood"
+        ]
+      },
+      {
+        "id": "mc-006",
+        "stem": "After a meal rich in long-chain triglycerides, which fluid may have a milky appearance?",
+        "correct": "Chyle in intestinal lymphatics",
+        "before": [
+          "Cerebrospinal fluid",
+          "A typical arterial plasma sample before fat absorption",
+          "Urine in the renal pelvis"
+        ],
+        "after": [
+          "Venous plasma in the lower limb after ordinary fasting",
+          "Lymph draining the lungs before any intestinal lipid absorption",
+          "Interstitial fluid in muscles that does not contain absorbed lipoproteins"
+        ]
+      },
+      {
+        "id": "mc-007",
+        "stem": "Which pressure generally promotes movement of water outward across blood capillaries?",
+        "correct": "Capillary hydrostatic pressure",
+        "before": [
+          "Erythrocyte oxygen affinity",
+          "Intracellular nuclear pressure",
+          "Pressure generated by thymic T-cell development"
+        ],
+        "after": [
+          "Plasma oncotic pressure exerted by circulating albumin",
+          "Interstitial fluid hydrostatic pressure acting toward the capillary",
+          "A reduced capillary pressure relative to the surrounding interstitium"
+        ]
+      },
+      {
+        "id": "mc-009",
+        "stem": "Which structural difference helps initial lymphatic capillaries take up interstitial fluid?",
+        "correct": "Their overlapping endothelial cells form pressure-sensitive entry flaps",
+        "before": [
+          "They have a thicker continuous basement membrane than blood capillaries",
+          "They are sealed by valves that prevent inward fluid movement",
+          "They contain red blood cells that generate pressure"
+        ],
+        "after": [
+          "A thick, continuous basement membrane that prevents protein entry",
+          "Rigid endothelial tight junctions that never change with tissue pressure",
+          "A continuous muscular wall that generates high intraluminal suction"
+        ]
+      },
+      {
+        "id": "mc-011",
+        "stem": "What happens when tissue pressure rises outside a lymphatic capillary?",
+        "correct": "Entry flaps can open to admit fluid and anchoring filaments can help prevent collapse",
+        "before": [
+          "All initial capillaries seal permanently",
+          "Lymph is actively pumped outward into tissues",
+          "The thoracic duct closes its connection to veins"
+        ],
+        "after": [
+          "The flaps close more tightly so fluid is retained in the tissue",
+          "Fluid exits the lymphatic capillary directly through the open flaps",
+          "Only collecting-vessel valves change, while initial capillary entry remains unaffected"
+        ]
+      },
+      {
+        "id": "mc-013",
+        "stem": "A person walks after sitting immobile for hours. Why might lymph return from the legs improve?",
+        "correct": "Muscle contractions compress collecting vessels and valves direct the fluid centrally",
+        "before": [
+          "Arteries convert into lymphatic capillaries during exercise",
+          "The spleen begins pumping leg lymph directly",
+          "Lymphocytes create hydrostatic pressure by dividing"
+        ],
+        "after": [
+          "Skeletal muscle relaxation creates an equal pressure throughout every collecting vessel",
+          "Movement closes all valves simultaneously and stops lymph transport",
+          "Leg-muscle contraction forces lymph outward into surrounding tissues"
+        ]
+      },
+      {
+        "id": "mc-014",
+        "stem": "How does breathing support lymph drainage?",
+        "correct": "Changes in thoracic and abdominal pressure help draw and propel lymph centrally",
+        "before": [
+          "Every inhalation opens blood vessels directly into the pleural cavity",
+          "The diaphragm secretes chylomicrons during inspiration",
+          "Breathing prevents all liquid from entering initial lymphatics"
+        ],
+        "after": [
+          "Breathing increases abdominal pressure without changing thoracic pressure",
+          "Thoracic pressure changes reverse the one-way valves after each breath",
+          "Respiratory movements directly pump lymph out of venous blood back into tissues"
+        ]
+      },
+      {
+        "id": "mc-016",
+        "stem": "Which statement about lymphatic pumping is most accurate?",
+        "correct": "Flow uses valves, body movement, breathing, and rhythmic collecting-vessel contraction without a single heart-like pump",
+        "before": [
+          "Only the heartbeat moves lymph through lymphatic vessels",
+          "Lymph flow occurs solely by diffusion from foot to neck",
+          "Lymphatic capillaries generate blood pressure equal to the aorta"
+        ],
+        "after": [
+          "A central pump creates arterial-level pressure throughout collecting lymphatics",
+          "External movements alone propel lymph; collecting-vessel walls cannot contract",
+          "The flow relies on passive diffusion with no role for valves or pressure changes"
+        ]
+      },
+      {
+        "id": "mc-021",
+        "stem": "A lymphatic tracer enters the LEFT foot. Which route is appropriate?",
+        "correct": "Left lumbar drainage toward cisterna chyli, thoracic duct, then left venous angle",
+        "before": [
+          "Right jugular trunk directly into right venous angle",
+          "Right subclavian trunk into right lymphatic duct",
+          "Splenic artery into the lung"
+        ],
+        "after": [
+          "Left leg → left jugular trunk → right lymphatic duct → right venous angle",
+          "Left leg → right subclavian trunk → right lymphatic duct → right venous angle",
+          "Left leg → left lumbar trunk → right lymphatic duct → right venous angle"
+        ]
+      },
+      {
+        "id": "mc-029",
+        "stem": "What is the principal activity of a germinal center during a response?",
+        "correct": "Activated B-cell proliferation and affinity-related selection",
+        "before": [
+          "Erythrocyte synthesis",
+          "Synthesis of digestive enzymes",
+          "Production of chylomicrons"
+        ],
+        "after": [
+          "Activated T cells mature into red-pulp macrophages inside follicles",
+          "Naïve B cells leave the node without proliferation or differentiation",
+          "T cells undergo thymic positive and negative selection inside the germinal center"
+        ]
+      },
+      {
+        "id": "mc-031",
+        "stem": "What is the functional advantage of bringing antigen and lymphocytes into lymph nodes?",
+        "correct": "It facilitates antigen sampling and encounters among antigen-presenting cells and lymphocytes",
+        "before": [
+          "It prevents any fluid from entering the bloodstream ever again",
+          "It forces all lymphocytes to become macrophages",
+          "It replaces the need for innate defenses"
+        ],
+        "after": [
+          "It ensures that every lymphocyte recognizes every antigen equally",
+          "It replaces the need for T-cell costimulation and innate signaling",
+          "It prevents all antigens from leaving the subcapsular sinus"
+        ]
+      },
+      {
+        "id": "mc-032",
+        "stem": "How can circulating naive lymphocytes enter a lymph node without arriving in afferent lymph?",
+        "correct": "Through specialized high endothelial venules",
+        "before": [
+          "By swimming upstream through the thoracic duct",
+          "By crossing from the common bile duct",
+          "Through red pulp sinusoids of the spleen"
+        ],
+        "after": [
+          "Through afferent lymphatics exclusively, never directly from blood",
+          "Through large arterial branches opening directly into the follicular cortex",
+          "Through efferent lymphatics by reverse flow into the paracortex"
+        ]
+      },
+      {
+        "id": "mc-037",
+        "stem": "What is the central purpose of the blood–thymus barrier, particularly in the cortex?",
+        "correct": "Limit premature exposure of developing thymocytes to circulating antigens",
+        "before": [
+          "Force all B cells into the thymus",
+          "Drain intestinal fats through the thymus",
+          "Keep mature memory T cells from entering blood permanently"
+        ],
+        "after": [
+          "Keep all circulating antigens permanently inside the thymus medulla",
+          "Prevent thymic epithelial cells from contacting immature thymocytes",
+          "Completely separate thymocytes from self-antigen presentation during selection"
+        ]
+      },
+      {
+        "id": "mc-038",
+        "stem": "Why does thymic negative selection matter?",
+        "correct": "It helps remove or control developing T cells that strongly recognize self-antigens",
+        "before": [
+          "It converts T cells into red blood cells",
+          "It trains B cells to secrete digestive enzymes",
+          "It removes every T cell that recognizes any self-MHC at all"
+        ],
+        "after": [
+          "Eliminate all thymocytes that recognize self-MHC at any strength",
+          "Guarantee that every mature T cell can react against all tissue antigens",
+          "Select cells only for the ability to secrete antibodies in the thymus"
+        ]
+      },
+      {
+        "id": "mc-041",
+        "stem": "How does splenic immune surveillance differ fundamentally from lymph-node surveillance?",
+        "correct": "Spleen primarily filters blood, whereas lymph nodes primarily filter lymph",
+        "before": [
+          "Spleen filters air while lymph nodes filter urine",
+          "Both filter only bile and never encounter antigens",
+          "Spleen filters lymph but lymph nodes filter blood exclusively"
+        ],
+        "after": [
+          "Spleen chiefly filters lymph; lymph nodes chiefly filter circulating blood",
+          "Both filter circulating blood equally, but only lymph nodes contain immune cells",
+          "Spleen and lymph nodes both receive antigen primarily through afferent lymphatic vessels"
+        ]
+      },
+      {
+        "id": "mc-044",
+        "stem": "What enters and leaves the spleen at its hilum?",
+        "correct": "Splenic artery and vein",
+        "before": [
+          "Afferent lymphatic vessels in large numbers",
+          "Pancreatic secretions and bile",
+          "Pulmonary artery and vein"
+        ],
+        "after": [
+          "Splenic artery and thoracic duct",
+          "Afferent and efferent lymphatics forming the node-like sinus system",
+          "Portal vein and hepatic artery"
+        ]
+      },
+      {
+        "id": "mc-045",
+        "stem": "What happens to iron from many aged red blood cells removed by splenic macrophages?",
+        "correct": "It can be recovered and recycled for future hemoglobin synthesis",
+        "before": [
+          "It is always excreted unchanged through bile within minutes",
+          "It becomes a lymphatic valve",
+          "It is destroyed along with the heme ring"
+        ],
+        "after": [
+          "It is all eliminated without reuse when hemoglobin is degraded",
+          "It is retained inside splenic macrophages and never enters circulation again",
+          "It is converted directly into bilirubin and cannot be used for new hemoglobin"
+        ]
+      },
+      {
+        "id": "mc-047",
+        "stem": "Which consequence is clinically important after removal of the spleen?",
+        "correct": "Increased susceptibility to severe infections by some encapsulated bacteria",
+        "before": [
+          "Complete loss of all T-cell production at every age",
+          "Permanent inability to absorb glucose",
+          "Inability to pump venous blood toward the heart"
+        ],
+        "after": [
+          "Loss of circulating lymphocytes because no T cells can mature outside the spleen",
+          "A complete loss of antigen-specific immune memory after splenectomy",
+          "Reduced defenses against encapsulated bacteria because all lymph nodes stop working"
+        ]
+      },
+      {
+        "id": "mc-048",
+        "stem": "Why can trauma to the spleen be medically dangerous?",
+        "correct": "Its highly vascular tissue can bleed extensively into the abdomen",
+        "before": [
+          "It contains digestive acid that dissolves abdominal organs",
+          "A splenic rupture blocks breathing by closing the trachea",
+          "It is the only organ producing all antibodies"
+        ],
+        "after": [
+          "The spleen lacks a connective-tissue capsule and therefore always ruptures",
+          "Its thin-walled sinusoids contain no blood until after a traumatic injury",
+          "A ruptured spleen primarily blocks lymph drainage without causing bleeding"
+        ]
+      }
+    ],
+    "flashcards": [
+      {
+        "id": "fc-025",
+        "beforeFront": "Why should the study-guide B-cell hormone question be flagged?",
+        "afterFront": "Where do B cells develop, and which cells mature in the thymus?",
+        "beforeBack": "The lecture identifies thymosin-related signals for T-cell maturation, not a single standard required hormone for B-cell differentiation. B-cell maturation normally occurs in bone marrow.",
+        "afterBack": "B cells develop primarily in bone marrow; T cells mature and undergo selection in the thymus."
+      },
+      {
+        "id": "fc-030",
+        "beforeFront": "Describe the lecture's simplified route of splenic blood flow.",
+        "afterFront": "Trace the main route of blood through the spleen.",
+        "beforeBack": "Splenic artery → branching/trabecular and central arteries → red pulp/sinusoids → venous drainage → splenic vein.",
+        "afterBack": "Splenic artery → branching and central arteries → red pulp and sinusoids → splenic vein."
+      }
+    ]
+  }
+}

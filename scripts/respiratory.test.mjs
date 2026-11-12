@@ -45,8 +45,9 @@ const markdownText=md=>normalized(JSDOM.fragment(renderToStaticMarkup(createElem
 const setInput=async(node,value)=>{Object.getOwnPropertyDescriptor(node instanceof window.HTMLTextAreaElement?window.HTMLTextAreaElement.prototype:window.HTMLInputElement.prototype,'value').set.call(node,value);flushSync(()=>node.dispatchEvent(new window.Event('input',{bubbles:true})));await delay(40);};
 after(async()=>{flushSync(()=>root.unmount());await api.annotationStore.dispose();globalThis.fetch=originalFetch;window.close();});
 
-test('all supplied readings, study records, gallery metadata and WebPs retain original archive bytes',()=>{
+test('readings and study revisions retain their supplied bytes; protected source assets remain unchanged',()=>{
   const inventory=read('docs/integration/respiratory-source/archive-inventory.json').entries;
+  const editorialHashes=new Map(read('docs/integration/editorial-consistency-source/archive-inventory.json').installedFiles.map(entry=>[entry.targetPath,entry.sha256]));
   const mappings=inventory.flatMap(entry=>{
     const name=entry.path.split('/').at(-1);
     if(/^phase-0[23]-readings\/respiratory-system-.*\.json$/.test(entry.path))return [[entry,`data/learn/${name}`]];
@@ -55,7 +56,7 @@ test('all supplied readings, study records, gallery metadata and WebPs retain or
     return [];
   });
   assert.equal(mappings.length,69);
-  for(const [entry,file] of mappings)assert.equal(createHash('sha256').update(fs.readFileSync(file)).digest('hex'),entry.sha256,file);
+  for(const [entry,file] of mappings)assert.equal(createHash('sha256').update(fs.readFileSync(file)).digest('hex'),editorialHashes.get(file)??entry.sha256,file);
   assert.equal(fs.readdirSync('public/images/learn/respiratory/gallery/images').length,29);
   assert.equal(fs.readdirSync('public/images/learn/respiratory/gallery/thumbnails').length,29);
 });
@@ -67,7 +68,7 @@ test('subject registry shares eight descriptions in order and all reading sectio
   await render('/learn');assert.ok(document.querySelector('a[href="/learn/respiratory"]'));await render();
   assert.equal(document.querySelector('h1').textContent,'Respiratory System');
   for(const [title,count] of [['General Overview',8],['Deep Dive',23],['How It Connects',11],['Exam Cram',18]]){
-    await click(tab(title));const active=panel(),article=api.articles[respiratory.tabs.find(t=>t.title===title).id];
+    await click(tab(title));if(title==='Exam Cram')await click(document.querySelector('.learn-exam-mode input[value="detailed-review"]'));const active=panel(),article=api.articles[respiratory.tabs.find(t=>t.title===title).id];
     assert.equal(active.querySelectorAll('.learn-article-section').length,count);
     assert.equal(normalized(active.querySelector('header .learn-markdown').textContent),markdownText(article.introMarkdown));
     for(const section of article.sections){const heading=document.getElementById(`${article.id}-${section.id}`);assert.equal(heading.textContent,section.title);assert.equal(normalized(heading.closest('section').querySelector('.learn-markdown').textContent),markdownText(section.markdown));}

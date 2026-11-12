@@ -71,8 +71,8 @@ after(async () => { flushSync(() => root.unmount()); await api.annotationStore.d
 test('authored content is imported byte-for-byte and Detailed Review and Digestive stay unchanged', () => {
   const inventory = read('docs/integration/exam-cram-source/archive-inventory.json').entries;
   for (const subject of ['respiratory', 'lymphoid']) {
-    const quick = read(`data/learn/${subject}-exam-cram-quick-scan.json`), detailed = read(`data/learn/${subject}-system-exam-cram.json`);
-    for (const [archiveName, file] of [[`${subject}-exam-cram-quick-scan.json`, `data/learn/${subject}-exam-cram-quick-scan.json`], [`${subject}-detailed-original.json`, `data/learn/${subject}-system-exam-cram.json`]]) assert.equal(createHash('sha256').update(fs.readFileSync(file)).digest('hex'), inventory.find(entry => entry.path === archiveName).sha256, file);
+    const quick = read(`data/learn/${subject}-system-exam-cram-quick-scan.json`), detailed = read(`data/learn/${subject}-system-exam-cram.json`);
+    for (const [archiveName, file] of [[`${subject}-exam-cram-quick-scan.json`, `data/learn/${subject}-system-exam-cram-quick-scan.json`], [`${subject}-detailed-original.json`, `data/learn/${subject}-system-exam-cram.json`]]) assert.equal(createHash('sha256').update(fs.readFileSync(file)).digest('hex'), inventory.find(entry => entry.path === archiveName).sha256, file);
     assert.equal(quick.variantOf, detailed.id); assert.equal(quick.id, `${detailed.id}-quick-scan`);
     assert.equal(quick.sections.length, 18); assert.deepEqual(quick.sourceFiles, detailed.sourceFiles);
     assert.deepEqual(quick.sections.map(({ id, title, slideReferences }) => ({ id, title, slideReferences })), detailed.sections.map(({ id, title, slideReferences }) => ({ id, title, slideReferences })));
@@ -92,7 +92,8 @@ for (const subject of ['respiratory', 'lymphoid']) {
   test(`${subject}: both full authored modes share the existing 18 anchors and one top-level tab`, async () => {
     window.localStorage.clear(); await render(subject); await click(tab('Exam Cram'));
     assert.equal(document.querySelectorAll('.learn-tab-trigger').length, 8);
-    assert.equal(mode(), 'detailed-review'); assertArticle(subject, 'detailed-review');
+    assert.equal(mode(), 'quick-scan'); assertArticle(subject, 'quick-scan');
+    await choose('detailed-review'); assertArticle(subject, 'detailed-review');
     assert.equal(document.querySelector('.learn-exam-mode legend').textContent, 'Exam Cram reading mode');
     await choose('quick-scan'); assert.equal(mode(), 'quick-scan'); assertArticle(subject, 'quick-scan');
     await click(document.querySelectorAll('.learn-exam-cram .learn-index-desktop nav a')[4]);
@@ -110,16 +111,16 @@ for (const subject of ['respiratory', 'lymphoid']) {
     window.localStorage.clear();
     const sentinels = { 'human-atlas-study-progress:sentinel': 'preserve', [`human-atlas-gallery:v1:${subject}`]: 'preserve' };
     for (const [key, value] of Object.entries(sentinels)) window.localStorage.setItem(key, value);
-    await render(subject); await click(tab('Exam Cram')); await choose('quick-scan');
+    await render(subject); await click(tab('Exam Cram')); await choose('detailed-review'); await choose('quick-scan');
     assert.deepEqual(JSON.parse(window.localStorage.getItem(api.examCramPreferenceKey(subject))), { version: 1, mode: 'quick-scan' });
     await render(subject); await click(tab('Exam Cram')); assert.equal(mode(), 'quick-scan');
     const other = subject === 'respiratory' ? 'lymphoid' : 'respiratory';
-    await render(other); await click(tab('Exam Cram')); assert.equal(mode(), 'detailed-review');
+    await render(other); await click(tab('Exam Cram')); assert.equal(mode(), 'quick-scan');
     for (const [key, value] of Object.entries(sentinels)) assert.equal(window.localStorage.getItem(key), value);
   });
 
   test(`${subject}: Study Tools and canonical bookmarks open Detailed Review despite a Quick Scan preference`, async () => {
-    window.localStorage.clear(); await render(subject); await click(tab('Exam Cram')); await choose('quick-scan');
+    window.localStorage.clear(); await render(subject); await click(tab('Exam Cram')); await choose('detailed-review'); await choose('quick-scan');
     await click(tab('Study Tools')); await waitFor(() => document.querySelector('.study-activity-nav'), 'study tools');
     // Use the real Study Tools link renderer with a supplied canonical Exam Cram reference.
     const bank = read(`data/learn/${subject}-study-tools/multiple-choice.json`);
@@ -139,6 +140,7 @@ for (const subject of ['respiratory', 'lymphoid']) {
 
   test(`${subject}: old detailed notes and new Quick Scan highlights remain isolated and reopen the correct mode`, async () => {
     window.localStorage.clear(); await api.annotationStore.clear(); await render(subject); await click(tab('Exam Cram'));
+    await choose('detailed-review');
     const canonical = canonicalId(subject), sectionId = api.articles[canonical].sections[0].id;
     const source = api.annotationSources.find(source => source.target.sourceId === `${canonical}/${sectionId}`), old = makeRecord(source);
     await api.annotationStore.create(old); await waitFor(() => document.querySelector('[data-annotation-first]'), 'old detailed highlight');
@@ -167,13 +169,13 @@ for (const subject of ['respiratory', 'lymphoid']) {
 }
 
 test('invalid or blocked storage remains readable, and cross-tab preference updates are scoped', async () => {
-  for (const value of [null, '{bad', 'null', '[]', '{"version":2,"mode":"quick-scan"}', '{"version":1,"mode":"other"}']) assert.equal(api.readExamCramMode(value), 'detailed-review');
+  for (const value of [null, '{bad', 'null', '[]', '{"version":2,"mode":"quick-scan"}', '{"version":1,"mode":"other"}']) assert.equal(api.readExamCramMode(value), 'quick-scan');
   window.localStorage.clear(); await render('respiratory'); await click(tab('Exam Cram'));
   const storage = window.localStorage;
   Object.defineProperty(window, 'localStorage', { configurable: true, get() { throw Error('blocked'); } });
-  try { await render('respiratory'); await click(tab('Exam Cram')); assert.equal(mode(), 'detailed-review'); await choose('quick-scan'); assert.equal(mode(), 'quick-scan'); assert.ok(document.querySelector('.learn-exam-mode-error')); }
+  try { await render('respiratory'); await click(tab('Exam Cram')); assert.equal(mode(), 'quick-scan'); await choose('detailed-review'); assert.equal(mode(), 'detailed-review'); assert.ok(document.querySelector('.learn-exam-mode-error')); }
   finally { Object.defineProperty(window, 'localStorage', { configurable: true, value: storage }); }
-  await render('respiratory'); await click(tab('Exam Cram'));
+  await render('respiratory'); await click(tab('Exam Cram')); await choose('detailed-review');
   flushSync(() => window.dispatchEvent(new window.StorageEvent('storage', { key: api.examCramPreferenceKey('lymphoid'), newValue: '{"version":1,"mode":"quick-scan"}' }))); assert.equal(mode(), 'detailed-review');
   flushSync(() => window.dispatchEvent(new window.StorageEvent('storage', { key: api.examCramPreferenceKey('respiratory'), newValue: '{"version":1,"mode":"quick-scan"}' }))); assert.equal(mode(), 'quick-scan');
 });

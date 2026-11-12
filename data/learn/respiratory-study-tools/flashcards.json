@@ -5,8 +5,8 @@
     {
       "id": "fc-001",
       "topicId": "foundations",
-      "front": "List the seven respiratory functions emphasized in the lecture.",
-      "back": "Exchange gases; move air; condition and protect respiratory surfaces; defend against pathogens/pollutants; produce sound; support smell; regulate pH.",
+      "front": "Name the seven major respiratory functions.",
+      "back": "Gas exchange, air movement, environmental protection, defense, sound production, olfaction, acid–base regulation.",
       "conceptIds": [
         "respiratory-system",
         "acid-base-regulation"
@@ -2887,8 +2887,8 @@
     {
       "id": "fc-074",
       "topicId": "control",
-      "front": "State the lecture's simplified DRG/VRG functions, with a caution.",
-      "back": "DRG emphasizes inspiratory/sensory integration; VRG is recruited for broader inspiratory/expiratory demands; in reality they are interacting networks.",
+      "front": "How do the DRG and VRG contribute to breathing?",
+      "back": "DRG supports inspiratory integration; VRG includes neurons for rhythm and stronger inspiratory or expiratory activity.",
       "conceptIds": [
         "dorsal-respiratory-group",
         "ventral-respiratory-group"

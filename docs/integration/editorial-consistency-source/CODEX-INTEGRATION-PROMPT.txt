@@ -1,0 +1,45 @@
+TASK: Human Atlas editorial content update + dual-mode Exam Cram integration
+
+REPOSITORY: PrejudiceNeutrino/human-atlas-enhanced
+INPUT: Attached Human Atlas Editorial Consistency ZIP (this archive)
+
+WORKFLOW
+1. Inspect CURRENT GitHub main / local main and working tree. Do not revert other branches or uncommitted work. Create a feature branch from current local main when practical.
+2. Inspect the attached README, VALIDATION.json, data/learn, and editorial previews.
+3. Compare packaged source-content baselines against the present repo. If an article or Study Tools file has changed since the baseline, port the editorial revisions without discarding those newer changes; report conflicts rather than silently replacing the latest version.
+4. Treat all JSON in `data/learn/` as final authored educational content. DO NOT generate content with AI, summarize it, reword it, or rewrite the questions. No changes to unrelated features.
+
+CONTENT REPLACEMENT
+- Replace these four JSON articles for each of Respiratory and Lymphoid: general-overview, deep-dive, how-it-connects, why-is-this-cool. Use exact filenames under `data/learn/`.
+- Keep the existing respiratory-system-exam-cram.json and lymphoid-system-exam-cram.json as the Detailed Review contents (the included copies are identical to the earlier originals).
+- Import `respiratory-system-exam-cram-quick-scan.json` and `lymphoid-system-exam-cram-quick-scan.json` as additional, separately authored Quick Scan datasets, without creating new top-level Learn tabs.
+- Replace the `multiple-choice.json` and `flashcards.json` for Digestive, Respiratory and Lymphoid from `data/learn/<subject>-study-tools/`. Do not modify the other Study Tools bank files, manifests, or questions.
+- Files in `review-baseline/` are backup copies and MUST NOT be imported into the app.
+- Files in `previews/` are for editorial review and MUST NOT be embedded/iframed in the app.
+
+EXAM CRAM TWO-MODE UI
+- Inside the existing Exam Cram tab for Respiratory and Lymphoid, add a compact, accessible segmented switch: `Quick Scan` | `Detailed Review`.
+- Default mode on ordinary navigation: Quick Scan. The original `exam-cram.json` remains Detailed Review verbatim. The `exam-cram-quick-scan.json` supplies Quick Scan verbatim.
+- Retain the same existing 18-section navigation, order, stable section IDs and anchor destinations within each subject. Preserve the existing tab registry IDs and routes.
+- No second top-level tab. Do not duplicate article renderers. Reuse current article layout and styling and all four palettes/light-dark/motion settings.
+- Preserve existing reading hash navigation. Existing Study Tools sourceRefs point to the original Exam Cram article. When following an existing source link or a saved Detailed Review annotation, display Detailed Review and its corresponding section; do NOT silently substitute different text as the source evidence.
+- Treat Quick Scan and Detailed Review as separate annotation text sources: preserve current Detailed Review source IDs and any saved notes, while assigning distinct stable Quick Scan source IDs. Notes links should restore the correct mode and section. Do not silently lose existing highlights; editorial text changes may require reanchoring or an honest 'needs reanchor' state if a passage cannot be found. Never clear or overwrite the user's local annotation database.
+- Preserve topic navigation, context menu, back to top, responsive layout, and keyboard focus behavior when changing modes.
+- Digestive already has a concise single Exam Cram: leave its page and content intact. Do not add an empty or fabricated Detailed Review mode just for visual symmetry.
+
+STUDY TOOLS
+- In all three subjects, only 53 distractor sets and six flashcards have changed. All record IDs and correct answers are stable, as are topic, source, and article-section references. Use the exact supplied records.
+- Maintain per-subject localStorage progress keys and user progress. Do not reset any user's progress when changing distractor wording.
+- Preserve shuffled answer presentation, validation, feedback, glossary, fill-in-the-blank, and flashcard behavior.
+- Do NOT replace the existing quiz UI with the offline editorial preview.
+
+VALIDATION
+- Check all article/section IDs and slideReferences remain stable and unique. Verify all reading modes have 18 Exam Cram sections for Respiratory and Lymphoid. Check that current Digestive content is unchanged, except the selective MC/flashcard edits.
+- Check actual content that renders on General Overview, Deep Dive, How It Connects, Who Cares?, Exam Cram (both modes). No section should be silently empty or missing.
+- Verify the six Study Tools dataset files' record counts are unchanged, and all correctChoiceIds still resolve to the same correct text.
+- Test source-link hashes, Quick Scan and Detailed Review notes, existing annotation reanchoring, cross-tab navigation, and browser refresh. Include tests for mode switch preserving current section where possible.
+- npm run check; npm run build; npm run test:learn; npm run test:study-tools; npm run test:annotations; and any other relevant existing tests.
+- Keep existing Gallery/Visualize components, anatomy data, 3D renderers, and public galleries unchanged.
+
+REPORT
+List changed files, executed tests with pass/fail, content counts, verified behavior of both Exam Cram modes, and any note reanchoring or source-link limitations. Do not claim untested behavior worked. Do not regenerate scientific content; ask for a follow-up editorial dataset revision if a scientific claim in the supplied JSON is questionable.

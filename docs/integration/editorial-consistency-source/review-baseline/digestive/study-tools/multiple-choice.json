@@ -1,0 +1,7407 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "digestive",
+  "questions": [
+    {
+      "id": "mc-001",
+      "type": "multiple-choice",
+      "topicId": "foundations",
+      "stem": "Which set exactly matches the instructor's seven named digestive functions?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Ingestion, mechanical processing, chemical digestion, secretion, absorption, compaction, defecation"
+        },
+        {
+          "id": "c2",
+          "text": "Ingestion, propulsion, emulsification, filtration, absorption, excretion, elimination"
+        },
+        {
+          "id": "c3",
+          "text": "Ingestion, mechanical digestion, chemical digestion, secretion, motility, absorption, digestion"
+        },
+        {
+          "id": "c4",
+          "text": "Ingestion, mastication, swallowing, peristalsis, segmentation, fermentation, defecation"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The Chapter 24 slides count compaction among the seven; motility remains important but is not a separate item in that particular list.",
+      "conceptIds": [
+        "ingestion",
+        "compaction"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-002",
+      "type": "multiple-choice",
+      "topicId": "foundations",
+      "stem": "Chewing food into smaller pieces without changing its molecular composition is an example of what?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Mechanical processing"
+        },
+        {
+          "id": "c2",
+          "text": "Chemical digestion"
+        },
+        {
+          "id": "c3",
+          "text": "Absorption"
+        },
+        {
+          "id": "c4",
+          "text": "Secretion"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Mastication physically increases exposed surface; chemical digestion requires breaking chemical bonds.",
+      "conceptIds": [
+        "mechanical-processing",
+        "mastication"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-003",
+      "type": "multiple-choice",
+      "topicId": "foundations",
+      "stem": "Which process involves crossing the intestinal epithelial barrier into blood or lymph?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Absorption"
+        },
+        {
+          "id": "c2",
+          "text": "Ingestion"
+        },
+        {
+          "id": "c3",
+          "text": "Compaction"
+        },
+        {
+          "id": "c4",
+          "text": "Mechanical processing"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Digested nutrients are not yet part of the body's internal transport systems until they cross the absorptive epithelium.",
+      "conceptIds": [
+        "absorption"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-004",
+      "type": "multiple-choice",
+      "topicId": "foundations",
+      "stem": "Which sequence correctly follows food through the alimentary canal?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Mouth, pharynx, esophagus, stomach, small intestine, large intestine"
+        },
+        {
+          "id": "c2",
+          "text": "Mouth, trachea, stomach, pancreas, colon"
+        },
+        {
+          "id": "c3",
+          "text": "Mouth, esophagus, liver, stomach, large intestine"
+        },
+        {
+          "id": "c4",
+          "text": "Mouth, pharynx, gallbladder, jejunum, stomach"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The GI tract is the continuous lumen from mouth to anus; liver, pancreas, and gallbladder are accessory organs.",
+      "conceptIds": [
+        "gastrointestinal-tract"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-005",
+      "type": "multiple-choice",
+      "topicId": "foundations",
+      "stem": "Which organ is accessory rather than part of the tube through which food passes?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Pancreas"
+        },
+        {
+          "id": "c2",
+          "text": "Esophagus"
+        },
+        {
+          "id": "c3",
+          "text": "Stomach"
+        },
+        {
+          "id": "c4",
+          "text": "Duodenum"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Pancreatic enzymes enter the duodenum through ducts; food does not normally pass through the pancreas.",
+      "conceptIds": [
+        "accessory-digestive-organs",
+        "pancreatic-acini"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-006",
+      "type": "multiple-choice",
+      "topicId": "foundations",
+      "stem": "A moist, chewed mass swallowed from the mouth is called what?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Bolus"
+        },
+        {
+          "id": "c2",
+          "text": "Chyme"
+        },
+        {
+          "id": "c3",
+          "text": "Bile"
+        },
+        {
+          "id": "c4",
+          "text": "Feces"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "A bolus is formed in the mouth; chyme is the semifluid product of stomach mixing.",
+      "conceptIds": [
+        "bolus",
+        "chyme"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-007",
+      "type": "multiple-choice",
+      "topicId": "foundations",
+      "stem": "A stomach's partially digested, semi-fluid mixture is called what?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Chyme"
+        },
+        {
+          "id": "c2",
+          "text": "Bolus"
+        },
+        {
+          "id": "c3",
+          "text": "Micelle"
+        },
+        {
+          "id": "c4",
+          "text": "Mucus"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Gastric mixing converts food and secretions into chyme before gradual release through the pylorus.",
+      "conceptIds": [
+        "chyme",
+        "pylorus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-008",
+      "type": "multiple-choice",
+      "topicId": "foundations",
+      "stem": "The synthesis of glycogen from glucose is an example of what?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Anabolism"
+        },
+        {
+          "id": "c2",
+          "text": "Catabolism"
+        },
+        {
+          "id": "c3",
+          "text": "Defecation"
+        },
+        {
+          "id": "c4",
+          "text": "Emulsification"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Anabolism builds larger molecules from smaller precursors, unlike digestion-associated catabolism.",
+      "conceptIds": [
+        "anabolism",
+        "catabolism"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-009",
+      "type": "multiple-choice",
+      "topicId": "foundations",
+      "stem": "Which named function concentrates waste primarily through water removal?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Compaction"
+        },
+        {
+          "id": "c2",
+          "text": "Ingestion"
+        },
+        {
+          "id": "c3",
+          "text": "Secretion"
+        },
+        {
+          "id": "c4",
+          "text": "Chemical digestion"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The large intestine reabsorbs water, contributing to fecal compaction.",
+      "conceptIds": [
+        "compaction"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-010",
+      "type": "multiple-choice",
+      "topicId": "foundations",
+      "stem": "Which statement best describes chemical digestion?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Enzymes break macromolecules into smaller digestion products"
+        },
+        {
+          "id": "c2",
+          "text": "Contractions physically fragment food without bond cleavage"
+        },
+        {
+          "id": "c3",
+          "text": "Enzymes transfer absorbed nutrients from portal blood into liver"
+        },
+        {
+          "id": "c4",
+          "text": "Bile salts enzymatically cleave triglycerides"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Chemical digestion is molecular breakdown, distinct from motility and epithelial absorption.",
+      "conceptIds": [
+        "chemical-digestion"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "fundamental-digestive-processes",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "Digestive.pptx": [
+              2
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "seven-functions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              4,
+              9
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-011",
+      "type": "multiple-choice",
+      "topicId": "gut-wall",
+      "stem": "From the digestive lumen outward, which is the usual sequence of major GI wall layers?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Mucosa, submucosa, muscularis externa, serosa or adventitia"
+        },
+        {
+          "id": "c2",
+          "text": "Submucosa, mucosa, serosa, muscularis externa"
+        },
+        {
+          "id": "c3",
+          "text": "Muscularis externa, mucosa, submucosa, serosa"
+        },
+        {
+          "id": "c4",
+          "text": "Serosa, mucosa, muscularis externa, submucosa"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The mucosa contacts lumen contents, followed by connective submucosa, muscularis externa, then outer covering.",
+      "conceptIds": [
+        "mucosa",
+        "submucosa",
+        "muscularis-externa",
+        "serosa"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-012",
+      "type": "multiple-choice",
+      "topicId": "gut-wall",
+      "stem": "Which enteric plexus is situated between the layers of the muscularis externa and principally regulates motility?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Myenteric plexus"
+        },
+        {
+          "id": "c2",
+          "text": "Submucosal plexus"
+        },
+        {
+          "id": "c3",
+          "text": "Brachial plexus"
+        },
+        {
+          "id": "c4",
+          "text": "Choroid plexus"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The myenteric (Auerbach) plexus lies between circular and longitudinal muscle.",
+      "conceptIds": [
+        "myenteric-plexus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-013",
+      "type": "multiple-choice",
+      "topicId": "gut-wall",
+      "stem": "Which GI wall plexus has an especially important role in secretion and local blood-flow regulation?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Submucosal plexus"
+        },
+        {
+          "id": "c2",
+          "text": "Myenteric plexus"
+        },
+        {
+          "id": "c3",
+          "text": "Vagal motor nucleus"
+        },
+        {
+          "id": "c4",
+          "text": "Enteric ganglia between circular and longitudinal muscle"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The submucosal (Meissner) plexus resides within the submucosa.",
+      "conceptIds": [
+        "submucosal-plexus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-014",
+      "type": "multiple-choice",
+      "topicId": "gut-wall",
+      "stem": "Which activity primarily propels material forward along the GI tract?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Peristalsis"
+        },
+        {
+          "id": "c2",
+          "text": "Segmentation"
+        },
+        {
+          "id": "c3",
+          "text": "Emulsification"
+        },
+        {
+          "id": "c4",
+          "text": "Brush-border hydrolysis"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Propagating muscular waves produce net propulsion; segmentation chiefly mixes intestinal contents.",
+      "conceptIds": [
+        "peristalsis",
+        "segmentation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-015",
+      "type": "multiple-choice",
+      "topicId": "gut-wall",
+      "stem": "Which activity mainly mixes intestinal chyme back and forth rather than consistently pushing it toward the colon?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Segmentation"
+        },
+        {
+          "id": "c2",
+          "text": "Peristalsis"
+        },
+        {
+          "id": "c3",
+          "text": "Mass movements"
+        },
+        {
+          "id": "c4",
+          "text": "Defecation"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Segmentation repeatedly exposes chyme to enzymes and absorptive epithelium.",
+      "conceptIds": [
+        "segmentation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-016",
+      "type": "multiple-choice",
+      "topicId": "gut-wall",
+      "stem": "How do mass movements differ from ordinary small-intestinal segmentation?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "They move colonic contents long distances toward the rectum"
+        },
+        {
+          "id": "c2",
+          "text": "They mechanically break down food in the mouth"
+        },
+        {
+          "id": "c3",
+          "text": "They are caused by ciliary beating in villi"
+        },
+        {
+          "id": "c4",
+          "text": "They are identical to bile emulsification"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Mass movements are powerful, infrequent colonic propulsive events.",
+      "conceptIds": [
+        "mass-movements"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-017",
+      "type": "multiple-choice",
+      "topicId": "gut-wall",
+      "stem": "What is the principal anatomical function of a mesentery?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Suspend organs while carrying vessels, nerves, and lymphatics"
+        },
+        {
+          "id": "c2",
+          "text": "Form the absorptive lining of small-intestinal villi"
+        },
+        {
+          "id": "c3",
+          "text": "Create the smooth muscle layers of the stomach"
+        },
+        {
+          "id": "c4",
+          "text": "Secrete bicarbonate into the duodenal lumen"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Mesenteries are double sheets of peritoneum supporting abdominal organs.",
+      "conceptIds": [
+        "mesentery"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-018",
+      "type": "multiple-choice",
+      "topicId": "gut-wall",
+      "stem": "Which statement correctly distinguishes visceral from parietal peritoneum?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Visceral covers organs; parietal lines the body wall"
+        },
+        {
+          "id": "c2",
+          "text": "Visceral lines body wall; parietal covers organs"
+        },
+        {
+          "id": "c3",
+          "text": "Both are layers beneath the muscularis externa in mucosa"
+        },
+        {
+          "id": "c4",
+          "text": "Visceral surrounds only colon; parietal surrounds only stomach"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The naming distinguishes the organ-facing covering from the cavity's wall lining.",
+      "conceptIds": [
+        "visceral-peritoneum",
+        "parietal-peritoneum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-019",
+      "type": "multiple-choice",
+      "topicId": "gut-wall",
+      "stem": "Which structure is classically retroperitoneal over most of its length?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Pancreas"
+        },
+        {
+          "id": "c2",
+          "text": "Jejunum"
+        },
+        {
+          "id": "c3",
+          "text": "Stomach"
+        },
+        {
+          "id": "c4",
+          "text": "Greater omentum"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Most of the pancreas lies behind the parietal peritoneum, although the tail has distinct peritoneal relationships.",
+      "conceptIds": [
+        "retroperitoneal",
+        "pancreatic-body"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-020",
+      "type": "multiple-choice",
+      "topicId": "gut-wall",
+      "stem": "Which outer GI layer helps anchor the thoracic esophagus to surrounding tissues?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Adventitia"
+        },
+        {
+          "id": "c2",
+          "text": "Serosa"
+        },
+        {
+          "id": "c3",
+          "text": "Mucosa"
+        },
+        {
+          "id": "c4",
+          "text": "Submucosa"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Most of the esophagus has adventitia, not a complete peritoneal serosal covering.",
+      "conceptIds": [
+        "adventitia"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gut-wall-peritoneum-and-motility",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "Digestive.pptx": [
+              13,
+              14,
+              38
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gut-wall",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              7,
+              8,
+              9
+            ],
+            "Digestive.pptx": [
+              13,
+              38
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-021",
+      "type": "multiple-choice",
+      "topicId": "oral",
+      "stem": "Which enzyme begins starch digestion in the mouth?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Salivary amylase"
+        },
+        {
+          "id": "c2",
+          "text": "Pepsin"
+        },
+        {
+          "id": "c3",
+          "text": "Trypsin"
+        },
+        {
+          "id": "c4",
+          "text": "Pancreatic lipase"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Salivary amylase starts carbohydrate hydrolysis before swallowing.",
+      "conceptIds": [
+        "salivary-amylase"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-022",
+      "type": "multiple-choice",
+      "topicId": "oral",
+      "stem": "Which salivary component contributes directly to lubrication and bolus formation?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Mucins"
+        },
+        {
+          "id": "c2",
+          "text": "Hydrochloric acid"
+        },
+        {
+          "id": "c3",
+          "text": "Bile salts"
+        },
+        {
+          "id": "c4",
+          "text": "Intrinsic factor"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Mucins are glycoproteins that make saliva slippery and cohesive.",
+      "conceptIds": [
+        "mucins",
+        "bolus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-023",
+      "type": "multiple-choice",
+      "topicId": "oral",
+      "stem": "Which gland empties into the oral cavity through Stensen's duct?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Parotid gland"
+        },
+        {
+          "id": "c2",
+          "text": "Submandibular gland"
+        },
+        {
+          "id": "c3",
+          "text": "Sublingual gland"
+        },
+        {
+          "id": "c4",
+          "text": "Thyroid gland"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Stensen's (parotid) duct conducts secretion from the parotid gland.",
+      "conceptIds": [
+        "parotid-gland",
+        "stensen-s-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-024",
+      "type": "multiple-choice",
+      "topicId": "oral",
+      "stem": "Which named duct drains the submandibular gland?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Wharton's duct"
+        },
+        {
+          "id": "c2",
+          "text": "Main pancreatic duct"
+        },
+        {
+          "id": "c3",
+          "text": "Common bile duct"
+        },
+        {
+          "id": "c4",
+          "text": "Stensen's duct"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Wharton's duct opens on the floor of the mouth near the lingual frenulum.",
+      "conceptIds": [
+        "wharton-s-duct",
+        "submandibular-gland"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-025",
+      "type": "multiple-choice",
+      "topicId": "oral",
+      "stem": "What is the fauces?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Opening between oral cavity and oropharynx"
+        },
+        {
+          "id": "c2",
+          "text": "Opening between nasopharynx and middle ear"
+        },
+        {
+          "id": "c3",
+          "text": "Opening between pharynx and esophagus"
+        },
+        {
+          "id": "c4",
+          "text": "Junction of hard and soft palates"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The fauces is the mouth-to-throat opening.",
+      "conceptIds": [
+        "fauces"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-026",
+      "type": "multiple-choice",
+      "topicId": "oral",
+      "stem": "Which tooth tissue covers the crown and is especially highly mineralized?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Enamel"
+        },
+        {
+          "id": "c2",
+          "text": "Cementum"
+        },
+        {
+          "id": "c3",
+          "text": "Dental pulp"
+        },
+        {
+          "id": "c4",
+          "text": "Periodontal ligament"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Enamel is the hard protective covering of a tooth's crown.",
+      "conceptIds": [
+        "enamel"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-027",
+      "type": "multiple-choice",
+      "topicId": "oral",
+      "stem": "What connects the tooth root to the surrounding alveolar bone?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Periodontal ligament"
+        },
+        {
+          "id": "c2",
+          "text": "Lingual frenulum"
+        },
+        {
+          "id": "c3",
+          "text": "Greater omentum"
+        },
+        {
+          "id": "c4",
+          "text": "Pyloric sphincter"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Periodontal ligament fibers attach to cementum and alveolar bone.",
+      "conceptIds": [
+        "periodontal-ligament",
+        "cementum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-028",
+      "type": "multiple-choice",
+      "topicId": "oral",
+      "stem": "Through which root-tip opening do vessels and nerves enter a tooth?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Apical foramen"
+        },
+        {
+          "id": "c2",
+          "text": "Fauces"
+        },
+        {
+          "id": "c3",
+          "text": "Esophageal hiatus"
+        },
+        {
+          "id": "c4",
+          "text": "Major duodenal papilla"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The apical foramen leads into root canal/pulp structures.",
+      "conceptIds": [
+        "apical-foramen",
+        "pulp-cavity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-029",
+      "type": "multiple-choice",
+      "topicId": "oral",
+      "stem": "Which tooth group is particularly specialized for cutting food?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Incisors"
+        },
+        {
+          "id": "c2",
+          "text": "Canines"
+        },
+        {
+          "id": "c3",
+          "text": "Premolars"
+        },
+        {
+          "id": "c4",
+          "text": "Molars"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Incisors have cutting edges, whereas canines tear and posterior teeth crush or grind.",
+      "conceptIds": [
+        "permanent-teeth"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-030",
+      "type": "multiple-choice",
+      "topicId": "oral",
+      "stem": "The lecturer's anatomical term 'superior labium' refers to which structure?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Upper lip"
+        },
+        {
+          "id": "c2",
+          "text": "Soft palate"
+        },
+        {
+          "id": "c3",
+          "text": "Top surface of tongue"
+        },
+        {
+          "id": "c4",
+          "text": "Floor of the mouth"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Superior and inferior labium are anatomical terms for upper and lower lip.",
+      "conceptIds": [
+        "superior-labium",
+        "inferior-labium"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "oral-cavity-and-saliva",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "mouth-saliva-teeth",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              13,
+              15,
+              16,
+              17
+            ],
+            "Digestive.pptx": [
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-031",
+      "type": "multiple-choice",
+      "topicId": "swallowing",
+      "stem": "Which swallowing phase is typically under voluntary control?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Buccal or oral phase"
+        },
+        {
+          "id": "c2",
+          "text": "Pharyngeal phase"
+        },
+        {
+          "id": "c3",
+          "text": "Esophageal peristaltic phase"
+        },
+        {
+          "id": "c4",
+          "text": "All three phases are wholly voluntary"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The tongue initiates swallowing voluntarily; subsequent reflex phases are coordinated involuntarily.",
+      "conceptIds": [
+        "buccal-phase"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-032",
+      "type": "multiple-choice",
+      "topicId": "swallowing",
+      "stem": "Which brainstem region is especially involved in coordinating swallowing?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Medulla oblongata"
+        },
+        {
+          "id": "c2",
+          "text": "Pons"
+        },
+        {
+          "id": "c3",
+          "text": "Midbrain"
+        },
+        {
+          "id": "c4",
+          "text": "Cerebellum"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Brainstem swallowing circuits are centered in medullary networks.",
+      "conceptIds": [
+        "medulla-oblongata"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-033",
+      "type": "multiple-choice",
+      "topicId": "swallowing",
+      "stem": "What is a major protective event during the pharyngeal phase?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "The larynx elevates and the airway closes"
+        },
+        {
+          "id": "c2",
+          "text": "The lower esophageal sphincter relaxes to prevent aspiration"
+        },
+        {
+          "id": "c3",
+          "text": "The tongue initiates voluntary mastication"
+        },
+        {
+          "id": "c4",
+          "text": "The pyloric sphincter contracts to protect the airway"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Multiple coordinated movements protect the airway during passage through the pharynx.",
+      "conceptIds": [
+        "pharyngeal-phase",
+        "epiglottis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-034",
+      "type": "multiple-choice",
+      "topicId": "swallowing",
+      "stem": "How does a swallowed bolus normally move down the esophagus?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Through coordinated peristaltic contractions"
+        },
+        {
+          "id": "c2",
+          "text": "By passive gravity only"
+        },
+        {
+          "id": "c3",
+          "text": "By segmentation without net propulsion"
+        },
+        {
+          "id": "c4",
+          "text": "Through repeated contractions of the pyloric sphincter"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Esophageal peristalsis provides propulsion even when the person is not upright.",
+      "conceptIds": [
+        "esophageal-phase",
+        "peristalsis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-035",
+      "type": "multiple-choice",
+      "topicId": "swallowing",
+      "stem": "Which sphincter helps prevent reflux of acidic gastric contents into the esophagus?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Lower esophageal sphincter"
+        },
+        {
+          "id": "c2",
+          "text": "Pyloric sphincter"
+        },
+        {
+          "id": "c3",
+          "text": "Internal anal sphincter"
+        },
+        {
+          "id": "c4",
+          "text": "Upper esophageal sphincter"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The lower esophageal high-pressure zone helps resist reflux at the stomach-esophagus junction.",
+      "conceptIds": [
+        "lower-esophageal-sphincter"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-036",
+      "type": "multiple-choice",
+      "topicId": "swallowing",
+      "stem": "Which pharyngeal region normally carries air but not swallowed food?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Nasopharynx"
+        },
+        {
+          "id": "c2",
+          "text": "Oropharynx"
+        },
+        {
+          "id": "c3",
+          "text": "Laryngopharynx"
+        },
+        {
+          "id": "c4",
+          "text": "Esophagus"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The nasopharynx is an air passage; swallowed material passes through lower pharyngeal regions.",
+      "conceptIds": [
+        "nasopharynx",
+        "oropharynx"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-037",
+      "type": "multiple-choice",
+      "topicId": "swallowing",
+      "stem": "The opening through the diaphragm used by the esophagus is called what?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Esophageal hiatus"
+        },
+        {
+          "id": "c2",
+          "text": "Ileocecal valve"
+        },
+        {
+          "id": "c3",
+          "text": "Gastric cardia"
+        },
+        {
+          "id": "c4",
+          "text": "Foramen ovale"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The esophageal hiatus allows the esophagus to pass through the diaphragm.",
+      "conceptIds": [
+        "esophageal-hiatus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-038",
+      "type": "multiple-choice",
+      "topicId": "swallowing",
+      "stem": "Which statement about the epiglottis is most accurate?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "It assists airway protection along with laryngeal closure mechanisms"
+        },
+        {
+          "id": "c2",
+          "text": "It is the sole structure that prevents aspiration"
+        },
+        {
+          "id": "c3",
+          "text": "It opens the upper esophageal sphincter by secretion"
+        },
+        {
+          "id": "c4",
+          "text": "It is the major muscle that propels the esophageal bolus"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Airway protection involves several coordinated laryngeal movements, not just a passive epiglottic lid.",
+      "conceptIds": [
+        "epiglottis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pharynx-esophagus-and-swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "swallowing",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              18,
+              20,
+              21
+            ],
+            "Digestive.pptx": [
+              15,
+              16
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-039",
+      "type": "multiple-choice",
+      "topicId": "stomach",
+      "stem": "Which stomach cell secretes both hydrochloric acid and intrinsic factor?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Parietal cell"
+        },
+        {
+          "id": "c2",
+          "text": "Chief cell"
+        },
+        {
+          "id": "c3",
+          "text": "G cell"
+        },
+        {
+          "id": "c4",
+          "text": "Goblet cell"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Parietal cells produce HCl and intrinsic factor; chief cells release pepsinogen and gastric lipase.",
+      "conceptIds": [
+        "parietal-cells",
+        "intrinsic-factor"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-040",
+      "type": "multiple-choice",
+      "topicId": "stomach",
+      "stem": "Which gastric secretion is released in an inactive form and later activated by acid?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Pepsinogen"
+        },
+        {
+          "id": "c2",
+          "text": "Pepsin"
+        },
+        {
+          "id": "c3",
+          "text": "Intrinsic factor"
+        },
+        {
+          "id": "c4",
+          "text": "Bile salt"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Pepsinogen is the zymogen precursor of pepsin; secreting it inactive helps protect the producing cells.",
+      "conceptIds": [
+        "pepsinogen",
+        "pepsin"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-041",
+      "type": "multiple-choice",
+      "topicId": "stomach",
+      "stem": "Which stomach cell directly secretes the precursor of pepsin?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Chief cell"
+        },
+        {
+          "id": "c2",
+          "text": "Parietal cell"
+        },
+        {
+          "id": "c3",
+          "text": "G cell"
+        },
+        {
+          "id": "c4",
+          "text": "D cell"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Chief cells release pepsinogen, which becomes the active protease pepsin under acidic conditions.",
+      "conceptIds": [
+        "chief-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-042",
+      "type": "multiple-choice",
+      "topicId": "stomach",
+      "stem": "Which stomach region leads directly into the duodenum?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Pylorus"
+        },
+        {
+          "id": "c2",
+          "text": "Fundus"
+        },
+        {
+          "id": "c3",
+          "text": "Cardia"
+        },
+        {
+          "id": "c4",
+          "text": "Greater curvature"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The pyloric region includes the outlet regulated by the pyloric sphincter.",
+      "conceptIds": [
+        "pylorus",
+        "pyloric-sphincter"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-043",
+      "type": "multiple-choice",
+      "topicId": "stomach",
+      "stem": "What is the main purpose of stomach rugae?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Allow the stomach lining to expand as it fills"
+        },
+        {
+          "id": "c2",
+          "text": "Provide villi for absorbing most dietary fats"
+        },
+        {
+          "id": "c3",
+          "text": "Carry bile from the gallbladder"
+        },
+        {
+          "id": "c4",
+          "text": "Convert pepsin to pepsinogen"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Rugae are temporary folds that flatten during gastric distension.",
+      "conceptIds": [
+        "rugae"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-044",
+      "type": "multiple-choice",
+      "topicId": "stomach",
+      "stem": "Which stomach muscle arrangement helps create powerful churning?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "An additional oblique smooth-muscle layer"
+        },
+        {
+          "id": "c2",
+          "text": "A third layer of striated skeletal muscle throughout the wall"
+        },
+        {
+          "id": "c3",
+          "text": "Loss of the inner circular layer"
+        },
+        {
+          "id": "c4",
+          "text": "Only the outer longitudinal layer contracting independently"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The stomach has an extra oblique muscular layer in addition to the usual circular and longitudinal layers.",
+      "conceptIds": [
+        "oblique-muscle-layer"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-045",
+      "type": "multiple-choice",
+      "topicId": "stomach",
+      "stem": "Why does gastric acid not normally destroy the stomach epithelium?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "A mucus-bicarbonate barrier and epithelial defenses limit acid injury"
+        },
+        {
+          "id": "c2",
+          "text": "Intestinal villi absorb all acid immediately"
+        },
+        {
+          "id": "c3",
+          "text": "The stomach epithelium is composed of enamel"
+        },
+        {
+          "id": "c4",
+          "text": "Hydrochloric acid is harmless to all human cells"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Mucus, bicarbonate, tight barriers, blood flow, and repair protect the gastric lining.",
+      "conceptIds": [
+        "gastric-mucosal-barrier"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-046",
+      "type": "multiple-choice",
+      "topicId": "stomach",
+      "stem": "If intrinsic factor secretion fails, which nutrient's absorption is especially impaired?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Vitamin B12"
+        },
+        {
+          "id": "c2",
+          "text": "Vitamin C"
+        },
+        {
+          "id": "c3",
+          "text": "Sodium chloride"
+        },
+        {
+          "id": "c4",
+          "text": "Glucose"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Intrinsic factor enables efficient B12 uptake in the terminal ileum.",
+      "conceptIds": [
+        "intrinsic-factor",
+        "vitamin-b12-absorption"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-047",
+      "type": "multiple-choice",
+      "topicId": "stomach",
+      "stem": "Which protein-digesting enzyme works in the highly acidic stomach?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Pepsin"
+        },
+        {
+          "id": "c2",
+          "text": "Lactase"
+        },
+        {
+          "id": "c3",
+          "text": "Salivary amylase"
+        },
+        {
+          "id": "c4",
+          "text": "Pancreatic nuclease"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Pepsin is active in gastric acid and begins substantial protein digestion.",
+      "conceptIds": [
+        "pepsin"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-048",
+      "type": "multiple-choice",
+      "topicId": "stomach",
+      "stem": "Which cell type secretes gastrin?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "G cells"
+        },
+        {
+          "id": "c2",
+          "text": "Chief cells"
+        },
+        {
+          "id": "c3",
+          "text": "Parietal cells"
+        },
+        {
+          "id": "c4",
+          "text": "Enterocytes"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "G cells are gastric enteroendocrine cells; gastrin generally stimulates gastric secretory activity.",
+      "conceptIds": [
+        "g-cells",
+        "gastrin"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "stomach",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              22,
+              23,
+              24,
+              25
+            ],
+            "Digestive.pptx": [
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-049",
+      "type": "multiple-choice",
+      "topicId": "gastric-regulation",
+      "stem": "Why can the thought or smell of food stimulate gastric secretion before a meal?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Cephalic-phase vagal signaling prepares the stomach"
+        },
+        {
+          "id": "c2",
+          "text": "The bile duct directly senses airborne odors"
+        },
+        {
+          "id": "c3",
+          "text": "Food has already entered the ileum"
+        },
+        {
+          "id": "c4",
+          "text": "Colonic mass movements force acid production"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Sensory cues can activate brainstem-vagal pathways during the cephalic phase.",
+      "conceptIds": [
+        "cephalic-phase",
+        "vagus-nerve"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "three-phases-of-gastric-secretion",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gastric-phases",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-050",
+      "type": "multiple-choice",
+      "topicId": "gastric-regulation",
+      "stem": "A meal stretches the stomach and introduces peptides. Which regulatory phase predominates?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Gastric phase"
+        },
+        {
+          "id": "c2",
+          "text": "Cephalic phase"
+        },
+        {
+          "id": "c3",
+          "text": "Intestinal phase"
+        },
+        {
+          "id": "c4",
+          "text": "Defecation reflex"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Distension and luminal peptides stimulate gastric-phase signaling and secretion.",
+      "conceptIds": [
+        "gastric-phase"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "three-phases-of-gastric-secretion",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gastric-phases",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-051",
+      "type": "multiple-choice",
+      "topicId": "gastric-regulation",
+      "stem": "What typically happens when acidic, fatty chyme begins entering the duodenum?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Gastric secretion and emptying are slowed"
+        },
+        {
+          "id": "c2",
+          "text": "Gastric secretion and emptying both accelerate sharply"
+        },
+        {
+          "id": "c3",
+          "text": "The pyloric sphincter loses all regulatory tone"
+        },
+        {
+          "id": "c4",
+          "text": "Pancreatic bicarbonate secretion is suppressed"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Enterogastric feedback limits delivery until the small intestine can process the incoming chyme.",
+      "conceptIds": [
+        "intestinal-phase",
+        "enterogastric-inhibition"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "three-phases-of-gastric-secretion",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gastric-phases",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-052",
+      "type": "multiple-choice",
+      "topicId": "gastric-regulation",
+      "stem": "Which reflex can promote movement from the terminal ileum toward the cecum when the stomach becomes active?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Gastroileal reflex"
+        },
+        {
+          "id": "c2",
+          "text": "Corneal reflex"
+        },
+        {
+          "id": "c3",
+          "text": "Baroreceptor reflex"
+        },
+        {
+          "id": "c4",
+          "text": "Pupillary reflex"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The gastroileal reflex helps coordinate upper-GI activity with distal intestinal movement.",
+      "conceptIds": [
+        "gastroileal-reflex"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "three-phases-of-gastric-secretion",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gastric-phases",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-053",
+      "type": "multiple-choice",
+      "topicId": "gastric-regulation",
+      "stem": "Which two types of signal most directly integrate gastric regulation across the cephalic, gastric, and intestinal phases?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Neural signaling and digestive hormones"
+        },
+        {
+          "id": "c2",
+          "text": "Only local skeletal muscle signals"
+        },
+        {
+          "id": "c3",
+          "text": "Only circulating dietary glucose without neurons"
+        },
+        {
+          "id": "c4",
+          "text": "Only motor output from the spinal cord"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Gastric phases reflect integrated CNS, enteric, and hormonal signals.",
+      "conceptIds": [
+        "enteric-nervous-system",
+        "vagus-nerve"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "three-phases-of-gastric-secretion",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "gastric-phases",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-054",
+      "type": "multiple-choice",
+      "topicId": "hormones",
+      "stem": "Which hormone is most strongly associated with gastric acid stimulation?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Gastrin"
+        },
+        {
+          "id": "c2",
+          "text": "Secretin"
+        },
+        {
+          "id": "c3",
+          "text": "Somatostatin"
+        },
+        {
+          "id": "c4",
+          "text": "GIP"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Gastrin from G cells promotes gastric acid secretion; secretin and somatostatin tend to inhibit gastric activity.",
+      "conceptIds": [
+        "gastrin"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-055",
+      "type": "multiple-choice",
+      "topicId": "hormones",
+      "stem": "Which intestinal hormone is especially triggered by acidic chyme and stimulates pancreatic bicarbonate secretion?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Secretin"
+        },
+        {
+          "id": "c2",
+          "text": "Gastrin"
+        },
+        {
+          "id": "c3",
+          "text": "Cholecystokinin"
+        },
+        {
+          "id": "c4",
+          "text": "Somatostatin"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "S cells respond to acid by releasing secretin, helping neutralize duodenal contents.",
+      "conceptIds": [
+        "secretin",
+        "s-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-056",
+      "type": "multiple-choice",
+      "topicId": "hormones",
+      "stem": "A fatty meal enters the duodenum. Which hormone drives gallbladder contraction and pancreatic enzyme secretion?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Cholecystokinin"
+        },
+        {
+          "id": "c2",
+          "text": "Gastrin"
+        },
+        {
+          "id": "c3",
+          "text": "GIP exclusively"
+        },
+        {
+          "id": "c4",
+          "text": "Somatostatin"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "CCK is released by I cells in response to fats and proteins.",
+      "conceptIds": [
+        "cholecystokinin",
+        "i-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-057",
+      "type": "multiple-choice",
+      "topicId": "hormones",
+      "stem": "Which hormone from D cells inhibits gastrin and gastric acid secretion?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Somatostatin"
+        },
+        {
+          "id": "c2",
+          "text": "Gastrin"
+        },
+        {
+          "id": "c3",
+          "text": "Secretin"
+        },
+        {
+          "id": "c4",
+          "text": "Vasoactive intestinal peptide"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Somatostatin provides inhibitory feedback in gastric regulation.",
+      "conceptIds": [
+        "somatostatin",
+        "d-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-058",
+      "type": "multiple-choice",
+      "topicId": "hormones",
+      "stem": "Which hormone is released by intestinal K cells and supports glucose-dependent insulin secretion?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "GIP"
+        },
+        {
+          "id": "c2",
+          "text": "Gastrin"
+        },
+        {
+          "id": "c3",
+          "text": "Secretin"
+        },
+        {
+          "id": "c4",
+          "text": "Pepsin"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "GIP is an incretin hormone; it is not a digestive enzyme.",
+      "conceptIds": [
+        "gastric-inhibitory-polypeptide",
+        "k-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-059",
+      "type": "multiple-choice",
+      "topicId": "hormones",
+      "stem": "Which signaling substance is particularly associated with intestinal vasodilation?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Vasoactive intestinal peptide"
+        },
+        {
+          "id": "c2",
+          "text": "Somatostatin"
+        },
+        {
+          "id": "c3",
+          "text": "Gastrin"
+        },
+        {
+          "id": "c4",
+          "text": "GIP"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "VIP is an enteric neuropeptide, rather than a classic gland-produced digestive enzyme.",
+      "conceptIds": [
+        "vasoactive-intestinal-peptide"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-060",
+      "type": "multiple-choice",
+      "topicId": "hormones",
+      "stem": "Which hormone-cell pairing is correct?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Secretin — S cells"
+        },
+        {
+          "id": "c2",
+          "text": "Gastrin — Paneth cells"
+        },
+        {
+          "id": "c3",
+          "text": "Cholecystokinin — parietal cells"
+        },
+        {
+          "id": "c4",
+          "text": "GIP — chief cells"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Duodenal S cells release secretin in response to acid; other hormone-cell assignments shown are mismatched.",
+      "conceptIds": [
+        "secretin",
+        "s-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-061",
+      "type": "multiple-choice",
+      "topicId": "hormones",
+      "stem": "Which hormone-cell pairing is correct for CCK production?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Cholecystokinin — I cells"
+        },
+        {
+          "id": "c2",
+          "text": "Cholecystokinin — G cells"
+        },
+        {
+          "id": "c3",
+          "text": "Cholecystokinin — chief cells"
+        },
+        {
+          "id": "c4",
+          "text": "Cholecystokinin — Kupffer cells"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "I cells in the small intestine release CCK after exposure to fats and proteins.",
+      "conceptIds": [
+        "cholecystokinin",
+        "i-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-062",
+      "type": "multiple-choice",
+      "topicId": "hormones",
+      "stem": "What is the most appropriate immediate response to excess acid arriving in the duodenum?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Increase bicarbonate delivery while restraining gastric emptying"
+        },
+        {
+          "id": "c2",
+          "text": "Increase gastric acid release without limit"
+        },
+        {
+          "id": "c3",
+          "text": "Switch off pancreatic ductal secretion"
+        },
+        {
+          "id": "c4",
+          "text": "Absorb all acid into lacteals"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Secretin promotes bicarbonate and enterogastric feedback helps slow continued acid delivery.",
+      "conceptIds": [
+        "secretin",
+        "pancreatic-bicarbonate"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "gastrointestinal-hormones-and-regulation",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "hormones",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              32,
+              33
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-063",
+      "type": "multiple-choice",
+      "topicId": "small-intestine",
+      "stem": "Which small-intestinal section first receives both pancreatic secretion and bile?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Duodenum"
+        },
+        {
+          "id": "c2",
+          "text": "Jejunum"
+        },
+        {
+          "id": "c3",
+          "text": "Ileum"
+        },
+        {
+          "id": "c4",
+          "text": "Cecum"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The duodenum is the principal mixing site for acidic chyme, pancreatic juice, and bile.",
+      "conceptIds": [
+        "duodenum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-064",
+      "type": "multiple-choice",
+      "topicId": "small-intestine",
+      "stem": "Which section typically accounts for the bulk of nutrient absorption?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Jejunum"
+        },
+        {
+          "id": "c2",
+          "text": "Esophagus"
+        },
+        {
+          "id": "c3",
+          "text": "Rectum"
+        },
+        {
+          "id": "c4",
+          "text": "Gallbladder"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The jejunum has extensive absorptive surface and is a major site of nutrient uptake.",
+      "conceptIds": [
+        "jejunum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-065",
+      "type": "multiple-choice",
+      "topicId": "small-intestine",
+      "stem": "Which segment is especially important for vitamin B12-intrinsic factor uptake and bile-salt recovery?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Terminal ileum"
+        },
+        {
+          "id": "c2",
+          "text": "Stomach fundus"
+        },
+        {
+          "id": "c3",
+          "text": "Ascending colon"
+        },
+        {
+          "id": "c4",
+          "text": "Duodenal bulb exclusively"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The terminal ileum absorbs B12 bound to intrinsic factor and reclaims bile salts.",
+      "conceptIds": [
+        "ileum",
+        "vitamin-b12-absorption"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-066",
+      "type": "multiple-choice",
+      "topicId": "small-intestine",
+      "stem": "Which structural sequence goes from larger folds to smaller surface specializations?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Plicae circulares, villi, microvilli"
+        },
+        {
+          "id": "c2",
+          "text": "Microvilli, plicae circulares, villi"
+        },
+        {
+          "id": "c3",
+          "text": "Lacteals, serosa, pylorus"
+        },
+        {
+          "id": "c4",
+          "text": "Haustra, taeniae coli, pylorus"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Plicae are larger folds, villi are mucosal projections, and microvilli are microscopic enterocyte membrane projections.",
+      "conceptIds": [
+        "plicae-circulares",
+        "villi",
+        "microvilli"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-067",
+      "type": "multiple-choice",
+      "topicId": "small-intestine",
+      "stem": "What is a lacteal?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Lymphatic capillary within an intestinal villus"
+        },
+        {
+          "id": "c2",
+          "text": "Endocrine cell in a gastric gland"
+        },
+        {
+          "id": "c3",
+          "text": "Branch of the hepatic portal vein"
+        },
+        {
+          "id": "c4",
+          "text": "Muscular sphincter at the pylorus"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Lacteals receive chylomicron-rich lymph after fat absorption.",
+      "conceptIds": [
+        "lacteals",
+        "villi"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-068",
+      "type": "multiple-choice",
+      "topicId": "small-intestine",
+      "stem": "Which pathway correctly describes most absorbed long-chain dietary fat leaving the intestine?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Enterocyte, chylomicron, lacteal, lymph, systemic blood"
+        },
+        {
+          "id": "c2",
+          "text": "Enterocyte, portal capillary, hepatic portal vein, liver"
+        },
+        {
+          "id": "c3",
+          "text": "Enterocyte, bile duct, gallbladder, common bile duct"
+        },
+        {
+          "id": "c4",
+          "text": "Enterocyte, mesenteric artery, spleen, liver"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Long-chain dietary lipids are packaged as chylomicrons and enter lymph before systemic blood.",
+      "conceptIds": [
+        "chylomicrons",
+        "lacteals"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-069",
+      "type": "multiple-choice",
+      "topicId": "small-intestine",
+      "stem": "Most absorbed monosaccharides and amino acids initially reach which organ through the hepatic portal circulation?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Liver"
+        },
+        {
+          "id": "c2",
+          "text": "Gallbladder"
+        },
+        {
+          "id": "c3",
+          "text": "Spleen"
+        },
+        {
+          "id": "c4",
+          "text": "Lungs"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Portal venous drainage carries many water-soluble digestion products to the liver first.",
+      "conceptIds": [
+        "hepatic-portal-vein"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-070",
+      "type": "multiple-choice",
+      "topicId": "small-intestine",
+      "stem": "Which specialized intestinal cell contributes to innate defense by releasing antimicrobial products?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Paneth cell"
+        },
+        {
+          "id": "c2",
+          "text": "Parietal cell"
+        },
+        {
+          "id": "c3",
+          "text": "G cell"
+        },
+        {
+          "id": "c4",
+          "text": "Kupffer cell"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Paneth cells at intestinal crypt bases secrete lysozyme and antimicrobial peptides.",
+      "conceptIds": [
+        "paneth-cells",
+        "crypts-of-lieberkuhn"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-071",
+      "type": "multiple-choice",
+      "topicId": "small-intestine",
+      "stem": "Where are Peyer's patches especially prominent?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Ileum"
+        },
+        {
+          "id": "c2",
+          "text": "Stomach fundus"
+        },
+        {
+          "id": "c3",
+          "text": "Esophageal lumen"
+        },
+        {
+          "id": "c4",
+          "text": "Gallbladder"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Peyer's patches are aggregated intestinal lymphoid tissues associated with immune surveillance.",
+      "conceptIds": [
+        "peyer-s-patches",
+        "ileum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-072",
+      "type": "multiple-choice",
+      "topicId": "small-intestine",
+      "stem": "Which structure releases alkaline mucus in the proximal duodenum?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Brunner's glands"
+        },
+        {
+          "id": "c2",
+          "text": "Gastric chief cells"
+        },
+        {
+          "id": "c3",
+          "text": "Pancreatic islets"
+        },
+        {
+          "id": "c4",
+          "text": "Kupffer cells"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Brunner's glands lie in the duodenal submucosa and help protect against acid.",
+      "conceptIds": [
+        "brunner-s-glands"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-073",
+      "type": "multiple-choice",
+      "topicId": "small-intestine",
+      "stem": "What is the brush border?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Microvillus-rich surface of enterocytes bearing terminal digestive enzymes"
+        },
+        {
+          "id": "c2",
+          "text": "Inner circular muscle of stomach"
+        },
+        {
+          "id": "c3",
+          "text": "Bile-producing lumen in liver"
+        },
+        {
+          "id": "c4",
+          "text": "Macroscopic bands on colon"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Brush border microvilli expand membrane area and carry disaccharidases and other enzymes.",
+      "conceptIds": [
+        "brush-border",
+        "microvilli"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "small-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40
+            ],
+            "Digestive.pptx": [
+              30,
+              31,
+              32
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-074",
+      "type": "multiple-choice",
+      "topicId": "pancreas",
+      "stem": "Which part of the pancreas lies in the C-shaped curve of the duodenum?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Head"
+        },
+        {
+          "id": "c2",
+          "text": "Tail"
+        },
+        {
+          "id": "c3",
+          "text": "Body exclusively"
+        },
+        {
+          "id": "c4",
+          "text": "Main duct's distal opening"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The pancreatic head fits against the duodenal C-loop.",
+      "conceptIds": [
+        "pancreatic-head"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-075",
+      "type": "multiple-choice",
+      "topicId": "pancreas",
+      "stem": "Which pancreatic tissue produces digestive enzymes released into ducts?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Acini"
+        },
+        {
+          "id": "c2",
+          "text": "Islets"
+        },
+        {
+          "id": "c3",
+          "text": "Kupffer cells"
+        },
+        {
+          "id": "c4",
+          "text": "Parietal cells"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The pancreas is mixed endocrine and exocrine; acini are its enzyme-producing exocrine units.",
+      "conceptIds": [
+        "pancreatic-acini",
+        "pancreatic-islets"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-076",
+      "type": "multiple-choice",
+      "topicId": "pancreas",
+      "stem": "Which pancreatic secretion chemically helps neutralize incoming acidic chyme?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Bicarbonate-rich fluid"
+        },
+        {
+          "id": "c2",
+          "text": "Hydrochloric acid"
+        },
+        {
+          "id": "c3",
+          "text": "Pepsinogen alone"
+        },
+        {
+          "id": "c4",
+          "text": "Intrinsic factor"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Pancreatic duct cells supply bicarbonate to raise duodenal pH.",
+      "conceptIds": [
+        "pancreatic-bicarbonate"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-077",
+      "type": "multiple-choice",
+      "topicId": "pancreas",
+      "stem": "Which enzyme family is responsible for pancreatic protein digestion?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Proteases"
+        },
+        {
+          "id": "c2",
+          "text": "Amylases"
+        },
+        {
+          "id": "c3",
+          "text": "Nucleases"
+        },
+        {
+          "id": "c4",
+          "text": "Bile salts"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Trypsin and other pancreatic proteases digest proteins, while amylase acts on starch and lipase on fats.",
+      "conceptIds": [
+        "pancreatic-proteases"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-078",
+      "type": "multiple-choice",
+      "topicId": "pancreas",
+      "stem": "Which pancreatic enzyme principally breaks down triglycerides?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Pancreatic lipase"
+        },
+        {
+          "id": "c2",
+          "text": "Pancreatic amylase"
+        },
+        {
+          "id": "c3",
+          "text": "Pancreatic nuclease"
+        },
+        {
+          "id": "c4",
+          "text": "Salivary lysozyme"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Lipase performs triglyceride hydrolysis; bile salts help emulsify lipids but are not enzymes.",
+      "conceptIds": [
+        "pancreatic-lipase"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-079",
+      "type": "multiple-choice",
+      "topicId": "pancreas",
+      "stem": "Why are many pancreatic proteases secreted as inactive precursors?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "To limit self-digestion of pancreatic tissue"
+        },
+        {
+          "id": "c2",
+          "text": "To activate only after reaching the stomach fundus"
+        },
+        {
+          "id": "c3",
+          "text": "To permit direct uptake by intestinal lacteals"
+        },
+        {
+          "id": "c4",
+          "text": "To make them function as bile salts"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Zymogen secretion helps prevent premature activation of damaging proteases inside the pancreas.",
+      "conceptIds": [
+        "trypsinogen",
+        "pancreatic-proteases"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-080",
+      "type": "multiple-choice",
+      "topicId": "pancreas",
+      "stem": "Which duct is also called the duct of Wirsung?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Main pancreatic duct"
+        },
+        {
+          "id": "c2",
+          "text": "Accessory pancreatic duct"
+        },
+        {
+          "id": "c3",
+          "text": "Common bile duct"
+        },
+        {
+          "id": "c4",
+          "text": "Common hepatic duct"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The main pancreatic duct conveys exocrine pancreatic secretions toward the duodenum.",
+      "conceptIds": [
+        "main-pancreatic-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-081",
+      "type": "multiple-choice",
+      "topicId": "pancreas",
+      "stem": "Which organ's endocrine tissue contains insulin-secreting islets?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Pancreas"
+        },
+        {
+          "id": "c2",
+          "text": "Gallbladder"
+        },
+        {
+          "id": "c3",
+          "text": "Esophagus"
+        },
+        {
+          "id": "c4",
+          "text": "Appendix"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Pancreatic islets release hormones to blood, distinct from acini that send enzymes into ducts.",
+      "conceptIds": [
+        "pancreatic-islets"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "pancreas",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              42,
+              43,
+              44
+            ],
+            "Digestive.pptx": [
+              21,
+              22,
+              23
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-082",
+      "type": "multiple-choice",
+      "topicId": "hepatobiliary",
+      "stem": "Which liver cell performs much of the liver's metabolic work and produces bile?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Hepatocyte"
+        },
+        {
+          "id": "c2",
+          "text": "Kupffer cell"
+        },
+        {
+          "id": "c3",
+          "text": "Paneth cell"
+        },
+        {
+          "id": "c4",
+          "text": "Parietal cell"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Hepatocytes handle metabolism and synthesis; Kupffer cells are resident macrophages.",
+      "conceptIds": [
+        "hepatocytes"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-083",
+      "type": "multiple-choice",
+      "topicId": "hepatobiliary",
+      "stem": "What is the primary role of Kupffer cells?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Macrophage-based immune surveillance and particle removal"
+        },
+        {
+          "id": "c2",
+          "text": "Secretion of gastric acid"
+        },
+        {
+          "id": "c3",
+          "text": "Formation of dental enamel"
+        },
+        {
+          "id": "c4",
+          "text": "Production of pancreatic amylase"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Kupffer cells are specialized hepatic macrophages lining sinusoids.",
+      "conceptIds": [
+        "kupffer-cells"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-084",
+      "type": "multiple-choice",
+      "topicId": "hepatobiliary",
+      "stem": "Which organ produces bile?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Liver"
+        },
+        {
+          "id": "c2",
+          "text": "Gallbladder"
+        },
+        {
+          "id": "c3",
+          "text": "Pancreas"
+        },
+        {
+          "id": "c4",
+          "text": "Duodenum"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Hepatocytes make bile; the gallbladder stores and concentrates it.",
+      "conceptIds": [
+        "hepatocytes",
+        "gallbladder"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-085",
+      "type": "multiple-choice",
+      "topicId": "hepatobiliary",
+      "stem": "Which description of bile is correct?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "It emulsifies dietary fats but contains no digestive enzymes"
+        },
+        {
+          "id": "c2",
+          "text": "It hydrolyzes proteins with pepsin"
+        },
+        {
+          "id": "c3",
+          "text": "It is produced by the gastric chief cells"
+        },
+        {
+          "id": "c4",
+          "text": "It enters the mouth through Stensen's duct"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Bile salts disperse fat droplets and aid micelles; digestive lipases provide fat-hydrolyzing enzyme activity.",
+      "conceptIds": [
+        "bile",
+        "emulsification"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-086",
+      "type": "multiple-choice",
+      "topicId": "hepatobiliary",
+      "stem": "Which two ducts unite to form the common hepatic duct?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Right hepatic duct and left hepatic duct"
+        },
+        {
+          "id": "c2",
+          "text": "Common hepatic duct and cystic duct"
+        },
+        {
+          "id": "c3",
+          "text": "Common bile duct and main pancreatic duct"
+        },
+        {
+          "id": "c4",
+          "text": "Cystic duct and accessory pancreatic duct"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Bile leaving the right and left sides of liver converges in the common hepatic duct.",
+      "conceptIds": [
+        "right-hepatic-duct",
+        "left-hepatic-duct",
+        "common-hepatic-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-087",
+      "type": "multiple-choice",
+      "topicId": "hepatobiliary",
+      "stem": "Which ducts unite to form the common bile duct?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Common hepatic duct and cystic duct"
+        },
+        {
+          "id": "c2",
+          "text": "Right hepatic duct and left hepatic duct"
+        },
+        {
+          "id": "c3",
+          "text": "Common bile duct and main pancreatic duct"
+        },
+        {
+          "id": "c4",
+          "text": "Accessory pancreatic duct and cystic duct"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The cystic duct connects gallbladder outflow to the common hepatic duct.",
+      "conceptIds": [
+        "common-bile-duct",
+        "cystic-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-088",
+      "type": "multiple-choice",
+      "topicId": "hepatobiliary",
+      "stem": "During gallbladder contraction, which route carries bile toward the intestine?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Cystic duct, common bile duct, duodenum"
+        },
+        {
+          "id": "c2",
+          "text": "Pancreatic tail, hepatic portal vein, stomach"
+        },
+        {
+          "id": "c3",
+          "text": "Common hepatic duct, esophagus, jejunum"
+        },
+        {
+          "id": "c4",
+          "text": "Cystic duct, left hepatic duct, stomach"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Bile exits gallbladder via cystic duct and continues in the common bile duct toward the duodenum.",
+      "conceptIds": [
+        "gallbladder",
+        "cystic-duct",
+        "common-bile-duct"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-089",
+      "type": "multiple-choice",
+      "topicId": "hepatobiliary",
+      "stem": "Which hormone stimulates gallbladder contraction following a fatty meal?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Cholecystokinin"
+        },
+        {
+          "id": "c2",
+          "text": "Gastrin"
+        },
+        {
+          "id": "c3",
+          "text": "Somatostatin"
+        },
+        {
+          "id": "c4",
+          "text": "GIP"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Intestinal CCK responds to fats and proteins to coordinate enzyme and bile delivery.",
+      "conceptIds": [
+        "cholecystokinin",
+        "gallbladder"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-090",
+      "type": "multiple-choice",
+      "topicId": "hepatobiliary",
+      "stem": "Where are most bile salts recovered for reuse?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Terminal ileum"
+        },
+        {
+          "id": "c2",
+          "text": "Stomach"
+        },
+        {
+          "id": "c3",
+          "text": "Esophagus"
+        },
+        {
+          "id": "c4",
+          "text": "Rectum"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The enterohepatic cycle retrieves bile salts from the ileum back to the liver through portal blood.",
+      "conceptIds": [
+        "enterohepatic-circulation",
+        "ileum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-091",
+      "type": "multiple-choice",
+      "topicId": "hepatobiliary",
+      "stem": "Which sphincter regulates bile and pancreatic-fluid entry into the duodenum?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Sphincter of Oddi"
+        },
+        {
+          "id": "c2",
+          "text": "Lower esophageal sphincter"
+        },
+        {
+          "id": "c3",
+          "text": "Internal anal sphincter"
+        },
+        {
+          "id": "c4",
+          "text": "Pyloric sphincter"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The hepatopancreatic sphincter surrounds the distal biliary-pancreatic outflow region.",
+      "conceptIds": [
+        "sphincter-of-oddi"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-092",
+      "type": "multiple-choice",
+      "topicId": "hepatobiliary",
+      "stem": "Which lobe is identified on the liver's inferior surface close to the gallbladder fossa?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Quadrate lobe"
+        },
+        {
+          "id": "c2",
+          "text": "Caudate lobe"
+        },
+        {
+          "id": "c3",
+          "text": "Right pulmonary lobe"
+        },
+        {
+          "id": "c4",
+          "text": "Pancreatic tail"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Quadrate and caudate are anatomical liver lobes identified on the visceral surface.",
+      "conceptIds": [
+        "quadrate-lobe",
+        "caudate-lobe"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-093",
+      "type": "multiple-choice",
+      "topicId": "hepatobiliary",
+      "stem": "What does the round ligament of the liver represent developmentally?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Remnant of the fetal umbilical vein"
+        },
+        {
+          "id": "c2",
+          "text": "Remnant of the fetal ductus venosus"
+        },
+        {
+          "id": "c3",
+          "text": "Remnant of the fetal umbilical artery"
+        },
+        {
+          "id": "c4",
+          "text": "Remnant of the embryonic common bile duct"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The ligamentum teres hepatis is a fibrous remnant associated with fetal umbilical circulation.",
+      "conceptIds": [
+        "round-ligament-of-liver"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "liver-gallbladder-and-bile",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "liver-gallbladder",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              45,
+              46,
+              48,
+              50,
+              51,
+              52
+            ],
+            "Digestive.pptx": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-094",
+      "type": "multiple-choice",
+      "topicId": "colon",
+      "stem": "Which is a major function of the large intestine?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Water reabsorption and fecal compaction"
+        },
+        {
+          "id": "c2",
+          "text": "Secretion of most pancreatic enzymes"
+        },
+        {
+          "id": "c3",
+          "text": "Primary production of bile"
+        },
+        {
+          "id": "c4",
+          "text": "Absorption of most dietary amino acids"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The colon recovers water and electrolytes and stores waste; most nutrient absorption occurs earlier.",
+      "conceptIds": [
+        "compaction",
+        "cecum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-095",
+      "type": "multiple-choice",
+      "topicId": "colon",
+      "stem": "What are haustra?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Saclike pouches of the colon"
+        },
+        {
+          "id": "c2",
+          "text": "Fingerlike projections of the jejunum"
+        },
+        {
+          "id": "c3",
+          "text": "Folds of stomach mucosa"
+        },
+        {
+          "id": "c4",
+          "text": "Drainage ducts of the gallbladder"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Haustra are colon pouches, unlike small-intestinal villi or stomach rugae.",
+      "conceptIds": [
+        "haustra"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-096",
+      "type": "multiple-choice",
+      "topicId": "colon",
+      "stem": "What are taeniae coli?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Longitudinal smooth-muscle bands of the colon"
+        },
+        {
+          "id": "c2",
+          "text": "Bile-duct branches"
+        },
+        {
+          "id": "c3",
+          "text": "Salivary glands"
+        },
+        {
+          "id": "c4",
+          "text": "Layers of gastric enamel"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Three longitudinal muscle bands contribute to the colon's sacculated appearance.",
+      "conceptIds": [
+        "taeniae-coli"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-097",
+      "type": "multiple-choice",
+      "topicId": "colon",
+      "stem": "Which colon bend lies nearest the liver?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Right colic or hepatic flexure"
+        },
+        {
+          "id": "c2",
+          "text": "Left colic or splenic flexure"
+        },
+        {
+          "id": "c3",
+          "text": "Sigmoid flexure exclusively"
+        },
+        {
+          "id": "c4",
+          "text": "Rectal ampulla"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The hepatic flexure joins ascending and transverse colon on the right side.",
+      "conceptIds": [
+        "right-colic-flexure"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-098",
+      "type": "multiple-choice",
+      "topicId": "colon",
+      "stem": "Which sequence follows the colon from its right side toward rectum?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Ascending, transverse, descending, sigmoid, rectum"
+        },
+        {
+          "id": "c2",
+          "text": "Sigmoid, ascending, jejunum, transverse, rectum"
+        },
+        {
+          "id": "c3",
+          "text": "Transverse, ileum, stomach, ascending, rectum"
+        },
+        {
+          "id": "c4",
+          "text": "Cecum, stomach, descending, pancreas, rectum"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The colon traverses right, across, left, then curves through sigmoid into rectum.",
+      "conceptIds": [
+        "ascending-colon",
+        "transverse-colon",
+        "descending-colon",
+        "sigmoid-colon"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-099",
+      "type": "multiple-choice",
+      "topicId": "colon",
+      "stem": "What initiates the defecation reflex?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Rectal distension activating stretch receptors"
+        },
+        {
+          "id": "c2",
+          "text": "Release of pepsin by chief cells"
+        },
+        {
+          "id": "c3",
+          "text": "A rise in salivary pH alone"
+        },
+        {
+          "id": "c4",
+          "text": "Arrival of chyme in the duodenum"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Fecal filling stretches the rectum and activates enteric and spinal pathways.",
+      "conceptIds": [
+        "defecation-reflex",
+        "rectum"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-100",
+      "type": "multiple-choice",
+      "topicId": "colon",
+      "stem": "Which anal sphincter is primarily involuntary smooth muscle?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Internal anal sphincter"
+        },
+        {
+          "id": "c2",
+          "text": "External anal sphincter"
+        },
+        {
+          "id": "c3",
+          "text": "Pyloric sphincter"
+        },
+        {
+          "id": "c4",
+          "text": "Upper esophageal sphincter"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The internal sphincter is smooth muscle; the external sphincter is skeletal muscle under voluntary control.",
+      "conceptIds": [
+        "internal-anal-sphincter",
+        "external-anal-sphincter"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-101",
+      "type": "multiple-choice",
+      "topicId": "colon",
+      "stem": "Why can some dietary fiber contribute energy despite resisting human digestive enzymes?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Colonic microbes ferment it into absorbable short-chain fatty acids"
+        },
+        {
+          "id": "c2",
+          "text": "Salivary amylase digests all fiber to glucose"
+        },
+        {
+          "id": "c3",
+          "text": "The gallbladder converts fiber directly to fat"
+        },
+        {
+          "id": "c4",
+          "text": "Gastric acid turns it into amino acids"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Microbial fermentation in the colon produces acetate, propionate, and butyrate.",
+      "conceptIds": [
+        "gut-microbiota",
+        "short-chain-fatty-acids"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "application"
+    },
+    {
+      "id": "mc-102",
+      "type": "multiple-choice",
+      "topicId": "colon",
+      "stem": "Which structure is the first blind pouch of the large intestine?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Cecum"
+        },
+        {
+          "id": "c2",
+          "text": "Sigmoid colon"
+        },
+        {
+          "id": "c3",
+          "text": "Rectum"
+        },
+        {
+          "id": "c4",
+          "text": "Duodenum"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The ileocecal junction empties into the cecum.",
+      "conceptIds": [
+        "cecum",
+        "ileocecal-valve"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-103",
+      "type": "multiple-choice",
+      "topicId": "colon",
+      "stem": "Which structure is correctly paired with the spleen as an adjacent landmark?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Left colic flexure"
+        },
+        {
+          "id": "c2",
+          "text": "Right colic flexure"
+        },
+        {
+          "id": "c3",
+          "text": "Cecum"
+        },
+        {
+          "id": "c4",
+          "text": "Pylorus"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "The splenic flexure lies between transverse and descending colon near the spleen.",
+      "conceptIds": [
+        "left-colic-flexure"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "large-intestine",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "Digestive.pptx": [
+              33,
+              34,
+              35,
+              36
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-104",
+      "type": "multiple-choice",
+      "topicId": "conditions",
+      "stem": "Which condition involves inflammation of the pancreas?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Pancreatitis"
+        },
+        {
+          "id": "c2",
+          "text": "Gastritis"
+        },
+        {
+          "id": "c3",
+          "text": "Gingivitis"
+        },
+        {
+          "id": "c4",
+          "text": "Colitis"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Pancreatitis refers to pancreatic inflammation, sometimes associated with obstruction by gallstones.",
+      "conceptIds": [
+        "pancreatitis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-105",
+      "type": "multiple-choice",
+      "topicId": "conditions",
+      "stem": "Which condition commonly reflects backflow of acidic stomach contents into the esophagus?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Gastroesophageal reflux"
+        },
+        {
+          "id": "c2",
+          "text": "Cholera"
+        },
+        {
+          "id": "c3",
+          "text": "Mumps"
+        },
+        {
+          "id": "c4",
+          "text": "Cirrhosis"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Lower esophageal sphincter dysfunction can contribute to reflux symptoms such as heartburn.",
+      "conceptIds": [
+        "gastroesophageal-reflux",
+        "lower-esophageal-sphincter"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-106",
+      "type": "multiple-choice",
+      "topicId": "conditions",
+      "stem": "Which condition denotes inflammation of the stomach mucosa?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Gastritis"
+        },
+        {
+          "id": "c2",
+          "text": "Hepatitis"
+        },
+        {
+          "id": "c3",
+          "text": "Colitis"
+        },
+        {
+          "id": "c4",
+          "text": "Esophagitis"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Gastritis is stomach inflammation, distinct from liver or colonic inflammation.",
+      "conceptIds": [
+        "gastritis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-107",
+      "type": "multiple-choice",
+      "topicId": "conditions",
+      "stem": "Which condition describes chronic advanced liver scarring with architectural distortion?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Cirrhosis"
+        },
+        {
+          "id": "c2",
+          "text": "Jaundice"
+        },
+        {
+          "id": "c3",
+          "text": "Gallstones"
+        },
+        {
+          "id": "c4",
+          "text": "Appendicitis"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Cirrhosis represents advanced fibrosis and tissue remodeling following chronic liver injury.",
+      "conceptIds": [
+        "cirrhosis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-108",
+      "type": "multiple-choice",
+      "topicId": "conditions",
+      "stem": "A patient develops yellowing of the skin and sclera from high bilirubin. What is the finding called?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Jaundice"
+        },
+        {
+          "id": "c2",
+          "text": "Colitis"
+        },
+        {
+          "id": "c3",
+          "text": "Gingivitis"
+        },
+        {
+          "id": "c4",
+          "text": "Pancreatitis"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Jaundice is visible bilirubin-associated yellowing, not a specific cause.",
+      "conceptIds": [
+        "jaundice"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-109",
+      "type": "multiple-choice",
+      "topicId": "conditions",
+      "stem": "Which infectious condition can cause severe watery diarrhea by promoting intestinal fluid secretion?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Cholera"
+        },
+        {
+          "id": "c2",
+          "text": "Mumps"
+        },
+        {
+          "id": "c3",
+          "text": "Gastritis"
+        },
+        {
+          "id": "c4",
+          "text": "Periodontal disease"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Toxigenic Vibrio cholerae drives marked secretory fluid loss.",
+      "conceptIds": [
+        "cholera",
+        "diarrhea"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-110",
+      "type": "multiple-choice",
+      "topicId": "conditions",
+      "stem": "What is the definition of gingivitis?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Inflammation of the gingivae"
+        },
+        {
+          "id": "c2",
+          "text": "Inflammation of the liver"
+        },
+        {
+          "id": "c3",
+          "text": "Obstruction of bile ducts"
+        },
+        {
+          "id": "c4",
+          "text": "Ulceration of the duodenum"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Gingivitis affects the gums; periodontal disease can involve deeper supporting structures.",
+      "conceptIds": [
+        "gingivitis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    },
+    {
+      "id": "mc-111",
+      "type": "multiple-choice",
+      "topicId": "conditions",
+      "stem": "Which condition most directly involves stone formation in the gallbladder or bile ducts?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "Gallstones"
+        },
+        {
+          "id": "c2",
+          "text": "Peptic ulcer"
+        },
+        {
+          "id": "c3",
+          "text": "Gastritis"
+        },
+        {
+          "id": "c4",
+          "text": "Colitis"
+        }
+      ],
+      "correctChoiceId": "c1",
+      "explanation": "Gallstones can obstruct biliary drainage and may trigger pancreatitis.",
+      "conceptIds": [
+        "gallstones"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "digestive-system-deep-dive",
+          "sectionId": "common-digestive-disorders-and-conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        },
+        {
+          "articleId": "digestive-system-exam-cram",
+          "sectionId": "conditions",
+          "slideReferences": {
+            "24-Digestive System.pptx": [
+              25,
+              43,
+              49,
+              50,
+              58,
+              61
+            ]
+          }
+        }
+      ],
+      "cognitiveLevel": "recall"
+    }
+  ]
+}
