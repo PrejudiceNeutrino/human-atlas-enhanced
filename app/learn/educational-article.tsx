@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
+import { useMemo, useRef, useState, type ReactNode } from 'react';
 import { Box, ChevronDown, ChevronUp, X } from 'lucide-react';
 import { EducationalMarkdown } from './educational-markdown';
 import { ReadingLayout } from './section-index';
@@ -11,12 +11,14 @@ export function articleSectionId(article: EducationalArticleData, sectionId: str
   return `${article.id}-${sectionId}`;
 }
 
-export function EducationalArticle({ article, presentation, readingIntro }: {
+export function EducationalArticle({ article, presentation, readingIntro, anchorId = article.id, readingControls }: {
   article: EducationalArticleData;
   presentation: 'overview' | 'reference' | 'cram';
   readingIntro?: string;
+  anchorId?: string;
+  readingControls?: ReactNode;
 }) {
-  const sections = useMemo(() => article.sections.map(section => ({ id: articleSectionId(article, section.id), title: section.title })), [article]);
+  const sections = useMemo(() => article.sections.map(section => ({ id: `${anchorId}-${section.id}`, title: section.title })), [article, anchorId]);
   const lesson = anatomyLessonForArticle(article.id);
   const [companion, setCompanion] = useState<AnatomyRequest | null>(null), [collapsed, setCollapsed] = useState(false);
   const opener = useRef<HTMLButtonElement | null>(null), companionTitle = useRef<HTMLHeadingElement>(null);
@@ -25,9 +27,10 @@ export function EducationalArticle({ article, presentation, readingIntro }: {
     requestAnimationFrame(() => { companionTitle.current?.focus({ preventScroll: true }); if (window.matchMedia('(max-width: 1250px)').matches) companionTitle.current?.scrollIntoView({ block: 'start', behavior: 'instant' }); });
   };
   return (
-    <article className={`learn-reading learn-reading--${presentation} ${companion ? 'learn-reading-companion-open' : ''}`} aria-labelledby={`${article.id}-heading`}>
+    <article className={`learn-reading learn-reading--${presentation} ${companion ? 'learn-reading-companion-open' : ''}`} aria-labelledby={`${anchorId}-heading`}>
       <header className="learn-article-header">
-        <AnnotationHeading as="h2" sourceId={`${article.id}/intro`} id={`${article.id}-heading`} tabIndex={-1}>{article.title}</AnnotationHeading>
+        <AnnotationHeading as="h2" sourceId={`${article.id}/intro`} id={`${anchorId}-heading`} tabIndex={-1}>{article.title}</AnnotationHeading>
+        {readingControls}
         <EducationalMarkdown headingOffset={2} sourceId={`${article.id}/intro`}>{article.introMarkdown}</EducationalMarkdown>
         {readingIntro && <div className="learn-reading-intro learn-reading-intro--after-opening"><EducationalMarkdown sourceId={`${article.id}/reading-intro`}>{readingIntro}</EducationalMarkdown></div>}
       </header>
@@ -35,8 +38,8 @@ export function EducationalArticle({ article, presentation, readingIntro }: {
       <div className="learn-companion-reading">
       <ReadingLayout title={article.title} sections={sections}>
         {article.sections.map(section => (
-          <section className="learn-article-section" key={section.id} aria-labelledby={articleSectionId(article, section.id)}>
-            <AnnotationHeading as="h3" sourceId={`${article.id}/${section.id}`} id={articleSectionId(article, section.id)} tabIndex={-1}>{section.title}</AnnotationHeading>
+          <section className="learn-article-section" key={section.id} aria-labelledby={`${anchorId}-${section.id}`}>
+            <AnnotationHeading as="h3" sourceId={`${article.id}/${section.id}`} id={`${anchorId}-${section.id}`} tabIndex={-1}>{section.title}</AnnotationHeading>
             {lesson?.referenceArticleId === article.id && <div className="learn-anatomy-references" role="group" aria-label={`${section.title} anatomy references`} data-annotation-excluded data-atlas-shortcuts="disabled">
               {lesson.structures.filter(reference => reference.sectionId === section.id).map(reference => <button type="button" key={reference.conceptId} onClick={event => openAnatomy(reference, event.currentTarget)}><Box size={14} aria-hidden="true"/>View {reference.label} in 3D</button>)}
             </div>}

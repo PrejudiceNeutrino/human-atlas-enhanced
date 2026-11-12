@@ -1,0 +1,61 @@
+{
+  "archiveName": "human-atlas-exam-cram-dual-mode-content.zip",
+  "archiveSha256": "477be76910f87b5425073768526c61a79390a06911a471a74f09e37d2c0ac877",
+  "entries": [
+    {
+      "path": "codex-integration-instructions.txt",
+      "bytes": 3024,
+      "sha256": "62e39ff6cbbb7e523ee6fd7e48aa1f7a484a37dc3b678faa29a42032e9f6bc06"
+    },
+    {
+      "path": "exam-cram-modes-preview.html",
+      "bytes": 178343,
+      "sha256": "3e77005dc5f779e732ae01760e60c6ff08d52031da2f90fad08e5ad4bbfd7d10"
+    },
+    {
+      "path": "lymphoid-detailed-original.json",
+      "bytes": 27414,
+      "sha256": "3e54df843b72bf8f0098566781964c7c86d6ace6f59029444994afe42e79978b"
+    },
+    {
+      "path": "lymphoid-exam-cram-quick-scan.json",
+      "bytes": 19175,
+      "sha256": "63bdd882aa86c7556e3670886a089f94f7bc3f9aa88ba0509b5881e048ab03ad"
+    },
+    {
+      "path": "lymphoid-exam-cram-quick-scan.md",
+      "bytes": 14014,
+      "sha256": "a2fb33a2fbfe814b5f0e17e02b9796715dc89f92177896920de06056afc53cce"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1913,
+      "sha256": "c2a7d4d6dd574238492e772c02a3e4e92cb589c8fd0cd1e6f3ca50121966103f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3151,
+      "sha256": "31c5f8c014b2c44dee7d8f0b1af67208177b4e6ef491c2913e24297be1c1a31f"
+    },
+    {
+      "path": "respiratory-detailed-original.json",
+      "bytes": 26980,
+      "sha256": "52d56c96d1c0a519be1505094377b244a2bc00c2ebe26c830813221a82002d1f"
+    },
+    {
+      "path": "respiratory-exam-cram-quick-scan.json",
+      "bytes": 19997,
+      "sha256": "2071415e62592b03ae3ea78722ef6039f6c2388550e4dd4cfa409c1f01574347"
+    },
+    {
+      "path": "respiratory-exam-cram-quick-scan.md",
+      "bytes": 14964,
+      "sha256": "d626d8083e6a8961567889bb9a21611483070ef930243ee5169815282f1ed926"
+    },
+    {
+      "path": "validate.py",
+      "bytes": 785,
+      "sha256": "676525b67c8fd4a6f56de41fd5cf96c3579b1c90a6fd92daf6e829ea932995ab"
+    }
+  ]
+}

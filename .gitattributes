@@ -17,3 +17,6 @@
 /data/learn/lymphoid-study-tools/*.json -text
 /public/images/learn/lymphoid/gallery/gallery.json -text
 /docs/integration/lymphoid-source/** -text
+# Preserve the supplied Exam Cram Quick Scan content and package provenance bytes.
+/data/learn/*-exam-cram-quick-scan.json -text
+/docs/integration/exam-cram-source/** -text

@@ -27,6 +27,7 @@ export const annotationBlocksPlugin:Plugin<[],Root>=()=>tree=>{collectBlocks(tre
 export const titleBlock=(text:string):TextBlock=>({id:`h-${fingerprint(text).slice(3)}`,text,order:0});
 export interface AnnotationSource {
   target:LearnTarget;subjectTitle:string;tabTitle:string;title:string;headingId:string;disclosureId?:string;
+  readingMode?: 'quick-scan' | 'detailed-review';
   blocks:TextBlock[];version:string;order:number;route:string;
 }
 export function resolvedAnnotations(records:Annotation[],sources:AnnotationSource[]) {

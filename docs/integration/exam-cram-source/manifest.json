@@ -1,0 +1,54 @@
+{
+  "kind": "human-atlas-exam-cram-reading-modes",
+  "schemaVersion": 1,
+  "editorialStandard": {
+    "quickScan": "Instructor-aligned recall: bold key term followed by short answer; compact routes/equations/comparisons; minimal prose.",
+    "detailedReview": "Preserve existing authored Exam Cram unchanged; fuller explanation and scientific qualifiers."
+  },
+  "subjects": [
+    {
+      "subjectId": "respiratory",
+      "tabId": "respiratory-system-exam-cram",
+      "quickScanFile": "respiratory-exam-cram-quick-scan.json",
+      "detailedReviewFile": "respiratory-detailed-original.json",
+      "sectionCount": 18
+    },
+    {
+      "subjectId": "lymphoid",
+      "tabId": "lymphoid-system-exam-cram",
+      "quickScanFile": "lymphoid-exam-cram-quick-scan.json",
+      "detailedReviewFile": "lymphoid-detailed-original.json",
+      "sectionCount": 18
+    }
+  ],
+  "notesAndNavigation": {
+    "sectionIds": "unchanged between modes",
+    "detailedAnnotations": "must preserve existing source identities and text offsets",
+    "quickScanAnnotations": "separate source identity if enabled",
+    "sourceLinks": "existing study questions continue targeting canonical detailed article sections"
+  },
+  "validation": [
+    {
+      "subject": "respiratory",
+      "sections": 18,
+      "sectionIdsMatch": true,
+      "sectionTitlesMatch": true,
+      "slideReferencesMatch": true,
+      "detailedWords": 2622,
+      "quickWords": 1539,
+      "reductionPercent": 41.3,
+      "quickJsonSha256": "2071415e62592b03ae3ea78722ef6039f6c2388550e4dd4cfa409c1f01574347"
+    },
+    {
+      "subject": "lymphoid",
+      "sections": 18,
+      "sectionIdsMatch": true,
+      "sectionTitlesMatch": true,
+      "slideReferencesMatch": true,
+      "detailedWords": 2547,
+      "quickWords": 1467,
+      "reductionPercent": 42.4,
+      "quickJsonSha256": "63bdd882aa86c7556e3670886a089f94f7bc3f9aa88ba0509b5881e048ab03ad"
+    }
+  ]
+}

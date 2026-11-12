@@ -167,6 +167,22 @@
 .learn-reading--cram .learn-article-sections .learn-markdown { font-size: 15px; line-height: 1.8; }
 .learn-reading--cram .learn-markdown li { margin-block: 12px; }
 
+.learn-exam-mode-controls { margin-block: 18px; }
+.learn-exam-mode { display: inline-flex; max-width: 100%; gap: 3px; margin: 0; padding: 4px; border: 1px solid var(--border); border-radius: 10px; background: var(--panel); }
+.learn-exam-mode label { position: relative; cursor: pointer; }
+.learn-exam-mode input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.learn-exam-mode span { display: block; padding: 9px 15px; border: 1px solid transparent; border-radius: 7px; color: var(--ui-secondary); font-size: 14px; font-weight: 600; line-height: 1.4; }
+.learn-exam-mode input:checked + span { background: var(--selected-control); color: var(--foreground); border-color: var(--border); box-shadow: 0 1px 3px rgb(0 0 0 / .08); }
+.learn-exam-mode input:focus-visible + span { outline: 2px solid var(--focus); outline-offset: 2px; }
+.learn-exam-mode-error { margin-top: 10px; color: var(--ui-secondary); font-size: 13px; }
+.learn-exam-cram[data-reading-mode="quick-scan"] .learn-reading--cram .learn-markdown li { margin-block: 6px; }
+.learn-exam-cram[data-reading-mode="quick-scan"] .learn-article-sections .learn-markdown { line-height: 1.65; }
+@media (max-width: 480px) {
+  .learn-exam-mode { display: flex; }
+  .learn-exam-mode label { flex: 1; text-align: center; }
+  .learn-exam-mode span { padding-inline: 8px; }
+}
+
 @media (max-width: 850px) {
   .learn-article-layout { display: block; }
   .learn-index-desktop { display: none; }

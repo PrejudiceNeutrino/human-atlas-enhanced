@@ -1,5 +1,6 @@
 import { articles, factSections } from '../learn/content';
 import { learnSubjects } from '../learn/subjects';
+import { examCramVariants } from '../learn/exam-cram-content';
 import { fingerprint, targetKey, type Annotation } from './annotation-core';
 import { markdownBlocks, titleBlock, type AnnotationSource } from './annotation-model';
 
@@ -13,6 +14,13 @@ for(const subject of learnSubjects)for(const tab of subject.tabs){
     const article=articles[tab.id];add(`${tab.id}/intro`,article.title,article.introMarkdown,`${tab.id}-heading`);
     if(tab.readingIntro)add(`${tab.id}/reading-intro`,article.title,tab.readingIntro,`${tab.id}-heading`,undefined,false);
     for(const section of article.sections)add(`${tab.id}/${section.id}`,section.title,section.markdown,`${tab.id}-${section.id}`);
+    const quickScan=examCramVariants[tab.id];
+    if(quickScan){
+      const start=annotationSources.length;
+      add(`${quickScan.id}/intro`,quickScan.title,quickScan.introMarkdown,`${tab.id}-heading`);
+      for(const section of quickScan.sections)add(`${quickScan.id}/${section.id}`,section.title,section.markdown,`${tab.id}-${section.id}`);
+      for(const source of annotationSources.slice(start)){source.readingMode='quick-scan';source.tabTitle=`${tab.title} · Quick Scan`;}
+    }
   }else if(tab.kind==='facts'){
     add(`${tab.id}/intro`,tab.title,tab.readingIntro??'',`${tab.id}-heading`);
     for(const entry of factSections[tab.id].sections){
