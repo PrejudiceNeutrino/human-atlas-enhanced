@@ -1,0 +1,295 @@
+{
+  "id": "digestive-system-exam-cram",
+  "title": "Exam Cram",
+  "subject": "digestive-system",
+  "subtitle": "Chapter 24 | Instructor-Aligned Rapid Review",
+  "introMarkdown": "Short, test-oriented facts from the Chapter 24 physiology lecture and digestive anatomy-model slides. Memorize the bold terms, their functions, and the labeled structures.",
+  "sections": [
+    {
+      "id": "seven-functions",
+      "title": "Seven Functions — Use the Instructor’s List",
+      "markdown": "- **Ingestion:** Food enters mouth.\n- **Mechanical processing:** Chewing, mixing, churning.\n- **Chemical digestion:** Enzymes break molecules down.\n- **Secretion:** Acid, enzymes, water, mucus, buffers, salts, bile.\n- **Absorption:** Nutrients/ions/water into blood or lymph.\n- **Compaction:** Water removed; feces concentrate.\n- **Defecation:** Feces eliminated.\n\n**Important:** Slides list **compaction**, not motility, as one of the seven. **Motility** is still the general term for muscular mixing and movement.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          4,
+          9
+        ]
+      }
+    },
+    {
+      "id": "definitions-and-movements",
+      "title": "Key Terms and Movement",
+      "markdown": "- **Digestion:** Breakdown for absorption. **Catabolism:** Breaks down. **Anabolism:** Builds up.\n- **Bolus:** Chewed, saliva-coated food. **Chyme:** Stomach's soupy mixture.\n- **Mastication:** Chewing. **Deglutition:** Swallowing.\n- **Peristalsis:** Propels forward. **Segmentation:** Mixes back and forth.\n- **Mass movements:** Strong, infrequent colonic propulsion. **Haustral churning:** Local colon mixing.\n- **Mesentery:** Double peritoneal fold carrying vessels, nerves, lymphatics.\n- **Retroperitoneal:** Behind parietal peritoneum (e.g., most pancreas/duodenum).\n- **Enterohepatic circulation:** Ileum reabsorbs bile salts → portal blood → liver.\n- **Epiploic appendages:** Fat tags on colon. **Feces:** Compacted waste. **Flatus:** Gas.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          2,
+          8,
+          9,
+          10,
+          11,
+          48,
+          55
+        ],
+        "Digestive.pptx": [
+          38
+        ]
+      }
+    },
+    {
+      "id": "gut-wall",
+      "title": "GI Wall and Peritoneum",
+      "markdown": "- **Mucosa:** Innermost lining; secretion/absorption.\n- **Submucosa:** Connective tissue, large vessels, nerves/lymphatics.\n- **Muscularis externa:** Inner circular + outer longitudinal muscle; peristalsis.\n- **Serosa:** Outer visceral peritoneal covering. **Adventitia:** Anchors structures (e.g., esophagus).\n- **Myenteric plexus:** Motility. **Submucosal plexus:** Secretion/local blood flow.\n- **Parietal peritoneum:** Abdominal wall. **Visceral:** Organ surface.\n- **Lesser omentum:** Liver ↔ lesser stomach curvature.\n- **Greater omentum:** Hangs from greater curvature; drapes over intestines.\n- **Mesentery proper:** Small intestine. **Mesocolon:** Colon.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          7,
+          8,
+          9
+        ],
+        "Digestive.pptx": [
+          13,
+          38
+        ]
+      }
+    },
+    {
+      "id": "mouth-saliva-teeth",
+      "title": "Oral Cavity, Saliva, and Teeth",
+      "markdown": "- **Mouth functions:** Sensory analysis, chewing, lubrication, initial chemical digestion, bolus formation.\n- **Tongue:** Moves food; associated glands secrete **lingual lipase**. **Extrinsic muscles:** Gross movement. **Intrinsic:** Shape changes.\n- **Parotid:** Near ear; **Stensen's duct**. **Submandibular:** Beneath jaw; **Wharton's duct**. **Sublingual:** Beneath tongue; small **Rivinus ducts**.\n- **Saliva:** Mucins = lubrication; **amylase** = starch; **bicarbonate** = buffering; **lysozyme + IgA** = defense.\n- **Fauces:** Mouth-to-throat opening. **Uvula:** Soft-palate tip. **Vestibule:** Lips/cheeks ↔ teeth.\n- **Superior/inferior labium:** Upper/lower lip. **Dorsum:** Top of tongue.\n- **Lingual frenulum:** Tongue to mouth floor. **Labial frenulum:** Lip to gums.\n- **Tooth:** Crown, neck, root; **enamel** over crown; **cementum** over root; **dentin** underneath; **pulp cavity/root canal** contain nerves and vessels; **apical foramen** at root tip.\n- **Periodontal ligament:** Root cementum to alveolar bone.\n- **Teeth:** **Incisors** cut, **canines** tear, **premolars** crush, **molars** grind. **20 deciduous**, up to **32 permanent**.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          13,
+          15,
+          16,
+          17
+        ],
+        "Digestive.pptx": [
+          3,
+          4,
+          5,
+          6,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "id": "swallowing",
+      "title": "Pharynx, Esophagus, and Swallowing",
+      "markdown": "- **Nasopharynx:** Air only. **Oropharynx/laryngopharynx:** Food and air passage.\n- **Buccal/oral phase:** **Voluntary**; tongue pushes bolus backward.\n- **Pharyngeal phase:** **Involuntary**; palatal/pharyngeal tactile receptors trigger reflex; soft palate rises, **larynx elevates**, airway protected.\n- **Esophageal phase:** **Involuntary**; peristalsis moves bolus into stomach.\n- **Coordinator:** **Medulla (brainstem)**.\n- **Upper esophageal sphincter:** Helps prevent air entry. **Lower/cardiac sphincter:** Helps resist reflux.\n- **Esophageal hiatus:** Opening through diaphragm. **Adventitia:** Outer anchoring layer of most esophagus.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          18,
+          20,
+          21
+        ],
+        "Digestive.pptx": [
+          15,
+          16
+        ]
+      }
+    },
+    {
+      "id": "stomach",
+      "title": "Stomach: Regions, Cells, and Functions",
+      "markdown": "- **Slide lists five functions:** Food **storage**, **mechanical** mixing, **chemical** digestion, **intrinsic factor** production, **chyme delivery** to small intestine.\n- **Four regions:** **Cardia → fundus → body → pylorus**.\n- **Rugae:** Expandable folds. **Lesser/greater curvatures:** Short/long borders.\n- **Muscle layers:** **Oblique + circular + longitudinal**; mix food.\n- **Pyloric sphincter:** Controls chyme into duodenum.\n- **Parietal cells:** **HCl + intrinsic factor**. HCl helps denature proteins, kills many microbes, activates pepsin.\n- **Chief cells:** **Pepsinogen** (→ pepsin) + gastric lipase.\n- **G cells:** **Gastrin** (increases gastric activity). **D cells:** **Somatostatin** (inhibits gastrin/acid).\n- **Mucous cells:** Mucus + bicarbonate barrier protects stomach lining.\n- **Lecture pH:** Approximately **1.5–2** in highly acidic gastric juice.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          22,
+          23,
+          24,
+          25
+        ],
+        "Digestive.pptx": [
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "id": "gastric-phases",
+      "title": "Three Phases of Gastric Regulation",
+      "markdown": "- **Cephalic:** Sight/smell/taste/thought of food → **vagus nerve** → stomach secretions.\n- **Gastric:** Food/stomach stretch + peptides → **gastrin**, acid, enzymes, mixing.\n- **Intestinal:** Chyme/acid/fat enter duodenum → **enterogastric inhibition**, slows acid secretion and gastric emptying.\n- **Gastroileal reflex:** Stomach activity helps increase ileal movement/ileocecal passage.\n- **Enteric nervous system + CNS + hormones:** Coordinate these phases.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      }
+    },
+    {
+      "id": "hormones",
+      "title": "GI Hormones and Their Triggers",
+      "markdown": "- **Gastrin — G cells:** Food, peptides, stretch → **increases gastric activity**.\n- **CCK — I cells:** Fats/proteins in SI → **pancreatic enzymes + gallbladder contraction**, slows gastric emptying.\n- **Secretin — S cells:** Acid in duodenum → **pancreatic bicarbonate**, slows gastric acid.\n- **GIP — K cells:** Glucose/fats in SI → **glucose-dependent insulin release**; can inhibit gastric activity.\n- **Somatostatin — D cells:** Gastric acidity → **inhibits gastrin and acid**.\n- **VIP — enteric neurons:** **Dilates intestinal vessels**; supports secretion and intestinal activity (lecture emphasizes blood flow/absorption).\n\n**Memorize first:** Gastrin = acid; CCK = enzymes/bile; secretin = bicarbonate; GIP = insulin; somatostatin = inhibition; VIP = vasodilation.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          32,
+          33
+        ]
+      }
+    },
+    {
+      "id": "small-intestine",
+      "title": "Small Intestine: Regions and Absorption",
+      "markdown": "- **Small intestine:** Major site of chemical digestion and nutrient absorption (lecture: ~**90%** of nutrient absorption).\n- **Duodenum:** Receives chyme + bile + pancreatic enzymes/bicarbonate; neutralizes acid; **Brunner's glands** secrete alkaline mucus.\n- **Jejunum:** Most nutrient absorption; prominent plicae and long villi; **lactase, maltase, sucrase** at brush border.\n- **Ileum:** Absorbs **B12 + bile salts**; **Peyer's patches**; ends at **ileocecal valve**.\n- **Plicae circulares:** Permanent folds; slow chyme/increase surface area.\n- **Villi:** Mucosal projections with blood capillaries and **lacteals**.\n- **Microvilli/brush border:** Enzymes + maximal membrane surface.\n- **Enterocytes:** Absorb nutrients. **Paneth cells:** Lysozyme/defensins. **Goblet cells:** Mucus.\n- **Crypts of Lieberkühn:** Intestinal gland depressions; Paneth cells near bases.\n- **Fat pathway:** Micelles → enterocyte → **chylomicron** → **lacteal** → lymph → blood.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "Digestive.pptx": [
+          30,
+          31,
+          32
+        ]
+      }
+    },
+    {
+      "id": "pancreas",
+      "title": "Pancreas: Enzymes, Ducts, and Disease",
+      "markdown": "- **Head:** In duodenal C-loop. **Body:** Behind stomach. **Tail:** Toward spleen.\n- **Exocrine acini:** Digestive enzymes. **Endocrine islets:** Insulin/glucagon.\n- **Amylase:** Carbs. **Proteases:** Proteins. **Lipase:** Fats. **Nucleases:** DNA/RNA.\n- **Protease examples:** Trypsin, chymotrypsin, carboxypeptidase, elastase.\n- **Duct cells:** Bicarbonate to neutralize stomach acid.\n- **Main pancreatic duct (Wirsung):** Delivers juices to **duodenum**; **accessory duct (Santorini)** may also drain pancreas.\n- **Pancreatitis:** Inflamed pancreas; gallstones obstructing drainage and alcohol are major causes.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          42,
+          43,
+          44
+        ],
+        "Digestive.pptx": [
+          21,
+          22,
+          23
+        ]
+      }
+    },
+    {
+      "id": "liver-gallbladder",
+      "title": "Liver, Gallbladder, and Bile Flow",
+      "markdown": "- **Liver:** Makes bile, processes blood nutrients, stores glycogen/vitamins/iron, metabolizes toxins, makes plasma proteins, handles bilirubin.\n- **Hepatocytes:** Metabolism + bile. **Kupffer cells:** Sinusoidal macrophages. **Sinusoids:** Exchange between blood and liver cells.\n- **Liver lobes:** **Right, left, caudate, quadrate**. **Falciform ligament:** Anterior landmark. **Round ligament:** Fetal umbilical-vein remnant.\n- **Gallbladder:** Stores/concentrates bile; **CCK** triggers contraction.\n- **Bile:** **Emulsifies fat**; no digestive enzymes. **Enterohepatic circulation:** Bile salts recycled from terminal ileum to liver.\n- **Duct sequence:** Right + left hepatic ducts → **common hepatic duct**; + **cystic duct** → **common bile duct**.\n- **Release:** Gallbladder → cystic duct → common bile duct → often joins main pancreatic duct → **hepatopancreatic ampulla** → **major duodenal papilla** → **descending duodenum**.\n- **Sphincter of Oddi:** Regulates bile/pancreatic juice entry.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          45,
+          46,
+          48,
+          50,
+          51,
+          52
+        ],
+        "Digestive.pptx": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      }
+    },
+    {
+      "id": "large-intestine",
+      "title": "Large Intestine and Defecation",
+      "markdown": "- **Three functions:** Water absorption/compaction, some vitamin-related absorption, storage/elimination of feces.\n- **Path:** **Cecum → ascending → right (hepatic) flexure → transverse → left (splenic) flexure → descending → sigmoid → rectum → anus**.\n- **Appendix:** Projects from cecum. **Ileocecal valve:** SI–LI junction.\n- **Haustra:** Colon pouches. **Taeniae coli:** Longitudinal muscle bands causing sacculations. **Epiploic appendages:** Fat tags.\n- **Large intestine has no villi**; abundant goblet cells and bacteria.\n- **Cecum → transverse:** Slow mixing/transit, water recovery. **Transverse → rectum:** Occasional **mass movements**, further fecal compaction (patterns overlap).\n- **Rectal stretch → defecation reflex:** Local enteric + sacral reflexes; **internal sphincter** = involuntary smooth muscle; **external** = voluntary skeletal muscle.\n- **Flatus:** Intestinal gas; **feces:** Compacted waste.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          53,
+          54,
+          55,
+          56,
+          57
+        ],
+        "Digestive.pptx": [
+          33,
+          34,
+          35,
+          36
+        ]
+      }
+    },
+    {
+      "id": "conditions",
+      "title": "Instructor-Named Disorders",
+      "markdown": "- **Mumps:** Viral infection/swelling of parotid glands. **Gingivitis:** Inflamed gums. **Periodontal disease:** Damaged tooth-supporting tissues.\n- **Esophagitis:** Esophageal inflammation. **Gastritis:** Stomach inflammation. **Peptic ulcer:** Gastric/duodenal mucosal ulceration.\n- **Enteritis:** Small-intestine inflammation. **Gastroenteritis:** Stomach/intestine inflammation.\n- **Giardiasis:** *Giardia* infection/diarrhea. **Dysentery:** Diarrhea with blood (often mucus).\n- **Hepatitis:** Inflamed liver. **Cirrhosis:** Liver scarring. **Jaundice:** Bilirubin-related yellowing.\n- **Gallstones:** Biliary deposits. **Cholecystitis:** Gallbladder inflammation. **Pancreatitis:** Pancreatic inflammation.\n- **Colitis:** Colon inflammation. **Cholera:** *V. cholerae* causes profuse watery diarrhea.\n- **Constipation:** Slow/hard stool. **Diarrhea:** Loose watery stool. **Diverticulitis:** Inflamed diverticula.\n- **Polyps:** Some are precancerous; potential link to **colorectal cancer**.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          25,
+          43,
+          49,
+          50,
+          58,
+          61
+        ]
+      }
+    },
+    {
+      "id": "visual-labels",
+      "title": "Anatomy Model: Identification Checklist",
+      "markdown": "- **Oral cavity:** Uvula, fauces, superior/inferior labium, labial/lingual frenulum, dorsum, vestibule, parotid/sublingual/submandibular glands.\n- **Tooth:** Crown, neck, root, enamel, dentin, pulp cavity, root canal, cementum, apical foramen, periodontal ligament.\n- **Stomach:** Cardia, fundus, body, pylorus, pyloric sphincter, lesser/greater curvature, rugae, oblique/circular/longitudinal muscles.\n- **Pancreas:** Head, body, tail, main pancreatic duct, accessory duct, duodenum.\n- **Liver/biliary:** Right/left/caudate/quadrate lobes, falciform/round ligament, gallbladder, right/left/common hepatic duct, cystic duct, common bile duct.\n- **Small intestine:** Duodenum, jejunum, ileum, plicae, villi, intestinal crypt, lacteal, Peyer's patches, ileocecal valve.\n- **Large intestine:** Cecum, appendix, ascending/transverse/descending/sigmoid colon, hepatic/splenic flexures, haustra, taeniae coli, rectum, internal/external anal sphincters.",
+      "slideReferences": {
+        "Digestive.pptx": [
+          3,
+          4,
+          5,
+          7,
+          9,
+          10,
+          11,
+          18,
+          20,
+          21,
+          22,
+          24,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          34,
+          35,
+          36
+        ]
+      }
+    },
+    {
+      "id": "rapid-recall",
+      "title": "Rapid Recall — Likely Exam Associations",
+      "markdown": "- **Seven functions include?** Compaction, not motility, in the lecture list.\n- **Voluntary swallowing phase?** Buccal/oral. **Coordinator?** Medulla.\n- **Propels food?** Peristalsis. **Mixes chyme?** Segmentation.\n- **HCl + intrinsic factor?** Parietal. **Pepsinogen?** Chief.\n- **Gastrin?** G cell. **Somatostatin?** D cell.\n- **Acid in duodenum?** Secretin. **Fats/protein in SI?** CCK.\n- **Glucose-triggered insulin release?** GIP. **Intestinal vasodilation?** VIP.\n- **Pancreatic enzymes?** Acini. **Pancreatic bicarbonate?** Ducts.\n- **Antimicrobial SI cells?** Paneth. **Immune nodules in ileum?** Peyer's patches.\n- **B12 and bile salts?** Terminal ileum. **Chylomicron vessel?** Lacteal.\n- **Duodenal alkaline-mucus glands?** Brunner's.\n- **Liver macrophages?** Kupffer. **Functional liver cells?** Hepatocytes.\n- **Bile storage?** Gallbladder. **Bile job?** Emulsification.\n- **Bile + pancreatic ducts open into?** Descending duodenum (major papilla).\n- **Sphincter controlling bile/pancreatic entry?** Oddi.\n- **Colon longitudinal bands?** Taeniae coli. **Colon pouches?** Haustra.\n- **Voluntary anal sphincter?** External. **Involuntary?** Internal.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          4,
+          21,
+          24,
+          32,
+          33,
+          37,
+          38,
+          40,
+          42,
+          46,
+          48,
+          50,
+          52,
+          55,
+          56
+        ],
+        "Digestive.pptx": [
+          13,
+          20,
+          31,
+          34
+        ]
+      }
+    }
+  ]
+}

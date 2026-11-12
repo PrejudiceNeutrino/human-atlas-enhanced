@@ -10,11 +10,11 @@ export function readExamCramMode(value: string | null): ExamCramMode {
   return 'quick-scan';
 }
 
-export function useExamCramMode(subjectId: string, articleId?: string) {
+export function useExamCramMode(subjectId: string, articleId?: string, canonicalMode: ExamCramMode = 'detailed-review') {
   const key = examCramPreferenceKey(subjectId);
   const [mode, showMode] = useState<ExamCramMode>(() => {
     // Canonical bookmarks and Study Tools references always open the original text.
-    if (!articleId || window.location.hash === `#${articleId}` || window.location.hash.startsWith(`#${articleId}-`)) return 'detailed-review';
+    if (!articleId || window.location.hash === `#${articleId}` || window.location.hash.startsWith(`#${articleId}-`)) return canonicalMode;
     try { return readExamCramMode(window.localStorage.getItem(key)); } catch { return 'quick-scan'; }
   });
   const [savingError, setSavingError] = useState(false);

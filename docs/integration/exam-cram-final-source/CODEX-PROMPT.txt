@@ -1,0 +1,16 @@
+TASK: Human Atlas — Final Exam Cram Editorial Correction
+
+Repo: PrejudiceNeutrino/human-atlas-enhanced
+Attachment: human-atlas-exam-cram-final.zip
+
+Goal: install the tightened Digestive Detailed Review. Preserve the existing dual-mode Exam Cram user interface and all three Quick Scans. Do not regenerate educational content.
+
+1. Inspect current HEAD and the working tree before editing. Another Codex task may have already implemented dual mode; do not overwrite in-progress changes, undo other commits, or perform a large refactor.
+2. Use `content/data/learn/digestive-system-exam-cram-detailed-review.json` as the authoritative NEW Digestive Detailed Review. Preserve the original Digestive Quick Scan in `data/learn/digestive-system-exam-cram.json` EXACTLY as-is.
+3. Wire the Digestive Detailed Review into the existing Quick Scan / Detailed Review selector, following Respiratory and Lymphoid. If a prior Digestive Detailed Review exists, replace its prose with this corrected JSON while retaining stable source and section IDs. The article ID is `digestive-system-exam-cram-detailed-review`. All 15 section IDs match the Digestive Quick Scan.
+4. `content/data/learn/respiratory-system-exam-cram.json` and `content/data/learn/lymphoid-system-exam-cram.json` are the previously polished Detailed Review sources. Check HEAD: if the same polished content is already installed, do not touch them; if not, apply only any missing editorial changes without clobbering newer legitimate work. Their Quick Scans must not change.
+5. Article IDs and section IDs, sourceReferences, sidebar navigation, Study Tools article-section links, mode switching, local annotations/highlights, and existing progress must be preserved. Conservatively reanchor annotations after text changes; never delete unresolved notes.
+6. Do not modify flashcards, glossary, multiple-choice questions, fill-in-the-blank, Gallery, Visualize, palettes or unrelated features. The separate expanded Digestive flashcard draft is NOT approved by this package.
+7. Verify Digestive 15/15 sections in both modes, Respiratory and Lymphoid 18/18 in both modes, source link navigation, persistence, relevant tests and build. Report any failures or remaining caveats. Respect current git branch workflow and don't merge/push without explicit request.
+
+IMPORTANT: This package supersedes the prior ~3,500-word Digestive Detailed Review draft. Do not install that older version. Prefer the corrected compact article here.

@@ -43,10 +43,12 @@ const tab = title => [...document.querySelectorAll('.learn-tab-trigger')].find(e
 const choose = async mode => click(document.querySelector(`.learn-exam-mode input[value="${mode}"]`));
 const mode = () => document.querySelector('.learn-exam-cram')?.dataset.readingMode;
 const canonicalId = subject => `${subject}-system-exam-cram`;
+const sectionCount = subject => subject === 'digestive' ? 15 : 18;
+const articleFor = (subject, mode) => { const id=canonicalId(subject),variant=api.examCramVariants[id];return variant.readingMode===mode?variant:api.articles[id]; };
 const assertArticle = (subject, readingMode) => {
-  const canonical = canonicalId(subject), article = readingMode === 'quick-scan' ? api.examCramVariants[canonical] : api.articles[canonical];
+  const canonical = canonicalId(subject), article = articleFor(subject, readingMode);
   const sections = [...document.querySelectorAll('.learn-exam-cram .learn-article-section')];
-  assert.equal(sections.length, 18);
+  assert.equal(sections.length, sectionCount(subject));
   assert.equal(normalize(document.querySelector('.learn-exam-cram .learn-article-header > .learn-markdown').textContent), markdownText(article.introMarkdown));
   for (let i = 0; i < sections.length; i++) {
     assert.equal(sections[i].querySelector('h3').id, `${canonical}-${article.sections[i].id}`);
@@ -57,7 +59,7 @@ const assertArticle = (subject, readingMode) => {
   const ids = [...document.querySelectorAll('[id]')].map(element => element.id);
   assert.equal(ids.length, new Set(ids).size, 'one mounted article and no duplicate IDs');
   for (const index of document.querySelectorAll('.learn-exam-cram .learn-index-desktop, .learn-exam-cram .learn-index-mobile')) {
-    assert.equal(index.querySelectorAll('nav a').length, 18);
+    assert.equal(index.querySelectorAll('nav a').length, sectionCount(subject));
     for (const link of index.querySelectorAll('nav a')) assert.ok(document.getElementById(link.hash.slice(1)));
   }
 };
@@ -68,28 +70,26 @@ const makeRecord = source => {
 await api.annotationStore.initialize();
 after(async () => { flushSync(() => root.unmount()); await api.annotationStore.dispose(); globalThis.fetch = originalFetch; window.close(); });
 
-test('authored content is imported byte-for-byte and Detailed Review and Digestive stay unchanged', () => {
-  const inventory = read('docs/integration/exam-cram-source/archive-inventory.json').entries;
-  for (const subject of ['respiratory', 'lymphoid']) {
-    const quick = read(`data/learn/${subject}-system-exam-cram-quick-scan.json`), detailed = read(`data/learn/${subject}-system-exam-cram.json`);
-    for (const [archiveName, file] of [[`${subject}-exam-cram-quick-scan.json`, `data/learn/${subject}-system-exam-cram-quick-scan.json`], [`${subject}-detailed-original.json`, `data/learn/${subject}-system-exam-cram.json`]]) assert.equal(createHash('sha256').update(fs.readFileSync(file)).digest('hex'), inventory.find(entry => entry.path === archiveName).sha256, file);
-    assert.equal(quick.variantOf, detailed.id); assert.equal(quick.id, `${detailed.id}-quick-scan`);
-    assert.equal(quick.sections.length, 18); assert.deepEqual(quick.sourceFiles, detailed.sourceFiles);
-    assert.deepEqual(quick.sections.map(({ id, title, slideReferences }) => ({ id, title, slideReferences })), detailed.sections.map(({ id, title, slideReferences }) => ({ id, title, slideReferences })));
-    assert.ok(quick.sections.every(section => section.markdown.trim() && section.markdown.includes('**')));
-    for (const section of detailed.sections) {
-      const source = api.annotationSources.find(source => source.target.sourceId === `${detailed.id}/${section.id}`);
-      assert.equal(source.version, api.fingerprint(`${section.title}\n${section.markdown}`));
-      assert.deepEqual(source.blocks, [api.titleBlock(section.title), ...api.markdownBlocks(section.markdown)].map((block, order) => ({ ...block, order })));
+test('final reviews match the authored package and every original Quick Scan is byte-for-byte unchanged', () => {
+  const inventory = read('docs/integration/exam-cram-final-source/archive-inventory.json');
+  for (const entry of [...inventory.installedFiles,...inventory.protectedFiles]) assert.equal(createHash('sha256').update(fs.readFileSync(entry.targetPath??entry.path)).digest('hex'),entry.sha256);
+  for (const subject of ['digestive','respiratory','lymphoid']) {
+    const quick=articleFor(subject,'quick-scan'),detailed=articleFor(subject,'detailed-review');
+    assert.equal(quick.sections.length,sectionCount(subject));assert.equal(detailed.sections.length,sectionCount(subject));
+    if(subject==='digestive')assert.deepEqual(detailed.sourceFiles,read('docs/integration/exam-cram-final-source/reference/digestive-prior-detailed-review.json').sourceFiles);
+    else assert.deepEqual(quick.sourceFiles,detailed.sourceFiles);
+    assert.deepEqual(quick.sections.map(({id,title,slideReferences})=>({id,title,slideReferences})),detailed.sections.map(({id,title,slideReferences})=>({id,title,slideReferences})));
+    for(const article of [quick,detailed])for(const section of article.sections){
+      const source=api.annotationSources.find(source=>source.target.sourceId===`${article.id}/${section.id}`);
+      assert.equal(source.version,api.fingerprint(`${section.title}\n${section.markdown}`));
+      assert.deepEqual(source.blocks,[api.titleBlock(section.title),...api.markdownBlocks(section.markdown)].map((block,order)=>({...block,order})));
     }
   }
-  assert.equal(api.examCramVariants['digestive-system-exam-cram'], undefined);
-  const keys = api.annotationSources.map(source => api.targetKey(source.target));
-  assert.equal(keys.length, new Set(keys).size);
+  const keys=api.annotationSources.map(source=>api.targetKey(source.target));assert.equal(keys.length,new Set(keys).size);
 });
 
-for (const subject of ['respiratory', 'lymphoid']) {
-  test(`${subject}: both full authored modes share the existing 18 anchors and one top-level tab`, async () => {
+for (const subject of ['digestive', 'respiratory', 'lymphoid']) {
+  test(`${subject}: both full authored modes share all existing anchors and one top-level tab`, async () => {
     window.localStorage.clear(); await render(subject); await click(tab('Exam Cram'));
     assert.equal(document.querySelectorAll('.learn-tab-trigger').length, 8);
     assert.equal(mode(), 'quick-scan'); assertArticle(subject, 'quick-scan');
@@ -111,7 +111,8 @@ for (const subject of ['respiratory', 'lymphoid']) {
     window.localStorage.clear();
     const sentinels = { 'human-atlas-study-progress:sentinel': 'preserve', [`human-atlas-gallery:v1:${subject}`]: 'preserve' };
     for (const [key, value] of Object.entries(sentinels)) window.localStorage.setItem(key, value);
-    await render(subject); await click(tab('Exam Cram')); await choose('detailed-review'); await choose('quick-scan');
+    await render(subject); await click(tab('Exam Cram')); await choose('detailed-review');
+    await render(subject); await click(tab('Exam Cram')); assert.equal(mode(),'detailed-review'); await choose('quick-scan');
     assert.deepEqual(JSON.parse(window.localStorage.getItem(api.examCramPreferenceKey(subject))), { version: 1, mode: 'quick-scan' });
     await render(subject); await click(tab('Exam Cram')); assert.equal(mode(), 'quick-scan');
     const other = subject === 'respiratory' ? 'lymphoid' : 'respiratory';
@@ -119,8 +120,9 @@ for (const subject of ['respiratory', 'lymphoid']) {
     for (const [key, value] of Object.entries(sentinels)) assert.equal(window.localStorage.getItem(key), value);
   });
 
-  test(`${subject}: Study Tools and canonical bookmarks open Detailed Review despite a Quick Scan preference`, async () => {
-    window.localStorage.clear(); await render(subject); await click(tab('Exam Cram')); await choose('detailed-review'); await choose('quick-scan');
+  test(`${subject}: Study Tools and canonical bookmarks open the referenced edition despite an alternate preference`, async () => {
+    const canonicalMode=api.canonicalExamCramMode(canonicalId(subject)),alternateMode=api.examCramVariants[canonicalId(subject)].readingMode;
+    window.localStorage.clear(); await render(subject); await click(tab('Exam Cram')); await choose(canonicalMode); await choose(alternateMode);
     await click(tab('Study Tools')); await waitFor(() => document.querySelector('.study-activity-nav'), 'study tools');
     // Use the real Study Tools link renderer with a supplied canonical Exam Cram reference.
     const bank = read(`data/learn/${subject}-study-tools/multiple-choice.json`);
@@ -130,22 +132,23 @@ for (const subject of ['respiratory', 'lymphoid']) {
     const host = document.createElement('div'); document.body.append(host); const links = createRoot(host);
     flushSync(() => links.render(createElement(api.SourceLinks, { refs: [ref], route: `/learn/${subject}` })));
     try {
-      await click(host.querySelector('a')); await waitFor(() => mode() === 'detailed-review', 'canonical reference selects original text');
+      await click(host.querySelector('a')); await waitFor(() => mode() === canonicalMode, 'canonical reference selects original text');
       assert.equal(document.activeElement.id, `${ref.articleId}-${ref.sectionId}`);
-      assertArticle(subject, 'detailed-review');
+      assertArticle(subject, canonicalMode);
     } finally { flushSync(() => links.unmount()); host.remove(); }
-    assert.equal(JSON.parse(window.localStorage.getItem(api.examCramPreferenceKey(subject))).mode, 'quick-scan', 'a reference jump does not overwrite the preference');
-    await render(subject, `#${ref.articleId}-${ref.sectionId}`); assert.equal(mode(), 'detailed-review');
+    assert.equal(JSON.parse(window.localStorage.getItem(api.examCramPreferenceKey(subject))).mode, alternateMode, 'a reference jump does not overwrite the preference');
+    await render(subject, `#${ref.articleId}-${ref.sectionId}`); assert.equal(mode(), canonicalMode);
   });
 
-  test(`${subject}: old detailed notes and new Quick Scan highlights remain isolated and reopen the correct mode`, async () => {
+  test(`${subject}: canonical notes and alternate-mode highlights remain isolated and reopen the correct mode`, async () => {
     window.localStorage.clear(); await api.annotationStore.clear(); await render(subject); await click(tab('Exam Cram'));
-    await choose('detailed-review');
+    const canonicalMode=api.canonicalExamCramMode(canonicalId(subject)),alternateMode=api.examCramVariants[canonicalId(subject)].readingMode;
+    await choose(canonicalMode);
     const canonical = canonicalId(subject), sectionId = api.articles[canonical].sections[0].id;
     const source = api.annotationSources.find(source => source.target.sourceId === `${canonical}/${sectionId}`), old = makeRecord(source);
     await api.annotationStore.create(old); await waitFor(() => document.querySelector('[data-annotation-first]'), 'old detailed highlight');
     const original = JSON.stringify(api.annotationStore.getSnapshot().records.find(record => record.id === old.id));
-    await choose('quick-scan'); assert.equal(document.querySelector(`[data-annotation-id="${old.id}"]`), null);
+    await choose(alternateMode); assert.equal(document.querySelector(`[data-annotation-id="${old.id}"]`), null);
     const block = document.querySelector('.learn-exam-cram .learn-article-section .learn-markdown [data-annotation-block]');
     const walker = document.createTreeWalker(block, window.NodeFilter.SHOW_TEXT); walker.nextNode();
     const range = document.createRange(); range.setStart(walker.currentNode, 0); range.setEnd(walker.currentNode, Math.min(8, walker.currentNode.textContent.length));
@@ -154,17 +157,17 @@ for (const subject of ['respiratory', 'lymphoid']) {
     await click([...document.querySelectorAll('.annotation-toolbar button')].find(button => button.textContent === 'Highlight'));
     await waitFor(() => api.annotationStore.getSnapshot().records.length === 2, 'Quick Scan saved');
     const quick = api.annotationStore.getSnapshot().records.find(record => record.id !== old.id);
-    assert.equal(quick.target.tabId, canonical); assert.equal(quick.target.sourceId, `${canonical}-quick-scan/${sectionId}`);
+    assert.equal(quick.target.tabId, canonical); assert.equal(quick.target.sourceId, `${api.examCramVariants[canonical].id}/${sectionId}`);
     assert.equal(JSON.stringify(api.annotationStore.getSnapshot().records.find(record => record.id === old.id)), original);
-    await choose('detailed-review'); assert.ok(document.querySelector(`[data-annotation-id="${old.id}"]`)); assert.equal(document.querySelector(`[data-annotation-id="${quick.id}"]`), null);
+    await choose(canonicalMode); assert.ok(document.querySelector(`[data-annotation-id="${old.id}"]`)); assert.equal(document.querySelector(`[data-annotation-id="${quick.id}"]`), null);
     await render(subject, `#annotation=${quick.id}`); await waitFor(() => document.querySelector(`[data-annotation-id="${quick.id}"]`), 'Quick Scan note reopen');
-    assert.equal(mode(), 'quick-scan');
+    assert.equal(mode(), alternateMode);
     assert.ok(api.annotationTargetUrl(quick).endsWith(`#annotation=${quick.id}`));
-    await render(subject, `#annotation=${old.id}`); await waitFor(() => document.querySelector(`[data-annotation-id="${old.id}"]`), 'Detailed Review note reopen'); assert.equal(mode(), 'detailed-review');
+    await render(subject, `#annotation=${old.id}`); await waitFor(() => document.querySelector(`[data-annotation-id="${old.id}"]`), 'Detailed Review note reopen'); assert.equal(mode(), canonicalMode);
     flushSync(() => api.revisitReading(api.annotationTargetUrl(quick)));
-    await waitFor(() => document.querySelector(`[data-annotation-id="${quick.id}"]`), 'in-place Quick Scan revisit'); assert.equal(mode(), 'quick-scan');
+    await waitFor(() => document.querySelector(`[data-annotation-id="${quick.id}"]`), 'in-place Quick Scan revisit'); assert.equal(mode(), alternateMode);
     flushSync(() => api.revisitReading(api.annotationTargetUrl(old)));
-    await waitFor(() => document.querySelector(`[data-annotation-id="${old.id}"]`), 'in-place Detailed Review revisit'); assert.equal(mode(), 'detailed-review');
+    await waitFor(() => document.querySelector(`[data-annotation-id="${old.id}"]`), 'in-place Detailed Review revisit'); assert.equal(mode(), canonicalMode);
   });
 }
 
@@ -180,15 +183,13 @@ test('invalid or blocked storage remains readable, and cross-tab preference upda
   flushSync(() => window.dispatchEvent(new window.StorageEvent('storage', { key: api.examCramPreferenceKey('respiratory'), newValue: '{"version":1,"mode":"quick-scan"}' }))); assert.equal(mode(), 'quick-scan');
 });
 
-test('mode controls keep native keyboard semantics, mobile indices and accessible names; Digestive stays single-mode', async () => {
-  for (const subject of ['respiratory', 'lymphoid']) {
+test('all three mode controls keep native keyboard semantics, mobile indices and accessible names', async () => {
+  for (const subject of ['digestive', 'respiratory', 'lymphoid']) {
     await render(subject); await click(tab('Exam Cram'));
     const radios = [...document.querySelectorAll('.learn-exam-mode input')];
     assert.equal(radios.length, 2); assert.ok(radios.every(input => input.type === 'radio' && !input.disabled)); assert.equal(radios[0].name, radios[1].name);
     radios[0].focus(); assert.equal(document.activeElement, radios[0]);
     const results = await axe.run(document.querySelector('.learn-exam-cram'), { rules: { 'color-contrast': { enabled: false } } }); assert.deepEqual(results.violations.map(item => item.id), []);
-    assert.equal(document.querySelectorAll('.learn-exam-cram .learn-index-mobile nav a').length, 18);
+    assert.equal(document.querySelectorAll('.learn-exam-cram .learn-index-mobile nav a').length, sectionCount(subject));
   }
-  await render('digestive'); await click(tab('Exam Cram')); assert.equal(document.querySelector('.learn-exam-mode'), null);
-  assert.equal(document.querySelectorAll('.learn-article-section').length, api.articles['digestive-system-exam-cram'].sections.length);
 });

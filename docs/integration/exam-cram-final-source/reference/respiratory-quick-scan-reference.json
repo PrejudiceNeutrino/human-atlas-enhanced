@@ -1,0 +1,279 @@
+{
+  "id": "respiratory-system-exam-cram-quick-scan",
+  "title": "Exam Cram",
+  "subject": "respiratory",
+  "introMarkdown": "**Quick Scan:** Short, bolded terms, definitions, pathways, comparisons, and high-yield associations. For fuller explanations switch to **Detailed Review**.",
+  "sourceFiles": [
+    "23-Respiratory System.pptx",
+    "Respiratory - Copy.pptx",
+    "23-Study Guide.docx"
+  ],
+  "subtitle": "Quick Scan",
+  "variantOf": "respiratory-system-exam-cram",
+  "readingMode": "quick-scan",
+  "sections": [
+    {
+      "id": "functions-organization",
+      "title": "Seven Functions and Upper/Lower Divisions",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          2,
+          3
+        ],
+        "Respiratory - Copy.pptx": [
+          1
+        ]
+      },
+      "markdown": "- **Gas exchange:** O₂ enters blood; CO₂ leaves it.\n- **Air movement:** Ventilates the lungs.\n- **Environmental protection:** Conditions inspired air; limits drying and temperature changes.\n- **Defense:** Filters/traps particles and pathogens.\n- **Sound production:** Supports voice.\n- **Olfaction:** Carries odorants to smell receptors.\n- **Acid–base regulation:** Ventilation changes CO₂ and blood pH.\n\n**Upper tract:** Nose, nasal cavity, paranasal sinuses, pharynx — **warm, humidify, filter**.\n\n**Lower tract:** Larynx, trachea, bronchi, bronchioles, lungs.\n\n- **Conducting zone:** Nose → **terminal bronchioles**; carries/conditions air.\n- **Respiratory zone:** **Respiratory bronchioles** → alveolar ducts/sacs → alveoli; gas exchange."
+    },
+    {
+      "id": "upper-lower-airway",
+      "title": "Nose, Pharynx, and Airflow Route",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          4,
+          7
+        ],
+        "Respiratory - Copy.pptx": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "markdown": "**Air route:** Nostrils → nasal cavity → **choanae** → nasopharynx → oropharynx → laryngopharynx → larynx → trachea → **primary → secondary → tertiary bronchi** → bronchioles → terminal bronchioles → respiratory bronchioles → alveolar ducts → alveoli.\n\n- **Alae:** Lateral walls of nostrils.\n- **Nasal vestibule:** Space just inside nostrils.\n- **Vibrissae:** Nasal hairs trapping coarse particles.\n- **Superior/middle/inferior conchae:** Increase air–mucosa contact.\n- **Meatuses:** Passages beneath corresponding conchae.\n- **Hard palate:** Bony anterior separation of mouth and nasal cavity.\n- **Soft palate:** Muscular posterior palate; **uvula:** Hanging projection.\n- **Nasopharynx:** Upper pharynx; auditory-tube openings and pharyngeal tonsil.\n- **Oropharynx:** Behind mouth.\n- **Laryngopharynx:** Shared inferior passage toward airway/esophagus.\n\n**Nasal breathing:** Warming + humidification + filtration + olfaction; nasal nitric oxide is present. Do not assume it always raises oxygen saturation."
+    },
+    {
+      "id": "mucociliary-defenses",
+      "title": "Respiratory Mucosa, Lamina Propria, and Mucus Escalator",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          5,
+          6
+        ],
+        "Respiratory - Copy.pptx": [
+          10
+        ]
+      },
+      "markdown": "- **Respiratory epithelium:** Mostly **pseudostratified ciliated columnar** with mucus-producing cells in large conducting airways.\n- **Lamina propria:** Connective tissue beneath epithelium; vessels, glands, immune support.\n- **Respiratory mucosa:** Epithelium + supporting lamina propria.\n- **Mucociliary/mucus escalator:** **Mucus traps** debris → **cilia move** mucus toward pharynx → swallow or cough out.\n- **Alveolar macrophages:** Remove particles that reach gas-exchange regions.\n\n**Recall:** **Mucus catches; cilia carry.**"
+    },
+    {
+      "id": "tissue-linings",
+      "title": "Regional Histology Identification",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          6,
+          17
+        ],
+        "Respiratory - Copy.pptx": [
+          15
+        ]
+      },
+      "markdown": "- **Nasal respiratory region / nasopharynx:** Mainly pseudostratified **ciliated columnar**.\n- **Oropharynx / laryngopharynx:** **Nonkeratinized stratified squamous**; resists food abrasion.\n- **Trachea / larger bronchi:** Pseudostratified ciliated columnar; mucus production.\n- **Bronchioles:** Progress toward **simple columnar/cuboidal**; fewer cilia; club cells.\n- **Alveoli:** **Simple squamous**, mostly **type I pneumocytes**; shortest gas-diffusion path.\n\n**Pattern:** Larger airways = **protection and clearance**; alveoli = **thin exchange surface**. Nasal olfactory/vestibular regions are exceptions to the usual respiratory lining."
+    },
+    {
+      "id": "larynx-voice",
+      "title": "Laryngeal Cartilages, Folds, and Voice",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "Respiratory - Copy.pptx": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "markdown": "- **Larynx:** Open airway + protection during swallowing + voice production.\n- **Unpaired cartilages (3):** **Epiglottic, thyroid, cricoid**.\n- **Paired cartilage types (3):** **Arytenoid, corniculate, cuneiform**.\n- **Thyroid cartilage:** Laryngeal prominence (Adam's apple).\n- **Cricoid:** Complete cartilage ring inferior to thyroid cartilage.\n- **Arytenoids:** Move true vocal folds; help open/close glottis.\n- **Vestibular folds:** **False vocal cords**; protective.\n- **Vocal folds:** **True vocal cords**; vibrate to produce voice.\n- **Glottis:** Opening between the true vocal folds.\n- **Phonation:** Producing voiced sound.\n- **Articulation:** Shaping sound into speech (tongue, lips, palate, etc.).\n- **Pitch:** Changes with vocal-fold **tension, length, and mass/thickness**; more tension usually raises pitch.\n- **Intrinsic muscles:** Move/tension folds; regulate glottic opening.\n- **Extrinsic muscles:** Raise/lower and position the whole larynx.\n- **Epiglottis:** Helps divert swallowed material away from airway; not the only protective mechanism."
+    },
+    {
+      "id": "cough-reflex",
+      "title": "Epiglottis and Cough Reflex Sequence",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          10,
+          12
+        ],
+        "Respiratory - Copy.pptx": [
+          6,
+          10
+        ]
+      },
+      "markdown": "**Cough sequence:** Irritant stimulates airway receptors → sensory signal to **medulla** → glottis closes → expiratory muscles raise thoracic pressure → glottis opens → explosive airflow expels material.\n\n- **Epiglottis:** Helps protect airway during swallowing.\n- **Glottis:** Opening between true vocal folds.\n- **Cough:** Reflex clearance using pressure and rapid expiration.\n\n**Exam contrast:** Epiglottis ≠ glottis."
+    },
+    {
+      "id": "trachea-bronchi",
+      "title": "Trachea, Carina, Bronchi and Autonomic Effects",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          13,
+          14,
+          15
+        ],
+        "Respiratory - Copy.pptx": [
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "markdown": "- **Trachea:** About **15–20 C-shaped cartilage supports**; posterior opening leaves room for esophagus.\n- **Trachealis:** Posterior smooth muscle; adjusts tracheal diameter.\n- **Elastic ligaments/tissue:** Permit stretch and recoil.\n- **Carina:** Ridge at division into right/left main bronchi.\n- **Primary (main) bronchi:** Enter each lung.\n- **Secondary (lobar) bronchi:** One per lobe: **right 3, left 2**.\n- **Tertiary (segmental) bronchi:** Supply bronchopulmonary segments.\n- **Bronchioles:** **No cartilage**; significant smooth-muscle control.\n- **Right main bronchus:** Usually wider, shorter, more vertical; aspiration more likely.\n- **Sympathetic/β₂:** Generally **bronchodilation**.\n- **Parasympathetic/cholinergic:** Generally **bronchoconstriction**.\n\n**Route:** Main → lobar → segmental → smaller bronchi → bronchioles → terminal → respiratory bronchioles → alveolar ducts → alveoli.\n\n**Lecture association:** Trachealis tends toward relaxation with sympathetic influence; contraction with parasympathetic influence."
+    },
+    {
+      "id": "lung-anatomy",
+      "title": "Lung Lobes, Fissures, and Pleura",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          4,
+          15,
+          24
+        ],
+        "Respiratory - Copy.pptx": [
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "markdown": "- **Right lung:** **3 lobes** — superior, middle, inferior; **horizontal + oblique fissures**.\n- **Left lung:** **2 lobes** — superior, inferior; **oblique fissure**; **cardiac notch**.\n- **Apex:** Superior tip; **base:** Inferior diaphragmatic surface.\n- **Costal surface:** Faces ribs; **mediastinal surface:** Faces middle of thorax.\n- **Hilum:** Entry/exit of bronchi, pulmonary vessels, nerves, lymphatics.\n- **Visceral pleura:** Adheres to lung surface.\n- **Parietal pleura:** Lines chest wall.\n- **Pleural cavity:** Thin, fluid-containing **potential space** between layers; limits friction and assists lung expansion with thorax.\n\n**Know on model:** Lung sides/lobes/fissures; cardiac notch; apex/base; hilar region; visceral/parietal pleura; diaphragm."
+    },
+    {
+      "id": "alveoli-membrane",
+      "title": "Alveolar Cell Types and Respiratory Membrane",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          16,
+          17,
+          18,
+          19
+        ],
+        "Respiratory - Copy.pptx": [
+          15
+        ]
+      },
+      "markdown": "- **Type I pneumocytes:** Thin **simple squamous** gas-exchange cells; most alveolar surface.\n- **Type II pneumocytes:** Produce **surfactant**; reduces surface tension and alveolar collapse.\n- **Alveolar macrophages (dust cells):** Phagocytose debris/microbes.\n- **Alveolar ducts:** Lead to alveolar sacs and alveoli.\n- **Pulmonary capillaries:** Surround alveoli for exchange.\n- **Respiratory membrane:** **Type I alveolar epithelium + (often fused) basement membranes + capillary endothelium**.\n\n**Direction:** **O₂ alveolus → blood; CO₂ blood → alveolus.**\n\n**Why thin?** Short diffusion distance increases gas-exchange efficiency."
+    },
+    {
+      "id": "external-internal",
+      "title": "External, Internal, and Cellular Respiration",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          20,
+          21,
+          34
+        ]
+      },
+      "markdown": "**Instructor's three steps of external respiration:**\n1. **Pulmonary ventilation:** Air enters/leaves alveoli.\n2. **Pulmonary gas exchange:** O₂ into blood; CO₂ into alveoli.\n3. **Blood transport:** Circulation carries gases between lungs and tissues.\n\n- **Internal respiration:** O₂ moves **blood → tissues**; CO₂ moves **tissues → blood**.\n- **Cellular respiration:** Cells use fuel and, in aerobic metabolism, O₂ to produce ATP.\n\n**Terminology note:** Some texts use “external respiration” more narrowly for exchange at the lungs; know the instructor's **three-step list**."
+    },
+    {
+      "id": "boyle-law",
+      "title": "Boyle’s Law and Pressure Direction",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          22,
+          23,
+          26
+        ]
+      },
+      "markdown": "- **Boyle's law:** Pressure inversely related to volume at constant temperature and gas amount.\n- **Equation:** **P₁V₁ = P₂V₂**.\n- **Inspiration:** Thoracic/lung **volume ↑ → alveolar pressure ↓** below atmosphere → air **in**.\n- **Expiration:** Lung **volume ↓ → alveolar pressure ↑** above atmosphere → air **out**.\n- **Atmospheric pressure (sea-level example):** ~**760 mmHg**.\n- **Inspiring alveoli (lecture example):** ~**759 mmHg**; **expiring:** ~**761 mmHg**.\n- **Intrapulmonary pressure:** Pressure within alveoli.\n- **Intrapleural pressure:** Pressure in pleural space; not the same as alveolar pressure.\n\n**Fast recall:** **Volume up → pressure down → air in.**"
+    },
+    {
+      "id": "breathing-mechanics",
+      "title": "Inspiration, Expiration, Primary Muscles",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          24,
+          25,
+          27,
+          28,
+          29
+        ],
+        "Respiratory - Copy.pptx": [
+          16
+        ]
+      },
+      "markdown": "- **Quiet breathing (eupnea):** Inspiration **active**; expiration usually **passive**.\n- **Primary inspiratory muscles (2):** **Diaphragm + external intercostals**.\n- **Inspiration:** Diaphragm **contracts/descends**; ribs elevate; volume ↑; pressure ↓.\n- **Quiet expiration:** Diaphragm **relaxes/ascends**; elastic recoil; volume ↓; pressure ↑.\n- **Forced inspiration:** Adds accessory muscles (e.g., **scalenes, sternocleidomastoid**).\n- **Forced expiration:** **Abdominals + internal intercostals** actively help expel air.\n- **Forced breathing:** Greater muscular effort than quiet breathing.\n\n**Exam distinction:** Quiet expiration does **not** normally require active abdominal contraction."
+    },
+    {
+      "id": "volumes-capacities",
+      "title": "Four Volumes, Vital Capacity, and Total Lung Capacity",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          30,
+          31
+        ]
+      },
+      "markdown": "**Four respiratory volumes:**\n- **TV (tidal volume):** Ordinary quiet breath; ~**500 mL** in standard classroom example.\n- **IRV:** Extra inhaled after normal inspiration.\n- **ERV:** Extra exhaled after normal expiration.\n- **RV:** Air remaining after maximal expiration.\n\n**Capacities:**\n- **IC = TV + IRV**.\n- **FRC = ERV + RV**.\n- **VC (vital capacity) = IRV + TV + ERV**.\n- **TLC (total lung capacity) = VC + RV**.\n\n**Exam trap:** **VC excludes RV; TLC includes RV.** Simple spirometry does not directly measure RV."
+    },
+    {
+      "id": "henry-diffusion",
+      "title": "Henry’s Law, Gas Gradients, and Exchange",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          32,
+          33,
+          34
+        ]
+      },
+      "markdown": "- **Partial pressure (Pₒ₂, P꜀ₒ₂):** Pressure contribution of an individual gas.\n- **Henry's law:** Dissolved gas concentration depends on its **partial pressure and solubility** at a given temperature.\n- **Diffusion:** Each gas moves down its **own partial-pressure gradient**.\n\n**At lungs:** **O₂ alveoli → blood**; **CO₂ blood → alveoli**.\n\n**At tissues:** **O₂ blood → cells**; **CO₂ cells → blood**.\n\n- **Why exchange works:** Thin respiratory membrane; maintained partial-pressure differences.\n- **CO₂:** More soluble than O₂; diffuses effectively even across a smaller pressure gradient.\n\n**Contrast:** **Boyle = ventilation pressure/volume. Henry = gas dissolving in liquid.**"
+    },
+    {
+      "id": "hemoglobin-transport",
+      "title": "Oxyhemoglobin, Carbaminohemoglobin, and Saturation",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          35,
+          37
+        ]
+      },
+      "markdown": "- **Hemoglobin (Hb):** Main O₂ carrier inside RBCs.\n- **Oxyhemoglobin (HbO₂):** Hb carrying **O₂** at heme iron.\n- **Carbaminohemoglobin (HbCO₂):** Hb carrying **CO₂** on globin groups.\n- **High Pₒ₂ (lungs):** **O₂ loading**.\n- **Low Pₒ₂ (tissues):** **O₂ unloading**.\n- **O₂–Hb curve:** **Sigmoidal (S-shaped)** from cooperative binding.\n- **Plateau (high Pₒ₂):** High saturation in lungs.\n- **Steep region (lower Pₒ₂):** Facilitates unloading in tissues.\n- **Right shift:** **CO₂ ↑, H⁺ ↑ (pH ↓), temperature ↑** → lower Hb–O₂ affinity → more release.\n- **Left shift:** Greater affinity; less release at same Pₒ₂.\n- **Bohr effect:** More CO₂/H⁺ encourages O₂ unloading.\n\n**Recall:** Oxygenated blood is bright red; deoxygenated blood dark red, **not blue**."
+    },
+    {
+      "id": "co2-and-ph",
+      "title": "Three CO2 Routes, Carbonic Anhydrase, and pH",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          2,
+          36,
+          37
+        ]
+      },
+      "markdown": "**Three CO₂ transport forms (lecture approximations):**\n- **~70%:** **Bicarbonate (HCO₃⁻)** pathway.\n- **~23%:** **Carbamino compounds**, including Hb–CO₂.\n- **~7%:** Physically dissolved CO₂.\n\n- **Carbonic anhydrase:** Enzyme accelerating CO₂ hydration in RBCs.\n- **Reaction:** **CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻**.\n- **Chloride shift:** RBC exports HCO₃⁻ in exchange for Cl⁻ in systemic capillaries; reverse near lungs.\n- **CO₂ retention:** **H⁺ ↑ → pH ↓**; may cause respiratory acidosis.\n- **CO₂ exhalation ↑:** **H⁺ ↓ → pH ↑**; may cause respiratory alkalosis.\n\n**Clarification:** The slide calls the ~70% route “carbonic acid,” but **bicarbonate is the principal transported form**; H₂CO₃ is transient."
+    },
+    {
+      "id": "brainstem-control",
+      "title": "Medullary DRG/VRG and Pontine Centers",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      "markdown": "- **Respiratory rhythmicity centers:** Neural networks primarily in **medulla oblongata**; pons modifies breathing pattern.\n- **DRG (dorsal respiratory group):** Basic inspiratory activity/sensory integration; lecture associates with **diaphragm + external intercostals**.\n- **VRG (ventral respiratory group):** Stronger/forced respiratory output; lecture emphasizes **accessory muscles**.\n- **Apneustic center (pons; older term):** **Promotes inspiration**; lecture says **stimulates DRG**.\n- **Pneumotaxic center (pons; older term):** **Limits inspiration**; restrains apneustic influence.\n- **Central chemoreception:** Strongly sensitive to **CO₂-related pH changes** in brain/CSF.\n- **Peripheral chemoreceptors:** **Carotid/aortic bodies** respond to O₂, CO₂ and pH changes.\n\n**Exam pairing:** **DRG = basic inspiration; VRG = forced patterns; apneustic = stimulate; pneumotaxic = limit.** The discrete-center names are simplified lecture terminology."
+    },
+    {
+      "id": "conditions-and-recall",
+      "title": "Named Conditions and Rapid Anatomy Recall",
+      "slideReferences": {
+        "23-Respiratory System.pptx": [
+          42
+        ],
+        "Respiratory - Copy.pptx": [
+          8,
+          9,
+          12,
+          18
+        ]
+      },
+      "markdown": "**Instructor-named conditions:**\n- **Hypoxia:** Insufficient tissue oxygen.\n- **Anoxia:** Essentially no available tissue oxygen (slide may say **apoxia**).\n- **Laryngitis:** Inflamed larynx; hoarseness.\n- **Epiglottitis:** Inflamed/swollen epiglottic region; potential airway emergency.\n- **Pneumonia:** Inflamed/infected lung parenchyma; impaired gas exchange.\n- **Cystic fibrosis:** Abnormal epithelial ion transport → thick airway mucus.\n- **Asthma:** Variable, often reversible airway narrowing with inflammation/hyperresponsiveness.\n\n**Identify on models:** Nasal conchae/meatuses; hard/soft palate; uvula; pharynx subdivisions; epiglottis; thyroid/cricoid/arytenoid/corniculate/cuneiform cartilages; true/false vocal folds; tracheal rings, trachealis, carina; primary/secondary/tertiary bronchi; lung lobes/fissures, cardiac notch, apex/base, pleura, diaphragm; alveolar ducts/alveoli.\n\n**Rapid pairs:** **Type I = diffusion; II = surfactant; macrophage = defense.** **Sympathetic = dilate; parasympathetic = constrict.** **Boyle = inverse P/V; Henry = dissolved gas.** **DRG = quiet inspiration; VRG = stronger/forced effort.** **Most CO₂ = HCO₃⁻.**"
+    }
+  ]
+}

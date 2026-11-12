@@ -1,0 +1,283 @@
+{
+  "id": "lymphoid-system-exam-cram-quick-scan",
+  "title": "Exam Cram",
+  "subject": "Lymphoid System",
+  "introMarkdown": "**Quick Scan:** Short, bolded terms, definitions, pathways, comparisons, and high-yield associations. For fuller explanations switch to **Detailed Review**.",
+  "sourceFiles": [
+    "22-Lymphoid System-new.pptx",
+    "Lymphoid - Copy.pptx",
+    "22-Study Guide.docx"
+  ],
+  "subtitle": "Quick Scan",
+  "variantOf": "lymphoid-system-exam-cram",
+  "readingMode": "quick-scan",
+  "sections": [
+    {
+      "id": "three-core-roles",
+      "title": "Three Core Roles",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          3,
+          4
+        ],
+        "Lymphoid - Copy.pptx": [
+          2,
+          20
+        ]
+      },
+      "markdown": "**Three major lymphatic functions:**\n- **Fluid recovery:** Returns excess **interstitial fluid and proteins** to venous blood; limits edema.\n- **Immune defense:** Transports antigens/immune cells; supports surveillance and activation.\n- **Dietary-fat transport:** Intestinal **lacteals** absorb chylomicrons; fat-rich **chyle** enters lymph.\n\n- **Lymphopoiesis:** Production of lymphocytes.\n\n**Rapid recall:** **Fluid balance + defense + fat absorption.**"
+    },
+    {
+      "id": "fluid-and-capillaries",
+      "title": "Lymph, Interstitial Fluid, and Capillaries",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "Lymphoid - Copy.pptx": [
+          3,
+          4,
+          12
+        ]
+      },
+      "markdown": "- **Blood plasma:** Fluid inside blood vessels.\n- **Interstitial fluid:** Fluid surrounding tissue cells.\n- **Lymph:** Interstitial fluid **after entering a lymphatic vessel**.\n- **Initial lymphatic capillaries:** **Blind-ended**, highly permeable channels.\n- **Overlapping endothelial flaps:** Open inward when tissue pressure rises; limit backflow.\n- **Anchoring filaments:** Help hold capillaries open as surrounding tissue swells.\n- **Basement membrane:** Incomplete/discontinuous in many initial lymphatic capillaries.\n\n**Fluid route:** Blood plasma → interstitial fluid → lymphatic capillary (**lymph**) → collecting vessels → lymphatic trunks/ducts → venous blood.\n\n**Contrast:** Blood capillaries connect blood circuits; initial lymphatics begin **blindly**."
+    },
+    {
+      "id": "valves-and-lymph-propulsion",
+      "title": "Valves and Lymph Propulsion",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          7,
+          8
+        ],
+        "Lymphoid - Copy.pptx": [
+          12
+        ]
+      },
+      "markdown": "- **Collecting-vessel valves:** Prevent backward lymph flow.\n- **Intrinsic lymphatic contractions:** Smooth muscle propels lymph.\n- **Skeletal muscle pump:** Movement compresses nearby lymph vessels.\n- **Respiratory pump:** Pressure changes with breathing favor lymph return.\n- **Nearby arterial pulsations:** Can assist transport.\n- **Lymphedema:** Swelling caused by inadequate lymph drainage.\n\n**Key contrast:** **Entry flaps** admit tissue fluid into capillaries; **one-way valves** guide lymph through collecting vessels. No central lymphatic heart."
+    },
+    {
+      "id": "ducts-trunks-and-drainage",
+      "title": "Right Duct, Thoracic Duct, and Trunks",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          9,
+          10,
+          11
+        ],
+        "Lymphoid - Copy.pptx": [
+          9
+        ]
+      },
+      "markdown": "- **Right lymphatic duct:** Drains **right head/neck + right upper limb + right upper thorax** → **right venous angle**.\n- **Thoracic duct:** Drains **the rest of the body** → **left venous angle**.\n- **Venous angle:** Junction of **internal jugular + subclavian veins**.\n- **Cisterna chyli:** Variable enlarged reservoir near thoracic duct origin; receives lower-body/intestinal lymph.\n\n**Right-side trunks (3):** **Right jugular, right subclavian, right bronchomediastinal**.\n\n**Thoracic-duct system — instructor's six named trunks:** **Left jugular, left subclavian, left bronchomediastinal, right lumbar, left lumbar, intestinal**.\n\n**Memory rule:** **Right duct = right upper quadrant; thoracic duct = everything else.** Trunk joining patterns vary anatomically."
+    },
+    {
+      "id": "organs-versus-tissues",
+      "title": "Three Course-Defined Lymphoid Organs vs Tissues",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          17
+        ],
+        "Lymphoid - Copy.pptx": [
+          12,
+          18
+        ]
+      },
+      "markdown": "- **Instructor's three encapsulated lymphoid organs:** **Lymph nodes, thymus, spleen**.\n- **Lymphoid organ (lecture distinction):** Organized structure with connective-tissue capsule.\n- **Lymphoid tissue:** Lymphocyte-rich areas/nodules, often without a separate complete capsule.\n- **Primary lymphoid sites:** **Bone marrow** (B-cell development) + **thymus** (T-cell maturation).\n- **Secondary lymphoid sites:** **Lymph nodes, spleen, MALT**; antigen encounters/activation.\n\n**Exam caution:** Many texts also classify **bone marrow** as a primary lymphoid **organ**. For the lecture's “three organs,” use the instructor's named three."
+    },
+    {
+      "id": "lymph-node-flow",
+      "title": "Lymph Node Flow and Identification",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          18,
+          19,
+          20
+        ],
+        "Lymphoid - Copy.pptx": [
+          6,
+          7,
+          8
+        ]
+      },
+      "markdown": "**Lymph pathway:** **Afferent vessel → subcapsular sinus → cortical/trabecular sinuses → medullary sinuses → efferent vessel**.\n\n- **Afferent:** **Arrives**, usually at convex surface.\n- **Efferent:** **Exits** at **hilum**.\n- **Capsule:** Outer connective covering; **trabeculae** extend inward.\n- **Hilum:** Vessel entry/exit indentation.\n- **Outer cortex / follicles:** Mainly **B cells**.\n- **Paracortex (deep cortex):** Mainly **T cells**.\n- **Medullary cords:** Plasma cells, lymphocytes, macrophages.\n- **Medullary sinuses:** Conduct lymph toward efferent vessels.\n- **Germinal center:** Activated B-cell proliferation/selection in follicles.\n- **Function:** **Filters lymph** and promotes antigen–lymphocyte encounters.\n\n**Do not confuse:** The B-cell/T-cell regions are **locations**; lymph itself flows through **sinuses**."
+    },
+    {
+      "id": "lymphocyte-classes-and-development",
+      "title": "B Cells, T Cells, NK Cells, and Lymphopoiesis",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          21
+        ],
+        "Lymphoid - Copy.pptx": [
+          12,
+          17
+        ]
+      },
+      "markdown": "- **B cells:** Develop/mature in **bone marrow**; **adaptive humoral** immunity.\n- **T cells:** Precursors from marrow; mature/selected in **thymus**; **adaptive cell-mediated** immunity.\n- **NK cells:** **Innate** killing of certain infected/abnormal cells.\n- **CD4 helper T cells:** Coordinate immune responses; help B cells via signals.\n- **CD8 cytotoxic T cells:** Kill appropriately recognized infected/abnormal host cells.\n- **Regulatory T cells:** Suppress excessive/self-directed responses (older term: *suppressor*).\n- **Plasma cells:** Differentiated B cells that **secrete antibodies**.\n- **Memory B/T cells:** Faster responses after antigen re-exposure.\n\n**Instructor clarification needed:** Guide asks for a **B-cell differentiation hormone**, but slides name **thymosins for T-cell development**, not a corresponding single B-cell hormone. **Do not substitute thymosin for B cells.**"
+    },
+    {
+      "id": "thymus",
+      "title": "Thymus, Blood–Thymus Barrier, and Involution",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          21,
+          22
+        ],
+        "Lymphoid - Copy.pptx": [
+          17
+        ]
+      },
+      "markdown": "- **Thymus location:** Anterior/superior **mediastinum**; prominent in childhood.\n- **Lobes/lobules:** Two lobes; septa divide them into lobules.\n- **Cortex:** Darker, lymphocyte-dense outer lobular region.\n- **Medulla:** Paler inner region; contains **Hassall (thymic) corpuscles**.\n- **Thymic epithelial cells:** Support T-cell development; participate in protective barriers.\n- **Blood–thymus barrier:** Helps shield immature thymocytes in cortex.\n- **Thymosins:** Lecture-associated thymic signals promoting **T-cell maturation**.\n- **Positive/negative selection:** Support functional T cells and self-tolerance.\n- **Thymic involution:** Age-related replacement of much thymic tissue by fat.\n\n**Contrast:** **Thymus = T-cell training**, not filtration of afferent lymph like a node."
+    },
+    {
+      "id": "spleen",
+      "title": "Spleen: Red/White Pulp and Blood Path",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          23,
+          24,
+          25
+        ],
+        "Lymphoid - Copy.pptx": [
+          15,
+          16
+        ]
+      },
+      "markdown": "- **Spleen:** Largest lymphoid organ; **left upper abdomen**, near ribs **9–11**.\n- **Main function:** Filters **blood**; lymph nodes filter **lymph**.\n- **White pulp:** Lymphocyte-rich; responds to blood-borne antigens.\n- **Red pulp:** Removes aging/damaged **RBCs**; macrophages recover materials including iron.\n- **Capsule/trabeculae:** Supporting connective tissue.\n- **Hilum:** Splenic artery/vein entry/exit.\n- **Splenectomy:** Surgical spleen removal.\n- **Splenic rupture:** Can cause severe internal bleeding.\n\n**Blood path:** Splenic artery → trabecular arteries → central arteries → smaller arterial branches → red-pulp cords/sinusoids → veins → splenic vein."
+    },
+    {
+      "id": "malt-and-tonsils",
+      "title": "Tonsils, Peyer's Patches, and MALT",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          17
+        ],
+        "Lymphoid - Copy.pptx": [
+          13,
+          14,
+          18,
+          19
+        ]
+      },
+      "markdown": "- **MALT:** **Mucosa-associated lymphoid tissue**; immune defense at mucosal surfaces.\n- **GALT:** Gut-associated; **BALT:** bronchus-associated; **NALT:** nasal-associated.\n- **Palatine tonsils:** Pair beside oropharynx.\n- **Pharyngeal tonsil (adenoid):** Nasopharynx.\n- **Lingual tonsillar tissue:** Tongue base.\n- **Waldeyer's ring:** Tonsillar defenses around pharynx.\n- **Peyer's patches:** Aggregated lymphoid nodules, especially in **ileum**.\n- **Appendix:** Lymphoid-rich intestinal structure.\n- **Germinal centers:** Activated B-cell proliferation and differentiation.\n\n**Lecture count:** Five major tonsillar sites (2 palatine + 1 pharyngeal + 2 lingual), though lingual tissue is more variable anatomically."
+    },
+    {
+      "id": "seven-nonspecific-defenses",
+      "title": "Seven Nonspecific Defenses — Instructor's Exact List",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          26,
+          27,
+          30
+        ]
+      },
+      "markdown": "**Seven innate/nonspecific defenses — instructor's list:**\n1. **Physical barriers:** Skin and mucosa prevent entry.\n2. **Phagocytes:** Neutrophils/macrophages ingest threats.\n3. **Immunological surveillance:** **NK cells** attack some abnormal cells.\n4. **Interferons:** Trigger antiviral defenses.\n5. **Complement:** Opsonization, inflammation, membrane attack.\n6. **Inflammation:** Recruits defenses to injury/infection.\n7. **Fever:** Elevated temperature set point during systemic response.\n\n**Key idea:** **Innate = rapid, no prior antigen-specific clonal memory.**"
+    },
+    {
+      "id": "nk-interferons-complement",
+      "title": "NK Cytotoxicity, Interferons, and Complement",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          15,
+          28,
+          31,
+          32
+        ]
+      },
+      "markdown": "- **NK-cell killing:** **Perforin + granzymes** → programmed target-cell death.\n- **Interferons:** Cytokines inducing antiviral states in responsive cells.\n- **Complement:** Cascading plasma proteins activated by several routes.\n- **C3b:** **Opsonization** (tags for phagocytosis).\n- **C3a/C5a:** **Inflammation**; **C5a** recruits leukocytes.\n- **C5b–C9:** **Membrane attack complex (MAC)**; damages target membranes.\n- **Neutralization:** Antibody blocks toxin/pathogen binding or entry.\n- **Opsonization:** Coats target for easier phagocytosis.\n\n**Recall:** **C3b = tag; C5a = recruit; C5b–C9 = punch holes.**"
+    },
+    {
+      "id": "inflammation-and-fever",
+      "title": "Four Cardinal Signs, Inflammation, and Fever",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          33,
+          34,
+          35
+        ]
+      },
+      "markdown": "**Four cardinal signs:**\n- **Rubor = redness:** Increased blood flow.\n- **Calor = heat:** Increased blood flow/local activity.\n- **Tumor = swelling:** Fluid accumulation.\n- **Dolor = pain:** Mediators, injury, pressure.\n\n- **Histamine (mast cells):** Vasodilation and increased vascular permeability.\n- **Neutrophils/monocytes:** Recruited to inflammatory sites.\n- **Pyrogens:** Alter hypothalamic temperature set point → **fever**.\n\n**Note:** Slide misspells *dolor* and uses a specific fever cutoff; clinical thresholds vary. Memorize the **four Latin signs**."
+    },
+    {
+      "id": "immunity-classifications",
+      "title": "Innate vs Adaptive; Active vs Passive Immunity",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          36,
+          37,
+          38
+        ]
+      },
+      "markdown": "- **Innate immunity:** Rapid barriers, phagocytes, NK cells, complement; no antigen-specific clonal memory.\n- **Adaptive immunity:** **Antigen-specific B/T** responses; supports memory.\n- **Humoral immunity:** **B cells/antibodies**.\n- **Cell-mediated immunity:** Primarily **T-cell** functions.\n- **Active immunity:** Your immune system responds and can form memory.\n- **Passive immunity:** Preformed antibodies transferred; usually temporary.\n\n**Four acquired-immunity categories:**\n- **Natural active:** Infection/exposure.\n- **Artificial active:** Vaccination.\n- **Natural passive:** Maternal antibodies (placenta/breast milk).\n- **Artificial passive:** Administered antibodies/immune globulin.\n\n**Four adaptive properties:** **Specificity, versatility, memory, tolerance.**"
+    },
+    {
+      "id": "mhc-comparison",
+      "title": "MHC I/CD8 vs MHC II/CD4",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          39,
+          40,
+          41,
+          42,
+          43
+        ]
+      },
+      "markdown": "- **MHC I:** On most **nucleated cells**; displays mainly **intracellular peptides** to **CD8 cytotoxic T cells**.\n- **MHC II:** On professional antigen-presenting cells (**dendritic cells, macrophages, B cells**); displays mainly **extracellularly acquired peptides** to **CD4 helper T cells**.\n- **CD8:** Can kill appropriately recognized infected/abnormal host cells.\n- **CD4:** Coordinates immunity; helps activate compatible B-cell responses.\n\n**Pathways:** **Inside cell → MHC I → CD8. Outside antigen taken up → MHC II → CD4.**\n\n**Important:** MHC I itself is normal on healthy nucleated cells; it is **not automatically an infection tag**."
+    },
+    {
+      "id": "b-cells-and-immunoglobulins",
+      "title": "B-Cell Activation, Antibodies, and Five Ig Classes",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          14,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "markdown": "**B-cell pathway:** B-cell receptor binds antigen → processes/presents peptide on **MHC II** → matching activated **helper T** support (common protein antigens) → **clonal expansion** → **plasma cells + memory B cells**.\n\n- **Antigen:** Molecule recognized by antigen receptors.\n- **Epitope:** Specific recognized molecular feature.\n- **Antibody (Ig):** Antigen-binding protein with heavy/light chains.\n- **IgM:** Early primary response; commonly pentameric when secreted.\n- **IgG:** Major serum/systemic antibody; prominent in secondary responses; crosses placenta.\n- **IgA:** **Mucosal secretions**, tears, saliva, breast milk; often dimeric in secretions.\n- **IgE:** **Allergy**, mast-cell/basophil effects; some parasite defense.\n- **IgD:** **B-cell surface receptor** on many naïve B cells.\n\n**Recall:** **M early; G blood/secondary; A secretions; E allergy; D B-cell display.**"
+    },
+    {
+      "id": "antibody-functions-and-memory",
+      "title": "Antibody Actions, Titer, and Secondary Response",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      "markdown": "- **Neutralization:** Blocks toxin/pathogen binding or entry.\n- **Opsonization:** Coats targets for phagocytosis.\n- **Agglutination:** Clumps particles/cells.\n- **Precipitation:** Complexes soluble antigens.\n- **Complement activation:** Certain antibodies trigger the classical cascade.\n- **Antibody titer:** Measure of antigen-specific antibody amount/activity in a sample.\n- **Primary response:** First exposure; **slower**, often early **IgM** then IgG.\n- **Secondary response:** Re-exposure; generally **faster, stronger, longer**, supported by **memory**; often prominent IgG.\n\n**Exam association:** **Primary = delay; secondary = memory advantage.**"
+    },
+    {
+      "id": "conditions-and-rapid-recall",
+      "title": "Diseases, Anatomy Checklist, and Rapid Recall",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          51
+        ],
+        "Lymphoid - Copy.pptx": [
+          11,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19
+        ]
+      },
+      "markdown": "- **Appendicitis:** Inflamed appendix; rupture can spread infection.\n- **HIV:** Infects **CD4-expressing cells**, especially helper T cells.\n- **AIDS:** Advanced immune impairment from HIV; not synonymous with any HIV infection.\n- **Autoimmunity:** Immune responses against self (lecture examples: **psoriasis, MS, Addison disease, type 1 diabetes**).\n\n**Identify:** Cervical/axillary/inguinal nodes; lymphatic ducts, trunks, cisterna chyli; node **capsule, trabeculae, afferent/efferent, cortex, paracortex, medulla, hilum**; thymus cortex/medulla/Hassall corpuscles; spleen red/white pulp and hilum; palatine/pharyngeal/lingual tonsils; Peyer's patches.\n\n**Rapid pairs:** **Node = filters lymph; spleen = filters blood; thymus = T maturation; bone marrow = B development.** **Afferent arrives; efferent exits.** **MHC I–CD8; MHC II–CD4.** **Right duct = right upper quadrant.** **IgM early; IgG systemic; IgA mucus; IgE allergy; IgD B surface.**\n\n**Instructor question still open:** No single B-cell differentiation hormone identified in the provided slides; **thymosins concern T-cell development**."
+    }
+  ]
+}

@@ -47,7 +47,7 @@ after(async()=>{flushSync(()=>root.unmount());await api.annotationStore.dispose(
 
 test('readings and study revisions retain their supplied bytes; protected source assets remain unchanged',()=>{
   const inventory=read('docs/integration/respiratory-source/archive-inventory.json').entries;
-  const editorialHashes=new Map(read('docs/integration/editorial-consistency-source/archive-inventory.json').installedFiles.map(entry=>[entry.targetPath,entry.sha256]));
+  const editorialHashes=new Map([...read('docs/integration/editorial-consistency-source/archive-inventory.json').installedFiles,...read('docs/integration/exam-cram-final-source/archive-inventory.json').installedFiles].map(entry=>[entry.targetPath,entry.sha256]));
   const mappings=inventory.flatMap(entry=>{
     const name=entry.path.split('/').at(-1);
     if(/^phase-0[23]-readings\/respiratory-system-.*\.json$/.test(entry.path))return [[entry,`data/learn/${name}`]];

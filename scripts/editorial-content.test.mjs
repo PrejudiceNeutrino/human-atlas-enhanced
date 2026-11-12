@@ -9,6 +9,7 @@ import { build } from 'esbuild';
 const root = 'docs/integration/editorial-consistency-source';
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const inventory = read(`${root}/archive-inventory.json`);
+const finalReviewHashes = new Map(read('docs/integration/exam-cram-final-source/archive-inventory.json').installedFiles.map(entry=>[entry.targetPath,entry.sha256]));
 const changelog = read(`${root}/STUDY-TOOLS-CHANGELOG.json`);
 const hash = file => createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 const output = path.resolve('work/editorial-tests/runtime.mjs');
@@ -21,7 +22,7 @@ test('all installed files match the authored package and protected content keeps
     assert.equal(hash(entry.targetPath), entry.sha256, entry.targetPath);
     assert.equal(entry.sha256, inventory.entries.find(original => original.path === entry.sourcePath).sha256);
   }
-  for (const entry of inventory.protectedFiles) assert.equal(hash(entry.path), entry.sha256, entry.path);
+  for (const entry of inventory.protectedFiles) assert.equal(hash(entry.path), finalReviewHashes.get(entry.path)??entry.sha256, entry.path);
   for (const entry of inventory.entries.filter(entry => entry.path.startsWith('review-baseline/'))) assert.equal(hash(`${root}/${entry.path}`), entry.sha256, entry.path);
 });
 
@@ -35,7 +36,7 @@ test('all eight revised readings preserve IDs, order, headings, slide references
       assert.ok(revised.sections.every(section => (section.markdown ?? section.moreInfoMarkdown).trim()));
     }
     const detailed = read(`data/learn/${subject}-system-exam-cram.json`), quick = read(`data/learn/${subject}-system-exam-cram-quick-scan.json`);
-    assert.deepEqual(detailed, read(`${root}/review-baseline/${subject}/exam-cram.json`));
+    assert.deepEqual(withoutProse(detailed), withoutProse(read(`${root}/review-baseline/${subject}/exam-cram.json`)));
     assert.equal(quick.sections.length, 18); assert.equal(quick.variantOf, detailed.id);
     assert.deepEqual(quick.sections.map(({ id, title, slideReferences }) => ({ id, title, slideReferences })), detailed.sections.map(({ id, title, slideReferences }) => ({ id, title, slideReferences })));
   }
@@ -104,4 +105,24 @@ test('old reading highlights reanchor only to safe matches; revised passages ret
     }
   }
   assert.ok(retained >= 8); assert.ok(unresolved > 0);
+});
+
+test('final Detailed Reviews preserve legacy source identities and retain safely unresolved notes', () => {
+  let headings = 0, unresolved = 0;
+  for (const subject of ['digestive', 'respiratory', 'lymphoid']) {
+    const original = read(`docs/integration/exam-cram-final-source/${subject === 'digestive' ? 'reference/digestive-prior-detailed-review.json' : `baseline/${subject}-system-exam-cram.json`}`);
+    for (const section of original.sections) {
+      const current = api.annotationSources.find(source => source.target.sourceId === `${original.id}/${section.id}`);
+      assert.ok(current, `${original.id}/${section.id}`);
+      const old = { ...current, blocks: [api.titleBlock(section.title), ...api.markdownBlocks(section.markdown)], version: api.fingerprint(`${section.title}\n${section.markdown}`) };
+      const savedHeading = record(old, old.blocks[0]), [heading] = api.resolvedAnnotations([savedHeading], api.annotationSources);
+      assert.equal(heading.status, 'anchored'); assert.equal(heading.target.sourceId, savedHeading.target.sourceId); assert.equal(heading.note, savedHeading.note); headings++;
+      const removed = old.blocks.find(block => block.text.length > 40 && block.text.length < 4500 && !current.blocks.some(item => item.text === block.text));
+      if (removed) {
+        const saved = record(old, removed), [result] = api.resolvedAnnotations([saved], api.annotationSources);
+        assert.equal(result.status, 'unresolved'); assert.equal(result.note, saved.note); assert.equal(result.anchor.exact, saved.anchor.exact); unresolved++;
+      }
+    }
+  }
+  assert.equal(headings, 51); assert.ok(unresolved > 0);
 });

@@ -22,3 +22,6 @@
 /docs/integration/exam-cram-source/** -text
 # Preserve the authored editorial replacements and their comparison baselines.
 /docs/integration/editorial-consistency-source/** -text
+# Preserve the final authored Detailed Reviews and source-package evidence.
+/data/learn/digestive-system-exam-cram-detailed-review.json -text
+/docs/integration/exam-cram-final-source/** -text

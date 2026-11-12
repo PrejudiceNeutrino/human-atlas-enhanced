@@ -15,7 +15,7 @@ import { VisualizePage } from './anatomy-companion/visualize-page';
 import { LearnContextMenu } from './context-menu/learn-context-menu';
 import { PageSectionsProvider } from './context-menu/page-sections';
 import { useReadingHash } from '../notes/notes-navigation';
-import { examCramVariants } from './exam-cram-content';
+import { canonicalExamCramMode, examCramVariants } from './exam-cram-content';
 import { useExamCramMode } from './exam-cram-mode';
 import { ExamCramArticle } from './exam-cram-article';
 
@@ -49,7 +49,8 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
   const [activeTab, setActiveTab] = useState(() => tabForHash(subject, window.location.hash)?.id ?? subject.tabs[0].id);
   const activeTabRef = useRef(activeTab); activeTabRef.current = activeTab;
   const examTabId = subject.tabs.find(tab => examCramVariants[tab.id])?.id;
-  const { mode: examMode, showMode, chooseMode, savingError } = useExamCramMode(subject.slug, examTabId);
+  const canonicalExamMode = canonicalExamCramMode(examTabId ?? '');
+  const { mode: examMode, showMode, chooseMode, savingError } = useExamCramMode(subject.slug, examTabId, canonicalExamMode);
   const tabsRef = useRef<HTMLDivElement>(null);
   const previousTab = useRef(activeTab);
   const pageNavigation = useRef(false);
@@ -75,22 +76,22 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
       if(!alive||!record||!subject.tabs.some(tab=>tab.id===record.target.tabId&&tab.kind!=='coming-soon'))return;
       setActiveTab(record.target.tabId);
       const source=annotationSources.find(item=>item.target.sourceId===record.target.sourceId);
-      if(record.target.tabId===examTabId)showMode(source?.readingMode??'detailed-review');
+      if(record.target.tabId===examTabId)showMode(source?.readingMode??canonicalExamMode);
       setRequestedDisclosure(source?.disclosureId??null);
     });return()=>{alive=false;};
-  },[subject,readingHash,examTabId,showMode]);
+  },[subject,readingHash,examTabId,canonicalExamMode,showMode]);
 
   useLayoutEffect(() => {
     const followHash = () => {
       const hash=window.location.hash,linked=tabForHash(subject,hash);if(!linked)return;
-      if(linked.id===examTabId&&activeTabRef.current!==linked.id)showMode('detailed-review');
+      if(linked.id===examTabId&&activeTabRef.current!==linked.id)showMode(canonicalExamMode);
       const target=hash.slice(1)===linked.id?`${linked.id}-heading`:hash.slice(1);
       pendingHashTarget.current=target;setActiveTab(linked.id);
       const heading=document.getElementById(target);
       if(heading&&!heading.closest('[hidden]')){heading.focus({preventScroll:true});heading.scrollIntoView?.({block:'start',behavior:'instant'});pendingHashTarget.current=null;}
     };
     followHash();window.addEventListener('hashchange',followHash);return()=>window.removeEventListener('hashchange',followHash);
-  }, [subject,examTabId,showMode]);
+  }, [subject,examTabId,canonicalExamMode,showMode]);
 
   useLayoutEffect(() => {
     if(pendingHashTarget.current){const heading=document.getElementById(pendingHashTarget.current);
@@ -138,7 +139,10 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
           <AnnotationDocumentContext value={{subjectId:subject.slug,tabId:tab.id}}>
           <AnnotationJumpContext value={requestedDisclosure}>
           {tab.kind === 'article' ? (
-            examCramVariants[tab.id] ? <ExamCramArticle detailed={articles[tab.id]} quickScan={examCramVariants[tab.id]!} mode={examMode} onModeChange={chooseMode} savingError={savingError} readingIntro={tab.readingIntro}/>
+            examCramVariants[tab.id] ? <ExamCramArticle anchorId={tab.id}
+              detailed={examCramVariants[tab.id]!.readingMode === 'detailed-review' ? examCramVariants[tab.id]! : articles[tab.id]}
+              quickScan={examCramVariants[tab.id]!.readingMode === 'quick-scan' ? examCramVariants[tab.id]! : articles[tab.id]}
+              mode={examMode} onModeChange={chooseMode} savingError={savingError} readingIntro={tab.readingIntro}/>
               : <EducationalArticle article={articles[tab.id]} presentation={tab.presentation} readingIntro={tab.readingIntro} />
           ) : tab.kind === 'facts' ? (
             <EducationalFacts section={factSections[tab.id]} title={tab.title} readingIntro={tab.readingIntro} enabled={activeTab === tab.id} />

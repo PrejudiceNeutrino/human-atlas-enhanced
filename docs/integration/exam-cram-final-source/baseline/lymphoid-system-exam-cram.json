@@ -1,0 +1,280 @@
+{
+  "id": "lymphoid-system-exam-cram",
+  "title": "Exam Cram",
+  "subject": "Lymphoid System",
+  "introMarkdown": "Short, instructor-aligned Chapter 22 review. Prioritize the named structures, drainage pathways, seven nonspecific defenses, lymphocyte roles, MHC comparisons, immunoglobulins, and immune-response sequence. The 28-question study guide is the main checklist; the slides contain additional testable anatomy. **Course-specific wording and scientific clarifications are distinguished where necessary.**",
+  "sourceFiles": [
+    "22-Lymphoid System-new.pptx",
+    "Lymphoid - Copy.pptx",
+    "22-Study Guide.docx"
+  ],
+  "sections": [
+    {
+      "id": "three-core-roles",
+      "title": "Three Core Roles",
+      "markdown": "The lymphatic/lymphoid system has **three major functions** emphasized across the two lecture decks:\n\n1. **Fluid recovery:** Returns excess **interstitial fluid** and associated proteins to the blood, helping prevent edema.\n2. **Immune surveillance/defense:** Transports immune cells and antigen-bearing material; lymphoid organs and tissues support immune-cell development, activation, and filtration.\n3. **Dietary-fat transport:** Intestinal **lacteals** collect chylomicrons; lipid-rich **chyle** travels through lymphatic vessels toward the venous blood.\n\n**Also remember:** Lymphopoiesis means lymphocyte production; the lymphoid system helps produce, maintain, and distribute lymphocytes. The immune system's functions extend beyond the physical lymphatic vessels.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          3,
+          4
+        ],
+        "Lymphoid - Copy.pptx": [
+          2,
+          20
+        ]
+      }
+    },
+    {
+      "id": "fluid-and-capillaries",
+      "title": "Lymph, Interstitial Fluid, and Capillaries",
+      "markdown": "- **Blood plasma:** Liquid component of blood within blood vessels.\n- **Interstitial fluid:** Extracellular fluid between tissue cells.\n- **Lymph:** Interstitial fluid after it enters a lymphatic vessel; typically lower in protein than blood plasma in many tissues.\n- **Initial lymphatic capillaries:** Blind-ended pockets with larger lumens and thinner, more permeable walls than typical blood capillaries.\n- **Overlapping endothelial flaps:** Open when outside tissue pressure exceeds inside lymphatic pressure, permitting entry; tend to close when pressure reverses.\n- **Blood capillaries:** Exchange water and solutes with surrounding tissue as part of an arterial–venous network; **lymphatic capillaries begin blindly** rather than connecting two sides of a blood circuit.\n- **Anchoring filaments and incomplete basement membrane:** Help initial lymphatic capillaries admit fluid and larger material.\n\n**Route:** Blood plasma → fluid filtered into tissues (interstitial fluid) → initial lymphatic capillary (lymph) → collecting vessels.\n\n**Caution:** One-way entry does **not** mean pathogens are physically incapable of ever leaving lymphatic channels or spreading through the body.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "Lymphoid - Copy.pptx": [
+          3,
+          4,
+          12
+        ]
+      }
+    },
+    {
+      "id": "valves-and-lymph-propulsion",
+      "title": "Valves and Lymph Propulsion",
+      "markdown": "- **Why valves?** Lymph pressure is low; valves prevent backflow and support movement toward the large venous trunks.\n- **Propulsion:** Intrinsic lymphatic smooth-muscle contractions, skeletal-muscle compression, respiratory pressure changes, and nearby pulsations.\n- **Comparison with veins:** Collecting lymphatics resemble small veins, often with more closely spaced valves; no central lymphatic heart exists.\n- **Lymphedema:** Swelling from impaired lymph drainage; fluid-recovery failure is not the only possible cause of edema.\n\n**Remember:** Initial lymphatic capillary *entry flaps* admit tissue fluid; collecting-vessel *valves* prevent reverse flow farther downstream.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          7,
+          8
+        ],
+        "Lymphoid - Copy.pptx": [
+          12
+        ]
+      }
+    },
+    {
+      "id": "ducts-trunks-and-drainage",
+      "title": "Right Duct, Thoracic Duct, and Trunks",
+      "markdown": "| Structure | Territory or input | Venous return |\n|---|---|---|\n| **Right lymphatic duct** | Right upper quadrant: right head/neck, right upper limb, right upper thorax | Right venous angle (right internal jugular–subclavian junction) |\n| **Thoracic duct** | Left upper quadrant **plus essentially the entire body inferior to the diaphragm** | Left venous angle (left internal jugular–subclavian junction) |\n| **Cisterna chyli** | Variable enlarged collecting region near the lower thoracic duct, commonly receiving intestinal and lumbar trunks | Continues into thoracic duct |\n\n**Three trunks associated with the right lymphatic duct (in the lecture):**\n\n1. **Right jugular trunk** — right head and neck.\n2. **Right subclavian trunk** — right upper limb.\n3. **Right bronchomediastinal trunk** — right thoracic structures.\n\n**Six named contributing trunks to the thoracic duct/cisterna chyli system (the instructor's combined list):** **Left jugular, left subclavian, left bronchomediastinal, right lumbar, left lumbar, and intestinal.** The left-sided upper trunks join the thoracic duct system near its termination; the lumbar and intestinal drainage contributes inferiorly, often through the cisterna chyli. Anatomical variants exist.\n\n**Exam trap:** The ducts enter venous blood **near the junctions of the internal jugular and subclavian veins**, not by running directly into an artery. The slides simplify this as entering the right or left subclavian vein.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          9,
+          10,
+          11
+        ],
+        "Lymphoid - Copy.pptx": [
+          9
+        ]
+      }
+    },
+    {
+      "id": "organs-versus-tissues",
+      "title": "Three Course-Defined Lymphoid Organs vs Tissues",
+      "markdown": "**Instructor's three encapsulated lymphoid organs:** **lymph nodes, thymus, spleen**.\n\n- **Lymphoid organ (course distinction):** Organized lymphoid tissue with a connective-tissue **capsule**.\n- **Lymphoid tissue (course distinction):** Lymphocyte-rich tissue or nodules without a complete separate capsule; includes many **tonsillar**, **MALT**, and **Peyer's patch** sites.\n- **Primary lymphoid sites (functional classification):** **Bone marrow** (blood-cell and B-cell development) and **thymus** (T-cell maturation).\n- **Secondary lymphoid sites:** **Lymph nodes, spleen, and organized mucosal lymphoid tissues** where mature lymphocytes encounter antigen.\n\n**Clarification:** Broader anatomy and immunology texts often call bone marrow a primary lymphoid organ. For the study guide's “three organs,” use the instructor's explicitly listed three.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          17
+        ],
+        "Lymphoid - Copy.pptx": [
+          12,
+          18
+        ]
+      }
+    },
+    {
+      "id": "lymph-node-flow",
+      "title": "Lymph Node Flow and Identification",
+      "markdown": "**Fluid pathway to memorize:** **Afferent lymphatic** → **subcapsular sinus** → **cortical/trabecular sinuses** → **medullary sinuses** → **efferent lymphatic** → larger collecting vessels.\n\n- **Afferent = arrives:** Usually enter around the convex surface of the node.\n- **Efferent = exits:** Usually leave at the **hilum**.\n- **Capsule:** Outer connective-tissue covering; **trabeculae** extend inward.\n- **Hilum:** Indentation where major blood vessels pass and efferent lymphatics leave.\n- **Outer cortex:** Lymphoid follicles, predominantly **B-cell** regions.\n- **Paracortex/deep cortex:** Predominantly **T-cell** region; important for antigen presentation.\n- **Medulla:** Medullary **cords** containing plasma cells, B cells and macrophages; nearby medullary **sinuses** conduct lymph.\n- **Germinal center:** Active region in certain B-cell follicles where activated B cells proliferate and undergo selection/differentiation.\n- **Role of nodes:** Filter lymph and increase encounters among antigen, antigen-presenting cells, and appropriate lymphocytes.\n\n**Important distinction:** The lecture uses “B-cell cortex → T-cell paracortex → medulla” to teach **regions**. Lymph fluid itself travels through interconnected **sinuses**, not literally from one lymphocyte cell type into another.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          18,
+          19,
+          20
+        ],
+        "Lymphoid - Copy.pptx": [
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "id": "lymphocyte-classes-and-development",
+      "title": "B Cells, T Cells, NK Cells, and Lymphopoiesis",
+      "markdown": "| Class | Site of development/maturation | Main defense |\n|---|---|---|\n| **B lymphocyte** | Develops and matures primarily in **bone marrow** | **Adaptive, humoral/antibody-mediated** immunity; plasma cells secrete antibodies |\n| **T lymphocyte** | Precursors arise in marrow; maturation and selection in **thymus** | **Adaptive, cell-mediated** immunity and coordination |\n| **Natural killer (NK) cell** | Hematopoietic lineage, developing mainly in marrow-associated environments | **Innate** surveillance and killing of certain abnormal or infected cells |\n\n- **Helper T cell (CD4):** Coordinates immune responses via cytokines and contact signals; supports suitable B-cell responses.\n- **Cytotoxic T cell (CD8):** Kills appropriately recognized infected or abnormal host cells.\n- **Regulatory T cell:** Helps restrain inappropriate activation; the lecture also uses older labels including *suppressor* T cells.\n- **Plasma cell:** An activated, differentiated **B cell** specialized to secrete antibodies.\n- **Memory cells:** Long-lived antigen-experienced B/T cells that support future responses.\n\n**Unresolved instructor question:** The study guide asks which hormone's presence stimulates **B-cell differentiation** and what happens without it. The supplied slides explicitly associate **thymosins with T-cell maturation** and identify **bone marrow** as the B-cell developmental site; they do **not** establish one corresponding binary B-cell hormone. Do not memorize “thymosin makes B cells.” Ask for clarification if the instructor expects a specific classroom answer.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          21
+        ],
+        "Lymphoid - Copy.pptx": [
+          12,
+          17
+        ]
+      }
+    },
+    {
+      "id": "thymus",
+      "title": "Thymus, Blood–Thymus Barrier, and Involution",
+      "markdown": "- **Location:** Anterior/superior mediastinal region, especially prominent early in life.\n- **Architecture:** Two lobes; fibrous septa divide tissue into lobules with darker **cortex** and paler **medulla**.\n- **Function:** Supports T-cell differentiation, maturation, and selection; it is **not** a lymph-node-style filter of incoming lymph.\n- **Blood–thymus barrier:** Specialized capillary and epithelial arrangements in the cortex that help protect developing thymocytes from uncontrolled exposure to circulating antigens.\n- **Reticular epithelial cells (thymic epithelial cells):** Contribute to thymic environment and blood–thymus barrier; support developing T cells.\n- **Thymic corpuscles (Hassall corpuscles):** Characteristic concentrically arranged epithelial structures in the **medulla**.\n- **Thymosins:** Traditional lecture label for thymic hormones/signals associated with T-cell development.\n- **Involution:** Gradual loss of thymic functional mass with increasing fatty replacement, especially after puberty; does not instantly eliminate mature T cells.\n\n**Scientific context:** Positive and negative selection promote MHC recognition and tolerance; the lecture does not explain these checkpoints in the same depth as Deep Dive.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          21,
+          22
+        ],
+        "Lymphoid - Copy.pptx": [
+          17
+        ]
+      }
+    },
+    {
+      "id": "spleen",
+      "title": "Spleen: Red/White Pulp and Blood Path",
+      "markdown": "- **Largest lymphoid organ** in the lecture; in the **left upper abdomen** near ribs **9–11**.\n- **Primary function:** Filters **blood**, unlike lymph nodes that filter **lymph**.\n- **Red pulp:** Blood-filled sinusoids and reticular tissue rich in RBCs and macrophages; removes aged/damaged erythrocytes and recovers iron.\n- **White pulp:** Lymphocyte-rich tissue organized around arteries; supports blood-borne antigen recognition.\n- **Capsule/trabeculae:** Fibrous support and routes for vessels.\n- **Hilum:** Entry/exit for **splenic artery and vein**.\n\n**Blood flow (course-level):** Splenic artery → trabecular arteries → central arteries associated with white pulp → smaller arterioles/capillary pathways → red-pulp cords and sinusoids → veins → trabecular veins → splenic vein.\n\n**Clinical association:** Traumatic **splenic rupture** can produce dangerous internal bleeding; **splenectomy** is surgical removal and affects immune protection against certain infections.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          23,
+          24,
+          25
+        ],
+        "Lymphoid - Copy.pptx": [
+          15,
+          16
+        ]
+      }
+    },
+    {
+      "id": "malt-and-tonsils",
+      "title": "Tonsils, Peyer's Patches, and MALT",
+      "markdown": "- **MALT:** Mucosa-associated lymphoid tissue; immune surveillance at mucosal surfaces.\n- **GALT:** Gut-associated lymphoid tissue; **BALT:** bronchus-associated; **NALT:** nasal-associated.\n- **Tonsils:** **Palatine** near the oropharynx; **pharyngeal** in nasopharynx; **lingual** at tongue base. Together contribute to **Waldeyer's ring**.\n- **Lecture classification:** Counts five major tonsillar sites (two palatine, one pharyngeal, two lingual). Real lingual tonsillar tissue may form multiple nodules rather than two identical discrete organs.\n- **Peyer's patches:** Aggregated lymphoid nodules, especially in the **ileum**; monitor intestinal antigens and participate in mucosal defense.\n- **Appendix:** Rich in lymphoid tissue; inflammatory infection can cause appendicitis.\n- **Germinal center:** Proliferating and differentiating activated B cells within some follicles; present in nodes and other secondary lymphoid tissues.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          17
+        ],
+        "Lymphoid - Copy.pptx": [
+          13,
+          14,
+          18,
+          19
+        ]
+      }
+    },
+    {
+      "id": "seven-nonspecific-defenses",
+      "title": "Seven Nonspecific Defenses — Instructor's Exact List",
+      "markdown": "1. **Physical barriers:** Skin, mucosa, and secretions prevent entry.\n2. **Phagocytes:** Neutrophils/macrophages ingest microbes and debris.\n3. **Immunological surveillance:** NK cells detect and kill certain stressed/abnormal cells.\n4. **Interferons:** Promote antiviral defenses in neighboring cells.\n5. **Complement system:** Opsonization, inflammation, membrane attack.\n6. **Inflammation:** Recruits defenses, changes vascular flow, helps contain injury.\n7. **Fever:** Systemic temperature-set-point response, sometimes hindering pathogens.\n\n**Innate/nonspecific:** Rapid mechanisms that do not require prior antigen-specific clonal memory. These defenses can still recognize distinct microbial patterns; “nonspecific” does not mean indiscriminate.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          26,
+          27,
+          30
+        ]
+      }
+    },
+    {
+      "id": "nk-interferons-complement",
+      "title": "NK Cytotoxicity, Interferons, and Complement",
+      "markdown": "**NK-cell attack:** Recognition/activation at a suspicious target → release of **perforin** (helps deliver cytotoxic material) and **granzymes** (induce cell-death pathways) → apoptosis of susceptible target. NK cells contribute to surveillance of virus-infected and malignant cells; recognition is regulated and not indiscriminate.\n\n**Interferons:** Cytokines released in response to infection (including by virus-infected cells); bind receptors on other cells → expression of antiviral response proteins → reduced viral replication under suitable conditions.\n\n**Complement:** Plasma-protein cascade activated by different triggers, including antigen–antibody complexes in the **classical pathway**. High yield:\n\n- **C3b:** Major **opsonin**, coating targets to increase phagocytic uptake.\n- **C3a/C5a:** Promote inflammation; **C5a** is also important for leukocyte recruitment.\n- **C5b–C9:** **Membrane attack complex (MAC)**, which can damage susceptible target membranes.\n\n**Distinguish:** **Neutralization** blocks a toxin or pathogen from interacting with its target; **opsonization** marks a target for easier phagocytosis; **MAC** attacks membranes.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          15,
+          28,
+          31,
+          32
+        ]
+      }
+    },
+    {
+      "id": "inflammation-and-fever",
+      "title": "Four Cardinal Signs, Inflammation, and Fever",
+      "markdown": "| Classical sign | Meaning | Typical mechanism |\n|---|---|---|\n| **Rubor** | Redness | Increased local blood flow |\n| **Calor** | Heat | Increased blood flow and local activity |\n| **Tumor** | Swelling | Fluid leakage/accumulation |\n| **Dolor** | Pain | Inflammatory mediators, injury, pressure |\n\n- **Inflammation:** Local coordinated response to injury, microbes, heat, chemicals, etc.; contains threats, recruits immune cells, promotes repair.\n- **Mast-cell mediators:** Including **histamine**, which contributes to vasodilation and increased vascular permeability.\n- **Phagocyte recruitment:** Neutrophils and monocytes respond to local signals.\n- **Fever:** Endogenous/exogenous **pyrogens** influence hypothalamic temperature regulation; the body temporarily defends a higher temperature set point.\n\n**Course wording:** Slide uses approximately **37.2°C/99°F** as a fever cutoff and misspells *dolor* as “dolar.” These numbers and thresholds vary with measurement site and clinical context; learn the four names rather than treating one threshold as universal.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          33,
+          34,
+          35
+        ]
+      }
+    },
+    {
+      "id": "immunity-classifications",
+      "title": "Innate vs Adaptive; Active vs Passive Immunity",
+      "markdown": "| Distinction | Meaning | Representative example |\n|---|---|---|\n| **Innate immunity** | Rapid defenses without antigen-specific clonal memory | Barriers, phagocytes, NK cells, complement |\n| **Adaptive immunity** | Antigen-specific B/T responses; capacity for memory | Plasma-cell antibodies, cytotoxic T cells |\n| **Active acquired** | Your own response produces immune memory | Infection or vaccination |\n| **Passive acquired** | Ready-made antibodies transferred to you; usually temporary | Maternal antibodies or administered immunoglobulin |\n\n- **Natural active:** Response after exposure/infection.\n- **Artificial/induced active:** Response after **vaccination**.\n- **Natural passive:** Maternal antibodies via placenta and/or breast milk.\n- **Artificial/induced passive:** Given immune globulin or other antibody preparation.\n- **Four adaptive properties:** **Specificity, versatility, memory, tolerance.** Tolerance limits destructive reactions to self.\n\n**Exam trap:** Innate and adaptive are one comparison; active and passive describe **how acquired protection is obtained**, not whether NK cells are 'passive.'",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          36,
+          37,
+          38
+        ]
+      }
+    },
+    {
+      "id": "mhc-comparison",
+      "title": "MHC I/CD8 vs MHC II/CD4",
+      "markdown": "| Feature | **MHC I** | **MHC II** |\n|---|---|---|\n| **Typical cell location** | Nearly all **nucleated** cells | Professional antigen-presenting cells: dendritic cells, macrophages, B cells |\n| **Peptide source** | Largely **intracellular** proteins | Largely material taken up from **outside** the cell |\n| **Recognized by** | **CD8 cytotoxic T cells** | **CD4 helper T cells** |\n| **Main consequence** | Appropriately activated CD8 cells may destroy infected/abnormal presenting host cells | Activated CD4 cells coordinate responses and can help B cells make antibodies |\n\n**Mechanism to know:**\n\n- **MHC I sequence:** Intracellular peptide → displayed on MHC I → recognition by an appropriately activated matching **CD8 T cell** → perforin/granzyme or other programmed-death pathways target the presenting cell.\n- **MHC II sequence:** Extracellular material ingested and processed by an APC → peptide on **MHC II** → appropriate **CD4 helper T cell** activation → cytokine/contact signals support downstream cells, including B cells.\n- **Necessary qualification:** Normal nucleated cells express MHC I. It is **not itself an abnormal-cell tag**. Recognition of a relevant peptide plus activation context matters.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          39,
+          40,
+          41,
+          42,
+          43
+        ]
+      }
+    },
+    {
+      "id": "b-cells-and-immunoglobulins",
+      "title": "B-Cell Activation, Antibodies, and Five Ig Classes",
+      "markdown": "**Common protein-antigen pathway:** B-cell receptor binds intact antigen → B cell processes/presents peptide on **MHC II** → matching activated helper T cell supplies appropriate help → **clonal expansion** → **plasma cells** (antibody secretion) and **memory B cells**.\n\n- **Antigen:** A molecule that can be recognized by immune receptors.\n- **Epitope / antigenic determinant:** The specific molecular feature contacted by a receptor or antibody.\n- **Antibody / immunoglobulin:** Heavy and light chains; variable ends bind antigen, constant region mediates class-dependent effects.\n\n| Class | Major association to memorize |\n|---|---|\n| **IgM** | Often the **first major secreted** class in a primary response; commonly pentameric when secreted |\n| **IgG** | Major serum antibody in many systemic responses; prominent later and in many secondary responses; can cross placenta |\n| **IgA** | Mucosal secretions: saliva, tears, mucus, breast milk; often dimeric in secretions |\n| **IgE** | Allergic responses, mast-cell/basophil activation, certain antiparasitic defenses |\n| **IgD** | Primarily a **B-cell surface receptor** with IgM on many naïve B cells |\n\n**Clarification:** “Activated B cells” are not all plasma cells; some become memory B cells. Antibody binding **does not always cause direct destruction** without additional mechanisms.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          14,
+          43,
+          44,
+          45,
+          46
+        ]
+      }
+    },
+    {
+      "id": "antibody-functions-and-memory",
+      "title": "Antibody Actions, Titer, and Secondary Response",
+      "markdown": "**Antibody effects:**\n\n- **Neutralization:** Blocks binding or entry by toxins, viruses or microbes.\n- **Opsonization:** Coats a target to improve phagocyte recognition/ingestion.\n- **Agglutination:** Cross-links particles/cells into clumps; **precipitation** links soluble antigens into larger complexes.\n- **Complement activation:** Certain bound immunoglobulins initiate the classical complement pathway.\n- **Recruitment:** Fc-dependent actions help recruit immune effector cells and inflammatory responses.\n\n**Antibody titer:** A measure of the amount or activity of antigen-specific antibodies in a sample, usually serum; method-dependent.\n\n**Primary response:** First encounter; lag while suitable lymphocytes activate/expand; the lecture's example shows early IgM and later IgG, with a relatively modest peak.\n\n**Secondary response:** Later encounter; memory cells and sometimes pre-existing antibodies often yield a **faster, stronger, more prolonged** response, frequently with prominent IgG in the lecture's graphs.\n\n**Test association:** **Memory** explains the different responses, not a new type of general lymphatic vessel.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          47,
+          48,
+          49,
+          50
+        ]
+      }
+    },
+    {
+      "id": "conditions-and-rapid-recall",
+      "title": "Diseases, Anatomy Checklist, and Rapid Recall",
+      "markdown": "**Conditions named by the instructor:**\n\n- **Appendicitis:** Inflammation of the vermiform appendix, often associated with luminal obstruction and bacterial overgrowth; rupture may spread infection into the abdomen.\n- **HIV/AIDS:** HIV targets cells expressing **CD4**, especially helper T cells; advanced untreated infection may severely impair immune defenses. HIV infection does not automatically mean AIDS, nor does a common cold inevitably kill an infected person.\n- **Autoimmune disease:** Immune responses against self structures; may involve pathogenic T cells, antibodies, or both. Slide examples: **psoriasis, multiple sclerosis, Addison disease, type 1 diabetes**.\n\n**Anatomy identification checklist:**\n\n- Entire lymphatic distribution: cervical, axillary, lumbar, pelvic, inguinal node groups; upper/lower limb lymphatics.\n- Venous angles, right lymphatic duct, thoracic duct, **cisterna chyli**.\n- Lymph node: **capsule, trabecula, hilum, afferent/efferent vessels, subcapsular sinus, B-cell cortex, T-cell paracortex, medulla, germinal center**.\n- Thymus: two lobes, lobules, **cortex, medulla, septa**, thymic corpuscles.\n- Spleen: **diaphragmatic/visceral surfaces, hilum, splenic artery/vein, red and white pulp**.\n- **Pharyngeal, palatine and lingual tonsils; Peyer's patches; appendix; MALT**.\n\n**Last-minute associations:**\n\n- **Lymph nodes filter lymph; spleen filters blood; thymus matures T cells; marrow develops B cells.**\n- **Right duct = right upper quadrant; thoracic duct = the rest.**\n- **Afferent arrives; efferent exits. B cells = cortex; T cells = paracortex.**\n- **MHC I → CD8 → infected host-cell killing; MHC II → CD4 → helper coordination.**\n- **IgM early, IgG systemic/secondary, IgA secretions, IgE allergy, IgD B-cell surface.**\n- **Primary response slower; secondary response faster because of memory.**\n- **Fluid balance + immune surveillance + dietary fat absorption = three lymphatic roles.**\n\n**Unresolved for instructor confirmation:** The study guide's B-cell “hormone present/absent” phrasing is **not answered clearly by these two decks**. Keep that item open rather than guessing an exam answer.",
+      "slideReferences": {
+        "22-Lymphoid System-new.pptx": [
+          51
+        ],
+        "Lymphoid - Copy.pptx": [
+          11,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19
+        ]
+      }
+    }
+  ]
+}

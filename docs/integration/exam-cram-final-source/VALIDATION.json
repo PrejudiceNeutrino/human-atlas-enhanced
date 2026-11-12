@@ -1,0 +1,23 @@
+{
+  "word_counts": {
+    "digestive": {
+      "sections": 15,
+      "words": 2158,
+      "words_per_section": 144
+    },
+    "respiratory": {
+      "sections": 18,
+      "words": 2607,
+      "words_per_section": 145
+    },
+    "lymphoid": {
+      "sections": 18,
+      "words": 2495,
+      "words_per_section": 139
+    }
+  },
+  "digestive_section_ids_match": true,
+  "source_references_preserved": true,
+  "quick_scans_unchanged": true,
+  "flashcards_modified": false
+}

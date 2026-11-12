@@ -47,7 +47,7 @@ after(async()=>{flushSync(()=>root.unmount());await api.annotationStore.dispose(
 
 test('readings and study revisions retain their supplied bytes; protected source assets remain unchanged',()=>{
   const inventory=read('docs/integration/lymphoid-source/archive-inventory.json').entries;
-  const editorialHashes=new Map(read('docs/integration/editorial-consistency-source/archive-inventory.json').installedFiles.map(entry=>[entry.targetPath,entry.sha256]));
+  const editorialHashes=new Map([...read('docs/integration/editorial-consistency-source/archive-inventory.json').installedFiles,...read('docs/integration/exam-cram-final-source/archive-inventory.json').installedFiles].map(entry=>[entry.targetPath,entry.sha256]));
   const mappings=inventory.flatMap(entry=>{
     const name=entry.path.split('/').at(-1);
     if(/^phase-[23]-readings\/lymphoid-system-.*\.json$/.test(entry.path))return [[entry,`data/learn/${name}`]];
@@ -119,7 +119,7 @@ test('all 28 curriculum objectives resolve without inventing an answer to SG-10'
   const revision=read('docs/integration/editorial-consistency-source/STUDY-TOOLS-CHANGELOG.json').lymphoid.flashcards.find(card=>card.id==='fc-025');
   const card=api.studyBank.flashcards.find(card=>card.id===revision.id);
   assert.equal(card.front,revision.afterFront);assert.equal(card.back,revision.afterBack);
-  assert.ok(api.articles['lymphoid-system-exam-cram'].sections.some(section=>section.markdown.includes('Unresolved instructor question')&&section.markdown.includes('do **not** establish one corresponding binary B-cell hormone')));
+  assert.ok(api.articles['lymphoid-system-exam-cram'].sections.some(section=>section.markdown.includes('Question needing clarification')&&section.markdown.includes('does not identify such a hormone')));
 });
 
 test('study activities use Lymphoid bank; shared IDs persist independently across subjects',async()=>{

@@ -1,0 +1,217 @@
+{
+  "archiveName": "human-atlas-exam-cram-final.zip",
+  "archiveSha256": "8cfbaee8464bf0e15f8c48939ae92035bada9ae5c3fadb3e5450acd2dba10e2f",
+  "installedFiles": [
+    {
+      "sourcePath": "content/data/learn/digestive-system-exam-cram-detailed-review.json",
+      "targetPath": "data/learn/digestive-system-exam-cram-detailed-review.json",
+      "sha256": "4f29101579bccc5b317d4410708d5e3ffb4adf925494828baa8e1afbe706c151"
+    },
+    {
+      "sourcePath": "content/data/learn/lymphoid-system-exam-cram.json",
+      "targetPath": "data/learn/lymphoid-system-exam-cram.json",
+      "sha256": "03787599a08e0b7454d157e7fed2a2629a2b2078cbe730a1c1da09de3f8372dc"
+    },
+    {
+      "sourcePath": "content/data/learn/respiratory-system-exam-cram.json",
+      "targetPath": "data/learn/respiratory-system-exam-cram.json",
+      "sha256": "16136401cf5581f348af1a3843a48ad36a4c13e65fe4cd74c2a2bf248a90bec6"
+    }
+  ],
+  "protectedFiles": [
+    {
+      "path": "data/learn/digestive-anatomy-references.json",
+      "sha256": "67a7b161d513d2673a015adc2608f81bc2eed01737894edfc0f0f91d478fb925"
+    },
+    {
+      "path": "data/learn/digestive-study-tools/concepts.json",
+      "sha256": "33aa58eee5a30286fe2e481f69ad410875d17524eda542c8c3ba2cb0e5b70baf"
+    },
+    {
+      "path": "data/learn/digestive-study-tools/fill-in-the-blank.json",
+      "sha256": "1dfeecebe8dcfede51a507a196c95396ba2d04a516ab830c4615bcfd6b4871b5"
+    },
+    {
+      "path": "data/learn/digestive-study-tools/flashcards.json",
+      "sha256": "89f325971a5cd18b0353049bd5bc9037c4af96be88765957509f3d3ad685257c"
+    },
+    {
+      "path": "data/learn/digestive-study-tools/manifest.json",
+      "sha256": "092b4b41a574d031d2d6b92841978ae92d099b1e7af8aa7fc8f86ddb9b257039"
+    },
+    {
+      "path": "data/learn/digestive-study-tools/multiple-choice.json",
+      "sha256": "e805eab4bb594f7f0d556a61f5a2d5f218770aeea3aaf4eedc1c480bca97ec5c"
+    },
+    {
+      "path": "data/learn/digestive-system-deep-dive.json",
+      "sha256": "5b441393a464d77f312ba6ca499c2b3a3102e98990d301142927496fb293ac1a"
+    },
+    {
+      "path": "data/learn/digestive-system-exam-cram.json",
+      "sha256": "92f7389c434386137e0a853a8bbbb673a78b8bf76b6a1db7455c5bbe0c8a7370"
+    },
+    {
+      "path": "data/learn/digestive-system-general-overview.json",
+      "sha256": "f3b91ee4021398632cbccdf8a5833c5eec073f430c4d249a3d2495a446bbee8d"
+    },
+    {
+      "path": "data/learn/digestive-system-how-it-connects.json",
+      "sha256": "869c0ef0fd09be21c202e37d89f35079a410d4f3d01342824b4550294f248a71"
+    },
+    {
+      "path": "data/learn/digestive-system-why-is-this-cool.json",
+      "sha256": "03404d3524c3adefb2f6595e410076f9f439eb39f61ea895d7597bae511fd578"
+    },
+    {
+      "path": "data/learn/lymphoid-anatomy-references.json",
+      "sha256": "034145b98b0f494295c1d519a9e0e82fa8c041a19b27f135b6ed88176caa4b34"
+    },
+    {
+      "path": "data/learn/lymphoid-study-tools/concepts.json",
+      "sha256": "2d13d2cc6c7cb9bb4fa5f4d94c79aad5f08538a0a3b369c0f9668bb6b97846a9"
+    },
+    {
+      "path": "data/learn/lymphoid-study-tools/fill-in-the-blank.json",
+      "sha256": "48c99788f670f9c5b5fefd8600d9f690bcff83f884b9bb719851325f311e4cd1"
+    },
+    {
+      "path": "data/learn/lymphoid-study-tools/flashcards.json",
+      "sha256": "772e0ff4ffe9f986399ae6e30da57b2648f6e4e6e776e4d5083e023dd99a7edf"
+    },
+    {
+      "path": "data/learn/lymphoid-study-tools/manifest.json",
+      "sha256": "eb69df9f4eca4d32e858fa69a1cfc71a3564b8bab916e0932b4d22d218afb927"
+    },
+    {
+      "path": "data/learn/lymphoid-study-tools/multiple-choice.json",
+      "sha256": "fb3b84a40a0b2e97e367f18a7047c51cbd261013325c8e8203d44aa9f93761c4"
+    },
+    {
+      "path": "data/learn/lymphoid-system-deep-dive.json",
+      "sha256": "d3570ae804f5b205fcb66c965decde4087b32c03fe0c9876866a16729eb7e5ed"
+    },
+    {
+      "path": "data/learn/lymphoid-system-exam-cram-quick-scan.json",
+      "sha256": "63bdd882aa86c7556e3670886a089f94f7bc3f9aa88ba0509b5881e048ab03ad"
+    },
+    {
+      "path": "data/learn/lymphoid-system-general-overview.json",
+      "sha256": "c6368b2fa395e6a75735abc9b17e047a7f16a8cdf8f7dacacc34a78e37f50cf2"
+    },
+    {
+      "path": "data/learn/lymphoid-system-how-it-connects.json",
+      "sha256": "28b95d4bd621d6261a3cca800d263a42f929758c54b4b35e2cbc47a19308bf37"
+    },
+    {
+      "path": "data/learn/lymphoid-system-why-is-this-cool.json",
+      "sha256": "b92280d3d472188dd8dc1c19395eb33a9d79770503c7f3b2da2a98deaa85f7a7"
+    },
+    {
+      "path": "data/learn/respiratory-anatomy-references.json",
+      "sha256": "b4f1bbfd8904298ffb5a895d44c3e7531ba5e0d2add1aa8861442e20e2cebcef"
+    },
+    {
+      "path": "data/learn/respiratory-study-tools/concepts.json",
+      "sha256": "f6e671f6383d770634aab3359a1a1c7aac9825324ea28f86764ab5c99f6fc8a7"
+    },
+    {
+      "path": "data/learn/respiratory-study-tools/fill-in-the-blank.json",
+      "sha256": "959cf6b058932512b3042c10017855a6ab1146fa7f308d02db2ef9dcb4d89bd9"
+    },
+    {
+      "path": "data/learn/respiratory-study-tools/flashcards.json",
+      "sha256": "61aa98fc0b7d6f902a6fecc04102d161b163a7a68f14d45921b5c2078e1f0701"
+    },
+    {
+      "path": "data/learn/respiratory-study-tools/manifest.json",
+      "sha256": "f26be94d008074bd9a49b939db740e93e364159456ceb8635b3f60e5a9c1065a"
+    },
+    {
+      "path": "data/learn/respiratory-study-tools/multiple-choice.json",
+      "sha256": "0241a8e43722717fe20ec12b2da5b096913516396e63f201626f832155527453"
+    },
+    {
+      "path": "data/learn/respiratory-system-deep-dive.json",
+      "sha256": "38cbf962ba91919d21d6f727e2687f15325a9fec3f8dcd69691e354f8aba5859"
+    },
+    {
+      "path": "data/learn/respiratory-system-exam-cram-quick-scan.json",
+      "sha256": "2071415e62592b03ae3ea78722ef6039f6c2388550e4dd4cfa409c1f01574347"
+    },
+    {
+      "path": "data/learn/respiratory-system-general-overview.json",
+      "sha256": "a27af28a9cbbed60124645784f22d6918153fdb7bb47982043148a35c052dea3"
+    },
+    {
+      "path": "data/learn/respiratory-system-how-it-connects.json",
+      "sha256": "d78e86eff8a627966d3a7e7c281100e2011355ac433377b765d9cf2483df422b"
+    },
+    {
+      "path": "data/learn/respiratory-system-why-is-this-cool.json",
+      "sha256": "803c82ca01533c2ec8516b25111589817fd52e2e80e0e0eeff110d13396dd2af"
+    }
+  ],
+  "entries": [
+    {
+      "path": "CODEX-PROMPT.txt",
+      "sha256": "be17883c1b533d2bd8d0d40a62387ca9aa3f3d68f9f32c72fc68ba4bffcd71f3"
+    },
+    {
+      "path": "content/data/learn/digestive-system-exam-cram-detailed-review.json",
+      "sha256": "4f29101579bccc5b317d4410708d5e3ffb4adf925494828baa8e1afbe706c151"
+    },
+    {
+      "path": "content/data/learn/lymphoid-system-exam-cram.json",
+      "sha256": "03787599a08e0b7454d157e7fed2a2629a2b2078cbe730a1c1da09de3f8372dc"
+    },
+    {
+      "path": "content/data/learn/respiratory-system-exam-cram.json",
+      "sha256": "16136401cf5581f348af1a3843a48ad36a4c13e65fe4cd74c2a2bf248a90bec6"
+    },
+    {
+      "path": "previews/exam-cram-final-preview.html",
+      "sha256": "1bb250d1e57e56279230b2e9918d55d390d8732e7191eb0daedc2479c13a2eb6"
+    },
+    {
+      "path": "readable/digestive-detailed-review.md",
+      "sha256": "e6e18453e34054ecde2efd809925db020c8f3ea550e962a33cef6776138f42d0"
+    },
+    {
+      "path": "readable/lymphoid-detailed-review.md",
+      "sha256": "5614a118c9d17c289634ddca35826db9103faeb56a5999f90d7736d9dd6968eb"
+    },
+    {
+      "path": "readable/respiratory-detailed-review.md",
+      "sha256": "538c14d29c03c73bf24683e07d58ab31deec9e8064e233d8019f6f7fe1cd520b"
+    },
+    {
+      "path": "README.md",
+      "sha256": "68f0860077f79c148e7d3519198e119e5dcf0dfa6ace96dbdaf01c68ebb3df07"
+    },
+    {
+      "path": "reference/digestive-prior-detailed-review.json",
+      "sha256": "7600cce05a353a9b870d6c19106e0c492b01f08ceae54630448a8b95de5dd998"
+    },
+    {
+      "path": "reference/digestive-quick-scan-reference.json",
+      "sha256": "92f7389c434386137e0a853a8bbbb673a78b8bf76b6a1db7455c5bbe0c8a7370"
+    },
+    {
+      "path": "reference/lymphoid-quick-scan-reference.json",
+      "sha256": "63bdd882aa86c7556e3670886a089f94f7bc3f9aa88ba0509b5881e048ab03ad"
+    },
+    {
+      "path": "reference/respiratory-quick-scan-reference.json",
+      "sha256": "2071415e62592b03ae3ea78722ef6039f6c2388550e4dd4cfa409c1f01574347"
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "sha256": "7eba7774c2134d8dd35104e49377976c26ca4bddbd433ff41490140209b882ff"
+    },
+    {
+      "path": "VALIDATION.json",
+      "sha256": "0572950372a0e1e1bfe2132eae6d80f70d28035e2950beafb2ca2a30ec4c507c"
+    }
+  ]
+}

@@ -14,12 +14,12 @@ for(const subject of learnSubjects)for(const tab of subject.tabs){
     const article=articles[tab.id];add(`${tab.id}/intro`,article.title,article.introMarkdown,`${tab.id}-heading`);
     if(tab.readingIntro)add(`${tab.id}/reading-intro`,article.title,tab.readingIntro,`${tab.id}-heading`,undefined,false);
     for(const section of article.sections)add(`${tab.id}/${section.id}`,section.title,section.markdown,`${tab.id}-${section.id}`);
-    const quickScan=examCramVariants[tab.id];
-    if(quickScan){
+    const variant=examCramVariants[tab.id];
+    if(variant){
       const start=annotationSources.length;
-      add(`${quickScan.id}/intro`,quickScan.title,quickScan.introMarkdown,`${tab.id}-heading`);
-      for(const section of quickScan.sections)add(`${quickScan.id}/${section.id}`,section.title,section.markdown,`${tab.id}-${section.id}`);
-      for(const source of annotationSources.slice(start)){source.readingMode='quick-scan';source.tabTitle=`${tab.title} · Quick Scan`;}
+      add(`${variant.id}/intro`,variant.title,variant.introMarkdown,`${tab.id}-heading`);
+      for(const section of variant.sections)add(`${variant.id}/${section.id}`,section.title,section.markdown,`${tab.id}-${section.id}`);
+      for(const source of annotationSources.slice(start)){source.readingMode=variant.readingMode;source.tabTitle=`${tab.title} · ${variant.readingMode==='quick-scan'?'Quick Scan':'Detailed Review'}`;}
     }
   }else if(tab.kind==='facts'){
     add(`${tab.id}/intro`,tab.title,tab.readingIntro??'',`${tab.id}-heading`);

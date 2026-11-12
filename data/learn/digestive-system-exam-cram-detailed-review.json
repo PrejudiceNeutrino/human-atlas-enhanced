@@ -1,0 +1,299 @@
+{
+  "title": "Exam Cram",
+  "subject": "digestive-system",
+  "id": "digestive-system-exam-cram-detailed-review",
+  "subtitle": "Chapter 24 | Detailed Review",
+  "introMarkdown": "A concise explanation of the essential digestive terms, structures, and mechanisms. Use Quick Scan for rapid recall, or review these sections when you need the reasoning behind the facts.",
+  "sourceFiles": [
+    "24-Digestive System.pptx",
+    "Digestive.pptx"
+  ],
+  "sections": [
+    {
+      "id": "seven-functions",
+      "title": "Seven Functions — Use the Instructor’s List",
+      "markdown": "The digestive system takes in food, processes it, absorbs useful substances, and eliminates what remains. Its seven core functions are:\n\n1. **Ingestion:** Food or drink enters the mouth.\n2. **Mechanical processing:** Chewing, churning, and mixing physically break up and redistribute food without necessarily changing its molecules.\n3. **Chemical digestion:** Enzymes split carbohydrates, proteins, fats, and nucleic acids into smaller products that can be absorbed.\n4. **Secretion:** Saliva, mucus, acid, bicarbonate, enzymes, bile, and fluids are released to lubricate, protect, or process contents.\n5. **Absorption:** Nutrients, water, and ions cross the intestinal epithelium into blood or lymph.\n6. **Compaction:** Remaining material loses water and becomes concentrated feces.\n7. **Defecation:** Feces leave through the anal canal.\n\n**Important distinction:** This seven-function scheme includes **compaction**. Some textbooks instead name **motility** or **propulsion**; those movements remain essential even when listed under other functions.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          4,
+          9
+        ]
+      }
+    },
+    {
+      "id": "definitions-and-movements",
+      "title": "Key Terms and Movement",
+      "markdown": "**Digestion** makes food absorbable through physical and chemical processes. **Catabolism** breaks molecules down; **anabolism** builds larger molecules. **Mastication** is chewing, and **deglutition** is swallowing. Chewed, saliva-coated food is a **bolus**; after stomach mixing it becomes semifluid **chyme**.\n\nDifferent contractions serve different jobs:\n\n- **Peristalsis:** Coordinated waves propel contents forward.\n- **Segmentation:** Alternating intestinal contractions mix contents and improve contact with the mucosa.\n- **Haustral churning:** Local mixing within colonic pouches.\n- **Mass movements:** Strong, occasional colonic contractions advance feces toward the rectum.\n\nA **mesentery** is a double peritoneal fold supporting a digestive organ and carrying its vessels, nerves, and lymphatics. **Retroperitoneal** organs lie behind the parietal peritoneum, including most of the pancreas and duodenum. **Epiploic appendages** are fatty tags on the colon; **flatus** is intestinal gas.\n\n**Enterohepatic circulation** conserves bile salts: intestine → terminal ileum → portal blood → liver, allowing repeated use.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          2,
+          8,
+          9,
+          10,
+          11,
+          48,
+          55
+        ],
+        "Digestive.pptx": [
+          38
+        ]
+      }
+    },
+    {
+      "id": "gut-wall",
+      "title": "GI Wall and Peritoneum",
+      "markdown": "From the lumen outward, the gastrointestinal wall has four main layers:\n\n1. **Mucosa:** Epithelium, lamina propria, and muscularis mucosae; protects, secretes, and absorbs.\n2. **Submucosa:** Supportive connective tissue with larger vessels and the **submucosal (Meissner) plexus**, which helps regulate secretion and local blood flow.\n3. **Muscularis externa:** Usually inner circular and outer longitudinal smooth muscle. The **myenteric (Auerbach) plexus** between them coordinates movement; the stomach adds an oblique layer.\n4. **Serosa or adventitia:** Serosa provides a slippery visceral-peritoneal surface; adventitia anchors structures such as much of the esophagus.\n\nThe **parietal peritoneum** lines the abdominal wall, while the **visceral peritoneum** covers organ surfaces. The **greater omentum** hangs from the stomach's greater curvature over the intestines; the **lesser omentum** connects the liver to the lesser curvature and proximal duodenum. The **mesentery proper** supports much of the small intestine; a **mesocolon** supports parts of the colon.\n\n**Key contrast:** Myenteric plexus = motility; submucosal plexus = mucosal secretion and blood-flow regulation.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          7,
+          8,
+          9
+        ],
+        "Digestive.pptx": [
+          13,
+          38
+        ]
+      }
+    },
+    {
+      "id": "mouth-saliva-teeth",
+      "title": "Oral Cavity, Saliva, and Teeth",
+      "markdown": "The mouth begins **mechanical digestion**, forms a swallowable bolus, and starts chemical digestion. Teeth break food into smaller pieces; the tongue positions it. **Extrinsic tongue muscles** move the tongue; **intrinsic muscles** change its shape.\n\nMajor salivary glands and ducts:\n\n- **Parotid:** Beside the ear; drains via **Stensen's duct**.\n- **Submandibular:** Beneath the jaw; drains via **Wharton's duct**.\n- **Sublingual:** Beneath the tongue; drains through small **Rivinus ducts**.\n\n**Saliva** contains mucins (lubrication), amylase (starch digestion), bicarbonate (buffering), and lysozyme/IgA (defense). Tongue-associated glands secrete **lingual lipase**, which contributes to fat digestion after swallowing.\n\n**Oral landmarks:** **Vestibule** = between lips/cheeks and teeth; **fauces** = opening toward oropharynx; **uvula** = soft-palate projection; **dorsum** = upper tongue; **lingual/labial frenula** anchor tongue/lips; **labia** = lips.\n\nA tooth has **crown, neck, and root**. **Enamel** covers the crown; **cementum** the root; **dentin** makes up most of the tooth. The **pulp cavity/root canal** contains neurovascular tissue entering through the **apical foramen**; the **periodontal ligament** anchors the root. **Incisors** cut, **canines** tear, **premolars** crush, and **molars** grind. Typical dentition: **20 deciduous** or up to **32 permanent** teeth.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          13,
+          15,
+          16,
+          17
+        ],
+        "Digestive.pptx": [
+          3,
+          4,
+          5,
+          6,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "id": "swallowing",
+      "title": "Pharynx, Esophagus, and Swallowing",
+      "markdown": "**Deglutition** transfers a bolus from mouth to stomach while protecting the airway. Its phases are coordinated:\n\n- **Oral (buccal), voluntary:** The tongue pushes the bolus back toward the pharynx.\n- **Pharyngeal, involuntary:** A brainstem reflex elevates the soft palate to limit nasal entry and elevates/closes the laryngeal inlet. Vocal folds close, breathing pauses briefly, and the upper esophageal sphincter opens.\n- **Esophageal, involuntary:** Peristalsis propels the bolus toward the stomach; the **lower esophageal sphincter** relaxes for passage and normally helps prevent reflux afterward.\n\nThe **medulla oblongata** participates in swallowing coordination. **Nasopharynx** chiefly conducts air; **oropharynx** and **laryngopharynx** also conduct swallowed material. The **epiglottis** contributes to airway protection, but closure depends on several structures working together.\n\n**Esophageal hiatus:** Diaphragmatic opening for the esophagus. Weak lower sphincter function can allow reflux; unsuccessful airway closure can cause aspiration.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          18,
+          20,
+          21
+        ],
+        "Digestive.pptx": [
+          15,
+          16
+        ]
+      }
+    },
+    {
+      "id": "stomach",
+      "title": "Stomach: Regions, Cells, and Functions",
+      "markdown": "The stomach stores food, mechanically churns it, begins substantial protein digestion, releases **chyme** gradually, and makes **intrinsic factor** needed for vitamin B12 absorption in the ileum.\n\nIts regions are the **cardia** (entry), **fundus** (dome), **body** (central region), and **pylorus** (outlet). **Rugae** flatten during expansion; the **pyloric sphincter** controls emptying. The **lesser** and **greater curvatures** mark its short and long borders. Three muscle directions—**oblique, circular, longitudinal**—support thorough mixing.\n\nGastric gland cells have different products:\n\n- **Parietal:** **HCl** and **intrinsic factor**. Acid helps denature proteins, activate pepsin, and inhibit many microbes.\n- **Chief:** **Pepsinogen** (activated to pepsin) and **gastric lipase**.\n- **G cells:** **Gastrin**, which promotes acid secretion and gastric activity.\n- **D cells:** **Somatostatin**, which restrains secretion.\n- **Mucous cells:** Protective mucus; surface mucous cells also supply bicarbonate.\n\nGastric juice may approach **pH 1.5–2**, but a **mucus–bicarbonate barrier**, epithelial junctions, blood flow, and repair protect the lining.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          22,
+          23,
+          24,
+          25
+        ],
+        "Digestive.pptx": [
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "id": "gastric-phases",
+      "title": "Three Phases of Gastric Regulation",
+      "markdown": "Gastric secretion and movement shift across three **overlapping phases**:\n\n- **Cephalic:** Food-related sights, smells, tastes, or thoughts activate neural pathways, notably the **vagus nerve**, before food arrives.\n- **Gastric:** Stomach stretching and the presence of food stimulate neural reflexes and **gastrin**, increasing secretion and mixing.\n- **Intestinal:** Acidic, fatty, or concentrated chyme entering the duodenum triggers feedback that generally **slows gastric secretion and emptying**, including the **enterogastric reflex**, secretin, and CCK.\n\nThis timing matters: the stomach must not deliver chyme faster than the duodenum can neutralize acid and digest nutrients.\n\nThe **gastroileal reflex** is a separate stomach-to-ileum signal that can increase ileal movement after a meal. **Recall:** Cephalic = prepare; gastric = process; intestinal = regulate delivery.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      }
+    },
+    {
+      "id": "hormones",
+      "title": "GI Hormones and Their Triggers",
+      "markdown": "Digestive hormones connect the arrival of food to the correct secretory and motor responses:\n\n- **Gastrin — stomach G cells:** Triggered by food, distension, and neural signals; increases gastric acid secretion and activity.\n- **CCK — small-intestinal I cells:** Released by fats and proteins; promotes pancreatic **enzyme release**, gallbladder contraction, and slower gastric emptying.\n- **Secretin — duodenal S cells:** Released by acid; promotes pancreatic **bicarbonate** and limits further acid delivery.\n- **GIP — small-intestinal K cells:** Released by nutrients; supports **glucose-dependent insulin secretion**.\n- **Somatostatin — D cells:** Inhibits gastrin and acid secretion.\n- **VIP — enteric neurons:** Supports intestinal secretion, smooth-muscle relaxation, and vasodilation.\n\n**Why they cooperate:** Fatty, acidic chyme triggers **CCK** for enzymes and bile and **secretin** for bicarbonate. These responses prepare the intestine while restraining new gastric emptying.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          32,
+          33
+        ]
+      }
+    },
+    {
+      "id": "small-intestine",
+      "title": "Small Intestine: Regions and Absorption",
+      "markdown": "The **small intestine** completes most digestion and absorbs most nutrients. Its three regions have overlapping but recognizable roles:\n\n- **Duodenum:** Receives chyme, bile, and pancreatic secretions. **Brunner's glands** release alkaline mucus that helps protect against acid.\n- **Jejunum:** Important site of nutrient absorption.\n- **Ileum:** Reabsorbs **bile salts** and **vitamin B12–intrinsic factor**; contains prominent **Peyer's patches** for immune surveillance. The **ileocecal valve** connects it to the cecum.\n\nAbsorptive surface increases through **plicae circulares** (large folds), **villi** (mucosal projections), and **microvilli** (enterocyte brush border). **Lactase, sucrase, and maltase** are brush-border enzymes. **Intestinal crypts** contain stem and secretory cells; **goblet cells** make mucus, and **Paneth cells** release antimicrobial molecules.\n\nEach villus includes blood capillaries and a lymphatic **lacteal**. **Sugars and amino acids** generally enter portal blood. Long-chain fat products enter enterocytes, are repackaged into **chylomicrons**, and travel through lacteals and lymph before reaching blood. Bile salts assist by forming micelles that deliver lipid products to the absorptive surface.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "Digestive.pptx": [
+          30,
+          31,
+          32
+        ]
+      }
+    },
+    {
+      "id": "pancreas",
+      "title": "Pancreas: Enzymes, Ducts, and Disease",
+      "markdown": "The pancreas has **exocrine** digestive and **endocrine** hormonal functions. Its **head** fits within the duodenal curve, the **body** extends behind the stomach, and the **tail** approaches the spleen.\n\n**Acinar cells** release digestive enzymes; **duct cells** release bicarbonate-rich fluid to neutralize acidic chyme.\n\n- **Pancreatic amylase:** Breaks down starch.\n- **Proteases** (trypsin, chymotrypsin, elastase, carboxypeptidases): Digest proteins; many are secreted as inactive **zymogens** to limit self-digestion.\n- **Pancreatic lipase:** Digests triglycerides after bile-assisted emulsification.\n- **Nucleases:** Digest DNA and RNA.\n\nThe **main pancreatic duct (Wirsung)** generally joins the common bile duct near the **hepatopancreatic ampulla** and opens at the major duodenal papilla. An **accessory duct (Santorini)** may drain at the minor papilla.\n\n**Pancreatitis** is pancreatic inflammation, which may follow gallstone obstruction or heavy alcohol exposure; premature protease activation can contribute to tissue injury.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          42,
+          43,
+          44
+        ],
+        "Digestive.pptx": [
+          21,
+          22,
+          23
+        ]
+      }
+    },
+    {
+      "id": "liver-gallbladder",
+      "title": "Liver, Gallbladder, and Bile Flow",
+      "markdown": "**Hepatocytes** process absorbed nutrients, store glycogen, synthesize plasma proteins, handle bilirubin, detoxify substances, and produce **bile**. **Kupffer cells** are macrophages within liver **sinusoids**, specialized vascular channels.\n\nKnow the **right, left, caudate, and quadrate lobes**. The **falciform ligament** marks an anterior landmark between right and left anatomical lobes; the **round ligament** is a fetal umbilical-vein remnant.\n\n**Bile salts** are amphipathic: they help **emulsify fat** and form micelles that facilitate absorption of lipid products. Bile is **not an enzyme**. The **gallbladder** stores and concentrates bile; **CCK** stimulates its contraction after a fatty meal.\n\n**Bile pathway:** Right + left hepatic ducts → **common hepatic duct**. The **cystic duct** joins it to form the **common bile duct**. Bile from the gallbladder travels cystic duct → common bile duct → duodenum, commonly joining pancreatic secretions at the **hepatopancreatic ampulla**. Entry occurs at the **major duodenal papilla**, regulated by the **sphincter of Oddi**.\n\nMost bile salts return from the **terminal ileum** via portal blood to the liver—**enterohepatic circulation**—rather than being replaced entirely after each meal.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          45,
+          46,
+          48,
+          50,
+          51,
+          52
+        ],
+        "Digestive.pptx": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      }
+    },
+    {
+      "id": "large-intestine",
+      "title": "Large Intestine and Defecation",
+      "markdown": "The **large intestine** reabsorbs remaining water and electrolytes, houses microorganisms that process some undigested material, compacts feces, and stores waste for elimination. Its lining has abundant **goblet cells** but no intestinal villi.\n\n**Route:** Cecum → ascending colon → **hepatic flexure** → transverse colon → **splenic flexure** → descending colon → sigmoid colon → rectum → anal canal. The **appendix** projects from the cecum, and the **ileocecal valve** connects small and large intestine.\n\n- **Haustra:** Pouchlike colonic segments.\n- **Taeniae coli:** Three longitudinal smooth-muscle bands contributing to haustral shape.\n- **Epiploic appendages:** Fatty external tags.\n- **Haustral churning:** Local mixing; **mass movements:** Strong propulsion toward the rectum.\n\nRectal distension activates the **defecation reflex**, involving enteric and sacral pathways. The **internal anal sphincter** is involuntary smooth muscle; the **external anal sphincter** is voluntary skeletal muscle. Coordinated rectal contraction and voluntary external sphincter relaxation permit defecation.\n\n**Flatus** is expelled intestinal gas; **feces** contain remaining food residues, microbes, and shed cells.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          53,
+          54,
+          55,
+          56,
+          57
+        ],
+        "Digestive.pptx": [
+          33,
+          34,
+          35,
+          36
+        ]
+      }
+    },
+    {
+      "id": "conditions",
+      "title": "Instructor-Named Disorders",
+      "markdown": "Link each condition to the organ and the defining problem:\n\n- **Mumps:** Viral infection often associated with parotid swelling. **Gingivitis:** Inflamed gums. **Periodontal disease:** Damage to tooth-supporting tissues.\n- **Esophagitis:** Esophageal inflammation. **GERD:** Recurrent reflux of stomach contents. **Gastritis:** Stomach-lining inflammation. **Peptic ulcer disease:** Ulcers of the stomach or duodenum, often involving *H. pylori* or NSAIDs.\n- **Enteritis:** Small-intestinal inflammation. **Gastroenteritis:** Stomach and intestinal inflammation. **Giardiasis:** Intestinal parasite associated with diarrhea or malabsorption. **Dysentery:** Inflammatory diarrhea, often with blood. **Cholera:** Toxin-mediated severe watery diarrhea with dehydration risk.\n- **Hepatitis:** Liver inflammation. **Cirrhosis:** Advanced liver fibrosis. **Jaundice:** Yellow discoloration from bilirubin accumulation. **Gallstones:** Biliary deposits. **Cholecystitis:** Gallbladder inflammation. **Pancreatitis:** Pancreatic inflammation.\n- **Colitis:** Colon inflammation. **Constipation:** Difficult/infrequent stool passage. **Diarrhea:** Loose or watery stools. **Diverticulosis:** Diverticula without necessarily being inflamed; **diverticulitis:** Inflamed diverticulum. **Colon polyps:** Colonic growths, some with cancer potential.\n\nThese names are easier to retain when connected to location, mechanism, and a distinguishing symptom.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          25,
+          43,
+          49,
+          50,
+          58,
+          61
+        ]
+      }
+    },
+    {
+      "id": "visual-labels",
+      "title": "Anatomy Model: Identification Checklist",
+      "markdown": "For model identification, first locate the region, then its distinctive landmarks and flow pathways.\n\n- **Oral cavity:** Uvula, fauces, vestibule, labia, lingual/labial frenula, tongue dorsum, major salivary glands and visible ducts.\n- **Teeth:** Crown, neck, root; enamel, dentin, cementum, pulp cavity, root canal, apical foramen, periodontal ligament.\n- **Stomach:** Cardia, fundus, body, pylorus, sphincter, curvatures, rugae, and three muscular layers.\n- **Pancreas/duodenum:** Head, body, tail, duodenal loop, main/accessory pancreatic ducts.\n- **Liver/biliary system:** Four liver lobes, falciform and round ligaments, gallbladder, right/left hepatic ducts, common hepatic duct, cystic duct, common bile duct.\n- **Small intestine:** Duodenum, jejunum, ileum, plicae, villi, crypts, lacteals, Peyer's patches, ileocecal valve.\n- **Large intestine:** Cecum, appendix, colon regions and flexures, haustra, taeniae coli, rectum, and anal sphincters.\n\n**Study technique:** On a duct or intestinal diagram, trace the **direction of flow** rather than memorizing labels without relationships.",
+      "slideReferences": {
+        "Digestive.pptx": [
+          3,
+          4,
+          5,
+          7,
+          9,
+          10,
+          11,
+          18,
+          20,
+          21,
+          22,
+          24,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          34,
+          35,
+          36
+        ]
+      }
+    },
+    {
+      "id": "rapid-recall",
+      "title": "Rapid Recall — Likely Exam Associations",
+      "markdown": "Use these linked facts to test yourself:\n\n- **Seven functions:** Includes **compaction**; **peristalsis** propels, **segmentation** mixes.\n- **Swallowing:** Oral/buccal is voluntary; pharyngeal and esophageal are reflex-coordinated.\n- **Stomach:** **Parietal → HCl + intrinsic factor**; **chief → pepsinogen + lipase**; **G cell → gastrin**; **D cell → somatostatin**; **mucous cells → barrier**.\n- **Hormones:** **Acid → secretin → bicarbonate**; **fat/protein → CCK → pancreatic enzymes + gallbladder contraction**; **nutrients → GIP → insulin support**.\n- **Intestine:** **Duodenum → Brunner's glands**; **jejunum → major absorption**; **ileum → B12/bile salts**; **Peyer's patches → immunity**; **lacteals → chylomicrons**.\n- **Pancreas/liver:** **Acinar → enzymes**, **ducts → bicarbonate**, **hepatocytes → bile**, **Kupffer → macrophages**. Bile emulsifies; it doesn't hydrolyze fat.\n- **Colon:** **Haustra → pouches**, **taeniae coli → muscle bands**, **internal anal sphincter → involuntary**, **external → voluntary**.\n\nIf you can explain **why gastric mucus protects against acid**, **why fats enter lymph**, and **why the duodenum triggers bicarbonate release**, you've connected many separate facts into three useful mechanisms.",
+      "slideReferences": {
+        "24-Digestive System.pptx": [
+          4,
+          21,
+          24,
+          32,
+          33,
+          37,
+          38,
+          40,
+          42,
+          46,
+          48,
+          50,
+          52,
+          55,
+          56
+        ],
+        "Digestive.pptx": [
+          13,
+          20,
+          31,
+          34
+        ]
+      }
+    }
+  ]
+}

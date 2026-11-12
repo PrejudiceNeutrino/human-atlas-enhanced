@@ -1,10 +1,10 @@
 import { useLayoutEffect, useRef } from 'react';
 import { EducationalArticle } from './educational-article';
 import type { EducationalArticleData } from './subjects';
-import type { ExamCramMode, ExamCramVariant } from './exam-cram-content';
+import type { ExamCramMode } from './exam-cram-content';
 
-export function ExamCramArticle({ detailed, quickScan, mode, onModeChange, savingError, readingIntro }: {
-  detailed: EducationalArticleData; quickScan: ExamCramVariant; mode: ExamCramMode;
+export function ExamCramArticle({ detailed, quickScan, anchorId, mode, onModeChange, savingError, readingIntro }: {
+  detailed: EducationalArticleData; quickScan: EducationalArticleData; anchorId: string; mode: ExamCramMode;
   onModeChange: (mode: ExamCramMode) => void; savingError: boolean; readingIntro?: string;
 }) {
   const root = useRef<HTMLDivElement>(null);
@@ -25,11 +25,11 @@ export function ExamCramArticle({ detailed, quickScan, mode, onModeChange, savin
     onModeChange(next);
   };
   return <div ref={root} className="learn-exam-cram" data-reading-mode={mode}>
-    <EducationalArticle article={mode === 'quick-scan' ? quickScan : detailed} anchorId={detailed.id} presentation="cram" readingIntro={readingIntro}
+    <EducationalArticle article={mode === 'quick-scan' ? quickScan : detailed} anchorId={anchorId} presentation="cram" readingIntro={readingIntro}
       readingControls={<div className="learn-exam-mode-controls" data-annotation-excluded>
         <fieldset className="learn-exam-mode"><legend className="sr-only">Exam Cram reading mode</legend>
           {([['quick-scan', 'Quick Scan'], ['detailed-review', 'Detailed Review']] as const).map(([value, label]) => <label key={value}>
-            <input type="radio" name={`${detailed.id}-mode`} value={value} checked={mode === value} onChange={() => choose(value)}/><span>{label}</span>
+            <input type="radio" name={`${anchorId}-mode`} value={value} checked={mode === value} onChange={() => choose(value)}/><span>{label}</span>
           </label>)}
         </fieldset>
         <span className="sr-only" role="status">{mode === 'quick-scan' ? 'Quick Scan' : 'Detailed Review'} selected</span>
