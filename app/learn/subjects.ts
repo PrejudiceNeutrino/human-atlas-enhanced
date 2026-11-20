@@ -81,7 +81,7 @@ export const learnSubjects: LearnSubject[] = [
 learnSubjects.push({
   slug: 'respiratory', label: 'Respiratory', title: 'Respiratory System', href: '/learn/respiratory',
   modelShortcut: { label: 'Respiratory Model', tabId: 'respiratory-system-visualize' },
-  gallery: { count: 29 },
+  gallery: { count: 29, labelPractice: true },
   tabs: learnSubjects[0].tabs.map(({ readingIntro: _digestiveIntro, ...tab }) => ({
     ...tab, id: tab.id.replace('digestive-system-', 'respiratory-system-'),
   })),
@@ -90,7 +90,7 @@ learnSubjects.push({
 learnSubjects.push({
   slug: 'lymphoid', label: 'Lymphoid', title: 'Lymphoid System and Immunity', href: '/learn/lymphoid',
   modelShortcut: { label: 'Lymphoid Model', tabId: 'lymphoid-system-visualize' },
-  gallery: { count: 35 },
+  gallery: { count: 35, labelPractice: true },
   tabs: learnSubjects[0].tabs.map(({ readingIntro: _digestiveIntro, ...tab }) => ({
     ...tab, id: tab.id.replace('digestive-system-', 'lymphoid-system-'),
   })),

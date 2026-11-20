@@ -1,0 +1,5112 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "lymphoid",
+  "figures": [
+    {
+      "figureId": "a01",
+      "sourceImageSha256": "5557a120257c09fc6ad3f6b7a487393317bcd5b742713abbf64bd9719e9e803b",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "All identifiable anatomical callouts, including repeated inset node labels, covered. The standalone source fragment Dividing is not treated as an anatomical answer. Coordinates measured manually because OCR skew was unsuitable.",
+      "labels": [
+        {
+          "id": "a01-01-efferent-vessel",
+          "label": "Efferent vessel",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.198,
+              "y": 0.141,
+              "width": 0.067,
+              "height": 0.055,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a01-02-trabeculae",
+          "label": "Trabeculae",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.153,
+              "y": 0.223,
+              "width": 0.089,
+              "height": 0.03,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a01-03-medulla-b-cells-and-macrophages",
+          "label": "Medulla (B cells and macrophages)",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.013,
+              "y": 0.284,
+              "width": 0.144,
+              "height": 0.054,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a01-04-subcapsular-space",
+          "label": "Subcapsular space",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.0,
+              "y": 0.536,
+              "width": 0.101,
+              "height": 0.054,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a01-05-paracortex-t-cells",
+          "label": "Paracortex (T cells)",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.012,
+              "y": 0.602,
+              "width": 0.088,
+              "height": 0.06,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a01-06-capsule",
+          "label": "Capsule",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.162,
+              "y": 0.811,
+              "width": 0.072,
+              "height": 0.032,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a01-07-medullary-cord",
+          "label": "Medullary cord",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.253,
+              "y": 0.81,
+              "width": 0.117,
+              "height": 0.035,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a01-08-afferent-vessel",
+          "label": "Afferent vessel",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.461,
+              "y": 0.81,
+              "width": 0.067,
+              "height": 0.059,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a01-09-hilum",
+          "label": "Hilum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.416,
+              "y": 0.209,
+              "width": 0.052,
+              "height": 0.032,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a01-10-lymph-node-artery-and-vein",
+          "label": "Lymph node artery and vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.418,
+              "y": 0.141,
+              "width": 0.119,
+              "height": 0.056,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a01-11-medullary-sinus",
+          "label": "Medullary sinus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.586,
+              "y": 0.394,
+              "width": 0.125,
+              "height": 0.029,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a01-12-cortex-b-cells",
+          "label": "Cortex (B cells)",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.586,
+              "y": 0.445,
+              "width": 0.12,
+              "height": 0.03,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a01-13-lymphatic-vessel",
+          "label": "Lymphatic vessel",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.865,
+              "y": 0.057,
+              "width": 0.135,
+              "height": 0.029,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a01-14-lymph-nodes",
+          "label": "Lymph nodes",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.866,
+              "y": 0.107,
+              "width": 0.114,
+              "height": 0.031,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.561,
+              "y": 0.242,
+              "width": 0.11,
+              "height": 0.031,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a02",
+      "sourceImageSha256": "c6e0d88d04aa4a6bd1d775b9ea15b0ff5e50e7b61771e48025b399d5d1ffc543",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "a02-01-pharyngeal-tonsil",
+          "label": "Pharyngeal tonsil",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.38,
+              "y": 0.226,
+              "width": 0.174,
+              "height": 0.083,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.638,
+              "y": 0.94,
+              "width": 0.279,
+              "height": 0.053,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a02-02-palate",
+          "label": "Palate",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.4655,
+              "y": 0.384667,
+              "width": 0.089,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a02-03-palatine-tonsil",
+          "label": "Palatine tonsil",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.446,
+              "y": 0.618,
+              "width": 0.133,
+              "height": 0.085,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a02-04-lingual-tonsil",
+          "label": "Lingual tonsil",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.478,
+              "y": 0.774,
+              "width": 0.133,
+              "height": 0.086,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a03",
+      "sourceImageSha256": "56ce07b315d2a832d4a15a764b51be45613e4f61f206326054b5e77511034a90",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "a03-01-gastric-area",
+          "label": "Gastric area",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.463,
+              "y": 0.342,
+              "width": 0.076,
+              "height": 0.057,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-02-renal-area",
+          "label": "Renal area",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.253,
+              "y": 0.543,
+              "width": 0.065,
+              "height": 0.055,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-03-hilus",
+          "label": "Hilus",
+          "acceptedAnswers": [
+            "Hilum"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.70175,
+              "y": 0.463,
+              "width": 0.04775,
+              "height": 0.024,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-04-splenic-vein",
+          "label": "Splenic vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.69425,
+              "y": 0.533,
+              "width": 0.069,
+              "height": 0.047333,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a03-05-splenic-artery",
+          "label": "Splenic artery",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.7105,
+              "y": 0.671333,
+              "width": 0.069,
+              "height": 0.052333,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a04",
+      "sourceImageSha256": "db92ef08e4504fac7b838517540f16f1bdfba2d89fbba66e24cc95df438d2c10",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "a04-01-diaphragmatic-surface",
+          "label": "Diaphragmatic surface",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.7805,
+              "y": 0.032074,
+              "width": 0.173583,
+              "height": 0.03363,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a04-02-spleen-organ",
+          "label": "Spleen (organ)",
+          "acceptedAnswers": [
+            "Spleen"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.77925,
+              "y": 0.10837,
+              "width": 0.112333,
+              "height": 0.035111,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a04-03-visceral-surface",
+          "label": "Visceral surface",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.809667,
+              "y": 0.195037,
+              "width": 0.123167,
+              "height": 0.028444,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a04-04-hilum",
+          "label": "Hilum",
+          "acceptedAnswers": [
+            "Hilus"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.854667,
+              "y": 0.318741,
+              "width": 0.101083,
+              "height": 0.072889,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a04-05-splenic-artery",
+          "label": "Splenic artery",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.779667,
+              "y": 0.495037,
+              "width": 0.109833,
+              "height": 0.032889,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a04-06-splenic-vein",
+          "label": "Splenic vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.7755,
+              "y": 0.595037,
+              "width": 0.094,
+              "height": 0.032889,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a05",
+      "sourceImageSha256": "a7d1b6c2dd6eecaf795b09426f00cd6fb0b94d6642c80eefd9cb59f4fd43c894",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "a05-01-right-lobe",
+          "label": "Right lobe",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.043455,
+              "y": 0.113282,
+              "width": 0.134094,
+              "height": 0.091131,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a05-02-septa",
+          "label": "Septa",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.03405,
+              "y": 0.384059,
+              "width": 0.141931,
+              "height": 0.046895,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a05-03-lobule",
+          "label": "Lobule",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.007404,
+              "y": 0.559662,
+              "width": 0.170144,
+              "height": 0.037512,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a05-04-left-lobe",
+          "label": "Left lobe",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.885147,
+              "y": 0.110601,
+              "width": 0.105881,
+              "height": 0.091131,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a06",
+      "sourceImageSha256": "de1a1097e9c4ed8b2fc3f3e0767a236194846fe0b06f81ff1c4edb3b09163897",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "a06-01-intestinal-lumen",
+          "label": "Intestinal lumen",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.173,
+              "y": 0.091333,
+              "width": 0.15275,
+              "height": 0.085667,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-02-mucous-membrane",
+          "label": "Mucous membrane",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.16675,
+              "y": 0.271333,
+              "width": 0.18775,
+              "height": 0.085667,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-03-aggregate-lymphoid-nodule",
+          "label": "Aggregate lymphoid nodule",
+          "acceptedAnswers": [
+            "Lymph nodule"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.09675,
+              "y": 0.594667,
+              "width": 0.29525,
+              "height": 0.104,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.1555,
+              "y": 0.909667,
+              "width": 0.249,
+              "height": 0.052333,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a06-04-underlying-connective-tissue",
+          "label": "Underlying connective tissue",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.0905,
+              "y": 0.728,
+              "width": 0.31025,
+              "height": 0.087333,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "a07",
+      "sourceImageSha256": "9deeaf1b3a825dc94acc374fa8654c849f2d10a3390f2e9cb9edac55ca4dcfe8",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Selected identifiable lipid/lymph-transport structure and substance labels covered. Cropped edge text and longer metabolism explanations remain ungraded context; this is not a complete metabolic pathway quiz.",
+      "labels": [
+        {
+          "id": "a07-01-bloodstream",
+          "label": "Bloodstream",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.09527,
+              "y": 0.086889,
+              "width": 0.048937,
+              "height": 0.035481,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-02-lymphatic-vessel",
+          "label": "Lymphatic vessel",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.158,
+              "y": 0.05,
+              "width": 0.05,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-03-mucosa-of-small-intestine",
+          "label": "Mucosa of small intestine",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.238046,
+              "y": 0.072074,
+              "width": 0.05747,
+              "height": 0.051531,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-04-chylomicrons",
+          "label": "Chylomicrons",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.108922,
+              "y": 0.385654,
+              "width": 0.087618,
+              "height": 0.018815,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-05-remnant-chylomicrons",
+          "label": "Remnant chylomicrons",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.321094,
+              "y": 0.51158,
+              "width": 0.089324,
+              "height": 0.036716,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-06-lipoprotein-lipase",
+          "label": "Lipoprotein lipase",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.298341,
+              "y": 0.594914,
+              "width": 0.108096,
+              "height": 0.020667,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-07-vldl",
+          "label": "VLDL",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.448512,
+              "y": 0.436272,
+              "width": 0.040405,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.612,
+              "y": 0.545,
+              "width": 0.043,
+              "height": 0.023,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-08-capillary-wall",
+          "label": "Capillary wall",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.534974,
+              "y": 0.314049,
+              "width": 0.08648,
+              "height": 0.018815,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-09-hdl",
+          "label": "HDL",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.766487,
+              "y": 0.49121,
+              "width": 0.032441,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.825645,
+              "y": 0.488123,
+              "width": 0.032441,
+              "height": 0.015728,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-10-cholesteryl-esters",
+          "label": "Cholesteryl esters",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.695952,
+              "y": 0.217753,
+              "width": 0.118903,
+              "height": 0.020049,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-11-cholesterol",
+          "label": "Cholesterol",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.695952,
+              "y": 0.26837,
+              "width": 0.077379,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.555452,
+              "y": 0.083802,
+              "width": 0.072828,
+              "height": 0.016346,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.802892,
+              "y": 0.64121,
+              "width": 0.072828,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-12-triacylglycerol",
+          "label": "Triacylglycerol",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.695952,
+              "y": 0.317136,
+              "width": 0.09615,
+              "height": 0.020667,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-13-glycerol",
+          "label": "Glycerol",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.218705,
+              "y": 0.725778,
+              "width": 0.054057,
+              "height": 0.020049,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-14-fatty-acid",
+          "label": "Fatty acid",
+          "acceptedAnswers": [
+            "Fatty acids"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.318819,
+              "y": 0.725778,
+              "width": 0.060314,
+              "height": 0.020049,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.723256,
+              "y": 0.798617,
+              "width": 0.037561,
+              "height": 0.034864,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-15-free-cholesterol",
+          "label": "Free cholesterol",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.734064,
+              "y": 0.733185,
+              "width": 0.073966,
+              "height": 0.034864,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-16-cholesteryl-ester-droplet",
+          "label": "Cholesteryl ester droplet",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.858068,
+              "y": 0.731333,
+              "width": 0.073397,
+              "height": 0.057704,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-17-ldl-receptors",
+          "label": "LDL receptors",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.527,
+              "y": 0.754,
+              "width": 0.07,
+              "height": 0.047,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-18-ldl",
+          "label": "LDL",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.683,
+              "y": 0.457,
+              "width": 0.036,
+              "height": 0.026,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.626,
+              "y": 0.666,
+              "width": 0.032,
+              "height": 0.022,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "a07-19-idl",
+          "label": "IDL",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.588,
+              "y": 0.453,
+              "width": 0.035,
+              "height": 0.025,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p01",
+      "sourceImageSha256": "0e1d78d73ff9b75e16687f7128c02d1aa5ab5754d1054c9556572ace97716812",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "p01-01-cervical-lymph-nodes",
+          "label": "Cervical lymph nodes",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.122819,
+              "y": 0.245222,
+              "width": 0.220255,
+              "height": 0.017889,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-02-thoracic-duct",
+          "label": "Thoracic duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.202644,
+              "y": 0.26837,
+              "width": 0.14043,
+              "height": 0.015111,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-03-right-lymphatic-duct",
+          "label": "Right lymphatic duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.13443,
+              "y": 0.289667,
+              "width": 0.208644,
+              "height": 0.017889,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-04-axillary-lymph-nodes",
+          "label": "Axillary lymph nodes",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.128624,
+              "y": 0.322074,
+              "width": 0.21445,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-05-lymphatics-of-mammary-gland",
+          "label": "Lymphatics of mammary gland",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.032833,
+              "y": 0.342444,
+              "width": 0.30879,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-06-cisterna-chyli",
+          "label": "Cisterna chyli",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.202644,
+              "y": 0.406333,
+              "width": 0.14043,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-07-lymphatics-of-upper-limb",
+          "label": "Lymphatics of upper limb",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.067666,
+              "y": 0.428556,
+              "width": 0.255089,
+              "height": 0.017889,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-08-lumbar-lymph-nodes",
+          "label": "Lumbar lymph nodes",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.098145,
+              "y": 0.464667,
+              "width": 0.212999,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-09-pelvic-lymph-nodes",
+          "label": "Pelvic lymph nodes",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.102499,
+              "y": 0.505407,
+              "width": 0.197033,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-10-inguinal-lymph-nodes",
+          "label": "Inguinal lymph nodes",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.125721,
+              "y": 0.633185,
+              "width": 0.217353,
+              "height": 0.017889,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-11-lymphatics-of-lower-limb",
+          "label": "Lymphatics of lower limb",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.090888,
+              "y": 0.660037,
+              "width": 0.252186,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-12-lymph",
+          "label": "Lymph",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.81948,
+              "y": 0.029481,
+              "width": 0.069312,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.021222,
+              "y": 0.214667,
+              "width": 0.07802,
+              "height": 0.016037,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-13-lymphocyte",
+          "label": "Lymphocyte",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.841251,
+              "y": 0.121148,
+              "width": 0.125916,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-14-tonsil",
+          "label": "Tonsil",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.754168,
+              "y": 0.350778,
+              "width": 0.063507,
+              "height": 0.014185,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-15-thymus",
+          "label": "Thymus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.754168,
+              "y": 0.382259,
+              "width": 0.082374,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-16-spleen",
+          "label": "Spleen",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.754168,
+              "y": 0.409111,
+              "width": 0.072215,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-17-mucosa-associated-lymphoid-tissue",
+          "label": "Mucosa-associated lymphoid tissue",
+          "acceptedAnswers": [
+            "MALT"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.75562,
+              "y": 0.433185,
+              "width": 0.194131,
+              "height": 0.031778,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.753,
+              "y": 0.461,
+              "width": 0.088,
+              "height": 0.022,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p01-18-appendix",
+          "label": "Appendix",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.754168,
+              "y": 0.530407,
+              "width": 0.09834,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p02",
+      "sourceImageSha256": "abbdb30e0fe2ce03bc09d4b5afd072f8e70d6c5f976d86d756f2c69708498604",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "p02-01-smooth-muscle",
+          "label": "Smooth muscle",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.05411,
+              "y": 0.003556,
+              "width": 0.117466,
+              "height": 0.047519,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-02-venule",
+          "label": "Venule",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.081541,
+              "y": 0.654481,
+              "width": 0.102504,
+              "height": 0.020667,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-03-arteriole",
+          "label": "Arteriole",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.281042,
+              "y": 0.004481,
+              "width": 0.131182,
+              "height": 0.021593,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-04-endothelial-cells",
+          "label": "Endothelial cells",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.4581,
+              "y": 0.004481,
+              "width": 0.167342,
+              "height": 0.047519,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-05-interstitial-fluid",
+          "label": "Interstitial fluid",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.514209,
+              "y": 0.658185,
+              "width": 0.148638,
+              "height": 0.048444,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.185032,
+              "y": 0.94337,
+              "width": 0.249636,
+              "height": 0.02437,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-06-lymphatic-capillary",
+          "label": "Lymphatic capillary",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.839646,
+              "y": 0.004481,
+              "width": 0.15612,
+              "height": 0.052148,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-07-lymph-flow",
+          "label": "Lymph flow",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.779796,
+              "y": 0.724852,
+              "width": 0.101257,
+              "height": 0.04937,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-08-blood-capillaries",
+          "label": "Blood capillaries",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.145132,
+              "y": 0.811889,
+              "width": 0.249636,
+              "height": 0.026222,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.647626,
+              "y": 0.848926,
+              "width": 0.27582,
+              "height": 0.028074,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p02-09-loose-connective-tissue",
+          "label": "Loose connective tissue",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.456853,
+              "y": 0.812815,
+              "width": 0.361855,
+              "height": 0.021593,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p03",
+      "sourceImageSha256": "8431236533cb8a358478ca23616387c9e90142f324b49b8eb1e298f5e778c548",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "p03-01-incomplete-basement-membrane",
+          "label": "Incomplete basement membrane",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.047383,
+              "y": 0.164667,
+              "width": 0.169242,
+              "height": 0.100899,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p03-02-lymphatic-capillary",
+          "label": "Lymphatic capillary",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.070175,
+              "y": 0.621062,
+              "width": 0.156896,
+              "height": 0.07086,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p03-03-lymph-flow",
+          "label": "Lymph flow",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.380716,
+              "y": 0.166605,
+              "width": 0.102765,
+              "height": 0.066984,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p03-04-loose-connective-tissue",
+          "label": "Loose connective tissue",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.449092,
+              "y": 0.292574,
+              "width": 0.166393,
+              "height": 0.104775,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p03-05-interstitial-fluid",
+          "label": "Interstitial fluid",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.2848,
+              "y": 0.464085,
+              "width": 0.226222,
+              "height": 0.028225,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.531713,
+              "y": 0.622031,
+              "width": 0.151198,
+              "height": 0.066984,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.742539,
+              "y": 0.889473,
+              "width": 0.169242,
+              "height": 0.031132,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.060678,
+              "y": 0.934047,
+              "width": 0.086621,
+              "height": 0.035977,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p03-06-blood-capillary",
+          "label": "Blood capillary",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.385464,
+              "y": 0.712147,
+              "width": 0.124608,
+              "height": 0.066984,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p03-07-lymphocyte",
+          "label": "Lymphocyte",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.812815,
+              "y": 0.091992,
+              "width": 0.17589,
+              "height": 0.034039,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p03-08-to-larger-lymphatics",
+          "label": "To larger lymphatics",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.764382,
+              "y": 0.274163,
+              "width": 0.166393,
+              "height": 0.073767,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p04",
+      "sourceImageSha256": "51b6396b762b0a5a9c8f5631075809129ec82666774368aa257e9c6ab1d3ff1d",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "p04-01-vein",
+          "label": "Vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.052208,
+              "y": 0.090568,
+              "width": 0.03895,
+              "height": 0.028772,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.907415,
+              "y": 0.200086,
+              "width": 0.03895,
+              "height": 0.028772,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p04-02-artery",
+          "label": "Artery",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.036516,
+              "y": 0.155757,
+              "width": 0.055355,
+              "height": 0.035291,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.907415,
+              "y": 0.078834,
+              "width": 0.055355,
+              "height": 0.033987,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p04-03-lymphatic-vessel",
+          "label": "Lymphatic vessel",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.00228,
+              "y": 0.316123,
+              "width": 0.089592,
+              "height": 0.063974,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.907415,
+              "y": 0.326553,
+              "width": 0.090305,
+              "height": 0.063974,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.226245,
+              "y": 0.74637,
+              "width": 0.093872,
+              "height": 0.039202,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.091438,
+              "y": 0.792003,
+              "width": 0.068907,
+              "height": 0.030076,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p04-04-lymphatic-valve",
+          "label": "Lymphatic valve",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.00228,
+              "y": 0.41521,
+              "width": 0.089592,
+              "height": 0.063974,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p04-05-toward-venous-system",
+          "label": "Toward venous system",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.621395,
+              "y": 0.342198,
+              "width": 0.063201,
+              "height": 0.104391,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p04-06-from-lymphatic-capillaries",
+          "label": "From lymphatic capillaries",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.128528,
+              "y": 0.527335,
+              "width": 0.132388,
+              "height": 0.070493,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p05",
+      "sourceImageSha256": "1e759fedca0f84b111bc3f460ccb28b66ca426861fabc44981ae3aa494983b9d",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "p05-01-lymphatic-valve",
+          "label": "Lymphatic valve",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.75121,
+              "y": 0.004726,
+              "width": 0.230819,
+              "height": 0.047722,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p05-02-lymphatic-vessel",
+          "label": "Lymphatic vessel",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.750496,
+              "y": 0.087686,
+              "width": 0.247224,
+              "height": 0.048843,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p06",
+      "sourceImageSha256": "f389d158da9397426b9c666f96760d4aad92b8dbd0bc9f7e44ca1c8c525f8481",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "p06-01-drainage-of-right-lymphatic-duct",
+          "label": "Drainage of right lymphatic duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.103495,
+              "y": 0.141333,
+              "width": 0.135868,
+              "height": 0.109,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p06-02-drainage-of-thoracic-duct",
+          "label": "Drainage of thoracic duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.672725,
+              "y": 0.136333,
+              "width": 0.16444,
+              "height": 0.080667,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p07",
+      "sourceImageSha256": "5de2b8bf499112560db8309a38a23ea87dfb1b0163bddff3d97af55086b80f94",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "All identifiable anatomical callout names measured against the actual source. Repeated thoracic duct labels grouped. Cut-rib orientation terms are retained with the corresponding callouts.",
+      "labels": [
+        {
+          "id": "p07-01-right-internal-jugular-vein",
+          "label": "Right internal jugular vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.196,
+              "y": 0.092,
+              "width": 0.23,
+              "height": 0.032,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-02-right-jugular-trunk",
+          "label": "Right jugular trunk",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.226,
+              "y": 0.143,
+              "width": 0.171,
+              "height": 0.035,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-03-right-lymphatic-duct",
+          "label": "Right lymphatic duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.177,
+              "y": 0.19,
+              "width": 0.182,
+              "height": 0.033,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-04-right-subclavian-trunk",
+          "label": "Right subclavian trunk",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.144,
+              "y": 0.234,
+              "width": 0.2,
+              "height": 0.032,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-05-right-subclavian-vein",
+          "label": "Right subclavian vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.144,
+              "y": 0.306,
+              "width": 0.189,
+              "height": 0.033,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-06-right-bronchomediastinal-trunk",
+          "label": "Right bronchomediastinal trunk",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.117,
+              "y": 0.378,
+              "width": 0.229,
+              "height": 0.056,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-07-superior-vena-cava",
+          "label": "Superior vena cava",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.16,
+              "y": 0.454,
+              "width": 0.169,
+              "height": 0.031,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-08-rib-cut",
+          "label": "Rib (cut)",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.221,
+              "y": 0.53,
+              "width": 0.078,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-09-azygos-vein",
+          "label": "Azygos vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.212,
+              "y": 0.664,
+              "width": 0.112,
+              "height": 0.031,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-10-diaphragm",
+          "label": "Diaphragm",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.202,
+              "y": 0.766,
+              "width": 0.105,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-11-cisterna-chyli",
+          "label": "Cisterna chyli",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.237,
+              "y": 0.859,
+              "width": 0.125,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-12-inferior-vena-cava",
+          "label": "Inferior vena cava",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.233,
+              "y": 0.893,
+              "width": 0.158,
+              "height": 0.033,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-13-right-lumbar-trunk",
+          "label": "Right lumbar trunk",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.433,
+              "y": 0.911,
+              "width": 0.17,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-14-brachiocephalic-veins",
+          "label": "Brachiocephalic veins",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.463,
+              "y": 0.07,
+              "width": 0.148,
+              "height": 0.056,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-15-left-internal-jugular-vein",
+          "label": "Left internal jugular vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.659,
+              "y": 0.087,
+              "width": 0.222,
+              "height": 0.032,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-16-left-jugular-trunk",
+          "label": "Left jugular trunk",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.665,
+              "y": 0.133,
+              "width": 0.156,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-17-thoracic-duct",
+          "label": "Thoracic duct",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.676,
+              "y": 0.182,
+              "width": 0.127,
+              "height": 0.032,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.771,
+              "y": 0.542,
+              "width": 0.083,
+              "height": 0.051,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-18-left-subclavian-trunk",
+          "label": "Left subclavian trunk",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.698,
+              "y": 0.221,
+              "width": 0.186,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-19-left-bronchomediastinal-trunk",
+          "label": "Left bronchomediastinal trunk",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.701,
+              "y": 0.262,
+              "width": 0.181,
+              "height": 0.08,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-20-left-subclavian-vein",
+          "label": "Left subclavian vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.716,
+              "y": 0.348,
+              "width": 0.178,
+              "height": 0.034,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-21-first-rib-cut",
+          "label": "First rib (cut)",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.751,
+              "y": 0.392,
+              "width": 0.114,
+              "height": 0.035,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-22-highest-intercostal-vein",
+          "label": "Highest intercostal vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.74,
+              "y": 0.438,
+              "width": 0.098,
+              "height": 0.074,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-23-thoracic-lymph-nodes",
+          "label": "Thoracic lymph nodes",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.774,
+              "y": 0.622,
+              "width": 0.118,
+              "height": 0.061,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-24-hemiazygos-vein",
+          "label": "Hemiazygos vein",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.77,
+              "y": 0.698,
+              "width": 0.113,
+              "height": 0.053,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-25-parietal-pleura-cut",
+          "label": "Parietal pleura (cut)",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.753,
+              "y": 0.792,
+              "width": 0.106,
+              "height": 0.063,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-26-intestinal-trunk",
+          "label": "Intestinal trunk",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.673,
+              "y": 0.865,
+              "width": 0.137,
+              "height": 0.032,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p07-27-left-lumbar-trunk",
+          "label": "Left lumbar trunk",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.612,
+              "y": 0.905,
+              "width": 0.158,
+              "height": 0.033,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p08",
+      "sourceImageSha256": "bd72a0911945f6ec698ccfd4d1eec64361b47bfbd8c06fb4f226b7139430bd00",
+      "reviewStatus": "not-applicable",
+      "coverage": "none",
+      "reviewNotes": "Unlabeled blood-smear photograph. No printed answer callouts to hide, and no artificial coordinates or cell-identification targets are invented.",
+      "labels": []
+    },
+    {
+      "figureId": "p09",
+      "sourceImageSha256": "e1ffac7ac4b8e74ab5bd5d521ee783dab9aeb416ef991dcbee0f864f4b48dd9a",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Printed lineage, cell and compartment labels covered, with repeated stem-cell terms grouped. The explanatory production/differentiation sentence and schematic context remain ungraded. The source scienceReview caution remains available in Details.",
+      "labels": [
+        {
+          "id": "p09-01-thymus",
+          "label": "Thymus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.008,
+              "y": 0.472,
+              "width": 0.12,
+              "height": 0.036,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-02-thymic-hormones",
+          "label": "Thymic hormones",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.04675,
+              "y": 0.583,
+              "width": 0.099,
+              "height": 0.054,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-03-lymphoid-stem-cells",
+          "label": "Lymphoid stem cells",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.218,
+              "y": 0.519667,
+              "width": 0.099,
+              "height": 0.055667,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.53425,
+              "y": 0.461333,
+              "width": 0.099,
+              "height": 0.054,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.8505,
+              "y": 0.366333,
+              "width": 0.099,
+              "height": 0.054,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-04-migrate-to-thymus",
+          "label": "Migrate to thymus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.34925,
+              "y": 0.426333,
+              "width": 0.099,
+              "height": 0.060667,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-05-mature-t-cell",
+          "label": "Mature T cell",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.378,
+              "y": 0.901333,
+              "width": 0.06775,
+              "height": 0.055667,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-06-red-bone-marrow",
+          "label": "Red bone marrow",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.48,
+              "y": 0.217,
+              "width": 0.118,
+              "height": 0.073,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-07-cell-mediated-immunity",
+          "label": "Cell-mediated immunity",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.52925,
+              "y": 0.839667,
+              "width": 0.134,
+              "height": 0.059,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-08-b-cells",
+          "label": "B cells",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.71425,
+              "y": 0.623,
+              "width": 0.06775,
+              "height": 0.025667,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-09-antibody-mediated-immunity",
+          "label": "Antibody-mediated immunity",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.688,
+              "y": 0.827,
+              "width": 0.101,
+              "height": 0.088,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-10-natural-killer-cells",
+          "label": "Natural killer cells",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.85675,
+              "y": 0.598,
+              "width": 0.10025,
+              "height": 0.055667,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-11-immunological-surveillance",
+          "label": "Immunological surveillance",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.8155,
+              "y": 0.839667,
+              "width": 0.1415,
+              "height": 0.054,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p09-12-hemocytoblasts",
+          "label": "Hemocytoblasts",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.735,
+              "y": 0.289,
+              "width": 0.166,
+              "height": 0.033,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p10",
+      "sourceImageSha256": "b563dd77195ee78873a204b4e8ee456b02be7fcdd57e888c1032e464b212a15f",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "p10-01-septa",
+          "label": "Septa",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.178519,
+              "y": 0.003976,
+              "width": 0.116987,
+              "height": 0.049817,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-02-blood-vessels",
+          "label": "Blood vessels",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.056442,
+              "y": 0.866526,
+              "width": 0.283221,
+              "height": 0.039857,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-03-cortex",
+          "label": "Cortex",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.444753,
+              "y": 0.003976,
+              "width": 0.135169,
+              "height": 0.041849,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-04-medulla",
+          "label": "Medulla",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.604494,
+              "y": 0.866526,
+              "width": 0.157247,
+              "height": 0.039857,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p10-05-lobule",
+          "label": "Lobule",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.176,
+              "y": 0.283,
+              "width": 0.152,
+              "height": 0.058,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.606,
+              "y": 0.283,
+              "width": 0.152,
+              "height": 0.058,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p11",
+      "sourceImageSha256": "626f640b5181d4f71b8bc82016c2ec7a32e5c2c9695814cadac44c39657668e5",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "p11-01-red-pulp",
+          "label": "Red pulp",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.39,
+              "y": 0.35,
+              "width": 0.109,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-02-white-pulp-of-splenic-nodule",
+          "label": "White pulp of splenic nodule",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.0105,
+              "y": 0.584667,
+              "width": 0.16025,
+              "height": 0.067333,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-03-trabecular-veins",
+          "label": "Trabecular veins",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.868,
+              "y": 0.234,
+              "width": 0.124,
+              "height": 0.07,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-04-trabecular-arteries",
+          "label": "Trabecular arteries",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.87175,
+              "y": 0.494667,
+              "width": 0.11775,
+              "height": 0.055667,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-05-artery-in-splenic-nodule",
+          "label": "Artery in splenic nodule",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.8755,
+              "y": 0.651333,
+              "width": 0.0965,
+              "height": 0.095667,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p11-06-capsule",
+          "label": "Capsule",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.884,
+              "y": 0.393,
+              "width": 0.102,
+              "height": 0.044,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p12",
+      "sourceImageSha256": "f94b170ea3250c1c60b82bf98c081f57f4c6fd248ef00aa651768729bf9fc60c",
+      "reviewStatus": "not-applicable",
+      "coverage": "none",
+      "reviewNotes": "Four prose boxes explaining splenic blood flow; no independent diagram callouts. Retained for reading/inspection rather than hiding whole explanatory paragraphs.",
+      "labels": []
+    },
+    {
+      "figureId": "p13",
+      "sourceImageSha256": "3e4663fdcdd87a3e22d01afdf071534ec2b058e98fd113430581e7251cfe14ff",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Seven defense-category headings and the identifiable independent cellular/skin callouts are covered. Long explanations and numbered inflammatory effects remain ungraded; this is selected-label coverage, not a full paragraph recall test.",
+      "labels": [
+        {
+          "id": "p13-01-physical-barriers",
+          "label": "Physical barriers",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.08505,
+              "y": 0.056304,
+              "width": 0.108317,
+              "height": 0.029177,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-02-phagocytes",
+          "label": "Phagocytes",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.063468,
+              "y": 0.240491,
+              "width": 0.150763,
+              "height": 0.014601,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.121022,
+              "y": 0.679979,
+              "width": 0.11623,
+              "height": 0.015926,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.57354,
+              "y": 0.755509,
+              "width": 0.115511,
+              "height": 0.015926,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-03-immunological-surveillance",
+          "label": "Immunological surveillance",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.044043,
+              "y": 0.366816,
+              "width": 0.182417,
+              "height": 0.029618,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-04-interferons",
+          "label": "Interferons",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.062029,
+              "y": 0.491816,
+              "width": 0.150043,
+              "height": 0.014159,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-05-complement-system",
+          "label": "Complement system",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.064187,
+              "y": 0.615049,
+              "width": 0.143568,
+              "height": 0.028293,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-06-inflammatory-response",
+          "label": "Inflammatory response",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.054115,
+              "y": 0.751975,
+              "width": 0.162273,
+              "height": 0.029177,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-07-fever",
+          "label": "Fever",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.094403,
+              "y": 0.885367,
+              "width": 0.070906,
+              "height": 0.014159,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-08-secretions",
+          "label": "Secretions",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.44836,
+              "y": 0.066463,
+              "width": 0.107597,
+              "height": 0.014159,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-09-duct-of-eccrine-sweat-gland",
+          "label": "Duct of eccrine sweat gland",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.619583,
+              "y": 0.061604,
+              "width": 0.150043,
+              "height": 0.031827,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-10-fixed-macrophage",
+          "label": "Fixed macrophage",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.262748,
+              "y": 0.303654,
+              "width": 0.129899,
+              "height": 0.030502,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-11-neutrophil",
+          "label": "Neutrophil",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.406633,
+              "y": 0.317346,
+              "width": 0.109036,
+              "height": 0.016809,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-12-free-macrophage",
+          "label": "Free macrophage",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.537568,
+              "y": 0.304095,
+              "width": 0.130619,
+              "height": 0.030502,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-13-eosinophil",
+          "label": "Eosinophil",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.682173,
+              "y": 0.317346,
+              "width": 0.111194,
+              "height": 0.016809,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-14-hair",
+          "label": "Hair",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.837568,
+              "y": 0.078389,
+              "width": 0.042849,
+              "height": 0.014159,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-15-epithelium",
+          "label": "Epithelium",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.824619,
+              "y": 0.134926,
+              "width": 0.106878,
+              "height": 0.016809,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-16-basement-membrane",
+          "label": "Basement membrane",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.845482,
+              "y": 0.166728,
+              "width": 0.106878,
+              "height": 0.029177,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-17-monocyte",
+          "label": "Monocyte",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.825338,
+              "y": 0.317346,
+              "width": 0.102561,
+              "height": 0.016809,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-18-lysed-abnormal-cell",
+          "label": "Lysed abnormal cell",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.837568,
+              "y": 0.373442,
+              "width": 0.096806,
+              "height": 0.038894,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-19-natural-killer-cell",
+          "label": "Natural killer cell",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.37354,
+              "y": 0.422028,
+              "width": 0.090331,
+              "height": 0.02741,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-20-complement",
+          "label": "Complement",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.259871,
+              "y": 0.699413,
+              "width": 0.122705,
+              "height": 0.015926,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.57282,
+              "y": 0.787753,
+              "width": 0.125583,
+              "height": 0.016367,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-21-mast-cell",
+          "label": "Mast cell",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.296561,
+              "y": 0.838106,
+              "width": 0.087453,
+              "height": 0.013717,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p13-22-lysed-pathogen",
+          "label": "Lysed pathogen",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.768504,
+              "y": 0.623883,
+              "width": 0.09177,
+              "height": 0.028735,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p14",
+      "sourceImageSha256": "90ac702b321945d1801b967905d5330c522485bfddf02c825e5d1c6a47b1cec9",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Independent NK-cell, abnormal-cell, Golgi and perforin labels covered, including repeats in process headings/captions. Process sentences are not quiz answers. The existing perforin/granzyme scientific qualification remains in Details.",
+      "labels": [
+        {
+          "id": "p14-01-golgi-apparatus",
+          "label": "Golgi apparatus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.01425,
+              "y": 0.186333,
+              "width": 0.14525,
+              "height": 0.030667,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.323,
+              "y": 0.144667,
+              "width": 0.149,
+              "height": 0.030667,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-02-abnormal-cell",
+          "label": "Abnormal cell",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.15425,
+              "y": 0.419667,
+              "width": 0.09275,
+              "height": 0.047333,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.82925,
+              "y": 0.121333,
+              "width": 0.12525,
+              "height": 0.049,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.873,
+              "y": 0.778,
+              "width": 0.09275,
+              "height": 0.047333,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-03-pore-formed-by-perforin-complex",
+          "label": "Pore formed by perforin complex",
+          "acceptedAnswers": [
+            "Perforin pore"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.868,
+              "y": 0.618,
+              "width": 0.127,
+              "height": 0.083,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-04-nk-cell",
+          "label": "NK cell",
+          "acceptedAnswers": [
+            "Natural killer cell"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.055,
+              "y": 0.429,
+              "width": 0.075,
+              "height": 0.031,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.547,
+              "y": 0.766,
+              "width": 0.045,
+              "height": 0.059,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p14-05-perforin",
+          "label": "Perforin",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.598,
+              "y": 0.146,
+              "width": 0.083,
+              "height": 0.027,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.873,
+              "y": 0.5,
+              "width": 0.098,
+              "height": 0.058,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p15",
+      "sourceImageSha256": "09370f66a3dfd197f7238d1343bbf8ab7c63659d8101439817d02e65ab7a70d2",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Only the independently labeled NK cell is scored. Repeated mentions in source prose are also covered; longer tumor-escape explanations remain ungraded and the scientific caution remains in Details.",
+      "labels": [
+        {
+          "id": "p15-01-nk-cell",
+          "label": "NK cell",
+          "acceptedAnswers": [
+            "NK cells"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.311837,
+              "y": 0.10243,
+              "width": 0.058208,
+              "height": 0.030899,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.368899,
+              "y": 0.865089,
+              "width": 0.07176,
+              "height": 0.030899,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.811837,
+              "y": 0.444203,
+              "width": 0.07176,
+              "height": 0.032481,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.105703,
+              "y": 0.912557,
+              "width": 0.07176,
+              "height": 0.032481,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.556488,
+              "y": 0.819203,
+              "width": 0.07176,
+              "height": 0.032481,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p16",
+      "sourceImageSha256": "0e65d8df99f0501a58679a9ec782fa77d011829bdf4408268b5cd03b2c5c63c3",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Selected complement components and pathway labels covered. Long explanatory process boxes remain ungraded. Component names are transcribed from the source without inventing downstream mechanisms.",
+      "labels": [
+        {
+          "id": "p16-01-classical-pathway",
+          "label": "Classical pathway",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.034,
+              "y": 0.027,
+              "width": 0.175,
+              "height": 0.064,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p16-02-antibodies",
+          "label": "Antibodies",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.243,
+              "y": 0.024,
+              "width": 0.141,
+              "height": 0.03,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p16-03-bacterial-cell-wall",
+          "label": "Bacterial cell wall",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.225,
+              "y": 0.127,
+              "width": 0.122,
+              "height": 0.05,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p16-04-antibody-binding",
+          "label": "Antibody binding",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.4,
+              "y": 0.08,
+              "width": 0.123,
+              "height": 0.049,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p16-05-c1",
+          "label": "C1",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.332,
+              "y": 0.217,
+              "width": 0.043,
+              "height": 0.031,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.483,
+              "y": 0.271,
+              "width": 0.044,
+              "height": 0.028,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.507,
+              "y": 0.471,
+              "width": 0.045,
+              "height": 0.03,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p16-06-c2",
+          "label": "C2",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.296,
+              "y": 0.401,
+              "width": 0.041,
+              "height": 0.031,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p16-07-c4",
+          "label": "C4",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.382,
+              "y": 0.396,
+              "width": 0.042,
+              "height": 0.03,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p16-08-c3",
+          "label": "C3",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.431,
+              "y": 0.397,
+              "width": 0.042,
+              "height": 0.031,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p16-09-c3b",
+          "label": "C3b",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.428,
+              "y": 0.467,
+              "width": 0.059,
+              "height": 0.03,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.408,
+              "y": 0.618,
+              "width": 0.058,
+              "height": 0.029,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.45,
+              "y": 0.696,
+              "width": 0.058,
+              "height": 0.031,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.473,
+              "y": 0.866,
+              "width": 0.059,
+              "height": 0.032,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p16-10-c5-c9",
+          "label": "C5-C9",
+          "acceptedAnswers": [
+            "C5–C9"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.543,
+              "y": 0.851,
+              "width": 0.075,
+              "height": 0.029,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p16-11-membrane-attack-complex",
+          "label": "Membrane attack complex",
+          "acceptedAnswers": [
+            "MAC"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.693,
+              "y": 0.866,
+              "width": 0.296,
+              "height": 0.053,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.558,
+              "y": 0.877,
+              "width": 0.062,
+              "height": 0.028,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p16-12-pore-formation",
+          "label": "Pore formation",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.625,
+              "y": 0.918,
+              "width": 0.124,
+              "height": 0.048,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p17",
+      "sourceImageSha256": "bbd1a7844a7442e491d691edf5e20edae18fcf8f57c9181d3565308b597102cf",
+      "reviewStatus": "not-applicable",
+      "coverage": "none",
+      "reviewNotes": "Narrative inflammation sequence with text inside explanatory boxes, not independent anatomical callouts. Preserved as ordinary Gallery physiology content.",
+      "labels": []
+    },
+    {
+      "figureId": "p18",
+      "sourceImageSha256": "4c35d490c354d967c00a672cfc6733ab9bbbbffcb4018372170809a8a25b7a34",
+      "reviewStatus": "not-applicable",
+      "coverage": "none",
+      "reviewNotes": "The source taxonomy is scientifically flagged as misleading in scienceReview. It remains available with that caution for ordinary inspection; no identification quiz reinforces its incorrect innate/adaptive grouping.",
+      "labels": []
+    },
+    {
+      "figureId": "p19",
+      "sourceImageSha256": "4ccf46960bdc10572bccb9a24262882a5dddba6dda0dec2cda67cdd247fd7b6a",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Independent immune-response/cell labels covered. Narrative response arrows and inset/heading text remain ungraded; this is selected-label coverage.",
+      "labels": [
+        {
+          "id": "p19-01-cell-mediated-immunity",
+          "label": "Cell-mediated immunity",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.677151,
+              "y": 0.25424,
+              "width": 0.239955,
+              "height": 0.023967,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p19-02-antigens",
+          "label": "Antigens",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.106614,
+              "y": 0.505488,
+              "width": 0.078906,
+              "height": 0.027295,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p19-03-specific-defenses",
+          "label": "Specific defenses",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.358799,
+              "y": 0.462226,
+              "width": 0.1638,
+              "height": 0.078875,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p19-04-phagocytes-activated",
+          "label": "Phagocytes activated",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.640946,
+              "y": 0.423957,
+              "width": 0.101378,
+              "height": 0.048925,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p19-05-antibody-mediated-immunity",
+          "label": "Antibody-mediated immunity",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.643443,
+              "y": 0.582027,
+              "width": 0.284899,
+              "height": 0.022303,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p19-06-b-cells-activated",
+          "label": "B cells activated",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.755803,
+              "y": 0.670213,
+              "width": 0.080155,
+              "height": 0.047261,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p19-07-direct-physical-and-chemical-attack",
+          "label": "Direct physical and chemical attack",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.389,
+              "y": 0.154,
+              "width": 0.196,
+              "height": 0.083,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p19-08-t-cells-activated",
+          "label": "T cells activated",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.844,
+              "y": 0.416,
+              "width": 0.085,
+              "height": 0.06,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p19-09-antibodies",
+          "label": "Antibodies",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.437,
+              "y": 0.795,
+              "width": 0.103,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p20",
+      "sourceImageSha256": "fcc67e7944683573edcbcd1ec38ae666a1526a90493de09b5a5115a332a10fbb",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Independent cell/vesicle/organelle labels and the short abnormal-peptide callout are covered. Long MHC processing/presentation explanations remain ungraded; the source scientific caution remains available.",
+      "labels": [
+        {
+          "id": "p20-01-cell-membrane",
+          "label": "Cell membrane",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.023641,
+              "y": 0.033,
+              "width": 0.166393,
+              "height": 0.022333,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.560393,
+              "y": 0.188,
+              "width": 0.162974,
+              "height": 0.022333,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.65612,
+              "y": 0.446333,
+              "width": 0.039897,
+              "height": 0.022333,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.603128,
+              "y": 0.471333,
+              "width": 0.11853,
+              "height": 0.022333,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p20-02-endoplasmic-reticulum",
+          "label": "Endoplasmic reticulum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.228769,
+              "y": 0.754667,
+              "width": 0.140752,
+              "height": 0.047333,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p20-03-nucleus",
+          "label": "Nucleus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.381,
+              "y": 0.861,
+              "width": 0.128,
+              "height": 0.038,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p20-04-transport-vesicle",
+          "label": "Transport vesicle",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.850991,
+              "y": 0.488,
+              "width": 0.104855,
+              "height": 0.049,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p20-05-golgi-apparatus",
+          "label": "Golgi apparatus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.823641,
+              "y": 0.659667,
+              "width": 0.109983,
+              "height": 0.052333,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p20-06-abnormal-peptides",
+          "label": "Abnormal peptides",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.199,
+              "y": 0.368,
+              "width": 0.116,
+              "height": 0.081,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.288598,
+              "y": 0.674667,
+              "width": 0.204,
+              "height": 0.025667,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p21",
+      "sourceImageSha256": "b640352274eda7164fbe144a7f054f1078ccf07d12b1d713a46c663acfdbcf5d",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Readable named cells, receptor/co-stimulation and molecular labels covered. The miniature inset, process captions and cytolytic-effect explanation boxes remain ungraded. T-cell priming caveats remain in Details.",
+      "labels": [
+        {
+          "id": "p21-01-infected-cell",
+          "label": "Infected cell",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.648,
+              "y": 0.022,
+              "width": 0.077,
+              "height": 0.046,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p21-02-viral-or-bacterial-antigen",
+          "label": "Viral or bacterial antigen",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.458,
+              "y": 0.106,
+              "width": 0.105,
+              "height": 0.07,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p21-03-inactive-cytotoxic-cd8-t-cell",
+          "label": "Inactive cytotoxic (CD8) T cell",
+          "acceptedAnswers": [
+            "Inactive cytotoxic T cell",
+            "Inactive CD8 T cell"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.624,
+              "y": 0.229,
+              "width": 0.101,
+              "height": 0.071,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p21-04-class-i-mhc",
+          "label": "Class I MHC",
+          "acceptedAnswers": [
+            "Class I MHC protein"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.756,
+              "y": 0.016,
+              "width": 0.068,
+              "height": 0.051,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p21-05-antigen",
+          "label": "Antigen",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.732,
+              "y": 0.122,
+              "width": 0.072,
+              "height": 0.029,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p21-06-memory-cytotoxic-t-cells-inactive",
+          "label": "Memory cytotoxic T cells (inactive)",
+          "acceptedAnswers": [
+            "Memory Tc cells",
+            "Memory cytotoxic T cells"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.797,
+              "y": 0.369,
+              "width": 0.137,
+              "height": 0.057,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p21-07-active-cytotoxic-t-cells",
+          "label": "Active cytotoxic T cells",
+          "acceptedAnswers": [
+            "Active Tc cells",
+            "Cytotoxic T cells"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.637,
+              "y": 0.429,
+              "width": 0.123,
+              "height": 0.074,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p21-08-lysed-cell",
+          "label": "Lysed cell",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.628,
+              "y": 0.866,
+              "width": 0.066,
+              "height": 0.052,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p21-09-cd8",
+          "label": "CD8",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.834,
+              "y": 0.026,
+              "width": 0.043,
+              "height": 0.03,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p21-10-costimulation",
+          "label": "Costimulation",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.771,
+              "y": 0.225,
+              "width": 0.123,
+              "height": 0.027,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p21-11-t-cell-receptor",
+          "label": "T cell receptor",
+          "acceptedAnswers": [
+            "T-cell receptor"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.736,
+              "y": 0.174,
+              "width": 0.074,
+              "height": 0.05,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p22",
+      "sourceImageSha256": "1ba3b1cb687d2f8a791db8eb14829016f6681fcb04bd6bbdb7d22ed18a360a91",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Independent organelle/membrane callouts covered. MHC processing/explanatory text boxes remain ungraded context; source image and explanatory qualifications are unchanged.",
+      "labels": [
+        {
+          "id": "p22-01-plasma-membrane",
+          "label": "Plasma membrane",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.397853,
+              "y": 0.048321,
+              "width": 0.12579,
+              "height": 0.072522,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.656841,
+              "y": 0.145752,
+              "width": 0.216766,
+              "height": 0.037191,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p22-02-endoplasmic-reticulum",
+          "label": "Endoplasmic reticulum",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.833657,
+              "y": 0.648964,
+              "width": 0.154404,
+              "height": 0.073593,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.697927,
+              "y": 0.453032,
+              "width": 0.270324,
+              "height": 0.038261,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p22-03-lysosome",
+          "label": "Lysosome",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.05596,
+              "y": 0.855602,
+              "width": 0.122122,
+              "height": 0.038261,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.251852,
+              "y": 0.754959,
+              "width": 0.122122,
+              "height": 0.038261,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p22-04-nucleus",
+          "label": "Nucleus",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.535051,
+              "y": 0.817058,
+              "width": 0.096443,
+              "height": 0.030767,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p23",
+      "sourceImageSha256": "69347c76e7620a140a3cf3340da1b62f1afd9702d4adc7ce319dbd9313af7d6a",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Readable named B/T-cell, antibody and molecular callouts covered. The miniature inset and process explanation captions remain ungraded; co-stimulation context remains in Details.",
+      "labels": [
+        {
+          "id": "p23-01-class-ii-mhc",
+          "label": "Class II MHC",
+          "acceptedAnswers": [
+            "Class II MHC protein"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.471,
+              "y": 0.027,
+              "width": 0.115,
+              "height": 0.03,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.525,
+              "y": 0.357,
+              "width": 0.052,
+              "height": 0.043,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p23-02-antigens-bound-to-antibody-molecules",
+          "label": "Antigens bound to antibody molecules",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.687,
+              "y": 0.033,
+              "width": 0.168,
+              "height": 0.055,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p23-03-inactive-b-cell",
+          "label": "Inactive B cell",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.476,
+              "y": 0.185,
+              "width": 0.128,
+              "height": 0.031,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p23-04-antigen-binding",
+          "label": "Antigen binding",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.643,
+              "y": 0.175,
+              "width": 0.072,
+              "height": 0.053,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p23-05-sensitized-b-cell",
+          "label": "Sensitized B cell",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.729,
+              "y": 0.227,
+              "width": 0.096,
+              "height": 0.05,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.717,
+              "y": 0.448,
+              "width": 0.096,
+              "height": 0.048,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p23-06-memory-b-cells-inactive",
+          "label": "Memory B cells (inactive)",
+          "acceptedAnswers": [
+            "Memory B cells"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.5,
+              "y": 0.649,
+              "width": 0.084,
+              "height": 0.071,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p23-07-plasma-cells",
+          "label": "Plasma cells",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.619,
+              "y": 0.709,
+              "width": 0.068,
+              "height": 0.051,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p23-08-helper-t-cell",
+          "label": "Helper T cell",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.605,
+              "y": 0.43,
+              "width": 0.061,
+              "height": 0.05,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p23-09-t-cell-receptor",
+          "label": "T cell receptor",
+          "acceptedAnswers": [
+            "T-cell receptor"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.515,
+              "y": 0.318,
+              "width": 0.064,
+              "height": 0.038,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p23-10-antibodies",
+          "label": "Antibodies",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.538,
+              "y": 0.155,
+              "width": 0.099,
+              "height": 0.031,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p23-11-activated-b-cells",
+          "label": "Activated B cells",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.717,
+              "y": 0.667,
+              "width": 0.086,
+              "height": 0.05,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p23-12-antigens",
+          "label": "Antigens",
+          "acceptedAnswers": [
+            "Antigen"
+          ],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.585,
+              "y": 0.052,
+              "width": 0.083,
+              "height": 0.033,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.52,
+              "y": 0.445,
+              "width": 0.055,
+              "height": 0.025,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p23-13-stimulation-by-cytokines",
+          "label": "Stimulation by cytokines",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.645,
+              "y": 0.316,
+              "width": 0.132,
+              "height": 0.049,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p24",
+      "sourceImageSha256": "9dea2f530a57f31aeca1f5a2007191a221975b0e9a80560f38d4395358561889",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "p24-01-antigen-binding-site",
+          "label": "Antigen binding site",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.030309,
+              "y": 0.031654,
+              "width": 0.096199,
+              "height": 0.116981,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.855368,
+              "y": 0.032856,
+              "width": 0.142692,
+              "height": 0.082125,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p24-02-variable-segment",
+          "label": "Variable segment",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.021641,
+              "y": 0.272038,
+              "width": 0.105655,
+              "height": 0.082125,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p24-03-constant-segments-of-light-and-heavy-chains",
+          "label": "Constant segments of light and heavy chains",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.00194,
+              "y": 0.607375,
+              "width": 0.125355,
+              "height": 0.199913,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p24-04-heavy-chain",
+          "label": "Heavy chain",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.395163,
+              "y": 0.012423,
+              "width": 0.145844,
+              "height": 0.040058,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p24-05-disulfide-bond",
+          "label": "Disulfide bond",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.455841,
+              "y": 0.258817,
+              "width": 0.104079,
+              "height": 0.071308,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p24-06-light-chain",
+          "label": "Light chain",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.766322,
+              "y": 0.380212,
+              "width": 0.067042,
+              "height": 0.074913,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p24-07-complement-binding-site",
+          "label": "Complement binding site",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.65127,
+              "y": 0.53526,
+              "width": 0.153724,
+              "height": 0.083327,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p24-08-site-of-binding-to-macrophages",
+          "label": "Site of binding to macrophages",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.649694,
+              "y": 0.672279,
+              "width": 0.195489,
+              "height": 0.082125,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p25",
+      "sourceImageSha256": "03ac672f18545003cc7bc458e6f1745fd368cf4a5f30f5493c211f9b9c658e79",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "p25-01-igm",
+          "label": "IgM",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.07,
+              "y": 0.143,
+              "width": 0.045,
+              "height": 0.04,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p25-02-iga",
+          "label": "IgA",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.542,
+              "y": 0.143,
+              "width": 0.041,
+              "height": 0.04,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p26",
+      "sourceImageSha256": "edd65a8d5464e006643a7b15439abec636e3b50a47e7fb3ec38ebe0073c0f8a7",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Independent antibody-action headings and antigenic/immune-complex callouts covered; matching repeated terms in prose are masked where legible. The long mechanism explanations remain ungraded.",
+      "labels": [
+        {
+          "id": "p26-01-neutralization",
+          "label": "Neutralization",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.020624,
+              "y": 0.042444,
+              "width": 0.126172,
+              "height": 0.017889,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.020624,
+              "y": 0.254481,
+              "width": 0.127077,
+              "height": 0.016037,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p26-02-precipitation-and-agglutination",
+          "label": "Precipitation and agglutination",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.020624,
+              "y": 0.392444,
+              "width": 0.153321,
+              "height": 0.038259,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p26-03-prevention-of-pathogen-adhesion",
+          "label": "Prevention of pathogen adhesion",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.389855,
+              "y": 0.042444,
+              "width": 0.20762,
+              "height": 0.035481,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p26-04-stimulation-of-inflammation",
+          "label": "Stimulation of inflammation",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.38895,
+              "y": 0.675778,
+              "width": 0.246534,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p26-05-activation-of-complement",
+          "label": "Activation of complement",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.718362,
+              "y": 0.042444,
+              "width": 0.231149,
+              "height": 0.019741,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p26-06-opsonization",
+          "label": "Opsonization",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.719267,
+              "y": 0.288741,
+              "width": 0.117122,
+              "height": 0.019741,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.721982,
+              "y": 0.520222,
+              "width": 0.117122,
+              "height": 0.018815,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p26-07-attraction-of-phagocytes",
+          "label": "Attraction of phagocytes",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.719267,
+              "y": 0.675778,
+              "width": 0.2221,
+              "height": 0.021593,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p26-08-immune-complex",
+          "label": "Immune complex",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.01067,
+              "y": 0.879481,
+              "width": 0.080018,
+              "height": 0.037333,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.1799,
+              "y": 0.546148,
+              "width": 0.071873,
+              "height": 0.016037,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.020624,
+              "y": 0.565593,
+              "width": 0.080923,
+              "height": 0.018815,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p26-09-antigenic-determinant-sites",
+          "label": "Antigenic determinant sites",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.302072,
+              "y": 0.586889,
+              "width": 0.095403,
+              "height": 0.053074,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.178995,
+              "y": 0.465593,
+              "width": 0.072778,
+              "height": 0.020667,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.020624,
+              "y": 0.485963,
+              "width": 0.134317,
+              "height": 0.016963,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p27",
+      "sourceImageSha256": "5c7bf936ddd9e95f43413daf967f3652aca1c819ea07c3730704cd5673039f7a",
+      "reviewStatus": "verified",
+      "coverage": "partial",
+      "reviewNotes": "Primary/secondary response headings and IgM/IgG curve labels covered; matching repeated terms in explanatory captions are also hidden. Axis values and timing statements are not graded.",
+      "labels": [
+        {
+          "id": "p27-01-primary-response",
+          "label": "Primary response",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.060054,
+              "y": 0.025295,
+              "width": 0.119549,
+              "height": 0.072238,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.13566,
+              "y": 0.564998,
+              "width": 0.203715,
+              "height": 0.043702,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.63566,
+              "y": 0.768471,
+              "width": 0.203715,
+              "height": 0.043702,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p27-02-secondary-response",
+          "label": "Secondary response",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.537943,
+              "y": 0.025295,
+              "width": 0.136668,
+              "height": 0.072238,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.613549,
+              "y": 0.564998,
+              "width": 0.235098,
+              "height": 0.043702,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p27-03-igm",
+          "label": "IgM",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.21626,
+              "y": 0.334228,
+              "width": 0.038237,
+              "height": 0.03998,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.654919,
+              "y": 0.334228,
+              "width": 0.038237,
+              "height": 0.03998,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.171324,
+              "y": 0.717603,
+              "width": 0.041803,
+              "height": 0.043702,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p27-04-igg",
+          "label": "IgG",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.2883,
+              "y": 0.297007,
+              "width": 0.037524,
+              "height": 0.03998,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.588585,
+              "y": 0.184104,
+              "width": 0.037524,
+              "height": 0.03998,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.264762,
+              "y": 0.716362,
+              "width": 0.040377,
+              "height": 0.044943,
+              "fill": "#ffffff"
+            },
+            {
+              "shape": "rect",
+              "x": 0.593578,
+              "y": 0.666734,
+              "width": 0.040377,
+              "height": 0.043702,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "figureId": "p28",
+      "sourceImageSha256": "332d96282f2a55f8bfb750298f03fa51ab01997072b6ca7afaed9b77b59523a7",
+      "reviewStatus": "verified",
+      "coverage": "complete",
+      "reviewNotes": "Identifiable printed callouts transcribed and measured in source-image space. Titles, credits, panel letters and orientation captions are not answers.",
+      "labels": [
+        {
+          "id": "p28-01-neutrophils",
+          "label": "Neutrophils",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.095004,
+              "y": 0.059368,
+              "width": 0.174471,
+              "height": 0.045247,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p28-02-macrophages",
+          "label": "Macrophages",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.301852,
+              "y": 0.058362,
+              "width": 0.202288,
+              "height": 0.046254,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p28-03-plasma-cells",
+          "label": "Plasma cells",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.566474,
+              "y": 0.059368,
+              "width": 0.188736,
+              "height": 0.036193,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p28-04-natural-killer-cells",
+          "label": "Natural killer cells",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.187729,
+              "y": 0.166008,
+              "width": 0.152359,
+              "height": 0.089513,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p28-05-cytotoxic-t-cells",
+          "label": "Cytotoxic T cells",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.410981,
+              "y": 0.166008,
+              "width": 0.143087,
+              "height": 0.089513,
+              "fill": "#ffffff"
+            }
+          ]
+        },
+        {
+          "id": "p28-06-antibody-titer",
+          "label": "Antibody titer",
+          "acceptedAnswers": [],
+          "reviewStatus": "verified",
+          "regions": [
+            {
+              "shape": "rect",
+              "x": 0.767615,
+              "y": 0.167014,
+              "width": 0.138094,
+              "height": 0.088507,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

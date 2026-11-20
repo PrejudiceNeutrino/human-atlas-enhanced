@@ -36,7 +36,7 @@ const root=createRoot(document.querySelector('#root'));
 let revision=0;
 const render=async(route='/learn/respiratory',hash='')=>{window.history.replaceState(null,'',route+hash);flushSync(()=>root.render(createElement(api.LearnPage,{pathname:route,key:++revision})));await delay(100);};
 const waitFor=async(predicate,message)=>{for(let i=0;i<100;i++){if(predicate())return;await delay(25);}assert.ok(predicate(),message);};
-const click=async node=>{assert.ok(node,'control exists');flushSync(()=>node.click());await delay(65);};
+const click=async node=>{assert.ok(node,'control exists');flushSync(()=>typeof node.click==='function'?node.click():node.dispatchEvent(new window.MouseEvent('click',{bubbles:true})));await delay(65);};
 const tab=title=>[...document.querySelectorAll('.learn-tab-trigger')].find(node=>node.querySelector('span')?.textContent===title);
 const named=(scope,label)=>[...scope.querySelectorAll('button,a')].find(node=>(node.textContent===label||node.textContent.replace(/\d+$/,'')===label));
 const panel=()=>document.querySelector('.learn-tab-panel:not([hidden])');
@@ -134,19 +134,64 @@ test('study activities use Respiratory bank; shared IDs persist independently ac
   assert.ok(!requests.some(url=>url.includes('/models/')),'reading and Study Tools never load geometry');
 });
 
-test('all 29 gallery cards use thumbnails, filters/stars/inspection work and unavailable label practice stays hidden',async()=>{
+test('all 29 gallery cards use thumbnails, filters/stars/inspection work and reviewed Label Practice works',async()=>{
   await render();await click(tab('Gallery'));await waitFor(()=>document.querySelectorAll('.learn-gallery-card').length===29,'29 figures');
   assert.equal(document.getElementById('respiratory-system-gallery-heading').textContent,'Respiratory System Gallery');
   assert.equal(document.querySelectorAll('.learn-gallery-filters button').length,5);
   assert.ok([...document.querySelectorAll('.learn-gallery-thumbnail img')].every(img=>img.getAttribute('src').includes('/respiratory/gallery/thumbnails/')&&img.getAttribute('loading')==='lazy'));
   await click(document.querySelector('[aria-label^="Star figure:"]'));await click(document.querySelector('.learn-gallery-starred-filter'));assert.equal(document.querySelectorAll('.learn-gallery-card').length,1);
   await click(document.querySelector('.learn-gallery-starred-filter'));await click(document.querySelectorAll('.learn-gallery-filters button')[3]);assert.equal(document.querySelectorAll('.learn-gallery-card').length,5);
+  assert.ok(!requests.some(url=>url.includes('respiratory/gallery/label-practice')),'annotation fetch waits for a figure');
   await click(document.querySelector('.learn-gallery-filters button'));await click(document.querySelector('.learn-gallery-card'));
   assert.ok(document.querySelector('.learn-gallery-viewer img').getAttribute('src').includes('/respiratory/gallery/images/'));
-  assert.equal(document.querySelector('[aria-label="Label Practice"]'),null);assert.equal(document.querySelector('[aria-label="Edit label masks"]'),null);
+  await waitFor(()=>document.querySelector('[aria-label="Label Practice"]'),'reviewed sidecar loaded');
+  flushSync(()=>document.querySelector('.learn-gallery-image-space img').dispatchEvent(new window.Event('load')));
+  assert.equal(document.querySelector('[aria-label="Edit label masks"]'),null,'production-style bundle excludes curator');
+  const annotations=read('public/images/learn/respiratory/gallery/label-practice.json');
+  const first=annotations.figures.find(figure=>figure.figureId==='a01');
+  const storageBefore=JSON.stringify(Object.entries(window.localStorage));
+  await click(document.querySelector('[aria-label="Label Practice"]'));
+  assert.equal(document.querySelectorAll('[data-practice-label]').length,first.labels.length);
+  assert.equal(document.querySelectorAll('[data-revealed=true]').length,0);
+  await click(document.querySelector('[data-practice-label]'));
+  assert.equal(document.querySelectorAll('[data-revealed=true]').length,1);
+  await click(named(document,'Reveal All'));assert.equal(document.querySelectorAll('[data-revealed=true]').length,first.labels.length);
+  await click(named(document,'Hide All'));assert.equal(document.querySelectorAll('[data-revealed=true]').length,0);
+  await click(named(document,'Reset Practice'));
+  await click([...document.querySelectorAll('.label-practice-controls label')].find(node=>node.textContent==='Identify').querySelector('input'));
+  await click(document.querySelector('[data-practice-label]'));
+  const input=document.querySelector('[aria-label="Anatomical term"]');
+  await setInput(input,'wrong answer');
+  flushSync(()=>input.form.dispatchEvent(new window.Event('submit',{bubbles:true,cancelable:true})));
+  assert.ok(document.querySelector('.label-practice-identify').textContent.includes('Not a match'));
+  await setInput(input,first.labels[0].acceptedAnswers[0]||first.labels[0].label);
+  flushSync(()=>input.form.dispatchEvent(new window.Event('submit',{bubbles:true,cancelable:true})));
+  assert.ok(document.querySelector('.label-practice-controls [role=status]').textContent.includes('1 identified'));
+  await click(named(document,'Reset Practice'));assert.equal(document.querySelectorAll('[data-revealed=true]').length,0);
+  assert.equal(JSON.stringify(Object.entries(window.localStorage)),storageBefore,'practice does not alter stars or study progress');
   await click(document.querySelector('[aria-label="Next figure"]'));assert.ok(document.querySelector('.learn-gallery-page-controls').textContent.includes('2 / 29'));
+  flushSync(()=>document.querySelector('.learn-gallery-image-space img').dispatchEvent(new window.Event('load')));
+  assert.equal(document.querySelectorAll('[data-practice-label]').length,annotations.figures.find(figure=>figure.figureId==='a02').labels.length);
+  assert.equal(document.querySelectorAll('[data-revealed=true]').length,0);
   await click(document.querySelector('[aria-label="Close image viewer"]'));assert.equal(document.querySelector('.learn-gallery-viewer'),null);
-  assert.ok(!requests.some(url=>url.includes('respiratory/gallery/label-practice')));
+  assert.ok(requests.some(url=>url.includes('respiratory/gallery/label-practice')));
+});
+
+test('Respiratory partial coverage is explicit and excluded figures retain ordinary inspection',async()=>{
+  await render();await click(tab('Gallery'));await waitFor(()=>document.querySelector('.learn-gallery-card'),'gallery');
+  const manifest=read('public/images/learn/respiratory/gallery/gallery.json');
+  const open=async id=>{const figure=manifest.items.find(figure=>figure.id===id);await click([...document.querySelectorAll('.learn-gallery-card')].find(card=>card.getAttribute('aria-label')===`Open figure: ${figure.title}`));flushSync(()=>document.querySelector('.learn-gallery-image-space img').dispatchEvent(new window.Event('load')));};
+  await open('p10');
+  await waitFor(()=>requests.some(url=>url.includes('respiratory/gallery/label-practice')),'sidecar');
+  assert.equal(document.querySelector('[aria-label="Label Practice"]'),null);
+  assert.equal(document.querySelector('.label-practice-overlay'),null);
+  assert.ok(document.querySelector('.learn-gallery-viewer img'));
+  await click(document.querySelector('[aria-label="Close image viewer"]'));
+  await open('a06');await waitFor(()=>document.querySelector('[aria-label="Label Practice"]'),'partial annotations');
+  await click(document.querySelector('[aria-label="Label Practice"]'));
+  assert.ok(document.querySelector('.label-practice-note').textContent.includes('Other printed labels'));
+  assert.ok(document.querySelectorAll('[data-practice-label]').length>0);
+  await click(document.querySelector('[aria-label="Close image viewer"]'));
 });
 
 test('Respiratory highlights and personal notes persist and restore through shared annotation identities',async()=>{
