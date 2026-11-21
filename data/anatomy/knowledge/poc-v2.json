@@ -1,0 +1,1706 @@
+{
+  "schemaVersion": 2,
+  "mappingRevision": "core-crosswalk-v1",
+  "editorialStatus": "proof-of-concept",
+  "sources": [
+    {
+      "id": "bp3d",
+      "title": "BodyParts3D version 4.0",
+      "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
+      "kind": "source-inventory",
+      "license": "CC BY 4.0",
+      "use": "Crosswalk and geometry identity, not automatically anatomical validation."
+    },
+    {
+      "id": "fipat",
+      "title": "FIPAT Terminologia Anatomica, 2nd edition",
+      "url": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "kind": "nomenclature",
+      "license": "CC BY-ND 4.0 publication; individual terms public domain",
+      "use": "Term candidates require term-by-term official verification."
+    },
+    {
+      "id": "supraspinatus",
+      "title": "Anatomy, Shoulder and Upper Limb, Arm Supraspinatus Muscle",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK537202/",
+      "kind": "educational-reference",
+      "license": "Check page terms before reuse; link only",
+      "use": "Original editorial paraphrases; source sections Introduction; Blood Supply and Lymphatics; Nerves."
+    },
+    {
+      "id": "suprascapular-nerve",
+      "title": "Anatomy, Shoulder and Upper Limb, Suprascapular Nerve",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK557880/",
+      "kind": "educational-reference",
+      "license": "Check page terms before reuse; link only",
+      "use": "Original editorial paraphrases of structure and function."
+    },
+    {
+      "id": "rotator-cuff",
+      "title": "Anatomy, Rotator Cuff",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK441844/",
+      "kind": "educational-reference",
+      "license": "Check page terms before reuse; link only",
+      "use": "Original editorial paraphrases on nerve supply, muscle function and arterial supply."
+    },
+    {
+      "id": "scapula",
+      "title": "Anatomy, Thorax, Scapula",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK538319/",
+      "kind": "educational-reference",
+      "license": "Check page terms before reuse; link only",
+      "use": "Anatomical relationships and attachment context."
+    },
+    {
+      "id": "biliary",
+      "title": "Anatomy, Abdomen and Pelvis: Biliary Ducts",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK459246/",
+      "kind": "educational-reference",
+      "license": "Check page terms before reuse; link only",
+      "use": "Bile drainage and hepatic duct branching."
+    },
+    {
+      "id": "gallbladder",
+      "title": "Anatomy, Abdomen and Pelvis: Gallbladder",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK459288/",
+      "kind": "educational-reference",
+      "license": "Check page terms before reuse; link only",
+      "use": "Organ position, arterial supply, and gallbladder function."
+    }
+  ],
+  "records": [
+    {
+      "id": "atlas:concept:003398",
+      "sourceConceptIds": [
+        "FMA9629"
+      ],
+      "system": "muscular",
+      "kind": "muscle",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Supraspinatus",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Musculus supraspinatus",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "A rotator cuff muscle that assists abduction and stabilizes the shoulder joint.",
+        "sourceIds": [
+          "supraspinatus"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "The supraspinatus lies in the supraspinous fossa of the scapula and passes laterally beneath the acromion toward the proximal humerus.",
+        "sourceIds": [
+          "supraspinatus"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "origin": {
+          "text": "Supraspinous fossa of the scapula.",
+          "sourceIds": [
+            "supraspinatus"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "insertion": {
+          "text": "Superior facet of the greater tubercle of the humerus.",
+          "sourceIds": [
+            "supraspinatus"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "actions": [
+          {
+            "text": "Assists initiation of arm abduction and dynamic stabilization of the glenohumeral joint.",
+            "sourceIds": [
+              "supraspinatus"
+            ],
+            "review": {
+              "status": "candidate"
+            }
+          }
+        ],
+        "innervation": {
+          "text": "Suprascapular nerve (primarily C5–C6).",
+          "sourceIds": [
+            "supraspinatus"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "arterialSupply": {
+          "text": "Mainly suprascapular and dorsal scapular arteries.",
+          "sourceIds": [
+            "supraspinatus"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        }
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:001100",
+      "sourceConceptIds": [
+        "FMA32544"
+      ],
+      "inheritsFrom": "atlas:concept:003398",
+      "laterality": "right",
+      "system": "muscular",
+      "kind": "muscle",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Right supraspinatus",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "The right-sided supraspinatus muscle.",
+        "sourceIds": [
+          "supraspinatus"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "Right-sided counterpart of supraspinatus, with the same general origin, insertion, action and innervation as the shared muscle concept.",
+        "sourceIds": [
+          "supraspinatus"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {},
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:001101",
+      "sourceConceptIds": [
+        "FMA32545"
+      ],
+      "inheritsFrom": "atlas:concept:003398",
+      "laterality": "left",
+      "system": "muscular",
+      "kind": "muscle",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Left supraspinatus",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "The left-sided supraspinatus muscle.",
+        "sourceIds": [
+          "supraspinatus"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "Left-sided counterpart of supraspinatus, with the same general origin, insertion, action and innervation as the shared muscle concept.",
+        "sourceIds": [
+          "supraspinatus"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {},
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:001102",
+      "sourceConceptIds": [
+        "FMA32546"
+      ],
+      "system": "muscular",
+      "kind": "muscle",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Infraspinatus",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Musculus infraspinatus",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "A rotator cuff muscle that laterally rotates and stabilizes the arm.",
+        "sourceIds": [
+          "rotator-cuff",
+          "scapula"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "The infraspinatus occupies the infraspinous fossa of the scapula and inserts on the greater tubercle of the humerus.",
+        "sourceIds": [
+          "rotator-cuff",
+          "scapula"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "origin": {
+          "text": "Infraspinous fossa of the scapula.",
+          "sourceIds": [
+            "scapula"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "insertion": {
+          "text": "Middle facet of the greater tubercle of the humerus.",
+          "sourceIds": [
+            "rotator-cuff"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "actions": [
+          {
+            "text": "Laterally rotates the arm and helps stabilize the glenohumeral joint.",
+            "sourceIds": [
+              "rotator-cuff"
+            ],
+            "review": {
+              "status": "candidate"
+            }
+          }
+        ],
+        "innervation": {
+          "text": "Suprascapular nerve (primarily C5–C6).",
+          "sourceIds": [
+            "suprascapular-nerve"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        }
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:001103",
+      "sourceConceptIds": [
+        "FMA32547"
+      ],
+      "inheritsFrom": "atlas:concept:001102",
+      "laterality": "right",
+      "system": "muscular",
+      "kind": "muscle",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Right infraspinatus",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "The right-sided infraspinatus muscle.",
+        "sourceIds": [
+          "rotator-cuff"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "Right-sided infraspinatus, supplied by the suprascapular nerve and contributing to external shoulder rotation.",
+        "sourceIds": [
+          "rotator-cuff"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {},
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:001104",
+      "sourceConceptIds": [
+        "FMA32548"
+      ],
+      "inheritsFrom": "atlas:concept:001102",
+      "laterality": "left",
+      "system": "muscular",
+      "kind": "muscle",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Left infraspinatus",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "The left-sided infraspinatus muscle.",
+        "sourceIds": [
+          "rotator-cuff"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "Left-sided infraspinatus, supplied by the suprascapular nerve and contributing to external shoulder rotation.",
+        "sourceIds": [
+          "rotator-cuff"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {},
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:005387",
+      "sourceConceptIds": [],
+      "textOnly": true,
+      "system": "nervous",
+      "kind": "nerve",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Suprascapular nerve",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Nervus suprascapularis",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "A branch of the upper trunk of the brachial plexus that innervates supraspinatus and infraspinatus.",
+        "sourceIds": [
+          "suprascapular-nerve"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "The suprascapular nerve typically carries C5–C6 fibers and passes through the suprascapular notch beneath the superior transverse scapular ligament before continuing toward the spinoglenoid region.",
+        "sourceIds": [
+          "suprascapular-nerve"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "roots": {
+          "text": "Primarily C5–C6 from the upper trunk of the brachial plexus.",
+          "sourceIds": [
+            "suprascapular-nerve"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "course": {
+          "text": "Passes via the suprascapular notch into the supraspinous fossa and continues toward infraspinatus.",
+          "sourceIds": [
+            "suprascapular-nerve"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "motorDistribution": {
+          "text": "Supraspinatus and infraspinatus muscles.",
+          "sourceIds": [
+            "suprascapular-nerve"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "sensoryDistribution": {
+          "text": "Articular branches contribute to shoulder joint sensation.",
+          "sourceIds": [
+            "suprascapular-nerve"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        }
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:005388",
+      "sourceConceptIds": [],
+      "textOnly": true,
+      "system": "muscular",
+      "kind": "group",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Rotator cuff",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "Four scapulohumeral muscles whose tendons support and dynamically stabilize the glenohumeral joint.",
+        "sourceIds": [
+          "rotator-cuff"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "A functional and anatomical group comprising supraspinatus, infraspinatus, teres minor and subscapularis.",
+        "sourceIds": [
+          "rotator-cuff"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "members": [
+          {
+            "text": "Supraspinatus, infraspinatus, teres minor and subscapularis.",
+            "sourceIds": [
+              "rotator-cuff"
+            ],
+            "review": {
+              "status": "candidate"
+            }
+          }
+        ]
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:000129",
+      "sourceConceptIds": [
+        "FMA13395"
+      ],
+      "laterality": "right",
+      "system": "skeletal",
+      "kind": "bone",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Right scapula",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Scapula dextra",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "The right scapula is a flat triangular bone of the shoulder girdle.",
+        "sourceIds": [
+          "scapula"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "The scapula provides the glenoid cavity for the humeral head and attachment surfaces for many shoulder muscles.",
+        "sourceIds": [
+          "scapula"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "landmarks": [
+          {
+            "text": "Spine, acromion, coracoid process, supraspinous fossa and glenoid cavity.",
+            "sourceIds": [
+              "scapula"
+            ],
+            "review": {
+              "status": "candidate"
+            }
+          }
+        ],
+        "articulations": {
+          "text": "Articulates with the clavicle at the acromioclavicular joint and with the humerus at the glenohumeral joint.",
+          "sourceIds": [
+            "scapula"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "attachments": [
+          {
+            "text": "The supraspinatus originates from the supraspinous fossa.",
+            "sourceIds": [
+              "scapula"
+            ],
+            "review": {
+              "status": "candidate"
+            }
+          }
+        ]
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:000815",
+      "sourceConceptIds": [
+        "FMA23130"
+      ],
+      "laterality": "right",
+      "system": "skeletal",
+      "kind": "bone",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Right humerus",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Humerus dexter",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "The right humerus is the long bone of the upper arm.",
+        "sourceIds": [
+          "supraspinatus",
+          "scapula"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "The proximal humerus articulates with the scapula; its greater tubercle receives rotator cuff tendon insertions.",
+        "sourceIds": [
+          "supraspinatus",
+          "scapula"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "landmarks": [
+          {
+            "text": "Humeral head, anatomical neck, surgical neck and greater tubercle.",
+            "sourceIds": [
+              "supraspinatus"
+            ],
+            "review": {
+              "status": "candidate"
+            }
+          }
+        ],
+        "articulations": {
+          "text": "Articulates with the scapula proximally and radius and ulna distally.",
+          "sourceIds": [
+            "scapula"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "attachments": [
+          {
+            "text": "Supraspinatus inserts on the superior facet of the greater tubercle.",
+            "sourceIds": [
+              "supraspinatus"
+            ],
+            "review": {
+              "status": "candidate"
+            }
+          }
+        ]
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:000031",
+      "sourceConceptIds": [
+        "FMA10698"
+      ],
+      "laterality": "right",
+      "system": "arterial",
+      "kind": "artery",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Right suprascapular artery",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Arteria suprascapularis dextra",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "An artery that contributes to the blood supply of the supraspinatus and infraspinatus muscles.",
+        "sourceIds": [
+          "rotator-cuff",
+          "supraspinatus"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "The suprascapular artery usually arises from the thyrocervical trunk and reaches the scapular region superior to the suprascapular ligament.",
+        "sourceIds": [
+          "rotator-cuff",
+          "supraspinatus"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "origin": {
+          "text": "Usually arises from the thyrocervical trunk, with variations in its origin.",
+          "sourceIds": [
+            "supraspinatus"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "course": {
+          "text": "Courses toward the supraspinous fossa, generally above the superior transverse scapular ligament.",
+          "sourceIds": [
+            "supraspinatus"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "territory": {
+          "text": "Supplies the supraspinatus and infraspinatus regions.",
+          "sourceIds": [
+            "rotator-cuff"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        }
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:002797",
+      "sourceConceptIds": [
+        "FMA71857"
+      ],
+      "system": "digestive",
+      "kind": "duct-network",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Right hepatic biliary tree",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "A branching network collecting bile from the right functional liver.",
+        "sourceIds": [
+          "biliary"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "Right-sided segmental and sectoral intrahepatic bile ducts converge toward the right hepatic duct, with variable drainage anatomy.",
+        "sourceIds": [
+          "biliary"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "drainage": {
+          "text": "Carries bile from the right functional liver toward the right hepatic duct.",
+          "sourceIds": [
+            "biliary"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "branches": [
+          {
+            "text": "Typically includes tributaries from right anterior and posterior hepatic sectors.",
+            "sourceIds": [
+              "biliary"
+            ],
+            "review": {
+              "status": "candidate"
+            }
+          }
+        ]
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:000224",
+      "sourceConceptIds": [
+        "FMA14669"
+      ],
+      "system": "digestive",
+      "kind": "duct",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Right hepatic duct",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Ductus hepaticus dexter",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "Conveys bile from the right hepatic drainage system toward the common hepatic duct.",
+        "sourceIds": [
+          "biliary"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "The right hepatic duct is formed from the intrahepatic drainage network; its confluence with the left hepatic duct varies anatomically.",
+        "sourceIds": [
+          "biliary"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "drainage": {
+          "text": "Receives the right hepatic biliary drainage and normally joins the left hepatic duct.",
+          "sourceIds": [
+            "biliary"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        }
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:000225",
+      "sourceConceptIds": [
+        "FMA14670"
+      ],
+      "system": "digestive",
+      "kind": "duct",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Left hepatic duct",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Ductus hepaticus sinister",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "Conveys bile from the left functional liver toward the common hepatic duct.",
+        "sourceIds": [
+          "biliary"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "The left hepatic duct typically joins the right hepatic duct at the hepatic confluence.",
+        "sourceIds": [
+          "biliary"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "drainage": {
+          "text": "Receives left functional liver drainage; caudate lobe tributaries vary.",
+          "sourceIds": [
+            "biliary"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        }
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:000223",
+      "sourceConceptIds": [
+        "FMA14668"
+      ],
+      "system": "digestive",
+      "kind": "duct",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Common hepatic duct",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Ductus hepaticus communis",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "Receives bile from the usual junction of right and left hepatic ducts.",
+        "sourceIds": [
+          "biliary"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "The common hepatic duct extends from the hepatic duct confluence to the junction with the cystic duct.",
+        "sourceIds": [
+          "biliary"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "drainage": {
+          "text": "Conducts bile toward the common bile duct after its junction with the cystic duct.",
+          "sourceIds": [
+            "biliary"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        }
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:000206",
+      "sourceConceptIds": [
+        "FMA14539"
+      ],
+      "system": "digestive",
+      "kind": "duct",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Cystic duct",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Ductus cysticus",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "Connects the gallbladder to the extrahepatic biliary duct system.",
+        "sourceIds": [
+          "gallbladder",
+          "biliary"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "The cystic duct permits bile to travel to the gallbladder for storage and away from it during gallbladder contraction.",
+        "sourceIds": [
+          "gallbladder",
+          "biliary"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "drainage": {
+          "text": "Connects the gallbladder neck with the common hepatic duct/common bile duct junction.",
+          "sourceIds": [
+            "gallbladder",
+            "biliary"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        }
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:002833",
+      "sourceConceptIds": [
+        "FMA7202"
+      ],
+      "system": "digestive",
+      "kind": "organ",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Gallbladder",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Vesica biliaris",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "Stores and concentrates bile and releases it during digestion.",
+        "sourceIds": [
+          "gallbladder"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "A hollow muscular organ on the visceral surface of the liver, connected to the biliary ducts via the cystic duct.",
+        "sourceIds": [
+          "gallbladder"
+        ],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "internalOrganization": {
+          "text": "Fundus, body and neck connect to the cystic duct.",
+          "sourceIds": [
+            "gallbladder"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "physiology": {
+          "text": "Stores bile between meals and contracts in response to cholecystokinin.",
+          "sourceIds": [
+            "gallbladder"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "arterialSupply": {
+          "text": "Usually supplied by the cystic artery, commonly a branch of the right hepatic artery.",
+          "sourceIds": [
+            "gallbladder"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        }
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:002773",
+      "sourceConceptIds": [
+        "FMA7148"
+      ],
+      "system": "digestive",
+      "kind": "organ",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Stomach",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Gaster",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "Stores and mixes food before passing it to the small intestine.",
+        "sourceIds": [],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "A muscular part of the alimentary tract between the esophagus and duodenum.",
+        "sourceIds": [],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "internalOrganization": {
+          "text": "Cardia, fundus, body and pyloric region.",
+          "sourceIds": [],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "physiology": {
+          "text": "Secretes acid and digestive factors and regulates gastric emptying.",
+          "sourceIds": [],
+          "review": {
+            "status": "candidate"
+          }
+        }
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:002838",
+      "sourceConceptIds": [
+        "FMA7206"
+      ],
+      "system": "digestive",
+      "kind": "organ",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Duodenum",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Duodenum",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "The first segment of the small intestine, receiving gastric contents and hepatopancreatic secretions.",
+        "sourceIds": [],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "The duodenum begins distal to the stomach and curves around the pancreatic head.",
+        "sourceIds": [],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "internalOrganization": {
+          "text": "Superior, descending, horizontal and ascending parts.",
+          "sourceIds": [],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "physiology": {
+          "text": "Participates in chemical digestion and nutrient absorption.",
+          "sourceIds": [],
+          "review": {
+            "status": "candidate"
+          }
+        }
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    },
+    {
+      "id": "atlas:concept:002830",
+      "sourceConceptIds": [
+        "FMA7198"
+      ],
+      "system": "digestive",
+      "kind": "organ",
+      "terminology": {
+        "preferredEnglish": {
+          "value": "Pancreas",
+          "sourceIds": [
+            "bp3d"
+          ],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "latinCandidate": {
+          "value": "Pancreas",
+          "sourceIds": [
+            "fipat"
+          ],
+          "review": {
+            "status": "candidate",
+            "note": "Not verified against a specific TA2 entry"
+          }
+        },
+        "aliases": []
+      },
+      "summary": {
+        "text": "An exocrine digestive gland with endocrine functions.",
+        "sourceIds": [],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "definition": {
+        "text": "The pancreas lies posterior to the stomach with its head adjacent to the duodenum.",
+        "sourceIds": [],
+        "review": {
+          "status": "candidate"
+        }
+      },
+      "details": {
+        "internalOrganization": {
+          "text": "Head, neck, body and tail.",
+          "sourceIds": [],
+          "review": {
+            "status": "candidate"
+          }
+        },
+        "physiology": {
+          "text": "Produces digestive enzymes, bicarbonate and hormones such as insulin.",
+          "sourceIds": [],
+          "review": {
+            "status": "candidate"
+          }
+        }
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Scientific content POC; per-term, per-fact and source-license review pending."
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "atlas:relation:0001",
+      "subjectConceptId": "atlas:concept:001100",
+      "predicate": "is-a-lateral-instance-of",
+      "objectConceptId": "atlas:concept:003398",
+      "evidence": {
+        "sourceIds": [
+          "bp3d"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0002",
+      "subjectConceptId": "atlas:concept:001101",
+      "predicate": "is-a-lateral-instance-of",
+      "objectConceptId": "atlas:concept:003398",
+      "evidence": {
+        "sourceIds": [
+          "bp3d"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0003",
+      "subjectConceptId": "atlas:concept:001103",
+      "predicate": "is-a-lateral-instance-of",
+      "objectConceptId": "atlas:concept:001102",
+      "evidence": {
+        "sourceIds": [
+          "bp3d"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0004",
+      "subjectConceptId": "atlas:concept:001104",
+      "predicate": "is-a-lateral-instance-of",
+      "objectConceptId": "atlas:concept:001102",
+      "evidence": {
+        "sourceIds": [
+          "bp3d"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0005",
+      "subjectConceptId": "atlas:concept:001100",
+      "predicate": "innervated-by",
+      "objectConceptId": "atlas:concept:005387",
+      "evidence": {
+        "sourceIds": [
+          "suprascapular-nerve"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0006",
+      "subjectConceptId": "atlas:concept:001103",
+      "predicate": "innervated-by",
+      "objectConceptId": "atlas:concept:005387",
+      "evidence": {
+        "sourceIds": [
+          "suprascapular-nerve"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0007",
+      "subjectConceptId": "atlas:concept:001100",
+      "predicate": "originates-from",
+      "objectConceptId": "atlas:concept:000129",
+      "evidence": {
+        "sourceIds": [
+          "supraspinatus"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0008",
+      "subjectConceptId": "atlas:concept:001100",
+      "predicate": "inserts-on",
+      "objectConceptId": "atlas:concept:000815",
+      "evidence": {
+        "sourceIds": [
+          "supraspinatus"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0009",
+      "subjectConceptId": "atlas:concept:001100",
+      "predicate": "supplied-by",
+      "objectConceptId": "atlas:concept:000031",
+      "evidence": {
+        "sourceIds": [
+          "supraspinatus"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0010",
+      "subjectConceptId": "atlas:concept:001100",
+      "predicate": "part-of",
+      "objectConceptId": "atlas:concept:005388",
+      "evidence": {
+        "sourceIds": [
+          "rotator-cuff"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0011",
+      "subjectConceptId": "atlas:concept:001103",
+      "predicate": "part-of",
+      "objectConceptId": "atlas:concept:005388",
+      "evidence": {
+        "sourceIds": [
+          "rotator-cuff"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0012",
+      "subjectConceptId": "atlas:concept:002797",
+      "predicate": "drains-into",
+      "objectConceptId": "atlas:concept:000224",
+      "evidence": {
+        "sourceIds": [
+          "biliary"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0013",
+      "subjectConceptId": "atlas:concept:000224",
+      "predicate": "drains-into",
+      "objectConceptId": "atlas:concept:000223",
+      "evidence": {
+        "sourceIds": [
+          "biliary"
+        ]
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Typical confluence, subject to variation."
+      }
+    },
+    {
+      "id": "atlas:relation:0014",
+      "subjectConceptId": "atlas:concept:000225",
+      "predicate": "drains-into",
+      "objectConceptId": "atlas:concept:000223",
+      "evidence": {
+        "sourceIds": [
+          "biliary"
+        ]
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Typical confluence, subject to variation."
+      }
+    },
+    {
+      "id": "atlas:relation:0015",
+      "subjectConceptId": "atlas:concept:002833",
+      "predicate": "connected-via",
+      "objectConceptId": "atlas:concept:000206",
+      "evidence": {
+        "sourceIds": [
+          "gallbladder"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0016",
+      "subjectConceptId": "atlas:concept:000206",
+      "predicate": "joins",
+      "objectConceptId": "atlas:concept:000223",
+      "evidence": {
+        "sourceIds": [
+          "biliary"
+        ]
+      },
+      "review": {
+        "status": "candidate"
+      }
+    },
+    {
+      "id": "atlas:relation:0017",
+      "subjectConceptId": "atlas:concept:002773",
+      "predicate": "continues-as",
+      "objectConceptId": "atlas:concept:002838",
+      "evidence": {
+        "sourceIds": []
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Editorial claim awaiting a dedicated organ-specific citation."
+      }
+    },
+    {
+      "id": "atlas:relation:0018",
+      "subjectConceptId": "atlas:concept:002830",
+      "predicate": "adjacent-to",
+      "objectConceptId": "atlas:concept:002838",
+      "evidence": {
+        "sourceIds": []
+      },
+      "review": {
+        "status": "candidate",
+        "note": "Editorial claim awaiting a dedicated organ-specific citation."
+      }
+    }
+  ],
+  "clinicalLinks": [],
+  "knowledgeOnlyConceptIds": [
+    "atlas:concept:005387",
+    "atlas:concept:005388"
+  ],
+  "notes": [
+    "Every anatomical relationship is ID-based, never inferred from English names.",
+    "Each individual claim and relationship has review status and evidence references; blank evidence means still unsourced.",
+    "Canonical IDs are pinned against the current crosswalk; knowledge-only IDs are reserved locally and have no mesh.",
+    "The FIPAT source is not evidence that each Latin candidate has been individually verified."
+  ]
+}
