@@ -30,6 +30,8 @@ In the explorer, Explore and Learn form a compact group in the upper-right toolb
 
 ## Glass subject chooser
 
+The chooser and `/learn` landing page group subjects by **Anatomy** and **Biology**. Anatomy is the default on the landing page. A chooser opened from a subject starts in that subject's category and remembers changes while the page is open. Use the arrow keys to switch categories when the selector has focus.
+
 `app/learn/subject-menu.tsx` uses the existing Base UI dialog wrappers. Its open/closed state is local to the dialog, so opening and dismissing it does not navigate, remount the explorer, change its camera or alter anatomy state. Only choosing a subject follows a link to that subject's page. Both explorer and reading-page Learn controls use the chooser.
 
 The panel has a frosted theme-aware surface, a softly blurred full-screen backdrop, restrained shadows, a clear subject row and a small Escape hint. Its desktop shape is a wider rectangle, capped at 760px. Beneath each subject title, a compact wrapping list previews every tab in registry order, including the enabled Study Tools activity. The count still reports only available content tabs. Narrow screens retain fluid width and bounded vertical scrolling. The earlier thin outline around the toolbar navigation group is removed; that group uses a soft translucent fill while retaining the active indicator and utility divider.
@@ -39,6 +41,20 @@ The dialog has an accessible title/description and explicit modal semantics, ini
 `DialogContent` now accepts an optional `overlayClassName`, forwarded to its existing backdrop. Other dialogs keep their default appearance. No new dependencies, 3D objects, scene passes or model downloads were added for the chooser. Background blur has ordinary browser compositing cost; no GPU-performance claim is made.
 
 ## Content and components
+
+### Biology Exam 3
+
+Open `/learn/biology-exam-3` from the Biology category. The registry lists General Overview, Deep Dive, How It Connects, Who Cares?, Gallery, Exam Cram, Study Tools, and Campbell Extension in that order.
+
+The subject uses the authored `data/learn/biology-exam-3-*.json` records and the shared article, section index, and Notes and Highlights infrastructure. Who Cares? reads entries from its authored groups. Exam Cram keeps Quick Scan as the canonical article and registers Detailed Review as a separately identified variant with the same section anchors. Lectures 11–14 define the Exam Cram and Study Tools curriculum. Campbell Extension is a separate article.
+
+The imported question bank retains the authored answers and distractors. The authoring audit flagged predictable answer positions and some weak distractors. Quiz sessions shuffle answer positions in the interface. Biology validation distinguishes case-sensitive allele symbols such as `AA` and `aa`.
+
+To add another Biology subject, register its category, route, and ordered tabs in `app/learn/subjects.ts`, then add its stable article records to `content.ts`. Register any alternate Exam Cram mode in `exam-cram-content.ts` and add its Study Tools adapter to the lazy loader. Biology Exam 3 uses the shared [Gallery](gallery.md#biology-exam-3-gallery).
+
+Run `npm run check` and `npm run build` from the repository root. For a desktop smoke check, open the Learn chooser, switch categories, follow Biology Exam 3, and open Exam Cram, Study Tools, Campbell Extension, and Gallery. The Biology Gallery displays an empty state.
+
+### Existing anatomy subjects
 
 The Digestive System page now has eight ordered tabs: **General Overview**, **Deep Dive**, **How It Connects**, **Who Cares?**, **Visualize**, **Gallery**, **Exam Cram**, and **Study Tools** (enabled). General Overview is selected initially. Overview, Deep Dive and Exam Cram render the supplied JSON sources (with only the two navigation-link wrappers described above added to Overview) from `digestive-system-content-revised.zip`: 8, 15 and 15 sections respectively, including each file's complete `introMarkdown` and all `sections[].markdown`. How It Connects renders all ten supplied sections of **The Journey of Digestion**, preserving its title and italic introduction. `subtitle`, `sourceFiles` and `slideReferences` remain metadata rather than extra article paragraphs. No Markdown mirror is imported, so the content is not duplicated.
 

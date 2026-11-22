@@ -1,0 +1,5342 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "biology-exam-3",
+  "concepts": [
+    {
+      "id": "gene",
+      "term": "Gene",
+      "definition": "A DNA sequence that contributes to a functional RNA or protein product.",
+      "aliases": [
+        "hereditary factor"
+      ],
+      "topicId": "chromosomes",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "allele",
+        "locus",
+        "chromosome"
+      ]
+    },
+    {
+      "id": "allele",
+      "term": "Allele",
+      "definition": "One alternative DNA form of a gene at a particular locus.",
+      "aliases": [
+        "gene variant"
+      ],
+      "topicId": "chromosomes",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "gene",
+        "genotype",
+        "mutation"
+      ]
+    },
+    {
+      "id": "locus",
+      "term": "Locus",
+      "definition": "Physical position of a gene or DNA marker on a chromosome.",
+      "aliases": [
+        "loci"
+      ],
+      "topicId": "chromosomes",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "chromosome",
+      "term": "Chromosome",
+      "definition": "Long DNA molecule with associated proteins that carries many genes.",
+      "aliases": [
+        "chromosomes"
+      ],
+      "topicId": "chromosomes",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "homologous-chromosomes",
+      "term": "Homologous chromosomes",
+      "definition": "A maternal and paternal chromosome pair bearing corresponding gene loci, potentially with different alleles.",
+      "aliases": [
+        "homologues"
+      ],
+      "topicId": "chromosomes",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "sister-chromatids",
+        "meiosis-i",
+        "crossing-over"
+      ]
+    },
+    {
+      "id": "sister-chromatids",
+      "term": "Sister chromatids",
+      "definition": "The two DNA copies produced by chromosome replication, joined until they separate.",
+      "aliases": [
+        "chromatids"
+      ],
+      "topicId": "chromosomes",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "homologous-chromosomes",
+        "meiosis-ii"
+      ]
+    },
+    {
+      "id": "centromere",
+      "term": "Centromere",
+      "definition": "Chromosomal region where sister chromatid cohesion and kinetochore assembly support segregation.",
+      "aliases": [
+        "centromeres"
+      ],
+      "topicId": "chromosomes",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "diploid",
+      "term": "Diploid",
+      "definition": "Having two chromosome sets, usually one inherited from each parent.",
+      "aliases": [
+        "2n"
+      ],
+      "topicId": "chromosomes",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "haploid",
+        "fertilization"
+      ]
+    },
+    {
+      "id": "haploid",
+      "term": "Haploid",
+      "definition": "Having one chromosome set, as in ordinary gametes.",
+      "aliases": [
+        "n"
+      ],
+      "topicId": "chromosomes",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "diploid",
+        "gamete"
+      ]
+    },
+    {
+      "id": "gamete",
+      "term": "Gamete",
+      "definition": "Haploid reproductive cell that can combine with another during fertilization.",
+      "aliases": [
+        "sperm",
+        "ovum"
+      ],
+      "topicId": "chromosomes",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "meiosis",
+      "term": "Meiosis",
+      "definition": "Two successive nuclear divisions following one DNA replication, usually yielding haploid products.",
+      "aliases": [
+        "reduction division"
+      ],
+      "topicId": "meiosis",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "meiosis-i",
+        "meiosis-ii"
+      ]
+    },
+    {
+      "id": "meiosis-i",
+      "term": "Meiosis I",
+      "definition": "Reductional division that separates homologous chromosomes into different daughter cells.",
+      "aliases": [
+        "first meiotic division"
+      ],
+      "topicId": "meiosis",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "meiosis-ii",
+        "anaphase-i"
+      ]
+    },
+    {
+      "id": "meiosis-ii",
+      "term": "Meiosis II",
+      "definition": "Division that separates sister chromatids without a second preceding DNA replication.",
+      "aliases": [
+        "second meiotic division"
+      ],
+      "topicId": "meiosis",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "anaphase-ii",
+        "sister-chromatids"
+      ]
+    },
+    {
+      "id": "prophase-i",
+      "term": "Prophase I",
+      "definition": "Meiotic stage when homologues pair and recombination occurs.",
+      "aliases": [
+        "synapsis phase"
+      ],
+      "topicId": "meiosis",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "tetrad",
+      "term": "Tetrad",
+      "definition": "Paired homologous chromosomes composed of four chromatids.",
+      "aliases": [
+        "bivalent"
+      ],
+      "topicId": "meiosis",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "crossing-over",
+      "term": "Crossing over",
+      "definition": "DNA exchange between nonsister chromatids of paired homologues during meiosis I.",
+      "aliases": [
+        "recombination"
+      ],
+      "topicId": "meiosis",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "tetrad",
+        "independent-assortment",
+        "linked-genes"
+      ]
+    },
+    {
+      "id": "metaphase-i",
+      "term": "Metaphase I",
+      "definition": "Stage when homologous chromosome pairs align at the cell equator.",
+      "aliases": [
+        "metaphase 1"
+      ],
+      "topicId": "meiosis",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "anaphase-i",
+      "term": "Anaphase I",
+      "definition": "Stage when homologous chromosomes move to opposite poles.",
+      "aliases": [
+        "anaphase 1"
+      ],
+      "topicId": "meiosis",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "anaphase-ii",
+      "term": "Anaphase II",
+      "definition": "Stage when sister chromatids separate during meiosis II.",
+      "aliases": [
+        "anaphase 2"
+      ],
+      "topicId": "meiosis",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "asexual-reproduction",
+      "term": "Asexual reproduction",
+      "definition": "Reproduction from one parental source, often yielding offspring genetically similar to that parent.",
+      "aliases": [
+        "clonal reproduction"
+      ],
+      "topicId": "reproduction",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "sexual-reproduction",
+      "term": "Sexual reproduction",
+      "definition": "Reproduction involving gametes and the combination of genetic contributions.",
+      "aliases": [
+        "fertilization-based reproduction"
+      ],
+      "topicId": "reproduction",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "mitosis",
+      "term": "Mitosis",
+      "definition": "Nuclear division that normally preserves chromosome-set number and distributes sister chromatids.",
+      "aliases": [
+        "mitotic division"
+      ],
+      "topicId": "reproduction",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "clone",
+      "term": "Clone",
+      "definition": "Individual or cell derived from a common ancestor and usually genetically very similar.",
+      "aliases": [
+        "clonal offspring"
+      ],
+      "topicId": "reproduction",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "fertilization",
+      "term": "Fertilization",
+      "definition": "Union of gametes that forms a zygote and restores the diploid chromosome number in typical animal life cycles.",
+      "aliases": [
+        "syngamy"
+      ],
+      "topicId": "reproduction",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "zygote",
+      "term": "Zygote",
+      "definition": "Cell produced from the union of gametes.",
+      "aliases": [
+        "fertilized egg"
+      ],
+      "topicId": "reproduction",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "fertilization",
+        "gamete"
+      ]
+    },
+    {
+      "id": "independent-assortment",
+      "term": "Independent assortment",
+      "definition": "Independent distribution of unlinked chromosome pairs or genes into gametes.",
+      "aliases": [
+        "random assortment"
+      ],
+      "topicId": "reproduction",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "random-fertilization",
+      "term": "Random fertilization",
+      "definition": "Chance combination of genetically different gametes from two parents.",
+      "aliases": [
+        "gamete union"
+      ],
+      "topicId": "reproduction",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "mutation",
+      "term": "Mutation",
+      "definition": "Heritable change in DNA sequence and ultimate source of new alleles.",
+      "aliases": [
+        "DNA sequence change"
+      ],
+      "topicId": "reproduction",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "mutation-evolution",
+        "allele"
+      ]
+    },
+    {
+      "id": "gregor-mendel",
+      "term": "Gregor Mendel",
+      "definition": "Scientist whose controlled pea crosses established particulate principles of inheritance.",
+      "aliases": [
+        "Mendel"
+      ],
+      "topicId": "mendel",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "particulate-inheritance",
+      "term": "Particulate inheritance",
+      "definition": "Hereditary units remain distinct across generations rather than permanently blending.",
+      "aliases": [
+        "non-blending inheritance"
+      ],
+      "topicId": "mendel",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "character",
+      "term": "Character",
+      "definition": "Heritable feature, such as flower color, that may occur in alternative forms.",
+      "aliases": [
+        "heritable character"
+      ],
+      "topicId": "mendel",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "trait",
+      "term": "Trait",
+      "definition": "Particular variant of a heritable character, such as purple flowers.",
+      "aliases": [
+        "character state"
+      ],
+      "topicId": "mendel",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "genotype",
+      "term": "Genotype",
+      "definition": "Allelic constitution or genetic makeup of an organism at specified loci.",
+      "aliases": [
+        "genetic makeup"
+      ],
+      "topicId": "mendel",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "phenotype",
+        "homozygous",
+        "heterozygous"
+      ]
+    },
+    {
+      "id": "phenotype",
+      "term": "Phenotype",
+      "definition": "Observable characteristics arising from genotype, development and environment.",
+      "aliases": [
+        "observable trait"
+      ],
+      "topicId": "mendel",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "genotype",
+        "genotype-environment"
+      ]
+    },
+    {
+      "id": "homozygous",
+      "term": "Homozygous",
+      "definition": "Having two identical alleles at the specified diploid locus.",
+      "aliases": [
+        "homozygote"
+      ],
+      "topicId": "mendel",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "heterozygous",
+      "term": "Heterozygous",
+      "definition": "Having two different alleles at the specified diploid locus.",
+      "aliases": [
+        "heterozygote"
+      ],
+      "topicId": "mendel",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "dominant",
+      "term": "Dominant",
+      "definition": "Allele whose associated phenotype is expressed in a heterozygote under complete dominance.",
+      "aliases": [
+        "dominance"
+      ],
+      "topicId": "mendel",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "law-of-segregation",
+      "term": "Law of segregation",
+      "definition": "Alleles of a diploid gene separate during gamete formation so typical gametes receive one.",
+      "aliases": [
+        "Mendel's first law"
+      ],
+      "topicId": "mendel",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "heterozygous",
+        "meiosis-i"
+      ]
+    },
+    {
+      "id": "punnett-square",
+      "term": "Punnett square",
+      "definition": "Grid enumerating possible combinations of parental gamete alleles.",
+      "aliases": [
+        "genetic cross grid"
+      ],
+      "topicId": "crosses",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "monohybrid-cross",
+      "term": "Monohybrid cross",
+      "definition": "Cross tracking the inheritance of one gene or character.",
+      "aliases": [
+        "single-trait cross"
+      ],
+      "topicId": "crosses",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "testcross",
+      "term": "Testcross",
+      "definition": "Cross of a dominant-phenotype unknown genotype with a homozygous recessive tester.",
+      "aliases": [
+        "test cross"
+      ],
+      "topicId": "crosses",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "punnett-square",
+        "monohybrid-cross"
+      ]
+    },
+    {
+      "id": "probability",
+      "term": "Probability",
+      "definition": "Numerical measure of the likelihood of an outcome, from zero to one.",
+      "aliases": [
+        "chance"
+      ],
+      "topicId": "crosses",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "product-rule",
+      "term": "Product rule",
+      "definition": "Multiply probabilities for two independent outcomes both occurring.",
+      "aliases": [
+        "and rule"
+      ],
+      "topicId": "crosses",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "probability",
+        "sum-rule"
+      ]
+    },
+    {
+      "id": "sum-rule",
+      "term": "Sum rule",
+      "definition": "Add probabilities for mutually exclusive alternative outcomes.",
+      "aliases": [
+        "or rule"
+      ],
+      "topicId": "crosses",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "genotypic-ratio",
+      "term": "Genotypic ratio",
+      "definition": "Expected proportion of offspring genotypes from a particular cross.",
+      "aliases": [
+        "genotype ratio"
+      ],
+      "topicId": "crosses",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "phenotypic-ratio",
+      "term": "Phenotypic ratio",
+      "definition": "Expected proportion of offspring displaying each phenotype.",
+      "aliases": [
+        "phenotype ratio"
+      ],
+      "topicId": "crosses",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "segregation-ratio",
+      "term": "Segregation ratio",
+      "definition": "Expected allele or offspring proportions produced by a given cross under its assumptions.",
+      "aliases": [
+        "expected ratio"
+      ],
+      "topicId": "crosses",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "dihybrid-cross",
+      "term": "Dihybrid cross",
+      "definition": "Cross tracing offspring outcomes for two genes or traits.",
+      "aliases": [
+        "two-trait cross"
+      ],
+      "topicId": "complex-inheritance",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "law-of-independent-assortment",
+        "linked-genes"
+      ]
+    },
+    {
+      "id": "law-of-independent-assortment",
+      "term": "Law of independent assortment",
+      "definition": "Different genes segregate independently when their allele transmissions are unlinked.",
+      "aliases": [
+        "Mendel's second law"
+      ],
+      "topicId": "complex-inheritance",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "linked-genes",
+      "term": "Linked genes",
+      "definition": "Genes located on the same chromosome and often inherited together.",
+      "aliases": [
+        "genetic linkage"
+      ],
+      "topicId": "complex-inheritance",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "codominance",
+      "term": "Codominance",
+      "definition": "Both alleles contribute distinguishable expressions in the heterozygote.",
+      "aliases": [
+        "codominant alleles"
+      ],
+      "topicId": "complex-inheritance",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "abo-system",
+        "multiple-alleles"
+      ]
+    },
+    {
+      "id": "multiple-alleles",
+      "term": "Multiple alleles",
+      "definition": "More than two allele forms of one locus exist in a population.",
+      "aliases": [
+        "allelic series"
+      ],
+      "topicId": "complex-inheritance",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "abo-system",
+      "term": "ABO blood-group system",
+      "definition": "Human blood-type system with Iᴬ, Iᴮ and i alleles; Iᴬ and Iᴮ are codominant.",
+      "aliases": [
+        "ABO blood type"
+      ],
+      "topicId": "complex-inheritance",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "pleiotropy",
+      "term": "Pleiotropy",
+      "definition": "A single gene influences multiple phenotypic characteristics.",
+      "aliases": [
+        "pleiotropic effect"
+      ],
+      "topicId": "complex-inheritance",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "polygenic-inheritance",
+        "genotype-environment"
+      ]
+    },
+    {
+      "id": "polygenic-inheritance",
+      "term": "Polygenic inheritance",
+      "definition": "One phenotype influenced by variants at multiple genes.",
+      "aliases": [
+        "polygenic trait"
+      ],
+      "topicId": "complex-inheritance",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "genotype-environment",
+      "term": "Gene–environment interaction",
+      "definition": "Variation in phenotype depending on both inherited variants and environmental conditions.",
+      "aliases": [
+        "environmental effect on phenotype"
+      ],
+      "topicId": "complex-inheritance",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "recessive-disorder",
+      "term": "Recessive genetic disorder",
+      "definition": "Condition typically requiring two relevant pathogenic alleles at a diploid locus for expression.",
+      "aliases": [
+        "autosomal recessive disorder"
+      ],
+      "topicId": "disorders",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "dominant-disorder",
+      "term": "Dominant genetic disorder",
+      "definition": "Condition that can be expressed with one pathogenic allele at a diploid locus.",
+      "aliases": [
+        "autosomal dominant disorder"
+      ],
+      "topicId": "disorders",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "inbreeding",
+      "term": "Inbreeding",
+      "definition": "Mating between genetically related individuals, increasing homozygosity and matching allele inheritance.",
+      "aliases": [
+        "consanguinity"
+      ],
+      "topicId": "disorders",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "homozygosity",
+        "recessive-disorder"
+      ]
+    },
+    {
+      "id": "homozygosity",
+      "term": "Homozygosity",
+      "definition": "Presence of two matching alleles at a particular diploid locus.",
+      "aliases": [
+        "homozygous state"
+      ],
+      "topicId": "disorders",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "raphanobrassica",
+      "term": "Raphanobrassica",
+      "definition": "Classic hybrid derived from radish and cabbage whose fertility can be restored after chromosome doubling.",
+      "aliases": [
+        "radish cabbage hybrid"
+      ],
+      "topicId": "disorders",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "allopolyploidy",
+        "chromosome-doubling"
+      ]
+    },
+    {
+      "id": "hybrid",
+      "term": "Hybrid",
+      "definition": "Offspring arising from parents of genetically distinct lines or taxa.",
+      "aliases": [
+        "intertaxon hybrid"
+      ],
+      "topicId": "disorders",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "sterile-hybrid",
+      "term": "Sterile hybrid",
+      "definition": "Hybrid unable to produce viable functional gametes under ordinary conditions.",
+      "aliases": [
+        "hybrid sterility"
+      ],
+      "topicId": "disorders",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "chromosome-doubling",
+      "term": "Chromosome doubling",
+      "definition": "Increase in complete chromosome sets, sometimes restoring homologous partners for meiotic pairing.",
+      "aliases": [
+        "genome doubling"
+      ],
+      "topicId": "disorders",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "allopolyploidy",
+      "term": "Allopolyploidy",
+      "definition": "Presence of multiplied chromosome sets derived from distinct species or evolutionary lineages.",
+      "aliases": [
+        "allopolyploid"
+      ],
+      "topicId": "disorders",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "hybrid",
+        "sterile-hybrid",
+        "speciation"
+      ]
+    },
+    {
+      "id": "chromosome-theory",
+      "term": "Chromosome theory of inheritance",
+      "definition": "Theory that genes occupy particular loci on chromosomes whose behavior explains Mendelian inheritance.",
+      "aliases": [
+        "chromosomal basis of inheritance"
+      ],
+      "topicId": "chromosome-theory",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "chromosome-locus",
+        "thomas-hunt-morgan"
+      ]
+    },
+    {
+      "id": "thomas-hunt-morgan",
+      "term": "Thomas Hunt Morgan",
+      "definition": "Geneticist who used fruit-fly studies to link hereditary traits to chromosomes.",
+      "aliases": [
+        "Morgan"
+      ],
+      "topicId": "chromosome-theory",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "drosophila",
+      "term": "Drosophila melanogaster",
+      "definition": "Fruit-fly model organism with a short generation time, many offspring and four chromosome pairs.",
+      "aliases": [
+        "fruit fly"
+      ],
+      "topicId": "chromosome-theory",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "thomas-hunt-morgan",
+        "white-eye"
+      ]
+    },
+    {
+      "id": "wild-type",
+      "term": "Wild type",
+      "definition": "Common or reference phenotype in a studied population.",
+      "aliases": [
+        "normal phenotype"
+      ],
+      "topicId": "chromosome-theory",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "mutant-phenotype",
+      "term": "Mutant phenotype",
+      "definition": "Observable variant that differs from the standard wild-type form.",
+      "aliases": [
+        "mutant trait"
+      ],
+      "topicId": "chromosome-theory",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "white-eye",
+      "term": "White-eye phenotype",
+      "definition": "Morgan's classic mutant fruit-fly eye-color trait used to reveal X-linked inheritance.",
+      "aliases": [
+        "white eyes"
+      ],
+      "topicId": "chromosome-theory",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "red-eye",
+      "term": "Red-eye phenotype",
+      "definition": "Common fruit-fly eye-color trait contrasted with the white-eye mutation in Morgan's crosses.",
+      "aliases": [
+        "wild-type eyes"
+      ],
+      "topicId": "chromosome-theory",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "sex-chromosomes",
+      "term": "Sex chromosomes",
+      "definition": "Chromosomes involved in sex determination; X and Y in typical human XX/XY development.",
+      "aliases": [
+        "X and Y chromosomes"
+      ],
+      "topicId": "chromosome-theory",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "chromosome-locus",
+      "term": "Chromosomal gene locus",
+      "definition": "Defined place along a chromosome where a particular gene is located.",
+      "aliases": [
+        "gene location"
+      ],
+      "topicId": "chromosome-theory",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "sex-linked",
+      "term": "Sex-linked gene",
+      "definition": "Gene located on a sex chromosome, producing inheritance patterns affected by sex-chromosome transmission.",
+      "aliases": [
+        "sex-linked inheritance"
+      ],
+      "topicId": "sex-linked",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "x-linked",
+      "term": "X-linked gene",
+      "definition": "Gene carried on the X chromosome.",
+      "aliases": [
+        "X-linked inheritance"
+      ],
+      "topicId": "sex-linked",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "sex-linked",
+        "hemizygous"
+      ]
+    },
+    {
+      "id": "y-linked",
+      "term": "Y-linked gene",
+      "definition": "Gene carried on the Y chromosome and normally passed along Y-bearing lineages.",
+      "aliases": [
+        "Y linked"
+      ],
+      "topicId": "sex-linked",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "sex-linked",
+        "sex-chromosomes"
+      ]
+    },
+    {
+      "id": "hemizygous",
+      "term": "Hemizygous",
+      "definition": "Having one gene copy at a locus normally represented by two in another chromosome complement.",
+      "aliases": [
+        "single-copy X-linked locus"
+      ],
+      "topicId": "sex-linked",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "maternal-inheritance",
+      "term": "Maternal inheritance",
+      "definition": "Transmission of genetic material chiefly through the mother in the relevant biological system.",
+      "aliases": [
+        "maternal cytoplasmic inheritance"
+      ],
+      "topicId": "sex-linked",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "extranuclear-dna",
+      "term": "Extranuclear DNA",
+      "definition": "Genetic material outside the nucleus, including mitochondrial and chloroplast genomes.",
+      "aliases": [
+        "organelle DNA",
+        "cytoplasmic genes"
+      ],
+      "topicId": "sex-linked",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "mitochondrial-genome",
+        "chloroplast-genome"
+      ]
+    },
+    {
+      "id": "mitochondrial-genome",
+      "term": "Mitochondrial genome",
+      "definition": "Small DNA genome within mitochondria, commonly transmitted through the egg in humans.",
+      "aliases": [
+        "mtDNA"
+      ],
+      "topicId": "sex-linked",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "chloroplast-genome",
+      "term": "Chloroplast genome",
+      "definition": "DNA within plastids that supports some organelle functions and can show lineage-specific inheritance.",
+      "aliases": [
+        "plastid DNA"
+      ],
+      "topicId": "sex-linked",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "chimerism",
+      "term": "Chimerism",
+      "definition": "Presence of cell populations arising from more than one zygote or fertilization lineage in one individual.",
+      "aliases": [
+        "genetic chimera"
+      ],
+      "topicId": "sex-linked",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "dna",
+      "term": "DNA",
+      "definition": "Deoxyribonucleic acid; the principal information-storing genetic polymer in cellular organisms.",
+      "aliases": [
+        "deoxyribonucleic acid"
+      ],
+      "topicId": "dna-evidence",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "nucleotide",
+        "dna-replication",
+        "hershey-chase"
+      ]
+    },
+    {
+      "id": "bacteriophage",
+      "term": "Bacteriophage",
+      "definition": "Virus that infects bacteria, used in classic experiments on genetic information.",
+      "aliases": [
+        "phage"
+      ],
+      "topicId": "dna-evidence",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "hershey-chase",
+      "term": "Hershey–Chase experiment",
+      "definition": "1952 phage-labeling study showing DNA, rather than most phage protein, enters bacteria and directs infection.",
+      "aliases": [
+        "Hershey and Chase experiment"
+      ],
+      "topicId": "dna-evidence",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "radioactive-phosphorus",
+        "radioactive-sulfur",
+        "bacteriophage"
+      ]
+    },
+    {
+      "id": "radioactive-phosphorus",
+      "term": "Radioactive phosphorus-32",
+      "definition": "Isotope used to label phage DNA in Hershey–Chase experiments because DNA contains phosphorus.",
+      "aliases": [
+        "32P"
+      ],
+      "topicId": "dna-evidence",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "dna",
+        "pellet"
+      ]
+    },
+    {
+      "id": "radioactive-sulfur",
+      "term": "Radioactive sulfur-35",
+      "definition": "Isotope used to label phage protein because certain amino acids contain sulfur.",
+      "aliases": [
+        "35S"
+      ],
+      "topicId": "dna-evidence",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "supernatant",
+        "bacteriophage"
+      ]
+    },
+    {
+      "id": "blender-step",
+      "term": "Blender step",
+      "definition": "Agitation detaching phage protein coats from the surfaces of infected bacterial cells.",
+      "aliases": [
+        "blending"
+      ],
+      "topicId": "dna-evidence",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "centrifugation",
+      "term": "Centrifugation",
+      "definition": "Separation by spinning that placed bacterial cells in a pellet and detached phage coats in the supernatant.",
+      "aliases": [
+        "centrifuge"
+      ],
+      "topicId": "dna-evidence",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "pellet",
+      "term": "Pellet",
+      "definition": "Dense material collected at the bottom of a centrifuge tube, containing bacterial cells in the experiment.",
+      "aliases": [
+        "bacterial pellet"
+      ],
+      "topicId": "dna-evidence",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "supernatant",
+      "term": "Supernatant",
+      "definition": "Liquid above the pellet, containing many detached phage coats in the experiment.",
+      "aliases": [
+        "liquid fraction"
+      ],
+      "topicId": "dna-evidence",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "nucleotide",
+      "term": "Nucleotide",
+      "definition": "Building block made of nitrogenous base, pentose sugar and phosphate group.",
+      "aliases": [
+        "nucleic acid monomer"
+      ],
+      "topicId": "dna-structure",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "purine",
+      "term": "Purine",
+      "definition": "Double-ring nitrogenous base class, including adenine and guanine.",
+      "aliases": [
+        "A and G"
+      ],
+      "topicId": "dna-structure",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "pyrimidine",
+      "term": "Pyrimidine",
+      "definition": "Single-ring nitrogenous base class, including cytosine, thymine and uracil.",
+      "aliases": [
+        "C T U"
+      ],
+      "topicId": "dna-structure",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "complementary-base-pairing",
+      "term": "Complementary base pairing",
+      "definition": "Preferential A–T and G–C pairing in DNA, and A–U when appropriate in RNA.",
+      "aliases": [
+        "base complementarity"
+      ],
+      "topicId": "dna-structure",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "double-helix",
+        "dna-replication"
+      ]
+    },
+    {
+      "id": "sugar-phosphate-backbone",
+      "term": "Sugar–phosphate backbone",
+      "definition": "Covalently linked alternating sugar and phosphate units forming a nucleic acid strand.",
+      "aliases": [
+        "phosphodiester backbone"
+      ],
+      "topicId": "dna-structure",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "double-helix",
+      "term": "DNA double helix",
+      "definition": "Two antiparallel DNA strands paired inside a helical structure with an approximately 2-nm diameter.",
+      "aliases": [
+        "double-stranded DNA"
+      ],
+      "topicId": "dna-structure",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "rna",
+      "term": "RNA",
+      "definition": "Ribonucleic acid, commonly single-stranded and built with ribose and uracil instead of thymine.",
+      "aliases": [
+        "ribonucleic acid"
+      ],
+      "topicId": "dna-structure",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "messenger-rna",
+        "transcription"
+      ]
+    },
+    {
+      "id": "dna-replication",
+      "term": "DNA replication",
+      "definition": "Template-directed copying of DNA so daughter molecules preserve sequence information.",
+      "aliases": [
+        "genome replication"
+      ],
+      "topicId": "dna-structure",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "replication-fidelity",
+        "semiconservative-replication"
+      ]
+    },
+    {
+      "id": "semiconservative-replication",
+      "term": "Semiconservative replication",
+      "definition": "Mechanism in which each daughter DNA duplex contains one preexisting and one newly synthesized strand.",
+      "aliases": [
+        "semi-conservative"
+      ],
+      "topicId": "dna-structure",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "replication-fidelity",
+      "term": "Replication fidelity",
+      "definition": "Accuracy of copying DNA, supported by nucleotide selectivity, proofreading and repair.",
+      "aliases": [
+        "DNA copying accuracy"
+      ],
+      "topicId": "dna-structure",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "gene-expression",
+      "term": "Gene expression",
+      "definition": "Processes that use genetic information to produce RNA and, for protein-coding genes, proteins.",
+      "aliases": [
+        "expression of genes"
+      ],
+      "topicId": "gene-expression",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "transcription",
+      "term": "Transcription",
+      "definition": "Synthesis of RNA using a DNA template.",
+      "aliases": [
+        "RNA synthesis"
+      ],
+      "topicId": "gene-expression",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "gene-expression",
+        "messenger-rna",
+        "translation"
+      ]
+    },
+    {
+      "id": "messenger-rna",
+      "term": "Messenger RNA",
+      "definition": "RNA carrying an encoded sequence read by ribosomes during translation.",
+      "aliases": [
+        "mRNA"
+      ],
+      "topicId": "gene-expression",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "translation",
+      "term": "Translation",
+      "definition": "Ribosome-directed synthesis of a polypeptide using mRNA codons.",
+      "aliases": [
+        "protein synthesis"
+      ],
+      "topicId": "gene-expression",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "transcription",
+        "codon",
+        "ribosome"
+      ]
+    },
+    {
+      "id": "ribosome",
+      "term": "Ribosome",
+      "definition": "Ribonucleoprotein machine that reads mRNA and assembles a polypeptide.",
+      "aliases": [
+        "ribosomes"
+      ],
+      "topicId": "gene-expression",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "codon",
+      "term": "Codon",
+      "definition": "Three-nucleotide mRNA sequence specifying an amino acid or a stop signal.",
+      "aliases": [
+        "triplet code"
+      ],
+      "topicId": "gene-expression",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "genetic-code",
+        "amino-acid"
+      ]
+    },
+    {
+      "id": "amino-acid",
+      "term": "Amino acid",
+      "definition": "Molecular building block joined into polypeptide chains during translation.",
+      "aliases": [
+        "protein monomer"
+      ],
+      "topicId": "gene-expression",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "polypeptide",
+      "term": "Polypeptide",
+      "definition": "Chain of amino acids joined by peptide bonds that may fold into a functional protein.",
+      "aliases": [
+        "protein chain"
+      ],
+      "topicId": "gene-expression",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "genetic-code",
+      "term": "Genetic code",
+      "definition": "Rules mapping mRNA codons to amino acids or translation-stop instructions.",
+      "aliases": [
+        "codon table"
+      ],
+      "topicId": "gene-expression",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "nearly-universal-code",
+      "term": "Nearly universal genetic code",
+      "definition": "Most living organisms use essentially the same codon assignments with limited exceptions.",
+      "aliases": [
+        "universality of the code"
+      ],
+      "topicId": "gene-expression",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "descent-with-modification",
+      "term": "Descent with modification",
+      "definition": "Inheritance of traits with changes accumulating across generations, producing branching lineages.",
+      "aliases": [
+        "evolutionary descent"
+      ],
+      "topicId": "evolution-history",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "phylogenetic-tree",
+        "evolution"
+      ]
+    },
+    {
+      "id": "evolution",
+      "term": "Evolution",
+      "definition": "Change in inherited characteristics of populations across generations.",
+      "aliases": [
+        "biological evolution"
+      ],
+      "topicId": "evolution-history",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "phylogenetic-tree",
+      "term": "Phylogenetic tree",
+      "definition": "Branching hypothesis of evolutionary relationships among lineages.",
+      "aliases": [
+        "evolutionary tree"
+      ],
+      "topicId": "evolution-history",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "binomial-nomenclature",
+      "term": "Binomial nomenclature",
+      "definition": "Scientific naming convention using a genus and species epithet.",
+      "aliases": [
+        "two-part species name"
+      ],
+      "topicId": "evolution-history",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "carl-linnaeus",
+      "term": "Carl Linnaeus",
+      "definition": "Naturalist who formalized binomial nomenclature in Systema Naturae.",
+      "aliases": [
+        "Linnaeus"
+      ],
+      "topicId": "evolution-history",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "lamarck",
+      "term": "Jean-Baptiste Lamarck",
+      "definition": "Early evolutionist known for a historical account involving inheritance of acquired characteristics.",
+      "aliases": [
+        "Lamarckian evolution"
+      ],
+      "topicId": "evolution-history",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "charles-darwin",
+      "term": "Charles Darwin",
+      "definition": "Naturalist who developed and publicized evolution by natural selection, including in 1859.",
+      "aliases": [
+        "Darwin"
+      ],
+      "topicId": "evolution-history",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "alfred-russel-wallace",
+        "origin-of-species"
+      ]
+    },
+    {
+      "id": "alfred-russel-wallace",
+      "term": "Alfred Russel Wallace",
+      "definition": "Naturalist who independently developed natural selection and communicated his ideas with Darwin.",
+      "aliases": [
+        "Wallace"
+      ],
+      "topicId": "evolution-history",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "thomas-huxley",
+      "term": "Thomas Henry Huxley",
+      "definition": "Prominent 19th-century defender of evolutionary theory known as Darwin's Bulldog.",
+      "aliases": [
+        "Darwin's Bulldog"
+      ],
+      "topicId": "evolution-history",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "origin-of-species",
+      "term": "On the Origin of Species",
+      "definition": "Darwin's 1859 book presenting evidence and argument for evolution by natural selection.",
+      "aliases": [
+        "Origin of Species"
+      ],
+      "topicId": "evolution-history",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "natural-selection",
+      "term": "Natural selection",
+      "definition": "Differential survival and reproduction of inherited variants under particular environments.",
+      "aliases": [
+        "selection"
+      ],
+      "topicId": "evolution-mechanisms",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "fitness",
+        "heritable-variation",
+        "selection-pressure"
+      ]
+    },
+    {
+      "id": "mutation-evolution",
+      "term": "Mutation in evolution",
+      "definition": "DNA sequence change that creates new inherited allele variants.",
+      "aliases": [
+        "new allele formation"
+      ],
+      "topicId": "evolution-mechanisms",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "genetic-drift",
+      "term": "Genetic drift",
+      "definition": "Random change in allele frequencies due to chance sampling across generations.",
+      "aliases": [
+        "random allele-frequency change"
+      ],
+      "topicId": "evolution-mechanisms",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "vicariance",
+        "allele-frequency"
+      ]
+    },
+    {
+      "id": "vicariance",
+      "term": "Vicariance",
+      "definition": "Geographic division of a population or range by a new barrier.",
+      "aliases": [
+        "geographic isolation event"
+      ],
+      "topicId": "evolution-mechanisms",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "sexual-selection",
+      "term": "Sexual selection",
+      "definition": "Selection arising from variation in mating success, including mate choice and competition.",
+      "aliases": [
+        "mate competition"
+      ],
+      "topicId": "evolution-mechanisms",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "fitness",
+        "natural-selection"
+      ]
+    },
+    {
+      "id": "fitness",
+      "term": "Evolutionary fitness",
+      "definition": "Relative genetic contribution of an individual or genotype to future generations in a given environment.",
+      "aliases": [
+        "reproductive success"
+      ],
+      "topicId": "evolution-mechanisms",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "allele-frequency",
+      "term": "Allele frequency",
+      "definition": "Proportion of gene copies at a locus represented by a specified allele in a population.",
+      "aliases": [
+        "gene frequency"
+      ],
+      "topicId": "evolution-mechanisms",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "heritable-variation",
+      "term": "Heritable variation",
+      "definition": "Genetically transmissible differences among individuals that may affect traits and fitness.",
+      "aliases": [
+        "inherited variation"
+      ],
+      "topicId": "evolution-mechanisms",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "selection-pressure",
+      "term": "Selection pressure",
+      "definition": "Environmental or reproductive factor producing differences in survival or reproductive success among inherited variants.",
+      "aliases": [
+        "selective agent"
+      ],
+      "topicId": "evolution-mechanisms",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "reproductive-isolation",
+      "term": "Reproductive isolation",
+      "definition": "Barriers limiting successful gene exchange among lineages.",
+      "aliases": [
+        "isolation between populations"
+      ],
+      "topicId": "speciation",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "prezygotic-barrier",
+      "term": "Prezygotic barrier",
+      "definition": "Reproductive barrier acting before fertilization or zygote formation.",
+      "aliases": [
+        "pre-fertilization barrier"
+      ],
+      "topicId": "speciation",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "postzygotic-barrier",
+        "reproductive-isolation"
+      ]
+    },
+    {
+      "id": "postzygotic-barrier",
+      "term": "Postzygotic barrier",
+      "definition": "Barrier acting after fertilization, reducing hybrid viability or fertility.",
+      "aliases": [
+        "post-fertilization barrier"
+      ],
+      "topicId": "speciation",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "hybrid-sterility",
+        "prezygotic-barrier"
+      ]
+    },
+    {
+      "id": "biological-species-concept",
+      "term": "Biological species concept",
+      "definition": "Species criterion emphasizing reproductive compatibility within groups and isolation from other groups.",
+      "aliases": [
+        "interbreeding species concept"
+      ],
+      "topicId": "speciation",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "speciation",
+      "term": "Speciation",
+      "definition": "Evolutionary emergence of distinct species lineages.",
+      "aliases": [
+        "origin of species"
+      ],
+      "topicId": "speciation",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "reproductive-isolation",
+        "adaptive-radiation"
+      ]
+    },
+    {
+      "id": "hybrid-sterility",
+      "term": "Hybrid sterility",
+      "definition": "Reduced ability of a hybrid to produce functional gametes or offspring.",
+      "aliases": [
+        "sterile offspring"
+      ],
+      "topicId": "speciation",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "mass-extinction",
+      "term": "Mass extinction",
+      "definition": "Geologically brief episode of widespread species losses across many lineages.",
+      "aliases": [
+        "extinction pulse"
+      ],
+      "topicId": "speciation",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": [
+        "adaptive-radiation",
+        "macroevolution"
+      ]
+    },
+    {
+      "id": "adaptive-radiation",
+      "term": "Adaptive radiation",
+      "definition": "Rapid diversification of a lineage into multiple forms occupying distinct ecological opportunities.",
+      "aliases": [
+        "evolutionary radiation"
+      ],
+      "topicId": "speciation",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    },
+    {
+      "id": "macroevolution",
+      "term": "Macroevolution",
+      "definition": "Evolutionary patterns and processes at or above species level, including lineage splitting and extinction.",
+      "aliases": [
+        "large-scale evolution"
+      ],
+      "topicId": "speciation",
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "relatedConceptIds": []
+    }
+  ]
+}

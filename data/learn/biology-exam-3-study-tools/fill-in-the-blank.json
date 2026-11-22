@@ -1,0 +1,3172 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "biology-exam-3",
+  "questions": [
+    {
+      "id": "fib-001",
+      "type": "fill-in-blank",
+      "topicId": "chromosomes",
+      "prompt": "Typical human somatic cells are _____, with two sets of chromosomes.",
+      "answer": "diploid",
+      "acceptedAnswers": [
+        "2n"
+      ],
+      "hint": "They carry maternal and paternal sets.",
+      "explanation": "Diploidy describes chromosome-set number, not whether a chromosome has replicated.",
+      "conceptIds": [
+        "diploid"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-002",
+      "type": "fill-in-blank",
+      "topicId": "chromosomes",
+      "prompt": "The human haploid chromosome number is _____.",
+      "answer": "23",
+      "acceptedAnswers": [],
+      "hint": "A sperm or ovum carries one set.",
+      "explanation": "Human gametes contain 22 autosomes plus one sex chromosome.",
+      "conceptIds": [
+        "haploid"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-003",
+      "type": "fill-in-blank",
+      "topicId": "chromosomes",
+      "prompt": "A maternal and paternal chromosome with corresponding gene loci form a _____ pair.",
+      "answer": "homologous",
+      "acceptedAnswers": [
+        "homologue",
+        "homolog"
+      ],
+      "hint": "The pair can have different alleles.",
+      "explanation": "Homologous chromosomes pair during meiosis I and separate in anaphase I.",
+      "conceptIds": [
+        "homologous-chromosomes"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-004",
+      "type": "fill-in-blank",
+      "topicId": "chromosomes",
+      "prompt": "The duplicated copies of one chromosome are called _____ chromatids.",
+      "answer": "sister",
+      "acceptedAnswers": [],
+      "hint": "These are products of DNA replication.",
+      "explanation": "Sister chromatids are held together until separation in mitosis or meiosis II.",
+      "conceptIds": [
+        "sister-chromatids"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-005",
+      "type": "fill-in-blank",
+      "topicId": "chromosomes",
+      "prompt": "The position of a gene along a chromosome is its _____.",
+      "answer": "locus",
+      "acceptedAnswers": [],
+      "hint": "Plural: loci.",
+      "explanation": "A locus refers to location; an allele refers to a variant at that location.",
+      "conceptIds": [
+        "locus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-006",
+      "type": "fill-in-blank",
+      "topicId": "meiosis",
+      "prompt": "In meiosis I, _____ chromosomes separate.",
+      "answer": "homologous",
+      "acceptedAnswers": [
+        "homologues",
+        "homologs"
+      ],
+      "hint": "Think maternal versus paternal pair.",
+      "explanation": "The separation makes cells haploid even while chromosomes still have sister chromatids.",
+      "conceptIds": [
+        "meiosis-i"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-007",
+      "type": "fill-in-blank",
+      "topicId": "meiosis",
+      "prompt": "In meiosis II, sister _____ separate.",
+      "answer": "chromatids",
+      "acceptedAnswers": [],
+      "hint": "This is not a second homologue separation.",
+      "explanation": "Meiosis II separates chromosome copies after the first reductional division.",
+      "conceptIds": [
+        "meiosis-ii"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-008",
+      "type": "fill-in-blank",
+      "topicId": "meiosis",
+      "prompt": "Crossing over typically occurs during prophase _____.",
+      "answer": "I",
+      "acceptedAnswers": [
+        "1",
+        "one"
+      ],
+      "hint": "The first meiotic division.",
+      "explanation": "Paired homologues exchange DNA during prophase I.",
+      "conceptIds": [
+        "prophase-i"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-009",
+      "type": "fill-in-blank",
+      "topicId": "meiosis",
+      "prompt": "A paired set of two replicated homologues contains _____ chromatids.",
+      "answer": "four",
+      "acceptedAnswers": [
+        "4"
+      ],
+      "hint": "Two chromosomes, two copies each.",
+      "explanation": "A tetrad includes four chromatids, not four separate homologous chromosomes.",
+      "conceptIds": [
+        "tetrad"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-010",
+      "type": "fill-in-blank",
+      "topicId": "meiosis",
+      "prompt": "Random orientation of homologous pairs occurs at metaphase _____.",
+      "answer": "I",
+      "acceptedAnswers": [
+        "1",
+        "one"
+      ],
+      "hint": "This drives independent assortment.",
+      "explanation": "Metaphase I orientation varies among chromosomes and cells.",
+      "conceptIds": [
+        "metaphase-i"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-011",
+      "type": "fill-in-blank",
+      "topicId": "reproduction",
+      "prompt": "Hydra budding is an example of _____ reproduction.",
+      "answer": "asexual",
+      "acceptedAnswers": [],
+      "hint": "A single individual produces an offspring.",
+      "explanation": "Budding does not require sperm–egg fusion.",
+      "conceptIds": [
+        "asexual-reproduction"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-012",
+      "type": "fill-in-blank",
+      "topicId": "reproduction",
+      "prompt": "Genetically very similar descendants of one source are termed _____.",
+      "answer": "clones",
+      "acceptedAnswers": [
+        "clone"
+      ],
+      "hint": "They can still acquire mutations.",
+      "explanation": "Clones can differ genetically through subsequent changes despite common origin.",
+      "conceptIds": [
+        "clone"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-013",
+      "type": "fill-in-blank",
+      "topicId": "reproduction",
+      "prompt": "Fusion of two gametes is called _____.",
+      "answer": "fertilization",
+      "acceptedAnswers": [
+        "syngamy"
+      ],
+      "hint": "This creates a zygote.",
+      "explanation": "Fertilization restores the combined parental chromosome sets.",
+      "conceptIds": [
+        "fertilization"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-014",
+      "type": "fill-in-blank",
+      "topicId": "reproduction",
+      "prompt": "The cell formed after gametes unite is the _____.",
+      "answer": "zygote",
+      "acceptedAnswers": [
+        "fertilized egg"
+      ],
+      "hint": "The earliest stage of a new animal individual.",
+      "explanation": "A zygote normally contains one haploid chromosome set from each parent.",
+      "conceptIds": [
+        "zygote"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-015",
+      "type": "fill-in-blank",
+      "topicId": "reproduction",
+      "prompt": "The original source of new alleles is _____.",
+      "answer": "mutation",
+      "acceptedAnswers": [
+        "mutations"
+      ],
+      "hint": "Distinguish new DNA variants from chromosome shuffling.",
+      "explanation": "Mutation changes genetic sequence; assortment and recombination rearrange variants already present.",
+      "conceptIds": [
+        "mutation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-016",
+      "type": "fill-in-blank",
+      "topicId": "mendel",
+      "prompt": "Mendel's first law says alleles _____ during gamete formation.",
+      "answer": "segregate",
+      "acceptedAnswers": [
+        "separate"
+      ],
+      "hint": "Only one allele usually reaches each gamete.",
+      "explanation": "The two alleles separate when homologous chromosome copies segregate.",
+      "conceptIds": [
+        "law-of-segregation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-017",
+      "type": "fill-in-blank",
+      "topicId": "mendel",
+      "prompt": "The allelic makeup of an individual is its _____.",
+      "answer": "genotype",
+      "acceptedAnswers": [],
+      "hint": "Compare with expressed appearance.",
+      "explanation": "Genotype describes inherited genetic composition, not necessarily visible traits.",
+      "conceptIds": [
+        "genotype"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-018",
+      "type": "fill-in-blank",
+      "topicId": "mendel",
+      "prompt": "An organism's observable trait is its _____.",
+      "answer": "phenotype",
+      "acceptedAnswers": [],
+      "hint": "Can also depend on environment.",
+      "explanation": "Phenotype results from genotype interacting with development and environment.",
+      "conceptIds": [
+        "phenotype"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-019",
+      "type": "fill-in-blank",
+      "topicId": "mendel",
+      "prompt": "An Aa individual is _____ at that locus.",
+      "answer": "heterozygous",
+      "acceptedAnswers": [
+        "a heterozygote"
+      ],
+      "hint": "The two alleles differ.",
+      "explanation": "Heterozygotes carry two different alleles for the gene.",
+      "conceptIds": [
+        "heterozygous"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-020",
+      "type": "fill-in-blank",
+      "topicId": "mendel",
+      "prompt": "An AA individual is _____ at that locus.",
+      "answer": "homozygous",
+      "acceptedAnswers": [
+        "a homozygote"
+      ],
+      "hint": "The two alleles are the same.",
+      "explanation": "Homozygotes carry two copies of the same allele.",
+      "conceptIds": [
+        "homozygous"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-021",
+      "type": "fill-in-blank",
+      "topicId": "crosses",
+      "prompt": "Aa × Aa produces an expected genotype ratio of _____.",
+      "answer": "1:2:1",
+      "acceptedAnswers": [
+        "1 AA : 2 Aa : 1 aa"
+      ],
+      "hint": "List AA, Aa, and aa in that order.",
+      "explanation": "One AA, two heterozygote combinations, and one aa are expected.",
+      "conceptIds": [
+        "genotypic-ratio"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-022",
+      "type": "fill-in-blank",
+      "topicId": "crosses",
+      "prompt": "Under complete dominance, an Aa × Aa cross has a _____ dominant-to-recessive phenotype ratio.",
+      "answer": "3:1",
+      "acceptedAnswers": [
+        "three to one"
+      ],
+      "hint": "Three of four possible offspring show dominance.",
+      "explanation": "The predicted fraction is 3/4 dominant and 1/4 recessive.",
+      "conceptIds": [
+        "phenotypic-ratio"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-023",
+      "type": "fill-in-blank",
+      "topicId": "crosses",
+      "prompt": "To test whether A_ is AA or Aa, cross it with _____.",
+      "answer": "aa",
+      "acceptedAnswers": [
+        "a homozygous recessive"
+      ],
+      "hint": "The tester's recessive genotype is known.",
+      "explanation": "A recessive tester makes the unknown parent's a allele visible in offspring if present.",
+      "conceptIds": [
+        "testcross"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-024",
+      "type": "fill-in-blank",
+      "topicId": "crosses",
+      "prompt": "A predicted 25% offspring probability does not _____ an exact fraction in a small family.",
+      "answer": "guarantee",
+      "acceptedAnswers": [
+        "ensure",
+        "determine"
+      ],
+      "hint": "Individual births are chance outcomes.",
+      "explanation": "Probabilities describe long-run expectations, not deterministic offspring orders.",
+      "conceptIds": [
+        "probability"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-025",
+      "type": "fill-in-blank",
+      "topicId": "crosses",
+      "prompt": "For independent events, the _____ rule multiplies their probabilities.",
+      "answer": "product",
+      "acceptedAnswers": [
+        "multiplication"
+      ],
+      "hint": "Used when both outcomes must happen.",
+      "explanation": "Independent 1/2 chances both occurring yield 1/4.",
+      "conceptIds": [
+        "product-rule"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-026",
+      "type": "fill-in-blank",
+      "topicId": "complex-inheritance",
+      "prompt": "A standard AaBb × AaBb cross gives a _____ phenotype ratio when genes assort independently.",
+      "answer": "9:3:3:1",
+      "acceptedAnswers": [
+        "9 to 3 to 3 to 1"
+      ],
+      "hint": "Requires complete dominance and unlinked inheritance.",
+      "explanation": "Nine, three, three, and one describe four phenotype classes.",
+      "conceptIds": [
+        "dihybrid-cross"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-027",
+      "type": "fill-in-blank",
+      "topicId": "complex-inheritance",
+      "prompt": "Genes close together on the same chromosome are genetically _____.",
+      "answer": "linked",
+      "acceptedAnswers": [
+        "linked genes"
+      ],
+      "hint": "They often pass together.",
+      "explanation": "Physical linkage can reduce independent assortment.",
+      "conceptIds": [
+        "linked-genes"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-028",
+      "type": "fill-in-blank",
+      "topicId": "complex-inheritance",
+      "prompt": "The A and B alleles of the ABO blood group show _____.",
+      "answer": "codominance",
+      "acceptedAnswers": [],
+      "hint": "Neither A nor B disappears in an AB individual.",
+      "explanation": "Both antigen phenotypes are expressed in IᴬIᴮ people.",
+      "conceptIds": [
+        "codominance"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-029",
+      "type": "fill-in-blank",
+      "topicId": "complex-inheritance",
+      "prompt": "When one gene affects several phenotypes, this is _____.",
+      "answer": "pleiotropy",
+      "acceptedAnswers": [],
+      "hint": "One gene, multiple outcomes.",
+      "explanation": "Pleiotropy is different from polygenic inheritance.",
+      "conceptIds": [
+        "pleiotropy"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-030",
+      "type": "fill-in-blank",
+      "topicId": "complex-inheritance",
+      "prompt": "A single trait affected by many genes is a _____ trait.",
+      "answer": "polygenic",
+      "acceptedAnswers": [
+        "polygenic inheritance"
+      ],
+      "hint": "Many loci contribute.",
+      "explanation": "Complex traits need not follow one-gene Mendelian ratios.",
+      "conceptIds": [
+        "polygenic-inheritance"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-031",
+      "type": "fill-in-blank",
+      "topicId": "disorders",
+      "prompt": "Inbreeding tends to increase genetic _____ at loci.",
+      "answer": "homozygosity",
+      "acceptedAnswers": [],
+      "hint": "The same allele may arrive from both parents.",
+      "explanation": "More homozygous recessive combinations can expose deleterious variants.",
+      "conceptIds": [
+        "inbreeding"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-032",
+      "type": "fill-in-blank",
+      "topicId": "disorders",
+      "prompt": "The radish–cabbage hybrid shown in the lecture is called _____.",
+      "answer": "Raphanobrassica",
+      "acceptedAnswers": [],
+      "hint": "A botanical example of rapid hybrid speciation.",
+      "explanation": "The original hybrid was sterile until chromosome doubling enabled more regular meiosis.",
+      "conceptIds": [
+        "raphanobrassica"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-033",
+      "type": "fill-in-blank",
+      "topicId": "disorders",
+      "prompt": "Genome doubling after hybridization between species can produce _____.",
+      "answer": "allopolyploidy",
+      "acceptedAnswers": [
+        "an allopolyploid"
+      ],
+      "hint": "Multiple chromosome sets from different species.",
+      "explanation": "Allopolyploidy is especially important in plant evolutionary history.",
+      "conceptIds": [
+        "allopolyploidy"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-034",
+      "type": "fill-in-blank",
+      "topicId": "disorders",
+      "prompt": "Most classic autosomal recessive disorders require _____ pathogenic alleles at the locus.",
+      "answer": "two",
+      "acceptedAnswers": [
+        "2"
+      ],
+      "hint": "One from each parent in a typical diploid individual.",
+      "explanation": "A single carrier may be unaffected under classic recessive inheritance.",
+      "conceptIds": [
+        "recessive-disorder"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-035",
+      "type": "fill-in-blank",
+      "topicId": "disorders",
+      "prompt": "The sterile Raphanobrassica hybrid regained fertility through chromosome _____.",
+      "answer": "doubling",
+      "acceptedAnswers": [],
+      "hint": "Provides homologous pairing partners.",
+      "explanation": "Genome doubling can stabilize meiotic pairing in interspecies hybrids.",
+      "conceptIds": [
+        "chromosome-doubling"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-036",
+      "type": "fill-in-blank",
+      "topicId": "chromosome-theory",
+      "prompt": "Mendelian genes occupy specific positions on chromosomes called _____.",
+      "answer": "loci",
+      "acceptedAnswers": [
+        "locus",
+        "gene loci"
+      ],
+      "hint": "Plural of locus.",
+      "explanation": "A locus is a physical location on a chromosome.",
+      "conceptIds": [
+        "chromosome-theory"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-037",
+      "type": "fill-in-blank",
+      "topicId": "chromosome-theory",
+      "prompt": "_____ used fruit flies to provide evidence for the chromosome theory of inheritance.",
+      "answer": "Thomas Hunt Morgan",
+      "acceptedAnswers": [
+        "Morgan"
+      ],
+      "hint": "The classic Drosophila experimenter.",
+      "explanation": "Morgan's crosses connected sex-linked eye color with the X chromosome.",
+      "conceptIds": [
+        "thomas-hunt-morgan"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-038",
+      "type": "fill-in-blank",
+      "topicId": "chromosome-theory",
+      "prompt": "The genus of the model fruit fly used by Morgan is _____.",
+      "answer": "Drosophila",
+      "acceptedAnswers": [],
+      "hint": "Small flies with rapid breeding cycles.",
+      "explanation": "Drosophila melanogaster is a foundational organism in genetics.",
+      "conceptIds": [
+        "drosophila"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-039",
+      "type": "fill-in-blank",
+      "topicId": "chromosome-theory",
+      "prompt": "The common reference phenotype in a population is called _____.",
+      "answer": "wild type",
+      "acceptedAnswers": [
+        "wild-type"
+      ],
+      "hint": "Compare with mutant phenotype.",
+      "explanation": "Wild type denotes the standard observed form, not a genotype lacking mutations.",
+      "conceptIds": [
+        "wild-type"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-040",
+      "type": "fill-in-blank",
+      "topicId": "chromosome-theory",
+      "prompt": "Morgan's classic alternative to red fruit-fly eyes was a _____ eye phenotype.",
+      "answer": "white",
+      "acceptedAnswers": [
+        "white-eyed"
+      ],
+      "hint": "A visible mutant trait.",
+      "explanation": "The white-eye allele is X-linked in the classic fruit-fly example.",
+      "conceptIds": [
+        "white-eye"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-041",
+      "type": "fill-in-blank",
+      "topicId": "sex-linked",
+      "prompt": "A gene found on the X chromosome is _____-linked.",
+      "answer": "X",
+      "acceptedAnswers": [
+        "x"
+      ],
+      "hint": "A sex chromosome.",
+      "explanation": "X linkage yields characteristic patterns in XY and XX organisms.",
+      "conceptIds": [
+        "x-linked"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-042",
+      "type": "fill-in-blank",
+      "topicId": "sex-linked",
+      "prompt": "A gene found on the Y chromosome is _____-linked.",
+      "answer": "Y",
+      "acceptedAnswers": [
+        "y"
+      ],
+      "hint": "An often paternal lineage marker.",
+      "explanation": "Y-linked loci can track paternal Y-chromosome ancestry.",
+      "conceptIds": [
+        "y-linked"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-043",
+      "type": "fill-in-blank",
+      "topicId": "sex-linked",
+      "prompt": "Genes in mitochondria and chloroplasts are _____ genes.",
+      "answer": "extranuclear",
+      "acceptedAnswers": [
+        "cytoplasmic",
+        "organelle"
+      ],
+      "hint": "Outside the nucleus.",
+      "explanation": "Mitochondria and plant plastids contain DNA separate from nuclear chromosomes.",
+      "conceptIds": [
+        "extranuclear-dna"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-044",
+      "type": "fill-in-blank",
+      "topicId": "sex-linked",
+      "prompt": "Human mitochondrial DNA is typically inherited from the _____.",
+      "answer": "mother",
+      "acceptedAnswers": [
+        "egg",
+        "maternal parent"
+      ],
+      "hint": "The large cytoplasmic contributor.",
+      "explanation": "The egg normally supplies the mitochondria retained after fertilization.",
+      "conceptIds": [
+        "mitochondrial-genome"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-045",
+      "type": "fill-in-blank",
+      "topicId": "sex-linked",
+      "prompt": "An individual containing cells from distinct zygotic origins can exhibit genetic _____.",
+      "answer": "chimerism",
+      "acceptedAnswers": [],
+      "hint": "Different developmental lineages coexist.",
+      "explanation": "The instructor's visual example is not accompanied by a specific case explanation.",
+      "conceptIds": [
+        "chimerism"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-046",
+      "type": "fill-in-blank",
+      "topicId": "dna-evidence",
+      "prompt": "The isotope _____ was used to mark phage DNA in the Hershey–Chase experiment.",
+      "answer": "phosphorus-32",
+      "acceptedAnswers": [
+        "32P",
+        "P-32",
+        "³²P"
+      ],
+      "hint": "DNA has phosphate groups.",
+      "explanation": "³²P was associated mainly with bacteria following infection and separation.",
+      "conceptIds": [
+        "radioactive-phosphorus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-047",
+      "type": "fill-in-blank",
+      "topicId": "dna-evidence",
+      "prompt": "Phage protein coats were marked using _____.",
+      "answer": "sulfur-35",
+      "acceptedAnswers": [
+        "35S",
+        "S-35",
+        "³⁵S"
+      ],
+      "hint": "Protein has sulfur-containing amino acids.",
+      "explanation": "³⁵S was found mainly outside infected cells after blending.",
+      "conceptIds": [
+        "radioactive-sulfur"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-048",
+      "type": "fill-in-blank",
+      "topicId": "dna-evidence",
+      "prompt": "A virus that infects bacteria is a _____.",
+      "answer": "bacteriophage",
+      "acceptedAnswers": [
+        "phage"
+      ],
+      "hint": "Hershey–Chase used this virus type.",
+      "explanation": "Bacteriophages inject genetic material into bacterial host cells.",
+      "conceptIds": [
+        "bacteriophage"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-049",
+      "type": "fill-in-blank",
+      "topicId": "dna-evidence",
+      "prompt": "Following centrifugation, bacterial cells collected in the _____.",
+      "answer": "pellet",
+      "acceptedAnswers": [],
+      "hint": "The dense bottom fraction.",
+      "explanation": "The bacterial pellet retained most DNA-specific radiolabel.",
+      "conceptIds": [
+        "pellet"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-050",
+      "type": "fill-in-blank",
+      "topicId": "dna-evidence",
+      "prompt": "Most detached phage protein coats remained in the _____ above the pellet.",
+      "answer": "supernatant",
+      "acceptedAnswers": [],
+      "hint": "The upper liquid fraction.",
+      "explanation": "The liquid contained the protein-specific sulfur label.",
+      "conceptIds": [
+        "supernatant"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-051",
+      "type": "fill-in-blank",
+      "topicId": "dna-structure",
+      "prompt": "Adenine and guanine are the two DNA _____.",
+      "answer": "purines",
+      "acceptedAnswers": [
+        "purine bases"
+      ],
+      "hint": "Two fused rings.",
+      "explanation": "A and G are purines; C and T are pyrimidines.",
+      "conceptIds": [
+        "purine"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-052",
+      "type": "fill-in-blank",
+      "topicId": "dna-structure",
+      "prompt": "Cytosine and thymine are DNA _____.",
+      "answer": "pyrimidines",
+      "acceptedAnswers": [
+        "pyrimidine bases"
+      ],
+      "hint": "Single-ring bases.",
+      "explanation": "In RNA, uracil replaces thymine in ordinary canonical bases.",
+      "conceptIds": [
+        "pyrimidine"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-053",
+      "type": "fill-in-blank",
+      "topicId": "dna-structure",
+      "prompt": "In DNA, adenine pairs with _____.",
+      "answer": "thymine",
+      "acceptedAnswers": [
+        "T"
+      ],
+      "hint": "Complement to A in DNA.",
+      "explanation": "A pairs with T; G pairs with C.",
+      "conceptIds": [
+        "complementary-base-pairing"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-054",
+      "type": "fill-in-blank",
+      "topicId": "dna-structure",
+      "prompt": "RNA contains the sugar _____.",
+      "answer": "ribose",
+      "acceptedAnswers": [],
+      "hint": "Different from deoxyribose.",
+      "explanation": "The 2′-hydroxyl of ribose distinguishes RNA from DNA sugar.",
+      "conceptIds": [
+        "rna"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-055",
+      "type": "fill-in-blank",
+      "topicId": "dna-structure",
+      "prompt": "The copying of DNA before cell division is DNA _____.",
+      "answer": "replication",
+      "acceptedAnswers": [],
+      "hint": "Uses an existing template strand.",
+      "explanation": "Replication conserves genetic sequence through complementary base pairing.",
+      "conceptIds": [
+        "dna-replication"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-056",
+      "type": "fill-in-blank",
+      "topicId": "gene-expression",
+      "prompt": "The synthesis of RNA from a DNA template is _____.",
+      "answer": "transcription",
+      "acceptedAnswers": [],
+      "hint": "Occurs in the nucleus for most eukaryotic nuclear genes.",
+      "explanation": "RNA polymerase makes RNA complementary to a DNA template.",
+      "conceptIds": [
+        "transcription"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-057",
+      "type": "fill-in-blank",
+      "topicId": "gene-expression",
+      "prompt": "Ribosome-guided assembly of amino acids from an mRNA message is _____.",
+      "answer": "translation",
+      "acceptedAnswers": [],
+      "hint": "Second step for protein-coding gene expression.",
+      "explanation": "Translation follows codon instructions to produce a polypeptide.",
+      "conceptIds": [
+        "translation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-058",
+      "type": "fill-in-blank",
+      "topicId": "gene-expression",
+      "prompt": "A coding triplet of mRNA bases is called a _____.",
+      "answer": "codon",
+      "acceptedAnswers": [],
+      "hint": "Three bases per word.",
+      "explanation": "Standard codons encode an amino acid or signal translation to stop.",
+      "conceptIds": [
+        "codon"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-059",
+      "type": "fill-in-blank",
+      "topicId": "gene-expression",
+      "prompt": "The RNA intermediate read by ribosomes is _____ RNA.",
+      "answer": "messenger",
+      "acceptedAnswers": [
+        "mRNA"
+      ],
+      "hint": "Carries the protein-coding message.",
+      "explanation": "mRNA is translated into polypeptide sequence at ribosomes.",
+      "conceptIds": [
+        "messenger-rna"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-060",
+      "type": "fill-in-blank",
+      "topicId": "gene-expression",
+      "prompt": "Protein synthesis by translation occurs on a _____.",
+      "answer": "ribosome",
+      "acceptedAnswers": [
+        "ribosomes"
+      ],
+      "hint": "A molecular machine, not the nucleus.",
+      "explanation": "Ribosomes coordinate decoding and peptide-bond formation.",
+      "conceptIds": [
+        "ribosome"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-061",
+      "type": "fill-in-blank",
+      "topicId": "evolution-history",
+      "prompt": "Darwin's term for inheritance with changes across generations was descent with _____.",
+      "answer": "modification",
+      "acceptedAnswers": [],
+      "hint": "The phrase names an evolutionary process.",
+      "explanation": "Variation accumulates along branching lineages descended from ancestors.",
+      "conceptIds": [
+        "descent-with-modification"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-062",
+      "type": "fill-in-blank",
+      "topicId": "evolution-history",
+      "prompt": "A branching diagram of evolutionary relationships is a _____ tree.",
+      "answer": "phylogenetic",
+      "acceptedAnswers": [
+        "evolutionary"
+      ],
+      "hint": "Not a straight ladder.",
+      "explanation": "Phylogenies represent hypotheses about lineage splitting and common ancestry.",
+      "conceptIds": [
+        "phylogenetic-tree"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-063",
+      "type": "fill-in-blank",
+      "topicId": "evolution-history",
+      "prompt": "The author associated with binomial nomenclature is Carl _____.",
+      "answer": "Linnaeus",
+      "acceptedAnswers": [],
+      "hint": "Systema Naturae, 1735.",
+      "explanation": "Linnaeus standardized the genus-plus-species format.",
+      "conceptIds": [
+        "carl-linnaeus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-064",
+      "type": "fill-in-blank",
+      "topicId": "evolution-history",
+      "prompt": "Darwin published On the Origin of Species in _____.",
+      "answer": "1859",
+      "acceptedAnswers": [],
+      "hint": "Nineteenth century.",
+      "explanation": "The book established an influential scientific case for evolution by natural selection.",
+      "conceptIds": [
+        "origin-of-species"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-065",
+      "type": "fill-in-blank",
+      "topicId": "evolution-history",
+      "prompt": "The scientist nicknamed Darwin's Bulldog was Thomas Henry _____.",
+      "answer": "Huxley",
+      "acceptedAnswers": [],
+      "hint": "Advocate rather than co-originator of selection.",
+      "explanation": "Huxley strongly defended evolutionary theory in public debate.",
+      "conceptIds": [
+        "thomas-huxley"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-066",
+      "type": "fill-in-blank",
+      "topicId": "evolution-mechanisms",
+      "prompt": "Random allele-frequency change caused by chance sampling is genetic _____.",
+      "answer": "drift",
+      "acceptedAnswers": [],
+      "hint": "Especially important in small populations.",
+      "explanation": "Drift is distinct from geographic vicariance, though they may interact.",
+      "conceptIds": [
+        "genetic-drift"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-067",
+      "type": "fill-in-blank",
+      "topicId": "evolution-mechanisms",
+      "prompt": "Geographic separation by a newly formed barrier is _____.",
+      "answer": "vicariance",
+      "acceptedAnswers": [],
+      "hint": "For example, a barrier separating a population.",
+      "explanation": "Vicariance is range splitting, not a synonym for random drift.",
+      "conceptIds": [
+        "vicariance"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-068",
+      "type": "fill-in-blank",
+      "topicId": "evolution-mechanisms",
+      "prompt": "Selection based on differences in mating success is _____ selection.",
+      "answer": "sexual",
+      "acceptedAnswers": [],
+      "hint": "Examples include mate choice and contests.",
+      "explanation": "Sexual selection can favor structures or behavior enhancing reproductive success.",
+      "conceptIds": [
+        "sexual-selection"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-069",
+      "type": "fill-in-blank",
+      "topicId": "evolution-mechanisms",
+      "prompt": "The fraction of gene copies representing a variant in a population is its allele _____.",
+      "answer": "frequency",
+      "acceptedAnswers": [],
+      "hint": "May change between generations.",
+      "explanation": "Allele-frequency change is a core population-genetic description of evolution.",
+      "conceptIds": [
+        "allele-frequency"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-070",
+      "type": "fill-in-blank",
+      "topicId": "evolution-mechanisms",
+      "prompt": "When inherited traits produce different reproductive success, _____ selection can occur.",
+      "answer": "natural",
+      "acceptedAnswers": [],
+      "hint": "Think survival and offspring production.",
+      "explanation": "Natural selection acts on heritable variation through differential reproductive contribution.",
+      "conceptIds": [
+        "natural-selection"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-071",
+      "type": "fill-in-blank",
+      "topicId": "speciation",
+      "prompt": "A reproductive barrier preventing fertilization is called _____.",
+      "answer": "prezygotic",
+      "acceptedAnswers": [
+        "a prezygotic barrier"
+      ],
+      "hint": "Before zygote formation.",
+      "explanation": "Habitat, timing, behavior or gamete incompatibility can prevent a zygote.",
+      "conceptIds": [
+        "prezygotic-barrier"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-072",
+      "type": "fill-in-blank",
+      "topicId": "speciation",
+      "prompt": "A barrier causing hybrid sterility after fertilization is _____.",
+      "answer": "postzygotic",
+      "acceptedAnswers": [
+        "a postzygotic barrier"
+      ],
+      "hint": "After zygote formation.",
+      "explanation": "Postzygotic barriers can impair hybrid viability or fertility.",
+      "conceptIds": [
+        "postzygotic-barrier"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-073",
+      "type": "fill-in-blank",
+      "topicId": "speciation",
+      "prompt": "The evolutionary origin of a distinct species is _____.",
+      "answer": "speciation",
+      "acceptedAnswers": [],
+      "hint": "New lineages emerge.",
+      "explanation": "Reproductive isolation is one important route to divergence.",
+      "conceptIds": [
+        "speciation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-074",
+      "type": "fill-in-blank",
+      "topicId": "speciation",
+      "prompt": "The disappearance of many species in a geologically short interval is a mass _____.",
+      "answer": "extinction",
+      "acceptedAnswers": [],
+      "hint": "Large-scale species loss.",
+      "explanation": "Mass extinctions can restructure ecosystems and biodiversity.",
+      "conceptIds": [
+        "mass-extinction"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    },
+    {
+      "id": "fib-075",
+      "type": "fill-in-blank",
+      "topicId": "speciation",
+      "prompt": "Rapid diversification into ecological opportunities is adaptive _____.",
+      "answer": "radiation",
+      "acceptedAnswers": [],
+      "hint": "Think branching into new niches.",
+      "explanation": "Adaptive radiation can produce many descendant species.",
+      "conceptIds": [
+        "adaptive-radiation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ],
+      "answerNormalization": "case-whitespace-punctuation"
+    }
+  ]
+}

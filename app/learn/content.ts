@@ -1,3 +1,9 @@
+import biologyOverview from '../../data/learn/biology-exam-3-general-overview.json';
+import biologyDeepDive from '../../data/learn/biology-exam-3-deep-dive.json';
+import biologyConnections from '../../data/learn/biology-exam-3-how-it-connects.json';
+import biologyFacts from '../../data/learn/biology-exam-3-why-is-this-cool.json';
+import biologyCram from '../../data/learn/biology-exam-3-exam-cram.json';
+import biologyCampbell from '../../data/learn/biology-exam-3-campbell-extension.json';
 import lymphoidGeneralOverview from '../../data/learn/lymphoid-system-general-overview.json';
 import lymphoidDeepDive from '../../data/learn/lymphoid-system-deep-dive.json';
 import lymphoidHowItConnects from '../../data/learn/lymphoid-system-how-it-connects.json';
@@ -18,6 +24,8 @@ import type { EducationalArticleData, EducationalSectionData } from './subjects'
 // Shared renderers and Notes use these stable, subject-owned source records.
 // Study banks, images and geometry retain their separate lazy-loading boundaries.
 const subjectContent = [
+  { subjectId: 'biology-exam-3', articles: [biologyOverview, biologyDeepDive, biologyConnections, biologyCram, biologyCampbell],
+    facts: [{ ...biologyFacts, sections: biologyFacts.sections.flatMap(group => group.sections) }] },
   { subjectId: 'lymphoid', articles: [lymphoidGeneralOverview, lymphoidDeepDive, lymphoidHowItConnects, lymphoidExamCram], facts: [lymphoidWhoCares] },
   { subjectId: 'digestive', articles: [generalOverview, howItConnects, deepDive, examCram], facts: [whyIsThisCool] },
   { subjectId: 'respiratory', articles: [respiratoryGeneralOverview, respiratoryDeepDive, respiratoryHowItConnects, respiratoryExamCram], facts: [respiratoryWhoCares] },

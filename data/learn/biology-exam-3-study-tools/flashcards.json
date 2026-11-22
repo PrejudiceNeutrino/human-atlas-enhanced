@@ -1,0 +1,3779 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "biology-exam-3",
+  "cards": [
+    {
+      "id": "fc-001",
+      "topicId": "chromosomes",
+      "front": "What does diploid mean, and what is the usual human number?",
+      "back": "Diploid means two chromosome sets. Most human somatic cells have 46 chromosomes arranged in 23 pairs.",
+      "conceptIds": [
+        "diploid"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-002",
+      "topicId": "chromosomes",
+      "front": "How is a human gamete's chromosome complement different from that of a somatic cell?",
+      "back": "A gamete is haploid, normally carrying 23 chromosomes; a somatic cell is diploid and normally carries 46.",
+      "conceptIds": [
+        "haploid"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-003",
+      "topicId": "chromosomes",
+      "front": "How are homologous chromosomes different from sister chromatids?",
+      "back": "Homologues are maternal and paternal chromosomes with corresponding loci; sister chromatids are DNA copies of one replicated chromosome.",
+      "conceptIds": [
+        "homologous-chromosomes"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-004",
+      "topicId": "chromosomes",
+      "front": "Distinguish gene, allele, and locus.",
+      "back": "A gene contributes to a functional product; an allele is a version of that gene; a locus is its chromosomal position.",
+      "conceptIds": [
+        "gene"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-005",
+      "topicId": "chromosomes",
+      "front": "What role does a centromere play in chromosome segregation?",
+      "back": "It organizes kinetochore attachment and helps maintain sister-chromatid association until the correct division stage.",
+      "conceptIds": [
+        "centromere"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-006",
+      "topicId": "chromosomes",
+      "front": "Why must ordinary gametes have half the parental chromosome-set number?",
+      "back": "Fertilization combines two gametes; haploid sets restore the diploid count instead of doubling it every generation.",
+      "conceptIds": [
+        "gamete"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-007",
+      "topicId": "chromosomes",
+      "front": "Why is chromosome behavior central to inheritance?",
+      "back": "Chromosomes physically carry genes, and their replication and separation determine how gene variants reach offspring.",
+      "conceptIds": [
+        "chromosome"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-01",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              2,
+              3,
+              10,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-008",
+      "topicId": "meiosis",
+      "front": "What are the outputs of one typical diploid meiosis, and what was the replication sequence?",
+      "back": "One DNA replication is followed by meiosis I and II, usually creating four genetically varied haploid products.",
+      "conceptIds": [
+        "meiosis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-009",
+      "topicId": "meiosis",
+      "front": "What makes meiosis I reductional?",
+      "back": "It separates homologous chromosomes, so each daughter cell receives one chromosome of each homologous pair.",
+      "conceptIds": [
+        "meiosis-i"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-010",
+      "topicId": "meiosis",
+      "front": "Why does meiosis II not require another S phase?",
+      "back": "Chromosomes are still duplicated after meiosis I; meiosis II separates the existing sister chromatids.",
+      "conceptIds": [
+        "meiosis-ii"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-011",
+      "topicId": "meiosis",
+      "front": "How does crossing over create new allele combinations?",
+      "back": "Nonsister chromatids exchange homologous DNA segments in prophase I, producing recombinant chromatids.",
+      "conceptIds": [
+        "crossing-over"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-012",
+      "topicId": "meiosis",
+      "front": "What is the difference between a tetrad and a single duplicated chromosome?",
+      "back": "A tetrad contains two homologues and four chromatids; a duplicated chromosome alone has two sister chromatids.",
+      "conceptIds": [
+        "tetrad"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-013",
+      "topicId": "meiosis",
+      "front": "Why does metaphase I matter for sibling genetic differences?",
+      "back": "Homologous pairs face either pole randomly, so different gametes inherit different combinations of maternal and paternal chromosomes.",
+      "conceptIds": [
+        "metaphase-i"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-014",
+      "topicId": "meiosis",
+      "front": "What remains joined after anaphase I?",
+      "back": "Sister chromatids usually remain attached at centromeres, even though the homologous chromosomes have separated.",
+      "conceptIds": [
+        "anaphase-i"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-02",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              6,
+              7,
+              8,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-015",
+      "topicId": "reproduction",
+      "front": "Contrast asexual and sexual reproduction in terms of parents and genetic diversity.",
+      "back": "Asexual reproduction uses one parental source and often produces clones; sexual reproduction combines gametes and typically generates new allele combinations.",
+      "conceptIds": [
+        "asexual-reproduction"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-016",
+      "topicId": "reproduction",
+      "front": "Why does asexual reproduction not always mean mitosis?",
+      "back": "Mitosis is one mode of eukaryotic nuclear division; many organisms reproduce asexually using other cellular mechanisms.",
+      "conceptIds": [
+        "mitosis"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-017",
+      "topicId": "reproduction",
+      "front": "Name three sources of genetic variation in sexually produced offspring.",
+      "back": "Crossing over, independent assortment, and random fertilization create distinct combinations of inherited variants.",
+      "conceptIds": [
+        "sexual-reproduction"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-018",
+      "topicId": "reproduction",
+      "front": "Are asexual offspring guaranteed to remain genetically identical forever?",
+      "back": "No. Mutations and other genetic changes can accumulate, so clones can diverge from their original source.",
+      "conceptIds": [
+        "clone"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-019",
+      "topicId": "reproduction",
+      "front": "How do meiosis and fertilization maintain a characteristic chromosome-set count?",
+      "back": "Meiosis halves chromosome sets in gametes; fertilization combines two haploid sets to restore diploidy.",
+      "conceptIds": [
+        "fertilization"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-020",
+      "topicId": "reproduction",
+      "front": "How does independent assortment differ from mutation?",
+      "back": "Independent assortment reshuffles which parental chromosomes enter gametes; mutation changes a DNA sequence and can create an allele.",
+      "conceptIds": [
+        "independent-assortment"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-021",
+      "topicId": "reproduction",
+      "front": "Why is a zygote genetically different from either parent?",
+      "back": "Its genome combines one gamete from each parent, each typically carrying a distinctive assortment of alleles.",
+      "conceptIds": [
+        "zygote"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-04",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-03",
+          "slideReferences": {
+            "11 - C13.pdf": [
+              4,
+              5,
+              7,
+              9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-022",
+      "topicId": "mendel",
+      "front": "What made Mendel's pea experiments persuasive?",
+      "back": "He followed contrasting traits across controlled crosses and counted offspring, revealing reproducible hereditary ratios.",
+      "conceptIds": [
+        "gregor-mendel"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-023",
+      "topicId": "mendel",
+      "front": "How does particulate inheritance differ from blending inheritance?",
+      "back": "Hereditary variants remain discrete and can reappear in later generations instead of being irreversibly averaged.",
+      "conceptIds": [
+        "particulate-inheritance"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-024",
+      "topicId": "mendel",
+      "front": "What happens to the A and a alleles of an Aa parent during meiosis?",
+      "back": "They separate into different gametes; each normal gamete receives A or a, not both.",
+      "conceptIds": [
+        "law-of-segregation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-025",
+      "topicId": "mendel",
+      "front": "Does a recessive allele become physically inactive or disappear in a heterozygote?",
+      "back": "No. Recessiveness is about the expressed trait in a specific genetic context; the allele remains present and transmissible.",
+      "conceptIds": [
+        "dominant"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-026",
+      "topicId": "mendel",
+      "front": "How do genotype and phenotype differ?",
+      "back": "Genotype is the allelic makeup; phenotype is the resulting observable characteristic shaped by genes and environment.",
+      "conceptIds": [
+        "genotype"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-027",
+      "topicId": "mendel",
+      "front": "Contrast AA, Aa, and aa.",
+      "back": "AA is homozygous dominant; Aa is heterozygous; aa is homozygous recessive under the example's allele labels.",
+      "conceptIds": [
+        "homozygous"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-028",
+      "topicId": "mendel",
+      "front": "What was Mendel actually comparing when he tracked pea flower color?",
+      "back": "A heritable character with alternative traits, such as purple versus white flowers.",
+      "conceptIds": [
+        "trait"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-04",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-029",
+      "topicId": "crosses",
+      "front": "What can and cannot a Punnett square tell you?",
+      "back": "It enumerates possible allele combinations and probabilities, but cannot guarantee the makeup of a specific small family.",
+      "conceptIds": [
+        "punnett-square"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-030",
+      "topicId": "crosses",
+      "front": "How does a testcross distinguish AA from Aa?",
+      "back": "Cross with aa; offspring revealing the recessive phenotype show the unknown parent transmitted a.",
+      "conceptIds": [
+        "testcross"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-031",
+      "topicId": "crosses",
+      "front": "Compute Aa × Aa under simple dominance.",
+      "back": "Genotypes are 1 AA : 2 Aa : 1 aa; phenotypes are 3 dominant : 1 recessive.",
+      "conceptIds": [
+        "monohybrid-cross"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-032",
+      "topicId": "crosses",
+      "front": "Why could two heterozygous parents have several recessive offspring in a row?",
+      "back": "Each birth is a separate probability event; a 1/4 chance does not impose quotas across siblings.",
+      "conceptIds": [
+        "probability"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-033",
+      "topicId": "crosses",
+      "front": "When do you multiply probabilities in genetic predictions?",
+      "back": "Use the product rule for independent outcomes that must both occur, such as two specified gamete contributions.",
+      "conceptIds": [
+        "product-rule"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-034",
+      "topicId": "crosses",
+      "front": "When do you add probabilities in genetic predictions?",
+      "back": "Use the sum rule for mutually exclusive ways to reach the same target outcome.",
+      "conceptIds": [
+        "sum-rule"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-035",
+      "topicId": "crosses",
+      "front": "Explain the difference between a genotype ratio and phenotype ratio.",
+      "back": "Genotype ratios count allele combinations, whereas phenotype ratios group combinations by their expressed trait.",
+      "conceptIds": [
+        "genotypic-ratio"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-05",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              5,
+              6,
+              8,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-036",
+      "topicId": "complex-inheritance",
+      "front": "What is the law of independent assortment, and when does its simplest form apply?",
+      "back": "Alleles of unlinked genes segregate independently; close physical linkage can violate that expectation.",
+      "conceptIds": [
+        "law-of-independent-assortment"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-037",
+      "topicId": "complex-inheritance",
+      "front": "What assumptions lead to a 9:3:3:1 dihybrid ratio?",
+      "back": "Two unlinked genes, heterozygous parents at both loci, complete dominance, and comparable offspring viability.",
+      "conceptIds": [
+        "dihybrid-cross"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-038",
+      "topicId": "complex-inheritance",
+      "front": "Why do linked genes tend to be inherited together?",
+      "back": "They lie on the same chromosome, especially near each other, though crossing over can separate their combinations.",
+      "conceptIds": [
+        "linked-genes"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-039",
+      "topicId": "complex-inheritance",
+      "front": "Explain why type AB is a codominance example.",
+      "back": "Iᴬ and Iᴮ alleles both contribute functional antigen types, so AB red cells express both A and B antigens.",
+      "conceptIds": [
+        "abo-system"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-040",
+      "topicId": "complex-inheritance",
+      "front": "How can a gene have three alleles if a diploid person usually has two copies?",
+      "back": "Three or more forms can circulate in the population, while one ordinary diploid individual carries at most two at that locus.",
+      "conceptIds": [
+        "multiple-alleles"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-041",
+      "topicId": "complex-inheritance",
+      "front": "Contrast pleiotropy with polygenic inheritance.",
+      "back": "Pleiotropy is one gene with multiple phenotypic effects; polygenic inheritance is many genes influencing one trait.",
+      "conceptIds": [
+        "pleiotropy"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-042",
+      "topicId": "complex-inheritance",
+      "front": "Why can't genotype alone always predict a phenotype?",
+      "back": "Environmental conditions, development and gene regulation can influence how inherited variants are expressed.",
+      "conceptIds": [
+        "genotype-environment"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-06",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              9,
+              12,
+              13,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-043",
+      "topicId": "disorders",
+      "front": "Explain the genetic reason inbreeding can increase recessive disease incidence.",
+      "back": "Related parents have higher chances of passing copies of the same deleterious recessive allele to offspring.",
+      "conceptIds": [
+        "inbreeding"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-044",
+      "topicId": "disorders",
+      "front": "Does homozygosity automatically mean an allele is harmful?",
+      "back": "No. Homozygosity means matching alleles; only some allele combinations have negative fitness or health consequences.",
+      "conceptIds": [
+        "homozygosity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-045",
+      "topicId": "disorders",
+      "front": "How can two healthy carriers have a child with an autosomal recessive disorder?",
+      "back": "Each can transmit a pathogenic allele; a child receiving both may express the condition.",
+      "conceptIds": [
+        "recessive-disorder"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-046",
+      "topicId": "disorders",
+      "front": "Must a dominant allele be beneficial, common or harmless?",
+      "back": "No. Dominant only specifies an allele's phenotypic effect in a heterozygote under particular conditions.",
+      "conceptIds": [
+        "dominant-disorder"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-047",
+      "topicId": "disorders",
+      "front": "Walk through the Raphanobrassica example.",
+      "back": "Radish and cabbage hybridize, producing a mostly sterile hybrid; chromosome doubling supplies homologous partners and may restore fertility.",
+      "conceptIds": [
+        "raphanobrassica"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-048",
+      "topicId": "disorders",
+      "front": "How is allopolyploidy different from a standard Mendelian cross?",
+      "back": "It combines and multiplies whole chromosome sets from distinct lineages, not just two alleles at one locus.",
+      "conceptIds": [
+        "allopolyploidy"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-049",
+      "topicId": "disorders",
+      "front": "Why may doubling a sterile hybrid's chromosomes restore fertility?",
+      "back": "Each chromosome can acquire a matching partner for meiosis, allowing more regular segregation into viable gametes.",
+      "conceptIds": [
+        "sterile-hybrid"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-11",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-07",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              7,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-050",
+      "topicId": "chromosome-theory",
+      "front": "How does the chromosome theory explain segregation and independent assortment?",
+      "back": "Genes occupy chromosomal loci, and meiotic chromosome separation distributes alleles and unlinked homologous pairs into gametes.",
+      "conceptIds": [
+        "chromosome-theory"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-051",
+      "topicId": "chromosome-theory",
+      "front": "What did Morgan demonstrate using fruit flies?",
+      "back": "An identifiable trait followed sex-chromosome inheritance, providing evidence that specific genes reside on particular chromosomes.",
+      "conceptIds": [
+        "thomas-hunt-morgan"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-052",
+      "topicId": "chromosome-theory",
+      "front": "Why is Drosophila especially useful for inheritance studies?",
+      "back": "Fruit flies reproduce quickly, yield many offspring, show visible traits, and have only four pairs of chromosomes.",
+      "conceptIds": [
+        "drosophila"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-053",
+      "topicId": "chromosome-theory",
+      "front": "How does wild type differ from mutant phenotype?",
+      "back": "Wild type is the common reference trait in a studied population; mutant phenotype is an observable alternative.",
+      "conceptIds": [
+        "wild-type"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-054",
+      "topicId": "chromosome-theory",
+      "front": "How does the white-eye trait connect to sex linkage?",
+      "back": "In classic Drosophila crosses, eye color inheritance differs between sexes because the gene lies on the X chromosome.",
+      "conceptIds": [
+        "white-eye"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-055",
+      "topicId": "chromosome-theory",
+      "front": "What is the physical interpretation of Mendel's 'heritable factors'?",
+      "back": "They are genes at identifiable loci along chromosomes, whose movements during meiosis explain many inheritance ratios.",
+      "conceptIds": [
+        "chromosome-locus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-056",
+      "topicId": "chromosome-theory",
+      "front": "Are all chromosomes involved in Mendelian inheritance sex chromosomes?",
+      "back": "No. Most are autosomes; sex chromosomes are a subset that can create sex-associated transmission patterns.",
+      "conceptIds": [
+        "sex-chromosomes"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-13",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-08",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-057",
+      "topicId": "sex-linked",
+      "front": "What makes sex-linked inheritance different from autosomal inheritance?",
+      "back": "Sex-chromosome gene location changes transmission patterns between XX and XY chromosome complements.",
+      "conceptIds": [
+        "sex-linked"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-058",
+      "topicId": "sex-linked",
+      "front": "Why can an X-linked recessive variant be more readily expressed in XY individuals?",
+      "back": "Most X-linked loci are single-copy in XY individuals, so a second allele at that locus cannot mask the variant.",
+      "conceptIds": [
+        "x-linked"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-059",
+      "topicId": "sex-linked",
+      "front": "What can Y-linked markers reveal about ancestry?",
+      "back": "They can track paternal Y-chromosome lineages, while representing only one small part of a person's overall ancestry.",
+      "conceptIds": [
+        "y-linked"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-060",
+      "topicId": "sex-linked",
+      "front": "Why is human mtDNA usually inherited maternally?",
+      "back": "The egg contributes most zygotic cytoplasm and typically provides mitochondria retained in the embryo.",
+      "conceptIds": [
+        "mitochondrial-genome"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-061",
+      "topicId": "sex-linked",
+      "front": "Does maternal inheritance apply universally to every plant chloroplast?",
+      "back": "No. Chloroplast transmission varies by species and may be maternal, paternal or biparental.",
+      "conceptIds": [
+        "chloroplast-genome"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-062",
+      "topicId": "sex-linked",
+      "front": "How do extranuclear genes differ from conventional nuclear Mendelian loci?",
+      "back": "They are physically located in organelles and may follow cytoplasmic rather than ordinary biparental segregation.",
+      "conceptIds": [
+        "extranuclear-dna"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-063",
+      "topicId": "sex-linked",
+      "front": "What can we safely conclude from the lecture's chimerism image?",
+      "back": "It introduces the concept, but the slide does not establish the pictured person's identity or a documented biological cause.",
+      "conceptIds": [
+        "chimerism"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-14",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-09",
+          "slideReferences": {
+            "12 - C14 & C15.pdf": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-064",
+      "topicId": "dna-evidence",
+      "front": "What question did Hershey and Chase seek to resolve?",
+      "back": "Whether DNA or the phage protein coat delivered hereditary instructions during bacterial infection.",
+      "conceptIds": [
+        "hershey-chase"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-065",
+      "topicId": "dna-evidence",
+      "front": "Why did the scientists use phosphorus-32 to label DNA?",
+      "back": "DNA has a phosphorus-containing phosphate backbone, enabling a comparatively DNA-specific radiolabel in their phage preparations.",
+      "conceptIds": [
+        "radioactive-phosphorus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-066",
+      "topicId": "dna-evidence",
+      "front": "Why could sulfur-35 distinguish protein coats from DNA?",
+      "back": "Some proteins contain sulfur-bearing amino acids, whereas ordinary DNA contains no sulfur.",
+      "conceptIds": [
+        "radioactive-sulfur"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-067",
+      "topicId": "dna-evidence",
+      "front": "What did blending accomplish before centrifugation?",
+      "back": "It knocked phage coats off bacterial exteriors, making it possible to separate coats from infected cells.",
+      "conceptIds": [
+        "blender-step"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-068",
+      "topicId": "dna-evidence",
+      "front": "What did the ³²P-rich pellet reveal?",
+      "back": "The DNA-associated isotope entered or remained with bacterial cells, consistent with DNA carrying injected hereditary instructions.",
+      "conceptIds": [
+        "pellet"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-069",
+      "topicId": "dna-evidence",
+      "front": "What did the ³⁵S-rich supernatant reveal?",
+      "back": "Most protein-coat material remained external to cells and could be detached and separated.",
+      "conceptIds": [
+        "supernatant"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-070",
+      "topicId": "dna-evidence",
+      "front": "What conclusion is justified without overstating the 1952 experiment?",
+      "back": "In the studied phage system, DNA—not the bulk viral protein coat—was the material transferred to initiate infection.",
+      "conceptIds": [
+        "dna"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-16",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-10",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              2,
+              3
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-071",
+      "topicId": "dna-structure",
+      "front": "What are the three components of a nucleotide?",
+      "back": "A nitrogenous base, a five-carbon sugar and one or more phosphate groups.",
+      "conceptIds": [
+        "nucleotide"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-072",
+      "topicId": "dna-structure",
+      "front": "Which bases are purines and which are pyrimidines in DNA?",
+      "back": "Adenine and guanine are purines; cytosine and thymine are pyrimidines.",
+      "conceptIds": [
+        "purine"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-073",
+      "topicId": "dna-structure",
+      "front": "Why is DNA close to 2 nm in diameter?",
+      "back": "Pairs contain one purine and one pyrimidine; this preserves nearly uniform helix width.",
+      "conceptIds": [
+        "complementary-base-pairing"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-074",
+      "topicId": "dna-structure",
+      "front": "Name the standard sugar and base differences between DNA and RNA.",
+      "back": "DNA uses deoxyribose and thymine; RNA uses ribose and uracil instead of thymine.",
+      "conceptIds": [
+        "rna"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-075",
+      "topicId": "dna-structure",
+      "front": "What bonds form the backbone, and what joins complementary strands?",
+      "back": "Covalent phosphodiester bonds link each strand's nucleotides; hydrogen bonds contribute specificity between paired bases.",
+      "conceptIds": [
+        "sugar-phosphate-backbone"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-076",
+      "topicId": "dna-structure",
+      "front": "How does each existing DNA strand help produce daughter DNA?",
+      "back": "Each old strand is a template for complementary nucleotide addition, yielding two duplexes with conserved sequence information.",
+      "conceptIds": [
+        "dna-replication"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-077",
+      "topicId": "dna-structure",
+      "front": "How can DNA replication be extremely accurate despite occasional mispairing?",
+      "back": "Correct nucleotide selection, polymerase proofreading and post-replication repair strongly reduce surviving errors, though rates vary.",
+      "conceptIds": [
+        "replication-fidelity"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-19",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-11",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-078",
+      "topicId": "gene-expression",
+      "front": "What is the ordinary information flow from gene to protein?",
+      "back": "DNA is transcribed into RNA; an mRNA is translated by ribosomes into a polypeptide, which may become a functional protein.",
+      "conceptIds": [
+        "gene-expression"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-079",
+      "topicId": "gene-expression",
+      "front": "What do transcription and DNA replication differ in producing?",
+      "back": "Transcription copies selected DNA information into RNA; replication duplicates DNA for inheritance.",
+      "conceptIds": [
+        "transcription"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-080",
+      "topicId": "gene-expression",
+      "front": "What is the major input and output of translation?",
+      "back": "An mRNA codon sequence directs a ribosome to assemble a corresponding amino-acid chain.",
+      "conceptIds": [
+        "translation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-081",
+      "topicId": "gene-expression",
+      "front": "How does a codon specify protein sequence?",
+      "back": "Each three-base mRNA word usually identifies an amino acid; standard stop codons signal termination instead.",
+      "conceptIds": [
+        "codon"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-082",
+      "topicId": "gene-expression",
+      "front": "Does a ribosome itself directly read nuclear DNA in typical eukaryotic gene expression?",
+      "back": "No. It reads mRNA; transcription occurs in the nucleus, whereas translation occurs on cytoplasmic or ER-bound ribosomes.",
+      "conceptIds": [
+        "ribosome"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-083",
+      "topicId": "gene-expression",
+      "front": "Why can a gene from one species often be expressed in another?",
+      "back": "Codon meanings are largely shared among organisms, allowing the recipient's translational machinery to decode many foreign mRNAs.",
+      "conceptIds": [
+        "nearly-universal-code"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-084",
+      "topicId": "gene-expression",
+      "front": "Why are proteins a major link between genotype and phenotype?",
+      "back": "Gene variants can alter protein sequence or abundance; proteins influence molecular activity and observable traits.",
+      "conceptIds": [
+        "polypeptide"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-21",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-12",
+          "slideReferences": {
+            "13 - C16 & C17.pdf": [
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-085",
+      "topicId": "evolution-history",
+      "front": "What does descent with modification mean?",
+      "back": "Organisms inherit traits from ancestors, but heritable differences accumulate across generations and may yield new lineages.",
+      "conceptIds": [
+        "descent-with-modification"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-086",
+      "topicId": "evolution-history",
+      "front": "Why is a branching tree better than a ladder as a model of evolution?",
+      "back": "Common ancestors produce diverging lineages; present-day species are not ordered steps toward one goal.",
+      "conceptIds": [
+        "phylogenetic-tree"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-087",
+      "topicId": "evolution-history",
+      "front": "What scientific contribution is Linnaeus known for?",
+      "back": "He formalized the two-part genus–species naming convention and a hierarchical system of classifying organisms.",
+      "conceptIds": [
+        "carl-linnaeus"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-088",
+      "topicId": "evolution-history",
+      "front": "What was flawed about Lamarck's classic inheritance-of-acquired-traits mechanism?",
+      "back": "Ordinary acquired bodily changes from use or disuse are not generally passed as adaptive gene changes to offspring.",
+      "conceptIds": [
+        "lamarck"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-089",
+      "topicId": "evolution-history",
+      "front": "What was the central argument of Darwin's 1859 book?",
+      "back": "Species descend with modification, and natural selection can explain adaptation when heritable variants differ in reproductive success.",
+      "conceptIds": [
+        "charles-darwin"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-090",
+      "topicId": "evolution-history",
+      "front": "How is Wallace connected to Darwin's theory?",
+      "back": "Wallace independently recognized natural selection, prompting a joint 1858 presentation of their ideas.",
+      "conceptIds": [
+        "alfred-russel-wallace"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-091",
+      "topicId": "evolution-history",
+      "front": "Why does Thomas Henry Huxley appear in the history of evolution?",
+      "back": "He became a prominent public defender of evolutionary theory, earning the nickname Darwin's Bulldog.",
+      "conceptIds": [
+        "thomas-huxley"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-25",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-13",
+          "slideReferences": {
+            "14.pdf": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-092",
+      "topicId": "evolution-mechanisms",
+      "front": "How does natural selection work over generations?",
+      "back": "Heritable variants affect survival or reproduction in a specific environment, altering their representation in subsequent populations.",
+      "conceptIds": [
+        "natural-selection"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-093",
+      "topicId": "evolution-mechanisms",
+      "front": "How is genetic drift fundamentally different from natural selection?",
+      "back": "Drift changes allele frequencies through chance sampling, whereas selection involves consistent differences in reproductive success.",
+      "conceptIds": [
+        "genetic-drift"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-094",
+      "topicId": "evolution-mechanisms",
+      "front": "What happens during vicariance and what may follow?",
+      "back": "A barrier splits populations; reduced gene flow can allow drift and local selection to drive divergence.",
+      "conceptIds": [
+        "vicariance"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-095",
+      "topicId": "evolution-mechanisms",
+      "front": "How can a costly ornament persist through sexual selection?",
+      "back": "If it raises mating success enough, its reproductive benefits can outweigh survival costs in that environment.",
+      "conceptIds": [
+        "sexual-selection"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-096",
+      "topicId": "evolution-mechanisms",
+      "front": "Why is evolutionary fitness not simply physical strength or survival?",
+      "back": "Fitness concerns the relative contribution of inherited variants to future generations through reproduction.",
+      "conceptIds": [
+        "fitness"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-097",
+      "topicId": "evolution-mechanisms",
+      "front": "Where do new genetic variants originate, and what do selection and drift do with them?",
+      "back": "Mutation creates variants; selection and drift alter their frequencies, while recombination reshuffles them.",
+      "conceptIds": [
+        "mutation-evolution"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-098",
+      "topicId": "evolution-mechanisms",
+      "front": "Can an individual organism 'evolve' genetically in the population-genetic sense?",
+      "back": "Evolutionary changes in allele frequency are measured across populations and generations, not as one individual's deliberate transformation.",
+      "conceptIds": [
+        "allele-frequency"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-27",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-14",
+          "slideReferences": {
+            "14.pdf": [
+              12,
+              13,
+              14,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-099",
+      "topicId": "speciation",
+      "front": "Why is reproductive isolation central to many models of speciation?",
+      "back": "It reduces gene exchange between populations, enabling independent divergence that may generate new species lineages.",
+      "conceptIds": [
+        "reproductive-isolation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-100",
+      "topicId": "speciation",
+      "front": "Name common prezygotic barrier mechanisms.",
+      "back": "Habitat separation, timing differences, mating-behavior differences, mechanical incompatibility and gamete incompatibility can act before fertilization.",
+      "conceptIds": [
+        "prezygotic-barrier"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-101",
+      "topicId": "speciation",
+      "front": "What are typical postzygotic outcomes?",
+      "back": "Hybrids may fail to develop normally, survive poorly, be sterile, or show reduced fertility in later generations.",
+      "conceptIds": [
+        "postzygotic-barrier"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-102",
+      "topicId": "speciation",
+      "front": "Why can't one reproductive species definition classify all organisms perfectly?",
+      "back": "Fossils, asexual populations, partial hybridization and geographic separation complicate testing reproductive compatibility.",
+      "conceptIds": [
+        "biological-species-concept"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-103",
+      "topicId": "speciation",
+      "front": "Can geographic isolation by itself guarantee speciation?",
+      "back": "No. Isolation may permit divergence, but distinct species boundaries depend on subsequent evolutionary changes and the chosen species criterion.",
+      "conceptIds": [
+        "speciation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-104",
+      "topicId": "speciation",
+      "front": "How can mass extinction affect later evolution?",
+      "back": "It eliminates many lineages and changes ecosystems, sometimes opening opportunities for surviving groups to diversify.",
+      "conceptIds": [
+        "mass-extinction"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-105",
+      "topicId": "speciation",
+      "front": "What is adaptive radiation after an ecological opportunity?",
+      "back": "One lineage rapidly splits into many descendants specialized for different environments or resources.",
+      "conceptIds": [
+        "adaptive-radiation"
+      ],
+      "sourceRefs": [
+        {
+          "articleId": "biology-exam-3-deep-dive",
+          "sectionId": "deep-29",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        },
+        {
+          "articleId": "biology-exam-3-exam-cram",
+          "sectionId": "cram-15",
+          "slideReferences": {
+            "14.pdf": [
+              16,
+              17
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

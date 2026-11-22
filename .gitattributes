@@ -25,3 +25,6 @@
 # Preserve the final authored Detailed Reviews and source-package evidence.
 /data/learn/digestive-system-exam-cram-detailed-review.json -text
 /docs/integration/exam-cram-final-source/** -text
+# Preserve Biology Exam 3 package bytes in commits and fresh checkouts.
+/data/learn/biology-exam-3-*.json -text
+/data/learn/biology-exam-3-study-tools/*.json -text

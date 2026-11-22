@@ -1,15 +1,20 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { ArrowUpRight, BookOpen, Check, ChevronDown, X } from 'lucide-react';
 import {
   Dialog, DialogTrigger, DialogContent, DialogTitle, DialogDescription, DialogClose,
 } from '@/components/ui/dialog';
-import { learnSubjects, type LearnSubject } from './subjects';
+import { learnSubjects, type LearnCategory, type LearnSubject } from './subjects';
+import { LearnCategorySelector } from './subject-categories';
 import './subject-menu.css';
 
 export function LearnSubjectMenu({ active, subject: currentSubject }: { active: boolean; subject?: LearnSubject }) {
   const firstSubject = useRef<HTMLAnchorElement>(null);
   const currentPath = currentSubject?.href ?? window.location.pathname;
-  const selectedIndex = Math.max(0, learnSubjects.findIndex(item => item.href === currentPath));
+  const [category, setCategory] = useState<LearnCategory>(() =>
+    currentSubject?.category ?? learnSubjects.find(item => item.href === currentPath)?.category ?? 'Anatomy',
+  );
+  const subjects = learnSubjects.filter(subject => subject.category === category);
+  const selectedIndex = Math.max(0, subjects.findIndex(item => item.href === currentPath));
 
   return (
     <Dialog>
@@ -31,10 +36,11 @@ export function LearnSubjectMenu({ active, subject: currentSubject }: { active: 
         <header className="learn-menu-heading">
           <div className="learn-menu-eyebrow"><BookOpen size={15} aria-hidden="true" /><span>Human Atlas</span></div>
           <DialogTitle className="learn-menu-title">Learn</DialogTitle>
-          <DialogDescription className="learn-menu-description">Choose a system to explore.</DialogDescription>
+          <DialogDescription className="learn-menu-description">Choose a subject to explore.</DialogDescription>
         </header>
+        <LearnCategorySelector value={category} onChange={setCategory}/>
         <nav className="learn-menu-subjects" aria-label="Learn subjects">
-          {learnSubjects.map((subject, index) => {
+          {subjects.map((subject, index) => {
             const sectionCount = subject.tabs.filter(tab => tab.kind !== 'coming-soon').length;
             return (
               <a
@@ -63,7 +69,7 @@ export function LearnSubjectMenu({ active, subject: currentSubject }: { active: 
           })}
         </nav>
         <footer className="learn-menu-footer">
-          <span>{learnSubjects.length} {learnSubjects.length === 1 ? 'subject' : 'subjects'}</span>
+          <span role="status">{subjects.length} {subjects.length === 1 ? 'subject' : 'subjects'}</span>
           <span className="learn-menu-key-hint"><kbd>Esc</kbd> to close</span>
         </footer>
       </DialogContent>

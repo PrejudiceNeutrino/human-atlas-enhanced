@@ -1,4 +1,10 @@
-# Digestive System Gallery
+# Learn Galleries
+
+## Biology Exam 3 Gallery
+
+Open **Learn → Biology → Biology Exam 3 → Gallery** to see the empty Gallery. The tab stays in the subject's navigation while the image collection is pending.
+
+## Digestive System Gallery
 
 Label Practice now adds optional click-to-reveal covers to the existing viewer, with 272 reviewed answers across 24 figures. See the [feature and curator guide](gallery-label-practice.md), [all-figure coverage report](gallery-label-practice-coverage.md), and [local delivery handoff](integration/GALLERY_LABEL_PRACTICE_2026_11_06.md). The historical checks below describe their respective deliveries; the new handoff records current verification.
 

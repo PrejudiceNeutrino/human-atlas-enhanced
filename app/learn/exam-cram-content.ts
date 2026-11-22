@@ -1,3 +1,4 @@
+import biologyDetailedReview from '../../data/learn/biology-exam-3-exam-cram-detailed-review.json';
 import respiratoryQuickScan from '../../data/learn/respiratory-system-exam-cram-quick-scan.json';
 import lymphoidQuickScan from '../../data/learn/lymphoid-system-exam-cram-quick-scan.json';
 import digestiveDetailedReview from '../../data/learn/digestive-system-exam-cram-detailed-review.json';
@@ -11,6 +12,7 @@ export interface ExamCramVariant extends EducationalArticleData {
 
 // Variants have separate content identities, but never become top-level Learn tabs.
 export const examCramVariants: Record<string, ExamCramVariant | undefined> = {
+  [biologyDetailedReview.variantOf]: biologyDetailedReview as ExamCramVariant,
   'digestive-system-exam-cram': { ...digestiveDetailedReview, variantOf: 'digestive-system-exam-cram', readingMode: 'detailed-review' },
   [respiratoryQuickScan.variantOf]: respiratoryQuickScan as ExamCramVariant,
   [lymphoidQuickScan.variantOf]: lymphoidQuickScan as ExamCramVariant,

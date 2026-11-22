@@ -1,0 +1,157 @@
+{
+  "id": "biology-exam-3-general-overview",
+  "title": "General Overview",
+  "subject": "Biology — Exam 3",
+  "subtitle": "Heredity, gene expression, and evolution",
+  "introMarkdown": "**Scope:** Professor lectures 11–14 (67 slides): Campbell chapters 13–17 and the separate introductory evolution lecture. A first-pass conceptual map; detailed material lives in Deep Dive.",
+  "sourceFiles": [
+    "11 - C13.pdf",
+    "12 - C14 & C15.pdf",
+    "13 - C16 & C17.pdf",
+    "14.pdf"
+  ],
+  "sections": [
+    {
+      "id": "overview-01",
+      "title": "Why offspring resemble their parents but are not identical",
+      "markdown": "Biological inheritance connects three scales. **DNA** stores genetic information; **chromosomes** organize and transmit that information; and populations change as inherited variants spread or disappear through generations. The same underlying mechanisms explain a family resemblance, Mendel's pea experiments, the synthesis of a protein, and evolutionary change.\n\nAn individual inherits genes, but what becomes visible—its **phenotype**—depends on gene activity, interactions among genes, and the environment. Sexual reproduction reshuffles inherited variants. Mutation can introduce new ones. Evolution concerns how the inherited composition of populations changes over generations, not how an individual deliberately adapts during its lifetime.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          1,
+          2,
+          9
+        ]
+      }
+    },
+    {
+      "id": "overview-02",
+      "title": "Chromosomes and meiosis make sexual inheritance possible",
+      "markdown": "Most human body cells have **46 chromosomes**, arranged as **23 pairs**: one set of 23 from each parent. Such cells are **diploid (2n)**. Sperm and eggs are **haploid (n)**, with 23 chromosomes each. Their union at fertilization restores the diploid number.\n\nTo form haploid cells, **meiosis** follows DNA replication with two divisions. **Meiosis I** separates homologous chromosomes—the maternal and paternal members of a pair. **Meiosis II** separates sister chromatids. During **prophase I**, homologous chromosomes pair and nonsister chromatids can exchange matching DNA segments in **crossing over**. Combined with independent assortment of chromosome pairs, this helps produce genetically varied gametes.\n\n**Mitosis**, by contrast, ordinarily preserves chromosome-set number and creates genetically similar daughter nuclei. It supports growth and repair rather than the reduction in chromosome number required for sexual life cycles.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "id": "overview-03",
+      "title": "Mendel revealed the rules of inheritance",
+      "markdown": "Before modern genetics, inheritance was often imagined as parental traits simply blending. **Gregor Mendel's** pea crosses revealed instead that discrete hereditary factors—now called **genes**—pass between generations. Different forms of a gene are **alleles**. An organism's allele combination is its **genotype**; the trait expressed is its phenotype.\n\nUnder **Mendel's law of segregation**, two alleles of a gene separate during gamete formation, so each gamete normally receives one. In a simple dominant–recessive system, one allele can determine the visible phenotype of a heterozygote, but the recessive allele is still present and can be transmitted. A **Punnett square** shows possible offspring combinations, while a **testcross** can help reveal the unknown genotype of an organism showing a dominant phenotype.\n\nFor genes on different chromosomes—or sufficiently far apart on the same one—**independent assortment** means inheritance of one allele pair does not determine inheritance of another. Genetic ratios are probabilities, not guarantees about a particular family.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "id": "overview-04",
+      "title": "Chromosomes explain both ordinary and unusual inheritance patterns",
+      "markdown": "The **chromosome theory of inheritance** connects Mendel's rules with physical behavior during meiosis: genes occupy specific chromosome positions, called **loci**. **Thomas Hunt Morgan's** experiments with fruit flies linked particular traits to particular chromosomes. The familiar wild-type and mutant eye-color examples helped establish how genetic traits can be **sex-linked**.\n\nGenes on the X chromosome can show inheritance patterns different from those on autosomes, especially in individuals with only one X chromosome. Not all inheritance follows a simple dominant–recessive pattern, however. **ABO blood groups** illustrate multiple alleles and codominance; one gene can affect several traits, and several genes can contribute to one trait. Mitochondrial and chloroplast genes also demonstrate inheritance of DNA outside the nucleus.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          7,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      }
+    },
+    {
+      "id": "overview-05",
+      "title": "DNA is a molecular archive that can be copied",
+      "markdown": "DNA is a polymer made of **nucleotides**. Each nucleotide contains a sugar, phosphate group, and nitrogenous base. DNA uses **adenine (A), thymine (T), guanine (G), and cytosine (C)**. A and G are **purines**; C and T are **pyrimidines**. The two strands of the double helix have sugar–phosphate backbones on the outside and complementary bases on the inside: **A pairs with T**, and **G pairs with C**.\n\nThe **Hershey–Chase experiment** used bacteriophages with radioactively labeled DNA or protein to support DNA's role as hereditary material. **DNA replication** copies each strand by building a complementary partner, enabling cells to transmit genetic information. Base pairing makes the process accurate; proofreading and repair further reduce errors, although mutations remain possible.\n\n**RNA** is related to DNA but normally uses **ribose** rather than deoxyribose and **uracil (U)** rather than thymine.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "overview-06",
+      "title": "Gene expression connects DNA to proteins",
+      "markdown": "A gene's nucleotide sequence can direct production of a functional molecule. For protein-coding genes, the familiar flow is **DNA → RNA → protein**. In **transcription**, an RNA molecule is synthesized using DNA as a template. In **translation**, a ribosome reads messenger RNA (**mRNA**) and assembles amino acids into a polypeptide.\n\nThe message is read in three-base units called **codons**. Most codons specify an amino acid, while three common codons signal termination. The genetic code is nearly universal, one reason genes from one species can sometimes be expressed in another. Proteins help produce phenotypes by acting as enzymes, structural materials, signaling molecules, and many other functional components. Some genes instead produce functional RNAs.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "id": "overview-07",
+      "title": "Evolution follows inheritance across generations",
+      "markdown": "**Evolution** is descent with modification: populations accumulate inherited differences over generations. It does not mean that organisms advance toward a predetermined ideal. An **evolutionary tree** branches as lineages diverge; one living species is not necessarily a more advanced form of another.\n\n**Charles Darwin** and **Alfred Russel Wallace** independently developed explanations of natural selection. Darwin's 1859 *On the Origin of Species* helped establish the argument that inherited variation, differential survival, and differential reproduction could change populations. Earlier thinkers including **Linnaeus** and **Lamarck** shaped the scientific conversation, even where later evidence rejected parts of their explanations. **Thomas Henry Huxley** became a prominent public defender of evolutionary science.",
+      "slideReferences": {
+        "14.pdf": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "id": "overview-08",
+      "title": "Multiple mechanisms shape evolution and the origin of species",
+      "markdown": "**Mutation** creates new genetic variants. **Natural selection** changes allele frequencies when heritable differences affect reproductive success. **Sexual selection** favors traits that improve mating success, sometimes despite survival costs. **Genetic drift** is random change in allele frequencies, especially pronounced in small populations. These are distinct mechanisms; geographic separation (**vicariance**) can restrict gene flow but is not itself a synonym for drift.\n\nWhen populations no longer exchange genes freely, evolutionary divergence can eventually produce new species. **Prezygotic barriers** prevent successful fertilization; **postzygotic barriers** reduce the survival or fertility of hybrids. Across longer spans, **speciation**, **mass extinction**, and **adaptive radiation** reshape biodiversity. The mechanisms of inheritance at the beginning of this review are therefore also the mechanisms that make evolutionary change possible.",
+      "slideReferences": {
+        "14.pdf": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      }
+    }
+  ]
+}

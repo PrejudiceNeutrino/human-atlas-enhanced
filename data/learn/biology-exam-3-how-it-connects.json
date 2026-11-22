@@ -1,0 +1,141 @@
+{
+  "id": "biology-exam-3-how-it-connects",
+  "title": "How It Connects",
+  "subject": "Biology — Exam 3",
+  "subtitle": "Heredity, gene expression, and evolution",
+  "introMarkdown": "Trace one inherited genetic variant from meiosis and fertilization through molecular expression to evolutionary change.",
+  "sourceFiles": [
+    "11 - C13.pdf",
+    "12 - C14 & C15.pdf",
+    "13 - C16 & C17.pdf",
+    "14.pdf"
+  ],
+  "sections": [
+    {
+      "id": "connects-01",
+      "title": "One allele begins in a parent's cell",
+      "markdown": "Imagine following a single gene variant through several generations. It is embedded in a DNA molecule that forms part of a chromosome. A diploid parent has two homologous chromosomes bearing the same locus, perhaps with different versions of the gene. Before a cell enters meiosis, both chromosomes are replicated, producing sister chromatids. The biological problem is to pass on a useful amount of DNA without doubling chromosome number each time two organisms reproduce.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          2,
+          3,
+          6,
+          11
+        ],
+        "12 - C14 & C15.pdf": [
+          6,
+          16
+        ],
+        "13 - C16 & C17.pdf": [
+          9
+        ]
+      }
+    },
+    {
+      "id": "connects-02",
+      "title": "Meiosis halves chromosome sets while reorganizing variants",
+      "markdown": "Homologous chromosomes pair during prophase I. Their nonsister chromatids may cross over, exchanging matching DNA segments. Next, homologous pairs orient independently during metaphase I. When meiosis I separates homologs, each resulting cell receives one set. In meiosis II, sister chromatids separate. The allele we are following finishes in one or more of the resulting haploid products, potentially accompanied by a new combination of neighboring alleles.\n\nThe precise mix cannot be predicted for a particular gamete, but its possibilities can be calculated. This is the cellular origin of the probabilities that Mendel inferred before chromosomes were understood.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          6,
+          8,
+          11
+        ],
+        "12 - C14 & C15.pdf": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "connects-03",
+      "title": "Fertilization turns allele transmission into inheritance patterns",
+      "markdown": "A sperm and an egg fuse, restoring the diploid chromosome number in a new individual. At the locus we are tracking, the offspring receives one allele from each parent. If the parents were both Aa, the child might be AA, Aa, or aa. The familiar 1:2:1 genotype ratio follows from segregation and random combination of gametes; a dominant phenotype can make two different genotypes look alike.\n\nA Punnett square summarizes these possibilities. It does not dictate a family history. Each conception is a new biological sampling event, just as independent rolls of dice can yield uneven results in a small sample.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          5,
+          6,
+          8,
+          10
+        ]
+      }
+    },
+    {
+      "id": "connects-04",
+      "title": "The inherited DNA sequence becomes a molecular message",
+      "markdown": "Suppose the gene contributes to a protein. The cell does not read its entire chromosome into a protein in one step. An RNA polymerase transcribes the gene into RNA, using one DNA strand as a complementary template. In a typical eukaryotic cell, the resulting messenger RNA is processed and moves from the nucleus to the cytoplasm.\n\nAt a ribosome, each three-base codon of the mRNA helps specify the next amino acid. Transfer RNAs match codons through anticodons, and the ribosome builds a polypeptide. Its folding and interactions may turn it into an enzyme, receptor, structural component, or other functional protein. The allele's effect on phenotype now depends on what this molecule does in the cell.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          4,
+          5,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "id": "connects-05",
+      "title": "Genotype produces a phenotype only in a biological context",
+      "markdown": "A single allele may change an enzyme's rate, a pigment's distribution, or the way a signal is received. Other genes can modify that effect, and the environment can change how much of the gene product is produced or how well it works. This is why genetic variation is not always visible as a neat pair of contrasting Mendelian traits.\n\nSometimes two different alleles are both expressed, as in ABO codominance. Sometimes one gene affects several traits. Sometimes dozens or hundreds of loci contribute small effects to one complex characteristic. DNA sequence is central, but the final phenotype emerges from development and molecular interactions.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          12,
+          13,
+          14
+        ],
+        "13 - C16 & C17.pdf": [
+          9
+        ]
+      }
+    },
+    {
+      "id": "connects-06",
+      "title": "Variation enters a population, and environments influence its fate",
+      "markdown": "Now imagine many individuals bearing different alleles. Some differences arose through mutation; others were redistributed through meiosis and fertilization. If a phenotype reliably increases reproduction in a given environment, natural selection can raise the frequency of alleles contributing to it. If differences in reproductive success are unrelated to genotype and the population is small, random sampling can still change frequencies through genetic drift.\n\nSexual selection may favor traits that increase mating success even when they carry substantial energetic or survival costs. None of these processes requires a population to aim toward a predetermined outcome. The allele's future depends on context, chance, and the ecological relationships surrounding its carriers.",
+      "slideReferences": {
+        "14.pdf": [
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "id": "connects-07",
+      "title": "Separation can turn population differences into distinct lineages",
+      "markdown": "Suppose a geographic change separates the original population into two groups. This is vicariance: a barrier now restricts gene flow between them. The barrier does not itself constitute genetic drift, but each separated population may drift and undergo selection independently. With enough time, the groups may diverge in mating behavior, breeding season, gamete compatibility, or hybrid viability.\n\nIf they can no longer exchange genes successfully, reproductive isolation has emerged. A branching history begins to form. What started as a chromosome transmitted from a parent can now become one strand of the much larger process of speciation.",
+      "slideReferences": {
+        "14.pdf": [
+          14,
+          16,
+          17
+        ]
+      }
+    },
+    {
+      "id": "connects-08",
+      "title": "The same mechanisms explain both continuity and change",
+      "markdown": "At one scale, faithful DNA replication allows inheritance to work at all. At another, meiotic segregation and recombination generate unique combinations without destroying the basic genome organization. Transcription and translation give inherited information biological effects. Across generations, mutation, selection, drift, mating patterns, and gene flow alter which variants persist.\n\nThe apparent opposition between inheritance and evolution disappears: organisms resemble their ancestors because information is transmitted, and populations change because transmission is not a perfectly uniform repetition. That is how molecular biology, Mendelian genetics, and evolutionary biology fit together.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          2,
+          6,
+          11
+        ],
+        "12 - C14 & C15.pdf": [
+          16
+        ],
+        "13 - C16 & C17.pdf": [
+          9,
+          10
+        ],
+        "14.pdf": [
+          12,
+          13,
+          17
+        ]
+      }
+    }
+  ]
+}

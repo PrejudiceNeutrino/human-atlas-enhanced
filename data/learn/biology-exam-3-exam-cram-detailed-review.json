@@ -1,0 +1,224 @@
+{
+  "id": "biology-exam-3-exam-cram-detailed-review",
+  "title": "Exam Cram",
+  "subject": "Biology — Exam 3",
+  "subtitle": "Heredity, gene expression, and evolution",
+  "introMarkdown": "A concise, mechanism-centered exam study guide. This review is authored independently of Quick Scan and covers the complete scope of lectures 11–14.",
+  "sourceFiles": [
+    "11 - C13.pdf",
+    "12 - C14 & C15.pdf",
+    "13 - C16 & C17.pdf",
+    "14.pdf"
+  ],
+  "sections": [
+    {
+      "id": "cram-01",
+      "title": "Chromosomes and hereditary vocabulary",
+      "markdown": "Inheritance requires cells to preserve DNA information while passing different allele combinations to offspring. In diploid organisms, **homologous chromosomes** carry matching genes at corresponding positions called **loci**. The alleles at those positions may differ: an organism can inherit one version from its mother and another from its father. A **genotype** describes the genetic makeup; a **phenotype** is an observable or measurable characteristic that results from that genotype interacting with developmental and environmental factors.\n\nTypical human somatic cells contain **46 chromosomes in 23 pairs**, abbreviated **2n = 46**. Human sperm and eggs normally contain **23 chromosomes**, abbreviated **n = 23**. Of the 23 pairs in somatic cells, 22 pairs are autosomes and one pair is the sex chromosomes. **Sister chromatids** are the duplicated copies of one chromosome after replication; they are not the same thing as a maternal–paternal homologous pair. That distinction explains how the chromosome number is reduced during meiosis.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          1,
+          2,
+          3,
+          10,
+          12
+        ]
+      }
+    },
+    {
+      "id": "cram-02",
+      "title": "Meiosis and chromosome behavior",
+      "markdown": "DNA replicates **once** before meiosis, creating chromosomes with two sister chromatids. The cell then divides **twice**. In **meiosis I**, homologs pair and later separate; the resulting cells have one member of each chromosome pair, although each chromosome still has sister chromatids. In **meiosis II**, sister chromatids separate. There is **no second S phase** between the two meiotic divisions.\n\nDuring **prophase I**, homologs form a tetrad of **four chromatids** and exchange corresponding segments between **nonsister chromatids**. This is crossing over. The independently oriented pairs at **metaphase I** separate in **anaphase I**. Sister chromatids ultimately segregate in **anaphase II**. A starting diploid cell can thus generate four haploid meiotic products, with the precise fate of gametes depending on organism and sex. The essential exam contrast is: **meiosis I separates homologs; meiosis II separates sisters**.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          1,
+          2,
+          6,
+          8,
+          11
+        ]
+      }
+    },
+    {
+      "id": "cram-03",
+      "title": "Sexual, asexual, and genetic variation",
+      "markdown": "Mitosis ordinarily generates daughter nuclei that have the same chromosome-set number and very similar DNA as the parent nucleus. It allows growth, replacement, and many kinds of asexual reproduction. The lecture illustrates asexual reproduction using a budding **Hydra** and redwood trees. Offspring from asexual reproduction are often genetically similar enough to be called **clones**, but mutations can introduce differences.\n\nSexual reproduction brings together gametes from two individuals, generating offspring with unique combinations of parental alleles. Variation arises from **crossing over**, **independent assortment** of homolog pairs, and **random fertilization**. In humans, 23 independently orienting homologous pairs alone could form roughly **2²³** combinations of chromosome assortments before crossing over is counted. **Mutation**, unlike recombination, can produce genuinely new alleles. Sexual reproduction reshuffles the genetic variation already present in a population rather than guaranteeing an improvement in offspring.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          4,
+          5,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "id": "cram-04",
+      "title": "Mendel, genes, dominance, and segregation",
+      "markdown": "Gregor Mendel crossed pea plants with distinct traits and found that inheritance follows the transmission of discrete hereditary factors, now called genes. These factors are not irreversibly blended when parents reproduce. For a given character such as pea seed color, different **alleles** can lead to different phenotypes. In a typical diploid locus, an individual inherits one allele on each homologous chromosome.\n\nA homozygote has two matching alleles (**AA** or **aa**); a heterozygote has two different alleles (**Aa**). In a complete-dominance example, the phenotype of **Aa** resembles that of **AA**, while **aa** expresses the recessive phenotype. Mendel's **law of segregation** states that allele pairs separate during gamete formation; when an **Aa** individual produces gametes, half are expected to carry A and half a. This is physically explained by homolog separation in meiosis I. For **Aa × Aa**, expected genotype frequencies are **¼ AA, ½ Aa, ¼ aa**, producing a **3:1** dominant-to-recessive phenotype ratio if complete dominance applies. A recessive allele does not disappear or necessarily become biochemically inactive.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "id": "cram-05",
+      "title": "Punnett squares, testcrosses, and probability",
+      "markdown": "A **Punnett square** depicts possible combinations when gametes from two parents unite. Place one parent's gametes on one axis and the other's on the second; the cells of the grid represent possible offspring genotypes. A square illustrates probability, not a prediction of an exact number of children. If each birth has probability ¼ of a particular genotype under a simplified model, four births do not guarantee one example of it.\n\nA **testcross** identifies the possible genotype of an organism expressing the dominant trait. Cross the unknown **A_** with **aa**. If the unknown was **AA**, all offspring are predicted **Aa** and dominant in phenotype. If it was **Aa**, approximately half the offspring are predicted **aa** and recessive. One recessive offspring identifies the unknown as carrying a; seeing no recessive offspring in a small sample is not definitive proof of AA. For independent probability questions, multiply probabilities for a combined 'and' event and add appropriate mutually exclusive probabilities for an 'or' event.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          8,
+          10
+        ]
+      }
+    },
+    {
+      "id": "cram-06",
+      "title": "Independent assortment and inheritance complexity",
+      "markdown": "Mendel's **law of independent assortment** holds when the allele inherited at one locus does not constrain inheritance at another. Different homologous chromosome pairs orient independently during metaphase I, so genes on different chromosome pairs commonly follow this pattern. For a dihybrid cross **AaBb × AaBb**, the classic predicted phenotype classes occur in a **9:3:3:1** ratio if both genes assort independently and each has complete dominance.\n\nBut the law is not absolute: genes close together on the **same chromosome** are often **linked** and inherited together. Crossing over may separate them. Inheritance is also not limited to simple dominance. **ABO blood types** involve multiple alleles in the population, with Iᴬ and Iᴮ codominant in type AB. **Pleiotropy** means one gene affects several traits; **polygenic inheritance** means several genes contribute to one trait. The environment can modify gene expression and the resulting phenotype. These patterns enrich, rather than discard, Mendel's fundamental idea that alleles are transmitted discretely.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          9,
+          11,
+          12,
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "id": "cram-07",
+      "title": "Genetic disorders, inbreeding, and hybrid chromosome doubling",
+      "markdown": "A pathogenic variant can produce a genetic disorder in either a recessive or dominant inheritance pattern. For many **autosomal recessive** conditions, a person becomes affected when both corresponding alleles are pathogenic; a person with one such allele may be an unaffected carrier. **Inbreeding** increases the probability that two related parents each transmit copies of a harmful recessive allele inherited from a common ancestor. The mechanism is increased **homozygosity**, not a new mutation caused by the act of mating with a relative.\n\nThe **Raphanobrassica** diagram shows a different genetic outcome. Radish and cabbage hybrids can inherit two chromosome sets that do not pair properly, producing sterility. **Chromosome doubling** can create an **allopolyploid** with paired homologs, restoring meiotic fertility. This illustrates how the formation of a new chromosomal combination can yield reproductive isolation rapidly in plants. It is not merely a surprising phenotype from a Punnett square; it changes the organization of whole chromosome sets.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          7,
+          11,
+          14
+        ]
+      }
+    },
+    {
+      "id": "cram-08",
+      "title": "Chromosome theory and Morgan's fruit flies",
+      "markdown": "The chromosome theory of inheritance provides the physical basis of Mendel's observations. Genes occupy specific positions on chromosomes, homologous pairs segregate, and different pairs can assort independently. **Thomas Hunt Morgan** provided compelling evidence by breeding fruit flies, especially *Drosophila melanogaster*. Fruit flies generate numerous offspring, can complete a generation in about two weeks in suitable conditions, and have only **four pairs of chromosomes**.\n\nMorgan compared common **wild-type** phenotypes with **mutants**, including eye-color variants. The way some mutant traits appeared in male and female offspring suggested a locus on the **X chromosome**. This tied the inheritance of a particular gene to a physical chromosome and helped explain why certain traits produce different patterns in reciprocal crosses. A trait's appearance in a particular sex can thus provide evidence about chromosome location, not just dominance or recessiveness.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "id": "cram-09",
+      "title": "Sex linkage, organelle inheritance, and parent effects",
+      "markdown": "In the usual human XX/XY system, **X-linked** genes are located on the X chromosome and **Y-linked** genes on the Y chromosome. Individuals with a single X chromosome express many X-linked alleles without a second X allele at the same locus. Inheritance of Y-linked variants can trace a direct paternal line, subject to mutation and the limitations of lineage data.\n\nThe professor also emphasizes exceptions to standard Mendelian predictions. **Genomic imprinting** can make gene activity depend on whether a nuclear allele came from the mother or father. **Extranuclear inheritance** concerns genes in organelles such as mitochondria or plant chloroplasts. Human mitochondrial DNA is normally inherited maternally because the embryo receives almost all its mitochondria from the egg. Plant organelle patterns vary. The slide with swallowtail butterflies and a child labeled as chimerism is a visual example, but it does not specify enough details to reconstruct its exact biological case.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      }
+    },
+    {
+      "id": "cram-10",
+      "title": "Hershey–Chase and DNA as hereditary material",
+      "markdown": "Early geneticists knew that chromosomes were involved in heredity, but DNA and protein were both candidates for the material storing the genetic instructions. In the **1952 Hershey–Chase** experiment, bacterial viruses called **bacteriophages** were grown with radioisotope labels. **³²P** labeled DNA because DNA contains phosphorus; **³⁵S** labeled the viral protein because proteins can contain sulfur while DNA does not.\n\nThe phages infected bacteria, then a blender displaced the outer phage coats. **Centrifugation** separated the bacteria, concentrated in a **pellet**, from outer phage components in the supernatant. The bacterial fraction retained most of the DNA-associated label, while much of the protein-associated label stayed outside. The result supported DNA, not the protein coat, as the material transferred to the infected cells to direct subsequent phage production. The important distinction is exactly which label entered bacteria and why.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "id": "cram-11",
+      "title": "DNA, RNA, base pairing, and replication",
+      "markdown": "A DNA nucleotide consists of **deoxyribose**, phosphate, and one of four bases. **Adenine and guanine** are two-ring **purines**; **cytosine and thymine** are one-ring **pyrimidines**. DNA's two antiparallel strands have covalently linked **sugar–phosphate backbones** and complementary bases paired inside: **A–T** and **G–C**. One purine paired with one pyrimidine keeps the double helix approximately **2 nm** wide.\n\n**RNA** contains **ribose** and ordinarily uses **uracil** in place of thymine; it is commonly single-stranded and has many functional roles. During **semiconservative DNA replication**, each original DNA strand templates a complementary strand. Enzymes including helicase, polymerase, and ligase participate in opening, synthesis, and completion of the copies. DNA polymerase proofreading and repair make the process exceptionally accurate. The slide's 'one error in ten billion' and 'four hours' are approximate teaching figures whose values depend on the cells and methods considered. The DNA model was proposed by Watson and Crick using X-ray evidence significantly contributed by Rosalind Franklin and Maurice Wilkins, among others.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "cram-12",
+      "title": "Transcription, translation, and genetic code",
+      "markdown": "The nucleotide sequence in a gene can direct synthesis of a functional product. For a protein-coding eukaryotic gene, **transcription** makes RNA from the nuclear DNA template. Mature **mRNA** is processed and exported, then a **ribosome** carries out **translation** in the cytoplasm. Transfer RNAs match codons with their corresponding amino acids, enabling the ribosome to assemble a polypeptide that can fold into a functional protein. This is why the same genetic difference can influence enzyme activity, cell behavior, and a visible phenotype.\n\nA **codon** contains **three mRNA nucleotides**. With four possible bases, there are **4³ = 64 codons**. Most specify amino acids; **UAA, UAG, UGA** are standard termination signals, and **AUG** often initiates translation and specifies methionine. Because multiple codons can specify the same amino acid, the code is degenerate. Its near universality allows many genes to function when transferred across species, though host regulation and other differences still matter. Codons **encode** amino acids; they are not themselves components of amino acids.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "id": "cram-13",
+      "title": "Evolutionary history and descent with modification",
+      "markdown": "Evolution is **descent with modification**: inherited variation changes across populations and lineages. A branching **phylogenetic tree** represents relationships based on common ancestry. It is not a linear series in which every modern species is a step toward humans or a supposedly superior outcome. Evolution is an established observable phenomenon, and evolutionary theory explains its causes and history.\n\nThe lecture highlights several historical figures. **Linnaeus** established binomial nomenclature through *Systema Naturae* (1735). **Lamarck** advanced early ideas about evolutionary change, although the familiar inheritance-of-acquired-traits mechanism is not the dominant explanation for adaptive evolution. **Darwin** studied variation and biogeography, including the Galápagos, and published *On the Origin of Species* in **1859**. **Alfred Russel Wallace** independently developed an explanation of natural selection. **Thomas Henry Huxley**, called **Darwin's Bulldog**, became a vocal defender of Darwinian ideas.",
+      "slideReferences": {
+        "14.pdf": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "id": "cram-14",
+      "title": "Mechanisms that change populations",
+      "markdown": "**Mutation** originates new heritable DNA variants, which may arise through copying errors, radiation, chemical damage, or other events. **Natural selection** changes population genetic composition when inherited differences cause unequal reproductive success. The predator-and-mouse diagram illustrates selection changing the proportions of differently colored animals. Selection does not generate favorable mutations on demand; it changes the fates of variants that already exist.\n\n**Genetic drift** is random change in allele frequencies, particularly strong when populations are small. Founder effects and bottlenecks are familiar drift-related situations. A slide labels a geographic map **'Genetic Drift (Vicariance)'**, but **vicariance** actually means a once-connected population has been separated by a barrier. Such separation can reduce gene flow and permit drift or selection to act independently in each fragment; they are separate causes. **Sexual selection** occurs when characteristics increase mating success, illustrated by extravagant peacock displays and physical contests between animals. It is a kind of selection with a reproductive, rather than simply survival, payoff.",
+      "slideReferences": {
+        "14.pdf": [
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "id": "cram-15",
+      "title": "Isolation, speciation, extinction, and radiation",
+      "markdown": "As populations diverge, barriers may restrict gene exchange. **Prezygotic isolation** acts before fertilization, through differences in habitat, breeding season, mating behavior, anatomy, or gamete compatibility. **Postzygotic isolation** acts after fertilization, for example when hybrids have reduced viability or are sterile. Accumulated differences can lead to **speciation**—the origin of reproductively or evolutionarily distinct lineages—although real species boundaries are not always clean.\n\nOver geological time, **adaptive radiation** creates many divergent lineages following the opening of new niches; **mass extinction** removes a substantial fraction of species relatively rapidly. The lecturer's final fossil/organism figures emphasize that evolutionary history is shaped by small-scale population processes and events affecting entire ecosystems. Across all these stages, inheritance supplies variation and evolutionary mechanisms alter how that variation is distributed. Meiosis, DNA, gene expression, and natural selection are therefore parts of one causal story rather than unrelated chapters.",
+      "slideReferences": {
+        "14.pdf": [
+          16,
+          17
+        ]
+      }
+    }
+  ],
+  "variantOf": "biology-exam-3-exam-cram",
+  "readingMode": "detailed-review"
+}

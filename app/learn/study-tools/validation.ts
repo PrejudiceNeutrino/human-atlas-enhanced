@@ -8,7 +8,7 @@ const id=(value:unknown):value is string=>typeof value==='string'&&/^[a-z0-9]+(?
 function requireValue(condition:unknown,message:string):asserts condition {if(!condition)throw new Error(`Study content validation: ${message}`);}
 
 /** Fail visibly on malformed records; report unresolved teaching references separately. */
-export function validateStudyBank(value:unknown,articles:Record<string,ArticleTarget>):{bank:StudyBank;unresolvedReferences:string[]} {
+export function validateStudyBank(value:unknown,articles:Record<string,ArticleTarget>,options:{caseSensitiveChoices?:boolean}={}):{bank:StudyBank;unresolvedReferences:string[]} {
   requireValue(object(value),'missing bank');const m=value.manifest;
   requireValue(object(m)&&m.kind==='human-atlas-study-tools'&&m.schemaVersion===1&&id(m.subjectId)&&text(m.title)&&text(m.curriculum),'invalid manifest');
   requireValue(Array.isArray(m.topics)&&m.topics.length>0&&m.topics.every(topic=>object(topic)&&id(topic.id)&&text(topic.label)&&Number.isSafeInteger(topic.sortOrder)),'invalid topics');
@@ -37,7 +37,7 @@ export function validateStudyBank(value:unknown,articles:Record<string,ArticleTa
     const refs=record.sourceRefs;requireValue(Array.isArray(refs)&&refs.length>0,`${record.id}: missing sources`);
     for(const ref of refs){requireValue(object(ref)&&id(ref.articleId)&&id(ref.sectionId)&&object(ref.slideReferences),`${record.id}: malformed source`);
       for(const [filename,slides] of Object.entries(ref.slideReferences)){const max=presentations.get(filename);requireValue(max&&Array.isArray(slides)&&slides.every(slide=>Number.isSafeInteger(slide)&&slide>=1&&slide<=max),`${record.id}: invalid slide metadata`);}
-      requireValue(articleIds.has(ref.articleId) && ref.articleId.startsWith(`${m.subjectId}-system-`), `${record.id}: source belongs to another subject or is undeclared`);
+      requireValue(articleIds.has(ref.articleId) && ref.articleId.startsWith(`${m.subjectId}-`), `${record.id}: source belongs to another subject or is undeclared`);
       if(!articles[ref.articleId]?.sections.some(section=>section.id===ref.sectionId))unresolved.add(`${ref.articleId}/${ref.sectionId}`);
     }
     const links=record.relatedConceptIds??record.conceptIds;requireValue(strings(links)&&links.every(link=>concepts.has(link)),`${record.id}: unknown concept reference`);
@@ -45,7 +45,9 @@ export function validateStudyBank(value:unknown,articles:Record<string,ArticleTa
   for(const raw of value.concepts as Record<string,unknown>[])requireValue(text(raw.term)&&text(raw.definition)&&strings(raw.aliases),`${raw.id}: invalid concept`);
   for(const raw of value.multipleChoice as Record<string,unknown>[]){requireValue(raw.type==='multiple-choice'&&text(raw.stem)&&text(raw.explanation)&&['recall','knowledge','application'].includes(String(raw.cognitiveLevel)),`${raw.id}: invalid question`);
     const choices=raw.choices;requireValue(Array.isArray(choices)&&choices.length===4&&choices.every(choice=>object(choice)&&id(choice.id)&&text(choice.text)),`${raw.id}: invalid choices`);
-    requireValue(new Set(choices.map(choice=>choice.id)).size===4&&new Set(choices.map(choice=>choice.text.trim().toLowerCase())).size===4&&choices.some(choice=>choice.id===raw.correctChoiceId),`${raw.id}: invalid answer`);
+    // Biology's allele symbols can differ in meaning by letter case (AA versus aa).
+    const choiceTexts = choices.map(choice => options.caseSensitiveChoices ? choice.text.trim() : choice.text.trim().toLowerCase());
+    requireValue(new Set(choices.map(choice=>choice.id)).size===4&&new Set(choiceTexts).size===4&&choices.some(choice=>choice.id===raw.correctChoiceId),`${raw.id}: invalid answer`);
   }
   for(const raw of value.fillInTheBlank as Record<string,unknown>[])requireValue(raw.type==='fill-in-blank'&&text(raw.prompt)&&raw.prompt.split('_____').length===2&&text(raw.answer)&&strings(raw.acceptedAnswers)&&text(raw.hint)&&text(raw.explanation)&&raw.answerNormalization==='case-whitespace-punctuation',`${raw.id}: invalid fill-in-the-blank`);
   for(const raw of value.flashcards as Record<string,unknown>[])requireValue(text(raw.front)&&text(raw.back),`${raw.id}: invalid flashcard`);

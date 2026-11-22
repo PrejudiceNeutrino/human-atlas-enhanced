@@ -1,0 +1,362 @@
+{
+  "id": "biology-exam-3-deep-dive",
+  "title": "Deep Dive",
+  "subject": "Biology — Exam 3",
+  "subtitle": "Heredity, gene expression, and evolution",
+  "introMarkdown": "**Scope:** Professor lectures 11–14. The lecture topics establish coverage; supporting molecular and evolutionary explanations extend beyond slide wording where useful. Figures and exam claims remain traceable to slide identifiers.",
+  "sourceFiles": [
+    "11 - C13.pdf",
+    "12 - C14 & C15.pdf",
+    "13 - C16 & C17.pdf",
+    "14.pdf"
+  ],
+  "sections": [
+    {
+      "id": "deep-01",
+      "title": "The chromosome is the physical unit of inheritance",
+      "markdown": "A **gene** is a stretch of DNA that contributes to a functional product. In eukaryotic cells, DNA is packaged with proteins into **chromosomes**. Most human somatic cells are **diploid (2n = 46)**: 22 pairs of autosomes and one pair of sex chromosomes. Each pair includes a chromosome inherited from each parent. Most gametes are **haploid (n = 23)**: 22 autosomes and one sex chromosome. Fertilization combines two haploid chromosome sets.\n\nA **homologous pair** consists of chromosomes with corresponding gene loci, similar size and structure, and potentially different alleles. The two homologs are *not* identical copies; by contrast, the two **sister chromatids** of one replicated chromosome originate through DNA replication. A **centromere** holds sister chromatids together until their separation. This distinction underlies nearly every meiosis question: separating homologs changes ploidy; separating chromatids changes the number of DNA copies per chromosome.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          1,
+          2,
+          3,
+          10,
+          12
+        ]
+      }
+    },
+    {
+      "id": "deep-02",
+      "title": "Why meiosis requires two divisions",
+      "markdown": "Before meiosis begins, DNA replicates once in interphase. Each chromosome then consists of two sister chromatids. In **meiosis I**, homologs pair, align, and separate into different daughter cells. **Prophase I** includes homolog pairing and crossing over; **metaphase I** aligns homologous pairs; **anaphase I** separates homologs while sister chromatids initially remain joined. The resulting cells are haploid in chromosome sets but contain duplicated chromosomes.\n\nIn **meiosis II**, chromosomes line up individually and sister chromatids separate, much as they do in mitosis. DNA does not replicate again between these divisions. One diploid starting cell usually produces four haploid products, although the ultimate fate and number of functional gametes depend on the organism and on whether it is making sperm or eggs. For human chromosome counts, meiosis starts with 46 chromosomes, then yields haploid cells containing 23 chromosomes after meiosis I; the sister chromatids separate in meiosis II.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          1,
+          2,
+          6,
+          8
+        ]
+      }
+    },
+    {
+      "id": "deep-03",
+      "title": "How meiosis produces genetic variation",
+      "markdown": "During **prophase I**, a maternal and paternal homolog pair to form a **tetrad**, an assembly with four chromatids. **Crossing over** exchanges corresponding DNA segments between *nonsister* chromatids. It creates new combinations of alleles along a chromosome. A visible contact point during this process is a **chiasma**.\n\nIn **metaphase I**, each homologous pair can face either spindle pole. This is **independent assortment** of homologs, producing many combinations of maternal and paternal chromosomes. For 23 pairs there are potentially 2²³, or roughly 8.4 million, assortment combinations *before considering crossing over*. **Random fertilization** increases the possibilities further. Variation comes from reassortment of existing alleles as well as mutations that introduce new alleles; the two sources should not be confused.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          6,
+          8,
+          11
+        ]
+      }
+    },
+    {
+      "id": "deep-04",
+      "title": "Mitosis, meiosis, and asexual reproduction are different processes",
+      "markdown": "**Mitosis** segregates duplicated chromosomes into daughter nuclei while ordinarily preserving the chromosome number. It is essential for growth, tissue repair, and many forms of asexual reproduction. **Meiosis** reduces chromosome-set number and reorganizes alleles for sexual life cycles. Asexual descendants are commonly described as **clones**, although mutation and other DNA changes can make them differ from the parent.\n\nThe slide examples of budding **Hydra** and vegetatively reproducing redwoods illustrate that asexual reproduction is not restricted to single-celled organisms. Sexual reproduction mixes hereditary contributions from parents, which explains why siblings usually differ in genotype. The key distinction is not simply the number of parents but whether gametes fuse and how chromosome sets are transmitted.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          4,
+          5,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "id": "deep-05",
+      "title": "Mendel tested particulate rather than blending inheritance",
+      "markdown": "**Gregor Mendel** crossed garden pea plants with contrasting characters, such as seed shape, seed color, flower color, pod traits, flower position, and plant height. By following generations, he found that hereditary determinants are passed on as discrete units rather than irreversibly blending. Modern genetics calls these units **genes**, and alternative gene forms **alleles**.\n\nA **character** is a heritable feature, such as seed color; a **trait** is a particular form of that feature, such as yellow seeds. **Genotype** names the underlying allele combination, while **phenotype** describes the observable or measurable result. In a diploid organism, a gene generally has two alleles at the corresponding locus, one on each homolog. However, the population may carry many more than two possible alleles for that gene.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "id": "deep-06",
+      "title": "Dominance, recessiveness, and the law of segregation",
+      "markdown": "A **homozygote** carries two identical alleles at a locus; a **heterozygote** carries two different alleles. In a complete-dominance example, **AA** and **Aa** show the dominant phenotype, while **aa** shows the recessive phenotype. Dominance describes the phenotype of a heterozygote, not whether the recessive allele physically disappears or is biochemically inactive in every respect.\n\n**Mendel's law of segregation** states that the two alleles of a gene separate during gamete production. The chromosome basis is the separation of homologous chromosomes during meiosis I. In a cross **Aa × Aa**, each parent can contribute A or a; the expected genotype ratio is **1 AA : 2 Aa : 1 aa**. With complete dominance, the expected phenotype ratio is **3 dominant : 1 recessive**. Ratios describe probabilities over offspring, not guaranteed results for any given four children.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          6
+        ]
+      }
+    },
+    {
+      "id": "deep-07",
+      "title": "Punnett squares, testcrosses, and probability",
+      "markdown": "A **Punnett square** organizes possible gametes from each parent along a grid. It is a probability model, not a picture of what happens inside cells. For **Aa × aa**, half the expected offspring are Aa and half aa. If an individual displays the dominant phenotype but its genotype is unknown, cross it with a known **homozygous recessive (aa)** individual; this is a **testcross**. Any recessive offspring demonstrate that the dominant-looking parent carries a recessive allele. An all-dominant sample supports but cannot prove that the unknown parent is AA because finite families are subject to chance.\n\nFor independent events, multiply probabilities to calculate their joint occurrence. To calculate the probability of one of several mutually exclusive outcomes, add their probabilities. A 25% chance per child does not imply that exactly one of every four children will have the trait. The slide's example of an entire family displaying the less common phenotype is unlikely under certain assumptions, but not impossible.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          8,
+          10
+        ]
+      }
+    },
+    {
+      "id": "deep-08",
+      "title": "The law of independent assortment has a physical limit",
+      "markdown": "**Independent assortment** means the transmission of one gene's alleles does not affect the transmission of another's. It follows naturally when loci are on different chromosome pairs, because each pair orients independently during metaphase I. A classic **dihybrid cross**, AaBb × AaBb, predicts **9:3:3:1** phenotypes under complete dominance, independent assortment, and other standard assumptions.\n\nGenes that are close together on the same chromosome tend to be **linked** and inherited together. Crossing over can separate linked alleles; recombination becomes more frequent as loci are farther apart, up to the range where they behave as though independently assorting. The professor's dihybrid slide asks whether genes are related or sort independently; the essential distinction is that independent assortment is not a universal rule for every pair of genes.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          9
+        ]
+      }
+    },
+    {
+      "id": "deep-09",
+      "title": "More than one gene or allele can influence a phenotype",
+      "markdown": "Simple dominance is only one pattern. **Multiple alleles** occur when a population contains more than two variants at one locus, although a typical diploid individual still carries at most two. The human **ABO blood-group system** provides an example: Iᴬ and Iᴮ are **codominant**, so both A and B antigens can be expressed in type AB blood; i is recessive to both in the usual ABO model.\n\n**Pleiotropy** means one gene contributes to multiple phenotypic effects. **Polygenic inheritance** means several genes influence one trait; many continuously varying characteristics have this architecture. **Incomplete dominance**, in which the heterozygote has an intermediate phenotype, also differs from complete dominance. All these patterns complicate predictions without contradicting the underlying segregation of alleles into gametes.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "id": "deep-10",
+      "title": "Environment and disease risk change how inherited variants appear",
+      "markdown": "Genotype influences phenotype, but a phenotype is not a gene readout in isolation. Nutrition, temperature, developmental conditions, exposure, and interactions among genes can alter the outcome. Thus genetically similar organisms may not look or behave identically. Environmental influences do not automatically alter germline DNA; however, the lecture's statement that 'only genes' are transmitted is a simplified description, because organelles and some non-DNA parental effects can also matter.\n\nSome single-gene disorders are **autosomal recessive**, others **autosomal dominant** or sex-linked. **Inbreeding** increases the probability that relatives contribute identical alleles inherited from a common ancestor. This raises **homozygosity**, making harmful recessive alleles more likely to appear in the homozygous state. Recessive does not mean inherently harmful, and dominant does not mean inherently beneficial.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          11,
+          14
+        ]
+      }
+    },
+    {
+      "id": "deep-11",
+      "title": "Chromosome doubling can restore fertility to a hybrid",
+      "markdown": "The slide on **Raphanobrassica** depicts a cross between radish (*Raphanus*) and cabbage (*Brassica*), each with 2n = 18. A first-generation hybrid contains nine chromosomes from each parent but can be sterile because the chromosomes do not pair effectively at meiosis. When chromosome number doubles, the resulting **allopolyploid** has homologous partners for both parental sets and can regain fertility.\n\nThis is a useful counterexample to the idea that evolution must proceed only through slow, successive changes in visible traits. Whole-genome duplication can create reproductive isolation rapidly, particularly in plants. The process illustrates a change in chromosome-set organization rather than a standard Mendelian cross involving one gene.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          7
+        ]
+      }
+    },
+    {
+      "id": "deep-12",
+      "title": "Chromosome behavior explains Mendel's laws",
+      "markdown": "The **chromosome theory of inheritance** states that genes occupy specific **loci** on chromosomes and that chromosome behavior during meiosis explains segregation and independent assortment. An allele is located on a physical chromosome, and homologs can carry different alleles at matching positions. When homologs separate, allele copies segregate. When different chromosome pairs align independently, many allele combinations arise.\n\nThe theory also explains why genetic linkage occurs: two genes on the same chromosome are physically coupled until a recombination event separates them. Thus the patterns observed by Mendel can be understood as consequences of cellular events rather than abstract arithmetic rules.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          15,
+          16
+        ]
+      }
+    },
+    {
+      "id": "deep-13",
+      "title": "Morgan used fruit flies to connect genes and chromosomes",
+      "markdown": "**Thomas Hunt Morgan** bred **fruit flies (*Drosophila melanogaster*)** and demonstrated that certain inherited traits could be associated with specific chromosomes. Fruit flies are convenient because they produce many offspring, have short generations—about two weeks under commonly used conditions—and only four chromosome pairs. Morgan compared common **wild-type** traits with **mutant phenotypes**, including different eye colors.\n\nHis analysis of eye-color inheritance helped establish **X-linked inheritance**. The exact pattern of reciprocal crosses matters: when the same trait appears at different frequencies in male and female offspring, the locus may be carried on a sex chromosome rather than an autosome. This supplied a physical explanation for inheritance patterns that did not match a simple autosomal cross.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "id": "deep-14",
+      "title": "Sex-linked inheritance and parent-of-origin effects",
+      "markdown": "A **sex-linked gene** lies on a sex chromosome. In the typical human XX/XY system, **X-linked genes** are carried on the X chromosome and **Y-linked genes** on the Y chromosome. A person with only one X usually has one copy of many X-linked loci, so a recessive allele can be expressed without a second copy at that locus. A father transmits his Y chromosome to sons in the usual XY pattern; this can make Y-chromosomal variants informative about paternal-line ancestry.\n\nNot every species uses XX/XY sex determination, and X or Y chromosomes do not each function as a universal on/off switch for every sex-related trait. **Parent-of-origin effects**, including genomic imprinting, can also cause patterns that depend on whether an allele was inherited from the mother or father. Imprinting is separate from sex linkage and from mitochondrial inheritance; the slides mention the categories but do not develop their molecular mechanisms.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          21,
+          22,
+          23,
+          24
+        ]
+      }
+    },
+    {
+      "id": "deep-15",
+      "title": "Organelle genomes create extranuclear inheritance",
+      "markdown": "Some eukaryotic organelles contain DNA outside the nucleus. **Mitochondria** have their own small genome, and **chloroplasts** and other plant plastids carry plastid DNA. In typical human reproduction, mitochondrial DNA is transmitted almost entirely through the egg, leading to **maternal inheritance**. Plant organelle inheritance can vary by species and is not universally maternal.\n\nThis is distinct from classic Mendelian transmission of nuclear chromosome pairs. Organelle inheritance demonstrates that the cell's hereditary material is not confined to nuclear chromosomes. The lecture's final slide also shows swallowtail butterflies and a chimeric-appearing human example. Those images are suggestive of variation and developmental mosaics, but no precise mechanism or case history is provided by the slide alone.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          24,
+          25,
+          26
+        ]
+      }
+    },
+    {
+      "id": "deep-16",
+      "title": "How scientists established DNA as genetic material",
+      "markdown": "Scientists knew that chromosomes carried genes before knowing whether heredity depended on DNA or chromosome-associated proteins. In the **1952 Hershey–Chase experiment**, bacteriophages infected bacteria. Viral DNA was labeled with radioactive **phosphorus-32**, while viral protein was labeled with radioactive **sulfur-35**. After infection, agitation separated phage coats from bacteria, and centrifugation separated the bacterial pellet from the supernatant.\n\nMost DNA-associated label entered the bacterial fraction, whereas much of the protein-associated label remained outside. This strongly supported DNA as the material passed into cells during infection. It was one important experiment among several, not a demonstration that proteins never have biological roles in heredity. The specific radioactive labels and the bacterial pellet versus supernatant are the diagnostic parts of the lecture's figure.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "id": "deep-17",
+      "title": "DNA's double helix permits reliable copying",
+      "markdown": "A **nucleotide** contains a pentose sugar, phosphate group, and nitrogenous base. DNA has **deoxyribose** and four bases: **adenine (A), guanine (G), cytosine (C), and thymine (T)**. The **purines** A and G have two rings; the **pyrimidines** C and T have one. Nucleotides connect through **phosphodiester bonds** to form the sugar–phosphate backbone.\n\nThe two DNA strands run **antiparallel** and form a double helix of approximately **2 nm diameter**. Complementary base pairing occurs between A–T and G–C, fitting one purine opposite one pyrimidine. Watson and Crick proposed the model using multiple lines of evidence, importantly including X-ray diffraction work by **Rosalind Franklin, Maurice Wilkins, and colleagues**, together with chemical base-composition findings. Franklin and others collected the experimental diffraction data; Watson and Crick did not themselves perform all the crystallographic measurements.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "deep-18",
+      "title": "DNA and RNA differ in sugar, bases, and typical roles",
+      "markdown": "**RNA** uses the sugar **ribose**, which has a hydroxyl group at the 2′ carbon, whereas DNA uses **deoxyribose**. RNA normally uses **uracil (U)** instead of thymine. Many RNA molecules are single-stranded, though they can fold into complex secondary structures through internal base pairing.\n\n**mRNA** carries a protein-coding message, **tRNA** helps match codons to amino acids, and **rRNA** forms a major structural and catalytic component of ribosomes. This matters because the lecture's simple DNA-to-protein description focuses on protein-coding genes; not every functional RNA is translated into protein. RNA also participates in regulation and other cellular activities.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          5
+        ]
+      }
+    },
+    {
+      "id": "deep-19",
+      "title": "DNA replication conserves genetic sequence across divisions",
+      "markdown": "**Semiconservative replication** uses each parental DNA strand as a template for a new complementary strand. **Helicase** separates the strands, **primase** supplies a short RNA primer, and **DNA polymerase** extends DNA by adding nucleotides to an existing 3′ end. Because polymerase synthesizes DNA **5′ to 3′**, one new strand is made continuously relative to fork movement (**leading strand**) while the other uses short **Okazaki fragments** (**lagging strand**). DNA ligase joins fragments.\n\nReplication depends on A–T and G–C pairing but also on proofreading and repair. Errors can become **mutations** if they persist. The slide's statement of approximately one error per 10 billion bases is a broad order-of-magnitude teaching estimate, not a universal rate for every organism, stage, or polymerase. Likewise, the quoted four-hour replication time depends on cell type and conditions. Learn the high-fidelity principle rather than treating those figures as universal constants.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          7
+        ]
+      }
+    },
+    {
+      "id": "deep-20",
+      "title": "Transcription produces RNA using a DNA template",
+      "markdown": "In **transcription**, **RNA polymerase** uses one DNA strand to synthesize complementary RNA. In the standard eukaryotic case, this occurs in the **nucleus**. RNA has U wherever a DNA-like RNA sequence would use T; base pairing to the template remains complementary. The synthesized RNA runs 5′ to 3′. For protein-coding eukaryotic genes, the initial transcript is processed, often including a **5′ cap**, a **poly-A tail**, and **splicing** that removes introns.\n\nMature messenger RNA can then move to the cytoplasm. The genetic sequence remains stored in DNA; making RNA is not the same as cutting a gene out of a chromosome. The lecture simplifies this stage as information moving from DNA to RNA, which is the core idea required before translation can make sense.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "id": "deep-21",
+      "title": "Translation reads codons to build a polypeptide",
+      "markdown": "During **translation**, a **ribosome** reads mRNA as consecutive three-nucleotide **codons**. Transfer RNAs carry amino acids and use their **anticodons** to pair with appropriate mRNA codons. The ribosome catalyzes peptide-bond formation, extending a **polypeptide**. In the standard code, **AUG** commonly serves as the start codon and encodes methionine; **UAA, UAG, and UGA** are stop codons that do not specify amino acids.\n\nAmino acids are not built out of codons: codons are information units that **specify** which amino acids are incorporated. The sequence of amino acids influences a protein's folding and activity, creating a connection between genotype and phenotype. Some mutations change amino acids, others create premature stop signals, and some do not change the encoded amino acid at all.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          8,
+          9,
+          10,
+          12
+        ]
+      }
+    },
+    {
+      "id": "deep-22",
+      "title": "Why the genetic code is almost universal",
+      "markdown": "Four RNA nucleotides arranged in triplets yield **4³ = 64 possible codons**. Of these, 61 usually specify amino acids and three specify stop signals in the standard genetic code. Because several codons can specify the same amino acid, the code is **degenerate**; each codon is not necessarily associated with a unique amino acid. It is also **nearly universal**, with documented exceptions such as certain mitochondrial codes.\n\nThis widespread compatibility explains why a gene moved between species can sometimes produce the same protein, provided that the recipient can also recognize the appropriate regulatory signals and process the transcript correctly. The lecture's cross-species gene-expression point is about a shared code, not a guarantee that every transferred gene will automatically function.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "id": "deep-23",
+      "title": "Mutation is the ultimate source of new alleles",
+      "markdown": "A **mutation** is a change in genetic material. It may arise from replication errors, chemical damage, radiation, or other processes. **Substitutions** change one nucleotide; **insertions** or **deletions** can shift a coding reading frame when their length is not a multiple of three. Some changes are repaired; others become persistent and heritable if present in the germ line or in organisms whose cells contribute to reproduction.\n\nMutation does not occur because an organism anticipates what it needs. Selection can increase or decrease the frequencies of variants *after* they arise. A mutation may be advantageous, harmful, or effectively neutral depending on context. The distinction between the origin of an allele and the later evolutionary fate of that allele is central to interpreting the evolution lecture.",
+      "slideReferences": {
+        "14.pdf": [
+          12
+        ]
+      }
+    },
+    {
+      "id": "deep-24",
+      "title": "Evolution means branching descent with modification",
+      "markdown": "**Descent with modification** describes inherited change in lineages over generations. A population evolves when its genetic composition changes; one individual does not genetically evolve during its lifetime in the same population-genetic sense. A **phylogenetic tree** represents hypotheses about shared ancestry and branching relationships, not a ladder culminating in humans or any other supposedly superior organism.\n\nThe theory of evolution explains and connects abundant observable evidence, while the fact of evolutionary change is established through multiple research methods. **Carl Linnaeus** formalized **binomial nomenclature** in *Systema Naturae* (1735), although his classification did not rest on modern evolutionary theory. **Jean-Baptiste Lamarck** proposed historical ideas about change and inheritance of acquired characteristics; the familiar giraffe-neck account does not describe the main genetic mechanism of adaptive evolution.",
+      "slideReferences": {
+        "14.pdf": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          11
+        ]
+      }
+    },
+    {
+      "id": "deep-25",
+      "title": "Darwin, Wallace, and the historical development of natural selection",
+      "markdown": "**Charles Darwin** drew evidence from geological observations, domestic breeding, fossils, and organisms such as Galápagos animals. **Alfred Russel Wallace** developed a remarkably similar explanation of natural selection independently. Darwin published *On the Origin of Species* in **1859**, arguing that heritable variation combined with differential reproductive success could produce adaptation and lineage divergence.\n\n**Thomas Henry Huxley**, sometimes called **Darwin's Bulldog**, advocated publicly for Darwinian ideas. The lecture highlights these three historical figures. They contributed differently: Darwin and Wallace to the selection mechanism; Huxley to the defense and dissemination of evolutionary science. Natural selection is not synonymous with every kind of evolutionary change, and the historical significance of a person is not itself a mechanism.",
+      "slideReferences": {
+        "14.pdf": [
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "id": "deep-26",
+      "title": "Natural selection changes populations through differential reproduction",
+      "markdown": "**Natural selection** operates when individuals differ in a heritable trait, that trait influences survival or reproductive success, and some variants consequently contribute more descendants. The lecture's mouse-and-predator sequence illustrates a change in the relative frequency of conspicuous versus camouflaged phenotypes after predation. The result is population-level change across generations, not a mouse changing its coat because it senses danger.\n\n**Fitness** in evolutionary biology refers to reproductive contribution in a specific environment, not generic strength or athletic ability. Selection can favor a trait in one environment and oppose it in another. It acts on phenotypes, but the inherited component can drive changes in allele frequencies. Mutation introduces variants; selection sorts variation rather than creating precisely targeted mutations.",
+      "slideReferences": {
+        "14.pdf": [
+          13
+        ]
+      }
+    },
+    {
+      "id": "deep-27",
+      "title": "Genetic drift and geographic isolation must be distinguished",
+      "markdown": "**Genetic drift** is random fluctuation in allele frequencies caused by chance sampling from one generation to the next. It is especially influential in small populations and can lead to fixation or loss of alleles irrespective of their fitness effects. A **founder effect** occurs when a new population begins from a small subset of the original population; a **bottleneck** sharply reduces population size and variation.\n\n**Vicariance** is a different idea: a once-connected population is split by a geographic barrier or other physical change. The evolution slide labels a geographic map 'Genetic Drift (Vicariance)', but a new barrier is not itself genetic drift. Vicariance can reduce **gene flow**, and each isolated population may then evolve through drift, mutation, and selection. Keeping those mechanisms separate improves both conceptual accuracy and the interpretation of the slide.",
+      "slideReferences": {
+        "14.pdf": [
+          14
+        ]
+      }
+    },
+    {
+      "id": "deep-28",
+      "title": "Sexual selection changes mating success",
+      "markdown": "**Sexual selection** favors heritable traits that increase mating success. It includes **mate choice**—for example, preferences for certain displays—and **competition for mates**, illustrated in the slide by animals engaging in physical contests. Elaborate peacock trains and large horns can be costly to grow and maintain; their persistence makes sense when mating advantages offset those costs.\n\nSexual selection is a form of natural selection focused on differences in reproductive access and success. It can produce conspicuous differences between sexes, but the precise direction of mate preferences varies among species and contexts. The pictured peacock and competing male mammals are examples, not a rule that all species use the same mating system.",
+      "slideReferences": {
+        "14.pdf": [
+          15
+        ]
+      }
+    },
+    {
+      "id": "deep-29",
+      "title": "Reproductive isolation can lead to speciation",
+      "markdown": "**Reproductive isolation** limits or prevents the production of fertile offspring between groups. **Prezygotic barriers** act before a successful zygote forms: habitat, temporal, behavioral, mechanical, or gametic isolation can keep populations from interbreeding. **Postzygotic barriers** occur after fertilization: hybrids may be inviable, sterile, or less fit in later generations.\n\nThese categories help explain one common route to **speciation**, the origin of distinct evolutionary lineages. Isolation need not be absolute or permanent at every stage; many diverging groups exchange some genes. The lecture treats reproductive barriers as a recurring theme across evolutionary processes, but the biological species concept is not a universal test for bacteria, extinct lineages, or organisms that reproduce asexually.",
+      "slideReferences": {
+        "14.pdf": [
+          16
+        ]
+      }
+    },
+    {
+      "id": "deep-30",
+      "title": "Extinction and adaptive radiation reshape biodiversity",
+      "markdown": "**Speciation** adds branching lineages; **extinction** ends them. A **mass extinction** is an unusually extensive loss of diversity over a geologically short interval, often involving major environmental disruptions. **Adaptive radiation** is diversification of one ancestral lineage into multiple forms adapted to different ecological opportunities. These large-scale outcomes emerge from genetic and ecological processes acting over time.\n\nThe lecture's final comparison of abundant ancient marine organisms with a reduced fauna visually reinforces that biodiversity can contract as well as diversify. Evolution is therefore neither a guaranteed trend toward increasing complexity nor a simple march of progress. The same history includes branching, persistence, replacement, and irreversible losses.",
+      "slideReferences": {
+        "14.pdf": [
+          17
+        ]
+      }
+    }
+  ]
+}

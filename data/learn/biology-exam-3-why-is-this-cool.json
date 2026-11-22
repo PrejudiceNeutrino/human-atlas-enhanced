@@ -1,0 +1,62 @@
+{
+  "id": "biology-exam-3-why-is-this-cool",
+  "title": "Who Cares?",
+  "sections": [
+    {
+      "id": "curiosity-01",
+      "title": "A sterile hybrid can become a new fertile lineage",
+      "sections": [
+        {
+          "id": "hybrid-polyploidy",
+          "title": "How doubling chromosomes can rescue fertility",
+          "summary": "A radish–cabbage hybrid may struggle to reproduce because its chromosomes cannot pair properly. Doubling the chromosome set can supply suitable partners, restoring fertility and potentially creating a new evolutionary lineage.",
+          "moreInfoLabel": "More Info",
+          "moreInfoTitle": "Raphanobrassica and allopolyploidy",
+          "moreInfoMarkdown": "The original radish and cabbage parents each have 2n = 18 chromosomes. Their hybrid contains nine chromosomes from each parent, which can be difficult to pair properly in meiosis. Without appropriate homologs, segregation and viable gamete formation can fail. **Chromosome doubling** creates a combined set with corresponding partners from each parent. This is called **allopolyploidy**. The newly fertile polyploid may be reproductively isolated from the parents because of its altered chromosome sets. This is one way certain plant lineages can arise relatively quickly, showing that speciation is not always driven solely by the gradual accumulation of small point mutations. It also makes the significance of homologous pairing tangible: chromosomes must do more than carry genes; they must segregate successfully."
+        }
+      ]
+    },
+    {
+      "id": "curiosity-02",
+      "title": "A virus helped settle what genes are made of",
+      "sections": [
+        {
+          "id": "hershey-chase",
+          "title": "How an infected bacterium distinguished DNA from protein",
+          "summary": "Scientists once debated whether DNA or protein carried hereditary information. Labeling the two components of a bacterial virus separately revealed which material actually entered the infected cells.",
+          "moreInfoLabel": "More Info",
+          "moreInfoTitle": "The logic of the Hershey–Chase experiment",
+          "moreInfoMarkdown": "Hershey and Chase used radioactive **phosphorus-32** to mark bacteriophage DNA and **sulfur-35** to mark phage protein. These labels were selected because DNA contains phosphorus in its backbone, whereas typical proteins contain sulfur in certain amino acids and DNA lacks sulfur. After phages infected bacteria, blending dislodged the attached empty phage coats. Centrifugation separated bacterial cells into a **pellet** and phage debris into a **supernatant**. DNA-associated radioactivity was predominantly associated with the bacterial fraction; protein-associated label was mainly outside it. The experiment supplied strong evidence that DNA delivered the genetic instructions needed for subsequent phage production. Its elegance comes from measuring the transfer of candidate hereditary materials separately rather than assuming that the visually complex protein coat must contain the information."
+        }
+      ]
+    },
+    {
+      "id": "curiosity-03",
+      "title": "Life translates almost the same genetic language",
+      "sections": [
+        {
+          "id": "universal-code",
+          "title": "Why genetic instructions can cross species boundaries",
+          "summary": "Bacteria and humans use nearly the same mapping from three-letter RNA codons to amino acids. This shared molecular language helps explain both common ancestry and why some transferred genes function in another species.",
+          "moreInfoLabel": "More Info",
+          "moreInfoTitle": "A near-universal code, with important limits",
+          "moreInfoMarkdown": "The standard genetic code contains **64 three-base codons** assembled from A, U, G, and C. **61** ordinarily specify amino acids, while three are stop signals. Many amino acids have multiple corresponding codons, making the code redundant. Most cellular life shares this mapping, although exceptions exist, notably in some mitochondrial systems. This consistency is powerful evidence of deeply shared evolutionary history. It also makes **heterologous gene expression** possible: a gene from one organism may be read by another organism's transcription and translation machinery. A compatible code does not guarantee expression by itself. The receiving cell also needs appropriate regulatory signals, correct RNA processing where required, and cellular conditions that permit the gene product to fold and function."
+        }
+      ]
+    },
+    {
+      "id": "curiosity-04",
+      "title": "A new barrier can change evolution without changing DNA directly",
+      "sections": [
+        {
+          "id": "vicariance-drift",
+          "title": "Why geography and randomness are different evolutionary forces",
+          "summary": "An emerging mountain, river, or marine barrier can split one population in two. Once separated, the populations may diverge through natural selection and chance, even though the barrier itself is not genetic drift.",
+          "moreInfoLabel": "More Info",
+          "moreInfoTitle": "Vicariance, gene flow, and genetic drift",
+          "moreInfoMarkdown": "**Vicariance** occurs when a previously connected population becomes separated by a new barrier. The separation can reduce **gene flow**, allowing different environments and random events to influence the genetic makeup of each group independently. **Genetic drift**, however, refers specifically to stochastic changes in allele frequencies caused by chance transmission among generations; it does not require a geological barrier. A separated population might experience strong drift if it is small, natural selection if conditions differ, and eventually reproductive isolation as differences accumulate. The distinction matters because geography explains *why organisms stop mixing*, while drift and selection help explain *how their inherited composition then changes*. Separating the mechanisms turns a map of isolated populations into a testable evolutionary hypothesis."
+        }
+      ]
+    }
+  ]
+}

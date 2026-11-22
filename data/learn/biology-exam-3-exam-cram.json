@@ -1,0 +1,222 @@
+{
+  "id": "biology-exam-3-exam-cram",
+  "title": "Exam Cram",
+  "subject": "Biology — Exam 3",
+  "subtitle": "Heredity, gene expression, and evolution",
+  "introMarkdown": "A rapid, lecture-aligned scan sheet. Each bullet isolates a definition, comparison, pathway, example, or common misconception.",
+  "sourceFiles": [
+    "11 - C13.pdf",
+    "12 - C14 & C15.pdf",
+    "13 - C16 & C17.pdf",
+    "14.pdf"
+  ],
+  "sections": [
+    {
+      "id": "cram-01",
+      "title": "Chromosomes and hereditary vocabulary",
+      "markdown": "- **Gene:** DNA sequence contributing to a functional product.\n- **Allele:** Alternative version of a gene.\n- **Locus (plural loci):** Position of a gene on a chromosome.\n- **Genotype:** Genetic makeup or allele combination.\n- **Phenotype:** Observable trait influenced by genotype and environment.\n- **Homologous chromosomes:** Corresponding maternal and paternal chromosomes; same gene loci, possibly different alleles.\n- **Sister chromatids:** Replicated DNA copies joined at a centromere.\n- **Diploid (2n):** Two sets of chromosomes; usual human somatic cell has **46**.\n- **Haploid (n):** One chromosome set; usual human gamete has **23**.\n- **Autosomes / sex chromosomes:** Humans typically have **22 pairs of autosomes** and **1 pair of sex chromosomes**.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          1,
+          2,
+          3,
+          10,
+          12
+        ]
+      }
+    },
+    {
+      "id": "cram-02",
+      "title": "Meiosis and chromosome behavior",
+      "markdown": "- **Before meiosis:** DNA replicates once during interphase.\n- **Meiosis I:** Homologous chromosomes separate; chromosome-set number falls from 2n to n.\n- **Prophase I:** Homologs pair; nonsister chromatids may exchange DNA by crossing over.\n- **Tetrad:** Paired homologs containing **four chromatids**.\n- **Metaphase I:** Homolog pairs line up with random orientation.\n- **Anaphase I:** Homologs separate; sister chromatids remain joined initially.\n- **Meiosis II:** Sister chromatids separate without another round of DNA replication.\n- **Typical outcome:** Four genetically nonidentical haploid products from one starting diploid cell.\n- **Common trap:** Meiosis I separates **homologs**; meiosis II separates **sister chromatids**.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          1,
+          2,
+          6,
+          8,
+          11
+        ]
+      }
+    },
+    {
+      "id": "cram-03",
+      "title": "Sexual, asexual, and genetic variation",
+      "markdown": "- **Mitosis:** Usually creates two genetically similar daughter nuclei and preserves chromosome-set number.\n- **Asexual reproduction:** One reproductive source; offspring often clones apart from mutations and other changes.\n- **Sexual reproduction:** Combines gamete contributions, usually generating new allele combinations.\n- **Crossing over:** Recombinations of DNA along homologous chromosomes.\n- **Independent assortment:** Random orientation of chromosome pairs during meiosis I.\n- **Random fertilization:** Combines independently formed gametes.\n- **Mutation:** Produces new DNA variants; recombination reshuffles existing ones.\n- **Hydra and redwoods:** Examples of asexual reproduction from the lecture.",
+      "slideReferences": {
+        "11 - C13.pdf": [
+          4,
+          5,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "id": "cram-04",
+      "title": "Mendel, genes, dominance, and segregation",
+      "markdown": "- **Gregor Mendel:** Used pea crosses to demonstrate discrete hereditary factors rather than simple blending.\n- **Character / trait:** Heritable feature / particular form of that feature.\n- **Homozygous:** Two identical alleles, e.g. AA or aa.\n- **Heterozygous:** Two different alleles, e.g. Aa.\n- **Dominant allele:** Determines the phenotype of a heterozygote under complete dominance.\n- **Recessive allele:** Phenotype is hidden in a standard complete-dominance heterozygote, but allele remains inherited.\n- **Law of segregation:** Two alleles separate in gamete formation; a gamete normally receives one.\n- **Aa × Aa genotype ratio:** **1 AA : 2 Aa : 1 aa**.\n- **Aa × Aa phenotype ratio:** **3 dominant : 1 recessive** under complete dominance.\n- **Common trap:** Recessive does **not** mean harmful, absent, or necessarily biochemically inactive.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "id": "cram-05",
+      "title": "Punnett squares, testcrosses, and probability",
+      "markdown": "- **Punnett square:** Predicts possible offspring allele combinations and their probabilities.\n- **Testcross:** Breed an unknown dominant-phenotype individual (**A_**) with a homozygous recessive (**aa**).\n- **AA × aa:** All expected offspring Aa, dominant phenotype.\n- **Aa × aa:** Half Aa and half aa expected.\n- **Why testcross works:** Any aa offspring reveal a recessive a in the unknown parent.\n- **Product rule:** Multiply independent probabilities when asking for both outcomes.\n- **Sum rule:** Add mutually exclusive outcomes when asking for either outcome.\n- **Probability caveat:** Expected 1:1 or 3:1 ratios are not exact guaranteed family counts.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          8,
+          10
+        ]
+      }
+    },
+    {
+      "id": "cram-06",
+      "title": "Independent assortment and inheritance complexity",
+      "markdown": "- **Law of independent assortment:** Alleles of different, unlinked genes assort independently.\n- **Dihybrid cross:** Tracks two genes simultaneously.\n- **AaBb × AaBb:** **9:3:3:1** phenotype ratio under classic independent-assortment assumptions.\n- **Genetic linkage:** Nearby genes on one chromosome tend to travel together.\n- **Crossing over:** Can break up linked allele combinations.\n- **Multiple alleles:** More than two possible alleles can exist in a population for one gene.\n- **ABO blood types:** Iᴬ and Iᴮ are **codominant**; both expressed in AB individuals.\n- **Pleiotropy:** One gene influences several phenotypes.\n- **Polygenic trait:** Multiple genes influence one phenotype.\n- **Environment:** Affects how genotype becomes phenotype.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          9,
+          11,
+          12,
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "id": "cram-07",
+      "title": "Genetic disorders, inbreeding, and hybrid chromosome doubling",
+      "markdown": "- **Autosomal recessive disorder:** Often expressed when two relevant recessive pathogenic alleles are inherited.\n- **Autosomal dominant disorder:** Can be expressed with one relevant pathogenic allele.\n- **Inbreeding:** Increases homozygosity and the chance of receiving matching harmful recessive alleles.\n- **Raphanobrassica:** Radish × cabbage hybrid; sterile hybrid can regain fertility after chromosome doubling.\n- **Allopolyploidy:** Combined chromosome sets from distinct species; a potential rapid speciation mechanism in plants.\n- **Common trap:** Dominance does not indicate how common, useful, or damaging an allele is.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          7,
+          11,
+          14
+        ]
+      }
+    },
+    {
+      "id": "cram-08",
+      "title": "Chromosome theory and Morgan's fruit flies",
+      "markdown": "- **Chromosome theory:** Genes occupy specific chromosome loci; meiosis explains Mendel's laws.\n- **Thomas Hunt Morgan:** Connected particular genes and chromosomes through fruit-fly crosses.\n- **Drosophila melanogaster:** Fruit fly; many offspring, about two-week generation time, **four chromosome pairs**.\n- **Wild type:** Common, standard phenotype in a study population.\n- **Mutant phenotype:** Alternative phenotype associated with a genetic variant.\n- **Fruit-fly eye color:** Classic evidence for X-linked inheritance.\n- **Linkage:** Genes on the same chromosome do not necessarily assort independently.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "id": "cram-09",
+      "title": "Sex linkage, organelle inheritance, and parent effects",
+      "markdown": "- **Sex-linked gene:** Locus on X or Y chromosome (in an XX/XY species).\n- **X-linked gene:** Located on X chromosome; recessive traits may appear more often in one-X individuals.\n- **Y-linked gene:** Located on Y chromosome; can inform direct paternal-line ancestry.\n- **Extranuclear genes:** Genes outside the nucleus, notably mitochondrial and plastid DNA.\n- **Mitochondrial inheritance in humans:** Usually maternal through the egg cytoplasm.\n- **Parent-of-origin / imprinting:** Expression can depend on whether an allele was inherited from mother or father.\n- **Swallowtail and chimerism images:** Instructor's visual examples; no precise molecular explanation supplied on the slide.",
+      "slideReferences": {
+        "12 - C14 & C15.pdf": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      }
+    },
+    {
+      "id": "cram-10",
+      "title": "Hershey–Chase and DNA as hereditary material",
+      "markdown": "- **Prior question:** Do chromosomes transmit genes through DNA or protein?\n- **Bacteriophage:** Virus that infects bacteria.\n- **³²P label:** Tracked phage **DNA**.\n- **³⁵S label:** Tracked phage **protein**.\n- **Blending and centrifugation:** Separated bacteria (pellet) from released phage coats (supernatant).\n- **Observation:** DNA-associated phosphorus largely entered bacterial cells; protein-associated sulfur largely stayed outside.\n- **Conclusion:** Strong evidence that DNA carries phage genetic information.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "id": "cram-11",
+      "title": "DNA, RNA, base pairing, and replication",
+      "markdown": "- **Nucleotide:** Sugar + phosphate + nitrogenous base.\n- **DNA bases:** A, T, G, C; RNA uses **U instead of T**.\n- **Purines:** **A, G** (two rings); **pyrimidines:** **C, T** (one ring).\n- **DNA sugar:** Deoxyribose; **RNA sugar:** Ribose.\n- **Complementary DNA base pairs:** **A–T**, **G–C**.\n- **Double helix:** Two antiparallel strands; approximately **2 nm** diameter.\n- **Sugar–phosphate backbone:** Covalently linked exterior strand framework.\n- **Semiconservative replication:** Each daughter DNA molecule contains an old strand and a newly synthesized strand.\n- **Replication fidelity:** Base pairing, polymerase proofreading, and repair minimize errors.\n- **Historical caution:** Franklin's and Wilkins's diffraction research materially supported the Watson–Crick model.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": "cram-12",
+      "title": "Transcription, translation, and genetic code",
+      "markdown": "- **Gene expression:** Using genetic information to produce RNA or protein products.\n- **Central sequence for protein-coding genes:** **DNA → mRNA → polypeptide/protein**.\n- **Transcription:** RNA synthesized from a DNA template; eukaryotic nuclear genes are transcribed in the nucleus.\n- **Translation:** Ribosome reads mRNA codons and assembles amino acids in a polypeptide.\n- **Codon:** **Three mRNA bases** specifying an amino acid or a stop signal.\n- **tRNA:** Delivers amino acids; anticodon pairs with mRNA codon.\n- **AUG:** Common start codon, coding for methionine.\n- **UAA, UAG, UGA:** Standard stop codons.\n- **Triplet possibilities:** **4³ = 64** total codons.\n- **Near-universal code:** Most life shares the same codon meanings, with some exceptions.\n- **Common trap:** Codons specify amino acids; they do not physically form amino acids.",
+      "slideReferences": {
+        "13 - C16 & C17.pdf": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "id": "cram-13",
+      "title": "Evolutionary history and descent with modification",
+      "markdown": "- **Evolution:** Change in inherited characteristics of populations across generations.\n- **Descent with modification:** Descendants inherit features while populations diverge over time.\n- **Phylogeny:** Branching history of evolutionary relationships, **not a ladder of progress**.\n- **Carl Linnaeus:** Formalized binomial nomenclature in *Systema Naturae* (1735).\n- **Lamarck:** Early evolutionary thinker associated with acquired-character inheritance.\n- **Charles Darwin:** Published *On the Origin of Species* in **1859**.\n- **Alfred Russel Wallace:** Independently developed natural-selection ideas.\n- **Thomas Henry Huxley:** Prominent advocate known as **Darwin's Bulldog**.\n- **Theory vs fact:** Evolution is observed; evolutionary theory explains its mechanisms and history.",
+      "slideReferences": {
+        "14.pdf": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "id": "cram-14",
+      "title": "Mechanisms that change populations",
+      "markdown": "- **Mutation:** New DNA variation; may arise from replication errors, radiation, or chemical damage.\n- **Natural selection:** Heritable differences influence reproductive success, changing variant frequencies.\n- **Fitness:** Relative reproductive contribution in a specific environment.\n- **Genetic drift:** Random change in allele frequencies; strongest in small populations.\n- **Founder effect:** Chance allele sample when a small group starts a population.\n- **Bottleneck:** Strong population reduction that changes allele frequencies by chance.\n- **Vicariance:** Geographic separation of a once-connected population, **not a synonym for drift**.\n- **Sexual selection:** Heritable differences affect mating success; examples include peacock displays and mate competition.\n- **Common trap:** Selection does not produce a mutation because an organism needs one.",
+      "slideReferences": {
+        "14.pdf": [
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "id": "cram-15",
+      "title": "Isolation, speciation, extinction, and radiation",
+      "markdown": "- **Reproductive isolation:** Reduction or prevention of successful gene exchange between populations.\n- **Prezygotic barrier:** Prevents fertilization (timing, behavior, habitat, mechanics, gamete incompatibility).\n- **Postzygotic barrier:** Acts after fertilization (hybrid inviability, infertility, or breakdown).\n- **Speciation:** Origin of a distinct evolutionary lineage or species.\n- **Adaptive radiation:** Rapid diversification into ecological roles or niches.\n- **Mass extinction:** Major loss of lineages over a geologically relatively brief interval.\n- **Unifying connection:** Meiosis and mutation produce inherited variation; evolutionary forces change its distribution through populations.",
+      "slideReferences": {
+        "14.pdf": [
+          16,
+          17
+        ]
+      }
+    }
+  ]
+}

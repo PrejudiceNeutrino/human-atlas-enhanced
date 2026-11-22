@@ -149,7 +149,12 @@ export function SubjectTabs({ subject }: { subject: LearnSubject }) {
           ) : tab.kind === 'study-tools' ? (
             <StudyToolsLoader subjectId={subject.slug} subjectTitle={subject.title} route={subject.href} tabId={tab.id}/>
           ) : tab.kind === 'gallery' ? (
-            <GalleryLoader tabId={tab.id} subjectSlug={subject.slug}/>
+            subject.gallery ? <GalleryLoader tabId={tab.id} subjectSlug={subject.slug}/> : (
+              <section className="learn-article-header" aria-labelledby={`${tab.id}-heading`}>
+                <h2 id={`${tab.id}-heading`} tabIndex={-1}>Gallery</h2>
+                <p className="learn-reading-intro">No images have been added yet.</p>
+              </section>
+            )
           ) : tab.kind === 'visualize' ? (
             <VisualizePage tabId={tab.id} subjectId={subject.slug}/>
           ) : null}

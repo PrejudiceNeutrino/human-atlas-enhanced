@@ -1,18 +1,20 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { ArrowUpRight, ChevronRight } from 'lucide-react';
 import { SiteNavigation } from '../site-navigation';
 import { AppearanceControls } from '../appearance-controls';
 import { SubjectTabs } from './subject-tabs';
 import { AnnotationReader } from '../notes/annotation-reader';
-import { learnSubjects, subjectForPath } from './subjects';
+import { learnSubjects, subjectForPath, type LearnCategory } from './subjects';
 import { LearnContextMenu } from './context-menu/learn-context-menu';
 import { LearnBackToTop } from './back-to-top';
 import { LearnSubjectMenu } from './subject-menu';
+import { LearnCategorySelector } from './subject-categories';
 import './learn.css';
 import '../notes/notes.css';
 
 export default function LearnPage({ pathname, initialNotesOpen = false }: { pathname: string; initialNotesOpen?: boolean }) {
   const subject = subjectForPath(pathname);
+  const [category, setCategory] = useState<LearnCategory>('Anatomy');
   const title = subject?.title ?? (pathname === '/learn' ? 'Learn' : 'Page not found');
   useEffect(() => {
     document.title = `${title} · Human Atlas`;
@@ -37,13 +39,16 @@ export default function LearnPage({ pathname, initialNotesOpen = false }: { path
           <h1>{title}</h1>
         </div>
         {subject ? <AnnotationReader key={subject.slug}><SubjectTabs subject={subject} /></AnnotationReader> : (
-          <div className="learn-subject-list">
-            {learnSubjects.map(item => (
-              <a className="learn-subject-card" key={item.slug} href={item.href}>
-                <span>{item.title}</span><ArrowUpRight size={20} aria-hidden="true" />
-              </a>
-            ))}
-          </div>
+          <>
+            <LearnCategorySelector value={category} onChange={setCategory}/>
+            <nav className="learn-subject-list" aria-label="Learn subjects">
+              {learnSubjects.filter(item => item.category === category).map(item => (
+                <a className="learn-subject-card" key={item.slug} href={item.href}>
+                  <span>{item.title}</span><ArrowUpRight size={20} aria-hidden="true" />
+                </a>
+              ))}
+            </nav>
+          </>
         )}
       </main>
       <footer className="learn-footer"><a href="/male">Explore the 3D atlas <ArrowUpRight size={14} aria-hidden="true" /></a></footer>

@@ -146,9 +146,11 @@ test('Learn navigation, subject registry, landing page and unknown subject', { t
   await render('/learn');
   assert.equal(document.querySelector('h1').textContent, 'Learn');
   assert.equal(document.querySelector('[aria-label="Main navigation"] [aria-current]').textContent, 'Learn');
-  for (const subject of learnSubjects) {
+  for (const subject of learnSubjects.filter(item => item.category === 'Anatomy')) {
     assert.equal(document.querySelector(`.learn-subject-card[href="${subject.href}"]`).textContent, subject.title);
   }
+  await click(document.querySelector('.learn-category-selector input[value="Biology"]'));
+  assert.deepEqual([...document.querySelectorAll('.learn-subject-card')].map(card => card.getAttribute('href')), ['/learn/biology-exam-3']);
   await render('/learn/missing');
   assert.equal(document.querySelector('h1').textContent, 'Page not found');
   assert.equal(document.querySelectorAll('.learn-entry').length, 0);
@@ -164,7 +166,7 @@ test('Learn navigation, subject registry, landing page and unknown subject', { t
   const href = window.location.href;
   await click(switcher);
   const chooser = document.querySelector('[role="dialog"]');
-  assert.equal(chooser.querySelectorAll('.learn-menu-subject').length, learnSubjects.length);
+  assert.equal(chooser.querySelectorAll('.learn-menu-subject').length, 3);
   assert.equal(chooser.querySelector('.learn-menu-subject[aria-current="page"]').getAttribute('href'), '/learn/digestive');
   assert.equal(window.location.href, href);
   await click(chooser.querySelector('[aria-label="Close Learn menu"]'));
@@ -262,7 +264,8 @@ test('revised JSON retains ZIP-entry bytes apart from the two requested navigati
     assert.equal(new Set(article.sections.map(section => section.id)).size, sectionCount);
     assert.ok(article.sections.every(section => section.title && section.markdown));
   }
-  assert.deepEqual(learnSubjects.map(subject => subject.slug), ['digestive', 'respiratory', 'lymphoid']);
+  assert.deepEqual(learnSubjects.filter(subject => subject.category === 'Anatomy').map(subject => subject.slug), ['digestive', 'respiratory', 'lymphoid']);
+  assert.deepEqual(learnSubjects.filter(subject => subject.category === 'Biology').map(subject => subject.slug), ['biology-exam-3']);
   assert.deepEqual(learnSubjects[0].tabs.map(item => item.title), ['General Overview', 'Deep Dive', 'How It Connects', "Who Cares?", 'Visualize', 'Gallery', 'Exam Cram', 'Study Tools']);
 });
 
@@ -580,23 +583,26 @@ test('Learn opens an accessible subject chooser without navigating or replacing 
   const dialog = document.querySelector('[role="dialog"]');
   assert.ok(dialog); assert.equal(dialog.getAttribute('aria-modal'), 'true');
   assert.equal(document.getElementById(dialog.getAttribute('aria-labelledby')).textContent, 'Learn');
-  assert.equal(document.getElementById(dialog.getAttribute('aria-describedby')).textContent, 'Choose a system to explore.');
+  assert.equal(document.getElementById(dialog.getAttribute('aria-describedby')).textContent, 'Choose a subject to explore.');
   assert.ok(document.querySelector('.learn-menu-backdrop')); assert.equal(dialog.dataset.atlasShortcuts, 'disabled');
   assert.equal(window.location.href, href); assert.equal(document.querySelector('#explorer-fixture'), explorer);
-  const links = [...dialog.querySelectorAll('.learn-menu-subject')]; assert.equal(links.length, learnSubjects.length);
+  const anatomy = learnSubjects.filter(subject => subject.category === 'Anatomy');
+  const links = [...dialog.querySelectorAll('.learn-menu-subject')]; assert.equal(links.length, anatomy.length);
   links.forEach((link, index) => {
-    assert.equal(link.getAttribute('href'), learnSubjects[index].href);
-    assert.equal(link.querySelector('.learn-menu-subject-title').textContent, learnSubjects[index].title);
+    assert.equal(link.getAttribute('href'), anatomy[index].href);
+    assert.equal(link.querySelector('.learn-menu-subject-title').textContent, anatomy[index].title);
     const preview = link.querySelector('.learn-menu-subject-preview');
     assert.equal(preview.getAttribute('role'), 'list');
-    assert.equal(preview.getAttribute('aria-label'), `${learnSubjects[index].title} sections`);
-    assert.deepEqual([...preview.querySelectorAll('.learn-menu-preview-item > span:first-child')].map(item => item.textContent), learnSubjects[index].tabs.map(item => item.title));
+    assert.equal(preview.getAttribute('aria-label'), `${anatomy[index].title} sections`);
+    assert.deepEqual([...preview.querySelectorAll('.learn-menu-preview-item > span:first-child')].map(item => item.textContent), anatomy[index].tabs.map(item => item.title));
     assert.equal(preview.querySelector('.learn-menu-preview-status'), null);
     assert.equal(link.querySelector('.learn-menu-subject-count').textContent, '8 sections');
   });
   assert.equal(document.activeElement, links[0]);
   const results = await axe.run(document, { rules: { 'color-contrast': { enabled: false } } });
   assert.deepEqual(results.violations.map(({ id, description }) => ({ id, description })), []);
+  await click(dialog.querySelector('.learn-category-selector input[value="Biology"]'));
+  assert.deepEqual([...dialog.querySelectorAll('.learn-menu-subject')].map(link => link.getAttribute('href')), ['/learn/biology-exam-3']);
   await click(dialog.querySelector('[aria-label="Close Learn menu"]'));
   assert.equal(document.querySelector('[role="dialog"]'), null); assert.equal(document.activeElement, trigger);
   assert.equal(window.location.href, href); assert.equal(document.querySelector('#explorer-fixture'), explorer);
@@ -608,4 +614,17 @@ test('Escape dismisses the Learn chooser and returns focus to Learn', { timeout:
   document.activeElement.dispatchEvent(new window.KeyboardEvent('keydown', { key: 'Escape', code: 'Escape', bubbles: true, cancelable: true }));
   await delay(80);
   assert.equal(document.querySelector('[role="dialog"]'), null); assert.equal(document.activeElement, trigger);
+});
+
+test('Biology Exam 3 opens the shared Learn page with its eight ordered tabs', { timeout: 10000 }, async () => {
+  await render('/learn/biology-exam-3');
+  assert.equal(document.querySelector('h1').textContent, 'Biology Exam 3');
+  assert.deepEqual([...document.querySelectorAll('.learn-tab-trigger > span:first-child')].map(node => node.textContent),
+    ['General Overview', 'Deep Dive', 'How It Connects', 'Who Cares?', 'Gallery', 'Exam Cram', 'Study Tools', 'Campbell Extension']);
+  await selectTab('Gallery');
+  const gallery = document.getElementById('biology-exam-3-gallery-heading');
+  assert.equal(gallery.parentElement.querySelector('p').textContent, 'No images have been added yet.');
+  assert.equal(gallery.parentElement.querySelector('img'), null);
+  await selectTab('Campbell Extension');
+  assert.equal(document.querySelectorAll('.learn-article-section').length, 17);
 });

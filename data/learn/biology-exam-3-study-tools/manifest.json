@@ -1,0 +1,144 @@
+{
+  "kind": "human-atlas-study-tools",
+  "schemaVersion": 1,
+  "subjectId": "biology-exam-3",
+  "title": "Biology Exam 3 Study Tools",
+  "curriculum": "Lectures 11–14 · Campbell chapters 13–17 and introduction to evolution",
+  "sources": [
+    {
+      "id": "general-overview",
+      "kind": "learn-article",
+      "file": "data/learn/biology-exam-3-general-overview.json"
+    },
+    {
+      "id": "deep-dive",
+      "kind": "learn-article",
+      "file": "data/learn/biology-exam-3-deep-dive.json"
+    },
+    {
+      "id": "exam-cram",
+      "kind": "learn-article",
+      "file": "data/learn/biology-exam-3-exam-cram.json"
+    },
+    {
+      "id": "how-it-connects",
+      "kind": "learn-article",
+      "file": "data/learn/biology-exam-3-how-it-connects.json"
+    },
+    {
+      "id": "lecture-11",
+      "kind": "presentation",
+      "file": "11 - C13.pdf",
+      "slideCount": 12
+    },
+    {
+      "id": "lecture-12",
+      "kind": "presentation",
+      "file": "12 - C14 & C15.pdf",
+      "slideCount": 26
+    },
+    {
+      "id": "lecture-13",
+      "kind": "presentation",
+      "file": "13 - C16 & C17.pdf",
+      "slideCount": 12
+    },
+    {
+      "id": "lecture-14",
+      "kind": "presentation",
+      "file": "14.pdf",
+      "slideCount": 17
+    }
+  ],
+  "topics": [
+    {
+      "id": "chromosomes",
+      "label": "Hereditary language & chromosome sets",
+      "sortOrder": 1
+    },
+    {
+      "id": "meiosis",
+      "label": "Meiosis I, meiosis II & crossing over",
+      "sortOrder": 2
+    },
+    {
+      "id": "reproduction",
+      "label": "Asexual reproduction, sexual reproduction & variation",
+      "sortOrder": 3
+    },
+    {
+      "id": "mendel",
+      "label": "Mendel, dominance & the law of segregation",
+      "sortOrder": 4
+    },
+    {
+      "id": "crosses",
+      "label": "Punnett squares, testcrosses & probability",
+      "sortOrder": 5
+    },
+    {
+      "id": "complex-inheritance",
+      "label": "Independent assortment & complex inheritance",
+      "sortOrder": 6
+    },
+    {
+      "id": "disorders",
+      "label": "Genetic disorders, inbreeding & allopolyploidy",
+      "sortOrder": 7
+    },
+    {
+      "id": "chromosome-theory",
+      "label": "Chromosome theory & Morgan’s fruit flies",
+      "sortOrder": 8
+    },
+    {
+      "id": "sex-linked",
+      "label": "Sex linkage, extranuclear DNA & lineage",
+      "sortOrder": 9
+    },
+    {
+      "id": "dna-evidence",
+      "label": "DNA as genetic material & Hershey–Chase",
+      "sortOrder": 10
+    },
+    {
+      "id": "dna-structure",
+      "label": "DNA, RNA, base pairing & replication",
+      "sortOrder": 11
+    },
+    {
+      "id": "gene-expression",
+      "label": "Transcription, translation & genetic code",
+      "sortOrder": 12
+    },
+    {
+      "id": "evolution-history",
+      "label": "Evolution, Linnaeus, Lamarck, Darwin & Wallace",
+      "sortOrder": 13
+    },
+    {
+      "id": "evolution-mechanisms",
+      "label": "Mutation, selection, drift & sexual selection",
+      "sortOrder": 14
+    },
+    {
+      "id": "speciation",
+      "label": "Reproductive isolation, speciation & macroevolution",
+      "sortOrder": 15
+    }
+  ],
+  "files": {
+    "concepts": "concepts.json",
+    "multipleChoice": "multiple-choice.json",
+    "fillInTheBlank": "fill-in-the-blank.json",
+    "flashcards": "flashcards.json"
+  },
+  "counts": {
+    "concepts": 140,
+    "multipleChoice": 105,
+    "fillInTheBlank": 75,
+    "flashcards": 105,
+    "topics": 15
+  },
+  "contentStatus": "Complete lecture-core editorial first draft. Instructor slides 11–14 only; not independently peer-reviewed or deployed."
+}

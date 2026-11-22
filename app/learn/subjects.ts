@@ -42,7 +42,11 @@ export type LearnTab = {
   | { kind: 'coming-soon' }
 );
 
+export const learnCategories = ['Anatomy', 'Biology'] as const;
+export type LearnCategory = typeof learnCategories[number];
+
 export interface LearnSubject {
+  category: LearnCategory;
   slug: string;
   label: string;
   title: string;
@@ -58,7 +62,7 @@ export const upcomingLearningSections: { id: string; title: string; description:
 // Subject navigation and pages share one small registry.
 export const learnSubjects: LearnSubject[] = [
   {
-    slug: 'digestive',
+    category: 'Anatomy', slug: 'digestive',
     label: 'Digestive',
     title: 'Digestive System',
     href: '/learn/digestive',
@@ -79,7 +83,7 @@ export const learnSubjects: LearnSubject[] = [
 
 // Subjects share the same tab contracts and section-guide descriptions.
 learnSubjects.push({
-  slug: 'respiratory', label: 'Respiratory', title: 'Respiratory System', href: '/learn/respiratory',
+  category: 'Anatomy', slug: 'respiratory', label: 'Respiratory', title: 'Respiratory System', href: '/learn/respiratory',
   modelShortcut: { label: 'Respiratory Model', tabId: 'respiratory-system-visualize' },
   gallery: { count: 29, labelPractice: true },
   tabs: learnSubjects[0].tabs.map(({ readingIntro: _digestiveIntro, ...tab }) => ({
@@ -88,12 +92,27 @@ learnSubjects.push({
 });
 
 learnSubjects.push({
-  slug: 'lymphoid', label: 'Lymphoid', title: 'Lymphoid System and Immunity', href: '/learn/lymphoid',
+  category: 'Anatomy', slug: 'lymphoid', label: 'Lymphoid', title: 'Lymphoid System and Immunity', href: '/learn/lymphoid',
   modelShortcut: { label: 'Lymphoid Model', tabId: 'lymphoid-system-visualize' },
   gallery: { count: 35, labelPractice: true },
   tabs: learnSubjects[0].tabs.map(({ readingIntro: _digestiveIntro, ...tab }) => ({
     ...tab, id: tab.id.replace('digestive-system-', 'lymphoid-system-'),
   })),
+});
+
+learnSubjects.push({
+  category: 'Biology',
+  slug: 'biology-exam-3',
+  label: 'Biology Exam 3',
+  title: 'Biology Exam 3',
+  href: '/learn/biology-exam-3',
+  tabs: [
+    ...learnSubjects[0].tabs.filter(tab => tab.kind !== 'visualize').map(({ readingIntro: _digestiveIntro, ...tab }) => ({
+      ...tab, id: tab.id.replace('digestive-system-', 'biology-exam-3-'),
+    })),
+    { id: 'biology-exam-3-campbell-extension', title: 'Campbell Extension', kind: 'article', presentation: 'reference',
+      description: 'Explore supplemental Campbell Biology topics beyond the lecture curriculum.' },
+  ],
 });
 
 export function subjectForPath(pathname: string) {
